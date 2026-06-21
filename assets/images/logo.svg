@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">doyouknow.app spark logo</title>
+  <desc id="desc">A warm amber question mark and discovery spark on a deep navy rounded square.</desc>
+  <rect width="512" height="512" rx="112" fill="#0f172a"/>
+  <path d="M164 183c8-73 65-116 143-116 82 0 142 48 142 122 0 61-36 91-81 118-37 22-51 39-51 78v8h-92v-15c0-61 25-94 76-125 37-23 54-38 54-66 0-30-21-49-56-49-38 0-59 23-63 61l-72-16Z" fill="#f59e0b"/>
+  <circle cx="271" cy="442" r="38" fill="#10b981"/>
+  <path d="m93 85 12 27 27 12-27 12-12 27-12-27-27-12 27-12 12-27Z" fill="#fff7ed"/>
+</svg>

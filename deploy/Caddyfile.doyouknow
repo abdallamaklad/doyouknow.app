@@ -1,0 +1,22 @@
+# doyouknow.app static bilingual editorial site.
+doyouknow.app, www.doyouknow.app {
+	encode zstd gzip
+	root * /srv/doyouknow
+
+	@immutable path /assets/*
+	header @immutable Cache-Control "public, max-age=31536000, immutable"
+
+	@html path *.html / /en/* /ar/*
+	header @html Cache-Control "public, max-age=300, must-revalidate"
+
+	try_files {path} {path}/index.html
+	file_server
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		X-Frame-Options "DENY"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	}
+}

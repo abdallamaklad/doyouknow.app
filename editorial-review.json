@@ -1,0 +1,32 @@
+{
+  "policy": "Pages listed here are accessible but set to noindex,follow and excluded from the sitemap until reviewed against current primary sources.",
+  "reviewedThrough": "2026-06-21",
+  "pages": {
+    "government-legal-finance": [
+      "/en/article/start-business-dubai.html",
+      "/en/article/uae-corporate-tax.html",
+      "/en/article/uae-golden-visa-guide.html",
+      "/ar/article/absher-portal-guide.html",
+      "/ar/article/open-bank-account-saudi.html",
+      "/ar/article/qiyas-guide.html",
+      "/ar/article/qobool-guide.html",
+      "/ar/article/saudi-driving-license.html",
+      "/ar/article/saudi-health-insurance.html"
+    ],
+    "health-religious-travel": [
+      "/en/article/best-beaches-dubai.html",
+      "/en/article/best-restaurants-dubai.html",
+      "/en/article/expo-city-dubai.html",
+      "/en/article/save-money-dubai.html",
+      "/ar/article/best-restaurants-riyadh.html",
+      "/ar/article/hajj-guide.html",
+      "/ar/article/ramadan-health-guide.html",
+      "/ar/article/riyadh-season.html",
+      "/ar/article/umrah-guide.html"
+    ],
+    "fast-changing-technology": [
+      "/en/article/what-is-chatgpt.html",
+      "/en/article/what-is-google-gemini.html"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+name: Deploy website
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  verify-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm test
+      - name: Upload static site to VPS
+        if: ${{ secrets.VPS_HOST != '' }}
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.VPS_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_USER }}
+          TARGET: ${{ secrets.VPS_PATH }}
+          EXCLUDE: "/.git/, /.github/, /scripts/, package.json, package-lock.json, README.md, /deploy/"
