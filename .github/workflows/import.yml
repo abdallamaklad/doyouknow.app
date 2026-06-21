@@ -1,0 +1,27 @@
+name: Import verified production repository
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import verified source archive
+        env:
+          ARCHIVE_URL: http://76.13.190.19/doyouknow-repository.tar.gz
+          ARCHIVE_SHA256: e39a5f001802d444a44d3282e771d176c3ffab764881cbf749a09368fcb31735
+        run: |
+          curl --fail --show-error --location "$ARCHIVE_URL" --output /tmp/doyouknow-repository.tar.gz
+          echo "$ARCHIVE_SHA256  /tmp/doyouknow-repository.tar.gz" | sha256sum --check
+          tar -xzf /tmp/doyouknow-repository.tar.gz
+          rm -f .github/workflows/import.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Launch bilingual production website"
+          git push
