@@ -24,8 +24,21 @@ const editorialReview = new Set([
   'ar/article/saudi-health-insurance.html',
   'ar/article/umrah-guide.html'
 ]);
+const removedContent = new Set([
+  'en/article/10-facts-about-uae-formation.html',
+  'en/article/bedouin-culture-uae.html',
+  'en/article/falconry-uae-tradition.html',
+  'en/article/history-pearl-diving-uae.html',
+  'en/article/sheikh-zayed-biography.html',
+  'en/article/trucial-states-history.html',
+  'en/article/uae-minister-happiness.html',
+  'en/article/uae-national-day.html',
+  'en/category/uae.html'
+]);
+const removedArticleSlugs = [...removedContent]
+  .filter((path) => path.startsWith('en/article/'))
+  .map((path) => path.split('/').at(-1).replace('.html', ''));
 const categoryGroups = [
-  { lang: 'en', slug: 'uae', title: 'UAE History & Culture', description: 'Explore reliable explainers about the history, heritage, leaders, and traditions that shaped the United Arab Emirates.', files: ['10-facts-about-uae-formation','bedouin-culture-uae','falconry-uae-tradition','history-pearl-diving-uae','sheikh-zayed-biography','trucial-states-history','uae-national-day'] },
   { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places', description: 'Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.', files: ['burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','yas-island-abu-dhabi'] },
   { lang: 'en', slug: 'guides', title: 'UAE Practical Guides', description: 'Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.', files: ['best-beaches-dubai','best-restaurants-dubai','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
   { lang: 'en', slug: 'technology', title: 'Technology Explained', description: 'Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.', files: ['what-is-chatgpt','what-is-google-gemini'] },
@@ -73,6 +86,23 @@ for (const file of htmlFiles) {
     .replace(/(<link rel="alternate" hreflang="[^"]+" href=")\//g, '$1https://doyouknow.app/')
     .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '');
 
+  // Remove discovery cards for retired UAE history and politics content.
+  for (const slug of removedArticleSlugs) {
+    const href = `/en/article/${slug}.html`;
+    const escapedHref = href.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    html = html
+      .replace(new RegExp(`<a href="${escapedHref}" class="article-card">[\\s\\S]*?<\\/a>`, 'g'), '')
+      .replace(new RegExp(`<a href="${escapedHref}" class="related-card">[\\s\\S]*?<\\/a>`, 'g'), '');
+  }
+  html = html
+    .replace(/<p>Curious about the UAE's history\?[\s\S]*?<\/p>/g, '')
+    .replace(/<p>Want more UAE facts\? Read our [\s\S]*?<\/p>/g, '')
+    .replace(/<p>Looking for more UAE facts\? Explore our [\s\S]*?<\/p>/g, '')
+    .replace(/<p>The name changed to Burj Khalifa at the last minute\.[\s\S]*?<\/p>/g, '')
+    .replaceAll('/en/article/10-facts-about-uae-formation.html', '/en/article/burj-khalifa-facts.html')
+    .replaceAll("10 Facts About the UAE's Formation in 1971", "Burj Khalifa: 10 Surprising Facts You Didn't Know")
+    .replaceAll('Discover the decisions, leaders, and milestones that united the seven emirates.', 'Discover the design, engineering, and records behind the world’s tallest building.');
+
   // Preserve useful navigation without shipping dead internal links from drafts.
   const replacements = new Map();
   for (const match of html.matchAll(/href="([^"#]+)"/g)) {
@@ -116,13 +146,19 @@ for (const file of htmlFiles) {
     html = html.replace('name="robots" content="index, follow"', 'name="robots" content="noindex, follow"');
   }
   html = html
-    .replaceAll('/en/category/General.html">UAE</a>', '/en/category/uae.html">UAE</a>')
+    .replaceAll('/en/category/General.html">UAE</a>', '/en/category/dubai.html">Dubai &amp; UAE</a>')
     .replaceAll('/en/category/General.html">KSA</a>', '/ar/category/saudi.html">KSA</a>')
-    .replaceAll('/ar/category/General.html">الإمارات</a>', '/en/category/uae.html">الإمارات</a>')
+    .replaceAll('/ar/category/General.html">الإمارات</a>', '/en/category/dubai.html">الإمارات</a>')
     .replaceAll('/ar/category/General.html">السعودية</a>', '/ar/category/saudi.html">السعودية</a>');
+  html = html
+    .replace(/<a href="\/en\/category\/(?:uae|General)\.html" class="category-tile">(?=[\s\S]*?<h4>UAE history<\/h4>)[\s\S]*?<\/a>/g, '')
+    .replace(/<a href="\/en\/category\/General\.html" class="category-tile">(?=<div class="tile-icon">◈)/g, '<a href="/en/category/dubai.html" class="category-tile">')
+    .replace(/<a href="\/en\/category\/General\.html" class="category-tile">(?=<div class="tile-icon">✓)/g, '<a href="/en/category/guides.html" class="category-tile">')
+    .replace(/<a href="\/en\/category\/General\.html" class="category-tile">(?=<div class="tile-icon">✦)/g, '<a href="/en/category/technology.html" class="category-tile">')
+    .replaceAll('30 articles', '22 articles');
   html = html.replace(
     '<a href="/en/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>General</h4><span>30 articles</span></div></a>',
-    '<a href="/en/category/uae.html" class="category-tile"><div class="tile-icon">🏛️</div><div class="tile-info"><h4>UAE history</h4><span>7 articles</span></div></a><a href="/en/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>Dubai &amp; places</h4><span>13 articles</span></div></a><a href="/en/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>Practical guides</h4><span>6 articles</span></div></a><a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>'
+    '<a href="/en/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>Dubai &amp; places</h4><span>13 articles</span></div></a><a href="/en/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>Practical guides</h4><span>6 articles</span></div></a><a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>'
   );
   html = html.replace(
     '<a href="/ar/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>عام</h4><span>28 مقال</span></div></a>',
@@ -173,7 +209,7 @@ for (const group of categoryGroups) {
   await writeFile(join(root, group.lang, 'category', `${group.slug}.html`), page);
 }
 let sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
-for (const path of editorialReview) {
+for (const path of new Set([...editorialReview, ...removedContent])) {
   const url = `https://doyouknow.app/${path}`;
   sitemap = sitemap.replace(new RegExp(`<url><loc>${url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/loc>[\\s\\S]*?<\\/url>`, 'g'), '');
 }
