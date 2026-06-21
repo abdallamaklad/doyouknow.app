@@ -6,17 +6,22 @@ on:
 jobs:
   verify-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_USER: ${{ secrets.VPS_USER }}
+      VPS_PATH: ${{ secrets.VPS_PATH }}
+      VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm test
       - name: Upload static site to VPS
-        if: ${{ secrets.VPS_HOST != '' }}
+        if: ${{ env.VPS_HOST != '' }}
         uses: easingthemes/ssh-deploy@v5.1.0
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.VPS_HOST }}
-          REMOTE_USER: ${{ secrets.VPS_USER }}
-          TARGET: ${{ secrets.VPS_PATH }}
+          SSH_PRIVATE_KEY: ${{ env.VPS_SSH_KEY }}
+          REMOTE_HOST: ${{ env.VPS_HOST }}
+          REMOTE_USER: ${{ env.VPS_USER }}
+          TARGET: ${{ env.VPS_PATH }}
           EXCLUDE: "/.git/, /.github/, /scripts/, package.json, package-lock.json, README.md, /deploy/"
