@@ -40,6 +40,8 @@ for (const file of htmlFiles) {
   }
   if (!html.includes('property="og:image"')) errors.push(`${rel}: missing Open Graph image`);
   if (!html.includes('rel="icon"')) errors.push(`${rel}: missing favicon`);
+  const googleTagCount = (html.match(/G-6VQZY87LJB/g) || []).length;
+  if (googleTagCount !== 2) errors.push(`${rel}: expected one Google tag, found measurement ID ${googleTagCount} times`);
   if (html.includes('/doyouknow-app-site/')) errors.push(`${rel}: development path leaked`);
   for (const match of html.matchAll(/href="([^"#]+)"/g)) {
     const href = match[1];
