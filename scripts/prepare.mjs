@@ -42,10 +42,34 @@ const removedContent = new Set([
 const removedArticleSlugs = [...removedContent]
   .filter((path) => path.startsWith('en/article/'))
   .map((path) => path.split('/').at(-1).replace('.html', ''));
+const worldCupArticleSlugs = [
+  'morocco-world-cup-2026',
+  'egypt-world-cup-2026',
+  'saudi-arabia-world-cup-2026',
+  'tunisia-world-cup-2026',
+  'algeria-world-cup-2026',
+  'iraq-world-cup-2026',
+  'jordan-world-cup-2026',
+  'qatar-world-cup-2026',
+  'arab-teams-world-cup-2026',
+  'morocco-defensive-structure-world-cup-2026',
+  'egypt-midfield-world-cup-2026',
+  'saudi-technical-ceiling-world-cup-2026',
+  'tunisia-defensive-grit-world-cup-2026',
+  'algeria-attack-world-cup-2026',
+  'iraq-jordan-tournament-discipline-world-cup-2026',
+  'arab-team-semifinals-world-cup-2026',
+  'world-cup-2026-group-stage-pressure-arab-teams',
+  'morocco-egypt-algeria-world-cup-2026',
+  'arab-fans-world-cup-2026',
+  'arab-football-legacy-world-cup-2026'
+];
 const categoryGroups = [
+  { lang: 'en', slug: 'world-cup-2026', title: 'World Cup 2026 & Arab Football', description: 'Bilingual World Cup 2026 explainers focused on Arab teams, tactics, fans, and football legacy.', files: worldCupArticleSlugs },
   { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places', description: 'Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.', files: ['burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','yas-island-abu-dhabi'] },
   { lang: 'en', slug: 'guides', title: 'UAE Practical Guides', description: 'Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.', files: ['best-beaches-dubai','best-restaurants-dubai','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
   { lang: 'en', slug: 'technology', title: 'Technology Explained', description: 'Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.', files: ['what-is-chatgpt','what-is-google-gemini'] },
+  { lang: 'ar', slug: 'world-cup-2026', title: 'كأس العالم 2026 والكرة العربية', description: 'شروحات عربية وإنجليزية عن كأس العالم 2026 والمنتخبات العربية والتكتيك والجمهور والإرث الكروي.', files: worldCupArticleSlugs },
   { lang: 'ar', slug: 'saudi', title: 'السعودية: التاريخ والثقافة', description: 'اكتشف تاريخ المملكة العربية السعودية وتراثها ومدنها وثقافتها من خلال مقالات عربية واضحة وموثوقة.', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','ronaldo-saudi-arabia','saudi-arabia-history','saudi-football-global','saudi-national-day','saudi-no-rivers'] },
   { lang: 'ar', slug: 'vision-2030', title: 'رؤية السعودية 2030 والمشاريع الكبرى', description: 'تعرف على مشاريع رؤية السعودية 2030 والمدن والوجهات الجديدة من خلال شروحات تفصل الحقائق عن التوقعات.', files: ['kingdom-tower-riyadh','qiddiya-saudi-arabia','red-sea-project-saudi','riyadh-season','the-line-neom','what-is-neom'] },
   { lang: 'ar', slug: 'guides', title: 'أدلة عملية في السعودية', description: 'أدلة عربية مبسطة للخدمات والمنصات والإجراءات المهمة في السعودية مع إحالات إلى المصادر الرسمية.', files: ['absher-portal-guide','open-bank-account-saudi','qiyas-guide','qobool-guide','saudi-driving-license','saudi-health-insurance'] },
@@ -54,6 +78,7 @@ const categoryGroups = [
 const categoryByArticle = new Map(categoryGroups.flatMap((group) =>
   group.files.map((slug) => [`${group.lang}/article/${slug}.html`, group])
 ));
+const knownCategoryHrefs = new Set(categoryGroups.map((group) => `/${group.lang}/category/${group.slug}.html`));
 const categoryFallback = new Map([
   ['en', { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places' }],
   ['ar', { lang: 'ar', slug: 'saudi', title: 'السعودية: التاريخ والثقافة' }]
@@ -70,6 +95,12 @@ const pairedPages = new Map([
   ['en/terms.html', 'ar/terms.html'],
   ['ar/terms.html', 'en/terms.html']
 ]);
+for (const slug of worldCupArticleSlugs) {
+  pairedPages.set(`en/article/${slug}.html`, `ar/article/${slug}.html`);
+  pairedPages.set(`ar/article/${slug}.html`, `en/article/${slug}.html`);
+}
+pairedPages.set('en/category/world-cup-2026.html', 'ar/category/world-cup-2026.html');
+pairedPages.set('ar/category/world-cup-2026.html', 'en/category/world-cup-2026.html');
 
 async function walk(dir) {
   const out = [];
@@ -195,6 +226,7 @@ for (const file of htmlFiles) {
     const target = join(root, clean);
     try { await access(target.endsWith('/') ? join(target, 'index.html') : target); }
     catch {
+      if (knownCategoryHrefs.has(clean)) continue;
       const language = clean.startsWith('/ar/') ? 'ar' : 'en';
       replacements.set(href, `/${language}/`);
     }
@@ -264,6 +296,18 @@ for (const file of htmlFiles) {
     '<a href="/ar/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>عام</h4><span>28 مقال</span></div></a>',
     '<a href="/ar/category/saudi.html" class="category-tile"><div class="tile-icon">🏛️</div><div class="tile-info"><h4>تاريخ السعودية</h4><span>10 مقالات</span></div></a><a href="/ar/category/vision-2030.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>رؤية 2030</h4><span>6 مقالات</span></div></a><a href="/ar/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>أدلة عملية</h4><span>6 مقالات</span></div></a><a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>5 مقالات</span></div></a>'
   );
+  if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
+    html = html.replace(
+      '<a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>',
+      '<a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a><a href="/en/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>World Cup 2026</h4><span>20 articles</span></div></a>'
+    );
+  }
+  if (relativeFile === 'ar/index.html' && !html.includes('/ar/category/world-cup-2026.html')) {
+    html = html.replace(
+      '<a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>5 مقالات</span></div></a>',
+      '<a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>5 مقالات</span></div></a><a href="/ar/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>كأس العالم 2026</h4><span>20 مقالاً</span></div></a>'
+    );
+  }
   html = html.replaceAll('"url": "/assets/images/logo.png"', '"url": "https://doyouknow.app/assets/images/logo.png"');
   if (!html.includes('rel="icon"')) {
     html = html.replace('</head>', '<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml">\n</head>');
@@ -281,6 +325,18 @@ for (const file of htmlFiles) {
   }
   html = stripSearchAction(html);
   html = linkExistingCategory(html, relativeFile);
+  if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
+    html = html.replace(
+      '</div><div class="section-header">\n<h2>Latest Articles</h2>',
+      '<a href="/en/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>World Cup 2026</h4><span>20 articles</span></div></a>\n</div><div class="section-header">\n<h2>Latest Articles</h2>'
+    );
+  }
+  if (relativeFile === 'ar/index.html' && !html.includes('/ar/category/world-cup-2026.html')) {
+    html = html.replace(
+      '</div><div class="section-header">\n<h2>أحدث المقالات</h2>',
+      '<a href="/ar/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>كأس العالم 2026</h4><span>20 مقالاً</span></div></a>\n</div><div class="section-header">\n<h2>أحدث المقالات</h2>'
+    );
+  }
   html = normalizeHreflang(html, relativeFile);
   let h1Seen = 0;
   html = html.replace(/<\/?h1(?=[\s>])[^>]*>/g, (tag) => {
