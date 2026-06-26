@@ -627,6 +627,8 @@ blockquote {
 .article-card .card-image {
   width: 100%;
   aspect-ratio: 16/9;
+  height: auto;
+  object-fit: cover;
   background: linear-gradient(135deg, var(--color-border-light), var(--color-bg-light));
   display: flex;
   align-items: center;

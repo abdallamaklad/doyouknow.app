@@ -262,6 +262,11 @@ function renderArticle(article, index, lang) {
   const title = article.title;
   const seoTitle = `${seoTitles[lang][index]} | doyouknow.app`;
   const description = metaDescription(article, lang);
+  const imagePath = `/assets/images/world-cup-2026/${slug}.svg`;
+  const imageUrl = `https://doyouknow.app${imagePath}`;
+  const imageAlt = lang === 'ar'
+    ? `رسم توضيحي لكرة القدم لمقال ${title}`
+    : `Football illustration for ${title}`;
   const intro = article.sections.find((section) => ['Introduction', 'المقدمة'].includes(section.heading));
   const bodySections = article.sections.filter((section) => section !== intro);
   const headings = sectionHeadings(article);
@@ -283,6 +288,7 @@ function renderArticle(article, index, lang) {
     publisher: { '@type': 'Organization', name: 'doyouknow.app', logo: { '@type': 'ImageObject', url: 'https://doyouknow.app/assets/images/logo.png' } },
     datePublished: today,
     dateModified: today,
+    image: { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 675 },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
     inLanguage: lang
   };
@@ -313,13 +319,13 @@ function renderArticle(article, index, lang) {
 <meta property="og:description" content="${escapeHtml(description)}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="${canonical}">
-<meta property="og:image" content="https://doyouknow.app/assets/images/og-${lang}.png">
+<meta property="og:image" content="${imageUrl}">
 <meta property="og:locale" content="${lang === 'ar' ? 'ar_SA' : 'en_US'}">
 <meta property="og:site_name" content="doyouknow.app">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${escapeHtml(title)}">
 <meta name="twitter:description" content="${escapeHtml(description)}">
-<meta name="twitter:image" content="https://doyouknow.app/assets/images/og-${lang}.png">
+<meta name="twitter:image" content="${imageUrl}">
 <title>${escapeHtml(seoTitle)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,7 +368,7 @@ ${faq ? `<script type="application/ld+json">${JSON.stringify(faq)}</script>` : '
 <span class="read-time">${readTime} ${l.read}</span>
 </div>
 </header>
-<div class="featured-image" style="background:linear-gradient(135deg,#0F172A,#2563EB);display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;border-radius:12px;"><span style="color:white;font-size:1.1rem;">⚽ ${escapeHtml(l.categoryTitle)}</span></div>
+<img class="featured-image" src="${imagePath}" alt="${escapeHtml(imageAlt)}" width="1200" height="675" loading="eager" fetchpriority="high">
 ${headings.length ? `<div class="toc"><h3>${l.contents}</h3><ul>${headings.map((heading) => `<li><a href="#${heading.id}">${escapeHtml(heading.title)}</a></li>`).join('')}</ul></div>` : ''}
 <div class="article-body">
 ${intro ? intro.lines.map((line) => `<p>${inlineMarkdown(line)}</p>`).join('\n') : ''}

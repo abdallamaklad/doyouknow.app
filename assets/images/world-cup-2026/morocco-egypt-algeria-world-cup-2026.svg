@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Morocco Egypt Algeria — World Cup 2026 football illustration</title>
+  <desc id="desc">Original doyouknow.app football artwork for a World Cup 2026 article.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#006233"/>
+      <stop offset="56%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#CE1126"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="69%" cy="34%" r="48%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".34"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#020617" flood-opacity=".35"/>
+    </filter>
+    <pattern id="dots" width="38" height="38" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.3" fill="#FFFFFF" opacity=".18"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#dots)" opacity=".65"/>
+  <circle cx="840" cy="230" r="330" fill="url(#glow)"/>
+  <path d="M0 497 C164 430 280 534 424 466 C572 397 688 493 832 426 C956 368 1056 392 1200 322 L1200 675 L0 675 Z" fill="#FFFFFF" opacity=".12"/>
+  <path d="M110 540 C250 480 340 575 493 514 C650 451 782 525 935 467 C1045 425 1121 430 1200 397" fill="none" stroke="#FFFFFF" stroke-width="4" opacity=".34"/>
+  <g transform="translate(105 105)" opacity=".42">
+    <rect x="0" y="0" width="990" height="465" rx="34" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <line x1="495" y1="0" x2="495" y2="465" stroke="#FFFFFF" stroke-width="5"/>
+    <circle cx="495" cy="232" r="82" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <rect x="0" y="128" width="158" height="210" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <rect x="832" y="128" width="158" height="210" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  </g>
+  <g filter="url(#shadow)" transform="translate(766 216)">
+    <circle cx="0" cy="0" r="132" fill="#F8FAFC"/>
+    <path d="M0-74 70-23 43 60-43 60-70-23Z" fill="#0F172A"/>
+    <path d="M0-124 0-74M118-38 70-23M73 101 43 60M-73 101-43 60M-118-38-70-23" stroke="#0F172A" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-42-116 C-86-98-121-51-128 0M42-116 C86-98 121-51 128 0M-103 78 C-65 121-4 143 52 128M103 78 C65 121 4 143-52 128" fill="none" stroke="#CBD5E1" stroke-width="7" opacity=".9"/>
+  </g>
+  <g transform="translate(92 116)">
+    <text x="0" y="0" fill="#FFFFFF" opacity=".88" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="4">DOYOUKNOW.APP</text>
+    <text x="0" y="82" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800">World Cup 2026</text>
+    <text x="0" y="138" fill="#FFFFFF" opacity=".88" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Morocco Egypt Algeria</text>
+    <rect x="0" y="178" width="320" height="8" rx="4" fill="#CE1126"/>
+  </g>
+  <g transform="translate(92 537)">
+    <rect x="0" y="0" width="356" height="58" rx="29" fill="#FFFFFF" opacity=".14"/>
+    <text x="30" y="38" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Arab football analysis</text>
+  </g>
+</svg>
