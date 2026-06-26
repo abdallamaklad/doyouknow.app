@@ -62,7 +62,8 @@ function mergeWindows(windows) {
 }
 
 function todayPlan(fixtures, date) {
-  const windows = mergeWindows(fixtureWindowsForDay(fixtures, date));
+  const sourceWindows = fixtureWindowsForDay(fixtures, date);
+  const windows = mergeWindows(sourceWindows);
   const totalLiveMs = windows.reduce((sum, window) => sum + window.end - window.start, 0);
   const maxTicks = Math.max(1, Math.floor(dailyLimit / Math.max(1, requestsPerTick)));
   const intervalMs = Math.max(minIntervalMs, Math.ceil(totalLiveMs / maxTicks));
@@ -76,6 +77,8 @@ function todayPlan(fixtures, date) {
     activeWindow,
     nextWindow,
     windows,
+    sourceWindowCount: sourceWindows.length,
+    mergedWindowCount: windows.length,
     totalLiveMinutes: Math.round(totalLiveMs / 60_000),
     maxTicks,
     intervalMs,
@@ -123,6 +126,8 @@ function logPlan(plan) {
     requestsPerTick,
     maxTicks: plan.maxTicks,
     intervalSeconds: plan.intervalSeconds,
+    sourceWindowCount: plan.sourceWindowCount,
+    mergedWindowCount: plan.mergedWindowCount,
     windows: plan.windows.map((window) => ({
       start: new Date(window.start).toISOString(),
       end: new Date(window.end).toISOString()

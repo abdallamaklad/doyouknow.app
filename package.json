@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/prepare.mjs",
-    "test": "node scripts/audit.mjs",
+    "test": "node scripts/audit.mjs && node scripts/audit-worldcup-scheduler.mjs",
     "start": "node scripts/serve.mjs",
     "worldcup:update": "node scripts/update-worldcup-stats.mjs",
     "worldcup:scheduler": "node scripts/run-worldcup-live-scheduler.mjs"
