@@ -10,6 +10,8 @@
     en: {
       loading: 'Loading World Cup 2026 live stats…',
       unavailable: 'Live stats are ready, but the data feed is not connected yet.',
+      seeded: 'World Cup 2026 schedule data',
+      api: 'World Cup 2026 live API',
       error: 'Could not load live stats right now.',
       updated: 'Last updated',
       liveNow: 'Live now',
@@ -29,6 +31,8 @@
     ar: {
       loading: 'جارٍ تحميل إحصاءات كأس العالم 2026…',
       unavailable: 'مركز الإحصاءات جاهز، لكن مصدر البيانات لم يتم ربطه بعد.',
+      seeded: 'بيانات جدول كأس العالم 2026',
+      api: 'واجهة نتائج كأس العالم 2026 المباشرة',
       error: 'تعذر تحميل الإحصاءات الحية الآن.',
       updated: 'آخر تحديث',
       liveNow: 'مباشر الآن',
@@ -110,12 +114,13 @@
   }
 
   function render(data) {
-    const ok = data.status === 'ok';
+    const ok = data.status === 'ok' || data.status === 'seeded';
+    const title = data.status === 'seeded' ? labels.seeded : (data.status === 'ok' ? labels.api : labels.unavailable);
     const updated = data.updatedAt ? `${labels.updated}: ${formatDate(data.updatedAt)}` : '';
     root.innerHTML = `
       <div class="wc-live-status ${ok ? 'ok' : 'pending'}">
         <span>${ok ? '●' : '○'}</span>
-        <div><strong>${ok ? 'World Cup 2026 API' : labels.unavailable}</strong>${updated ? `<small>${escapeHtml(updated)}</small>` : ''}</div>
+        <div><strong>${escapeHtml(title)}</strong>${updated ? `<small>${escapeHtml(updated)}</small>` : ''}</div>
       </div>
       ${!ok && data.message ? `<p class="wc-feed-note">${escapeHtml(data.message)}</p>` : ''}
       <section class="wc-live-section"><h2>${labels.liveNow}</h2>${matchList(data.live, labels.noLive, true)}</section>

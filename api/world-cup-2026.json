@@ -1,12 +1,174 @@
 {
-  "status": "missing_key",
-  "provider": "api-football",
+  "status": "seeded",
+  "provider": "seeded-public-schedule",
   "leagueId": 1,
   "season": 2026,
-  "updatedAt": "2026-06-26T12:16:18.193Z",
-  "message": "Missing APIFOOTBALL_KEY. Create an API-Football/API-Sports key, set it on the server, then run this script from cron.",
+  "updatedAt": "2026-06-26T12:30:00.000Z",
+  "message": "Seeded from public World Cup 2026 schedule/results tables while the live API key is being connected. Scores and standings should be replaced by the API updater once APIFOOTBALL_KEY is installed.",
   "live": [],
-  "fixtures": [],
-  "recent": [],
-  "standings": []
+  "fixtures": [
+    {
+      "id": "2026-06-26-norway-france",
+      "date": "2026-06-26T19:00:00.000Z",
+      "round": "Group I",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Norway", "goals": null },
+      "away": { "name": "France", "goals": null }
+    },
+    {
+      "id": "2026-06-26-senegal-iraq",
+      "date": "2026-06-26T19:00:00.000Z",
+      "round": "Group I",
+      "venue": "BMO Field, Toronto",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Senegal", "goals": null },
+      "away": { "name": "Iraq", "goals": null }
+    },
+    {
+      "id": "2026-06-27-cape-verde-saudi-arabia",
+      "date": "2026-06-27T00:00:00.000Z",
+      "round": "Group H",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Cape Verde", "goals": null },
+      "away": { "name": "Saudi Arabia", "goals": null }
+    },
+    {
+      "id": "2026-06-27-uruguay-spain",
+      "date": "2026-06-27T00:00:00.000Z",
+      "round": "Group H",
+      "venue": "Children's Mercy Park, Kansas City",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Uruguay", "goals": null },
+      "away": { "name": "Spain", "goals": null }
+    },
+    {
+      "id": "2026-06-27-new-zealand-belgium",
+      "date": "2026-06-27T03:00:00.000Z",
+      "round": "Group G",
+      "venue": "BC Place, Vancouver",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "New Zealand", "goals": null },
+      "away": { "name": "Belgium", "goals": null }
+    },
+    {
+      "id": "2026-06-27-egypt-iran",
+      "date": "2026-06-27T03:00:00.000Z",
+      "round": "Group G",
+      "venue": "Rose Bowl, Pasadena",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Egypt", "goals": null },
+      "away": { "name": "Iran", "goals": null }
+    },
+    {
+      "id": "2026-06-27-colombia-portugal",
+      "date": "2026-06-27T23:30:00.000Z",
+      "round": "Group L",
+      "venue": "Hard Rock Stadium, Miami",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Colombia", "goals": null },
+      "away": { "name": "Portugal", "goals": null }
+    },
+    {
+      "id": "2026-06-28-algeria-austria",
+      "date": "2026-06-28T02:00:00.000Z",
+      "round": "Group J",
+      "venue": "Lumen Field, Seattle",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Algeria", "goals": null },
+      "away": { "name": "Austria", "goals": null }
+    },
+    {
+      "id": "2026-06-28-jordan-argentina",
+      "date": "2026-06-28T02:00:00.000Z",
+      "round": "Group J",
+      "venue": "Estadio BBVA, Monterrey",
+      "status": { "short": "NS", "long": "Not started", "elapsed": null },
+      "home": { "name": "Jordan", "goals": null },
+      "away": { "name": "Argentina", "goals": null }
+    }
+  ],
+  "recent": [
+    {
+      "id": "2026-06-25-spain-saudi-arabia",
+      "date": "2026-06-25T23:00:00.000Z",
+      "round": "Group H",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "status": { "short": "FT", "long": "Full time", "elapsed": null },
+      "home": { "name": "Spain", "goals": 4 },
+      "away": { "name": "Saudi Arabia", "goals": 0 }
+    },
+    {
+      "id": "2026-06-25-uruguay-cape-verde",
+      "date": "2026-06-25T23:00:00.000Z",
+      "round": "Group H",
+      "venue": "Children's Mercy Park, Kansas City",
+      "status": { "short": "FT", "long": "Full time", "elapsed": null },
+      "home": { "name": "Uruguay", "goals": 2 },
+      "away": { "name": "Cape Verde", "goals": 2 }
+    },
+    {
+      "id": "2026-06-25-new-zealand-egypt",
+      "date": "2026-06-25T02:00:00.000Z",
+      "round": "Group G",
+      "venue": "BC Place, Vancouver",
+      "status": { "short": "FT", "long": "Full time", "elapsed": null },
+      "home": { "name": "New Zealand", "goals": 1 },
+      "away": { "name": "Egypt", "goals": 3 }
+    },
+    {
+      "id": "2026-06-25-belgium-iran",
+      "date": "2026-06-25T02:00:00.000Z",
+      "round": "Group G",
+      "venue": "Rose Bowl, Pasadena",
+      "status": { "short": "FT", "long": "Full time", "elapsed": null },
+      "home": { "name": "Belgium", "goals": 0 },
+      "away": { "name": "Iran", "goals": 0 }
+    },
+    {
+      "id": "2026-06-24-france-iraq",
+      "date": "2026-06-24T19:00:00.000Z",
+      "round": "Group I",
+      "venue": "Gillette Stadium, Foxborough",
+      "status": { "short": "FT", "long": "Full time", "elapsed": null },
+      "home": { "name": "France", "goals": 3 },
+      "away": { "name": "Iraq", "goals": 0 }
+    },
+    {
+      "id": "2026-06-24-norway-senegal",
+      "date": "2026-06-24T19:00:00.000Z",
+      "round": "Group I",
+      "venue": "BMO Field, Toronto",
+      "status": { "short": "FT", "long": "Full time", "elapsed": null },
+      "home": { "name": "Norway", "goals": 3 },
+      "away": { "name": "Senegal", "goals": 2 }
+    }
+  ],
+  "standings": [
+    [
+      { "rank": 1, "team": { "name": "Egypt" }, "points": 6, "goalsDiff": 4, "played": 2, "won": 2, "drawn": 0, "lost": 0, "goalsFor": 5, "goalsAgainst": 1 },
+      { "rank": 2, "team": { "name": "Belgium" }, "points": 4, "goalsDiff": 1, "played": 2, "won": 1, "drawn": 1, "lost": 0, "goalsFor": 2, "goalsAgainst": 1 },
+      { "rank": 3, "team": { "name": "Iran" }, "points": 1, "goalsDiff": -2, "played": 2, "won": 0, "drawn": 1, "lost": 1, "goalsFor": 0, "goalsAgainst": 2 },
+      { "rank": 4, "team": { "name": "New Zealand" }, "points": 0, "goalsDiff": -3, "played": 2, "won": 0, "drawn": 0, "lost": 2, "goalsFor": 2, "goalsAgainst": 5 }
+    ],
+    [
+      { "rank": 1, "team": { "name": "Spain" }, "points": 6, "goalsDiff": 7, "played": 2, "won": 2, "drawn": 0, "lost": 0, "goalsFor": 8, "goalsAgainst": 1 },
+      { "rank": 2, "team": { "name": "Uruguay" }, "points": 4, "goalsDiff": 3, "played": 2, "won": 1, "drawn": 1, "lost": 0, "goalsFor": 6, "goalsAgainst": 3 },
+      { "rank": 3, "team": { "name": "Cape Verde" }, "points": 1, "goalsDiff": -3, "played": 2, "won": 0, "drawn": 1, "lost": 1, "goalsFor": 3, "goalsAgainst": 6 },
+      { "rank": 4, "team": { "name": "Saudi Arabia" }, "points": 0, "goalsDiff": -7, "played": 2, "won": 0, "drawn": 0, "lost": 2, "goalsFor": 0, "goalsAgainst": 7 }
+    ],
+    [
+      { "rank": 1, "team": { "name": "France" }, "points": 6, "goalsDiff": 5, "played": 2, "won": 2, "drawn": 0, "lost": 0, "goalsFor": 5, "goalsAgainst": 0 },
+      { "rank": 2, "team": { "name": "Norway" }, "points": 6, "goalsDiff": 4, "played": 2, "won": 2, "drawn": 0, "lost": 0, "goalsFor": 7, "goalsAgainst": 3 },
+      { "rank": 3, "team": { "name": "Senegal" }, "points": 0, "goalsDiff": -3, "played": 2, "won": 0, "drawn": 0, "lost": 2, "goalsFor": 2, "goalsAgainst": 5 },
+      { "rank": 4, "team": { "name": "Iraq" }, "points": 0, "goalsDiff": -6, "played": 2, "won": 0, "drawn": 0, "lost": 2, "goalsFor": 0, "goalsAgainst": 6 }
+    ],
+    [
+      { "rank": 1, "team": { "name": "Argentina" }, "points": 6, "goalsDiff": 3, "played": 2, "won": 2, "drawn": 0, "lost": 0, "goalsFor": 3, "goalsAgainst": 0 },
+      { "rank": 2, "team": { "name": "Algeria" }, "points": 3, "goalsDiff": 0, "played": 2, "won": 1, "drawn": 0, "lost": 1, "goalsFor": 2, "goalsAgainst": 2 },
+      { "rank": 3, "team": { "name": "Austria" }, "points": 3, "goalsDiff": 0, "played": 2, "won": 1, "drawn": 0, "lost": 1, "goalsFor": 1, "goalsAgainst": 1 },
+      { "rank": 4, "team": { "name": "Jordan" }, "points": 0, "goalsDiff": -3, "played": 2, "won": 0, "drawn": 0, "lost": 2, "goalsFor": 1, "goalsAgainst": 4 }
+    ]
+  ]
 }
