@@ -1,0 +1,12 @@
+{
+  "status": "missing_key",
+  "provider": "api-football",
+  "leagueId": 1,
+  "season": 2026,
+  "updatedAt": "2026-06-26T12:16:18.193Z",
+  "message": "Missing APIFOOTBALL_KEY. Create an API-Football/API-Sports key, set it on the server, then run this script from cron.",
+  "live": [],
+  "fixtures": [],
+  "recent": [],
+  "standings": []
+}

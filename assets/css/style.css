@@ -791,6 +791,136 @@ blockquote {
   border-bottom: 1px solid var(--color-border-light);
 }
 
+/* World Cup 2026 live center */
+.wc-live-shell {
+  margin-top: var(--space-7);
+}
+
+.wc-live-status {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.wc-live-status > span {
+  color: #DC2626;
+  font-size: 1.15rem;
+}
+
+.wc-live-status.ok > span {
+  color: #16A34A;
+}
+
+.wc-live-status small {
+  display: block;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.wc-feed-note,
+.wc-empty,
+.wc-venue {
+  color: var(--color-text-muted);
+}
+
+.wc-live-section {
+  margin-top: var(--space-7);
+}
+
+.wc-match-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+
+.wc-match-card,
+.wc-table-wrap {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.wc-match-card.is-live {
+  border-color: #DC2626;
+}
+
+.wc-match-meta,
+.wc-scoreline,
+.wc-team {
+  display: flex;
+  align-items: center;
+}
+
+.wc-match-meta {
+  justify-content: space-between;
+  gap: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin-bottom: var(--space-3);
+}
+
+.wc-scoreline {
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.wc-scoreline strong {
+  font-size: 1.35rem;
+  white-space: nowrap;
+}
+
+.wc-team {
+  gap: var(--space-2);
+  min-width: 0;
+  flex: 1;
+}
+
+.wc-team:last-child {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.wc-team img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.wc-team span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wc-standings {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.wc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wc-table th,
+.wc-table td {
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--color-border-light);
+  text-align: start;
+}
+
+.wc-table th {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
 .article-body h3 {
   font-size: clamp(18px, 2.5vw, 22px);
   margin-top: var(--space-6);
