@@ -36,6 +36,11 @@
       verifiedSchedule: 'Verified schedule fallback',
       noVerifiedResults: 'Recent results will appear here only after the live API confirms them.',
       noStats: 'Player and team stats will appear here after the live API is connected.',
+      startedAgo: 'Started {time} ago',
+      minute: '1 min',
+      minutes: '{count} min',
+      hour: '1 hr',
+      hours: '{count} hrs',
       noLive: 'No World Cup matches are live right now.',
       noFixtures: 'Fixtures will appear here once the feed returns them.',
       noStandings: 'Group table will appear here after groups are available.',
@@ -74,6 +79,11 @@
       verifiedSchedule: 'جدول احتياطي موثّق',
       noVerifiedResults: 'ستظهر النتائج الأخيرة فقط بعد تأكيدها من واجهة البيانات المباشرة.',
       noStats: 'ستظهر إحصاءات اللاعبين والمنتخبات بعد ربط واجهة البيانات المباشرة.',
+      startedAgo: 'بدأت قبل {time}',
+      minute: 'دقيقة واحدة',
+      minutes: '{count} دقيقة',
+      hour: 'ساعة واحدة',
+      hours: '{count} ساعات',
       noLive: 'لا توجد مباريات مباشرة في كأس العالم الآن.',
       noFixtures: 'ستظهر المباريات هنا عند توفرها من مصدر البيانات.',
       noStandings: 'سيظهر جدول المجموعات هنا بعد توفر البيانات.',
@@ -296,12 +306,42 @@
     }
   }
 
+  function minutesSinceKickoff(match) {
+    if (!match?.date) return null;
+    const kickoff = new Date(match.date).getTime();
+    if (Number.isNaN(kickoff)) return null;
+    const minutes = Math.floor((Date.now() - kickoff) / 60000);
+    return minutes >= 0 ? minutes : null;
+  }
+
+  function hasKickoffPassed(match) {
+    return minutesSinceKickoff(match) !== null;
+  }
+
+  function relativeDuration(minutes) {
+    if (minutes < 60) {
+      return minutes === 1
+        ? labels.minute
+        : labels.minutes.replace('{count}', String(Math.max(minutes, 0)));
+    }
+    const hours = Math.floor(minutes / 60);
+    return hours === 1
+      ? labels.hour
+      : labels.hours.replace('{count}', String(hours));
+  }
+
+  function startedAgo(match) {
+    const minutes = minutesSinceKickoff(match);
+    if (minutes === null) return null;
+    return labels.startedAgo.replace('{time}', relativeDuration(minutes));
+  }
+
   function statusText(match) {
     const short = match.status?.short || '';
     if (short === 'FT') return labels.ft;
     if (short === 'HT') return labels.ht;
     if (match.status?.elapsed) return `${match.status.elapsed}′`;
-    if (short === 'NS') return match.status?.long || labels.tbd;
+    if (short === 'NS') return startedAgo(match) || match.status?.long || labels.tbd;
     return match.status?.long || formatDate(match.date);
   }
 
@@ -348,9 +388,10 @@
   }
 
   function compactMatch(match, live) {
+    const active = live || hasKickoffPassed(match);
     return `<article class="wc-mini-match${live ? ' is-live' : ''}">
       <div class="wc-mini-code">${escapeHtml(teamCode(match.home))} <span>${score(match) === 'vs' ? 'vs' : score(match)}</span> ${escapeHtml(teamCode(match.away))}</div>
-      <div class="wc-mini-time">${escapeHtml(live ? statusText(match) : compactDate(match.date))}</div>
+      <div class="wc-mini-time">${escapeHtml(active ? statusText(match) : compactDate(match.date))}</div>
       <div class="wc-mini-flags"><span>${escapeHtml(flag(match.home))}</span><span>${escapeHtml(flag(match.away))}</span></div>
     </article>`;
   }
@@ -371,7 +412,8 @@
   }
 
   function matchBoardCard(match, live) {
-    return `<article class="wc-google-match${live ? ' is-live' : ''}">
+    const active = live || hasKickoffPassed(match);
+    return `<article class="wc-google-match${active ? ' is-live' : ''}">
       <div class="wc-google-round">${escapeHtml(match.round || 'World Cup 2026')}</div>
       <div class="wc-google-main">
         <div class="wc-google-teams">
@@ -518,9 +560,19 @@
     `/api/world-cup-2026.json?${cacheBuster}`,
     `https://doyouknow.app/api/world-cup-2026.json?${cacheBuster}`
   ];
+  let loadedData = null;
 
   feedUrls.reduce((promise, url) => promise.catch(() => fetchJson(url)), Promise.reject())
-    .then((data) => compact ? renderCompact(data) : render(data))
+    .then((data) => {
+      loadedData = data;
+      compact ? renderCompact(data) : render(data);
+      if (typeof window !== 'undefined') {
+        window.setInterval(() => {
+          if (!loadedData) return;
+          compact ? renderCompact(loadedData) : render(loadedData);
+        }, 60000);
+      }
+    })
     .catch(() => {
       root.innerHTML = `<p class="wc-empty">${escapeHtml(labels.error)}</p>`;
     });

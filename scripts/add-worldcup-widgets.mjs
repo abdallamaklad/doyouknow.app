@@ -33,8 +33,8 @@ async function updateArticle(lang, slug) {
   if (!html.includes('data-world-cup-live')) {
     html = html.replace(/<\/header>\s*<img class="featured-image"/, `</header>\n${widget}\n<img class="featured-image"`);
   }
-  if (!html.includes('/assets/js/world-cup-live.js?v=20260626-2312')) {
-    html = html.replace('</body>', '<script src="/assets/js/world-cup-live.js?v=20260626-2312" defer></script>\n</body>');
+  if (!html.includes('/assets/js/world-cup-live.js?v=20260626-2322')) {
+    html = html.replace('</body>', '<script src="/assets/js/world-cup-live.js?v=20260626-2322" defer></script>\n</body>');
   }
 
   await writeFile(file, html);
