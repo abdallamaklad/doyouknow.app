@@ -11,6 +11,15 @@ const googleTag = `<!-- Google tag (gtag.js) -->
 
   gtag('config', 'G-6VQZY87LJB');
 </script>`;
+
+function worldCupCompactWidget(lang) {
+  return `<div class="wc-home-widget" data-world-cup-live data-widget="compact" data-lang="${lang}"></div>`;
+}
+
+function ensureWorldCupWidgetScript(html) {
+  if (!html.includes('data-world-cup-live') || html.includes('/assets/js/world-cup-live.js')) return html;
+  return html.replace('</body>', '<script src="/assets/js/world-cup-live.js" defer></script></body>');
+}
 const editorialReview = new Set([
   'en/article/start-business-dubai.html',
   'en/article/uae-corporate-tax.html',
@@ -339,6 +348,13 @@ for (const file of htmlFiles) {
       '<a href="/ar/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>كأس العالم 2026</h4><span>20 مقالاً</span></div></a>\n</div><div class="section-header">\n<h2>أحدث المقالات</h2>'
     );
   }
+  if (relativeFile === 'en/index.html' && !html.includes('data-world-cup-live')) {
+    html = html.replace('</div><div class="section-header">\n<h2>Latest Articles</h2>', `</div>${worldCupCompactWidget('en')}<div class="section-header">\n<h2>Latest Articles</h2>`);
+  }
+  if (relativeFile === 'ar/index.html' && !html.includes('data-world-cup-live')) {
+    html = html.replace('</div><div class="section-header">\n<h2>أحدث المقالات</h2>', `</div>${worldCupCompactWidget('ar')}<div class="section-header">\n<h2>أحدث المقالات</h2>`);
+  }
+  html = ensureWorldCupWidgetScript(html);
   html = normalizeHreflang(html, relativeFile);
   let h1Seen = 0;
   html = html.replace(/<\/?h1(?=[\s>])[^>]*>/g, (tag) => {
@@ -371,11 +387,11 @@ for (const group of categoryGroups) {
     return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
   }).join('');
   const liveCta = group.slug === 'world-cup-2026'
-    ? `<div class="newsletter-cta"><h2>${rtl ? 'نتائج كأس العالم 2026 المباشرة' : 'World Cup 2026 live center'}</h2><p>${rtl ? 'تابع النتائج المباشرة، المباريات القادمة، آخر النتائج، وترتيب المجموعات في صفحة واحدة.' : 'Track live scores, upcoming fixtures, recent results, and group standings in one bilingual hub.'}</p><a class="btn btn-primary" href="/${group.lang}/world-cup-2026-live.html">${rtl ? 'افتح مركز النتائج' : 'Open live center'}</a></div>`
+    ? worldCupCompactWidget(group.lang)
     : '';
   const itemList = articles.filter((a) => !a.noindex).map((article, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://doyouknow.app/${group.lang}/article/${article.slug}.html`, name: article.title }));
   const alternateBlock = hreflangBlock(`${group.lang}/category/${group.slug}.html`, group.lang, canonical);
-  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}</head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p>${liveCta}<div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></div></footer><script src="/assets/js/site.js"></script></body></html>`;
+  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}</head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p>${liveCta}<div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></div></footer><script src="/assets/js/site.js"></script>${group.slug === 'world-cup-2026' ? '<script src="/assets/js/world-cup-live.js" defer></script>' : ''}</body></html>`;
   await writeFile(join(root, group.lang, 'category', `${group.slug}.html`), page);
 }
 

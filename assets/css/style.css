@@ -894,6 +894,12 @@ blockquote {
   flex: 0 0 auto;
 }
 
+.wc-flag {
+  font-size: 1.3rem;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
 .wc-team span {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -919,6 +925,78 @@ blockquote {
 .wc-table th {
   color: var(--color-text-muted);
   font-weight: 600;
+}
+
+.wc-mini-widget {
+  margin: var(--space-6) 0;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.04), rgba(37, 99, 235, 0.06));
+  box-shadow: var(--shadow-sm);
+}
+
+.wc-mini-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.wc-mini-head h2 {
+  margin: var(--space-2) 0 0;
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+}
+
+.wc-mini-head a {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.wc-mini-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.wc-mini-match {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-card);
+}
+
+.wc-mini-match.is-live {
+  border-color: #DC2626;
+}
+
+.wc-mini-line,
+.wc-mini-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.wc-mini-line strong {
+  white-space: nowrap;
+}
+
+.wc-mini-meta {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}
+
+.wc-mini-recent {
+  margin-top: var(--space-4);
+}
+
+.wc-mini-recent summary {
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
 }
 
 .article-body h3 {

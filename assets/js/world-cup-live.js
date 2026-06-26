@@ -5,6 +5,7 @@
   if (!root) return;
 
   const lang = root.dataset.lang || (document.documentElement.lang || 'en').slice(0, 2);
+  const compact = root.dataset.widget === 'compact';
   const rtl = lang === 'ar';
   const labels = {
     en: {
@@ -18,6 +19,7 @@
       upcoming: 'Upcoming fixtures',
       recent: 'Recent results',
       standings: 'Group standings',
+      openLive: 'Open live center',
       noLive: 'No World Cup matches are live right now.',
       noFixtures: 'Fixtures will appear here once the feed returns them.',
       noStandings: 'Standings will appear here after groups are available.',
@@ -39,6 +41,7 @@
       upcoming: 'المباريات القادمة',
       recent: 'آخر النتائج',
       standings: 'ترتيب المجموعات',
+      openLive: 'افتح مركز النتائج',
       noLive: 'لا توجد مباريات مباشرة في كأس العالم الآن.',
       noFixtures: 'ستظهر المباريات هنا عند توفرها من مصدر البيانات.',
       noStandings: 'سيظهر الترتيب هنا بعد توفر المجموعات.',
@@ -69,6 +72,30 @@
     }
   }
 
+  const flagByTeam = {
+    Algeria: '🇩🇿',
+    Argentina: '🇦🇷',
+    Austria: '🇦🇹',
+    Belgium: '🇧🇪',
+    'Cape Verde': '🇨🇻',
+    Colombia: '🇨🇴',
+    Egypt: '🇪🇬',
+    France: '🇫🇷',
+    Iran: '🇮🇷',
+    Iraq: '🇮🇶',
+    Jordan: '🇯🇴',
+    Morocco: '🇲🇦',
+    'New Zealand': '🇳🇿',
+    Norway: '🇳🇴',
+    Portugal: '🇵🇹',
+    Qatar: '🇶🇦',
+    'Saudi Arabia': '🇸🇦',
+    Senegal: '🇸🇳',
+    Spain: '🇪🇸',
+    Tunisia: '🇹🇳',
+    Uruguay: '🇺🇾'
+  };
+
   function score(match) {
     const h = match.home?.goals;
     const a = match.away?.goals;
@@ -85,7 +112,9 @@
 
   function team(team) {
     const logo = team.logo ? `<img src="${escapeHtml(team.logo)}" alt="" loading="lazy">` : '';
-    return `<span class="wc-team">${logo}<span>${escapeHtml(team.name || labels.tbd)}</span></span>`;
+    const name = team.name || labels.tbd;
+    const flag = team.flag || flagByTeam[name] || '🏳️';
+    return `<span class="wc-team">${logo || `<span class="wc-flag" aria-hidden="true">${escapeHtml(flag)}</span>`}<span>${escapeHtml(name)}</span></span>`;
   }
 
   function matchCard(match, live) {
@@ -113,6 +142,27 @@
       </section>`).join('')}</div>`;
   }
 
+  function compactMatch(match, live) {
+    return `<article class="wc-mini-match${live ? ' is-live' : ''}">
+      <div class="wc-mini-line">${team(match.home)}<strong>${escapeHtml(score(match))}</strong>${team(match.away)}</div>
+      <div class="wc-mini-meta"><span>${escapeHtml(match.round || 'World Cup 2026')}</span><span>${escapeHtml(statusText(match))}</span></div>
+    </article>`;
+  }
+
+  function renderCompact(data) {
+    const live = Array.isArray(data.live) ? data.live : [];
+    const upcoming = Array.isArray(data.fixtures) ? data.fixtures.slice(0, live.length ? 2 : 4) : [];
+    const recent = Array.isArray(data.recent) ? data.recent.slice(0, 2) : [];
+    const primary = live.length ? live : upcoming;
+    const heading = live.length ? labels.liveNow : labels.upcoming;
+    const liveHref = rtl ? '/ar/world-cup-2026-live.html' : '/en/world-cup-2026-live.html';
+    root.innerHTML = `<section class="wc-mini-widget">
+      <div class="wc-mini-head"><div><span class="category-badge">World Cup 2026</span><h2>${escapeHtml(heading)}</h2></div><a href="${liveHref}">${escapeHtml(labels.openLive)} →</a></div>
+      <div class="wc-mini-list">${primary.length ? primary.map((item) => compactMatch(item, live.length > 0)).join('') : `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`}</div>
+      ${recent.length ? `<details class="wc-mini-recent"><summary>${escapeHtml(labels.recent)}</summary>${recent.map((item) => compactMatch(item, false)).join('')}</details>` : ''}
+    </section>`;
+  }
+
   function render(data) {
     const ok = data.status === 'ok' || data.status === 'seeded';
     const title = data.status === 'seeded' ? labels.seeded : (data.status === 'ok' ? labels.api : labels.unavailable);
@@ -136,7 +186,7 @@
       if (!response.ok) throw new Error(String(response.status));
       return response.json();
     })
-    .then(render)
+    .then((data) => compact ? renderCompact(data) : render(data))
     .catch(() => {
       root.innerHTML = `<p class="wc-empty">${escapeHtml(labels.error)}</p>`;
     });
