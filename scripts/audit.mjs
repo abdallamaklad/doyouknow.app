@@ -59,6 +59,9 @@ for (const file of htmlFiles) {
     } catch { errors.push(`${rel}: invalid JSON-LD`); }
   }
   if (html.includes('"SearchAction"')) errors.push(`${rel}: SearchAction schema present without a live search page`);
+  if (html.includes('data-world-cup-live')) errors.push(`${rel}: World Cup live widget should stay disabled`);
+  if (html.includes('/assets/js/world-cup-live.js')) errors.push(`${rel}: World Cup live script should stay disabled`);
+  if (html.includes('/world-cup-2026-live.html')) errors.push(`${rel}: links to disabled World Cup live page`);
   if (!html.includes('property="og:image"')) errors.push(`${rel}: missing Open Graph image`);
   if (!html.includes('rel="icon"')) errors.push(`${rel}: missing favicon`);
   const googleTagCount = (html.match(/G-6VQZY87LJB/g) || []).length;

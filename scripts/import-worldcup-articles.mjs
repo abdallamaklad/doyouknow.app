@@ -368,7 +368,6 @@ ${faq ? `<script type="application/ld+json">${JSON.stringify(faq)}</script>` : '
 <span class="read-time">${readTime} ${l.read}</span>
 </div>
 </header>
-<div class="wc-article-widget" data-world-cup-live data-widget="compact" data-lang="${lang}"></div>
 <img class="featured-image" src="${imagePath}" alt="${escapeHtml(imageAlt)}" width="1200" height="675" loading="eager" fetchpriority="high">
 ${headings.length ? `<div class="toc"><h3>${l.contents}</h3><ul>${headings.map((heading) => `<li><a href="#${heading.id}">${escapeHtml(heading.title)}</a></li>`).join('')}</ul></div>` : ''}
 <div class="article-body">
@@ -389,7 +388,6 @@ ${bodySections.map((section) => renderSection(section, lang)).join('\n')}
 </main>
 <footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="/${lang}/">${l.home}</a></div></footer>
 <script src="/assets/js/site.js"></script>
-<script src="/assets/js/world-cup-live.js?v=20260626-2338" defer></script>
 </body>
 </html>
 `;
