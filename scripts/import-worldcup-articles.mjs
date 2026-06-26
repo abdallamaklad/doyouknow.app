@@ -389,7 +389,7 @@ ${bodySections.map((section) => renderSection(section, lang)).join('\n')}
 </main>
 <footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="/${lang}/">${l.home}</a></div></footer>
 <script src="/assets/js/site.js"></script>
-<script src="/assets/js/world-cup-live.js?v=20260626-2322" defer></script>
+<script src="/assets/js/world-cup-live.js?v=20260626-2338" defer></script>
 </body>
 </html>
 `;

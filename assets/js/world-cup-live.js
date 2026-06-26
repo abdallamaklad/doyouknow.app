@@ -443,6 +443,10 @@
     return value === null || value === undefined ? '—' : value;
   }
 
+  function standingNumber(row, key) {
+    return row?.[key] === null || row?.[key] === undefined ? 0 : row[key];
+  }
+
   function renderGoogleTable(groups) {
     if (!groups || !groups.length) return `<p class="wc-empty">${escapeHtml(labels.noStandings)}</p>`;
     return groups.map((group, index) => {
@@ -452,7 +456,7 @@
       <h3>${escapeHtml(rtl ? groupName.replace('Group', 'المجموعة') : groupName)}</h3>
       <div class="wc-google-table-scroll"><table class="wc-google-table">
         <thead><tr><th>${rtl ? 'المنتخب' : 'Team'}</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>Pts</th><th>GF</th><th>GA</th><th>GD</th></tr></thead>
-        <tbody>${rows.map((row) => `<tr><td><span>${row.rank ?? ''}</span>${team(row.team)}</td><td>${cell(row.played)}</td><td>${cell(row.won)}</td><td>${cell(row.drawn)}</td><td>${cell(row.lost)}</td><td><strong>${cell(row.points)}</strong></td><td>${cell(row.goalsFor)}</td><td>${cell(row.goalsAgainst)}</td><td>${cell(row.goalsDiff)}</td></tr>`).join('')}</tbody>
+        <tbody>${rows.map((row) => `<tr><td><span>${row.rank ?? ''}</span>${team(row.team)}</td><td>${standingNumber(row, 'played')}</td><td>${standingNumber(row, 'won')}</td><td>${standingNumber(row, 'drawn')}</td><td>${standingNumber(row, 'lost')}</td><td><strong>${standingNumber(row, 'points')}</strong></td><td>${standingNumber(row, 'goalsFor')}</td><td>${standingNumber(row, 'goalsAgainst')}</td><td>${standingNumber(row, 'goalsDiff')}</td></tr>`).join('')}</tbody>
       </table></div>
     </section>`;
     }).join('');
