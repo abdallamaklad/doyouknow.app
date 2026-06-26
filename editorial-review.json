@@ -1,6 +1,6 @@
 {
-  "policy": "Pages listed here are accessible but set to noindex,follow and excluded from the sitemap until reviewed against current primary sources.",
-  "reviewedThrough": "2026-06-21",
+  "policy": "Pages listed here are accessible but set to noindex,follow and excluded from the sitemap until reviewed against current primary sources. Evergreen lifestyle articles with usable structure and sources were released for indexing on 2026-06-26.",
+  "reviewedThrough": "2026-06-26",
   "pages": {
     "government-legal-finance": [
       "/en/article/start-business-dubai.html",
@@ -14,11 +14,6 @@
       "/ar/article/saudi-health-insurance.html"
     ],
     "health-religious-travel": [
-      "/en/article/best-beaches-dubai.html",
-      "/en/article/best-restaurants-dubai.html",
-      "/en/article/expo-city-dubai.html",
-      "/en/article/save-money-dubai.html",
-      "/ar/article/best-restaurants-riyadh.html",
       "/ar/article/hajj-guide.html",
       "/ar/article/ramadan-health-guide.html",
       "/ar/article/riyadh-season.html",

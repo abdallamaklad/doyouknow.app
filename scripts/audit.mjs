@@ -16,9 +16,11 @@ const htmlFiles = (await walk(root)).filter((file) => file.endsWith('.html'));
 const errors = [];
 const canonicals = new Map();
 const noindexCanonicals = [];
+const indexableCanonicals = new Set();
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
   const rel = file.slice(root.length);
+  const isNoindex = html.includes('name="robots" content="noindex');
   for (const required of ['<html lang=', '<title>', 'name="description"', 'rel="canonical"', '<h1']) {
     if (!html.includes(required)) errors.push(`${rel}: missing ${required}`);
   }
@@ -30,14 +32,33 @@ for (const file of htmlFiles) {
   if (description.length < 40 || description.length > 180) errors.push(`${rel}: description length ${description.length} outside 40–180`);
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
   if (canonical && !canonical.startsWith('https://doyouknow.app/')) errors.push(`${rel}: canonical must be absolute`);
-  if (canonical && !html.includes('name="robots" content="noindex')) {
+  if (canonical && !isNoindex) {
     if (canonicals.has(canonical)) errors.push(`${rel}: duplicate canonical also used by ${canonicals.get(canonical)}`);
     canonicals.set(canonical, rel);
+    if (!rel.endsWith('404.html')) indexableCanonicals.add(canonical);
   }
-  if (canonical && rel !== 'index.html' && html.includes('name="robots" content="noindex')) noindexCanonicals.push(canonical);
+  if (canonical && rel !== 'index.html' && isNoindex) noindexCanonicals.push(canonical);
+  if (!isNoindex) {
+    const hreflangs = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)" ?\/?>/g)];
+    const language = /<html[^>]*\blang="ar"/.test(html) ? 'ar' : 'en';
+    if (!hreflangs.some(([, hreflang, href]) => hreflang === language && href === canonical)) {
+      errors.push(`${rel}: missing self-referencing hreflang`);
+    }
+    if (!hreflangs.some(([, hreflang]) => hreflang === 'x-default')) {
+      errors.push(`${rel}: missing x-default hreflang`);
+    }
+    for (const [, hreflang, href] of hreflangs) {
+      if (!['en', 'ar', 'x-default'].includes(hreflang)) errors.push(`${rel}: unsupported hreflang ${hreflang}`);
+      if (!href.startsWith('https://doyouknow.app/')) errors.push(`${rel}: hreflang must be absolute ${href}`);
+    }
+  }
   for (const json of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
-    try { JSON.parse(json[1]); } catch { errors.push(`${rel}: invalid JSON-LD`); }
+    try {
+      const data = JSON.parse(json[1]);
+      if (JSON.stringify(data).includes('/category/General.html')) errors.push(`${rel}: JSON-LD references legacy General category`);
+    } catch { errors.push(`${rel}: invalid JSON-LD`); }
   }
+  if (html.includes('"SearchAction"')) errors.push(`${rel}: SearchAction schema present without a live search page`);
   if (!html.includes('property="og:image"')) errors.push(`${rel}: missing Open Graph image`);
   if (!html.includes('rel="icon"')) errors.push(`${rel}: missing favicon`);
   const googleTagCount = (html.match(/G-6VQZY87LJB/g) || []).length;
@@ -46,6 +67,7 @@ for (const file of htmlFiles) {
   for (const match of html.matchAll(/href="([^"#]+)"/g)) {
     const href = match[1];
     if (/^(https?:|mailto:|tel:)/.test(href)) continue;
+    if (/^\/(?:en|ar)\/category\/General\.html/.test(href)) errors.push(`${rel}: links to legacy General category ${href}`);
     const clean = href.split('?')[0];
     const target = clean.startsWith('/') ? join(root, clean) : join(dirname(file), clean);
     try { await access(target.endsWith('/') ? join(target, 'index.html') : target); }
@@ -53,8 +75,18 @@ for (const file of htmlFiles) {
   }
 }
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const sitemapUrlSet = new Set(sitemapUrls);
+if (sitemapUrls.length !== sitemapUrlSet.size) errors.push('sitemap.xml: duplicate URLs present');
+for (const url of sitemapUrls) {
+  if (!indexableCanonicals.has(url)) errors.push(`sitemap.xml: non-indexable or unknown URL included ${url}`);
+  if (url.includes('/category/General.html')) errors.push(`sitemap.xml: legacy General category included ${url}`);
+}
+for (const canonical of indexableCanonicals) {
+  if (!sitemapUrlSet.has(canonical)) errors.push(`sitemap.xml: missing indexable canonical ${canonical}`);
+}
 for (const canonical of noindexCanonicals) {
-  if (sitemap.includes(`<loc>${canonical}</loc>`)) errors.push(`sitemap.xml: noindex URL included ${canonical}`);
+  if (!indexableCanonicals.has(canonical) && sitemap.includes(`<loc>${canonical}</loc>`)) errors.push(`sitemap.xml: noindex URL included ${canonical}`);
 }
 if (errors.length) {
   console.error(errors.slice(0, 100).join('\n'));
