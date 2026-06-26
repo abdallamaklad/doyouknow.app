@@ -20,6 +20,14 @@
       recent: 'Recent results',
       standings: 'Group standings',
       openLive: 'Open live center',
+      overview: 'Overview',
+      matches: 'Matches',
+      table: 'Table',
+      knockout: 'Knockout',
+      stats: 'Stats',
+      players: 'Players',
+      moreMatches: 'More matches',
+      allTimes: 'All times are shown in your local time',
       noLive: 'No World Cup matches are live right now.',
       noFixtures: 'Fixtures will appear here once the feed returns them.',
       noStandings: 'Standings will appear here after groups are available.',
@@ -42,6 +50,14 @@
       recent: 'آخر النتائج',
       standings: 'ترتيب المجموعات',
       openLive: 'افتح مركز النتائج',
+      overview: 'نظرة عامة',
+      matches: 'المباريات',
+      table: 'الترتيب',
+      knockout: 'الأدوار الإقصائية',
+      stats: 'الإحصاءات',
+      players: 'اللاعبون',
+      moreMatches: 'مزيد من المباريات',
+      allTimes: 'كل الأوقات حسب توقيت جهازك',
       noLive: 'لا توجد مباريات مباشرة في كأس العالم الآن.',
       noFixtures: 'ستظهر المباريات هنا عند توفرها من مصدر البيانات.',
       noStandings: 'سيظهر الترتيب هنا بعد توفر المجموعات.',
@@ -96,6 +112,30 @@
     Uruguay: '🇺🇾'
   };
 
+  const codeByTeam = {
+    Algeria: 'ALG',
+    Argentina: 'ARG',
+    Austria: 'AUT',
+    Belgium: 'BEL',
+    'Cape Verde': 'CPV',
+    Colombia: 'COL',
+    Egypt: 'EGY',
+    France: 'FRA',
+    Iran: 'IRN',
+    Iraq: 'IRQ',
+    Jordan: 'JOR',
+    Morocco: 'MAR',
+    'New Zealand': 'NZL',
+    Norway: 'NOR',
+    Portugal: 'POR',
+    Qatar: 'QAT',
+    'Saudi Arabia': 'KSA',
+    Senegal: 'SEN',
+    Spain: 'ESP',
+    Tunisia: 'TUN',
+    Uruguay: 'URU'
+  };
+
   const arabicTeamName = {
     Algeria: 'الجزائر',
     Argentina: 'الأرجنتين',
@@ -130,6 +170,20 @@
     return h === null || h === undefined || a === null || a === undefined ? 'vs' : `${h}–${a}`;
   }
 
+  function compactDate(value) {
+    if (!value) return labels.tbd;
+    try {
+      const date = new Date(value);
+      return new Intl.DateTimeFormat(rtl ? 'ar' : 'en', {
+        weekday: 'short',
+        hour: 'numeric',
+        minute: '2-digit'
+      }).format(date);
+    } catch {
+      return value;
+    }
+  }
+
   function statusText(match) {
     const short = match.status?.short || '';
     if (short === 'FT') return labels.ft;
@@ -143,6 +197,16 @@
     const name = team.name || labels.tbd;
     const flag = team.flag || flagByTeam[name] || '🏳️';
     return `<span class="wc-team">${logo || `<span class="wc-flag" aria-hidden="true">${escapeHtml(flag)}</span>`}<span>${escapeHtml(teamName(name))}</span></span>`;
+  }
+
+  function flag(team) {
+    const name = team?.name || '';
+    return team?.flag || flagByTeam[name] || '🏳️';
+  }
+
+  function teamCode(team) {
+    const name = team?.name || '';
+    return codeByTeam[name] || (name ? name.slice(0, 3).toUpperCase() : 'TBD');
   }
 
   function matchCard(match, live) {
@@ -172,8 +236,9 @@
 
   function compactMatch(match, live) {
     return `<article class="wc-mini-match${live ? ' is-live' : ''}">
-      <div class="wc-mini-line">${team(match.home)}<strong>${escapeHtml(score(match))}</strong>${team(match.away)}</div>
-      <div class="wc-mini-meta"><span>${escapeHtml(match.round || 'World Cup 2026')}</span><span>${escapeHtml(statusText(match))}</span></div>
+      <div class="wc-mini-code">${escapeHtml(teamCode(match.home))} <span>${score(match) === 'vs' ? 'vs' : score(match)}</span> ${escapeHtml(teamCode(match.away))}</div>
+      <div class="wc-mini-time">${escapeHtml(live ? statusText(match) : compactDate(match.date))}</div>
+      <div class="wc-mini-flags"><span>${escapeHtml(flag(match.home))}</span><span>${escapeHtml(flag(match.away))}</span></div>
     </article>`;
   }
 
@@ -186,26 +251,81 @@
     const liveHref = rtl ? '/ar/world-cup-2026-live.html' : '/en/world-cup-2026-live.html';
     root.innerHTML = `<section class="wc-mini-widget">
       <div class="wc-mini-head"><div><span class="category-badge">World Cup 2026</span><h2>${escapeHtml(heading)}</h2></div><a href="${liveHref}">${escapeHtml(labels.openLive)} →</a></div>
-      <div class="wc-mini-list">${primary.length ? primary.map((item) => compactMatch(item, live.length > 0)).join('') : `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`}</div>
+      <div class="wc-mini-list" role="list">${primary.length ? primary.map((item) => compactMatch(item, live.length > 0)).join('') : `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`}</div>
       ${recent.length ? `<details class="wc-mini-recent"><summary>${escapeHtml(labels.recent)}</summary>${recent.map((item) => compactMatch(item, false)).join('')}</details>` : ''}
     </section>`;
+  }
+
+  function matchBoardCard(match, live) {
+    return `<article class="wc-google-match${live ? ' is-live' : ''}">
+      <div class="wc-google-round">${escapeHtml(match.round || 'World Cup 2026')}</div>
+      <div class="wc-google-main">
+        <div class="wc-google-teams">
+          <div><span>${escapeHtml(flag(match.home))}</span><strong>${escapeHtml(teamName(match.home?.name || labels.tbd))}</strong></div>
+          <div><span>${escapeHtml(flag(match.away))}</span><strong>${escapeHtml(teamName(match.away?.name || labels.tbd))}</strong></div>
+        </div>
+        <div class="wc-google-divider" aria-hidden="true"></div>
+        <div class="wc-google-time"><strong>${escapeHtml(statusText(match))}</strong><span>${escapeHtml(compactDate(match.date))}</span></div>
+      </div>
+    </article>`;
+  }
+
+  function renderTabs(active) {
+    const tabs = [
+      ['overview', labels.overview],
+      ['matches', labels.matches],
+      ['table', labels.table],
+      ['knockout', labels.knockout],
+      ['stats', labels.stats],
+      ['players', labels.players]
+    ];
+    return `<nav class="wc-google-tabs" aria-label="World Cup sections">${tabs.map(([id, label]) => `<a class="${active === id ? 'active' : ''}" href="#wc-${id}">${escapeHtml(label)}</a>`).join('')}</nav>`;
+  }
+
+  function renderGoogleTable(groups) {
+    if (!groups || !groups.length) return `<p class="wc-empty">${escapeHtml(labels.noStandings)}</p>`;
+    return groups.map((group, index) => `<section class="wc-google-group">
+      <h3>${rtl ? 'المجموعة' : 'Group'} ${String.fromCharCode(65 + index)}</h3>
+      <div class="wc-google-table-scroll"><table class="wc-google-table">
+        <thead><tr><th>${rtl ? 'المنتخب' : 'Team'}</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>Pts</th><th>GF</th><th>GA</th><th>GD</th></tr></thead>
+        <tbody>${group.map((row) => `<tr><td><span>${row.rank ?? ''}</span>${team(row.team)}</td><td>${row.played ?? 0}</td><td>${row.won ?? 0}</td><td>${row.drawn ?? 0}</td><td>${row.lost ?? 0}</td><td><strong>${row.points ?? 0}</strong></td><td>${row.goalsFor ?? 0}</td><td>${row.goalsAgainst ?? 0}</td><td>${row.goalsDiff ?? 0}</td></tr>`).join('')}</tbody>
+      </table></div>
+    </section>`).join('');
   }
 
   function render(data) {
     const ok = data.status === 'ok' || data.status === 'seeded';
     const title = data.status === 'seeded' ? labels.seeded : (data.status === 'ok' ? labels.api : labels.unavailable);
     const updated = data.updatedAt ? `${labels.updated}: ${formatDate(data.updatedAt)}` : '';
-    root.innerHTML = `
-      <div class="wc-live-status ${ok ? 'ok' : 'pending'}">
-        <span>${ok ? '●' : '○'}</span>
-        <div><strong>${escapeHtml(title)}</strong>${updated ? `<small>${escapeHtml(updated)}</small>` : ''}</div>
-      </div>
-      ${!ok && data.message ? `<p class="wc-feed-note">${escapeHtml(data.message)}</p>` : ''}
-      <section class="wc-live-section"><h2>${labels.liveNow}</h2>${matchList(data.live, labels.noLive, true)}</section>
-      <section class="wc-live-section"><h2>${labels.upcoming}</h2>${matchList(data.fixtures, labels.noFixtures, false)}</section>
-      <section class="wc-live-section"><h2>${labels.recent}</h2>${matchList(data.recent, labels.noFixtures, false)}</section>
-      <section class="wc-live-section"><h2>${labels.standings}</h2>${standings(data.standings)}</section>
-    `;
+    const live = Array.isArray(data.live) ? data.live : [];
+    const fixtures = Array.isArray(data.fixtures) ? data.fixtures : [];
+    const recent = Array.isArray(data.recent) ? data.recent : [];
+    const featuredMatches = live.length ? live : fixtures.slice(0, 6);
+    root.innerHTML = `<section class="wc-google-board">
+      <header class="wc-google-hero">
+        <div>
+          <p>FIFA World Cup 2026™</p>
+          <h1>${rtl ? 'كأس العالم 2026' : 'FIFA World Cup 2026™'}</h1>
+        </div>
+        <span class="${ok ? 'ok' : 'pending'}">${ok ? '●' : '○'} ${escapeHtml(title)}</span>
+      </header>
+      ${renderTabs('overview')}
+      <small class="wc-google-updated">${escapeHtml(updated)}</small>
+      <section id="wc-matches" class="wc-google-section">
+        <h2>${escapeHtml(labels.matches)}</h2>
+        <div class="wc-google-match-list">${featuredMatches.length ? featuredMatches.map((item) => matchBoardCard(item, live.length > 0)).join('') : `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`}</div>
+        <a class="wc-google-more" href="#wc-table">${escapeHtml(labels.moreMatches)} ›</a>
+        <p class="wc-google-note">${escapeHtml(labels.allTimes)}</p>
+      </section>
+      ${recent.length ? `<section id="wc-overview" class="wc-google-section"><h2>${escapeHtml(labels.recent)}</h2><div class="wc-google-match-list recent">${recent.slice(0, 4).map((item) => matchBoardCard(item, false)).join('')}</div></section>` : ''}
+      <section id="wc-table" class="wc-google-section">
+        <h2>${escapeHtml(labels.table)}</h2>
+        <div class="wc-google-subtabs"><span class="active">${rtl ? 'دور المجموعات' : 'Group Stage'}</span><span>${rtl ? 'الأدوار الإقصائية' : 'Knockout stage'}</span></div>
+        ${renderGoogleTable(data.standings)}
+      </section>
+      <section id="wc-knockout" class="wc-google-section"><h2>${escapeHtml(labels.knockout)}</h2>${matchList(fixtures.slice(0, 4), labels.noFixtures, false)}</section>
+      <section id="wc-stats" class="wc-google-section"><h2>${escapeHtml(labels.stats)}</h2><p class="wc-empty">${rtl ? 'ستظهر إحصاءات اللاعبين عند ربط مصدر البيانات المباشر.' : 'Player stats will appear when the live data source is connected.'}</p></section>
+    </section>`;
   }
 
   root.innerHTML = `<p class="wc-empty">${escapeHtml(labels.loading)}</p>`;
