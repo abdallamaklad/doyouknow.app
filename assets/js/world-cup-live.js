@@ -27,10 +27,16 @@
       stats: 'Stats',
       players: 'Players',
       moreMatches: 'More matches',
-      allTimes: 'All times are shown in your local time',
+      lessMatches: 'Show fewer',
+      groupStage: 'Group Stage',
+      knockoutStage: 'Knockout stage',
+      allTimes: 'Times shown in your local timezone',
+      verifiedSchedule: 'Verified schedule fallback',
+      noVerifiedResults: 'Recent results will appear here only after the live API confirms them.',
+      noStats: 'Player and team stats will appear here after the live API is connected.',
       noLive: 'No World Cup matches are live right now.',
       noFixtures: 'Fixtures will appear here once the feed returns them.',
-      noStandings: 'Standings will appear here after groups are available.',
+      noStandings: 'Group table will appear here after groups are available.',
       ht: 'HT',
       ft: 'FT',
       tbd: 'TBD',
@@ -57,10 +63,16 @@
       stats: 'الإحصاءات',
       players: 'اللاعبون',
       moreMatches: 'مزيد من المباريات',
-      allTimes: 'كل الأوقات حسب توقيت جهازك',
+      lessMatches: 'عرض أقل',
+      groupStage: 'دور المجموعات',
+      knockoutStage: 'الأدوار الإقصائية',
+      allTimes: 'الأوقات معروضة حسب توقيت جهازك المحلي',
+      verifiedSchedule: 'جدول احتياطي موثّق',
+      noVerifiedResults: 'ستظهر النتائج الأخيرة فقط بعد تأكيدها من واجهة البيانات المباشرة.',
+      noStats: 'ستظهر إحصاءات اللاعبين والمنتخبات بعد ربط واجهة البيانات المباشرة.',
       noLive: 'لا توجد مباريات مباشرة في كأس العالم الآن.',
       noFixtures: 'ستظهر المباريات هنا عند توفرها من مصدر البيانات.',
-      noStandings: 'سيظهر الترتيب هنا بعد توفر المجموعات.',
+      noStandings: 'سيظهر جدول المجموعات هنا بعد توفر البيانات.',
       ht: 'استراحة',
       ft: 'نهاية',
       tbd: 'يُحدد لاحقًا',
@@ -88,76 +100,170 @@
     }
   }
 
+  function timeZoneName() {
+    try {
+      return Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+    } catch {
+      return '';
+    }
+  }
+
+  function timeZoneNote() {
+    const zone = timeZoneName();
+    return zone ? `${labels.allTimes}: ${zone}` : labels.allTimes;
+  }
+
   const flagByTeam = {
     Algeria: '🇩🇿',
     Argentina: '🇦🇷',
     Austria: '🇦🇹',
+    Australia: '🇦🇺',
     Belgium: '🇧🇪',
+    'Bosnia and Herzegovina': '🇧🇦',
+    Brazil: '🇧🇷',
+    Canada: '🇨🇦',
     'Cape Verde': '🇨🇻',
     Colombia: '🇨🇴',
+    'Congo DR': '🇨🇩',
+    Croatia: '🇭🇷',
+    Curaçao: '🇨🇼',
+    Czechia: '🇨🇿',
+    Ecuador: '🇪🇨',
     Egypt: '🇪🇬',
+    England: '🏴',
     France: '🇫🇷',
+    Germany: '🇩🇪',
+    Ghana: '🇬🇭',
+    Haiti: '🇭🇹',
     Iran: '🇮🇷',
     Iraq: '🇮🇶',
+    'Ivory Coast': '🇨🇮',
+    Japan: '🇯🇵',
     Jordan: '🇯🇴',
+    Mexico: '🇲🇽',
     Morocco: '🇲🇦',
+    Netherlands: '🇳🇱',
     'New Zealand': '🇳🇿',
     Norway: '🇳🇴',
+    Panama: '🇵🇦',
+    Paraguay: '🇵🇾',
     Portugal: '🇵🇹',
     Qatar: '🇶🇦',
     'Saudi Arabia': '🇸🇦',
+    Scotland: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
     Senegal: '🇸🇳',
+    'South Africa': '🇿🇦',
+    'South Korea': '🇰🇷',
     Spain: '🇪🇸',
+    Switzerland: '🇨🇭',
     Tunisia: '🇹🇳',
-    Uruguay: '🇺🇾'
+    Türkiye: '🇹🇷',
+    Ukraine: '🇺🇦',
+    Uruguay: '🇺🇾',
+    USA: '🇺🇸',
+    Uzbekistan: '🇺🇿'
   };
 
   const codeByTeam = {
     Algeria: 'ALG',
     Argentina: 'ARG',
     Austria: 'AUT',
+    Australia: 'AUS',
     Belgium: 'BEL',
+    'Bosnia and Herzegovina': 'BIH',
+    Brazil: 'BRA',
+    Canada: 'CAN',
     'Cape Verde': 'CPV',
     Colombia: 'COL',
+    'Congo DR': 'COD',
+    Croatia: 'CRO',
+    Curaçao: 'CUW',
+    Czechia: 'CZE',
+    Ecuador: 'ECU',
     Egypt: 'EGY',
+    England: 'ENG',
     France: 'FRA',
+    Germany: 'GER',
+    Ghana: 'GHA',
+    Haiti: 'HAI',
     Iran: 'IRN',
     Iraq: 'IRQ',
+    'Ivory Coast': 'CIV',
+    Japan: 'JPN',
     Jordan: 'JOR',
+    Mexico: 'MEX',
     Morocco: 'MAR',
+    Netherlands: 'NED',
     'New Zealand': 'NZL',
     Norway: 'NOR',
+    Panama: 'PAN',
+    Paraguay: 'PAR',
     Portugal: 'POR',
     Qatar: 'QAT',
     'Saudi Arabia': 'KSA',
+    Scotland: 'SCO',
     Senegal: 'SEN',
+    'South Africa': 'RSA',
+    'South Korea': 'KOR',
     Spain: 'ESP',
+    Switzerland: 'SUI',
     Tunisia: 'TUN',
-    Uruguay: 'URU'
+    Türkiye: 'TUR',
+    Ukraine: 'UKR',
+    Uruguay: 'URU',
+    USA: 'USA',
+    Uzbekistan: 'UZB'
   };
 
   const arabicTeamName = {
     Algeria: 'الجزائر',
     Argentina: 'الأرجنتين',
     Austria: 'النمسا',
+    Australia: 'أستراليا',
     Belgium: 'بلجيكا',
+    'Bosnia and Herzegovina': 'البوسنة والهرسك',
+    Brazil: 'البرازيل',
+    Canada: 'كندا',
     'Cape Verde': 'الرأس الأخضر',
     Colombia: 'كولومبيا',
+    'Congo DR': 'الكونغو الديمقراطية',
+    Croatia: 'كرواتيا',
+    Curaçao: 'كوراساو',
+    Czechia: 'التشيك',
+    Ecuador: 'الإكوادور',
     Egypt: 'مصر',
+    England: 'إنجلترا',
     France: 'فرنسا',
+    Germany: 'ألمانيا',
+    Ghana: 'غانا',
+    Haiti: 'هايتي',
     Iran: 'إيران',
     Iraq: 'العراق',
+    'Ivory Coast': 'كوت ديفوار',
+    Japan: 'اليابان',
     Jordan: 'الأردن',
+    Mexico: 'المكسيك',
     Morocco: 'المغرب',
+    Netherlands: 'هولندا',
     'New Zealand': 'نيوزيلندا',
     Norway: 'النرويج',
+    Panama: 'بنما',
+    Paraguay: 'باراغواي',
     Portugal: 'البرتغال',
     Qatar: 'قطر',
     'Saudi Arabia': 'السعودية',
+    Scotland: 'اسكتلندا',
     Senegal: 'السنغال',
+    'South Africa': 'جنوب أفريقيا',
+    'South Korea': 'كوريا الجنوبية',
     Spain: 'إسبانيا',
+    Switzerland: 'سويسرا',
     Tunisia: 'تونس',
-    Uruguay: 'أوروغواي'
+    Türkiye: 'تركيا',
+    Ukraine: 'أوكرانيا',
+    Uruguay: 'أوروغواي',
+    USA: 'الولايات المتحدة',
+    Uzbekistan: 'أوزبكستان'
   };
 
   function teamName(name) {
@@ -176,6 +282,8 @@
       const date = new Date(value);
       return new Intl.DateTimeFormat(rtl ? 'ar' : 'en', {
         weekday: 'short',
+        month: 'short',
+        day: 'numeric',
         hour: 'numeric',
         minute: '2-digit'
       }).format(date);
@@ -189,6 +297,7 @@
     if (short === 'FT') return labels.ft;
     if (short === 'HT') return labels.ht;
     if (match.status?.elapsed) return `${match.status.elapsed}′`;
+    if (short === 'NS') return match.status?.long || labels.tbd;
     return match.status?.long || formatDate(match.date);
   }
 
@@ -245,13 +354,14 @@
   function renderCompact(data) {
     const live = Array.isArray(data.live) ? data.live : [];
     const upcoming = Array.isArray(data.fixtures) ? data.fixtures.slice(0, live.length ? 2 : 4) : [];
-    const recent = Array.isArray(data.recent) ? data.recent.slice(0, 2) : [];
+    const recent = data.status === 'ok' && Array.isArray(data.recent) ? data.recent.slice(0, 2) : [];
     const primary = live.length ? live : upcoming;
     const heading = live.length ? labels.liveNow : labels.upcoming;
     const liveHref = rtl ? '/ar/world-cup-2026-live.html' : '/en/world-cup-2026-live.html';
     root.innerHTML = `<section class="wc-mini-widget">
       <div class="wc-mini-head"><div><span class="category-badge">World Cup 2026</span><h2>${escapeHtml(heading)}</h2></div><a href="${liveHref}">${escapeHtml(labels.openLive)} →</a></div>
       <div class="wc-mini-list" role="list">${primary.length ? primary.map((item) => compactMatch(item, live.length > 0)).join('') : `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`}</div>
+      <p class="wc-mini-zone">${escapeHtml(timeZoneNote())}</p>
       ${recent.length ? `<details class="wc-mini-recent"><summary>${escapeHtml(labels.recent)}</summary>${recent.map((item) => compactMatch(item, false)).join('')}</details>` : ''}
     </section>`;
   }
@@ -270,37 +380,71 @@
     </article>`;
   }
 
-  function renderTabs(active) {
+  function renderTabs(active, options = {}) {
     const tabs = [
       ['overview', labels.overview],
       ['matches', labels.matches],
       ['table', labels.table],
-      ['knockout', labels.knockout],
+      ['knockout', labels.knockout]
+    ].concat(options.hasStats ? [
       ['stats', labels.stats],
       ['players', labels.players]
-    ];
+    ] : []);
     return `<nav class="wc-google-tabs" aria-label="World Cup sections">${tabs.map(([id, label]) => `<a class="${active === id ? 'active' : ''}" href="#wc-${id}">${escapeHtml(label)}</a>`).join('')}</nav>`;
+  }
+
+  function cell(value) {
+    return value === null || value === undefined ? '—' : value;
   }
 
   function renderGoogleTable(groups) {
     if (!groups || !groups.length) return `<p class="wc-empty">${escapeHtml(labels.noStandings)}</p>`;
-    return groups.map((group, index) => `<section class="wc-google-group">
-      <h3>${rtl ? 'المجموعة' : 'Group'} ${String.fromCharCode(65 + index)}</h3>
+    return groups.map((group, index) => {
+      const rows = Array.isArray(group) ? group : (group.rows || []);
+      const groupName = group.name || `${rtl ? 'المجموعة' : 'Group'} ${String.fromCharCode(65 + index)}`;
+      return `<section class="wc-google-group">
+      <h3>${escapeHtml(rtl ? groupName.replace('Group', 'المجموعة') : groupName)}</h3>
       <div class="wc-google-table-scroll"><table class="wc-google-table">
         <thead><tr><th>${rtl ? 'المنتخب' : 'Team'}</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>Pts</th><th>GF</th><th>GA</th><th>GD</th></tr></thead>
-        <tbody>${group.map((row) => `<tr><td><span>${row.rank ?? ''}</span>${team(row.team)}</td><td>${row.played ?? 0}</td><td>${row.won ?? 0}</td><td>${row.drawn ?? 0}</td><td>${row.lost ?? 0}</td><td><strong>${row.points ?? 0}</strong></td><td>${row.goalsFor ?? 0}</td><td>${row.goalsAgainst ?? 0}</td><td>${row.goalsDiff ?? 0}</td></tr>`).join('')}</tbody>
+        <tbody>${rows.map((row) => `<tr><td><span>${row.rank ?? ''}</span>${team(row.team)}</td><td>${cell(row.played)}</td><td>${cell(row.won)}</td><td>${cell(row.drawn)}</td><td>${cell(row.lost)}</td><td><strong>${cell(row.points)}</strong></td><td>${cell(row.goalsFor)}</td><td>${cell(row.goalsAgainst)}</td><td>${cell(row.goalsDiff)}</td></tr>`).join('')}</tbody>
       </table></div>
-    </section>`).join('');
+    </section>`;
+    }).join('');
+  }
+
+  function renderStats(stats) {
+    if (!stats) return '';
+    const players = Array.isArray(stats.players) ? stats.players : [];
+    if (!players.length) return '';
+    return `<section id="wc-stats" class="wc-google-section"><h2>${escapeHtml(labels.stats)}</h2><div class="wc-google-table-scroll"><table class="wc-google-table">
+      <thead><tr><th>${rtl ? 'اللاعب' : 'Player'}</th><th>${rtl ? 'المنتخب' : 'Team'}</th><th>${rtl ? 'الأهداف' : 'Goals'}</th></tr></thead>
+      <tbody>${players.map((player) => `<tr><td>${escapeHtml(player.name)}</td><td>${escapeHtml(teamName(player.team || ''))}</td><td><strong>${cell(player.goals)}</strong></td></tr>`).join('')}</tbody>
+    </table></div></section>`;
+  }
+
+  function bindMoreMatches() {
+    const button = root.querySelector('[data-wc-more]');
+    if (!button) return;
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      root.querySelectorAll('[data-wc-extra]').forEach((node) => {
+        node.hidden = expanded;
+      });
+      button.setAttribute('aria-expanded', String(!expanded));
+      button.textContent = expanded ? `${labels.moreMatches} ›` : `${labels.lessMatches} ↑`;
+    });
   }
 
   function render(data) {
     const ok = data.status === 'ok' || data.status === 'seeded';
-    const title = data.status === 'seeded' ? labels.seeded : (data.status === 'ok' ? labels.api : labels.unavailable);
+    const title = data.status === 'seeded' ? labels.verifiedSchedule : (data.status === 'ok' ? labels.api : labels.unavailable);
     const updated = data.updatedAt ? `${labels.updated}: ${formatDate(data.updatedAt)}` : '';
     const live = Array.isArray(data.live) ? data.live : [];
     const fixtures = Array.isArray(data.fixtures) ? data.fixtures : [];
-    const recent = Array.isArray(data.recent) ? data.recent : [];
+    const recent = data.status === 'ok' && Array.isArray(data.recent) ? data.recent : [];
+    const hasStats = Boolean(data.stats && Array.isArray(data.stats.players) && data.stats.players.length);
     const featuredMatches = live.length ? live : fixtures.slice(0, 6);
+    const extraMatches = live.length ? [] : fixtures.slice(6);
     root.innerHTML = `<section class="wc-google-board">
       <header class="wc-google-hero">
         <div>
@@ -309,23 +453,24 @@
         </div>
         <span class="${ok ? 'ok' : 'pending'}">${ok ? '●' : '○'} ${escapeHtml(title)}</span>
       </header>
-      ${renderTabs('overview')}
+      ${renderTabs('overview', { hasStats })}
       <small class="wc-google-updated">${escapeHtml(updated)}</small>
       <section id="wc-matches" class="wc-google-section">
         <h2>${escapeHtml(labels.matches)}</h2>
-        <div class="wc-google-match-list">${featuredMatches.length ? featuredMatches.map((item) => matchBoardCard(item, live.length > 0)).join('') : `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`}</div>
-        <a class="wc-google-more" href="#wc-table">${escapeHtml(labels.moreMatches)} ›</a>
-        <p class="wc-google-note">${escapeHtml(labels.allTimes)}</p>
+        <div class="wc-google-match-list">${featuredMatches.length ? featuredMatches.map((item) => matchBoardCard(item, live.length > 0)).join('') : `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`}${extraMatches.map((item) => `<div data-wc-extra hidden>${matchBoardCard(item, false)}</div>`).join('')}</div>
+        ${extraMatches.length ? `<button class="wc-google-more" type="button" data-wc-more aria-expanded="false">${escapeHtml(labels.moreMatches)} ›</button>` : ''}
+        <p class="wc-google-note">${escapeHtml(timeZoneNote())}</p>
       </section>
-      ${recent.length ? `<section id="wc-overview" class="wc-google-section"><h2>${escapeHtml(labels.recent)}</h2><div class="wc-google-match-list recent">${recent.slice(0, 4).map((item) => matchBoardCard(item, false)).join('')}</div></section>` : ''}
+      <section id="wc-overview" class="wc-google-section"><h2>${escapeHtml(labels.recent)}</h2>${recent.length ? `<div class="wc-google-match-list recent">${recent.slice(0, 4).map((item) => matchBoardCard(item, false)).join('')}</div>` : `<p class="wc-empty">${escapeHtml(labels.noVerifiedResults)}</p>`}</section>
       <section id="wc-table" class="wc-google-section">
         <h2>${escapeHtml(labels.table)}</h2>
-        <div class="wc-google-subtabs"><span class="active">${rtl ? 'دور المجموعات' : 'Group Stage'}</span><span>${rtl ? 'الأدوار الإقصائية' : 'Knockout stage'}</span></div>
+        <div class="wc-google-subtabs"><span class="active">${escapeHtml(labels.groupStage)}</span><span>${escapeHtml(labels.knockoutStage)}</span></div>
         ${renderGoogleTable(data.standings)}
       </section>
       <section id="wc-knockout" class="wc-google-section"><h2>${escapeHtml(labels.knockout)}</h2>${matchList(fixtures.slice(0, 4), labels.noFixtures, false)}</section>
-      <section id="wc-stats" class="wc-google-section"><h2>${escapeHtml(labels.stats)}</h2><p class="wc-empty">${rtl ? 'ستظهر إحصاءات اللاعبين عند ربط مصدر البيانات المباشر.' : 'Player stats will appear when the live data source is connected.'}</p></section>
+      ${renderStats(data.stats)}
     </section>`;
+    bindMoreMatches();
   }
 
   root.innerHTML = `<p class="wc-empty">${escapeHtml(labels.loading)}</p>`;

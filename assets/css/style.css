@@ -1268,13 +1268,17 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   margin-top: var(--space-4);
+  border: 0;
   border-radius: 999px;
   padding: 13px 18px;
   background: #3B272A;
   color: #F4E7E8;
+  font: inherit;
   font-weight: 900;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .wc-google-note {
@@ -1295,9 +1299,10 @@ blockquote {
 }
 
 .wc-mini-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 12px;
-  overflow-x: auto;
+  overflow-x: visible;
   padding: 4px 2px 12px;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
@@ -1308,6 +1313,7 @@ blockquote {
   display: grid;
   grid-template-rows: auto 1fr auto;
   flex: 0 0 198px;
+  width: 100%;
   min-height: 116px;
   padding: 14px 16px;
   border: 1px solid rgba(154, 160, 166, 0.34);
@@ -1356,6 +1362,13 @@ blockquote {
 
 .wc-mini-recent {
   padding: 0 2px;
+}
+
+.wc-mini-zone {
+  margin: 0;
+  padding: 0 2px;
+  color: #9AA0A6;
+  font-size: 0.9rem;
 }
 
 html[dir="rtl"] .wc-google-tabs,
@@ -1411,7 +1424,12 @@ html[dir="rtl"] .wc-mini-list {
   }
 
   .wc-mini-match {
-    flex-basis: 176px;
+    flex: 0 0 min(82vw, 360px);
+  }
+
+  .wc-mini-list {
+    display: flex;
+    overflow-x: auto;
   }
 }
 
