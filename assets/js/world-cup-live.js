@@ -96,6 +96,34 @@
     Uruguay: '🇺🇾'
   };
 
+  const arabicTeamName = {
+    Algeria: 'الجزائر',
+    Argentina: 'الأرجنتين',
+    Austria: 'النمسا',
+    Belgium: 'بلجيكا',
+    'Cape Verde': 'الرأس الأخضر',
+    Colombia: 'كولومبيا',
+    Egypt: 'مصر',
+    France: 'فرنسا',
+    Iran: 'إيران',
+    Iraq: 'العراق',
+    Jordan: 'الأردن',
+    Morocco: 'المغرب',
+    'New Zealand': 'نيوزيلندا',
+    Norway: 'النرويج',
+    Portugal: 'البرتغال',
+    Qatar: 'قطر',
+    'Saudi Arabia': 'السعودية',
+    Senegal: 'السنغال',
+    Spain: 'إسبانيا',
+    Tunisia: 'تونس',
+    Uruguay: 'أوروغواي'
+  };
+
+  function teamName(name) {
+    return rtl ? (arabicTeamName[name] || name) : name;
+  }
+
   function score(match) {
     const h = match.home?.goals;
     const a = match.away?.goals;
@@ -114,7 +142,7 @@
     const logo = team.logo ? `<img src="${escapeHtml(team.logo)}" alt="" loading="lazy">` : '';
     const name = team.name || labels.tbd;
     const flag = team.flag || flagByTeam[name] || '🏳️';
-    return `<span class="wc-team">${logo || `<span class="wc-flag" aria-hidden="true">${escapeHtml(flag)}</span>`}<span>${escapeHtml(name)}</span></span>`;
+    return `<span class="wc-team">${logo || `<span class="wc-flag" aria-hidden="true">${escapeHtml(flag)}</span>`}<span>${escapeHtml(teamName(name))}</span></span>`;
   }
 
   function matchCard(match, live) {
