@@ -6,7 +6,9 @@
   "scripts": {
     "build": "node scripts/prepare.mjs",
     "test": "node scripts/audit.mjs",
-    "start": "node scripts/serve.mjs"
+    "start": "node scripts/serve.mjs",
+    "worldcup:update": "node scripts/update-worldcup-stats.mjs",
+    "worldcup:scheduler": "node scripts/run-worldcup-live-scheduler.mjs"
   },
   "engines": { "node": ">=20" }
 }

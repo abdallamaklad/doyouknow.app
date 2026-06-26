@@ -1,0 +1,21 @@
+[Unit]
+Description=doyouknow.app World Cup 2026 quota-safe live updater
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/doyouknow/current
+EnvironmentFile=/etc/doyouknow/worldcup.env
+Environment=APIFOOTBALL_BASE_URL=https://v3.football.api-sports.io
+Environment=WORLD_CUP_STATS_OUTPUT=/var/www/doyouknow/current/api/world-cup-2026.json
+Environment=WORLD_CUP_DAILY_REQUEST_LIMIT=100
+Environment=WORLD_CUP_REQUESTS_PER_TICK=1
+Environment=WORLD_CUP_MATCH_WINDOW_MINUTES=135
+Environment=WORLD_CUP_MIN_INTERVAL_MS=60000
+ExecStart=/usr/bin/node /var/www/doyouknow/current/scripts/run-worldcup-live-scheduler.mjs
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
