@@ -1286,6 +1286,23 @@ blockquote {
   color: #BDC1C6;
 }
 
+.wc-group-results {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.wc-group-result {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.wc-group-result h3 {
+  margin: 0;
+  color: #BDC1C6;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
 .wc-mini-widget {
   overflow: hidden;
   padding: var(--space-4) 0;

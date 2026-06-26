@@ -19,6 +19,8 @@
       upcoming: 'Upcoming fixtures',
       recent: 'Recent results',
       standings: 'Group standings',
+      groupStageResults: 'Group stage fixtures & results',
+      noGroupResults: 'No confirmed group-stage results yet. Scheduled group matches are listed below.',
       openLive: 'Open live center',
       overview: 'Overview',
       matches: 'Matches',
@@ -55,6 +57,8 @@
       upcoming: 'المباريات القادمة',
       recent: 'آخر النتائج',
       standings: 'ترتيب المجموعات',
+      groupStageResults: 'مباريات ونتائج دور المجموعات',
+      noGroupResults: 'لا توجد نتائج مؤكدة لدور المجموعات حتى الآن. تظهر المباريات المجدولة أدناه.',
       openLive: 'افتح مركز النتائج',
       overview: 'نظرة عامة',
       matches: 'المباريات',
@@ -422,6 +426,29 @@
     </table></div></section>`;
   }
 
+  function groupLetter(round) {
+    const match = String(round || '').match(/Group\s+([A-L])/i);
+    return match ? match[1].toUpperCase() : labels.tbd;
+  }
+
+  function renderGroupStage(results, fixtures) {
+    const confirmed = Array.isArray(results) ? results : [];
+    const scheduled = Array.isArray(fixtures) ? fixtures : [];
+    const combined = confirmed.concat(scheduled);
+    if (!combined.length) return `<p class="wc-empty">${escapeHtml(labels.noFixtures)}</p>`;
+    const groups = combined.reduce((map, item) => {
+      const group = groupLetter(item.round);
+      if (!map.has(group)) map.set(group, []);
+      map.get(group).push(item);
+      return map;
+    }, new Map());
+    return `<div class="wc-group-results">${Array.from(groups.entries()).sort(([a], [b]) => a.localeCompare(b)).map(([group, items]) => `
+      <section class="wc-group-result">
+        <h3>${rtl ? 'المجموعة' : 'Group'} ${escapeHtml(group)}</h3>
+        <div class="wc-google-match-list">${items.map((item) => matchBoardCard(item, Boolean(item.status?.elapsed))).join('')}</div>
+      </section>`).join('')}</div>`;
+  }
+
   function bindMoreMatches() {
     const button = root.querySelector('[data-wc-more]');
     if (!button) return;
@@ -461,6 +488,11 @@
         ${extraMatches.length ? `<button class="wc-google-more" type="button" data-wc-more aria-expanded="false">${escapeHtml(labels.moreMatches)} ›</button>` : ''}
         <p class="wc-google-note">${escapeHtml(timeZoneNote())}</p>
       </section>
+      <section id="wc-group-stage-results" class="wc-google-section">
+        <h2>${escapeHtml(labels.groupStageResults)}</h2>
+        ${recent.length ? '' : `<p class="wc-empty">${escapeHtml(labels.noGroupResults)}</p>`}
+        ${renderGroupStage(recent, fixtures)}
+      </section>
       <section id="wc-overview" class="wc-google-section"><h2>${escapeHtml(labels.recent)}</h2>${recent.length ? `<div class="wc-google-match-list recent">${recent.slice(0, 4).map((item) => matchBoardCard(item, false)).join('')}</div>` : `<p class="wc-empty">${escapeHtml(labels.noVerifiedResults)}</p>`}</section>
       <section id="wc-table" class="wc-google-section">
         <h2>${escapeHtml(labels.table)}</h2>
@@ -474,11 +506,20 @@
   }
 
   root.innerHTML = `<p class="wc-empty">${escapeHtml(labels.loading)}</p>`;
-  fetch('/api/world-cup-2026.json', { cache: 'no-store' })
-    .then((response) => {
+  function fetchJson(url) {
+    return fetch(url, { cache: 'no-store' }).then((response) => {
       if (!response.ok) throw new Error(String(response.status));
       return response.json();
-    })
+    });
+  }
+
+  const cacheBuster = `v=${Date.now()}`;
+  const feedUrls = [
+    `/api/world-cup-2026.json?${cacheBuster}`,
+    `https://doyouknow.app/api/world-cup-2026.json?${cacheBuster}`
+  ];
+
+  feedUrls.reduce((promise, url) => promise.catch(() => fetchJson(url)), Promise.reject())
     .then((data) => compact ? renderCompact(data) : render(data))
     .catch(() => {
       root.innerHTML = `<p class="wc-empty">${escapeHtml(labels.error)}</p>`;
