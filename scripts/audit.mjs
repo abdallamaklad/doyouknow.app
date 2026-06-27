@@ -63,6 +63,7 @@ for (const file of htmlFiles) {
   if (html.includes('/assets/js/world-cup-live.js')) errors.push(`${rel}: World Cup live script should stay disabled`);
   if (html.includes('/world-cup-2026-live.html')) errors.push(`${rel}: links to disabled World Cup live page`);
   if (/fonts\.(googleapis|gstatic)/.test(html)) errors.push(`${rel}: render-blocking Google Fonts dependency present`);
+  if (html.includes('<script src="/assets/js/site.js"></script>')) errors.push(`${rel}: site.js should be deferred`);
   if (/class="mobile-nav" role="dialog"/.test(html)) errors.push(`${rel}: mobile nav should not use dialog role`);
   if (/<div class="tile-info"><h4>/.test(html)) errors.push(`${rel}: category tile skips heading levels`);
   if (/<div class="footer-column"><h4>/.test(html)) errors.push(`${rel}: footer column skips heading levels`);

@@ -197,9 +197,14 @@ function updateArticlePageImage(html, relativeFile) {
 }
 
 function updateArticleCardImages(html) {
+  let cardIndex = 0;
   return html.replace(/<a href="\/(en|ar)\/article\/([a-z0-9-]+)\.html" class="article-card">([\s\S]*?)<div class="card-content">/g, (match, lang, slug, beforeContent) => {
     if (!categoryByArticle.has(`${lang}/article/${slug}.html`)) return match;
-    const image = `<img class="card-image" src="${articleImagePath(lang, slug)}" alt="" width="1200" height="675" loading="lazy">`;
+    cardIndex += 1;
+    const priority = cardIndex <= 3
+      ? 'loading="eager" fetchpriority="high"'
+      : 'loading="lazy"';
+    const image = `<img class="card-image" src="${articleImagePath(lang, slug)}" alt="" width="1200" height="675" ${priority}>`;
     const cleaned = beforeContent
       .replace(/<img class="card-image"[^>]*>/g, '')
       .replace(/<div class="card-image"[\s\S]*?<\/div>/g, '')
@@ -213,6 +218,7 @@ function normalizePerformanceAndAccessibility(html) {
     .replace(/<link rel="preconnect" href="https:\/\/fonts\.googleapis\.com">\s*/g, '')
     .replace(/<link rel="preconnect" href="https:\/\/fonts\.gstatic\.com" crossorigin>\s*/g, '')
     .replace(/<link href="https:\/\/fonts\.googleapis\.com\/css2\?[^"]+" rel="stylesheet">\s*/g, '')
+    .replace(/<script src="\/assets\/js\/site\.js"><\/script>/g, '<script src="/assets/js/site.js" defer></script>')
     .replace(/<nav class="mobile-nav" role="dialog" aria-label="Mobile menu">/g, '<nav class="mobile-nav" aria-label="Mobile menu">')
     .replace(/<nav class="mobile-nav" role="dialog" aria-label="القائمة المتنقلة">/g, '<nav class="mobile-nav" aria-label="القائمة المتنقلة">')
     .replace(/<div class="tile-info"><h4>/g, '<div class="tile-info"><span class="tile-title">')
@@ -442,12 +448,15 @@ for (const group of categoryGroups) {
   const canonical = `https://doyouknow.app/${group.lang}/category/${group.slug}.html`;
   const home = `/${group.lang}/`;
   const cards = articles.map((article) => {
-    const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="1200" height="675" loading="lazy">`;
+    const priority = articles.indexOf(article) < 3
+      ? 'loading="eager" fetchpriority="high"'
+      : 'loading="lazy"';
+    const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="1200" height="675" ${priority}>`;
     return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
   }).join('');
   const itemList = articles.filter((a) => !a.noindex).map((article, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://doyouknow.app/${group.lang}/article/${article.slug}.html`, name: article.title }));
   const alternateBlock = hreflangBlock(`${group.lang}/category/${group.slug}.html`, group.lang, canonical);
-  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}</head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p><div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></div></footer><script src="/assets/js/site.js"></script></body></html>`;
+  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}</head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p><div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></div></footer><script src="/assets/js/site.js" defer></script></body></html>`;
   await writeFile(join(root, group.lang, 'category', `${group.slug}.html`), page);
 }
 
