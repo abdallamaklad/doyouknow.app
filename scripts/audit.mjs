@@ -63,6 +63,25 @@ for (const file of htmlFiles) {
   if (html.includes('/assets/js/world-cup-live.js')) errors.push(`${rel}: World Cup live script should stay disabled`);
   if (html.includes('/world-cup-2026-live.html')) errors.push(`${rel}: links to disabled World Cup live page`);
   if (!html.includes('property="og:image"')) errors.push(`${rel}: missing Open Graph image`);
+  if (html.includes('📷 Featured Image')) errors.push(`${rel}: placeholder featured image still present`);
+  if (html.includes('📷</span></div><div class="card-content"')) errors.push(`${rel}: placeholder article-card image still present`);
+  if (/^(en|ar)\/article\/[a-z0-9-]+\.html$/.test(rel) && !isNoindex) {
+    const language = rel.startsWith('ar/') ? 'ar' : 'en';
+    if (html.includes(`property="og:image" content="https://doyouknow.app/assets/images/og-${language}.png"`)) {
+      errors.push(`${rel}: indexable article uses default social image`);
+    }
+  }
+  const featuredImage = html.match(/<img class="featured-image" src="([^"]+)"/)?.[1];
+  if (featuredImage && featuredImage.startsWith('/assets/images/')) {
+    try { await access(join(root, featuredImage)); }
+    catch { errors.push(`${rel}: missing featured image asset ${featuredImage}`); }
+  }
+  for (const cardImage of html.matchAll(/<img class="card-image" src="([^"]+)"/g)) {
+    const src = cardImage[1];
+    if (!src.startsWith('/assets/images/')) continue;
+    try { await access(join(root, src)); }
+    catch { errors.push(`${rel}: missing card image asset ${src}`); }
+  }
   if (!html.includes('rel="icon"')) errors.push(`${rel}: missing favicon`);
   const googleTagCount = (html.match(/G-6VQZY87LJB/g) || []).length;
   if (googleTagCount !== 2) errors.push(`${rel}: expected one Google tag, found measurement ID ${googleTagCount} times`);

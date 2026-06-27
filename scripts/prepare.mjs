@@ -67,13 +67,13 @@ const worldCupArticleSlugs = [
 ];
 const categoryGroups = [
   { lang: 'en', slug: 'world-cup-2026', title: 'World Cup 2026 & Arab Football', description: 'Bilingual World Cup 2026 explainers focused on Arab teams, tactics, fans, and football legacy.', files: worldCupArticleSlugs },
-  { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places', description: 'Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.', files: ['burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','yas-island-abu-dhabi'] },
+  { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places', description: 'Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.', files: ['burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','uae-imports-sand','yas-island-abu-dhabi'] },
   { lang: 'en', slug: 'guides', title: 'UAE Practical Guides', description: 'Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.', files: ['best-beaches-dubai','best-restaurants-dubai','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
   { lang: 'en', slug: 'technology', title: 'Technology Explained', description: 'Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.', files: ['what-is-chatgpt','what-is-google-gemini'] },
   { lang: 'ar', slug: 'world-cup-2026', title: 'كأس العالم 2026 والكرة العربية', description: 'شروحات عربية وإنجليزية عن كأس العالم 2026 والمنتخبات العربية والتكتيك والجمهور والإرث الكروي.', files: worldCupArticleSlugs },
   { lang: 'ar', slug: 'saudi', title: 'السعودية: التاريخ والثقافة', description: 'اكتشف تاريخ المملكة العربية السعودية وتراثها ومدنها وثقافتها من خلال مقالات عربية واضحة وموثوقة.', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','ronaldo-saudi-arabia','saudi-arabia-history','saudi-football-global','saudi-national-day','saudi-no-rivers'] },
   { lang: 'ar', slug: 'vision-2030', title: 'رؤية السعودية 2030 والمشاريع الكبرى', description: 'تعرف على مشاريع رؤية السعودية 2030 والمدن والوجهات الجديدة من خلال شروحات تفصل الحقائق عن التوقعات.', files: ['kingdom-tower-riyadh','qiddiya-saudi-arabia','red-sea-project-saudi','riyadh-season','the-line-neom','what-is-neom'] },
-  { lang: 'ar', slug: 'guides', title: 'أدلة عملية في السعودية', description: 'أدلة عربية مبسطة للخدمات والمنصات والإجراءات المهمة في السعودية مع إحالات إلى المصادر الرسمية.', files: ['absher-portal-guide','open-bank-account-saudi','qiyas-guide','qobool-guide','saudi-driving-license','saudi-health-insurance'] },
+  { lang: 'ar', slug: 'guides', title: 'أدلة عملية في السعودية', description: 'أدلة عربية مبسطة للخدمات والمنصات والإجراءات المهمة في السعودية مع إحالات إلى المصادر الرسمية.', files: ['absher-portal-guide','best-restaurants-riyadh','open-bank-account-saudi','qiyas-guide','qobool-guide','saudi-driving-license','saudi-health-insurance'] },
   { lang: 'ar', slug: 'islamic', title: 'الثقافة والمعرفة الإسلامية', description: 'شروحات عربية واضحة حول العبادات والتمويل الإسلامي والمواسم الدينية مع احترام السياق والمصادر الموثوقة.', files: ['hajj-guide','islamic-finance-guide','ramadan-health-guide','umrah-guide','what-is-zakat'] }
 ];
 const categoryByArticle = new Map(categoryGroups.flatMap((group) =>
@@ -152,6 +152,60 @@ function normalizeHreflang(html, relativePath) {
 
 function stripSearchAction(html) {
   return html.replace(/<script type="application\/ld\+json">(?=[\s\S]*?"SearchAction")[\s\S]*?<\/script>\s*/g, '');
+}
+
+function articleImagePath(lang, slug) {
+  return worldCupArticleSlugs.includes(slug)
+    ? `/assets/images/world-cup-2026/${slug}.svg`
+    : `/assets/images/articles/${lang}-${slug}.svg`;
+}
+
+function updateSocialImageTags(html, imageUrl) {
+  html = html
+    .replace(/<meta property="og:image" content="[^"]+">/, `<meta property="og:image" content="${imageUrl}">`)
+    .replace(/<meta name="twitter:image" content="[^"]+">/, `<meta name="twitter:image" content="${imageUrl}">`);
+  if (!html.includes('name="twitter:image"')) {
+    html = html.replace(/<meta name="twitter:card" content="summary_large_image">/, `$&\n<meta name="twitter:image" content="${imageUrl}">`);
+  }
+  return html;
+}
+
+function updateArticlePageImage(html, relativeFile) {
+  const match = relativeFile.match(/^(en|ar)\/article\/([a-z0-9-]+)\.html$/);
+  if (!match || !categoryByArticle.has(relativeFile)) return html;
+  const [, lang, slug] = match;
+  const imagePath = articleImagePath(lang, slug);
+  const imageUrl = `https://doyouknow.app${imagePath}`;
+  const title = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim() || slug;
+  const alt = lang === 'ar' ? `رسم توضيحي لمقال ${title}` : `Editorial illustration for ${title}`;
+  html = updateSocialImageTags(html, imageUrl);
+  html = html.replace(
+    /<div class="featured-image"[\s\S]*?<\/div>/,
+    `<img class="featured-image" src="${imagePath}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
+  );
+  html = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (script, raw) => {
+    try {
+      const data = JSON.parse(raw);
+      if (data['@type'] !== 'Article') return script;
+      data.image = { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 675 };
+      return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
+    } catch {
+      return script;
+    }
+  });
+  return html;
+}
+
+function updateArticleCardImages(html) {
+  return html.replace(/<a href="\/(en|ar)\/article\/([a-z0-9-]+)\.html" class="article-card">([\s\S]*?)<div class="card-content">/g, (match, lang, slug, beforeContent) => {
+    if (!categoryByArticle.has(`${lang}/article/${slug}.html`)) return match;
+    const image = `<img class="card-image" src="${articleImagePath(lang, slug)}" alt="" width="1200" height="675" loading="lazy">`;
+    const cleaned = beforeContent
+      .replace(/<img class="card-image"[^>]*>/g, '')
+      .replace(/<div class="card-image"[\s\S]*?<\/div>/g, '')
+      .replace(/<span[^>]*>📷<\/span><\/div>/g, '');
+    return `<a href="/${lang}/article/${slug}.html" class="article-card">${image}${cleaned}<div class="card-content">`;
+  });
 }
 
 function linkExistingCategory(html, relativeFile) {
@@ -291,12 +345,15 @@ for (const file of htmlFiles) {
     .replaceAll('30 articles', '22 articles');
   html = html.replace(
     '<a href="/en/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>General</h4><span>30 articles</span></div></a>',
-    '<a href="/en/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>Dubai &amp; places</h4><span>13 articles</span></div></a><a href="/en/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>Practical guides</h4><span>6 articles</span></div></a><a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>'
+    '<a href="/en/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>Dubai &amp; places</h4><span>14 articles</span></div></a><a href="/en/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>Practical guides</h4><span>6 articles</span></div></a><a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>'
   );
   html = html.replace(
     '<a href="/ar/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>عام</h4><span>28 مقال</span></div></a>',
-    '<a href="/ar/category/saudi.html" class="category-tile"><div class="tile-icon">🏛️</div><div class="tile-info"><h4>تاريخ السعودية</h4><span>10 مقالات</span></div></a><a href="/ar/category/vision-2030.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>رؤية 2030</h4><span>6 مقالات</span></div></a><a href="/ar/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>أدلة عملية</h4><span>6 مقالات</span></div></a><a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>5 مقالات</span></div></a>'
+    '<a href="/ar/category/saudi.html" class="category-tile"><div class="tile-icon">🏛️</div><div class="tile-info"><h4>تاريخ السعودية</h4><span>10 مقالات</span></div></a><a href="/ar/category/vision-2030.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>رؤية 2030</h4><span>6 مقالات</span></div></a><a href="/ar/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>أدلة عملية</h4><span>7 مقالات</span></div></a><a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>5 مقالات</span></div></a>'
   );
+  html = html
+    .replaceAll('<span>13 articles</span>', '<span>14 articles</span>')
+    .replaceAll('<span>6 مقالات</span></div></a><a href="/ar/category/islamic.html"', '<span>7 مقالات</span></div></a><a href="/ar/category/islamic.html"');
   if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
     html = html.replace(
       '<a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>',
@@ -325,6 +382,8 @@ for (const file of htmlFiles) {
     html = html.replace('</head>', `${googleTag}\n</head>`);
   }
   html = stripSearchAction(html);
+  html = updateArticlePageImage(html, relativeFile);
+  html = updateArticleCardImages(html);
   html = linkExistingCategory(html, relativeFile);
   if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
     html = html.replace(
@@ -364,9 +423,7 @@ for (const group of categoryGroups) {
   const canonical = `https://doyouknow.app/${group.lang}/category/${group.slug}.html`;
   const home = `/${group.lang}/`;
   const cards = articles.map((article) => {
-    const image = group.slug === 'world-cup-2026'
-      ? `<img class="card-image" src="/assets/images/world-cup-2026/${article.slug}.svg" alt="" width="1200" height="675" loading="lazy">`
-      : '';
+    const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="1200" height="675" loading="lazy">`;
     return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
   }).join('');
   const itemList = articles.filter((a) => !a.noindex).map((article, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://doyouknow.app/${group.lang}/article/${article.slug}.html`, name: article.title }));
