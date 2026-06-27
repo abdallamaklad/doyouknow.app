@@ -6,7 +6,7 @@
 /* Design Tokens */
 :root {
   --color-primary-deep: #0F172A;
-  --color-primary-accent: #F59E0B;
+  --color-primary-accent: #B45309;
   --color-secondary-accent: #10B981;
   --color-bg-light: #FAFAFA;
   --color-surface-light: #FFFFFF;
@@ -16,7 +16,7 @@
   --color-border-light: #E2E8F0;
   --color-error: #EF4444;
   --color-info: #3B82F6;
-  --color-warning: #F59E0B;
+  --color-warning: #B45309;
   --color-category-purple: #8B5CF6;
   --color-category-teal: #14B8A6;
   --color-category-rose: #F43F5E;
@@ -26,8 +26,8 @@
   --color-category-indigo: #6366F1;
   --color-category-amber: #D97706;
   
-  --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-ar: 'Cairo', 'Tajawal', 'Noto Sans Arabic', sans-serif;
+  --font-en: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-ar: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   
   --space-1: 4px;
@@ -81,12 +81,12 @@
 }
 
 [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4 {
-  font-family: 'Cairo', 'Tajawal', 'Noto Sans Arabic', sans-serif;
+  font-family: var(--font-ar);
   line-height: 1.3;
 }
 
 [lang="ar"] body, [lang="ar"] p, [lang="ar"] li {
-  font-family: 'Tajawal', 'Cairo', 'Noto Sans Arabic', sans-serif;
+  font-family: var(--font-ar);
   line-height: 1.75;
 }
 
@@ -535,12 +535,12 @@ blockquote {
 .btn-primary {
   background: var(--color-primary-accent);
   color: white;
-  box-shadow: 0 2px 8px rgba(245,158,11,0.3);
+  box-shadow: 0 2px 8px rgba(180,83,9,0.26);
 }
 
 .btn-primary:hover {
-  background: #D97706;
-  box-shadow: 0 4px 12px rgba(245,158,11,0.4);
+  background: #92400E;
+  box-shadow: 0 4px 12px rgba(180,83,9,0.34);
 }
 
 .btn-secondary {
@@ -1963,7 +1963,7 @@ html[dir="rtl"] .wc-mini-list {
   font-size: 0.85rem;
 }
 
-.footer-column h4 {
+.footer-column .footer-heading {
   color: white;
   font-size: 0.95rem;
   font-weight: 600;
@@ -2012,6 +2012,12 @@ html[dir="rtl"] .wc-mini-list {
 
 .footer-bottom .social-links a {
   color: #94A3B8;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
   transition: color var(--transition-fast);
   text-decoration: none;
 }
@@ -2086,15 +2092,18 @@ html[dir="rtl"] .wc-mini-list {
   flex-shrink: 0;
 }
 
-.category-tile .tile-info h4 {
+.category-tile .tile-info .tile-title {
+  display: block;
   font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
   margin: 0;
   color: var(--color-text-primary);
 }
 
 .category-tile .tile-info span {
   font-size: 0.75rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
 }
 
 /* About page */

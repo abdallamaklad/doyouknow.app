@@ -208,6 +208,23 @@ function updateArticleCardImages(html) {
   });
 }
 
+function normalizePerformanceAndAccessibility(html) {
+  html = html
+    .replace(/<link rel="preconnect" href="https:\/\/fonts\.googleapis\.com">\s*/g, '')
+    .replace(/<link rel="preconnect" href="https:\/\/fonts\.gstatic\.com" crossorigin>\s*/g, '')
+    .replace(/<link href="https:\/\/fonts\.googleapis\.com\/css2\?[^"]+" rel="stylesheet">\s*/g, '')
+    .replace(/<nav class="mobile-nav" role="dialog" aria-label="Mobile menu">/g, '<nav class="mobile-nav" aria-label="Mobile menu">')
+    .replace(/<nav class="mobile-nav" role="dialog" aria-label="القائمة المتنقلة">/g, '<nav class="mobile-nav" aria-label="القائمة المتنقلة">')
+    .replace(/<div class="tile-info"><h4>/g, '<div class="tile-info"><span class="tile-title">')
+    .replace(/<\/h4><span>/g, '</span><span>')
+    .replace(/<div class="footer-column"><h4>/g, '<div class="footer-column"><p class="footer-heading">')
+    .replace(/<\/h4><ul class="footer-links">/g, '</p><ul class="footer-links">')
+    .replace(/aria-label="Instagram">IG<\/a>/g, 'aria-label="IG Instagram">IG</a>')
+    .replace(/aria-label="YouTube">YT<\/a>/g, 'aria-label="YT YouTube">YT</a>')
+    .replace(/aria-label="TikTok">TT<\/a>/g, 'aria-label="TT TikTok">TT</a>');
+  return html;
+}
+
 function linkExistingCategory(html, relativeFile) {
   const lang = relativeFile.startsWith('ar/') || /<html[^>]*\blang="ar"/.test(html) ? 'ar' : 'en';
   const category = categoryByArticle.get(relativeFile) || categoryFallback.get(lang);
@@ -384,6 +401,7 @@ for (const file of htmlFiles) {
   html = stripSearchAction(html);
   html = updateArticlePageImage(html, relativeFile);
   html = updateArticleCardImages(html);
+  html = normalizePerformanceAndAccessibility(html);
   html = linkExistingCategory(html, relativeFile);
   if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
     html = html.replace(
@@ -397,6 +415,7 @@ for (const file of htmlFiles) {
       '<a href="/ar/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>كأس العالم 2026</h4><span>20 مقالاً</span></div></a>\n</div><div class="section-header">\n<h2>أحدث المقالات</h2>'
     );
   }
+  html = normalizePerformanceAndAccessibility(html);
   html = normalizeHreflang(html, relativeFile);
   let h1Seen = 0;
   html = html.replace(/<\/?h1(?=[\s>])[^>]*>/g, (tag) => {

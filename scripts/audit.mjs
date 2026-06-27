@@ -62,6 +62,10 @@ for (const file of htmlFiles) {
   if (html.includes('data-world-cup-live')) errors.push(`${rel}: World Cup live widget should stay disabled`);
   if (html.includes('/assets/js/world-cup-live.js')) errors.push(`${rel}: World Cup live script should stay disabled`);
   if (html.includes('/world-cup-2026-live.html')) errors.push(`${rel}: links to disabled World Cup live page`);
+  if (/fonts\.(googleapis|gstatic)/.test(html)) errors.push(`${rel}: render-blocking Google Fonts dependency present`);
+  if (/class="mobile-nav" role="dialog"/.test(html)) errors.push(`${rel}: mobile nav should not use dialog role`);
+  if (/<div class="tile-info"><h4>/.test(html)) errors.push(`${rel}: category tile skips heading levels`);
+  if (/<div class="footer-column"><h4>/.test(html)) errors.push(`${rel}: footer column skips heading levels`);
   if (!html.includes('property="og:image"')) errors.push(`${rel}: missing Open Graph image`);
   if (html.includes('📷 Featured Image')) errors.push(`${rel}: placeholder featured image still present`);
   if (html.includes('📷</span></div><div class="card-content"')) errors.push(`${rel}: placeholder article-card image still present`);
