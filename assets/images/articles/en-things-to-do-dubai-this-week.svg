@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- Stars/dots background -->
+  <g fill="#FFFFFF" opacity="0.3">
+    <circle cx="100" cy="80" r="2"/>
+    <circle cx="250" cy="120" r="1.5"/>
+    <circle cx="400" cy="60" r="2"/>
+    <circle cx="550" cy="150" r="1"/>
+    <circle cx="700" cy="90" r="2.5"/>
+    <circle cx="850" cy="130" r="1.5"/>
+    <circle cx="1000" cy="70" r="2"/>
+    <circle cx="1150" cy="110" r="1.5"/>
+    <circle cx="180" cy="200" r="1"/>
+    <circle cx="320" cy="240" r="2"/>
+    <circle cx="480" cy="180" r="1.5"/>
+    <circle cx="630" cy="220" r="2"/>
+    <circle cx="780" cy="190" r="1"/>
+    <circle cx="930" cy="230" r="2.5"/>
+    <circle cx="1080" cy="170" r="1.5"/>
+    <circle cx="1230" cy="210" r="1"/>
+  </g>
+  <!-- Dubai skyline silhouette -->
+  <path d="M0 675 L0 500 L30 500 L30 430 L50 430 L50 480 L70 480 L70 400 L100 400 L100 350 L130 350 L130 420 L160 420 L160 380 L190 380 L190 320 L230 320 L230 280 L260 280 L260 350 L290 350 L290 300 L320 300 L320 260 L350 260 L350 340 L380 340 L380 290 L410 290 L410 240 L450 240 L450 380 L480 380 L480 330 L510 330 L510 270 L540 270 L540 310 L570 310 L570 260 L600 260 L600 350 L630 350 L630 280 L660 280 L660 220 L700 220 L700 300 L730 300 L730 250 L760 250 L760 330 L790 330 L790 290 L820 290 L820 340 L850 340 L850 310 L880 310 L880 360 L910 360 L910 320 L940 320 L940 370 L970 370 L970 340 L1000 340 L1000 390 L1030 390 L1030 350 L1060 350 L1060 400 L1090 400 L1090 360 L1120 360 L1120 410 L1150 410 L1150 380 L1180 380 L1180 420 L1200 420 L1200 675 Z" fill="#1E293B" opacity="0.7"/>
+  <!-- Burj Khalifa highlight -->
+  <path d="M660 220 L675 160 L690 220 Z" fill="#F59E0B" opacity="0.6"/>
+  <rect x="660" y="220" width="30" height="80" fill="#F59E0B" opacity="0.4"/>
+  <!-- Calendar/week visual -->
+  <g fill="#334155" stroke="#475569" stroke-width="2">
+    <rect x="200" y="440" width="140" height="100" rx="8" opacity="0.8"/>
+    <rect x="360" y="440" width="140" height="100" rx="8" opacity="0.8"/>
+    <rect x="520" y="440" width="140" height="100" rx="8" opacity="0.8"/>
+    <rect x="680" y="440" width="140" height="100" rx="8" opacity="0.8"/>
+    <rect x="840" y="440" width="140" height="100" rx="8" opacity="0.8"/>
+  </g>
+  <!-- Calendar day labels -->
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#94A3B8" text-anchor="middle">
+    <text x="270" y="465">MON</text>
+    <text x="430" y="465">TUE</text>
+    <text x="590" y="465">WED</text>
+    <text x="750" y="465">THU</text>
+    <text x="910" y="465">FRI</text>
+  </g>
+  <!-- Calendar icons -->
+  <g fill="#F59E0B" opacity="0.8">
+    <circle cx="270" cy="495" r="8"/>
+    <circle cx="430" cy="495" r="8"/>
+    <circle cx="590" cy="495" r="8"/>
+    <circle cx="750" cy="495" r="8"/>
+    <circle cx="910" cy="495" r="8"/>
+  </g>
+  <!-- Accent line -->
+  <rect x="400" y="570" width="400" height="4" fill="url(#accent)" rx="2"/>
+  <!-- Text -->
+  <text x="600" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#FFFFFF" letter-spacing="3">DUBAI THIS WEEK</text>
+  <text x="600" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-style="italic" fill="#F59E0B" letter-spacing="2">Events, Brunches &amp; Beach Clubs</text>
+  <text x="600" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#94A3B8" letter-spacing="3">YOUR WEEKLY ENTERTAINMENT GUIDE</text>
+</svg>

@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://doyouknow.app/ar/</loc><lastmod>2026-06-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>https://doyouknow.app/ar/about.html</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/algeria-attack-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/algeria-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/alula-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -22,6 +23,7 @@
 <url><loc>https://doyouknow.app/ar/article/dubai-metro-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/dubai-miracle-garden.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/dubai-police-lamborghini.html</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/ar/article/dubai-tourist-visa-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/dubai-vs-abu-dhabi.html</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/edge-of-the-world-riyadh.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/egypt-midfield-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -31,6 +33,7 @@
 <url><loc>https://doyouknow.app/ar/article/iraq-jordan-tournament-discipline-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/iraq-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/islamic-finance-guide.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/ar/article/jeddah-travel-guide.html</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/jordan-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/kingdom-tower-riyadh.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/louvre-abu-dhabi.html</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -47,6 +50,7 @@
 <url><loc>https://doyouknow.app/ar/article/saudi-arabia-history.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/saudi-arabia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/saudi-cuisine-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-e-visa-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/saudi-football-global.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/saudi-national-day.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/saudi-no-rivers.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -54,12 +58,14 @@
 <url><loc>https://doyouknow.app/ar/article/save-money-dubai.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/sheikh-zayed-grand-mosque-guide.html</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/the-line-neom.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/ar/article/things-to-do-dubai-this-week.html</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/tunisia-defensive-grit-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/what-is-neom.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/what-is-zakat.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/world-cup-2026-group-stage-pressure-arab-teams.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/ar/article/yas-island-abu-dhabi.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/ar/category/dubai.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://doyouknow.app/ar/category/guides.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://doyouknow.app/ar/category/islamic.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://doyouknow.app/ar/category/saudi.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -72,6 +78,7 @@
 <url><loc>https://doyouknow.app/ar/work-with-us.html</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 <url><loc>https://doyouknow.app/en/</loc><lastmod>2026-06-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>https://doyouknow.app/en/about.html</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://doyouknow.app/en/article/abu-dhabi-complete-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/algeria-attack-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/algeria-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/alula-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -89,6 +96,7 @@
 <url><loc>https://doyouknow.app/en/article/dubai-metro-guide.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/dubai-miracle-garden.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/dubai-police-lamborghini.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/en/article/dubai-tourist-visa-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/dubai-vs-abu-dhabi.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/egypt-midfield-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/egypt-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -96,6 +104,7 @@
 <url><loc>https://doyouknow.app/en/article/hidden-gems-uae.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/iraq-jordan-tournament-discipline-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/iraq-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/en/article/jeddah-travel-guide.html</loc><lastmod>2025-07-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/jordan-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/louvre-abu-dhabi.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/morocco-defensive-structure-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -106,9 +115,11 @@
 <url><loc>https://doyouknow.app/en/article/riyadh-nightlife-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/saudi-arabia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/saudi-cuisine-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/en/article/saudi-e-visa-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/saudi-technical-ceiling-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/save-money-dubai.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/sheikh-zayed-grand-mosque-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/en/article/things-to-do-dubai-this-week.html</loc><lastmod>2025-07-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/tunisia-defensive-grit-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://doyouknow.app/en/article/uae-imports-sand.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
