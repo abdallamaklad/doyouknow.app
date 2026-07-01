@@ -216,6 +216,27 @@
         });
     }
 
+    // --- Scroll Reveal Animation ---
+    if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(function(el) {
+            revealObserver.observe(el);
+        });
+    } else {
+        // Fallback: show all immediately
+        document.querySelectorAll('.reveal').forEach(function(el) {
+            el.classList.add('visible');
+        });
+    }
+
     // --- Sticky Header Shadow ---
     let ticking = false;
     window.addEventListener('scroll', function() {
