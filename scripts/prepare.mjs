@@ -155,6 +155,15 @@ function normalizeHreflang(html, relativePath) {
   return html.replace(/(<link rel="canonical" href="[^"]+">)/, `$1\n${block}`);
 }
 
+function addRevealClasses(html, className) {
+  let count = 0;
+  return html.replace(new RegExp(`class="${className}"`, 'g'), () => {
+    count += 1;
+    const delay = ((count - 1) % 3) + 1;
+    return `class="${className} reveal reveal-delay-${delay}"`;
+  });
+}
+
 function stripSearchAction(html) {
   return html.replace(/<script type="application\/ld\+json">(?=[\s\S]*?"SearchAction")[\s\S]*?<\/script>\s*/g, '');
 }
@@ -428,6 +437,8 @@ for (const file of htmlFiles) {
   }
   html = normalizePerformanceAndAccessibility(html);
   html = normalizeHreflang(html, relativeFile);
+  html = addRevealClasses(html, 'article-card');
+  html = addRevealClasses(html, 'category-tile');
   let h1Seen = 0;
   html = html.replace(/<\/?h1(?=[\s>])[^>]*>/g, (tag) => {
     if (tag.startsWith('<h1')) h1Seen += 1;
@@ -452,12 +463,13 @@ for (const group of categoryGroups) {
   const rtl = group.lang === 'ar';
   const canonical = `https://doyouknow.app/${group.lang}/category/${group.slug}.html`;
   const home = `/${group.lang}/`;
-  const cards = articles.map((article) => {
+  const cards = articles.map((article, index) => {
+    const delay = (index % 3) + 1;
     const priority = articles.indexOf(article) < 3
       ? 'loading="eager" fetchpriority="high"'
       : 'loading="lazy"';
     const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="1200" height="675" ${priority}>`;
-    return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
+    return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card reveal reveal-delay-${delay}">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
   }).join('');
   const itemList = articles.filter((a) => !a.noindex).map((article, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://doyouknow.app/${group.lang}/article/${article.slug}.html`, name: article.title }));
   const alternateBlock = hreflangBlock(`${group.lang}/category/${group.slug}.html`, group.lang, canonical);
