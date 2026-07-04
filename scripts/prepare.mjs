@@ -504,3 +504,147 @@ const sitemapEntries = [...sitemapUrls.entries()]
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
 await writeFile(join(root, 'sitemap.xml'), sitemap);
 console.log('Prepared production paths and metadata.');
+
+// --- Search Index Generation ---
+const englishStopWords = new Set(['the','a','an','and','or','but','in','on','at','to','for','of','with','by','from','as','is','was','are','this','that','it','you','your','our','we','us','me','my','his','her','their','them','they','he','she','i','am','be','been','have','has','had','do','does','did','will','would','could','should','may','might','can','shall','about','above','across','after','against','along','among','around','before','behind','below','beneath','beside','between','beyond','down','during','except','inside','into','near','off','onto','outside','over','since','through','throughout','till','toward','under','until','up','upon','within','without']);
+const arabicStopWords = new Set(['في','من','إلى','عن','على','مع','هي','هو','أن','لا','كان','قد','كل','بعض','هذه','هذا','الذين','التي','التى','و','ما','لا','لم','لن','لها','له','كما','بعد','قبل','بين','تحت','فوق','حول','خلال','دون','سوى','غير','لكن','لذلك','إلا','حتى','حيث','إذا','اذا','عند','عندما','حين','لأن','لان','لأنه','بسبب','نظرا','رغم','على','ضد','بجانب','بعيد','قريب','أمام','خلف','يمين','يسار','شمال','جنوب','شرق','غرب','أول','ثان','ثالث','رابع','خمس','ست','سبع','ثمان','تسع','عشر','مئة','ألف','مليون','مليار']);
+
+function stripHtmlTags(html) {
+  return html.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").trim();
+}
+
+function extractWords(text, lang) {
+  const stopWords = lang === 'ar' ? arabicStopWords : englishStopWords;
+  const words = new Set();
+  for (const raw of text.split(/\s+/)) {
+    const clean = raw.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+    if (clean && clean.length > 2 && !stopWords.has(clean)) {
+      words.add(clean);
+    }
+  }
+  return words;
+}
+
+function getKeywords(html, description, lang) {
+  const keywords = new Set();
+  // H2 and H3 text
+  for (const match of html.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/g)) {
+    for (const word of extractWords(stripHtmlTags(match[1]), lang)) {
+      keywords.add(word);
+    }
+  }
+  // Description words
+  for (const word of extractWords(description, lang)) {
+    keywords.add(word);
+  }
+  return [...keywords].sort();
+}
+
+function extractFirstParagraphFromArticleBody(html) {
+  const startMatch = html.match(/<div class="article-body"[^>]*>/);
+  if (!startMatch) return '';
+  const start = startMatch.index + startMatch[0].length;
+  let depth = 1;
+  let i = start;
+  while (i < html.length && depth > 0) {
+    if (html.substring(i, 5) === '<div' && (html[i + 5] === ' ' || html[i + 5] === '>')) {
+      depth++;
+      i += 5;
+    } else if (html.substring(i, 6) === '</div>') {
+      depth--;
+      if (depth === 0) break;
+      i += 6;
+    } else {
+      i++;
+    }
+  }
+  const bodyContent = html.slice(start, i);
+  const pMatch = bodyContent.match(/<p[^>]*>([\s\S]*?)<\/p>/);
+  return pMatch ? stripHtmlTags(pMatch[1]).trim() : '';
+}
+
+const searchFiles = htmlFiles.filter((file) => {
+  const rel = file.slice(root.length);
+  return /^(en|ar)\/article\/[^/]+\.html$/.test(rel) || /^(en|ar)\/[^/]+\.html$/.test(rel);
+});
+
+const articles = [];
+for (const file of searchFiles) {
+  const rel = file.slice(root.length);
+  if (rel.endsWith('404.html')) continue;
+
+  const html = await readFile(file, 'utf8');
+
+  const title = (html.match(/<title>([^<]+)<\/title>/)?.[1] || '').trim();
+  const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '';
+
+  const lang = html.match(/<html[^>]*\blang="([^"]+)"/)?.[1] || (rel.startsWith('ar/') ? 'ar' : 'en');
+
+  const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  const url = canonical || absoluteUrl(rel);
+
+  const slug = rel.split('/').pop().replace('.html', '');
+  const type = rel.includes('/article/') ? 'article' : 'page';
+
+  let excerpt = extractFirstParagraphFromArticleBody(html);
+  if (!excerpt) {
+    // Fallback: first meaningful <p> in the whole document
+    const pMatch = html.match(/<p[^>]*>([\s\S]*?)<\/p>/);
+    if (pMatch) {
+      excerpt = stripHtmlTags(pMatch[1]).trim();
+    }
+  }
+  if (excerpt.length > 200) {
+    excerpt = excerpt.slice(0, 200) + '...';
+  }
+
+  let category = '';
+  let categorySlug = '';
+
+  // Try category badge in article header
+  const badgeMatch = html.match(/<span class="category-badge[^"]*"><a href="\/(?:en|ar)\/category\/([^"]+)\.html">([\s\S]*?)<\/a><\/span>/);
+  if (badgeMatch) {
+    categorySlug = badgeMatch[1];
+    category = stripHtmlTags(badgeMatch[2]).trim();
+  }
+
+  // Fallback to breadcrumb category link
+  if (!categorySlug) {
+    const breadcrumbMatch = html.match(/<nav class="breadcrumb"[\s\S]*?<li><a href="\/(?:en|ar)\/category\/([^"]+)\.html">([\s\S]*?)<\/a><\/li>/);
+    if (breadcrumbMatch) {
+      categorySlug = breadcrumbMatch[1];
+      category = stripHtmlTags(breadcrumbMatch[2]).trim();
+    }
+  }
+
+  // Fallback for pages
+  if (!categorySlug) {
+    category = lang === 'ar' ? 'عام' : 'General';
+    categorySlug = 'general';
+  }
+
+  const keywords = getKeywords(html, description, lang);
+
+  articles.push({
+    title,
+    description,
+    excerpt,
+    category,
+    categorySlug,
+    language: lang,
+    url,
+    slug,
+    keywords,
+    type
+  });
+}
+
+const index = {
+  version: 1,
+  generated: new Date().toISOString(),
+  count: articles.length,
+  articles
+};
+
+await writeFile(join(root, 'assets/js/search-index.json'), JSON.stringify(index, null, 2));
+console.log('Generated search index with', articles.length, 'articles');

@@ -168,46 +168,221 @@
     const searchContainer = document.createElement('div');
     searchContainer.className = 'search-container';
 
+    const searchInputWrapper = document.createElement('div');
+    searchInputWrapper.className = 'search-input-wrapper';
+
     const searchInput = document.createElement('input');
     searchInput.className = 'search-input';
     searchInput.type = 'text';
     searchInput.placeholder = document.documentElement.lang === 'ar' ? 'ابحث في المقالات...' : 'Search articles...';
     searchInput.setAttribute('autocomplete', 'off');
     searchInput.setAttribute('aria-label', document.documentElement.lang === 'ar' ? 'البحث في المقالات' : 'Search articles');
+    searchInput.setAttribute('aria-controls', 'search-results-list');
+    searchInput.setAttribute('aria-autocomplete', 'list');
+
+    const searchClearBtn = document.createElement('button');
+    searchClearBtn.className = 'search-clear-btn';
+    searchClearBtn.type = 'button';
+    searchClearBtn.setAttribute('aria-label', 'Clear search');
+    searchClearBtn.innerHTML = '&times;';
+    searchClearBtn.style.display = 'none';
+
+    searchInputWrapper.appendChild(searchInput);
+    searchInputWrapper.appendChild(searchClearBtn);
 
     const searchResults = document.createElement('div');
     searchResults.className = 'search-results';
+    searchResults.id = 'search-results-list';
+    searchResults.setAttribute('role', 'listbox');
     searchResults.setAttribute('aria-live', 'polite');
 
-    searchContainer.appendChild(searchInput);
+    searchContainer.appendChild(searchInputWrapper);
     searchContainer.appendChild(searchResults);
     searchOverlay.appendChild(searchBackdrop);
     searchOverlay.appendChild(searchContainer);
     document.body.appendChild(searchOverlay);
 
-    let articleIndex = [];
-    function buildArticleIndex() {
-        articleIndex = [];
-        document.querySelectorAll('.article-card').forEach(function(card) {
-            const titleEl = card.querySelector('.card-title');
-            const badgeEl = card.querySelector('.category-badge');
-            if (titleEl && card.href) {
-                articleIndex.push({
-                    title: titleEl.textContent.trim(),
-                    category: badgeEl ? badgeEl.textContent.trim() : '',
-                    url: card.href
-                });
-            }
-        });
-        if (articleIndex.length === 0) {
-            articleIndex = [
-                { title: 'Best Beaches in Dubai: 12 Top Picks for Every Type of Traveler', category: 'General', url: '/en/article/best-beaches-dubai.html' },
-                { title: 'Best Restaurants in Dubai: 15 Top Picks for Every Taste and Budget', category: 'General', url: '/en/article/best-restaurants-dubai.html' },
-                { title: 'Burj Khalifa: 10 Surprising Facts You Didn\'t Know', category: 'General', url: '/en/article/burj-khalifa-facts.html' }
-            ];
-        }
+    // --- Search Index Loading ---
+    var searchIndex = null;
+    var searchIndexLoaded = false;
+    function loadSearchIndex() {
+      if (searchIndexLoaded) return Promise.resolve(searchIndex);
+      return fetch('/assets/js/search-index.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { searchIndex = data; searchIndexLoaded = true; return data; })
+        .catch(function() { searchIndex = { articles: [] }; searchIndexLoaded = true; return searchIndex; });
     }
-    buildArticleIndex();
+
+    // --- Text Normalization ---
+    function normalizeText(text, lang) {
+      text = text.toLowerCase().trim();
+      if (lang === 'ar') {
+        text = text.replace(/[\u064B-\u065F\u0670]/g, '') // remove tashkeel
+                   .replace(/[أإآا]/g, 'ا')
+                   .replace(/ى/g, 'ي')
+                   .replace(/ة/g, 'ه');
+      }
+      return text.replace(/[^\w\s\u0600-\u06FF]/g, ' ').replace(/\s+/g, ' ').trim();
+    }
+    function tokenize(text, lang) {
+      return normalizeText(text, lang).split(/\s+/).filter(function(w) { return w.length > 1; });
+    }
+
+    // --- Fuzzy Matching + Levenshtein ---
+    function levenshtein(a, b) {
+      var m = a.length, n = b.length;
+      if (m === 0) return n;
+      if (n === 0) return m;
+      var prev = new Array(n + 1);
+      var curr = new Array(n + 1);
+      for (var j = 0; j <= n; j++) prev[j] = j;
+      for (var i = 1; i <= m; i++) {
+        curr[0] = i;
+        for (var j = 1; j <= n; j++) {
+          var cost = a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1;
+          curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost);
+        }
+        var tmp = prev; prev = curr; curr = tmp;
+      }
+      return prev[n];
+    }
+    function wordScore(queryWord, textWord) {
+      if (textWord === queryWord) return 1.0;
+      if (textWord.indexOf(queryWord) === 0) return 0.8;
+      if (textWord.indexOf(queryWord) !== -1) return 0.6;
+      var dist = levenshtein(queryWord, textWord);
+      if (dist <= 2 && queryWord.length > 3) return 0.4 - (dist * 0.1);
+      return 0;
+    }
+
+    // --- Relevance Scoring ---
+    function calculateScore(queryWords, article) {
+      var score = 0;
+      var titleWords = tokenize(article.title, article.language);
+      var descWords = tokenize(article.description, article.language);
+      var excerptWords = tokenize(article.excerpt, article.language);
+      var catWords = tokenize(article.category, article.language);
+      var kwWords = article.keywords ? article.keywords.map(function(k) { return normalizeText(k, article.language); }) : [];
+      var slugWords = tokenize(article.slug, article.language);
+
+      var allMatchTitle = true, allMatchDesc = true;
+
+      queryWords.forEach(function(qw) {
+        var bestTitle = 0, bestDesc = 0, bestExcerpt = 0, bestCat = 0, bestKw = 0, bestSlug = 0;
+        titleWords.forEach(function(tw) { bestTitle = Math.max(bestTitle, wordScore(qw, tw)); });
+        descWords.forEach(function(dw) { bestDesc = Math.max(bestDesc, wordScore(qw, dw)); });
+        excerptWords.forEach(function(ew) { bestExcerpt = Math.max(bestExcerpt, wordScore(qw, ew)); });
+        catWords.forEach(function(cw) { bestCat = Math.max(bestCat, wordScore(qw, cw)); });
+        kwWords.forEach(function(kw) { bestKw = Math.max(bestKw, wordScore(qw, kw)); });
+        slugWords.forEach(function(sw) { bestSlug = Math.max(bestSlug, wordScore(qw, sw)); });
+
+        score += bestTitle * 10 + bestDesc * 5 + bestExcerpt * 3 + bestCat * 2 + bestKw * 4 + bestSlug * 1;
+        if (bestTitle < 0.5) allMatchTitle = false;
+        if (bestDesc < 0.5) allMatchDesc = false;
+      });
+
+      if (allMatchTitle) score *= 1.5;
+      if (allMatchDesc) score *= 1.2;
+      return score;
+    }
+
+    // --- Search Function ---
+    function performSearch(query, limit) {
+      limit = limit || 10;
+      var queryWords = tokenize(query, document.documentElement.lang);
+      if (queryWords.length === 0) return [];
+
+      var results = searchIndex.articles.map(function(article) {
+        return { article: article, score: calculateScore(queryWords, article) };
+      }).filter(function(r) { return r.score > 0; });
+
+      // Prioritize current language
+      var currentLang = document.documentElement.lang;
+      results.sort(function(a, b) {
+        var langBonusA = a.article.language === currentLang ? 100 : 0;
+        var langBonusB = b.article.language === currentLang ? 100 : 0;
+        return (b.score + langBonusB) - (a.score + langBonusA);
+      });
+
+      return results.slice(0, limit);
+    }
+
+    // --- Highlighting ---
+    function highlightText(text, queryWords) {
+      if (!queryWords.length) return text;
+      var normalized = normalizeText(text, document.documentElement.lang);
+      var matches = [];
+      queryWords.forEach(function(qw) {
+        var idx = normalized.indexOf(qw);
+        while (idx !== -1) {
+          matches.push({ start: idx, end: idx + qw.length });
+          idx = normalized.indexOf(qw, idx + 1);
+        }
+      });
+      if (!matches.length) return text;
+      matches.sort(function(a, b) { return a.start - b.start; });
+      var merged = [];
+      matches.forEach(function(m) {
+        if (!merged.length || m.start > merged[merged.length - 1].end) {
+          merged.push(m);
+        } else if (m.end > merged[merged.length - 1].end) {
+          merged[merged.length - 1].end = m.end;
+        }
+      });
+      var result = '';
+      var last = 0;
+      merged.forEach(function(m) {
+        result += text.substring(last, m.start) + '<mark class="search-highlight">' + text.substring(m.start, m.end) + '</mark>';
+        last = m.end;
+      });
+      result += text.substring(last);
+      return result;
+    }
+
+    function getExcerptWithContext(article, queryWords, maxLen) {
+      maxLen = maxLen || 100;
+      var text = article.excerpt || article.description || '';
+      var normalized = normalizeText(text, article.language);
+      var bestIdx = -1;
+      queryWords.forEach(function(qw) {
+        var idx = normalized.indexOf(qw);
+        if (idx !== -1 && (bestIdx === -1 || idx < bestIdx)) bestIdx = idx;
+      });
+      if (bestIdx === -1) {
+        return text.length > maxLen ? text.substring(0, maxLen) + '...' : text;
+      }
+      var start = Math.max(0, bestIdx - Math.floor(maxLen / 2));
+      var end = Math.min(text.length, start + maxLen);
+      var prefix = start > 0 ? '...' : '';
+      var suffix = end < text.length ? '...' : '';
+      return prefix + text.substring(start, end) + suffix;
+    }
+
+    // --- Recent Searches ---
+    var RECENT_KEY = 'dyk-recent-searches';
+    function getRecentSearches() {
+      try {
+        var raw = localStorage.getItem(RECENT_KEY);
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) { return []; }
+    }
+    function saveRecentSearch(query) {
+      if (!query || !query.trim()) return;
+      var recent = getRecentSearches();
+      var trimmed = query.trim();
+      recent = recent.filter(function(q) { return q !== trimmed; });
+      recent.unshift(trimmed);
+      if (recent.length > 5) recent = recent.slice(0, 5);
+      try { localStorage.setItem(RECENT_KEY, JSON.stringify(recent)); } catch (e) {}
+    }
+    function clearRecentSearches() {
+      try { localStorage.removeItem(RECENT_KEY); } catch (e) {}
+    }
+
+    // --- Search State ---
+    var selectedIndex = -1;
+    var resultItems = [];
+    var isLoadingIndex = false;
 
     function openSearch() {
         searchOverlay.classList.add('active');
@@ -215,6 +390,14 @@
         document.body.classList.add('no-scroll');
         setTimeout(function() { searchInput.focus(); }, 50);
         console.log('Search overlay opened');
+        if (!searchIndexLoaded && !isLoadingIndex) {
+          isLoadingIndex = true;
+          loadSearchIndex().then(function() {
+            isLoadingIndex = false;
+            renderSearchState();
+          });
+        }
+        renderSearchState();
     }
 
     function closeSearch() {
@@ -223,6 +406,10 @@
         document.body.classList.remove('no-scroll');
         searchInput.value = '';
         searchResults.innerHTML = '';
+        selectedIndex = -1;
+        resultItems = [];
+        searchInput.setAttribute('aria-activedescendant', '');
+        searchClearBtn.style.display = 'none';
     }
 
     searchBackdrop.addEventListener('click', closeSearch);
@@ -240,45 +427,199 @@
         }
     });
 
+    // --- Clear Button ---
+    searchClearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        searchInput.focus();
+        searchClearBtn.style.display = 'none';
+        renderSearchState();
+    });
+
+    // --- Keyboard Navigation ---
+    searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (resultItems.length > 0) {
+                selectedIndex = Math.min(selectedIndex + 1, resultItems.length - 1);
+                updateSelection();
+            }
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (selectedIndex > 0) {
+                selectedIndex--;
+                updateSelection();
+            } else if (selectedIndex === 0) {
+                selectedIndex = -1;
+                updateSelection();
+                searchInput.focus();
+            }
+        } else if (e.key === 'Enter') {
+            if (selectedIndex >= 0 && resultItems[selectedIndex]) {
+                e.preventDefault();
+                window.location.href = resultItems[selectedIndex].href;
+            } else if (searchInput.value.trim()) {
+                saveRecentSearch(searchInput.value.trim());
+            }
+        }
+    });
+
+    function updateSelection() {
+        resultItems.forEach(function(el, i) {
+            el.classList.toggle('selected', i === selectedIndex);
+            if (i === selectedIndex) {
+                el.scrollIntoView({ block: 'nearest' });
+                searchInput.setAttribute('aria-activedescendant', el.id);
+            }
+        });
+        if (selectedIndex < 0) {
+            searchInput.setAttribute('aria-activedescendant', '');
+        }
+    }
+
+    // --- Debounced Input ---
     let searchDebounceTimer;
     searchInput.addEventListener('input', function() {
         clearTimeout(searchDebounceTimer);
+        searchClearBtn.style.display = searchInput.value ? 'block' : 'none';
         searchDebounceTimer = setTimeout(function() {
-            performSearch(searchInput.value.trim());
+            renderSearchState();
         }, 200);
     });
 
-    function performSearch(query) {
+    // --- Render Search Results ---
+    function renderSearchState() {
+        var query = searchInput.value.trim();
         searchResults.innerHTML = '';
-        if (!query) return;
+        selectedIndex = -1;
+        resultItems = [];
+        searchInput.setAttribute('aria-activedescendant', '');
 
-        var lower = query.toLowerCase();
-        var matches = articleIndex.filter(function(item) {
-            return item.title.toLowerCase().includes(lower) || item.category.toLowerCase().includes(lower);
-        });
+        if (!query) {
+            // Show recent searches
+            var recent = getRecentSearches();
+            if (recent.length > 0) {
+                var recentHeader = document.createElement('div');
+                recentHeader.className = 'search-recent-header';
+                recentHeader.innerHTML = '<span>' + (document.documentElement.lang === 'ar' ? 'عمليات البحث الأخيرة' : 'Recent Searches') + '</span>' +
+                    '<button class="search-clear-recent" type="button">' + (document.documentElement.lang === 'ar' ? 'مسح' : 'Clear') + '</button>';
+                searchResults.appendChild(recentHeader);
+                recentHeader.querySelector('.search-clear-recent').addEventListener('click', function() {
+                    clearRecentSearches();
+                    renderSearchState();
+                });
+                recent.forEach(function(q) {
+                    var chip = document.createElement('button');
+                    chip.className = 'search-recent-chip';
+                    chip.type = 'button';
+                    chip.textContent = q;
+                    chip.addEventListener('click', function() {
+                        searchInput.value = q;
+                        searchClearBtn.style.display = 'block';
+                        renderSearchState();
+                    });
+                    searchResults.appendChild(chip);
+                });
+            }
+            return;
+        }
 
-        if (matches.length === 0) {
+        if (!searchIndexLoaded) {
+            var loading = document.createElement('div');
+            loading.className = 'search-loading';
+            loading.innerHTML = '<span class="search-loading-dots">' + (document.documentElement.lang === 'ar' ? 'جارٍ تحميل فهرس البحث' : 'Loading search index') + '</span>';
+            searchResults.appendChild(loading);
+            return;
+        }
+
+        var queryWords = tokenize(query, document.documentElement.lang);
+        if (queryWords.length === 0) {
             var empty = document.createElement('div');
             empty.className = 'search-empty-state';
-            empty.textContent = 'No results found. Try \'Dubai\' or \'Saudi\'.';
+            empty.textContent = document.documentElement.lang === 'ar' ? 'لم يتم العثور على نتائج.' : 'No results found.';
             searchResults.appendChild(empty);
             return;
         }
 
-        matches.forEach(function(item) {
+        var results = performSearch(query, 10);
+
+        if (results.length === 0) {
+            var empty = document.createElement('div');
+            empty.className = 'search-empty-state';
+            var suggestions = document.documentElement.lang === 'ar'
+                ? ['دبي', 'السعودية', 'تأشيرة', 'كأس العالم', 'سفر']
+                : ['Dubai', 'Saudi', 'visa', 'World Cup', 'travel'];
+            empty.innerHTML = '<div>' + (document.documentElement.lang === 'ar' ? 'لم يتم العثور على نتائج لـ' : 'No results found for') + ' \'' + escapeHtml(query) + '\'.</div>' +
+                '<div class="search-suggestions">' + suggestions.map(function(s) {
+                    return '<button class="search-suggestion" type="button">' + escapeHtml(s) + '</button>';
+                }).join('') + '</div>';
+            searchResults.appendChild(empty);
+            empty.querySelectorAll('.search-suggestion').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    searchInput.value = btn.textContent;
+                    searchClearBtn.style.display = 'block';
+                    renderSearchState();
+                });
+            });
+            return;
+        }
+
+        // Result count
+        var countEl = document.createElement('div');
+        countEl.className = 'search-count';
+        countEl.textContent = results.length + (document.documentElement.lang === 'ar' ? ' نتيجة' : ' results found');
+        searchResults.appendChild(countEl);
+
+        results.forEach(function(r, i) {
+            var article = r.article;
             var a = document.createElement('a');
             a.className = 'search-result-item';
-            a.href = item.url;
+            a.href = article.url;
+            a.id = 'search-result-' + i;
+            a.setAttribute('role', 'option');
+
+            var titleRow = document.createElement('div');
+            titleRow.className = 'search-result-title-row';
+
             var title = document.createElement('div');
             title.className = 'search-result-title';
-            title.textContent = item.title;
-            var meta = document.createElement('div');
-            meta.className = 'search-result-meta';
-            meta.textContent = item.category;
-            a.appendChild(title);
-            a.appendChild(meta);
+            title.innerHTML = highlightText(article.title, queryWords);
+            titleRow.appendChild(title);
+
+            var langBadge = document.createElement('span');
+            langBadge.className = 'search-lang-badge';
+            langBadge.textContent = article.language === 'ar' ? 'AR' : 'EN';
+            titleRow.appendChild(langBadge);
+
+            a.appendChild(titleRow);
+
+            var metaRow = document.createElement('div');
+            metaRow.className = 'search-result-meta-row';
+
+            var catBadge = document.createElement('span');
+            catBadge.className = 'category-badge badge-' + (article.categorySlug || article.category.toLowerCase());
+            catBadge.textContent = article.category;
+            metaRow.appendChild(catBadge);
+
+            a.appendChild(metaRow);
+
+            var excerpt = document.createElement('div');
+            excerpt.className = 'search-result-excerpt';
+            excerpt.innerHTML = highlightText(getExcerptWithContext(article, queryWords, 100), queryWords);
+            a.appendChild(excerpt);
+
+            a.addEventListener('click', function() {
+                saveRecentSearch(query);
+            });
+
             searchResults.appendChild(a);
+            resultItems.push(a);
         });
+    }
+
+    function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     }
 
     document.querySelectorAll('.search-toggle').forEach(function(button) {
