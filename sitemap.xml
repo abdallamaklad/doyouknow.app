@@ -1,70 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url><loc>https://doyouknow.app/ar/</loc><lastmod>2026-06-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>https://doyouknow.app/ar/about.html</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-<url><loc>https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/algeria-attack-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/algeria-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/alula-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/arab-fans-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/arab-football-legacy-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/arab-team-semifinals-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/arab-teams-world-cup-2026-pillar.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/arab-teams-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/best-beaches-dubai.html</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/best-places-saudi-arabia.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/best-restaurants-dubai.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/best-restaurants-riyadh.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/burj-khalifa-facts.html</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/complete-saudi-travel-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/deep-dive-dubai.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/diriyah-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/dubai-frame.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/dubai-metro-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/dubai-miracle-garden.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/dubai-police-lamborghini.html</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/dubai-tourist-visa-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/dubai-vs-abu-dhabi.html</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/edge-of-the-world-riyadh.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/egypt-midfield-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/egypt-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/expo-city-dubai.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/hidden-gems-uae.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/iraq-jordan-tournament-discipline-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/iraq-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/islamic-finance-guide.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/jeddah-travel-guide.html</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/jordan-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/kingdom-tower-riyadh.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/louvre-abu-dhabi.html</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/morocco-defensive-structure-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/morocco-egypt-algeria-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/morocco-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/palm-jumeirah-engineering.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/pearl-diving-saudi.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/qatar-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/qiddiya-saudi-arabia.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/red-sea-project-saudi.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/riyadh-nightlife-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/ronaldo-saudi-arabia.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-arabia-history.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-arabia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-cuisine-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-e-visa-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-football-global.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-national-day.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-no-rivers.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/saudi-technical-ceiling-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/save-money-dubai.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/sheikh-zayed-grand-mosque-guide.html</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/the-line-neom.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/things-to-do-dubai-this-week.html</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/tunisia-defensive-grit-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/what-is-neom.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/what-is-zakat.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/world-cup-2026-group-stage-pressure-arab-teams.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/ar/article/yas-island-abu-dhabi.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-abu-dhabi-complete-guide.svg</image:loc><image:title>دليل أبوظبي الشامل: أهم المعالم والوجهات السياحية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/algeria-attack-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/algeria-attack-world-cup-2026.svg</image:loc><image:title>هجوم الجزائر في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/algeria-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/algeria-world-cup-2026.svg</image:loc><image:title>الجزائر في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/alula-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-alula-saudi-arabia.svg</image:loc><image:title>العلا: عجيبة السعودية الأثرية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/arab-fans-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-fans-world-cup-2026.svg</image:loc><image:title>الجمهور العربي وكأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/arab-football-legacy-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-football-legacy-world-cup-2026.svg</image:loc><image:title>كأس العالم 2026 وإرث الكرة العربية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/arab-team-semifinals-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-team-semifinals-world-cup-2026.svg</image:loc><image:title>هل يصل منتخب عربي إلى نصف النهائي؟ | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/arab-teams-world-cup-2026-pillar.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-arab-teams-world-cup-2026-pillar.svg</image:loc><image:title>المنتخبات العربية في كأس العالم 2026: دليل شامل | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/arab-teams-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-teams-world-cup-2026.svg</image:loc><image:title>المنتخبات العربية في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/best-beaches-dubai.html</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-best-beaches-dubai.svg</image:loc><image:title>أفضل 12 شاطئ في دبي: دليل شامل | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/best-places-saudi-arabia.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-best-places-saudi-arabia.svg</image:loc><image:title>العشرة أماكن التي يجب زيارتها في السعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/best-restaurants-dubai.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-best-restaurants-dubai.svg</image:loc><image:title>أفضل 15 مطعم في دبي: دليل شامل يغطي كل الميزانيات | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/best-restaurants-riyadh.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-best-restaurants-riyadh.svg</image:loc><image:title>أفضل مطاعم الرياض: دليلك لتجربة طعام لا تُنسى | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/burj-khalifa-facts.html</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-burj-khalifa-facts.svg</image:loc><image:title>برج خليفة: 10 حقائق مذهلة لا تعرفها | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/complete-saudi-travel-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-complete-saudi-travel-guide.svg</image:loc><image:title>دليل السفر الشامل إلى المملكة العربية السعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/deep-dive-dubai.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-deep-dive-dubai.svg</image:loc><image:title>ديب دايف دبي: أعمق مسبح للغوص في العالم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/diriyah-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-diriyah-saudi-arabia.svg</image:loc><image:title>ديرية: مهد المملكة العربية السعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/dubai-frame.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-dubai-frame.svg</image:loc><image:title>برواز دبي: رمز معماري يروي قصة المدينة | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/dubai-metro-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-dubai-metro-guide.svg</image:loc><image:title>دليل مترو دبي: كل ما تحتاجه للتنقل بذكاء | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/dubai-miracle-garden.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-dubai-miracle-garden.svg</image:loc><image:title>حديقة دبي المعجزة: 150 مليون زهرة في قلب الصحراء العربية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/dubai-police-lamborghini.html</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-dubai-police-lamborghini.svg</image:loc><image:title>هل تعلم أن شرطة دبي تمتلك سيارة لامبورغيني؟ | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/dubai-tourist-visa-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-dubai-tourist-visa-guide.svg</image:loc><image:title>دليل تأشيرة دبي السياحية 2026: 11 نوعاً والتقديم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/dubai-vs-abu-dhabi.html</loc><lastmod>2026-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-dubai-vs-abu-dhabi.svg</image:loc><image:title>دبي أو أبوظبي: الدليل الكامل لاختيار وجهتك السياحية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/edge-of-the-world-riyadh.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-edge-of-the-world-riyadh.svg</image:loc><image:title>حافة العالم: عجيبة طبيعية قرب الرياض | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/egypt-midfield-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/egypt-midfield-world-cup-2026.svg</image:loc><image:title>وسط مصر في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/egypt-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/egypt-world-cup-2026.svg</image:loc><image:title>مصر في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/expo-city-dubai.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-expo-city-dubai.svg</image:loc><image:title>مدينة إكسبو دبي: ماذا حدث بعد انتهاء المعرض؟ | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/hidden-gems-uae.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-hidden-gems-uae.svg</image:loc><image:title>10 جواهر مخفية في الإمارات تستحق الاستكشاف | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/iraq-jordan-tournament-discipline-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/iraq-jordan-tournament-discipline-world-cup-2026.svg</image:loc><image:title>العراق والأردن والانضباط البطولي | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/iraq-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/iraq-world-cup-2026.svg</image:loc><image:title>العراق في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/islamic-finance-guide.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-islamic-finance-guide.svg</image:loc><image:title>التمويل الإسلامي: دليل للمبتدئين | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/jeddah-travel-guide.html</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-jeddah-travel-guide.svg</image:loc><image:title>دليل جدة السياحي الشامل: أبرز المعالم والوجهات | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/jordan-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/jordan-world-cup-2026.svg</image:loc><image:title>الأردن في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/kingdom-tower-riyadh.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-kingdom-tower-riyadh.svg</image:loc><image:title>برج المملكة: ناطحة السحاب الأيقونية في الرياض | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/louvre-abu-dhabi.html</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-louvre-abu-dhabi.svg</image:loc><image:title>متحف اللوفر أبوظبي: دليلك الشامل للزيارة والاستكشاف | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/morocco-defensive-structure-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/morocco-defensive-structure-world-cup-2026.svg</image:loc><image:title>التنظيم الدفاعي المغربي | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/morocco-egypt-algeria-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/morocco-egypt-algeria-world-cup-2026.svg</image:loc><image:title>المغرب ومصر والجزائر | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/morocco-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/morocco-world-cup-2026.svg</image:loc><image:title>المغرب في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/palm-jumeirah-engineering.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-palm-jumeirah-engineering.svg</image:loc><image:title>نخلة جميرا: كيف بُنيت أكبر جزيرة اصطناعية في العالم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/pearl-diving-saudi.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-pearl-diving-saudi.svg</image:loc><image:title>تاريخ الغوص على اللؤلؤ في السعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/qatar-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/qatar-world-cup-2026.svg</image:loc><image:title>قطر في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/qiddiya-saudi-arabia.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-qiddiya-saudi-arabia.svg</image:loc><image:title>القدية: مدينة الترفيه السعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/red-sea-project-saudi.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-red-sea-project-saudi.svg</image:loc><image:title>مشروع البحر الأحمر: السياحة الفاخرة في السعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/riyadh-nightlife-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-riyadh-nightlife-guide.svg</image:loc><image:title>دليل الحياة الليلية في الرياض: أفضل الأماكن | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/ronaldo-saudi-arabia.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-ronaldo-saudi-arabia.svg</image:loc><image:title>رونالدو في السعودية: التأثير والتغيير | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-arabia-history.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-saudi-arabia-history.svg</image:loc><image:title>تاريخ السعودية: من الدرعية إلى اليوم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-arabia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/saudi-arabia-world-cup-2026.svg</image:loc><image:title>السعودية في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-cuisine-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-saudi-cuisine-guide.svg</image:loc><image:title>دليل المطبخ السعودي: أشهر الأطباق والمطاعم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-e-visa-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-saudi-e-visa-guide.svg</image:loc><image:title>دليل التأشيرة الإلكترونية السعودية: أنواعها والتقديم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-football-global.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-saudi-football-global.svg</image:loc><image:title>كرة القدم السعودية: كيف أصبحت قوة عالمية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-national-day.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-saudi-national-day.svg</image:loc><image:title>اليوم الوطني السعودي: ما يحتفل به ولماذا يهم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-no-rivers.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-saudi-no-rivers.svg</image:loc><image:title>Saudi No Rivers | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/saudi-technical-ceiling-world-cup-2026.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/saudi-technical-ceiling-world-cup-2026.svg</image:loc><image:title>السقف الفني للسعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/save-money-dubai.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-save-money-dubai.svg</image:loc><image:title>كيف توفر المال في دبي: 25 نصيحة عملية للمقيمين والزوار | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/sheikh-zayed-grand-mosque-guide.html</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-sheikh-zayed-grand-mosque-guide.svg</image:loc><image:title>جامع الشيخ زايد الكبير: دليلك الشامل للزيارة | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/the-line-neom.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-the-line-neom.svg</image:loc><image:title>الخط: ما نعرفه عن مدينة نيوم الخطية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/things-to-do-dubai-this-week.html</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-things-to-do-dubai-this-week.svg</image:loc><image:title>فعاليات دبي الأسبوعية: دليل الأنشطة والترفيه | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/tunisia-defensive-grit-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-defensive-grit-world-cup-2026.svg</image:loc><image:title>تونس وفن البقاء | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-world-cup-2026.svg</image:loc><image:title>تونس في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/what-is-neom.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-what-is-neom.svg</image:loc><image:title>What Is Neom | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/what-is-zakat.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-what-is-zakat.svg</image:loc><image:title>ما هي الزكاة وكيف تحسبها: دليل عملي وموثوق | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/world-cup-2026-group-stage-pressure-arab-teams.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/world-cup-2026-group-stage-pressure-arab-teams.svg</image:loc><image:title>ضغط دور المجموعات في كأس العالم | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/yas-island-abu-dhabi.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-yas-island-abu-dhabi.svg</image:loc><image:title>جزيرة ياس أبوظبي: دليل شامل لعاصمة الترفيه في الإمارات | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/category/dubai.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://doyouknow.app/ar/category/guides.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://doyouknow.app/ar/category/islamic.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -78,54 +141,102 @@
 <url><loc>https://doyouknow.app/ar/work-with-us.html</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 <url><loc>https://doyouknow.app/en/</loc><lastmod>2026-06-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>https://doyouknow.app/en/about.html</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-<url><loc>https://doyouknow.app/en/article/abu-dhabi-complete-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/algeria-attack-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/algeria-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/alula-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/arab-fans-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/arab-football-legacy-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/arab-team-semifinals-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/arab-teams-world-cup-2026-pillar.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/arab-teams-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/best-beaches-dubai.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/best-restaurants-dubai.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/burj-khalifa-facts.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/complete-saudi-travel-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/deep-dive-dubai.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/dubai-frame.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/dubai-metro-guide.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/dubai-miracle-garden.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/dubai-police-lamborghini.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/dubai-tourist-visa-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/dubai-vs-abu-dhabi.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/egypt-midfield-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/egypt-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/expo-city-dubai.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/hidden-gems-uae.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/iraq-jordan-tournament-discipline-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/iraq-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/jeddah-travel-guide.html</loc><lastmod>2025-07-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/jordan-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/louvre-abu-dhabi.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/morocco-defensive-structure-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/morocco-egypt-algeria-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/morocco-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/palm-jumeirah-engineering.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/qatar-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/riyadh-nightlife-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/saudi-arabia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/saudi-cuisine-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/saudi-e-visa-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/saudi-technical-ceiling-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/save-money-dubai.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/sheikh-zayed-grand-mosque-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/things-to-do-dubai-this-week.html</loc><lastmod>2025-07-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/tunisia-defensive-grit-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/uae-imports-sand.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/what-is-neom.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/world-cup-2026-group-stage-pressure-arab-teams.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://doyouknow.app/en/article/yas-island-abu-dhabi.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://doyouknow.app/en/article/abu-dhabi-complete-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-abu-dhabi-complete-guide.svg</image:loc><image:title>Abu Dhabi Travel Guide: Attractions, Hotels &amp; Tips | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/algeria-attack-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/algeria-attack-world-cup-2026.svg</image:loc><image:title>Algeria's Attack at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/algeria-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/algeria-world-cup-2026.svg</image:loc><image:title>Algeria at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/alula-saudi-arabia.html</loc><lastmod>2025-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-alula-saudi-arabia.svg</image:loc><image:title>AlUla Saudi Arabia: Ancient Wonder &amp; Destination | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/arab-fans-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-fans-world-cup-2026.svg</image:loc><image:title>Arab Fans and World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/arab-football-legacy-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-football-legacy-world-cup-2026.svg</image:loc><image:title>World Cup 2026 and Arab Football Legacy | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/arab-team-semifinals-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-team-semifinals-world-cup-2026.svg</image:loc><image:title>Can an Arab Team Reach the Semifinals? | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/arab-teams-world-cup-2026-pillar.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-arab-teams-world-cup-2026-pillar.svg</image:loc><image:title>Arab Teams at World Cup 2026: Complete Guide to Every Squad | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/arab-teams-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/arab-teams-world-cup-2026.svg</image:loc><image:title>Arab Teams at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/best-beaches-dubai.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-best-beaches-dubai.svg</image:loc><image:title>12 Best Beaches in Dubai for Every Traveler | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/best-restaurants-dubai.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-best-restaurants-dubai.svg</image:loc><image:title>15 Best Restaurants in Dubai for Every Budget | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/burj-khalifa-facts.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-burj-khalifa-facts.svg</image:loc><image:title>Burj Khalifa: 10 Surprising Facts | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/complete-saudi-travel-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-complete-saudi-travel-guide.svg</image:loc><image:title>Saudi Arabia Travel Guide 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/deep-dive-dubai.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-deep-dive-dubai.svg</image:loc><image:title>Deep Dive Dubai | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/dubai-frame.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-dubai-frame.svg</image:loc><image:title>Dubai Frame: What It Is and Why It Matters | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/dubai-metro-guide.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-dubai-metro-guide.svg</image:loc><image:title>Dubai Metro Guide | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/dubai-miracle-garden.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-dubai-miracle-garden.svg</image:loc><image:title>Dubai Miracle Garden: Flowers in the Desert | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/dubai-police-lamborghini.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-dubai-police-lamborghini.svg</image:loc><image:title>Did You Know Dubai Police Has a Lamborghini? | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/dubai-tourist-visa-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-dubai-tourist-visa-guide.svg</image:loc><image:title>Dubai Tourist Visa Guide: All 11 UAE Visa Types | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/dubai-vs-abu-dhabi.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-dubai-vs-abu-dhabi.svg</image:loc><image:title>Dubai vs Abu Dhabi: Which Is Better for Tourists? | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/egypt-midfield-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/egypt-midfield-world-cup-2026.svg</image:loc><image:title>Egypt's Midfield at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/egypt-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/egypt-world-cup-2026.svg</image:loc><image:title>Egypt at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/expo-city-dubai.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-expo-city-dubai.svg</image:loc><image:title>Expo City Dubai: What Happened After the Expo? | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/hidden-gems-uae.html</loc><lastmod>2025-01-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-hidden-gems-uae.svg</image:loc><image:title>10 Hidden Gems in the UAE Worth Exploring | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/iraq-jordan-tournament-discipline-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/iraq-jordan-tournament-discipline-world-cup-2026.svg</image:loc><image:title>Iraq, Jordan &amp;amp; Tournament Discipline | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/iraq-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/iraq-world-cup-2026.svg</image:loc><image:title>Iraq at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/jeddah-travel-guide.html</loc><lastmod>2025-07-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-jeddah-travel-guide.svg</image:loc><image:title>Jeddah Travel Guide: Complete Red Sea City Guide 2025 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/jordan-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/jordan-world-cup-2026.svg</image:loc><image:title>Jordan at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/louvre-abu-dhabi.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-louvre-abu-dhabi.svg</image:loc><image:title>Louvre Abu Dhabi: Art in the Desert | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/morocco-defensive-structure-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/morocco-defensive-structure-world-cup-2026.svg</image:loc><image:title>Morocco's Defensive Structure | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/morocco-egypt-algeria-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/morocco-egypt-algeria-world-cup-2026.svg</image:loc><image:title>Morocco, Egypt &amp;amp; Algeria Compared | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/morocco-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/morocco-world-cup-2026.svg</image:loc><image:title>Morocco at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/palm-jumeirah-engineering.html</loc><lastmod>2025-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-palm-jumeirah-engineering.svg</image:loc><image:title>Palm Jumeirah: An Engineering Marvel | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/qatar-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/qatar-world-cup-2026.svg</image:loc><image:title>Qatar at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/riyadh-nightlife-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-riyadh-nightlife-guide.svg</image:loc><image:title>Riyadh Nightlife Guide 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/saudi-arabia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/saudi-arabia-world-cup-2026.svg</image:loc><image:title>Saudi Arabia at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/saudi-cuisine-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-saudi-cuisine-guide.svg</image:loc><image:title>Saudi Cuisine Guide: Dishes &amp; Food | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/saudi-e-visa-guide.html</loc><lastmod>2025-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-saudi-e-visa-guide.svg</image:loc><image:title>Saudi e-Visa Guide: Types, Fees &amp; Application Steps | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/saudi-technical-ceiling-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/saudi-technical-ceiling-world-cup-2026.svg</image:loc><image:title>Saudi Arabia's Technical Ceiling | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/save-money-dubai.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-save-money-dubai.svg</image:loc><image:title>How to Save Money in Dubai: 25 Practical Tips | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/sheikh-zayed-grand-mosque-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-sheikh-zayed-grand-mosque-guide.svg</image:loc><image:title>Sheikh Zayed Grand Mosque: A Complete Guide | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/things-to-do-dubai-this-week.html</loc><lastmod>2025-07-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-things-to-do-dubai-this-week.svg</image:loc><image:title>Things To Do in Dubai This Week: Events &amp; Guide | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/tunisia-defensive-grit-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-defensive-grit-world-cup-2026.svg</image:loc><image:title>Tunisia's Defensive Grit | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-world-cup-2026.svg</image:loc><image:title>Tunisia at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/uae-imports-sand.html</loc><lastmod>2025-01-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-uae-imports-sand.svg</image:loc><image:title>Did You Know the UAE Imports Most of Its Sand? | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/what-is-neom.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-what-is-neom.svg</image:loc><image:title>What Is NEOM? Saudi Arabia's Futuristic City | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/world-cup-2026-group-stage-pressure-arab-teams.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/world-cup-2026-group-stage-pressure-arab-teams.svg</image:loc><image:title>World Cup Group-Stage Pressure | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/yas-island-abu-dhabi.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-yas-island-abu-dhabi.svg</image:loc><image:title>Yas Island: Abu Dhabi's Entertainment Capital | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/en/category/dubai.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://doyouknow.app/en/category/guides.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 <url><loc>https://doyouknow.app/en/category/technology.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>

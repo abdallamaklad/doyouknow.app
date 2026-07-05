@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title">
+  <title id="title">العراق والأردن والانضباط البطولي</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#fff" opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#dots)"/>
+  <text x="400" y="200" text-anchor="middle" fill="#fff" opacity=".20" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="72" font-weight="900">DYK</text>
+  <text x="400" y="280" text-anchor="middle" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="700">العراق والأردن والانضباط</text>
+</svg>

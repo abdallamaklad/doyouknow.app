@@ -2812,14 +2812,6 @@ html[dir="rtl"] .wc-mini-list {
   outline-offset: 2px;
 }
 
-/* Print styles */
-@media print {
-  .site-header, .share-bar, .newsletter-cta, .site-footer, .related-articles, .toc, .mobile-menu-btn, .theme-toggle, .lang-switch { display: none !important; }
-  .article-page { max-width: 100%; padding: 0; }
-  body { background: white; color: black; }
-  a { color: black; text-decoration: underline; }
-}
-
 /* Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--color-bg-light); }
@@ -2832,3 +2824,191 @@ html[dir="rtl"] .wc-mini-list {
 .newsletter-signup,
 .footer-newsletter,
 .signup-form { display: none !important; }
+
+/* ============================================
+   Print Styles — Professional Print Experience
+   ============================================ */
+
+@media print {
+  /* (1) Hide non-essential elements */
+  .site-header,
+  .site-footer,
+  .share-bar,
+  .newsletter-cta,
+  .related-articles,
+  .language-switcher,
+  .dark-mode-toggle,
+  .back-to-top,
+  .scroll-progress,
+  .toc-sidebar,
+  .mobile-menu-btn,
+  .theme-toggle,
+  .lang-switch,
+  .toast-container,
+  .mobile-nav-overlay,
+  .mobile-nav,
+  .skip-link,
+  .hero-section::before,
+  .hero-section::after {
+    display: none !important;
+  }
+
+  /* (2) Expand FAQ accordions */
+  .faq-answer {
+    display: block !important;
+  }
+  .faq-toggle,
+  .faq-toggle svg,
+  .faq-toggle .icon,
+  .faq-toggle .chevron,
+  .faq-toggle .arrow {
+    display: none !important;
+  }
+
+  /* (3) Show URLs after links (except internal anchors) */
+  a[href]::after {
+    content: ' (' attr(href) ')';
+    font-size: 10px;
+    color: #666;
+  }
+  a[href^='#']::after,
+  a[href^='javascript']::after {
+    content: none !important;
+  }
+
+  /* (4) Optimize typography for print */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  h1 {
+    font-size: 18pt;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 14pt;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 12pt;
+    page-break-after: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+  }
+
+  /* (5) Page breaks */
+  .article-body h2 {
+    page-break-before: auto;
+  }
+
+  .article-body p,
+  .article-body ul,
+  .article-body ol,
+  .article-body li {
+    page-break-inside: avoid;
+  }
+
+  /* (6) Header/footer — print header with article title and URL */
+  @page {
+    margin: 1cm 1.5cm;
+  }
+
+  @page {
+    @top-center {
+      content: string(doctitle);
+      font-size: 9pt;
+      color: #666;
+    }
+  }
+
+  /* Fallback/simple print header for browsers without @page support */
+  .article-header::before {
+    content: attr(data-title) ' — ' attr(data-url);
+    display: block;
+    font-size: 9pt;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    page-break-after: avoid;
+  }
+
+  /* (7) Featured image: constrain for print layout */
+  .featured-image {
+    max-width: 400px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* (8) Author bio: show at bottom with border-top */
+  .author-bio,
+  .article-meta .author,
+  .author-info {
+    display: block !important;
+    border-top: 1px solid #ccc;
+    padding-top: 12px;
+    margin-top: 24px;
+    page-break-inside: avoid;
+  }
+
+  /* Reset backgrounds and shadows for print */
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure article page uses full width */
+  .article-page {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Ensure links are visible in print */
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  /* Hide skeleton and animation-related elements */
+  .skeleton,
+  .reveal,
+  .reveal-delay-1,
+  .reveal-delay-2,
+  .reveal-delay-3,
+  .reveal-delay-4,
+  .reveal-delay-5 {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

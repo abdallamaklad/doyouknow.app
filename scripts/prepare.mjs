@@ -260,6 +260,209 @@ function linkExistingCategory(html, relativeFile) {
   return html;
 }
 
+
+
+const englishStopWords = new Set(['the','a','an','and','or','but','in','on','at','to','for','of','with','by','from','as','is','was','are','this','that','it','you','your','our','we','us','me','my','his','her','their','them','they','he','she','i','am','be','been','have','has','had','do','does','did','will','would','could','should','may','might','can','shall','about','above','across','after','against','along','among','around','before','behind','below','beneath','beside','between','beyond','down','during','except','inside','into','near','off','onto','outside','over','since','through','throughout','till','toward','under','until','up','upon','within','without']);
+const arabicStopWords = new Set(['في','من','إلى','عن','على','مع','هي','هو','أن','لا','كان','قد','كل','بعض','هذه','هذا','الذين','التي','التى','و','ما','لا','لم','لن','لها','له','كما','بعد','قبل','بين','تحت','فوق','حول','خلال','دون','سوى','غير','لكن','لذلك','إلا','حتى','حيث','إذا','اذا','عند','عندما','حين','لأن','لان','لأنه','بسبب','نظرا','رغم','على','ضد','بجانب','بعيد','قريب','أمام','خلف','يمين','يسار','شمال','جنوب','شرق','غرب','أول','ثان','ثالث','رابع','خمس','ست','سبع','ثمان','تسع','عشر','مئة','ألف','مليون','مليار']);
+
+function extractArticleBodyHtml(html) {
+  const startMatch = html.match(/<div class="article-body"[^>]*>/);
+  if (!startMatch) return '';
+  const start = startMatch.index + startMatch[0].length;
+  let depth = 1;
+  let i = start;
+  while (i < html.length && depth > 0) {
+    if (html.substring(i, 4) === '<div' && (html[i + 4] === ' ' || html[i + 4] === '>')) {
+      depth++;
+      i += 4;
+    } else if (html.substring(i, 6) === '</div>') {
+      depth--;
+      if (depth === 0) break;
+      i += 6;
+    } else {
+      i++;
+    }
+  }
+  return html.slice(start, i);
+}
+
+function countWords(text, lang) {
+  const stripped = text.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").trim();
+  if (!stripped) return 0;
+  const tokens = stripped.split(/\s+/).filter(t => /[a-zA-Z0-9\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/.test(t));
+  return tokens.length;
+}
+
+function extractFaqPairs(html, lang) {
+  const faqs = [];
+  // First try .faq-item / .faq-question / .faq-answer pattern
+  const faqItemRegex = /<div class="faq-item"[^>]*>([\s\S]*?)<\/div>\s*(?=<div class="faq-item"|<div class="share-bar"|<\/div>\s*$)/g;
+  let m;
+  while ((m = faqItemRegex.exec(html)) !== null) {
+    const item = m[1];
+    const qMatch = item.match(/<[^>]*class="faq-question"[^>]*>([\s\S]*?)<\/[^>]*>/);
+    const aMatch = item.match(/<[^>]*class="faq-answer"[^>]*>([\s\S]*?)<\/[^>]*>/);
+    if (qMatch && aMatch) {
+      faqs.push({ question: stripHtmlTags(qMatch[1]), answer: stripHtmlTags(aMatch[1]) });
+    }
+  }
+  if (faqs.length > 0) return faqs;
+
+  // Fallback: extract from FAQ section
+  const faqH2Regex = /<h2[^>]*(?:id="faq(?:s)?"|id="[^"]*أسئلة[^"]*")[^>]*>([\s\S]*?)<\/h2>/i;
+  let faqH2Match = html.match(faqH2Regex);
+  if (!faqH2Match) {
+    const faqSectionMatch = html.match(/<h2[^>]*>[\s\S]*?(?:FAQ|أسئلة شائعة|الأسئلة الشائعة)[\s\S]*?<\/h2>/i);
+    if (!faqSectionMatch) return faqs;
+    faqH2Match = faqSectionMatch;
+  }
+
+  const faqStartIndex = html.indexOf(faqH2Match[0]) + faqH2Match[0].length;
+  const faqSection = html.slice(faqStartIndex);
+  const nextH2 = faqSection.search(/<h2[^>]*>/i);
+  const shareBar = faqSection.search(/<div class="share-bar">/);
+  let endIndex = faqSection.length;
+  if (nextH2 !== -1) endIndex = Math.min(endIndex, nextH2);
+  if (shareBar !== -1) endIndex = Math.min(endIndex, shareBar);
+  const faqContent = faqSection.slice(0, endIndex);
+
+  if (lang === 'ar') {
+    const pRegex = /<p[^>]*>([\s\S]*?)<\/p>/g;
+    let p;
+    let pendingQuestion = null;
+    while ((p = pRegex.exec(faqContent)) !== null) {
+      const text = p[1].trim();
+      if (/<strong>/.test(text)) {
+        if (pendingQuestion) {
+          faqs.push({ question: pendingQuestion, answer: '' });
+        }
+        pendingQuestion = stripHtmlTags(text);
+      } else if (pendingQuestion) {
+        faqs.push({ question: pendingQuestion, answer: stripHtmlTags(text) });
+        pendingQuestion = null;
+      }
+    }
+    if (pendingQuestion) {
+      faqs.push({ question: pendingQuestion, answer: '' });
+    }
+  } else {
+    const h3Regex = /<h3[^>]*>([\s\S]*?)<\/h3>/g;
+    const pRegex = /<p[^>]*>([\s\S]*?)<\/p>/g;
+    const h3Positions = [];
+    let h3;
+    while ((h3 = h3Regex.exec(faqContent)) !== null) {
+      h3Positions.push({ index: h3.index, text: h3[1] });
+    }
+    const pPositions = [];
+    let p;
+    while ((p = pRegex.exec(faqContent)) !== null) {
+      pPositions.push({ index: p.index, text: p[1] });
+    }
+    for (let i = 0; i < h3Positions.length; i++) {
+      const q = h3Positions[i];
+      const nextH3 = h3Positions[i + 1];
+      const answers = pPositions.filter(pp => pp.index > q.index && (!nextH3 || pp.index < nextH3.index));
+      if (answers.length > 0) {
+        faqs.push({ question: stripHtmlTags(q.text), answer: stripHtmlTags(answers[0].text) });
+      } else {
+        faqs.push({ question: stripHtmlTags(q.text), answer: '' });
+      }
+    }
+  }
+
+  return faqs;
+}
+
+function injectSchemas(html, relativeFile) {
+  const isArticle = /^(en|ar)\/article\/[a-z0-9-]+\.html$/.test(relativeFile);
+  if (!isArticle) return html;
+
+  const lang = relativeFile.startsWith('ar/') ? 'ar' : 'en';
+
+  const bodyHtml = extractArticleBodyHtml(html);
+  const wordCount = countWords(bodyHtml, lang);
+  const readingTime = Math.ceil(wordCount / (lang === 'ar' ? 150 : 200));
+  const readingTimeText = lang === 'ar'
+    ? `${readingTime} ${readingTime === 1 ? 'دقيقة' : 'دقائق'}`
+    : `${readingTime} min read`;
+
+  // Replace reading time
+  html = html.replace(/<span class="read-time">[^<]*<\/span>/, `<span class="read-time">${readingTimeText}</span>`);
+
+  const faqs = extractFaqPairs(html, lang);
+
+  const title = html.match(/<title>([^<]+)<\/title>/)?.[1]?.replace(/\s*\|\s*doyouknow\.app$/, '') || '';
+  const description = html.match(/<meta name="description" content="([^"]*)">/)?.[1] || '';
+  const ogImage = html.match(/<meta property="og:image" content="([^"]+)">/)?.[1] || '';
+  const featuredImage = html.match(/<img class="featured-image"[^>]*src="([^"]+)"/)?.[1] || '';
+  const imageUrl = ogImage || (featuredImage ? (featuredImage.startsWith('http') ? featuredImage : `https://doyouknow.app${featuredImage}`) : '');
+  const timeMatch = html.match(/<time datetime="([^"]+)">/);
+  const datePublished = timeMatch?.[1] || '2026-06-26';
+  const dateModified = datePublished;
+  const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1] || `https://doyouknow.app/${relativeFile}`;
+  const category = categoryByArticle.get(relativeFile) || categoryFallback.get(lang);
+  const articleSection = category?.title || (lang === 'ar' ? 'عام' : 'General');
+
+  const keywords = getKeywords(html, description, lang).join(', ');
+
+  const articleBody = stripHtmlTags(bodyHtml).slice(0, 300);
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    author: { '@type': 'Person', name: 'doyouknow.app Editorial Team' },
+    publisher: { '@type': 'Organization', name: 'doyouknow.app', logo: { '@type': 'ImageObject', url: 'https://doyouknow.app/assets/images/logo.png' } },
+    datePublished,
+    dateModified,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+    articleSection,
+    keywords,
+    wordCount,
+    articleBody,
+    inLanguage: lang
+  };
+
+  if (imageUrl) {
+    articleSchema.image = { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 675 };
+  }
+
+  const faqSchema = faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  } : null;
+
+  // Remove existing Article and FAQPage schemas while keeping others
+  html = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (match, content) => {
+    try {
+      const data = JSON.parse(content);
+      if (data['@type'] === 'Article' || data['@type'] === 'FAQPage') return '';
+      return match;
+    } catch {
+      return match;
+    }
+  });
+
+  // Clean up any double newlines left by removed scripts
+  html = html.replace(/\n{3,}/g, '\n\n');
+
+  // Inject new schemas before </head>
+  const articleScript = `<script type="application/ld+json">${JSON.stringify(articleSchema)}</script>`;
+  const faqScript = faqSchema ? `\n<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>` : '';
+
+  html = html.replace('</head>', `${articleScript}${faqScript}\n</head>`);
+
+  return html;
+}
 const htmlFiles = (await walk(root)).filter((path) => path.endsWith('.html'));
 for (const file of htmlFiles) {
   let html = await readFile(file, 'utf8');
@@ -445,6 +648,7 @@ for (const file of htmlFiles) {
     if (h1Seen <= 1) return tag;
     return tag.replace(tag.startsWith('</') ? '</h1' : '<h1', tag.startsWith('</') ? '</h2' : '<h2');
   });
+  html = injectSchemas(html, relativeFile);
   await writeFile(file, html);
 }
 
@@ -479,6 +683,7 @@ for (const group of categoryGroups) {
 
 const sitemapFiles = (await walk(root)).filter((path) => path.endsWith('.html'));
 const sitemapUrls = new Map();
+const sitemapImages = new Map();
 for (const file of sitemapFiles) {
   const relativeFile = file.slice(root.length);
   const html = await readFile(file, 'utf8');
@@ -496,18 +701,32 @@ for (const file of sitemapFiles) {
     : canonical.endsWith('/en/') || canonical.endsWith('/ar/') ? 'daily'
       : 'monthly';
   sitemapUrls.set(canonical, { dateModified, changefreq, priority });
+
+  // Extract image for articles
+  if (relativeFile.match(/^(en|ar)\/article\/[a-z0-9-]+\.html$/)) {
+    const ogImage = html.match(/<meta property="og:image" content="([^"]+)">/)?.[1];
+    const featuredImage = html.match(/<img class="featured-image"[^>]*src="([^"]+)"/)?.[1];
+    const imageUrl = ogImage || (featuredImage ? (featuredImage.startsWith('http') ? featuredImage : `https://doyouknow.app${featuredImage}`) : '');
+    const title = html.match(/<title>([^<]+)<\/title>/)?.[1] || '';
+    if (imageUrl) {
+      sitemapImages.set(canonical, { imageUrl, title: escapeHtml(title) });
+    }
+  }
 }
 const sitemapEntries = [...sitemapUrls.entries()]
   .sort(([a], [b]) => a.localeCompare(b))
-  .map(([loc, meta]) => `<url><loc>${loc}</loc><lastmod>${meta.dateModified}</lastmod><changefreq>${meta.changefreq}</changefreq><priority>${meta.priority}</priority></url>`)
+  .map(([loc, meta]) => {
+    const imageBlock = sitemapImages.has(loc)
+      ? `\n<image:image><image:loc>${sitemapImages.get(loc).imageUrl}</image:loc><image:title>${sitemapImages.get(loc).title}</image:title></image:image>`
+      : '';
+    return `<url><loc>${loc}</loc><lastmod>${meta.dateModified}</lastmod><changefreq>${meta.changefreq}</changefreq><priority>${meta.priority}</priority>${imageBlock}</url>`;
+  })
   .join('\n');
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${sitemapEntries}\n</urlset>\n`;
 await writeFile(join(root, 'sitemap.xml'), sitemap);
 console.log('Prepared production paths and metadata.');
 
 // --- Search Index Generation ---
-const englishStopWords = new Set(['the','a','an','and','or','but','in','on','at','to','for','of','with','by','from','as','is','was','are','this','that','it','you','your','our','we','us','me','my','his','her','their','them','they','he','she','i','am','be','been','have','has','had','do','does','did','will','would','could','should','may','might','can','shall','about','above','across','after','against','along','among','around','before','behind','below','beneath','beside','between','beyond','down','during','except','inside','into','near','off','onto','outside','over','since','through','throughout','till','toward','under','until','up','upon','within','without']);
-const arabicStopWords = new Set(['في','من','إلى','عن','على','مع','هي','هو','أن','لا','كان','قد','كل','بعض','هذه','هذا','الذين','التي','التى','و','ما','لا','لم','لن','لها','له','كما','بعد','قبل','بين','تحت','فوق','حول','خلال','دون','سوى','غير','لكن','لذلك','إلا','حتى','حيث','إذا','اذا','عند','عندما','حين','لأن','لان','لأنه','بسبب','نظرا','رغم','على','ضد','بجانب','بعيد','قريب','أمام','خلف','يمين','يسار','شمال','جنوب','شرق','غرب','أول','ثان','ثالث','رابع','خمس','ست','سبع','ثمان','تسع','عشر','مئة','ألف','مليون','مليار']);
 
 function stripHtmlTags(html) {
   return html.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").trim();
