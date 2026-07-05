@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="أنت غير متصل بالإنترنت. تصفح المقالات المخزنة مؤقتاً أو أعد المحاولة.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F59E0B">
+<link rel="canonical" href="https://doyouknow.app/ar/offline.html">
+<link rel="alternate" hreflang="ar" href="https://doyouknow.app/ar/offline.html" />
+<link rel="alternate" hreflang="x-default" href="https://doyouknow.app/ar/" />
+<link rel="manifest" href="/manifest-ar.json">
+<link rel="apple-touch-icon" href="/en/">
+<title>أنت غير متصل | doyouknow.app</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+.offline-hero {
+  text-align: center;
+  padding: var(--space-10) var(--space-5) var(--space-7);
+  max-width: 640px;
+  margin: 0 auto;
+}
+.offline-hero .offline-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--color-primary-deep);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-6);
+  font-size: 2.5rem;
+  color: var(--color-primary-accent);
+  box-shadow: var(--shadow-glow);
+}
+.offline-hero h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  margin-bottom: var(--space-4);
+  color: var(--color-primary-deep);
+}
+[data-theme="dark"] .offline-hero h1 { color: #F8FAFC; }
+.offline-hero p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+.offline-hero .btn-primary {
+  padding: var(--space-3) var(--space-7);
+  font-size: 1rem;
+}
+.offline-articles {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--space-5) var(--space-10);
+}
+.offline-articles h2 {
+  text-align: center;
+  margin-bottom: var(--space-6);
+  font-size: clamp(20px, 3vw, 28px);
+}
+.offline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  max-width: 720px;
+  margin: 0 auto;
+}
+.offline-list li {
+  background: var(--color-surface-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.offline-list li:hover {
+  border-color: var(--color-primary-accent);
+  box-shadow: var(--shadow-md);
+}
+.offline-list a {
+  display: block;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.offline-list a:hover {
+  color: var(--color-primary-accent);
+  text-decoration: none;
+}
+.offline-list .offline-link-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+</style>
+<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml">
+<meta property="og:title" content="أنت غير متصل | doyouknow.app">
+<meta property="og:description" content="أنت غير متصل بالإنترنت. تصفح المقالات المخزنة مؤقتاً أو أعد المحاولة.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://doyouknow.app/ar/offline.html">
+<meta property="og:image" content="https://doyouknow.app/assets/images/og-ar.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6VQZY87LJB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6VQZY87LJB');
+</script>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/ar/rss.xml">
+<link rel="alternate" type="application/json" title="JSON Feed" href="/ar/feed.json">
+</head>
+<body>
+<a href="#main-content" class="skip-link">انتقل إلى المحتوى</a>
+<header class="site-header" role="banner">
+<div class="header-inner">
+<a href="/ar/" class="logo" aria-label="doyouknow.app home">
+<div class="logo-icon" aria-hidden="true"></div>
+<span class="logo-text">doyouknow<span class="accent">.app</span></span>
+</a>
+<nav class="main-nav" role="navigation" aria-label="التنقل الرئيسي">
+<ul class="nav-links"><li><a href="/ar/">الرئيسية</a></li>
+<li><a href="/ar/">كل المقالات</a></li>
+<li><a href="/en/">English</a></li></ul>
+</nav>
+<div class="header-controls">
+<button class="theme-toggle" aria-label="تبديل الوضع الداكن">🌙</button>
+</div>
+</div>
+</header>
+<main id="main-content">
+<div class="offline-hero">
+<div class="offline-icon" aria-hidden="true">📡</div>
+<h1>أنت غير متصل بالإنترنت</h1>
+<p>يبدو أن اتصالك مقطع. في انتظار عودته، إليك بعض المقالات التي لا تزال متاحة للقراءة.</p>
+<button class="btn btn-primary" id="retry-btn" type="button">إعادة المحاولة</button>
+</div>
+<div class="offline-articles">
+<h2>مقالات مخزنة مؤقتاً</h2>
+<ul class="offline-list" id="offline-list">
+<li><a href="/ar/article/burj-khalifa-facts.html">برج خليفة: 10 حقائق مذهلة لم تكن تعرفها</a><div class="offline-link-meta">دبي والإمارات</div></li>
+<li><a href="/ar/article/deep-dive-dubai.html">ديب دايف دبي</a><div class="offline-link-meta">دبي والإمارات</div></li>
+<li><a href="/ar/article/dubai-metro-guide.html">دليل مترو دبي</a><div class="offline-link-meta">أدلة عملية</div></li>
+<li><a href="/ar/article/saudi-arabia-history.html">تاريخ السعودية</a><div class="offline-link-meta">تاريخ السعودية</div></li>
+<li><a href="/ar/article/alula-saudi-arabia.html">العلا: عجيبة السعودية الأثرية</a><div class="offline-link-meta">تاريخ السعودية</div></li>
+<li><a href="/ar/article/diriyah-saudi-arabia.html">الدرعية: مهد الدولة السعودية</a><div class="offline-link-meta">تاريخ السعودية</div></li>
+<li><a href="/ar/article/riyadh-season.html">موسم الرياض</a><div class="offline-link-meta">رؤية 2030</div></li>
+<li><a href="/ar/article/the-line-neom.html">ذا لاين نيوم</a><div class="offline-link-meta">رؤية 2030</div></li>
+<li><a href="/ar/article/hajj-guide.html">دليل الحج</a><div class="offline-link-meta">معرفة إسلامية</div></li>
+<li><a href="/ar/article/umrah-guide.html">دليل العمرة</a><div class="offline-link-meta">معرفة إسلامية</div></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer" role="contentinfo">
+<div class="footer-inner">
+<div class="footer-brand">
+<span class="logo-text">doyouknow.app</span>
+<p class="tagline">هل تعلم؟ الآن تعلم.</p>
+</div>
+<div class="footer-column"><p class="footer-heading">استكشف</p><ul class="footer-links"><li><a href="/ar/">كل المقالات</a></li>
+<li><a href="/ar/category/dubai.html">دبي والإمارات</a></li>
+<li><a href="/ar/category/saudi.html">السعودية</a></li>
+<li><a href="/ar/category/guides.html">أدلة عملية</a></li>
+<li><a href="/sitemap.xml">خريطة الموقع</a></li></ul></div><div class="footer-column"><p class="footer-heading">الشركة</p><ul class="footer-links"><li><a href="/ar/about.html">عنّا</a></li>
+<li><a href="/ar/contact.html">تواصل معنا</a></li>
+<li><a href="/ar/privacy.html">الخصوصية</a></li>
+<li><a href="/ar/terms.html">الشروط</a></li></ul></div><div class="footer-column"><p class="footer-heading">تواصل</p><ul class="footer-links"><li><a href="https://instagram.com/doyouknowapp">إنستغرام</a></li>
+<li><a href="https://tiktok.com/@doyouknowapp">تيك توك</a></li>
+<li><a href="https://twitter.com/doyouknowapp">إكس / تويتر</a></li>
+<li><a href="https://youtube.com/doyouknowapp">يوتيوب</a></li></ul></div>
+</div>
+<div class="footer-bottom">
+<span class="copyright">© 2026 doyouknow.app</span>
+<div class="social-links">
+<a href="https://instagram.com/doyouknowapp" target="_blank" rel="noopener" aria-label="IG Instagram">IG</a>
+<a href="https://twitter.com/doyouknowapp" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
+<a href="https://youtube.com/doyouknowapp" target="_blank" rel="noopener" aria-label="YT YouTube">YT</a>
+<a href="https://tiktok.com/@doyouknowapp" target="_blank" rel="noopener" aria-label="TT TikTok">TT</a>
+</div>
+</div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+<script>
+document.getElementById('retry-btn').addEventListener('click', function() {
+  window.location.reload();
+});
+</script>
+</body>
+</html>

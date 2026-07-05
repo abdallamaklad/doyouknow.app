@@ -6,6 +6,61 @@
 (function() {
     'use strict';
 
+    // --- GA4 Helpers ---
+    function sendGA4Event(eventName, params) {
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, params || {});
+        } else {
+            console.log('[GA4]', eventName, params || {});
+        }
+    }
+
+    function getArticleSlug() {
+        var canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) {
+            var url = canonical.href;
+            var match = url.match(/\/article\/([^/]+)(?:\.html)?$/);
+            if (match) return match[1];
+        }
+        var path = window.location.pathname;
+        var match = path.match(/\/article\/([^/]+)(?:\.html)?$/);
+        if (match) return match[1];
+        return path.replace(/^\//, '').replace(/\.html$/, '') || 'home';
+    }
+
+    function getArticleTitle() {
+        var h1 = document.querySelector('article h1, .article-header h1, h1');
+        if (h1) return h1.textContent.trim();
+        return document.title.split(' | ')[0].trim();
+    }
+
+    function getArticleCategory() {
+        var badge = document.querySelector('.category-badge a, .category-badge');
+        if (badge) {
+            var text = badge.textContent.trim();
+            if (text) return text;
+        }
+        var breadcrumb = document.querySelector('.breadcrumb li:nth-child(2) a');
+        if (breadcrumb) return breadcrumb.textContent.trim();
+        return '';
+    }
+
+    function getPageInfo() {
+        var isArticle = !!document.querySelector('.article-body');
+        var slug = getArticleSlug();
+        var title = getArticleTitle();
+        var category = getArticleCategory();
+        var lang = document.documentElement.lang || 'en';
+        return {
+            isArticle: isArticle,
+            articleId: slug,
+            articleTitle: title,
+            articleCategory: category,
+            language: lang,
+            contentType: isArticle ? 'article' : 'page'
+        };
+    }
+
     // --- Dark Mode ---
     const STORAGE_KEY = 'dyk-theme';
     const PREFERS_DARK = window.matchMedia('(prefers-color-scheme: dark)');
@@ -22,6 +77,7 @@
         localStorage.setItem(STORAGE_KEY, theme);
         const btn = document.querySelector('.theme-toggle');
         if (btn) btn.innerHTML = theme === 'dark' ? '☀️' : '🌙';
+        sendGA4Event('dark_mode_toggle', { theme: theme });
     }
 
     setTheme(getTheme());
@@ -383,6 +439,7 @@
     var selectedIndex = -1;
     var resultItems = [];
     var isLoadingIndex = false;
+    var lastTrackedSearchQuery = '';
 
     function openSearch() {
         searchOverlay.classList.add('active');
@@ -542,6 +599,15 @@
 
         var results = performSearch(query, 10);
 
+        if (query !== lastTrackedSearchQuery) {
+            lastTrackedSearchQuery = query;
+            sendGA4Event('search', {
+                search_term: query,
+                result_count: results.length,
+                language: document.documentElement.lang || 'en'
+            });
+        }
+
         if (results.length === 0) {
             var empty = document.createElement('div');
             empty.className = 'search-empty-state';
@@ -677,6 +743,13 @@
     document.querySelectorAll('.share-btn.copy').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
+            var pageInfo = getPageInfo();
+            sendGA4Event('share', {
+                method: 'copy',
+                content_type: pageInfo.contentType,
+                article_id: pageInfo.articleId,
+                article_title: pageInfo.articleTitle
+            });
             navigator.clipboard.writeText(window.location.href).then(function() {
                 showToast('✓ Link copied to clipboard', 'success', 3000);
             }).catch(function() {
@@ -696,6 +769,13 @@
     document.querySelectorAll('.share-btn.whatsapp').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
+            var pageInfo = getPageInfo();
+            sendGA4Event('share', {
+                method: 'whatsapp',
+                content_type: pageInfo.contentType,
+                article_id: pageInfo.articleId,
+                article_title: pageInfo.articleTitle
+            });
             const url = encodeURIComponent(window.location.href);
             const text = encodeURIComponent(document.title);
             window.open('https://wa.me/?text=' + text + ' ' + url, '_blank', 'noopener,noreferrer');
@@ -706,6 +786,13 @@
     document.querySelectorAll('.share-btn.twitter').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
+            var pageInfo = getPageInfo();
+            sendGA4Event('share', {
+                method: 'twitter',
+                content_type: pageInfo.contentType,
+                article_id: pageInfo.articleId,
+                article_title: pageInfo.articleTitle
+            });
             const url = encodeURIComponent(window.location.href);
             const text = encodeURIComponent(document.title);
             window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + url, '_blank', 'noopener,noreferrer');
@@ -716,6 +803,13 @@
     document.querySelectorAll('.share-btn.facebook').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
+            var pageInfo = getPageInfo();
+            sendGA4Event('share', {
+                method: 'facebook',
+                content_type: pageInfo.contentType,
+                article_id: pageInfo.articleId,
+                article_title: pageInfo.articleTitle
+            });
             const url = encodeURIComponent(window.location.href);
             window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank', 'noopener,noreferrer');
         });
@@ -725,6 +819,13 @@
     document.querySelectorAll('.share-btn.email').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
+            var pageInfo = getPageInfo();
+            sendGA4Event('share', {
+                method: 'email',
+                content_type: pageInfo.contentType,
+                article_id: pageInfo.articleId,
+                article_title: pageInfo.articleTitle
+            });
             const subject = encodeURIComponent('Check out: ' + document.title);
             const body = encodeURIComponent('I found this interesting article:\n\n' + document.title + '\n' + window.location.href);
             window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
@@ -739,18 +840,38 @@
         btn.addEventListener('click', function(e) {
             e.preventDefault();
             const email = input.value.trim();
-            if (!email || !email.includes('@')) {
+            var lang = document.documentElement.lang || 'en';
+            if (!email) {
                 input.style.borderColor = 'var(--color-error)';
                 input.setAttribute('aria-invalid', 'true');
                 showToast('Please enter a valid email address', 'error', 4000);
+                sendGA4Event('newsletter_error', {
+                    error_type: 'empty',
+                    language: lang
+                });
+                return;
+            }
+            if (!email.includes('@')) {
+                input.style.borderColor = 'var(--color-error)';
+                input.setAttribute('aria-invalid', 'true');
+                showToast('Please enter a valid email address', 'error', 4000);
+                sendGA4Event('newsletter_error', {
+                    error_type: 'invalid_email',
+                    language: lang
+                });
                 return;
             }
             input.style.borderColor = 'var(--color-secondary-accent)';
             input.setAttribute('aria-invalid', 'false');
             input.value = '';
             showToast('✓ Subscribed!', 'success', 3000);
-            // In production, send to Mailchimp/ConvertKit/ConvertKit API
-            console.log('Newsletter signup:', email);
+            var method = form.classList.contains('footer-newsletter') ? 'footer_cta' : 'inline_cta';
+            var emailDomain = email.split('@')[1] || '';
+            sendGA4Event('newsletter_signup', {
+                method: method,
+                language: lang,
+                email_domain: emailDomain
+            });
         });
     });
 
@@ -939,39 +1060,20 @@
         });
     })();
 
-    // --- Analytics Events (GA4-like) ---
-    // Track share clicks
-    document.querySelectorAll('.share-btn').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            const platform = btn.classList.contains('whatsapp') ? 'whatsapp' :
-                btn.classList.contains('twitter') ? 'twitter' :
-                btn.classList.contains('facebook') ? 'facebook' :
-                btn.classList.contains('email') ? 'email' :
-                btn.classList.contains('copy') ? 'copy' : 'unknown';
-            // In production, send to GA4:
-            // gtag('event', 'share', { method: platform, content_type: 'article', content_id: articleId });
-            console.log('Share event:', platform);
-        });
-    });
-
-    // Track newsletter signup
-    document.querySelectorAll('.newsletter-form button').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            if (!btn.disabled) {
-                console.log('Newsletter event: signup_attempt');
-            }
-        });
-    });
-
-    // Track scroll depth
+    // --- Article Read Progress (Scroll Depth) ---
     let scrollDepths = {};
-    function trackScrollDepth() {
+    function trackArticleReadProgress() {
+        var pageInfo = getPageInfo();
+        if (!pageInfo.isArticle) return;
         const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
         [25, 50, 75, 90].forEach(function(threshold) {
             if (scrollPercent >= threshold && !scrollDepths[threshold]) {
                 scrollDepths[threshold] = true;
-                console.log('Scroll depth:', threshold + '%');
-                // gtag('event', 'scroll', { percent_scrolled: threshold });
+                sendGA4Event('article_read_progress', {
+                    article_id: pageInfo.articleId,
+                    article_title: pageInfo.articleTitle,
+                    percent_scrolled: threshold
+                });
             }
         });
     }
@@ -979,12 +1081,99 @@
     window.addEventListener('scroll', function() {
         if (!ticking) {
             window.requestAnimationFrame(function() {
-                trackScrollDepth();
+                trackArticleReadProgress();
                 ticking = false;
             });
             ticking = true;
         }
     }, { passive: true });
+
+    // --- Click Event Delegation (GA4) ---
+    document.addEventListener('click', function(e) {
+        var pageInfo = getPageInfo();
+
+        // Category badge clicks
+        var categoryBadge = e.target.closest('.category-badge a, .category-badge');
+        if (categoryBadge) {
+            sendGA4Event('click', {
+                click_type: 'category_badge',
+                category: categoryBadge.textContent.trim(),
+                language: pageInfo.language
+            });
+            return;
+        }
+
+        // Related article clicks
+        var relatedCard = e.target.closest('.related-card');
+        if (relatedCard) {
+            var href = relatedCard.getAttribute('href') || '';
+            var match = href.match(/\/article\/([^/]+)(?:\.html)?$/);
+            var clickedArticleId = match ? match[1] : href;
+            sendGA4Event('click', {
+                click_type: 'related_article',
+                article_id: clickedArticleId,
+                source_article_id: pageInfo.articleId,
+                language: pageInfo.language
+            });
+            return;
+        }
+
+        // Language switcher clicks
+        var langSwitch = e.target.closest('.lang-switch');
+        if (langSwitch) {
+            var currentLang = document.documentElement.lang || 'en';
+            var toLang = currentLang === 'ar' ? 'en' : 'ar';
+            sendGA4Event('click', {
+                click_type: 'language_switcher',
+                from_lang: currentLang,
+                to_lang: toLang
+            });
+            return;
+        }
+
+        // Work With Us link clicks
+        var workWithUs = e.target.closest('a[href*="work-with-us"]');
+        if (workWithUs) {
+            sendGA4Event('click', {
+                click_type: 'work_with_us',
+                language: pageInfo.language
+            });
+            return;
+        }
+
+        // Outbound clicks
+        var outboundLink = e.target.closest('a[href^="http"]');
+        if (outboundLink) {
+            var href = outboundLink.getAttribute('href') || '';
+            if (href.indexOf('doyouknow.app') === -1) {
+                try {
+                    var url = new URL(href);
+                    sendGA4Event('outbound_click', {
+                        link_url: href,
+                        link_domain: url.hostname,
+                        link_text: outboundLink.textContent.trim()
+                    });
+                } catch (err) {
+                    sendGA4Event('outbound_click', {
+                        link_url: href,
+                        link_domain: '',
+                        link_text: outboundLink.textContent.trim()
+                    });
+                }
+            }
+        }
+    });
+
+    // --- Video / Audio Play Tracking ---
+    document.querySelectorAll('video, audio').forEach(function(media) {
+        media.addEventListener('play', function() {
+            var isVideo = media.tagName.toLowerCase() === 'video';
+            sendGA4Event(isVideo ? 'video_play' : 'audio_play', {
+                media_src: media.currentSrc || media.src || '',
+                media_title: media.getAttribute('title') || document.title
+            });
+        });
+    });
 
     // --- Service Worker (PWA) ---
     if ('serviceWorker' in navigator) {
@@ -992,6 +1181,15 @@
             // Silently fail - SW is optional
         });
     }
+
+    // --- Page View with Custom Parameters ---
+    var pageInfo = getPageInfo();
+    sendGA4Event('page_view', {
+        article_id: pageInfo.articleId,
+        article_category: pageInfo.articleCategory,
+        language: pageInfo.language,
+        content_type: pageInfo.contentType
+    });
 
     console.log('doyouknow.app loaded ✨');
 })();

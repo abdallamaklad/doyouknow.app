@@ -551,7 +551,6 @@ for (const file of htmlFiles) {
     textReplacements.set('What Is Neom', 'ما هو نيوم؟ دليل شامل عن مدينة المستقبل');
     textReplacements.set('Page Not Found', 'الصفحة غير موجودة');
     textReplacements.set('The page you are looking for does not exist.', 'الصفحة التي تبحث عنها غير موجودة. يمكنك العودة إلى الصفحة الرئيسية أو استخدام البحث للوصول إلى المحتوى.');
-    textReplacements.set('الصفحة التي تبحث عنها غير موجودة.', 'الصفحة التي تبحث عنها غير موجودة. يمكنك العودة إلى الصفحة الرئيسية أو استخدام البحث للوصول إلى المحتوى.');
   }
   for (const [from, to] of textReplacements) html = html.replaceAll(from, to);
   const cardExcerptReplacements = new Map([
@@ -646,11 +645,30 @@ for (const file of htmlFiles) {
   if (!html.includes('G-6VQZY87LJB')) {
     html = html.replace('</head>', `${googleTag}\n</head>`);
   }
+  if (!html.includes('application/rss+xml')) {
+    const pageLang = /<html[^>]*\blang="ar"/.test(html) ? 'ar' : 'en';
+    const feedLinks = `<link rel="alternate" type="application/rss+xml" title="RSS" href="/${pageLang}/rss.xml">\n<link rel="alternate" type="application/json" title="JSON Feed" href="/${pageLang}/feed.json">`;
+    html = html.replace('</head>', `${feedLinks}\n</head>`);
+  }
   html = stripSearchAction(html);
   html = updateArticlePageImage(html, relativeFile);
   html = updateArticleCardImages(html);
   html = normalizePerformanceAndAccessibility(html);
   html = linkExistingCategory(html, relativeFile);
+  // --- PWA manifest, apple-touch-icon, and theme-color ---
+  const pageLang = /<html[^>]*\blang="ar"/.test(html) ? 'ar' : 'en';
+  const manifestHref = pageLang === 'ar' ? '/manifest-ar.json' : '/manifest.json';
+  if (!html.includes('rel="manifest"')) {
+    html = html.replace('</head>', `<link rel="manifest" href="${manifestHref}">\n</head>`);
+  }
+  if (!html.includes('rel="apple-touch-icon"')) {
+    html = html.replace('</head>', '<link rel="apple-touch-icon" href="/assets/images/icon-192.png">\n</head>');
+  }
+  if (html.includes('name="theme-color"')) {
+    html = html.replace(/<meta name="theme-color" content="[^"]+">/, '<meta name="theme-color" content="#F59E0B">');
+  } else {
+    html = html.replace('</head>', '<meta name="theme-color" content="#F59E0B">\n</head>');
+  }
   if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
     html = html.replace(
       '</div><div class="section-header">\n<h2>Latest Articles</h2>',
@@ -702,7 +720,8 @@ for (const group of categoryGroups) {
   }).join('');
   const itemList = articles.filter((a) => !a.noindex).map((article, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://doyouknow.app/${group.lang}/article/${article.slug}.html`, name: article.title }));
   const alternateBlock = hreflangBlock(`${group.lang}/category/${group.slug}.html`, group.lang, canonical);
-  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}</head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p><div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a>${rtl ? ' · <a href="/ar/work-with-us.html">اعمل معنا</a>' : ' · <a href="/en/work-with-us.html">Work With Us</a>'}</div></footer><script src="/assets/js/site.js" defer></script></body></html>`;
+  const manifestLink = rtl ? '<link rel="manifest" href="/manifest-ar.json">' : '<link rel="manifest" href="/manifest.json">';
+  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta name="theme-color" content="#F59E0B">${manifestLink}<link rel="apple-touch-icon" href="/assets/images/icon-192.png"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}<link rel="alternate" type="application/rss+xml" title="RSS" href="/${group.lang}/rss.xml"><link rel="alternate" type="application/json" title="JSON Feed" href="/${group.lang}/feed.json"></head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p><div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a>${rtl ? ' · <a href="/ar/work-with-us.html">اعمل معنا</a>' : ' · <a href="/en/work-with-us.html">Work With Us</a>'}</div></footer><script src="/assets/js/site.js" defer></script></body></html>`;
   await writeFile(join(root, group.lang, 'category', `${group.slug}.html`), page);
 }
 
@@ -826,6 +845,7 @@ for (const file of searchFiles) {
   const lang = html.match(/<html[^>]*\blang="([^"]+)"/)?.[1] || (rel.startsWith('ar/') ? 'ar' : 'en');
 
   const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  const datePublished = html.match(/<time datetime="([^"]+)">/)?.[1] || '2026-06-26';
   const url = canonical || absoluteUrl(rel);
 
   const slug = rel.split('/').pop().replace('.html', '');
@@ -880,7 +900,8 @@ for (const file of searchFiles) {
     url,
     slug,
     keywords,
-    type
+    type,
+    datePublished
   });
 }
 
@@ -893,3 +914,65 @@ const index = {
 
 await writeFile(join(root, 'assets/js/search-index.json'), JSON.stringify(index, null, 2));
 console.log('Generated search index with', articles.length, 'articles');
+
+// --- Feed Generation ---
+
+function toRfc2822(dateStr) {
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return new Date().toUTCString();
+  return d.toUTCString();
+}
+
+function generateRss(items, lang, title, description, link) {
+  const now = new Date().toUTCString();
+  const channelItems = items.map(item => `  <item>
+    <title>${escapeHtml(item.title.replace(/\s*\|\s*doyouknow\.app$/, ''))}</title>
+    <link>${item.url}</link>
+    <guid isPermaLink="true">${item.url}</guid>
+    <pubDate>${toRfc2822(item.datePublished)}</pubDate>
+    <description>${escapeHtml(item.description)}</description>
+    <category>${escapeHtml(item.category)}</category>
+  </item>`).join('\n');
+  const channel = `<channel>
+  <title>${escapeHtml(title)}</title>
+  <link>${link}</link>
+  <description>${escapeHtml(description)}</description>
+  <language>${lang}</language>
+  <lastBuildDate>${now}</lastBuildDate>
+${channelItems}
+</channel>`;
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+${channel}
+</rss>
+`;
+}
+
+function generateJsonFeed(items, lang, title, homePageUrl, feedUrl) {
+  return JSON.stringify({
+    version: 'https://jsonfeed.org/version/1',
+    title,
+    home_page_url: homePageUrl,
+    feed_url: feedUrl,
+    language: lang,
+    items: items.map(item => ({
+      id: item.url,
+      url: item.url,
+      title: item.title.replace(/\s*\|\s*doyouknow\.app$/, ''),
+      content_text: item.description,
+      date_published: item.datePublished,
+      tags: [item.category]
+    }))
+  }, null, 2);
+}
+
+const articleItems = articles.filter(a => a.type === 'article');
+const enArticleItems = articleItems.filter(a => a.language === 'en').sort((a, b) => b.datePublished.localeCompare(a.datePublished)).slice(0, 20);
+const arArticleItems = articleItems.filter(a => a.language === 'ar').sort((a, b) => b.datePublished.localeCompare(a.datePublished)).slice(0, 20);
+
+await writeFile(join(root, 'en', 'rss.xml'), generateRss(enArticleItems, 'en', 'doyouknow.app - English', 'Surprising facts about UAE, Saudi Arabia, and the world.', 'https://doyouknow.app/en/'));
+await writeFile(join(root, 'ar', 'rss.xml'), generateRss(arArticleItems, 'ar', 'doyouknow.app - العربية', 'Surprising facts about UAE, Saudi Arabia, and the world.', 'https://doyouknow.app/ar/'));
+await writeFile(join(root, 'en', 'feed.json'), generateJsonFeed(enArticleItems, 'en', 'doyouknow.app - English', 'https://doyouknow.app/en/', 'https://doyouknow.app/en/feed.json'));
+await writeFile(join(root, 'ar', 'feed.json'), generateJsonFeed(arArticleItems, 'ar', 'doyouknow.app - العربية', 'https://doyouknow.app/ar/', 'https://doyouknow.app/ar/feed.json'));
+
+console.log('Generated RSS and JSON feeds.');

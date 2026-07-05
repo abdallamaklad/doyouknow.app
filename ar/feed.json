@@ -1,0 +1,209 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "doyouknow.app - العربية",
+  "home_page_url": "https://doyouknow.app/ar/",
+  "feed_url": "https://doyouknow.app/ar/feed.json",
+  "language": "ar",
+  "items": [
+    {
+      "id": "https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html",
+      "url": "https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html",
+      "title": "دليل أبوظبي الشامل: أهم المعالم والوجهات السياحية",
+      "content_text": "دليل أبوظبي الشامل 2026: متحف اللوفر، جامع الشيخ زايد الكبير، جزيرة ياس، الكورنيش، قصر الإمارات، قصر الوطن، وكل ما يجب معرفته قبل الزيارة.",
+      "date_published": "2026-07-15",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/best-restaurants-dubai.html",
+      "url": "https://doyouknow.app/ar/article/best-restaurants-dubai.html",
+      "title": "أفضل 15 مطعم في دبي: دليل شامل يغطي كل الميزانيات",
+      "content_text": "دليل شامل لأفضل 15 مطعم في دبي: من الشاورما البلدي إلى نجوم ميشلان، اكتشف خيارات تناسب كل ميزانية وكل ذوق في دبي.",
+      "date_published": "2026-07-15",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/dubai-metro-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-metro-guide.html",
+      "title": "دليل مترو دبي: كل ما تحتاجه للتنقل بذكاء",
+      "content_text": "دليل شامل لمترو دبي: الخطوط، المحطات، بطاقة نول، الأجرة، مواعيد التشغيل، والقواعد الأساسية. كل ما تحتاجه للتنقل بذكاء في دبي.",
+      "date_published": "2026-07-15",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/dubai-tourist-visa-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-tourist-visa-guide.html",
+      "title": "دليل تأشيرة دبي السياحية 2026: 11 نوعاً والتقديم",
+      "content_text": "دليل شامل لتأشيرة دبي السياحية 2026: 11 نوعاً من تأشيرات الإمارات، الرسوم، مدة المعالجة، المتطلبات، خطوات التقديم، والأخطاء الشائعة.",
+      "date_published": "2026-07-15",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/saudi-e-visa-guide.html",
+      "url": "https://doyouknow.app/ar/article/saudi-e-visa-guide.html",
+      "title": "دليل التأشيرة الإلكترونية السعودية: أنواعها والتقديم",
+      "content_text": "دليل كامل للتأشيرة الإلكترونية السعودية 2026: أنواع التأشيرات، شروط التقديم، الرسوم، مدة المعالجة، تأشيرة العمرة والأعمال، وكل ما يهم المسافر.",
+      "date_published": "2026-07-15",
+      "tags": [
+        "أدلة عملية في السعودية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/jeddah-travel-guide.html",
+      "url": "https://doyouknow.app/ar/article/jeddah-travel-guide.html",
+      "title": "دليل جدة السياحي الشامل: أبرز المعالم والوجهات",
+      "content_text": "دليل جدة السياحي الشامل يغطي البلد القديمة، كورنيش جدة، المسجد العائم، البحر الأحمر، نافورة الملك فهد، المطاعم، الفنادق، والمواصلات من مطار جدة.",
+      "date_published": "2026-07-02",
+      "tags": [
+        "السعودية: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/things-to-do-dubai-this-week.html",
+      "url": "https://doyouknow.app/ar/article/things-to-do-dubai-this-week.html",
+      "title": "فعاليات دبي الأسبوعية: دليل الأنشطة والترفيه",
+      "content_text": "فعاليات دبي الأسبوعية: دليل شامل لأفضل الأحداث والبرانشات والأندية الشاطئية والأسواق والحفلات والأنشطة العائلية والمجانية في دبي.",
+      "date_published": "2026-07-02",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/algeria-world-cup-2026.html",
+      "url": "https://doyouknow.app/ar/article/algeria-world-cup-2026.html",
+      "title": "الجزائر في كأس العالم 2026",
+      "content_text": "قصة الجزائر الكروية مبنية على الحدة، والمهارة، والإيمان بأن المنتخب يجب أن ينافس بشخصية لا بتحفظ. وفي كأس العالم 2026، يظل محاربو الصحراء من أكثر المنتخبا…",
+      "date_published": "2026-07-01",
+      "tags": [
+        "كأس العالم 2026 والكرة العربية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/arab-football-legacy-world-cup-2026.html",
+      "url": "https://doyouknow.app/ar/article/arab-football-legacy-world-cup-2026.html",
+      "title": "كأس العالم 2026 وإرث الكرة العربية",
+      "content_text": "كل كأس عالم يترك وراءه أكثر من مجرد نتائج. إنه يغيّر طريقة النظر إلى المنتخبات، ويشكّل أحلام اللاعبين الصغار، ويؤثر في كيفية حديث منطقة كاملة عن كرة القدم…",
+      "date_published": "2026-07-01",
+      "tags": [
+        "كأس العالم 2026 والكرة العربية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/arab-team-semifinals-world-cup-2026.html",
+      "url": "https://doyouknow.app/ar/article/arab-team-semifinals-world-cup-2026.html",
+      "title": "هل يصل منتخب عربي إلى نصف النهائي؟",
+      "content_text": "أحد أكبر الأسئلة المحيطة بكأس العالم 2026 هو ما إذا كان منتخب عربي يستطيع الوصول إلى نصف النهائي مرة أخرى. الفكرة لم تعد تبدو مستحيلة، وهذا بحد ذاته مهم.…",
+      "date_published": "2026-07-01",
+      "tags": [
+        "كأس العالم 2026 والكرة العربية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/arab-teams-world-cup-2026-pillar.html",
+      "url": "https://doyouknow.app/ar/article/arab-teams-world-cup-2026-pillar.html",
+      "title": "المنتخبات العربية في كأس العالم 2026: دليل شامل",
+      "content_text": "دليل شامل للمنتخبات العربية في كأس العالم 2026: تحليل المشاركة، أبرز اللاعبين، الجدول الزمني، والآمال المعقودة على المنتخبات العربية في المونديال.",
+      "date_published": "2026-07-01",
+      "tags": [
+        "السعودية: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/arab-teams-world-cup-2026.html",
+      "url": "https://doyouknow.app/ar/article/arab-teams-world-cup-2026.html",
+      "title": "المنتخبات العربية في كأس العالم 2026",
+      "content_text": "أعاد كأس العالم 2026 سؤالًا مألوفًا إلى الواجهة العربية: أي منتخب عربي يملك أفضل فرصة للذهاب إلى أبعد مدى؟ الإجابة لا تعتمد على الموهبة فقط. فبطولات الكؤو…",
+      "date_published": "2026-07-01",
+      "tags": [
+        "كأس العالم 2026 والكرة العربية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/complete-saudi-travel-guide.html",
+      "url": "https://doyouknow.app/ar/article/complete-saudi-travel-guide.html",
+      "title": "دليل السفر الشامل إلى المملكة العربية السعودية",
+      "content_text": "دليل السفر الشامل إلى المملكة العربية السعودية: أهم الوجهات، التأشيرات، المواصلات، الطقس، والتقاليد التي يجب على كل زائر معرفتها قبل السفر.",
+      "date_published": "2026-07-01",
+      "tags": [
+        "السعودية: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/dubai-miracle-garden.html",
+      "url": "https://doyouknow.app/ar/article/dubai-miracle-garden.html",
+      "title": "حديقة دبي المعجزة: 150 مليون زهرة في قلب الصحراء العربية",
+      "content_text": "اكتشف حديقة دبي المعجزة: أكبر حديقة زهور طبيعية في العالم بـ150 مليون زهرة في قلب الصحراء. دليلك الشامل للزيارة، التذاكر، والمعالم.",
+      "date_published": "2026-07-01",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egypt-world-cup-2026.html",
+      "url": "https://doyouknow.app/ar/article/egypt-world-cup-2026.html",
+      "title": "مصر في كأس العالم 2026",
+      "content_text": "يدخل المنتخب المصري كأس العالم 2026 وهو يحمل واحدة من أثقل الهويات الكروية في العالم العربي: جماهيرية هائلة، وتاريخ طويل، وتوقعات وطنية لا تهدأ. مصر لا تم…",
+      "date_published": "2026-07-01",
+      "tags": [
+        "كأس العالم 2026 والكرة العربية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/expo-city-dubai.html",
+      "url": "https://doyouknow.app/ar/article/expo-city-dubai.html",
+      "title": "مدينة إكسبو دبي: ماذا حدث بعد انتهاء المعرض؟",
+      "content_text": "مدينة إكسبو دبي تحولت من معرض عالمي إلى حيّ ابتكاري دائم. اكتشف ما هو مفتوح الآن ولماذا تستحق الزيارة.",
+      "date_published": "2026-07-01",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/hidden-gems-uae.html",
+      "url": "https://doyouknow.app/ar/article/hidden-gems-uae.html",
+      "title": "10 جواهر مخفية في الإمارات تستحق الاستكشاف",
+      "content_text": "اكتشف 10 وجهات سرية في الإمارات بعيداً عن المسارات السياحية التقليدية: من بحيرات وردية وقرى مهجورة إلى واحات تاريخية وجبال خلابة.",
+      "date_published": "2026-07-01",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/morocco-world-cup-2026.html",
+      "url": "https://doyouknow.app/ar/article/morocco-world-cup-2026.html",
+      "title": "المغرب في كأس العالم 2026",
+      "content_text": "يدخل المنتخب المغربي كأس العالم 2026 وهو يحمل أكثر من مجرد طموحات رياضية. بعد أن أثبت سابقًا أن الانضباط الدفاعي، والتحولات السريعة، والانسجام الجماعي يمك…",
+      "date_published": "2026-07-01",
+      "tags": [
+        "كأس العالم 2026 والكرة العربية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/palm-jumeirah-engineering.html",
+      "url": "https://doyouknow.app/ar/article/palm-jumeirah-engineering.html",
+      "title": "نخلة جميرا: كيف بُنيت أكبر جزيرة اصطناعية في العالم",
+      "content_text": "اكتشف كيف تحولت نخلة جميرا من فكرة جريئة إلى أكبر جزيرة اصطناعية في العالم. 7 ملايين طن من الصخور، ودقة GPS حتى السنتيمتر، وعشر سنوات من العمل المتواصل.",
+      "date_published": "2026-07-01",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/riyadh-nightlife-guide.html",
+      "url": "https://doyouknow.app/ar/article/riyadh-nightlife-guide.html",
+      "title": "دليل الحياة الليلية في الرياض: أفضل الأماكن",
+      "content_text": "دليل الحياة الليلية في الرياض: اكتشف أفضل المطاعم، المقاهي، الأماكن الترفيهية، والفعاليات الليلية التي تحول الرياض إلى وجهة عالمية.",
+      "date_published": "2026-07-01",
+      "tags": [
+        "السعودية: التاريخ والثقافة"
+      ]
+    }
+  ]
+}

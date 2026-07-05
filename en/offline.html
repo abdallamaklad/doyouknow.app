@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="You are offline. Browse cached articles or retry your connection.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F59E0B">
+<link rel="canonical" href="https://doyouknow.app/en/offline.html">
+<link rel="alternate" hreflang="en" href="https://doyouknow.app/en/offline.html" />
+<link rel="alternate" hreflang="x-default" href="https://doyouknow.app/en/" />
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/en/">
+<title>You are offline | doyouknow.app</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+.offline-hero {
+  text-align: center;
+  padding: var(--space-10) var(--space-5) var(--space-7);
+  max-width: 640px;
+  margin: 0 auto;
+}
+.offline-hero .offline-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--color-primary-deep);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-6);
+  font-size: 2.5rem;
+  color: var(--color-primary-accent);
+  box-shadow: var(--shadow-glow);
+}
+.offline-hero h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  margin-bottom: var(--space-4);
+  color: var(--color-primary-deep);
+}
+[data-theme="dark"] .offline-hero h1 { color: #F8FAFC; }
+.offline-hero p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+.offline-hero .btn-primary {
+  padding: var(--space-3) var(--space-7);
+  font-size: 1rem;
+}
+.offline-articles {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--space-5) var(--space-10);
+}
+.offline-articles h2 {
+  text-align: center;
+  margin-bottom: var(--space-6);
+  font-size: clamp(20px, 3vw, 28px);
+}
+.offline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  max-width: 720px;
+  margin: 0 auto;
+}
+.offline-list li {
+  background: var(--color-surface-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.offline-list li:hover {
+  border-color: var(--color-primary-accent);
+  box-shadow: var(--shadow-md);
+}
+.offline-list a {
+  display: block;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.offline-list a:hover {
+  color: var(--color-primary-accent);
+  text-decoration: none;
+}
+.offline-list .offline-link-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+</style>
+<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml">
+<meta property="og:title" content="You are offline | doyouknow.app">
+<meta property="og:description" content="You are offline. Browse cached articles or retry your connection.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://doyouknow.app/en/offline.html">
+<meta property="og:image" content="https://doyouknow.app/assets/images/og-en.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6VQZY87LJB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6VQZY87LJB');
+</script>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/en/rss.xml">
+<link rel="alternate" type="application/json" title="JSON Feed" href="/en/feed.json">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+<header class="site-header" role="banner">
+<div class="header-inner">
+<a href="/en/" class="logo" aria-label="doyouknow.app home">
+<div class="logo-icon" aria-hidden="true"></div>
+<span class="logo-text">doyouknow<span class="accent">.app</span></span>
+</a>
+<nav class="main-nav" role="navigation" aria-label="Main navigation">
+<ul class="nav-links"><li><a href="/en/">Home</a></li>
+<li><a href="/en/">All articles</a></li>
+<li><a href="/ar/">العربية</a></li></ul>
+</nav>
+<div class="header-controls">
+<button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+</div>
+</div>
+</header>
+<main id="main-content">
+<div class="offline-hero">
+<div class="offline-icon" aria-hidden="true">📡</div>
+<h1>You are offline</h1>
+<p>It looks like your connection is down. While you wait, here are some articles you can still read.</p>
+<button class="btn btn-primary" id="retry-btn" type="button">Retry Connection</button>
+</div>
+<div class="offline-articles">
+<h2>Cached Articles</h2>
+<ul class="offline-list" id="offline-list">
+<li><a href="/en/article/burj-khalifa-facts.html">Burj Khalifa: 10 Surprising Facts You Didn't Know</a><div class="offline-link-meta">Dubai &amp; UAE</div></li>
+<li><a href="/en/article/deep-dive-dubai.html">Deep Dive Dubai</a><div class="offline-link-meta">Dubai &amp; UAE</div></li>
+<li><a href="/en/article/dubai-metro-guide.html">Dubai Metro Guide</a><div class="offline-link-meta">Practical guides</div></li>
+<li><a href="/en/article/uae-golden-visa-guide.html">UAE Golden Visa Guide</a><div class="offline-link-meta">Practical guides</div></li>
+<li><a href="/en/article/best-beaches-dubai.html">Best Beaches in Dubai</a><div class="offline-link-meta">Dubai &amp; UAE</div></li>
+<li><a href="/en/article/dubai-frame.html">Dubai Frame</a><div class="offline-link-meta">Dubai &amp; UAE</div></li>
+<li><a href="/en/article/palm-jumeirah-engineering.html">Palm Jumeirah Engineering</a><div class="offline-link-meta">Dubai &amp; UAE</div></li>
+<li><a href="/en/article/dubai-vs-abu-dhabi.html">Dubai vs Abu Dhabi</a><div class="offline-link-meta">Dubai &amp; UAE</div></li>
+<li><a href="/en/article/save-money-dubai.html">Save Money Dubai</a><div class="offline-link-meta">Practical guides</div></li>
+<li><a href="/en/article/start-business-dubai.html">Start Business Dubai</a><div class="offline-link-meta">Practical guides</div></li>
+</ul>
+</div>
+</main>
+<footer class="site-footer" role="contentinfo">
+<div class="footer-inner">
+<div class="footer-brand">
+<span class="logo-text">doyouknow.app</span>
+<p class="tagline">Did you know? Now you do.</p>
+</div>
+<div class="footer-column"><p class="footer-heading">Explore</p><ul class="footer-links"><li><a href="/en/">All articles</a></li>
+<li><a href="/en/category/dubai.html">Dubai &amp; UAE</a></li>
+<li><a href="/en/category/guides.html">Guides</a></li>
+<li><a href="/sitemap.xml">Sitemap</a></li></ul></div><div class="footer-column"><p class="footer-heading">Company</p><ul class="footer-links"><li><a href="/en/about.html">About Us</a></li>
+<li><a href="/en/contact.html">Contact</a></li>
+<li><a href="/en/privacy.html">Privacy</a></li>
+<li><a href="/en/terms.html">Terms</a></li></ul></div><div class="footer-column"><p class="footer-heading">Connect</p><ul class="footer-links"><li><a href="https://instagram.com/doyouknowapp">Instagram</a></li>
+<li><a href="https://tiktok.com/@doyouknowapp">TikTok</a></li>
+<li><a href="https://twitter.com/doyouknowapp">X / Twitter</a></li>
+<li><a href="https://youtube.com/doyouknowapp">YouTube</a></li></ul></div>
+</div>
+<div class="footer-bottom">
+<span class="copyright">© 2026 doyouknow.app</span>
+<div class="social-links">
+<a href="https://instagram.com/doyouknowapp" target="_blank" rel="noopener" aria-label="IG Instagram">IG</a>
+<a href="https://twitter.com/doyouknowapp" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
+<a href="https://youtube.com/doyouknowapp" target="_blank" rel="noopener" aria-label="YT YouTube">YT</a>
+<a href="https://tiktok.com/@doyouknowapp" target="_blank" rel="noopener" aria-label="TT TikTok">TT</a>
+</div>
+</div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+<script>
+document.getElementById('retry-btn').addEventListener('click', function() {
+  window.location.reload();
+});
+</script>
+</body>
+</html>
