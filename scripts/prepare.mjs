@@ -67,13 +67,14 @@ const worldCupArticleSlugs = [
 ];
 const categoryGroups = [
   { lang: 'en', slug: 'world-cup-2026', title: 'World Cup 2026 & Arab Football', description: 'Bilingual World Cup 2026 explainers focused on Arab teams, tactics, fans, and football legacy.', files: worldCupArticleSlugs },
-  { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places', description: 'Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.', files: ['burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','uae-imports-sand','yas-island-abu-dhabi'] },
+  { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places', description: 'Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.', files: ['best-time-visit-dubai','burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-free-zones-guide','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','uae-imports-sand','yas-island-abu-dhabi'] },
   { lang: 'en', slug: 'guides', title: 'UAE Practical Guides', description: 'Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.', files: ['best-beaches-dubai','best-restaurants-dubai','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
   { lang: 'en', slug: 'technology', title: 'Technology Explained', description: 'Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.', files: ['what-is-chatgpt','what-is-google-gemini'] },
+  { lang: 'en', slug: 'saudi', title: 'Saudi Arabia', description: 'Discover Saudi Arabia\'s history, culture, landscapes, and travel experiences through clear, reliable guides.', files: ['alula-saudi-arabia','complete-saudi-travel-guide','neom-city-facts','saudi-desert-camping','saudi-vision-2030-guide'] },
   { lang: 'ar', slug: 'world-cup-2026', title: 'كأس العالم 2026 والكرة العربية', description: 'شروحات عربية وإنجليزية عن كأس العالم 2026 والمنتخبات العربية والتكتيك والجمهور والإرث الكروي.', files: worldCupArticleSlugs },
-  { lang: 'ar', slug: 'dubai', title: 'دبي والإمارات', description: 'اكتشف دبي وأبوظبي والإمارات من خلال أدلة عربية واضحة عن المعالم، الهندسة، والوجهات السياحية والعملية.', files: ['abu-dhabi-complete-guide','best-beaches-dubai','best-restaurants-dubai','burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-tourist-visa-guide','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','save-money-dubai','sheikh-zayed-grand-mosque-guide','things-to-do-dubai-this-week','yas-island-abu-dhabi'] },
+  { lang: 'ar', slug: 'dubai', title: 'دبي والإمارات', description: 'اكتشف دبي وأبوظبي والإمارات من خلال أدلة عربية واضحة عن المعالم، الهندسة، والوجهات السياحية والعملية.', files: ['abu-dhabi-complete-guide','best-beaches-dubai','best-restaurants-dubai','best-time-visit-dubai','burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-free-zones-guide','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-tourist-visa-guide','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','save-money-dubai','sheikh-zayed-grand-mosque-guide','things-to-do-dubai-this-week','yas-island-abu-dhabi'] },
   { lang: 'ar', slug: 'saudi', title: 'السعودية: التاريخ والثقافة', description: 'اكتشف تاريخ المملكة العربية السعودية وتراثها ومدنها وثقافتها من خلال مقالات عربية واضحة وموثوقة.', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','ronaldo-saudi-arabia','saudi-arabia-history','saudi-football-global','saudi-national-day','saudi-no-rivers'] },
-  { lang: 'ar', slug: 'vision-2030', title: 'رؤية السعودية 2030 والمشاريع الكبرى', description: 'تعرف على مشاريع رؤية السعودية 2030 والمدن والوجهات الجديدة من خلال شروحات تفصل الحقائق عن التوقعات.', files: ['kingdom-tower-riyadh','qiddiya-saudi-arabia','red-sea-project-saudi','riyadh-season','the-line-neom','what-is-neom'] },
+  { lang: 'ar', slug: 'vision-2030', title: 'رؤية السعودية 2030 والمشاريع الكبرى', description: 'تعرف على مشاريع رؤية السعودية 2030 والمدن والوجهات الجديدة من خلال شروحات تفصل الحقائق عن التوقعات.', files: ['kingdom-tower-riyadh','neom-city-facts','qiddiya-saudi-arabia','red-sea-project-saudi','riyadh-season','saudi-vision-2030-guide','the-line-neom','what-is-neom'] },
   { lang: 'ar', slug: 'guides', title: 'أدلة عملية في السعودية', description: 'أدلة عربية مبسطة للخدمات والمنصات والإجراءات المهمة في السعودية مع إحالات إلى المصادر الرسمية.', files: ['absher-portal-guide','best-restaurants-riyadh','open-bank-account-saudi','qiyas-guide','qobool-guide','saudi-driving-license','saudi-e-visa-guide','saudi-health-insurance'] },
   { lang: 'ar', slug: 'islamic', title: 'الثقافة والمعرفة الإسلامية', description: 'شروحات عربية واضحة حول العبادات والتمويل الإسلامي والمواسم الدينية مع احترام السياق والمصادر الموثوقة.', files: ['hajj-guide','islamic-finance-guide','ramadan-health-guide','umrah-guide','what-is-zakat'] }
 ];
@@ -107,6 +108,23 @@ for (const slug of worldCupArticleSlugs) {
 }
 pairedPages.set('en/category/world-cup-2026.html', 'ar/category/world-cup-2026.html');
 pairedPages.set('ar/category/world-cup-2026.html', 'en/category/world-cup-2026.html');
+pairedPages.set('en/article/best-time-visit-dubai.html', 'ar/article/best-time-visit-dubai.html');
+pairedPages.set('ar/article/best-time-visit-dubai.html', 'en/article/best-time-visit-dubai.html');
+pairedPages.set('en/article/saudi-desert-camping.html', 'ar/article/saudi-desert-camping.html');
+pairedPages.set('ar/article/saudi-desert-camping.html', 'en/article/saudi-desert-camping.html');
+pairedPages.set('en/article/saudi-vision-2030-guide.html', 'ar/article/saudi-vision-2030-guide.html');
+pairedPages.set('ar/article/saudi-vision-2030-guide.html', 'en/article/saudi-vision-2030-guide.html');
+pairedPages.set('ar/category/world-cup-2026.html', 'en/category/world-cup-2026.html');
+pairedPages.set('ar/article/best-time-visit-dubai.html', 'en/article/best-time-visit-dubai.html');
+pairedPages.set('ar/category/world-cup-2026.html', 'en/category/world-cup-2026.html');
+pairedPages.set('en/article/neom-city-facts.html', 'ar/article/neom-city-facts.html');
+pairedPages.set('ar/article/neom-city-facts.html', 'en/article/neom-city-facts.html');
+pairedPages.set('en/article/dubai-free-zones-guide.html', 'ar/article/dubai-free-zones-guide.html');
+pairedPages.set('ar/article/dubai-free-zones-guide.html', 'en/article/dubai-free-zones-guide.html');
+pairedPages.set('ar/article/neom-city-facts.html', 'en/article/neom-city-facts.html');
+pairedPages.set('en/article/dubai-free-zones-guide.html', 'ar/article/dubai-free-zones-guide.html');
+pairedPages.set('ar/article/dubai-free-zones-guide.html', 'en/article/dubai-free-zones-guide.html');
+pairedPages.set('ar/article/neom-city-facts.html', 'en/article/neom-city-facts.html');
 
 async function walk(dir) {
   const out = [];
@@ -218,12 +236,47 @@ function updateArticleCardImages(html) {
     const priority = cardIndex <= 3
       ? 'loading="eager" fetchpriority="high"'
       : 'loading="lazy"';
-    const image = `<img class="card-image" src="${articleImagePath(lang, slug)}" alt="" width="1200" height="675" ${priority}>`;
+    const image = `<img class="card-image" src="${articleImagePath(lang, slug)}" alt="" width="800" height="450" ${priority}>`;
     const cleaned = beforeContent
       .replace(/<img class="card-image"[^>]*>/g, '')
       .replace(/<div class="card-image"[\s\S]*?<\/div>/g, '')
       .replace(/<span[^>]*>📷<\/span><\/div>/g, '');
     return `<a href="/${lang}/article/${slug}.html" class="article-card">${image}${cleaned}<div class="card-content">`;
+  });
+}
+
+function optimizeImageAttributes(html) {
+  let imgIndex = 0;
+  return html.replace(/<img\b[^>]*>/gi, (match) => {
+    imgIndex++;
+    const isFirst = imgIndex === 1;
+
+    const hasFetchpriority = /fetchpriority\s*=\s*["']/.test(match);
+    const hasLoading = /loading\s*=\s*["']/.test(match);
+    const hasWidth = /width\s*=\s*["']/.test(match);
+    const hasHeight = /height\s*=\s*["']/.test(match);
+    const hasDecoding = /decoding\s*=\s*["']/.test(match);
+
+    const attrsToAdd = [];
+
+    if (isFirst) {
+      if (!hasFetchpriority) attrsToAdd.push(`fetchpriority="high"`);
+      if (!hasLoading) attrsToAdd.push(`loading="eager"`);
+      if (!hasWidth) attrsToAdd.push(`width="1200"`);
+      if (!hasHeight) attrsToAdd.push(`height="675"`);
+    } else {
+      if (!hasLoading) attrsToAdd.push(`loading="lazy"`);
+      if (!hasWidth) attrsToAdd.push(`width="800"`);
+      if (!hasHeight) attrsToAdd.push(`height="450"`);
+    }
+
+    if (!hasDecoding) attrsToAdd.push(`decoding="async"`);
+
+    if (attrsToAdd.length === 0) return match;
+
+    const isSelfClosing = match.endsWith('/>');
+    const closing = isSelfClosing ? '/>' : '>';
+    return match.slice(0, -closing.length) + ' ' + attrsToAdd.join(' ') + closing;
   });
 }
 
@@ -242,6 +295,162 @@ function normalizePerformanceAndAccessibility(html) {
     .replace(/aria-label="Instagram">IG<\/a>/g, 'aria-label="IG Instagram">IG</a>')
     .replace(/aria-label="YouTube">YT<\/a>/g, 'aria-label="YT YouTube">YT</a>')
     .replace(/aria-label="TikTok">TT<\/a>/g, 'aria-label="TT TikTok">TT</a>');
+  return html;
+}
+
+function injectResourceHints(html) {
+  // Strip any existing managed resource hints to ensure idempotency
+  html = html
+    .replace(/<link rel="preconnect" href="https:\/\/fonts\.googleapis\.com">\s*/g, '')
+    .replace(/<link rel="preconnect" href="https:\/\/fonts\.gstatic\.com" crossorigin>\s*/g, '')
+    .replace(/<link rel="dns-prefetch" href="https:\/\/www\.googletagmanager\.com">\s*/g, '')
+    .replace(/<link rel="preload" href="\/assets\/css\/style\.css" as="style">\s*/g, '')
+    .replace(/<link rel="preload" href="\/assets\/js\/site\.js" as="script">\s*/g, '');
+
+  const isArticle = html.includes('class="article-body"');
+  let hints = '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="dns-prefetch" href="https://www.googletagmanager.com">\n';
+  if (isArticle) {
+    hints += '<link rel="preload" href="/assets/js/site.js" as="script">\n';
+  }
+  const cssLink = '<link rel="stylesheet" href="/assets/css/style.css">';
+  if (html.includes(cssLink)) {
+    return html.replace(cssLink, `${hints}${cssLink}`);
+  }
+  return html.replace('</head>', `${hints}</head>`);
+}
+
+// --- Critical CSS Extraction and Injection ---
+
+function isCriticalSelector(selector) {
+  const s = selector.trim();
+  if (s === ':root') return true;
+  if (s.startsWith('[data-theme="dark"]')) return true;
+  if (s.startsWith('[lang="ar"]')) return true;
+  if (s === '*' || s.startsWith('*::')) return true;
+  if (s === 'html' || s === 'body' || s.startsWith('body.')) return true;
+  if (/^h[1-6]\b/.test(s)) return true;
+  if (s === 'p') return true;
+  if (s === 'a' || s.startsWith('a:')) return true;
+  if (s.startsWith('.site-header')) return true;
+  if (s.startsWith('.header-inner')) return true;
+  if (s.startsWith('.logo')) return true;
+  if (s.startsWith('.main-nav')) return true;
+  if (s.startsWith('.nav-links')) return true;
+  if (s.startsWith('.header-controls')) return true;
+  if (s.startsWith('.lang-switch') || s.startsWith('.theme-toggle') || s.startsWith('.search-toggle')) return true;
+  if (s.startsWith('.mobile-menu-btn')) return true;
+  if (s.startsWith('.hero-section')) return true;
+  if (s.startsWith('.hero-inner')) return true;
+  if (s.startsWith('.hero-title')) return true;
+  if (s.startsWith('.hero-subtitle')) return true;
+  if (s.startsWith('.hero-trending')) return true;
+  if (s.startsWith('.trending-pill')) return true;
+  if (s.startsWith('.article-grid')) return true;
+  if (s.startsWith('.article-card')) return true;
+  return false;
+}
+
+function extractCssBlocks(css) {
+  const blocks = [];
+  let i = 0;
+  while (i < css.length) {
+    if (css.slice(i, i + 2) === '/*') {
+      const end = css.indexOf('*/', i + 2);
+      i = end === -1 ? css.length : end + 2;
+      continue;
+    }
+    if (/\s/.test(css[i])) { i++; continue; }
+    if (css[i] === '@') {
+      const blockStart = i;
+      const braceIdx = css.indexOf('{', i);
+      const semiIdx = css.indexOf(';', i);
+      if (braceIdx !== -1 && (semiIdx === -1 || braceIdx < semiIdx)) {
+        let depth = 1;
+        let j = braceIdx + 1;
+        while (j < css.length && depth > 0) {
+          if (css[j] === '{') depth++;
+          else if (css[j] === '}') depth--;
+          j++;
+        }
+        blocks.push({ type: 'at-rule', content: css.slice(blockStart, j) });
+        i = j;
+      } else {
+        const end = semiIdx === -1 ? css.length : semiIdx + 1;
+        blocks.push({ type: 'at-rule', content: css.slice(blockStart, end) });
+        i = end;
+      }
+    } else {
+      const braceIdx = css.indexOf('{', i);
+      if (braceIdx === -1) break;
+      const selector = css.slice(i, braceIdx);
+      let depth = 1;
+      let j = braceIdx + 1;
+      while (j < css.length && depth > 0) {
+        if (css[j] === '{') depth++;
+        else if (css[j] === '}') depth--;
+        j++;
+      }
+      blocks.push({ type: 'rule', selector, content: css.slice(i, j) });
+      i = j;
+    }
+  }
+  return blocks;
+}
+
+function extractCriticalCSS(cssText) {
+  const blocks = extractCssBlocks(cssText);
+  const critical = [];
+  for (const block of blocks) {
+    if (block.type === 'rule') {
+      const selectors = block.selector.split(',').map(s => s.trim());
+      if (selectors.some(isCriticalSelector)) {
+        critical.push(block.content);
+      }
+    } else if (block.type === 'at-rule' && block.content.includes('{')) {
+      const prefix = block.content.slice(0, block.content.indexOf('{'));
+      const inner = block.content.slice(block.content.indexOf('{') + 1, block.content.lastIndexOf('}'));
+      const innerBlocks = extractCssBlocks(inner);
+      const innerCritical = [];
+      for (const ib of innerBlocks) {
+        if (ib.type === 'rule') {
+          const selectors = ib.selector.split(',').map(s => s.trim());
+          if (selectors.some(isCriticalSelector)) {
+            innerCritical.push(ib.content);
+          }
+        }
+      }
+      if (innerCritical.length > 0) {
+        critical.push(prefix + '{' + innerCritical.join('') + '}');
+      }
+    }
+  }
+  return critical.join('');
+}
+
+function minifyCSS(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\n\s*/g, ' ')
+    .replace(/\s+/g, ' ')
+    .replace(/;\s*}/g, '}')
+    .replace(/{\s+/g, '{')
+    .replace(/;\s+/g, ';')
+    .replace(/,\s+/g, ',')
+    .replace(/:\s+/g, ':')
+    .replace(/\s+{/g, '{')
+    .trim();
+}
+
+function injectCriticalCSS(html, criticalCSS) {
+  // Remove any existing CSS preload hints to avoid duplicates
+  html = html.replace(/<link rel="preload" href="\/assets\/css\/style\.css" as="style"[^>]*>\s*/g, '');
+  const hasStylesheet = html.includes('<link rel="stylesheet" href="/assets/css/style.css">');
+  if (!hasStylesheet) return html;
+  const inlineStyle = `<style>${criticalCSS}</style>`;
+  const preloadLink = `<link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">`;
+  const noscriptFallback = `<noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>`;
+  const replacement = `${inlineStyle}\n${preloadLink}\n${noscriptFallback}`;
+  html = html.replace('<link rel="stylesheet" href="/assets/css/style.css">', replacement);
   return html;
 }
 
@@ -463,6 +672,9 @@ function injectSchemas(html, relativeFile) {
 
   return html;
 }
+const criticalCSS = minifyCSS(extractCriticalCSS(await readFile(join(root, 'assets/css/style.css'), 'utf8')));
+console.log('Critical CSS size:', criticalCSS.length, 'bytes');
+
 const htmlFiles = (await walk(root)).filter((path) => path.endsWith('.html'));
 for (const file of htmlFiles) {
   let html = await readFile(file, 'utf8');
@@ -613,7 +825,7 @@ for (const file of htmlFiles) {
   );
   html = html.replace(
     '<a href="/ar/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>عام</h4><span>28 مقال</span></div></a>',
-    '<a href="/ar/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>دبي والإمارات</h4><span>19 مقالاً</span></div></a><a href="/ar/category/saudi.html" class="category-tile"><div class="tile-icon">🏛️</div><div class="tile-info"><h4>تاريخ السعودية</h4><span>10 مقالات</span></div></a><a href="/ar/category/vision-2030.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>رؤية 2030</h4><span>6 مقالات</span></div></a><a href="/ar/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>أدلة عملية</h4><span>8 مقالات</span></div></a><a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>5 مقالات</span></div></a>'
+    '<a href="/ar/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>دبي والإمارات</h4><span>19 مقالاً</span></div></a><a href="/ar/category/saudi.html" class="category-tile"><div class="tile-icon">🏛️</div><div class="tile-info"><h4>تاريخ السعودية</h4><span>10 مقالات</span></div></a><a href="/ar/category/vision-2030.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>رؤية 2030</h4><span>7 مقالات</span></div></a><a href="/ar/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>أدلة عملية</h4><span>8 مقالات</span></div></a><a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>5 مقالات</span></div></a>'
   );
   html = html
     .replaceAll('<span>13 articles</span>', '<span>14 articles</span>')
@@ -653,6 +865,7 @@ for (const file of htmlFiles) {
   html = stripSearchAction(html);
   html = updateArticlePageImage(html, relativeFile);
   html = updateArticleCardImages(html);
+  html = optimizeImageAttributes(html);
   html = normalizePerformanceAndAccessibility(html);
   html = linkExistingCategory(html, relativeFile);
   // --- PWA manifest, apple-touch-icon, and theme-color ---
@@ -682,6 +895,8 @@ for (const file of htmlFiles) {
     );
   }
   html = normalizePerformanceAndAccessibility(html);
+  html = injectResourceHints(html);
+  html = injectCriticalCSS(html, criticalCSS);
   html = normalizeHreflang(html, relativeFile);
   html = addRevealClasses(html, 'article-card');
   html = addRevealClasses(html, 'category-tile');
@@ -715,14 +930,14 @@ for (const group of categoryGroups) {
     const priority = articles.indexOf(article) < 3
       ? 'loading="eager" fetchpriority="high"'
       : 'loading="lazy"';
-    const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="1200" height="675" ${priority}>`;
+    const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="800" height="450" ${priority}>`;
     return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card reveal reveal-delay-${delay}">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
   }).join('');
   const itemList = articles.filter((a) => !a.noindex).map((article, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://doyouknow.app/${group.lang}/article/${article.slug}.html`, name: article.title }));
   const alternateBlock = hreflangBlock(`${group.lang}/category/${group.slug}.html`, group.lang, canonical);
   const manifestLink = rtl ? '<link rel="manifest" href="/manifest-ar.json">' : '<link rel="manifest" href="/manifest.json">';
   const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta name="theme-color" content="#F59E0B">${manifestLink}<link rel="apple-touch-icon" href="/assets/images/icon-192.png"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}<link rel="alternate" type="application/rss+xml" title="RSS" href="/${group.lang}/rss.xml"><link rel="alternate" type="application/json" title="JSON Feed" href="/${group.lang}/feed.json"></head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p><div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a>${rtl ? ' · <a href="/ar/work-with-us.html">اعمل معنا</a>' : ' · <a href="/en/work-with-us.html">Work With Us</a>'}</div></footer><script src="/assets/js/site.js" defer></script></body></html>`;
-  await writeFile(join(root, group.lang, 'category', `${group.slug}.html`), page);
+  await writeFile(join(root, group.lang, 'category', `${group.slug}.html`), injectCriticalCSS(optimizeImageAttributes(page), criticalCSS));
 }
 
 const sitemapFiles = (await walk(root)).filter((path) => path.endsWith('.html'));

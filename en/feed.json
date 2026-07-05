@@ -6,10 +6,50 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/best-time-visit-dubai.html",
+      "url": "https://doyouknow.app/en/article/best-time-visit-dubai.html",
+      "title": "Best Time to Visit Dubai: A Complete Seasonal Guide",
+      "content_text": "Plan your Dubai trip with our seasonal guide. Discover the best months to visit, weather by season, peak vs off-season deals, Ramadan tips, and top events.",
+      "date_published": "2026-07-05",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/neom-city-facts.html",
+      "url": "https://doyouknow.app/en/article/neom-city-facts.html",
+      "title": "NEOM City: Saudi Arabia's Futuristic City Guide",
+      "content_text": "A guide to NEOM, Saudi Arabia's futuristic city. Explore THE LINE, Oxagon, Trojena, and Sindalah.",
+      "date_published": "2026-07-05",
+      "tags": [
+        "Saudi Arabia"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/saudi-desert-camping.html",
+      "url": "https://doyouknow.app/en/article/saudi-desert-camping.html",
+      "title": "Saudi Desert Camping: Best Locations, Gear &amp; Safety",
+      "content_text": "Complete guide to desert camping in Saudi Arabia: top locations, gear, safety tips, permits, seasons, stargazing, Bedouin culture, and glamping.",
+      "date_published": "2026-07-05",
+      "tags": [
+        "Saudi Arabia"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/saudi-vision-2030-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-vision-2030-guide.html",
+      "title": "Saudi Vision 2030: Guide to the Kingdom's Transformation",
+      "content_text": "A complete guide to Saudi Vision 2030: its three pillars, megaprojects including NEOM and the Red Sea Project, economic diversification, social reforms, and progress metrics.",
+      "date_published": "2026-07-05",
+      "tags": [
+        "Saudi Arabia"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/arab-teams-world-cup-2026-pillar.html",
       "url": "https://doyouknow.app/en/article/arab-teams-world-cup-2026-pillar.html",
-      "title": "Arab Teams at World Cup 2026: Complete Guide to Every Squad",
-      "content_text": "Complete guide to all Arab teams at World Cup 2026: Morocco, Saudi Arabia, Tunisia, Algeria, Egypt, Qatar, Iraq, and Jordan. Profiles, squads, history, and match schedules.",
+      "title": "Arab Teams World Cup 2026: Squad Guide",
+      "content_text": "Guide to all Arab teams at World Cup 2026: Morocco, Saudi Arabia, Tunisia, Algeria, Egypt, Qatar, Iraq, and Jordan. Profiles, squads, and schedules.",
       "date_published": "2026-07-01",
       "tags": [
         "Dubai & UAE Places"
@@ -22,7 +62,7 @@
       "content_text": "Complete Saudi Arabia travel guide 2026: visas, best times to visit, all regions from Riyadh to AlUla, transport options, cultural tips, and essential planning advice.",
       "date_published": "2026-07-01",
       "tags": [
-        "Dubai & UAE Places"
+        "Saudi Arabia"
       ]
     },
     {
@@ -160,46 +200,6 @@
       "url": "https://doyouknow.app/en/article/morocco-defensive-structure-world-cup-2026.html",
       "title": "Morocco's Defensive Structure",
       "content_text": "When Arab fans discuss World Cup success, the conversation often returns to Morocco's defensive structure. That is not accidental. The Atlas Lions ha…",
-      "date_published": "2026-06-26",
-      "tags": [
-        "World Cup 2026 & Arab Football"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/morocco-egypt-algeria-world-cup-2026.html",
-      "url": "https://doyouknow.app/en/article/morocco-egypt-algeria-world-cup-2026.html",
-      "title": "Morocco, Egypt &amp; Algeria Compared",
-      "content_text": "Morocco, Egypt, and Algeria enter World Cup 2026 as three of the most discussed Arab football powers, but they arrive with very different profiles. M…",
-      "date_published": "2026-06-26",
-      "tags": [
-        "World Cup 2026 & Arab Football"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/morocco-world-cup-2026.html",
-      "url": "https://doyouknow.app/en/article/morocco-world-cup-2026.html",
-      "title": "Morocco at World Cup 2026",
-      "content_text": "Morocco entered World Cup 2026 carrying far more than expectations. After proving on the global stage that disciplined defending, rapid transitions,…",
-      "date_published": "2026-06-26",
-      "tags": [
-        "World Cup 2026 & Arab Football"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/qatar-world-cup-2026.html",
-      "url": "https://doyouknow.app/en/article/qatar-world-cup-2026.html",
-      "title": "Qatar at World Cup 2026",
-      "content_text": "Qatar approach World Cup 2026 with a different emotional context from many of their Arab peers. The spotlight is familiar, but the mission now is rec…",
-      "date_published": "2026-06-26",
-      "tags": [
-        "World Cup 2026 & Arab Football"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/saudi-arabia-world-cup-2026.html",
-      "url": "https://doyouknow.app/en/article/saudi-arabia-world-cup-2026.html",
-      "title": "Saudi Arabia at World Cup 2026",
-      "content_text": "Saudi Arabia continue to evolve as one of Asia's most visible football projects. At World Cup 2026, the Green Falcons bring technical flashes, strong…",
       "date_published": "2026-06-26",
       "tags": [
         "World Cup 2026 & Arab Football"
