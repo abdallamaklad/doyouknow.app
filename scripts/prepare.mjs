@@ -542,6 +542,31 @@ for (const file of htmlFiles) {
     ,['شروط استخدام موقع doyouknow.app.', 'اقرأ شروط استخدام موقع doyouknow.app المتعلقة بالمحتوى المعلوماتي والتصحيحات التحريرية ومسؤوليات القارئ وحقوق النشر.']
   ]);
   for (const [from, to] of descriptions) html = html.replaceAll(from, to);
+  const textReplacements = new Map([
+    ['Uae Golden Visa Guide', 'UAE Golden Visa Guide']
+  ]);
+  if (relativeFile.startsWith('ar/')) {
+    textReplacements.set('Qobool Guide', 'دليل قبول: التقديم ومتابعة القبول الجامعي');
+    textReplacements.set('Saudi No Rivers', 'لماذا لا توجد أنهار دائمة في السعودية؟');
+    textReplacements.set('What Is Neom', 'ما هو نيوم؟ دليل شامل عن مدينة المستقبل');
+    textReplacements.set('Page Not Found', 'الصفحة غير موجودة');
+    textReplacements.set('The page you are looking for does not exist.', 'الصفحة التي تبحث عنها غير موجودة. يمكنك العودة إلى الصفحة الرئيسية أو استخدام البحث للوصول إلى المحتوى.');
+    textReplacements.set('الصفحة التي تبحث عنها غير موجودة.', 'الصفحة التي تبحث عنها غير موجودة. يمكنك العودة إلى الصفحة الرئيسية أو استخدام البحث للوصول إلى المحتوى.');
+  }
+  for (const [from, to] of textReplacements) html = html.replaceAll(from, to);
+  const cardExcerptReplacements = new Map([
+    ['Deep Dive Dubai', 'Explore Deep Dive Dubai, the record-breaking 60-metre diving pool, with key facts, visitor guidance, safety notes, and what makes it unique.'],
+    ['Dubai Metro Guide', 'Plan your journey with this practical Dubai Metro guide covering lines, stations, Nol cards, fares, operating basics, accessibility, and useful travel tips.'],
+    ['UAE Golden Visa Guide', 'Understand the UAE Golden Visa routes, broad eligibility categories, application steps, and the official sources to check before you apply.'],
+    ['دليل قبول: التقديم ومتابعة القبول الجامعي', 'دليل مبسط لاستخدام منصة قبول في السعودية، من إنشاء الحساب وترتيب الرغبات إلى متابعة الطلب والتحقق من أحدث التعليمات الرسمية.'],
+    ['لماذا لا توجد أنهار دائمة في السعودية؟', 'هل تعلم أن السعودية لا تضم أنهاراً دائمة؟ اكتشف الأسباب الجغرافية ومصادر المياه والحلول التي تعتمد عليها المملكة لتلبية احتياجاتها.'],
+    ['ما هو نيوم؟ دليل شامل عن مدينة المستقبل', 'ما هو مشروع نيوم؟ تعرف على مناطق المشروع وأهدافه وعلاقته برؤية السعودية 2030، مع فصل الحقائق الرسمية عن الوعود المستقبلية.']
+  ]);
+  for (const [title, excerpt] of cardExcerptReplacements) {
+    html = html
+      .replaceAll(`<h2 class="card-title">${title}</h2><p class="card-excerpt">...</p>`, `<h2 class="card-title">${title}</h2><p class="card-excerpt">${excerpt}</p>`)
+      .replaceAll(`<h3 class="card-title">${title}</h3><p class="card-excerpt">...</p>`, `<h3 class="card-title">${title}</h3><p class="card-excerpt">${excerpt}</p>`);
+  }
   const titleReplacements = new Map([
     ['<title>الصيام في رمضان: دليل صحي معتمد من طبيب — نصائح علمية للجميع | doyouknow.app</title>', '<title>الصيام الصحي في رمضان: دليل عملي | doyouknow.app</title>'],
     ['<title>Best Beaches in Dubai: 12 Top Picks for Every Type of Traveler | doyouknow.app</title>', '<title>12 Best Beaches in Dubai for Every Traveler | doyouknow.app</title>'],
@@ -793,6 +818,7 @@ for (const file of searchFiles) {
   if (rel.endsWith('404.html')) continue;
 
   const html = await readFile(file, 'utf8');
+  if (html.includes('name="robots" content="noindex')) continue;
 
   const title = (html.match(/<title>([^<]+)<\/title>/)?.[1] || '').trim();
   const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '';

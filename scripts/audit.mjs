@@ -2,6 +2,24 @@ import { readdir, readFile, access } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 
 const root = new URL('../', import.meta.url).pathname;
+const siteOrigin = 'https://doyouknow.app';
+
+function stripTags(value) {
+  return value.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function hasArabic(value) {
+  return /[\u0600-\u06FF]/.test(value);
+}
+
+function localPathFromSiteUrl(url) {
+  const parsed = new URL(url);
+  if (parsed.origin !== siteOrigin) return null;
+  let pathname = decodeURI(parsed.pathname).replace(/^\/+/, '');
+  if (!pathname || pathname.endsWith('/')) pathname += 'index.html';
+  return pathname;
+}
+
 async function walk(dir) {
   const out = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -20,6 +38,7 @@ const indexableCanonicals = new Set();
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
   const rel = file.slice(root.length);
+  if (/^(en|ar)\/category\/General\.html$/.test(rel)) errors.push(`${rel}: legacy General category page should not exist`);
   const isNoindex = html.includes('name="robots" content="noindex');
   for (const required of ['<html lang=', '<title>', 'name="description"', 'rel="canonical"', '<h1']) {
     if (!html.includes(required)) errors.push(`${rel}: missing ${required}`);
@@ -28,10 +47,20 @@ for (const file of htmlFiles) {
   if (h1Count !== 1) errors.push(`${rel}: expected exactly one h1, found ${h1Count}`);
   const title = html.match(/<title>([^<]+)<\/title>/)?.[1] || '';
   const description = html.match(/<meta name="description" content="([^"]*)">/)?.[1] || '';
+  const h1Text = stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || '');
   if (title.length < 15 || title.length > 75) errors.push(`${rel}: title length ${title.length} outside 15–75`);
   if (description.length < 40 || description.length > 180) errors.push(`${rel}: description length ${description.length} outside 40–180`);
+  if (description.trim() === '...') errors.push(`${rel}: placeholder meta description`);
+  if (html.includes('<p class="card-excerpt">...</p>')) errors.push(`${rel}: placeholder card excerpt`);
+  if (rel.startsWith('ar/') && !hasArabic(title)) errors.push(`${rel}: Arabic page title does not contain Arabic text`);
+  if (rel.startsWith('ar/') && !rel.endsWith('404.html') && !hasArabic(h1Text)) errors.push(`${rel}: Arabic page h1 does not contain Arabic text`);
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
   if (canonical && !canonical.startsWith('https://doyouknow.app/')) errors.push(`${rel}: canonical must be absolute`);
+  if (canonical?.startsWith(`${siteOrigin}/`)) {
+    const canonicalLocalPath = localPathFromSiteUrl(canonical);
+    try { await access(join(root, canonicalLocalPath)); }
+    catch { errors.push(`${rel}: canonical target does not exist ${canonical}`); }
+  }
   if (canonical && !isNoindex) {
     if (canonicals.has(canonical)) errors.push(`${rel}: duplicate canonical also used by ${canonicals.get(canonical)}`);
     canonicals.set(canonical, rel);
@@ -114,6 +143,30 @@ for (const canonical of indexableCanonicals) {
 }
 for (const canonical of noindexCanonicals) {
   if (!indexableCanonicals.has(canonical) && sitemap.includes(`<loc>${canonical}</loc>`)) errors.push(`sitemap.xml: noindex URL included ${canonical}`);
+}
+const searchIndex = JSON.parse(await readFile(join(root, 'assets/js/search-index.json'), 'utf8'));
+if (searchIndex.count !== searchIndex.articles.length) errors.push('assets/js/search-index.json: count does not match article length');
+for (const article of searchIndex.articles) {
+  if (!article.url?.startsWith(`${siteOrigin}/`)) {
+    errors.push(`assets/js/search-index.json: non-site URL ${article.url}`);
+    continue;
+  }
+  const localPath = localPathFromSiteUrl(article.url);
+  let indexedHtml = '';
+  try { indexedHtml = await readFile(join(root, localPath), 'utf8'); }
+  catch {
+    errors.push(`assets/js/search-index.json: indexed URL target does not exist ${article.url}`);
+    continue;
+  }
+  if (indexedHtml.includes('name="robots" content="noindex')) {
+    errors.push(`assets/js/search-index.json: noindex URL included ${article.url}`);
+  }
+  if (localPath.startsWith('ar/') && !hasArabic(article.title || '')) {
+    errors.push(`assets/js/search-index.json: Arabic result has non-Arabic title ${article.url}`);
+  }
+  if ([article.title, article.description, article.excerpt].some((value) => String(value || '').trim() === '...')) {
+    errors.push(`assets/js/search-index.json: placeholder text included ${article.url}`);
+  }
 }
 if (errors.length) {
   console.error(errors.slice(0, 100).join('\n'));
