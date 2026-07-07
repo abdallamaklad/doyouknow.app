@@ -442,15 +442,27 @@ function minifyCSS(css) {
 }
 
 function injectCriticalCSS(html, criticalCSS) {
-  // Remove any existing CSS preload hints to avoid duplicates
-  html = html.replace(/<link rel="preload" href="\/assets\/css\/style\.css" as="style"[^>]*>\s*/g, '');
-  const hasStylesheet = html.includes('<link rel="stylesheet" href="/assets/css/style.css">');
-  if (!hasStylesheet) return html;
-  const inlineStyle = `<style>${criticalCSS}</style>`;
+  const stylesheetLink = '<link rel="stylesheet" href="/assets/css/style.css">';
+  const stylesheetLinkPattern = /<link rel="stylesheet" href="\/assets\/css\/style\.css">\s*/g;
+
+  // Normalize previous critical-CSS injections back to a single stylesheet anchor.
+  html = html
+    .replace(/<style(?:\s+data-critical="true")?>[\s\S]*?<\/style>\s*/g, '')
+    .replace(/<link rel="preload" href="\/assets\/css\/style\.css" as="style"[^>]*>\s*/g, '')
+    .replace(/<\/?noscript>/g, '');
+
+  let hasStylesheet = false;
+  html = html.replace(stylesheetLinkPattern, () => {
+    if (hasStylesheet) return '';
+    hasStylesheet = true;
+    return stylesheetLink;
+  });
+  const inlineStyle = `<style data-critical="true">${criticalCSS}</style>`;
   const preloadLink = `<link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">`;
   const noscriptFallback = `<noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>`;
   const replacement = `${inlineStyle}\n${preloadLink}\n${noscriptFallback}`;
-  html = html.replace('<link rel="stylesheet" href="/assets/css/style.css">', replacement);
+  if (!hasStylesheet) return html.replace('</head>', `${replacement}</head>`);
+  html = html.replace(stylesheetLink, replacement);
   return html;
 }
 
