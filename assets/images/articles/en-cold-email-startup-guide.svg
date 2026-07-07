@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#FAFAFA"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g transform="translate(540, 240)" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="120" height="90" rx="8"/>
+    <polyline points="0,25 60,55 120,25"/>
+    <circle cx="90" cy="30" r="8"/>
+    <line x1="20" y1="100" x2="100" y2="100"/>
+    <line x1="20" y1="110" x2="80" y2="110"/>
+    <line x1="20" y1="120" x2="60" y2="120"/>
+  </g>
+  <text x="600" y="420" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#1E293B">Cold Email Strategy</text>
+  <text x="600" y="460" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#64748B">Startup Marketing Outreach Guide</text>
+</svg>
