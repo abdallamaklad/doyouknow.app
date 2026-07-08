@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url><loc>https://doyouknow.app/ar/</loc><lastmod>2026-06-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>https://doyouknow.app/ar/about.html</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://doyouknow.app/ar/article/absher-portal-guide.html</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-absher-portal-guide.png</image:loc><image:title>كيف تستخدم منصة أبشر: دليل شامل للمقيمين | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-abu-dhabi-complete-guide.png</image:loc><image:title>دليل أبوظبي الشامل: أهم المعالم والوجهات السياحية | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/algeria-attack-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
@@ -64,6 +66,8 @@
 <image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/egypt-world-cup-2026.png</image:loc><image:title>مصر في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/expo-city-dubai.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-expo-city-dubai.png</image:loc><image:title>مدينة إكسبو دبي: ماذا حدث بعد انتهاء المعرض؟ | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/hajj-guide.html</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-hajj-guide.png</image:loc><image:title>الحج: دليل شامل للحجاج — من التسجيل إلى العودة | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/hidden-gems-uae.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-hidden-gems-uae.png</image:loc><image:title>10 جواهر مخفية في الإمارات تستحق الاستكشاف | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/iraq-jordan-tournament-discipline-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
@@ -96,10 +100,14 @@
 <image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/qatar-world-cup-2026.png</image:loc><image:title>قطر في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/qiddiya-saudi-arabia.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-qiddiya-saudi-arabia.png</image:loc><image:title>القدية: مدينة الترفيه السعودية | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/ramadan-health-guide.html</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-ramadan-health-guide.png</image:loc><image:title>الصيام الصحي في رمضان: دليل عملي | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/red-sea-project-saudi.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-red-sea-project-saudi.png</image:loc><image:title>مشروع البحر الأحمر: السياحة الفاخرة في السعودية | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/riyadh-nightlife-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-riyadh-nightlife-guide.png</image:loc><image:title>دليل الحياة الليلية في الرياض: أفضل الأماكن | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/riyadh-season.html</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-riyadh-season.png</image:loc><image:title>موسم الرياض: ما هو وما يمكن توقعه | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/ronaldo-saudi-arabia.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-ronaldo-saudi-arabia.png</image:loc><image:title>رونالدو في السعودية: التأثير والتغيير | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/saudi-ai-market-entry-guide.html</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
@@ -136,6 +144,8 @@
 <image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-defensive-grit-world-cup-2026.png</image:loc><image:title>تونس وفن البقاء | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-world-cup-2026.png</image:loc><image:title>تونس في كأس العالم 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/ar/article/umrah-guide.html</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-umrah-guide.png</image:loc><image:title>العمرة: دليل خطوة بخطوة — كل ما تحتاج لمعرفته قبل السفر | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/what-is-neom.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/ar-what-is-neom.png</image:loc><image:title>ما هو نيوم؟ دليل شامل عن مدينة المستقبل | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/ar/article/what-is-zakat.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
@@ -255,12 +265,18 @@
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/en-save-money-dubai.png</image:loc><image:title>How to Save Money in Dubai: 25 Practical Tips | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/en/article/sheikh-zayed-grand-mosque-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/en-sheikh-zayed-grand-mosque-guide.png</image:loc><image:title>Sheikh Zayed Grand Mosque: A Complete Guide | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/start-business-dubai.html</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-start-business-dubai.png</image:loc><image:title>How to Start a Business in Dubai | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/en/article/things-to-do-dubai-this-week.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/en-things-to-do-dubai-this-week.png</image:loc><image:title>Things To Do in Dubai This Week: Events &amp; Guide | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/en/article/tunisia-defensive-grit-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-defensive-grit-world-cup-2026.png</image:loc><image:title>Tunisia's Defensive Grit | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/en/article/tunisia-world-cup-2026.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/world-cup-2026/tunisia-world-cup-2026.png</image:loc><image:title>Tunisia at World Cup 2026 | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/uae-corporate-tax.html</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-uae-corporate-tax.png</image:loc><image:title>UAE Corporate Tax: What You Need to Know | doyouknow.app</image:title></image:image></url>
+<url><loc>https://doyouknow.app/en/article/uae-golden-visa-guide.html</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+<image:image><image:loc>https://doyouknow.app/assets/images/articles/en-uae-golden-visa-guide.png</image:loc><image:title>UAE Golden Visa Guide | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/en/article/uae-imports-sand.html</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
 <image:image><image:loc>https://doyouknow.app/assets/images/articles/en-uae-imports-sand.png</image:loc><image:title>Did You Know the UAE Imports Most of Its Sand? | doyouknow.app</image:title></image:image></url>
 <url><loc>https://doyouknow.app/en/article/what-is-neom.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>

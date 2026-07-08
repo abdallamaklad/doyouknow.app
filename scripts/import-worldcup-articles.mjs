@@ -284,7 +284,15 @@ function renderArticle(article, index, lang) {
     '@type': 'Article',
     headline: title,
     description,
-    author: { '@type': 'Organization', name: 'doyouknow.app Editorial Team' },
+    author: {
+      '@type': 'Organization',
+      name: 'doyouknow.app Editorial Team',
+      url: `https://doyouknow.app/${lang}/about.html`,
+      sameAs: [
+        'https://instagram.com/doyouknowapp',
+        'https://twitter.com/doyouknowapp'
+      ]
+    },
     publisher: { '@type': 'Organization', name: 'doyouknow.app', logo: { '@type': 'ImageObject', url: 'https://doyouknow.app/assets/images/logo.png' } },
     datePublished: today,
     dateModified: today,
@@ -327,9 +335,6 @@ function renderArticle(article, index, lang) {
 <meta name="twitter:description" content="${escapeHtml(description)}">
 <meta name="twitter:image" content="${imageUrl}">
 <title>${escapeHtml(seoTitle)}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
 <script type="application/ld+json">${JSON.stringify(articleJson)}</script>
 <script type="application/ld+json">${JSON.stringify(breadcrumbJson)}</script>

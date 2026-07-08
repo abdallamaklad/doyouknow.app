@@ -27,6 +27,26 @@ function localPathFromRootUrl(url) {
   return pathname;
 }
 
+function absoluteUrl(relativePath) {
+  if (relativePath === 'index.html') return `${siteOrigin}/`;
+  if (relativePath === 'en/index.html') return `${siteOrigin}/en/`;
+  if (relativePath === 'ar/index.html') return `${siteOrigin}/ar/`;
+  return `${siteOrigin}/${relativePath}`;
+}
+
+async function htmlFilenames(dir) {
+  try {
+    return new Set((await readdir(join(root, dir))).filter((name) => name.endsWith('.html')));
+  } catch {
+    return new Set();
+  }
+}
+
+function hreflangMap(html) {
+  return new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)" ?\/?>/g)]
+    .map(([, hreflang, href]) => [hreflang, href]));
+}
+
 function extractServiceWorkerPrecacheUrls(swSource) {
   const urls = new Set();
   const arrayPattern = /const\s+(CORE_URLS|EN_ARTICLES|AR_ARTICLES|PRECACHE_URLS)\s*=\s*\[([\s\S]*?)\];/g;
@@ -36,6 +56,38 @@ function extractServiceWorkerPrecacheUrls(swSource) {
     }
   }
   return [...urls];
+}
+
+const ignoredOutboundHosts = new Set([
+  'doyouknow.app',
+  'www.doyouknow.app',
+  'www.googletagmanager.com',
+  'googletagmanager.com',
+  'www.google-analytics.com',
+  'google-analytics.com',
+  'analytics.google.com',
+  'fonts.googleapis.com',
+  'fonts.gstatic.com'
+]);
+
+function sourceCitationSection(html) {
+  const sectionMatch = html.match(/<section\b[^>]*class="[^"]*\bsources-section\b[^"]*"[^>]*>([\s\S]*?)<\/section>/i);
+  if (sectionMatch) return sectionMatch[1];
+  const headingMatch = html.match(/<h2\b[^>]*id="(?:sources|[^"]*مصادر[^"]*)"[^>]*>[\s\S]*?(?=<h2\b|<footer\b|<\/article>|$)/i);
+  return headingMatch?.[0] || '';
+}
+
+function outboundCitationHosts(html) {
+  const sourceHtml = sourceCitationSection(html);
+  const hosts = new Set();
+  for (const [, href] of sourceHtml.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
+    if (!/^https?:\/\//.test(href)) continue;
+    try {
+      const host = new URL(href).hostname.toLowerCase();
+      if (!ignoredOutboundHosts.has(host)) hosts.add(host);
+    } catch {}
+  }
+  return hosts;
 }
 
 async function walk(dir) {
@@ -53,6 +105,14 @@ const errors = [];
 const canonicals = new Map();
 const noindexCanonicals = [];
 const indexableCanonicals = new Set();
+const enArticleFiles = await htmlFilenames('en/article');
+const arArticleFiles = await htmlFilenames('ar/article');
+const pairedArticlePaths = new Map();
+for (const filename of enArticleFiles) {
+  if (!arArticleFiles.has(filename)) continue;
+  pairedArticlePaths.set(`en/article/${filename}`, `ar/article/${filename}`);
+  pairedArticlePaths.set(`ar/article/${filename}`, `en/article/${filename}`);
+}
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
   const rel = file.slice(root.length);
@@ -99,6 +159,23 @@ for (const file of htmlFiles) {
       if (!href.startsWith('https://doyouknow.app/')) errors.push(`${rel}: hreflang must be absolute ${href}`);
     }
   }
+  const pairedArticlePath = pairedArticlePaths.get(rel);
+  if (pairedArticlePath) {
+    const hreflangByLanguage = hreflangMap(html);
+    const pairedLanguage = pairedArticlePath.startsWith('ar/') ? 'ar' : 'en';
+    const pairedUrl = absoluteUrl(pairedArticlePath);
+    if (hreflangByLanguage.get(pairedLanguage) !== pairedUrl) {
+      errors.push(`${rel}: missing cross-language hreflang ${pairedLanguage} -> ${pairedUrl}`);
+    } else {
+      const pairedHtml = await readFile(join(root, pairedArticlePath), 'utf8');
+      const reciprocalLanguage = rel.startsWith('ar/') ? 'ar' : 'en';
+      const reciprocalUrl = absoluteUrl(rel);
+      const pairedHreflangs = hreflangMap(pairedHtml);
+      if (pairedHreflangs.get(reciprocalLanguage) !== reciprocalUrl) {
+        errors.push(`${rel}: hreflang is not reciprocal from ${pairedArticlePath}`);
+      }
+    }
+  }
   for (const json of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try {
       const data = JSON.parse(json[1]);
@@ -110,6 +187,7 @@ for (const file of htmlFiles) {
   if (html.includes('/assets/js/world-cup-live.js')) errors.push(`${rel}: World Cup live script should stay disabled`);
   if (html.includes('/world-cup-2026-live.html')) errors.push(`${rel}: links to disabled World Cup live page`);
   if (/<link[^>]*href="https:\/\/fonts\.googleapis\.com\/css/.test(html)) errors.push(`${rel}: render-blocking Google Fonts dependency present`);
+  if (/fonts\.(?:googleapis|gstatic)\.com/.test(html)) errors.push(`${rel}: dead Google Fonts hint present`);
   if (html.includes('<script src="/assets/js/site.js"></script>')) errors.push(`${rel}: site.js should be deferred`);
   if (/class="mobile-nav" role="dialog"/.test(html)) errors.push(`${rel}: mobile nav should not use dialog role`);
   if (/<div class="tile-info"><h4>/.test(html)) errors.push(`${rel}: category tile skips heading levels`);
@@ -117,10 +195,22 @@ for (const file of htmlFiles) {
   if (!html.includes('property="og:image"')) errors.push(`${rel}: missing Open Graph image`);
   if (html.includes('📷 Featured Image')) errors.push(`${rel}: placeholder featured image still present`);
   if (html.includes('📷</span></div><div class="card-content"')) errors.push(`${rel}: placeholder article-card image still present`);
+  for (const img of html.matchAll(/<img\b[^>]*>/g)) {
+    const tag = img[0];
+    const alt = tag.match(/\balt="([^"]*)"/);
+    const isDecorativeCardImage = /\bclass="[^"]*\bcard-image\b/.test(tag) && alt && alt[1] === '';
+    if ((!alt || !alt[1].trim()) && !isDecorativeCardImage) {
+      errors.push(`${rel}: image missing non-empty alt text ${tag.slice(0, 120)}`);
+    }
+  }
   if (/^(en|ar)\/article\/[a-z0-9-]+\.html$/.test(rel) && !isNoindex) {
     const language = rel.startsWith('ar/') ? 'ar' : 'en';
     if (html.includes(`property="og:image" content="https://doyouknow.app/assets/images/og-${language}.png"`)) {
       errors.push(`${rel}: indexable article uses default social image`);
+    }
+    const sourceHosts = outboundCitationHosts(html);
+    if (sourceHosts.size < 2) {
+      errors.push(`${rel}: indexable article has fewer than 2 unique outbound source domains`);
     }
   }
   const featuredImage = html.match(/<img class="featured-image" src="([^"]+)"/)?.[1];
@@ -169,31 +259,45 @@ for (const url of extractServiceWorkerPrecacheUrls(serviceWorker)) {
   try { await access(join(root, localPath)); }
   catch { errors.push(`sw.js: precache URL target does not exist ${url} -> ${localPath}`); }
 }
-const searchIndex = JSON.parse(await readFile(join(root, 'assets/js/search-index.json'), 'utf8'));
-if (searchIndex.count !== searchIndex.articles.length) errors.push('assets/js/search-index.json: count does not match article length');
-for (const article of searchIndex.articles) {
-  if (!article.url?.startsWith(`${siteOrigin}/`)) {
-    errors.push(`assets/js/search-index.json: non-site URL ${article.url}`);
-    continue;
-  }
-  const localPath = localPathFromSiteUrl(article.url);
-  let indexedHtml = '';
-  try { indexedHtml = await readFile(join(root, localPath), 'utf8'); }
-  catch {
-    errors.push(`assets/js/search-index.json: indexed URL target does not exist ${article.url}`);
-    continue;
-  }
-  if (indexedHtml.includes('name="robots" content="noindex')) {
-    errors.push(`assets/js/search-index.json: noindex URL included ${article.url}`);
-  }
-  if (localPath.startsWith('ar/') && !hasArabic(article.title || '')) {
-    errors.push(`assets/js/search-index.json: Arabic result has non-Arabic title ${article.url}`);
-  }
-  if (localPath.startsWith('ar/') && !hasArabic(article.excerpt || '')) {
-    errors.push(`assets/js/search-index.json: Arabic result has non-Arabic excerpt ${article.url}`);
-  }
-  if ([article.title, article.description, article.excerpt].some((value) => String(value || '').trim() === '...')) {
-    errors.push(`assets/js/search-index.json: placeholder text included ${article.url}`);
+try {
+  await access(join(root, 'assets/js/search-index.json'));
+  errors.push('assets/js/search-index.json: old combined search index should not exist');
+} catch {}
+
+for (const expectedLanguage of ['en', 'ar']) {
+  const searchIndexFile = `assets/js/search-index.${expectedLanguage}.json`;
+  const searchIndex = JSON.parse(await readFile(join(root, searchIndexFile), 'utf8'));
+  if (searchIndex.count !== searchIndex.articles.length) errors.push(`${searchIndexFile}: count does not match article length`);
+  for (const article of searchIndex.articles) {
+    if (!article.url?.startsWith(`${siteOrigin}/`)) {
+      errors.push(`${searchIndexFile}: non-site URL ${article.url}`);
+      continue;
+    }
+    const localPath = localPathFromSiteUrl(article.url);
+    if (!localPath?.startsWith(`${expectedLanguage}/`)) {
+      errors.push(`${searchIndexFile}: wrong-language URL included ${article.url}`);
+    }
+    if (article.language !== expectedLanguage) {
+      errors.push(`${searchIndexFile}: wrong language field ${article.language} for ${article.url}`);
+    }
+    let indexedHtml = '';
+    try { indexedHtml = await readFile(join(root, localPath), 'utf8'); }
+    catch {
+      errors.push(`${searchIndexFile}: indexed URL target does not exist ${article.url}`);
+      continue;
+    }
+    if (indexedHtml.includes('name="robots" content="noindex')) {
+      errors.push(`${searchIndexFile}: noindex URL included ${article.url}`);
+    }
+    if (localPath.startsWith('ar/') && !hasArabic(article.title || '')) {
+      errors.push(`${searchIndexFile}: Arabic result has non-Arabic title ${article.url}`);
+    }
+    if (localPath.startsWith('ar/') && !hasArabic(article.excerpt || '')) {
+      errors.push(`${searchIndexFile}: Arabic result has non-Arabic excerpt ${article.url}`);
+    }
+    if ([article.title, article.description, article.excerpt].some((value) => String(value || '').trim() === '...')) {
+      errors.push(`${searchIndexFile}: placeholder text included ${article.url}`);
+    }
   }
 }
 if (errors.length) {

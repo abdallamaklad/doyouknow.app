@@ -261,9 +261,13 @@
     // --- Search Index Loading ---
     var searchIndex = null;
     var searchIndexLoaded = false;
+    function getSearchIndexUrl() {
+      var lang = document.documentElement.lang === 'ar' ? 'ar' : 'en';
+      return '/assets/js/search-index.' + lang + '.json';
+    }
     function loadSearchIndex() {
       if (searchIndexLoaded) return Promise.resolve(searchIndex);
-      return fetch('/assets/js/search-index.json')
+      return fetch(getSearchIndexUrl())
         .then(function(r) { return r.json(); })
         .then(function(data) { searchIndex = data; searchIndexLoaded = true; return data; })
         .catch(function() { searchIndex = { articles: [] }; searchIndexLoaded = true; return searchIndex; });
@@ -967,10 +971,13 @@
     document.querySelectorAll('.lang-switch').forEach(function(btn) {
         btn.addEventListener('click', function() {
             const currentPath = window.location.pathname;
-            // Articles are independently commissioned, not machine translations.
-            // Until paired translations exist, switch to the other language hub.
-            const newPath = currentPath.startsWith('/ar/') ? '/en/' : '/ar/';
-            window.location.href = newPath;
+            const targetLang = currentPath.startsWith('/ar/') ? 'en' : 'ar';
+            const alternate = document.querySelector('link[rel="alternate"][hreflang="' + targetLang + '"]');
+            if (alternate && alternate.href) {
+                window.location.href = alternate.href;
+                return;
+            }
+            window.location.href = '/' + targetLang + '/';
         });
     });
 

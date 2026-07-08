@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile, access } from 'node:fs/promises';
+import { readdir, readFile, writeFile, access, unlink } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { createHash } from 'node:crypto';
 
@@ -14,21 +14,13 @@ const googleTag = `<!-- Google tag (gtag.js) -->
 </script>`;
 
 const editorialReview = new Set([
-  'en/article/start-business-dubai.html',
-  'en/article/uae-corporate-tax.html',
-  'en/article/uae-golden-visa-guide.html',
   'en/article/what-is-chatgpt.html',
   'en/article/what-is-google-gemini.html',
-  'ar/article/absher-portal-guide.html',
-  'ar/article/hajj-guide.html',
   'ar/article/open-bank-account-saudi.html',
   'ar/article/qiyas-guide.html',
   'ar/article/qobool-guide.html',
-  'ar/article/ramadan-health-guide.html',
-  'ar/article/riyadh-season.html',
   'ar/article/saudi-driving-license.html',
-  'ar/article/saudi-health-insurance.html',
-  'ar/article/umrah-guide.html'
+  'ar/article/saudi-health-insurance.html'
 ]);
 const removedContent = new Set([
   'en/article/10-facts-about-uae-formation.html',
@@ -103,29 +95,8 @@ const pairedPages = new Map([
   ['en/newsletter-template.html', 'ar/newsletter-template.html'],
   ['ar/newsletter-template.html', 'en/newsletter-template.html']
 ]);
-for (const slug of worldCupArticleSlugs) {
-  pairedPages.set(`en/article/${slug}.html`, `ar/article/${slug}.html`);
-  pairedPages.set(`ar/article/${slug}.html`, `en/article/${slug}.html`);
-}
 pairedPages.set('en/category/world-cup-2026.html', 'ar/category/world-cup-2026.html');
 pairedPages.set('ar/category/world-cup-2026.html', 'en/category/world-cup-2026.html');
-pairedPages.set('en/article/best-time-visit-dubai.html', 'ar/article/best-time-visit-dubai.html');
-pairedPages.set('ar/article/best-time-visit-dubai.html', 'en/article/best-time-visit-dubai.html');
-pairedPages.set('en/article/saudi-desert-camping.html', 'ar/article/saudi-desert-camping.html');
-pairedPages.set('ar/article/saudi-desert-camping.html', 'en/article/saudi-desert-camping.html');
-pairedPages.set('en/article/saudi-vision-2030-guide.html', 'ar/article/saudi-vision-2030-guide.html');
-pairedPages.set('ar/article/saudi-vision-2030-guide.html', 'en/article/saudi-vision-2030-guide.html');
-pairedPages.set('ar/category/world-cup-2026.html', 'en/category/world-cup-2026.html');
-pairedPages.set('ar/article/best-time-visit-dubai.html', 'en/article/best-time-visit-dubai.html');
-pairedPages.set('ar/category/world-cup-2026.html', 'en/category/world-cup-2026.html');
-pairedPages.set('en/article/neom-city-facts.html', 'ar/article/neom-city-facts.html');
-pairedPages.set('ar/article/neom-city-facts.html', 'en/article/neom-city-facts.html');
-pairedPages.set('en/article/dubai-free-zones-guide.html', 'ar/article/dubai-free-zones-guide.html');
-pairedPages.set('ar/article/dubai-free-zones-guide.html', 'en/article/dubai-free-zones-guide.html');
-pairedPages.set('ar/article/neom-city-facts.html', 'en/article/neom-city-facts.html');
-pairedPages.set('en/article/dubai-free-zones-guide.html', 'ar/article/dubai-free-zones-guide.html');
-pairedPages.set('ar/article/dubai-free-zones-guide.html', 'en/article/dubai-free-zones-guide.html');
-pairedPages.set('ar/article/neom-city-facts.html', 'en/article/neom-city-facts.html');
 
 async function walk(dir) {
   const out = [];
@@ -136,6 +107,18 @@ async function walk(dir) {
   }
   return out;
 }
+
+async function addSameSlugArticlePairs() {
+  const enArticleFiles = new Set((await readdir(join(root, 'en/article'))).filter((name) => name.endsWith('.html')));
+  const arArticleFiles = new Set((await readdir(join(root, 'ar/article'))).filter((name) => name.endsWith('.html')));
+  for (const filename of enArticleFiles) {
+    if (!arArticleFiles.has(filename)) continue;
+    pairedPages.set(`en/article/${filename}`, `ar/article/${filename}`);
+    pairedPages.set(`ar/article/${filename}`, `en/article/${filename}`);
+  }
+}
+
+await addSameSlugArticlePairs();
 
 function escapeHtml(value) {
   return value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -320,7 +303,7 @@ function injectResourceHints(html) {
     .replace(/<link rel="preload" href="\/assets\/js\/site\.js" as="script">\s*/g, '');
 
   const isArticle = html.includes('class="article-body"');
-  let hints = '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="dns-prefetch" href="https://www.googletagmanager.com">\n';
+  let hints = '<link rel="dns-prefetch" href="https://www.googletagmanager.com">\n';
   if (isArticle) {
     hints += '<link rel="preload" href="/assets/js/site.js" as="script">\n';
   }
@@ -635,6 +618,7 @@ function injectSchemas(html, relativeFile) {
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1] || `https://doyouknow.app/${relativeFile}`;
   const category = categoryByArticle.get(relativeFile) || categoryFallback.get(lang);
   const articleSection = category?.title || (lang === 'ar' ? 'عام' : 'General');
+  const authorUrl = `https://doyouknow.app/${lang}/about.html`;
 
   const keywords = getKeywords(html, description, lang).join(', ');
 
@@ -645,7 +629,15 @@ function injectSchemas(html, relativeFile) {
     '@type': 'Article',
     headline: title,
     description,
-    author: { '@type': 'Person', name: 'doyouknow.app Editorial Team' },
+    author: {
+      '@type': 'Organization',
+      name: 'doyouknow.app Editorial Team',
+      url: authorUrl,
+      sameAs: [
+        'https://instagram.com/doyouknowapp',
+        'https://twitter.com/doyouknowapp'
+      ]
+    },
     publisher: { '@type': 'Organization', name: 'doyouknow.app', logo: { '@type': 'ImageObject', url: 'https://doyouknow.app/assets/images/logo.png' } },
     datePublished,
     dateModified,
@@ -1166,8 +1158,22 @@ const index = {
   articles
 };
 
-await writeFile(join(root, 'assets/js/search-index.json'), JSON.stringify(index, null, 2));
-console.log('Generated search index with', articles.length, 'articles');
+const searchIndexByLanguage = (lang) => {
+  const languageArticles = articles.filter((article) => article.language === lang);
+  return {
+    version: index.version,
+    generated: toIsoDateTime(latestPublishedDate(languageArticles)),
+    count: languageArticles.length,
+    articles: languageArticles
+  };
+};
+
+await writeFile(join(root, 'assets/js/search-index.en.json'), JSON.stringify(searchIndexByLanguage('en'), null, 2));
+await writeFile(join(root, 'assets/js/search-index.ar.json'), JSON.stringify(searchIndexByLanguage('ar'), null, 2));
+try {
+  await unlink(join(root, 'assets/js/search-index.json'));
+} catch {}
+console.log('Generated split search indexes with', articles.length, 'articles');
 
 // --- Feed Generation ---
 
@@ -1235,7 +1241,8 @@ async function updateServiceWorkerCacheName() {
   const mutableAssetFiles = [
     join(root, 'assets/css/style.css'),
     join(root, 'assets/js/site.js'),
-    join(root, 'assets/js/search-index.json')
+    join(root, 'assets/js/search-index.en.json'),
+    join(root, 'assets/js/search-index.ar.json')
   ];
   const hash = createHash('sha256');
   for (const file of mutableAssetFiles) {
