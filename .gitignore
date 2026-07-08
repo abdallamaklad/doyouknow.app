@@ -1,2 +1,4 @@
 .DS_Store
 assets/images/og-source.png
+node_modules/
+scripts/fonts/

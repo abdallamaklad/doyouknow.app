@@ -20,6 +20,24 @@ function localPathFromSiteUrl(url) {
   return pathname;
 }
 
+function localPathFromRootUrl(url) {
+  const clean = url.split('?')[0].split('#')[0];
+  const pathname = decodeURI(clean).replace(/^\/+/, '');
+  if (!pathname || pathname.endsWith('/')) return `${pathname}index.html`;
+  return pathname;
+}
+
+function extractServiceWorkerPrecacheUrls(swSource) {
+  const urls = new Set();
+  const arrayPattern = /const\s+(CORE_URLS|EN_ARTICLES|AR_ARTICLES|PRECACHE_URLS)\s*=\s*\[([\s\S]*?)\];/g;
+  for (const [, , body] of swSource.matchAll(arrayPattern)) {
+    for (const [, url] of body.matchAll(/['"]([^'"]+)['"]/g)) {
+      urls.add(url);
+    }
+  }
+  return [...urls];
+}
+
 async function walk(dir) {
   const out = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -144,6 +162,13 @@ for (const canonical of indexableCanonicals) {
 for (const canonical of noindexCanonicals) {
   if (!indexableCanonicals.has(canonical) && sitemap.includes(`<loc>${canonical}</loc>`)) errors.push(`sitemap.xml: noindex URL included ${canonical}`);
 }
+const serviceWorker = await readFile(join(root, 'sw.js'), 'utf8');
+for (const url of extractServiceWorkerPrecacheUrls(serviceWorker)) {
+  if (!url.startsWith('/')) continue;
+  const localPath = localPathFromRootUrl(url);
+  try { await access(join(root, localPath)); }
+  catch { errors.push(`sw.js: precache URL target does not exist ${url} -> ${localPath}`); }
+}
 const searchIndex = JSON.parse(await readFile(join(root, 'assets/js/search-index.json'), 'utf8'));
 if (searchIndex.count !== searchIndex.articles.length) errors.push('assets/js/search-index.json: count does not match article length');
 for (const article of searchIndex.articles) {
@@ -163,6 +188,9 @@ for (const article of searchIndex.articles) {
   }
   if (localPath.startsWith('ar/') && !hasArabic(article.title || '')) {
     errors.push(`assets/js/search-index.json: Arabic result has non-Arabic title ${article.url}`);
+  }
+  if (localPath.startsWith('ar/') && !hasArabic(article.excerpt || '')) {
+    errors.push(`assets/js/search-index.json: Arabic result has non-Arabic excerpt ${article.url}`);
   }
   if ([article.title, article.description, article.excerpt].some((value) => String(value || '').trim() === '...')) {
     errors.push(`assets/js/search-index.json: placeholder text included ${article.url}`);

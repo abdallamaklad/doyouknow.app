@@ -13,5 +13,5 @@
   <rect width="800" height="450" fill="url(#bg)"/>
   <rect width="800" height="450" fill="url(#dots)"/>
   <text x="400" y="200" text-anchor="middle" fill="#fff" opacity=".20" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="72" font-weight="900">DYK</text>
-  <text x="400" y="280" text-anchor="middle" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="700">الأردن في كأس</text>
+  <text x="400" y="280" text-anchor="middle" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="700">الأردن في كأس العالم 2026</text>
 </svg>

@@ -3,7 +3,7 @@
    Cache-first strategy with stale-while-revalidate for HTML
    ============================================ */
 
-const CACHE_NAME = 'dyk-v1';
+const CACHE_NAME = 'dyk-80d51ee09798';
 
 // Core shell pages and assets
 const CORE_URLS = [
@@ -20,55 +20,7 @@ const CORE_URLS = [
   '/assets/images/og-ar.png'
 ];
 
-// Top English articles to pre-cache
-const EN_ARTICLES = [
-  '/en/article/burj-khalifa-facts.html',
-  '/en/article/deep-dive-dubai.html',
-  '/en/article/dubai-metro-guide.html',
-  '/en/article/uae-golden-visa-guide.html',
-  '/en/article/best-beaches-dubai.html',
-  '/en/article/dubai-frame.html',
-  '/en/article/palm-jumeirah-engineering.html',
-  '/en/article/dubai-vs-abu-dhabi.html',
-  '/en/article/save-money-dubai.html',
-  '/en/article/start-business-dubai.html',
-  '/en/article/dubai-miracle-garden.html',
-  '/en/article/dubai-police-lamborghini.html',
-  '/en/article/expo-city-dubai.html',
-  '/en/article/hidden-gems-uae.html',
-  '/en/article/louvre-abu-dhabi.html',
-  '/en/article/yas-island-abu-dhabi.html',
-  '/en/article/best-restaurants-dubai.html',
-  '/en/article/uae-corporate-tax.html',
-  '/en/article/what-is-chatgpt.html',
-  '/en/article/what-is-google-gemini.html'
-];
-
-// Top Arabic articles to pre-cache
-const AR_ARTICLES = [
-  '/ar/article/burj-khalifa-facts.html',
-  '/ar/article/deep-dive-dubai.html',
-  '/ar/article/dubai-metro-guide.html',
-  '/ar/article/saudi-arabia-history.html',
-  '/ar/article/alula-saudi-arabia.html',
-  '/ar/article/diriyah-saudi-arabia.html',
-  '/ar/article/riyadh-season.html',
-  '/ar/article/the-line-neom.html',
-  '/ar/article/hajj-guide.html',
-  '/ar/article/umrah-guide.html',
-  '/ar/article/best-places-saudi-arabia.html',
-  '/ar/article/edge-of-the-world-riyadh.html',
-  '/ar/article/saudi-national-day.html',
-  '/ar/article/saudi-no-rivers.html',
-  '/ar/article/ramadan-health-guide.html',
-  '/ar/article/islamic-finance-guide.html',
-  '/ar/article/what-is-zakat.html',
-  '/ar/article/absher-portal-guide.html',
-  '/ar/article/saudi-driving-license.html',
-  '/ar/article/saudi-health-insurance.html'
-];
-
-const PRECACHE_URLS = CORE_URLS.concat(EN_ARTICLES).concat(AR_ARTICLES);
+const PRECACHE_URLS = CORE_URLS;
 
 self.addEventListener('install', function(event) {
   event.waitUntil(

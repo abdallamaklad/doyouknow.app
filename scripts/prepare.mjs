@@ -1,5 +1,6 @@
 import { readdir, readFile, writeFile, access } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+import { createHash } from 'node:crypto';
 
 const root = new URL('../', import.meta.url).pathname;
 const googleTag = `<!-- Google tag (gtag.js) -->
@@ -192,6 +193,12 @@ function articleImagePath(lang, slug) {
     : `/assets/images/articles/${lang}-${slug}.svg`;
 }
 
+function articleRasterImagePath(lang, slug) {
+  return worldCupArticleSlugs.includes(slug)
+    ? `/assets/images/world-cup-2026/${slug}.png`
+    : `/assets/images/articles/${lang}-${slug}.png`;
+}
+
 function updateSocialImageTags(html, imageUrl) {
   html = html
     .replace(/<meta property="og:image" content="[^"]+">/, `<meta property="og:image" content="${imageUrl}">`)
@@ -204,22 +211,27 @@ function updateSocialImageTags(html, imageUrl) {
 
 function updateArticlePageImage(html, relativeFile) {
   const match = relativeFile.match(/^(en|ar)\/article\/([a-z0-9-]+)\.html$/);
-  if (!match || !categoryByArticle.has(relativeFile)) return html;
+  if (!match) return html;
   const [, lang, slug] = match;
   const imagePath = articleImagePath(lang, slug);
-  const imageUrl = `https://doyouknow.app${imagePath}`;
-  const title = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim() || slug;
-  const alt = lang === 'ar' ? `رسم توضيحي لمقال ${title}` : `Editorial illustration for ${title}`;
-  html = updateSocialImageTags(html, imageUrl);
-  html = html.replace(
-    /<div class="featured-image"[\s\S]*?<\/div>/,
-    `<img class="featured-image" src="${imagePath}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
-  );
+  const isIndexable = !editorialReview.has(relativeFile);
+  const socialImagePath = isIndexable ? articleRasterImagePath(lang, slug) : imagePath;
+  const socialImageUrl = `https://doyouknow.app${socialImagePath}`;
+  html = updateSocialImageTags(html, socialImageUrl);
+  if (categoryByArticle.has(relativeFile)) {
+    const title = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim() || slug;
+    const alt = lang === 'ar' ? `رسم توضيحي لمقال ${title}` : `Editorial illustration for ${title}`;
+    html = html.replace(
+      /<div class="featured-image"[\s\S]*?<\/div>/,
+      `<img class="featured-image" src="${imagePath}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
+    );
+  }
   html = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (script, raw) => {
     try {
       const data = JSON.parse(raw);
       if (data['@type'] !== 'Article') return script;
-      data.image = { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 675 };
+      const isRaster = socialImageUrl.endsWith('.png');
+      data.image = { '@type': 'ImageObject', url: socialImageUrl, width: 1200, height: isRaster ? 630 : 675 };
       return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
     } catch {
       return script;
@@ -646,7 +658,8 @@ function injectSchemas(html, relativeFile) {
   };
 
   if (imageUrl) {
-    articleSchema.image = { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 675 };
+    const isRaster = imageUrl.endsWith('.png');
+    articleSchema.image = { '@type': 'ImageObject', url: imageUrl, width: 1200, height: isRaster ? 630 : 675 };
   }
 
   const faqSchema = faqs.length > 0 ? {
@@ -1132,9 +1145,23 @@ for (const file of searchFiles) {
   });
 }
 
+function latestPublishedDate(items) {
+  return items
+    .map((item) => item.datePublished)
+    .filter(Boolean)
+    .sort()
+    .at(-1) || '2026-06-26';
+}
+
+function toIsoDateTime(dateStr) {
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return '2026-06-26T00:00:00.000Z';
+  return d.toISOString();
+}
+
 const index = {
   version: 1,
-  generated: new Date().toISOString(),
+  generated: toIsoDateTime(latestPublishedDate(articles)),
   count: articles.length,
   articles
 };
@@ -1151,7 +1178,7 @@ function toRfc2822(dateStr) {
 }
 
 function generateRss(items, lang, title, description, link) {
-  const now = new Date().toUTCString();
+  const now = toRfc2822(latestPublishedDate(items));
   const channelItems = items.map(item => `  <item>
     <title>${escapeHtml(item.title.replace(/\s*\|\s*doyouknow\.app$/, ''))}</title>
     <link>${item.url}</link>
@@ -1203,3 +1230,25 @@ await writeFile(join(root, 'en', 'feed.json'), generateJsonFeed(enArticleItems, 
 await writeFile(join(root, 'ar', 'feed.json'), generateJsonFeed(arArticleItems, 'ar', 'doyouknow.app - العربية', 'https://doyouknow.app/ar/', 'https://doyouknow.app/ar/feed.json'));
 
 console.log('Generated RSS and JSON feeds.');
+
+async function updateServiceWorkerCacheName() {
+  const mutableAssetFiles = [
+    join(root, 'assets/css/style.css'),
+    join(root, 'assets/js/site.js'),
+    join(root, 'assets/js/search-index.json')
+  ];
+  const hash = createHash('sha256');
+  for (const file of mutableAssetFiles) {
+    hash.update(await readFile(file));
+  }
+  const cacheName = `dyk-${hash.digest('hex').slice(0, 12)}`;
+  const swPath = join(root, 'sw.js');
+  const sw = await readFile(swPath, 'utf8');
+  const next = sw.replace(/const CACHE_NAME = 'dyk-[^']+';/, `const CACHE_NAME = '${cacheName}';`);
+  if (next !== sw) {
+    await writeFile(swPath, next);
+  }
+  console.log('Updated service worker cache name:', cacheName);
+}
+
+await updateServiceWorkerCacheName();

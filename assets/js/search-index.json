@@ -1,27 +1,28 @@
 {
   "version": 1,
-  "generated": "2026-07-07T15:05:19.861Z",
+  "generated": "2026-07-15T00:00:00.000Z",
   "count": 141,
   "articles": [
     {
       "title": "عن دو يو نو.اب | doyouknow.app",
       "description": "تعرف على دو يو نو.اب — منصة المعرفة للإمارات والسعودية. اكتشف مهمتنا، وفريقنا، ومعاييرنا التحريرية، وكيف نقدم محتوى موثوق ومفيد يومياً للقارئ الفضولي.",
-      "excerpt": "Every article is fact-checked against at least two authoritative sources. We cite our sources at the bottom of every article.",
+      "excerpt": "نراجع كل مقال بالاعتماد على مصدرين موثوقين على الأقل، ونذكر المصادر في نهاية المقال كلما كان ذلك مناسبًا.",
       "category": "عام",
       "categorySlug": "general",
       "language": "ar",
       "url": "https://doyouknow.app/ar/about.html",
       "slug": "about",
       "keywords": [
-        "corrections",
-        "factchecking",
-        "independence",
-        "privacy",
         "اكتشف",
+        "الاستقلالية",
         "التحرير",
         "التحريرية",
+        "التصحيحات",
+        "الحقائق",
+        "الخصوصية",
         "الفضولي",
         "المعرفة",
+        "تدقيق",
         "تعرف",
         "سياسة",
         "فريقنا",
@@ -390,7 +391,7 @@
         "يلتقي"
       ],
       "type": "article",
-      "datePublished": "2025-08-21"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "الجمهور العربي وكأس العالم 2026 | doyouknow.app",
@@ -2114,7 +2115,7 @@
         "يعجبك"
       ],
       "type": "article",
-      "datePublished": "2025-08-21"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "برواز دبي: رمز معماري يروي قصة المدينة | doyouknow.app",
@@ -2296,7 +2297,7 @@
         "يعجبك"
       ],
       "type": "article",
-      "datePublished": "2025-07-05"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "دليل مترو دبي: كل ما تحتاجه للتنقل بذكاء | doyouknow.app",
@@ -3470,7 +3471,7 @@
         "يهم"
       ],
       "type": "article",
-      "datePublished": "2025-01-20"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "دليل جدة السياحي الشامل: أبرز المعالم والوجهات | doyouknow.app",
@@ -3763,7 +3764,7 @@
         "يعجبك"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "متحف اللوفر أبوظبي: دليل الزيارة والاستكشاف | doyouknow.app",
@@ -4384,7 +4385,7 @@
         "يوم"
       ],
       "type": "article",
-      "datePublished": "2025-08-21"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "قطر في كأس العالم 2026 | doyouknow.app",
@@ -4575,7 +4576,7 @@
         "يميز"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "مشروع البحر الأحمر: السياحة الفاخرة في السعودية | doyouknow.app",
@@ -4654,7 +4655,7 @@
         "يوجد"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "دليل الحياة الليلية في الرياض: أفضل الأماكن | doyouknow.app",
@@ -4940,7 +4941,7 @@
         "يعجبك"
       ],
       "type": "article",
-      "datePublished": "2025-08-21"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "السعودية في كأس العالم 2026 | doyouknow.app",
@@ -5369,7 +5370,7 @@
         "يهم"
       ],
       "type": "article",
-      "datePublished": "2025-08-21"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "لماذا لا توجد أنهار دائمة في السعودية؟ | doyouknow.app",
@@ -5893,7 +5894,7 @@
         "يهم"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "فعاليات دبي الأسبوعية: دليل الأنشطة والترفيه | doyouknow.app",
@@ -6344,7 +6345,7 @@
         "يعجبك"
       ],
       "type": "article",
-      "datePublished": "2025-01-20"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "ضغط دور المجموعات في كأس العالم | doyouknow.app",
@@ -6960,7 +6961,7 @@
         "zayed"
       ],
       "type": "article",
-      "datePublished": "2025-07-15"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Algeria's Attack at World Cup 2026 | doyouknow.app",
@@ -7244,7 +7245,7 @@
         "world"
       ],
       "type": "article",
-      "datePublished": "2025-08-21"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Arab Fans and World Cup 2026 | doyouknow.app",
@@ -8036,7 +8037,7 @@
         "west"
       ],
       "type": "article",
-      "datePublished": "2025-01-20"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "15 Best Restaurants in Dubai for Every Budget | doyouknow.app",
@@ -8141,7 +8142,7 @@
         "zuma"
       ],
       "type": "article",
-      "datePublished": "2025-01-20"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Best Time to Visit Dubai: A Complete Seasonal Guide | doyouknow.app",
@@ -8326,7 +8327,7 @@
         "windows"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Cold Email Mastery: Guide for Startup Marketing Managers | doyouknow.app",
@@ -8646,7 +8647,7 @@
         "worth"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Dubai Free Zones: Complete Business Setup Guide 2025 | doyouknow.app",
@@ -8773,7 +8774,7 @@
         "zones"
       ],
       "type": "article",
-      "datePublished": "2025-07-05"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Dubai Metro Guide | doyouknow.app",
@@ -8939,7 +8940,7 @@
         "year"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Did You Know Dubai Police Has a Lamborghini? | doyouknow.app",
@@ -8989,7 +8990,7 @@
         "worlds"
       ],
       "type": "article",
-      "datePublished": "2025-01-15"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Dubai Tourist Visa Guide: All 11 UAE Visa Types | doyouknow.app",
@@ -9090,7 +9091,7 @@
         "work"
       ],
       "type": "article",
-      "datePublished": "2025-07-15"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Dubai vs Abu Dhabi: Which Is Better for Tourists? | doyouknow.app",
@@ -9153,7 +9154,7 @@
         "which"
       ],
       "type": "article",
-      "datePublished": "2025-01-15"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Egypt's Midfield at World Cup 2026 | doyouknow.app",
@@ -9458,7 +9459,7 @@
         "worth"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "10 Hidden Gems in the UAE Worth Exploring | doyouknow.app",
@@ -9543,7 +9544,7 @@
         "youve"
       ],
       "type": "article",
-      "datePublished": "2025-01-20"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Iraq, Jordan &amp; Tournament Discipline | doyouknow.app",
@@ -9846,7 +9847,7 @@
         "year"
       ],
       "type": "article",
-      "datePublished": "2025-07-25"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Jordan at World Cup 2026 | doyouknow.app",
@@ -10518,7 +10519,7 @@
         "years"
       ],
       "type": "article",
-      "datePublished": "2025-06-26"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Qatar at World Cup 2026 | doyouknow.app",
@@ -11095,7 +11096,7 @@
         "work"
       ],
       "type": "article",
-      "datePublished": "2025-07-15"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Saudi Arabia's Technical Ceiling | doyouknow.app",
@@ -11359,7 +11360,7 @@
         "well"
       ],
       "type": "article",
-      "datePublished": "2025-01-15"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Sheikh Zayed Grand Mosque: A Complete Guide | doyouknow.app",
@@ -11497,7 +11498,7 @@
         "wind"
       ],
       "type": "article",
-      "datePublished": "2025-07-25"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "Tunisia's Defensive Grit | doyouknow.app",
@@ -11766,7 +11767,7 @@
         "yet"
       ],
       "type": "article",
-      "datePublished": "2025-01-15"
+      "datePublished": "2026-06-26"
     },
     {
       "title": "What Is NEOM? Saudi Arabia's Futuristic City | doyouknow.app",

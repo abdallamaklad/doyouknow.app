@@ -3,7 +3,13 @@ doyouknow.app, www.doyouknow.app {
 	encode zstd gzip
 	root * /srv/doyouknow
 
-	@immutable path /assets/*
+	@mutable-assets path /assets/css/style.css /assets/js/site.js /assets/js/search-index.json
+	header @mutable-assets Cache-Control "public, max-age=300, must-revalidate"
+
+	@immutable {
+		path /assets/*
+		not path /assets/css/style.css /assets/js/site.js /assets/js/search-index.json
+	}
 	header @immutable Cache-Control "public, max-age=31536000, immutable"
 
 	@html path *.html / /en/* /ar/*
@@ -15,6 +21,7 @@ doyouknow.app, www.doyouknow.app {
 	header {
 		Strict-Transport-Security "max-age=31536000; includeSubDomains"
 		X-Content-Type-Options "nosniff"
+		Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; font-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'"
 		Referrer-Policy "strict-origin-when-cross-origin"
 		X-Frame-Options "DENY"
 		Permissions-Policy "camera=(), microphone=(), geolocation=()"
