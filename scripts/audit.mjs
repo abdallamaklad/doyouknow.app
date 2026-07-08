@@ -58,6 +58,49 @@ function extractServiceWorkerPrecacheUrls(swSource) {
   return [...urls];
 }
 
+function extractConstArray(source, name) {
+  const declaration = `const ${name} = [`;
+  const start = source.indexOf(declaration);
+  if (start === -1) throw new Error(`scripts/prepare.mjs: missing ${name}`);
+  let depth = 0;
+  let quote = '';
+  let escaped = false;
+  const arrayStart = source.indexOf('[', start);
+  for (let index = arrayStart; index < source.length; index += 1) {
+    const char = source[index];
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === '\\') {
+        escaped = true;
+      } else if (char === quote) {
+        quote = '';
+      }
+      continue;
+    }
+    if (char === '"' || char === "'" || char === '`') {
+      quote = char;
+      continue;
+    }
+    if (char === '[') depth += 1;
+    if (char === ']') {
+      depth -= 1;
+      if (depth === 0) return source.slice(arrayStart, index + 1);
+    }
+  }
+  throw new Error(`scripts/prepare.mjs: could not parse ${name}`);
+}
+
+function extractCategoryGroups(prepareSource) {
+  const worldCupArticleSlugs = Function(`return ${extractConstArray(prepareSource, 'worldCupArticleSlugs')}`)();
+  const worldCupCategorySlugs = [...worldCupArticleSlugs, 'arab-teams-world-cup-2026-pillar'];
+  return Function(
+    'worldCupArticleSlugs',
+    'worldCupCategorySlugs',
+    `return ${extractConstArray(prepareSource, 'categoryGroups')}`
+  )(worldCupArticleSlugs, worldCupCategorySlugs);
+}
+
 const ignoredOutboundHosts = new Set([
   'doyouknow.app',
   'www.doyouknow.app',
@@ -107,6 +150,19 @@ const noindexCanonicals = [];
 const indexableCanonicals = new Set();
 const enArticleFiles = await htmlFilenames('en/article');
 const arArticleFiles = await htmlFilenames('ar/article');
+const prepareSource = await readFile(join(root, 'scripts/prepare.mjs'), 'utf8');
+const categoryGroups = extractCategoryGroups(prepareSource);
+const categorizedArticles = new Set(categoryGroups.flatMap((group) =>
+  group.files.map((slug) => `${group.lang}/article/${slug}.html`)
+));
+for (const [language, articleFiles] of [['en', enArticleFiles], ['ar', arArticleFiles]]) {
+  for (const filename of articleFiles) {
+    const articlePath = `${language}/article/${filename}`;
+    if (!categorizedArticles.has(articlePath)) {
+      errors.push(`${articlePath}: article is not assigned to any categoryGroups entry`);
+    }
+  }
+}
 const pairedArticlePaths = new Map();
 for (const filename of enArticleFiles) {
   if (!arArticleFiles.has(filename)) continue;

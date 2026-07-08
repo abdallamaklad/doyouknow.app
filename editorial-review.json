@@ -2,13 +2,7 @@
   "policy": "Pages listed here are accessible but set to noindex,follow and excluded from the sitemap until reviewed against current primary sources. Evergreen lifestyle articles with usable structure and sources were released for indexing on 2026-06-26. The four government/business guides reviewed on 2026-07-07 and the four health/religious/travel guides reviewed on 2026-07-08 were removed after verification against official UAE, Saudi, WHO, and primary media sources.",
   "reviewedThrough": "2026-07-08",
   "pages": {
-    "government-legal-finance": [
-      "/ar/article/open-bank-account-saudi.html",
-      "/ar/article/qiyas-guide.html",
-      "/ar/article/qobool-guide.html",
-      "/ar/article/saudi-driving-license.html",
-      "/ar/article/saudi-health-insurance.html"
-    ],
+    "government-legal-finance": [],
     "health-religious-travel": [],
     "fast-changing-technology": [
       "/en/article/what-is-chatgpt.html",

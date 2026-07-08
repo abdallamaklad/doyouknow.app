@@ -6,13 +6,23 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/things-to-do-dubai-this-week.html",
+      "url": "https://doyouknow.app/en/article/things-to-do-dubai-this-week.html",
+      "title": "Things To Do in Dubai: A Year-Round Weekly Guide",
+      "content_text": "Discover the best things to do in Dubai any week of the year. From brunches and beach clubs to concerts, markets, and free activities — a sustainable year-round guide.",
+      "date_published": "2026-07-08",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/arabic-facebook-ads-guide.html",
       "url": "https://doyouknow.app/en/article/arabic-facebook-ads-guide.html",
       "title": "Arabic Facebook Ads Guide: Target Arab Professionals",
       "content_text": "Master Facebook ads for Arab professionals. Learn audience targeting, Arabic copywriting, cultural best practices, budget optimization, and case studies.",
       "date_published": "2026-07-07",
       "tags": [
-        "Dubai & UAE Places"
+        "Business & Marketing"
       ]
     },
     {
@@ -22,7 +32,7 @@
       "content_text": "Master cold emailing startup marketing managers with proven strategies, subject lines, templates, follow-up sequences, tools, and GDPR compliance tips for 2025.",
       "date_published": "2026-07-07",
       "tags": [
-        "Dubai & UAE Places"
+        "Business & Marketing"
       ]
     },
     {
@@ -32,7 +42,7 @@
       "content_text": "Complete guide to entering the Saudi AI market: SDAIA, licensing, data sovereignty, Arabic NLP, Vision 2030 alignment, and partnership strategies for tech firms.",
       "date_published": "2026-07-07",
       "tags": [
-        "Dubai & UAE Places"
+        "Business & Marketing"
       ]
     },
     {
@@ -82,7 +92,7 @@
       "content_text": "A guide to NEOM, Saudi Arabia's futuristic city. Explore THE LINE, Oxagon, Trojena, and Sindalah.",
       "date_published": "2026-07-05",
       "tags": [
-        "Saudi Arabia"
+        "Saudi Vision 2030 & Megaprojects"
       ]
     },
     {
@@ -102,7 +112,7 @@
       "content_text": "A complete guide to Saudi Vision 2030: its three pillars, megaprojects including NEOM and the Red Sea Project, economic diversification, social reforms, and progress metrics.",
       "date_published": "2026-07-05",
       "tags": [
-        "Saudi Arabia"
+        "Saudi Vision 2030 & Megaprojects"
       ]
     },
     {
@@ -112,7 +122,7 @@
       "content_text": "Guide to all Arab teams at World Cup 2026: Morocco, Saudi Arabia, Tunisia, Algeria, Egypt, Qatar, Iraq, and Jordan. Profiles, squads, and schedules.",
       "date_published": "2026-07-01",
       "tags": [
-        "Dubai & UAE Places"
+        "World Cup 2026 & Arab Football"
       ]
     },
     {
@@ -132,7 +142,7 @@
       "content_text": "Riyadh nightlife has transformed dramatically since Saudi Arabia’s social reforms. Discover the best cafes, restaurants, entertainment venues and what to expect in 2026.",
       "date_published": "2026-07-01",
       "tags": [
-        "Dubai & UAE Places"
+        "Saudi Arabia"
       ]
     },
     {
@@ -142,7 +152,7 @@
       "content_text": "Explore Saudi Arabian cuisine: traditional dishes, regional specialties from Najd to Hijaz, and the best places to eat authentic Saudi food in 2026.",
       "date_published": "2026-07-01",
       "tags": [
-        "Dubai & UAE Places"
+        "Saudi Arabia"
       ]
     },
     {
@@ -190,16 +200,6 @@
       "url": "https://doyouknow.app/en/article/arab-fans-world-cup-2026.html",
       "title": "Arab Fans and World Cup 2026",
       "content_text": "World Cup 2026 feels different for Arab fans. The emotional connection is still there, but the lens has changed. Supporters are not only hoping for o…",
-      "date_published": "2026-06-26",
-      "tags": [
-        "World Cup 2026 & Arab Football"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/arab-football-legacy-world-cup-2026.html",
-      "url": "https://doyouknow.app/en/article/arab-football-legacy-world-cup-2026.html",
-      "title": "World Cup 2026 and Arab Football Legacy",
-      "content_text": "Every World Cup leaves more than results behind. It changes how nations are perceived, how young players dream, and how entire regions talk about foo…",
       "date_published": "2026-06-26",
       "tags": [
         "World Cup 2026 & Arab Football"
