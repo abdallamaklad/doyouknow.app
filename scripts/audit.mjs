@@ -146,6 +146,7 @@ async function walk(dir) {
 const htmlFiles = (await walk(root)).filter((file) => file.endsWith('.html'));
 const errors = [];
 const canonicals = new Map();
+const indexableTitles = new Map();
 const noindexCanonicals = [];
 const indexableCanonicals = new Set();
 const enArticleFiles = await htmlFilenames('en/article');
@@ -198,6 +199,8 @@ for (const file of htmlFiles) {
   if (canonical && !isNoindex) {
     if (canonicals.has(canonical)) errors.push(`${rel}: duplicate canonical also used by ${canonicals.get(canonical)}`);
     canonicals.set(canonical, rel);
+    if (indexableTitles.has(title)) errors.push(`${rel}: duplicate indexable title also used by ${indexableTitles.get(title)}: ${title}`);
+    indexableTitles.set(title, rel);
     if (!rel.endsWith('404.html')) indexableCanonicals.add(canonical);
   }
   if (canonical && rel !== 'index.html' && isNoindex) noindexCanonicals.push(canonical);
@@ -236,6 +239,14 @@ for (const file of htmlFiles) {
     try {
       const data = JSON.parse(json[1]);
       if (JSON.stringify(data).includes('/category/General.html')) errors.push(`${rel}: JSON-LD references legacy General category`);
+      if (/^(en|ar)\/article\/[a-z0-9-]+\.html$/.test(rel) && data['@type'] === 'Article') {
+        const schemaPageId = typeof data.mainEntityOfPage === 'object'
+          ? data.mainEntityOfPage?.['@id']
+          : data.mainEntityOfPage;
+        if (canonical && schemaPageId && schemaPageId !== canonical) {
+          errors.push(`${rel}: Article mainEntityOfPage.@id does not match canonical (${schemaPageId} !== ${canonical})`);
+        }
+      }
     } catch { errors.push(`${rel}: invalid JSON-LD`); }
   }
   if (html.includes('"SearchAction"')) errors.push(`${rel}: SearchAction schema present without a live search page`);

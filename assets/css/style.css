@@ -6,7 +6,8 @@
 /* Design Tokens */
 :root {
   --color-primary-deep: #0F172A;
-  --color-primary-accent: #F59E0B;
+  --color-primary-accent: #B45309;
+  --color-on-primary-accent: #FFFFFF;
   --color-secondary-accent: #10B981;
   --color-bg-light: #FAFAFA;
   --color-surface-light: #FFFFFF;
@@ -72,6 +73,8 @@
 }
 
 [data-theme="dark"] {
+  --color-primary-accent: #F59E0B;
+  --color-on-primary-accent: #0F172A;
   --color-bg-light: #0B1120;
   --color-surface-light: #1E293B;
   --color-surface-elevated: #334155;
@@ -349,7 +352,7 @@ blockquote {
   left: var(--space-4);
   z-index: 10000;
   background: var(--color-primary-accent);
-  color: white;
+  color: var(--color-on-primary-accent);
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius-md);
   font-weight: 600;
@@ -710,12 +713,13 @@ blockquote {
 
 .btn-primary {
   background: var(--color-primary-accent);
-  color: white;
+  color: var(--color-on-primary-accent);
   box-shadow: 0 2px 8px rgba(180,83,9,0.26);
 }
 
 .btn-primary:hover {
   background: #92400E;
+  color: #FFFFFF;
   box-shadow: 0 4px 12px rgba(180,83,9,0.34);
 }
 
@@ -725,7 +729,7 @@ blockquote {
   border: 2px solid var(--color-primary-accent);
 }
 
-.btn-secondary:hover { background: var(--color-primary-accent); color: white; }
+.btn-secondary:hover { background: var(--color-primary-accent); color: var(--color-on-primary-accent); }
 
 .btn-ghost {
   background: transparent;
@@ -1999,7 +2003,7 @@ html[dir="rtl"] .wc-mini-list {
 
 .newsletter-cta .btn-primary {
   background: var(--color-primary-accent);
-  color: white;
+  color: var(--color-on-primary-accent);
   border: none;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }

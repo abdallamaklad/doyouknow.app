@@ -60,8 +60,8 @@ const categoryGroups = [
   { lang: 'en', slug: 'guides', title: 'UAE Practical Guides', description: 'Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.', files: ['best-beaches-dubai','best-restaurants-dubai','dubai-tourist-visa-guide','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
   { lang: 'en', slug: 'technology', title: 'Technology Explained', description: 'Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.', files: ['what-is-chatgpt','what-is-google-gemini'] },
   { lang: 'en', slug: 'business', title: 'Business & Marketing', description: 'Practical business, marketing, and market-entry guides for professionals working across Arabic-speaking markets.', files: ['arabic-facebook-ads-guide','cold-email-startup-guide','saudi-ai-market-entry-guide'] },
-  { lang: 'en', slug: 'saudi', title: 'Saudi Arabia', description: 'Discover Saudi Arabia\'s history, culture, landscapes, and travel experiences through clear, reliable guides.', files: ['alula-saudi-arabia','complete-saudi-travel-guide','jeddah-travel-guide','riyadh-nightlife-guide','saudi-cuisine-guide','saudi-desert-camping','saudi-e-visa-guide'] },
-  { lang: 'en', slug: 'vision-2030', title: 'Saudi Vision 2030 & Megaprojects', description: 'Clear explainers on Saudi Vision 2030, NEOM, and the megaprojects reshaping the Kingdom.', files: ['neom-city-facts','saudi-vision-2030-guide','what-is-neom'] },
+  { lang: 'en', slug: 'saudi', title: 'Saudi Arabia', description: 'Discover Saudi Arabia\'s history, culture, landscapes, and travel experiences through clear, reliable guides.', files: ['alula-saudi-arabia','complete-saudi-travel-guide','diriyah-saudi-arabia','jeddah-travel-guide','riyadh-nightlife-guide','saudi-cuisine-guide','saudi-desert-camping','saudi-e-visa-guide'] },
+  { lang: 'en', slug: 'vision-2030', title: 'Saudi Vision 2030 & Megaprojects', description: 'Clear explainers on Saudi Vision 2030, NEOM, and the megaprojects reshaping the Kingdom.', files: ['neom-city-facts','saudi-vision-2030-guide','what-is-neom','the-line-neom','red-sea-project-saudi'] },
   { lang: 'ar', slug: 'world-cup-2026', title: 'كأس العالم 2026 والكرة العربية', description: 'شروحات عربية وإنجليزية عن كأس العالم 2026 والمنتخبات العربية والتكتيك والجمهور والإرث الكروي.', files: worldCupCategorySlugs },
   { lang: 'ar', slug: 'dubai', title: 'دبي والإمارات', description: 'اكتشف دبي وأبوظبي والإمارات من خلال أدلة عربية واضحة عن المعالم، الهندسة، والوجهات السياحية والعملية.', files: ['abu-dhabi-complete-guide','best-beaches-dubai','best-restaurants-dubai','best-time-visit-dubai','burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-free-zones-guide','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-tourist-visa-guide','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','save-money-dubai','sheikh-zayed-grand-mosque-guide','things-to-do-dubai-this-week','yas-island-abu-dhabi'] },
   { lang: 'ar', slug: 'business', title: 'الأعمال والتسويق', description: 'أدلة عملية في الأعمال والتسويق ودخول الأسواق للمحترفين في الأسواق العربية والسعودية.', files: ['arabic-facebook-ads-guide','cold-email-startup-guide','saudi-ai-market-entry-guide'] },
@@ -325,6 +325,7 @@ function isCriticalSelector(selector) {
   if (/^h[1-6]\b/.test(s)) return true;
   if (s === 'p') return true;
   if (s === 'a' || s.startsWith('a:')) return true;
+  if (s.startsWith('.skip-link')) return true;
   if (s.startsWith('.site-header')) return true;
   if (s.startsWith('.header-inner')) return true;
   if (s.startsWith('.logo')) return true;
@@ -333,14 +334,23 @@ function isCriticalSelector(selector) {
   if (s.startsWith('.header-controls')) return true;
   if (s.startsWith('.lang-switch') || s.startsWith('.theme-toggle') || s.startsWith('.search-toggle')) return true;
   if (s.startsWith('.mobile-menu-btn')) return true;
+  if (s.startsWith('.mobile-nav')) return true;
   if (s.startsWith('.hero-section')) return true;
   if (s.startsWith('.hero-inner')) return true;
   if (s.startsWith('.hero-title')) return true;
   if (s.startsWith('.hero-subtitle')) return true;
   if (s.startsWith('.hero-trending')) return true;
   if (s.startsWith('.trending-pill')) return true;
+  if (s.startsWith('.newsletter-signup')) return true;
+  if (s.startsWith('.btn')) return true;
+  if (s.startsWith('.content-section')) return true;
+  if (s.startsWith('.section-header')) return true;
+  if (s.startsWith('.category-explorer')) return true;
+  if (s.startsWith('.category-tile')) return true;
+  if (s.startsWith('.category-badge')) return true;
   if (s.startsWith('.article-grid')) return true;
   if (s.startsWith('.article-card')) return true;
+  if (s.startsWith('.newsletter-cta')) return true;
   return false;
 }
 

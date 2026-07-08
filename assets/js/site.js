@@ -156,6 +156,9 @@
         if (e.key === 'Escape') {
             closeMenu();
             closeKeyboardHelp();
+            if (searchOverlay.classList.contains('active')) {
+                closeSearch();
+            }
             return;
         }
 
@@ -164,11 +167,10 @@
 
         if (e.key === '/') {
             e.preventDefault();
-            const searchInput = document.querySelector('.search-input, input[type="search"]');
-            if (searchInput) {
+            if (searchOverlay.classList.contains('active')) {
                 searchInput.focus();
             } else {
-                document.querySelector('.search-toggle')?.click();
+                openSearch();
             }
             console.log('Keyboard shortcut: search');
         } else if (e.key === 't' || e.key === 'T') {
@@ -257,6 +259,22 @@
     searchOverlay.appendChild(searchBackdrop);
     searchOverlay.appendChild(searchContainer);
     document.body.appendChild(searchOverlay);
+
+    const searchFocusableElements = [searchInput, searchClearBtn];
+
+    function setSearchOverlayInteractive(isOpen) {
+        searchOverlay.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        searchOverlay.inert = !isOpen;
+        searchFocusableElements.forEach(function(element) {
+            if (isOpen) {
+                element.removeAttribute('tabindex');
+            } else {
+                element.setAttribute('tabindex', '-1');
+            }
+        });
+    }
+
+    setSearchOverlayInteractive(false);
 
     // --- Search Index Loading ---
     var searchIndex = null;
@@ -447,7 +465,7 @@
 
     function openSearch() {
         searchOverlay.classList.add('active');
-        searchOverlay.setAttribute('aria-hidden', 'false');
+        setSearchOverlayInteractive(true);
         document.body.classList.add('no-scroll');
         setTimeout(function() { searchInput.focus(); }, 50);
         console.log('Search overlay opened');
@@ -463,7 +481,7 @@
 
     function closeSearch() {
         searchOverlay.classList.remove('active');
-        searchOverlay.setAttribute('aria-hidden', 'true');
+        setSearchOverlayInteractive(false);
         document.body.classList.remove('no-scroll');
         searchInput.value = '';
         searchResults.innerHTML = '';
