@@ -15,7 +15,12 @@ const googleTag = `<!-- Google tag (gtag.js) -->
 
 const editorialReview = new Set([
   'en/article/what-is-chatgpt.html',
-  'en/article/what-is-google-gemini.html'
+  'en/article/what-is-google-gemini.html',
+  'en/article/hajj-guide.html',
+  'en/article/islamic-finance-guide.html',
+  'en/article/ramadan-health-guide.html',
+  'en/article/umrah-guide.html',
+  'en/article/what-is-zakat.html'
 ]);
 const removedContent = new Set([
   'en/article/10-facts-about-uae-formation.html',
@@ -59,9 +64,10 @@ const categoryGroups = [
   { lang: 'en', slug: 'dubai', title: 'Dubai & UAE Places', description: 'Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.', files: ['abu-dhabi-complete-guide','best-time-visit-dubai','burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-free-zones-guide','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','things-to-do-dubai-this-week','uae-imports-sand','yas-island-abu-dhabi'] },
   { lang: 'en', slug: 'guides', title: 'UAE Practical Guides', description: 'Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.', files: ['best-beaches-dubai','best-restaurants-dubai','dubai-tourist-visa-guide','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
   { lang: 'en', slug: 'technology', title: 'Technology Explained', description: 'Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.', files: ['what-is-chatgpt','what-is-google-gemini'] },
+  { lang: 'en', slug: 'islamic', title: 'Islamic Knowledge & Culture', description: 'Clear English explainers on Islamic practice, finance, and religious seasons, written with care and sourced from authoritative institutions.', files: ['hajj-guide','islamic-finance-guide','ramadan-health-guide','umrah-guide','what-is-zakat'] },
   { lang: 'en', slug: 'business', title: 'Business & Marketing', description: 'Practical business, marketing, and market-entry guides for professionals working across Arabic-speaking markets.', files: ['arabic-facebook-ads-guide','cold-email-startup-guide','saudi-ai-market-entry-guide'] },
   { lang: 'en', slug: 'saudi-guides', title: 'Saudi Practical Guides', description: 'Clear English guides to essential Saudi government services and procedures, from Absher and Qiyas to driving licenses and bank accounts.', files: ['absher-portal-guide','open-bank-account-saudi','qiyas-guide','qobool-guide','saudi-driving-license','saudi-health-insurance'] },
-  { lang: 'en', slug: 'saudi', title: 'Saudi Arabia', description: 'Discover Saudi Arabia\'s history, culture, landscapes, and travel experiences through clear, reliable guides.', files: ['alula-saudi-arabia','best-restaurants-riyadh','complete-saudi-travel-guide','diriyah-saudi-arabia','edge-of-the-world-riyadh','jeddah-travel-guide','pearl-diving-saudi','riyadh-nightlife-guide','saudi-cuisine-guide','saudi-desert-camping','saudi-e-visa-guide'] },
+  { lang: 'en', slug: 'saudi', title: 'Saudi Arabia', description: 'Discover Saudi Arabia\'s history, culture, landscapes, and travel experiences through clear, reliable guides.', files: ['alula-saudi-arabia','best-places-saudi-arabia','best-restaurants-riyadh','complete-saudi-travel-guide','diriyah-saudi-arabia','edge-of-the-world-riyadh','jeddah-travel-guide','pearl-diving-saudi','riyadh-nightlife-guide','ronaldo-saudi-arabia','saudi-arabia-history','saudi-cuisine-guide','saudi-desert-camping','saudi-e-visa-guide','saudi-football-global','saudi-national-day','saudi-no-rivers'] },
   { lang: 'en', slug: 'vision-2030', title: 'Saudi Vision 2030 & Megaprojects', description: 'Clear explainers on Saudi Vision 2030, NEOM, and the megaprojects reshaping the Kingdom.', files: ['neom-city-facts','saudi-vision-2030-guide','what-is-neom','the-line-neom','red-sea-project-saudi','kingdom-tower-riyadh','riyadh-season','qiddiya-saudi-arabia'] },
   { lang: 'ar', slug: 'world-cup-2026', title: 'كأس العالم 2026 والكرة العربية', description: 'شروحات عربية وإنجليزية عن كأس العالم 2026 والمنتخبات العربية والتكتيك والجمهور والإرث الكروي.', files: worldCupCategorySlugs },
   { lang: 'ar', slug: 'dubai', title: 'دبي والإمارات', description: 'اكتشف دبي وأبوظبي والإمارات من خلال أدلة عربية واضحة عن المعالم، الهندسة، والوجهات السياحية والعملية.', files: ['abu-dhabi-complete-guide','best-beaches-dubai','best-restaurants-dubai','best-time-visit-dubai','burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-free-zones-guide','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-tourist-visa-guide','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','save-money-dubai','sheikh-zayed-grand-mosque-guide','things-to-do-dubai-this-week','uae-imports-sand','yas-island-abu-dhabi'] },
