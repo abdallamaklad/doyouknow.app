@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Open a Saudi Bank Account</title>
+  <desc id="desc">Editorial card for a Saudi bank account guide.</desc>
+  <rect width="1200" height="675" fill="#0F172A"/>
+  <circle cx="1050" cy="145" r="210" fill="#B45309" opacity=".22"/>
+  <rect x="95" y="90" width="1010" height="495" rx="42" fill="#111827" stroke="#334155" stroke-width="3"/>
+  <rect x="760" y="225" width="230" height="160" rx="20" fill="#B45309" opacity=".9"/>
+  <rect x="795" y="280" width="160" height="18" rx="9" fill="#FDE68A"/>
+  <rect x="795" y="322" width="95" height="18" rx="9" fill="#FDE68A"/>
+  <text x="130" y="190" fill="#B45309" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="4">SAUDI PRACTICAL GUIDE</text>
+  <text x="130" y="305" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800">Open a Saudi</text>
+  <text x="130" y="392" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800">Bank Account</text>
+  <text x="130" y="500" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="32">Documents, banks, digital steps</text>
+  <text x="930" y="520" fill="#B45309" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900">.app</text>
+</svg>

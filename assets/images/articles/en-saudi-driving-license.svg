@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Saudi Driving License</title>
+  <desc id="desc">Editorial card for a Saudi driving license guide.</desc>
+  <rect width="1200" height="675" fill="#0F172A"/>
+  <circle cx="1030" cy="125" r="220" fill="#B45309" opacity=".22"/>
+  <rect x="95" y="90" width="1010" height="495" rx="42" fill="#111827" stroke="#334155" stroke-width="3"/>
+  <circle cx="815" cy="425" r="45" fill="#B45309"/><circle cx="970" cy="425" r="45" fill="#B45309"/>
+  <path d="M770 390h250l-50-90H825z" fill="#1E293B" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round"/>
+  <text x="130" y="190" fill="#B45309" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="4">SAUDI PRACTICAL GUIDE</text>
+  <text x="130" y="315" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="800">Saudi Driving</text>
+  <text x="130" y="407" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="800">License</text>
+  <text x="130" y="505" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="32">Documents, schools, tests, renewal</text>
+  <text x="930" y="520" fill="#B45309" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900">.app</text>
+</svg>

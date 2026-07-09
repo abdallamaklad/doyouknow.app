@@ -56,6 +56,66 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/start-business-dubai.html",
+      "url": "https://doyouknow.app/ar/article/start-business-dubai.html",
+      "title": "كيف تبدأ مشروعاً في دبي",
+      "content_text": "دليل عملي خطوة بخطوة لتأسيس شركة في دبي: الخيارات، التكاليف، المدد، الأخطاء الشائعة، وروابط المصادر الرسمية.",
+      "date_published": "2026-07-09",
+      "tags": [
+        "الأعمال والتسويق"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/uae-corporate-tax.html",
+      "url": "https://doyouknow.app/ar/article/uae-corporate-tax.html",
+      "title": "ضريبة الشركات في الإمارات",
+      "content_text": "شرح مبسط لضريبة الشركات في الإمارات: النسب، التسجيل، إعفاء الشركات الصغيرة، المناطق الحرة، المواعيد، والأخطاء الشائعة.",
+      "date_published": "2026-07-09",
+      "tags": [
+        "الأعمال والتسويق"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/uae-golden-visa-guide.html",
+      "url": "https://doyouknow.app/ar/article/uae-golden-visa-guide.html",
+      "title": "دليل الإقامة الذهبية في الإمارات",
+      "content_text": "دليل الإقامة الذهبية في الإمارات لعام 2026: شروط الأهلية، التكاليف، خطوات التقديم، الوثائق، وروابط الجهات الرسمية.",
+      "date_published": "2026-07-09",
+      "tags": [
+        "الأعمال والتسويق"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/uae-imports-sand.html",
+      "url": "https://doyouknow.app/ar/article/uae-imports-sand.html",
+      "title": "لماذا تستورد الإمارات الرمل؟",
+      "content_text": "لماذا تستورد الإمارات الرمل رغم أنها دولة صحراوية؟ شرح مبسط لفرق رمل الصحراء عن رمل البناء وتأثير ذلك في الهندسة والبيئة.",
+      "date_published": "2026-07-09",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-chatgpt.html",
+      "url": "https://doyouknow.app/ar/article/what-is-chatgpt.html",
+      "title": "ما هو ChatGPT؟ شرح للمبتدئين",
+      "content_text": "ما هو ChatGPT؟ شرح عربي مبسط للمبتدئين عن طريقة عمله، استخداماته، حدوده، والفرق بينه وبين البحث التقليدي.",
+      "date_published": "2026-07-09",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-google-gemini.html",
+      "url": "https://doyouknow.app/ar/article/what-is-google-gemini.html",
+      "title": "ما هو Google Gemini؟ شرح مبسط",
+      "content_text": "ما هو Google Gemini؟ شرح عربي مبسط لكيف يعمل، أهم ميزاته، الفرق بينه وبين ChatGPT، وكيف تبدأ استخدامه.",
+      "date_published": "2026-07-09",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/hajj-guide.html",
       "url": "https://doyouknow.app/ar/article/hajj-guide.html",
       "title": "الحج: دليل شامل للحجاج — من التسجيل إلى العودة",
@@ -141,66 +201,6 @@
       "title": "دليل الأنشطة في دبي: تجارب تستحقها على مدار العام",
       "content_text": "دليل عملي لأفضل الأنشطة في دبي على مدار العام: برانشات، أندية شاطئية، أسواق، حفلات، أنشطة عائلية ومجانية — مع نصائح للعثور على الفعاليات الحالية.",
       "date_published": "2026-07-08",
-      "tags": [
-        "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/umrah-guide.html",
-      "url": "https://doyouknow.app/ar/article/umrah-guide.html",
-      "title": "العمرة: دليل خطوة بخطوة — كل ما تحتاج لمعرفته قبل السفر",
-      "content_text": "دليل العمرة خطوة بخطوة: مناسك العمرة، كيف تسجل، تكاليف العمرة، نصائح للمبتدئين، وكل ما يجب معرفته قبل رحلتك.",
-      "date_published": "2026-07-08",
-      "tags": [
-        "الثقافة والمعرفة الإسلامية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/absher-portal-guide.html",
-      "url": "https://doyouknow.app/ar/article/absher-portal-guide.html",
-      "title": "كيف تستخدم منصة أبشر: دليل شامل للمقيمين",
-      "content_text": "دليل عملي لاستخدام منصة أبشر السعودية. التسجيل، تسجيل الدخول، أهم الخدمات، والمشاكل الشائعة وكيفية حلها.",
-      "date_published": "2026-07-07",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/arabic-facebook-ads-guide.html",
-      "url": "https://doyouknow.app/ar/article/arabic-facebook-ads-guide.html",
-      "title": "دليل إعلانات فيسبوك للمحترفين العرب",
-      "content_text": "دليل شامل لإنشاء وتحسين إعلانات فيسبوك المستهدفة للمحترفين العرب. تعلم استراتيجيات الاستهداف، كتابة النصوص الإعلانية بالعربية، الاعتبارات الثقافية، وتحسين الميزانية.",
-      "date_published": "2026-07-07",
-      "tags": [
-        "الأعمال والتسويق"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/cold-email-startup-guide.html",
-      "url": "https://doyouknow.app/ar/article/cold-email-startup-guide.html",
-      "title": "دليل البريد البارد: استراتيجيات تسويق الشركات الناشئة",
-      "content_text": "دليل شامل لاستراتيجيات البريد الإلكتروني البارد لمديري تسويق الشركات الناشئة. تعلم كتابة العناوين، التخصيص، المتابعة، النماذج، الأدوات، والامتثال القانوني.",
-      "date_published": "2026-07-07",
-      "tags": [
-        "الأعمال والتسويق"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/saudi-ai-market-entry-guide.html",
-      "url": "https://doyouknow.app/ar/article/saudi-ai-market-entry-guide.html",
-      "title": "دليل دخول سوق الذكاء الاصطناعي السعودي: رؤية 2030 وسدايا",
-      "content_text": "دليل شامل لدخول سوق الذكاء الاصطناعي في السعودية: إطار عمل سدايا، التراخيص، سيادة البيانات، معالجة اللغة العربية، واستراتيجيات الشراكة لشركات التقنية.",
-      "date_published": "2026-07-07",
-      "tags": [
-        "الأعمال والتسويق"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/best-time-visit-dubai.html",
-      "url": "https://doyouknow.app/ar/article/best-time-visit-dubai.html",
-      "title": "أفضل وقت لزيارة دبي: دليل موسمي شامل",
-      "content_text": "خطط لرحلتك إلى دبي مع دليلنا الموسمي الشامل. اكتشف أفضل أشهر الزيارة، الطقس حسب الموسم، عروض الموسم المنخفض، نصائح رمضان، والفعاليات الرئيسية.",
-      "date_published": "2026-07-05",
       "tags": [
         "دبي والإمارات"
       ]

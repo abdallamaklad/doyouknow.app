@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">How to Use Absher</title>
+  <desc id="desc">Orange and navy editorial card for an Absher practical guide.</desc>
+  <rect width="1200" height="675" fill="#0F172A"/>
+  <circle cx="1010" cy="130" r="190" fill="#B45309" opacity=".24"/>
+  <circle cx="180" cy="560" r="240" fill="#10B981" opacity=".16"/>
+  <rect x="90" y="90" width="1020" height="495" rx="42" fill="#111827" stroke="#334155" stroke-width="3"/>
+  <text x="130" y="190" fill="#B45309" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="4">SAUDI PRACTICAL GUIDE</text>
+  <text x="130" y="310" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="800">How to Use</text>
+  <text x="130" y="402" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="800">Absher</text>
+  <text x="130" y="500" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="32">Registration, login, residency, visas</text>
+  <text x="930" y="520" fill="#B45309" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900">.app</text>
+</svg>
