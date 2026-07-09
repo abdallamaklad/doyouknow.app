@@ -1,4 +1,4 @@
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { access, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const root = process.cwd();
@@ -6,10 +6,12 @@ const imageDir = join(root, 'assets', 'images', 'articles');
 
 const categories = [
   { lang: 'en', slug: 'dubai', files: ['burj-khalifa-facts','deep-dive-dubai','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','uae-imports-sand','yas-island-abu-dhabi'] },
-  { lang: 'en', slug: 'guides', files: ['best-beaches-dubai','best-restaurants-dubai','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
+  { lang: 'en', slug: 'guides', files: ['best-beach-clubs-dubai','best-beaches-dubai','best-restaurants-dubai','dubai-day-trips','dubai-free-things-to-do','dubai-nightlife-guide','dubai-parking-guide','dubai-shopping-guide','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide'] },
   { lang: 'en', slug: 'technology', files: ['what-is-chatgpt','what-is-google-gemini'] },
-  { lang: 'ar', slug: 'saudi', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','ronaldo-saudi-arabia','saudi-arabia-history','saudi-football-global','saudi-national-day','saudi-no-rivers'] },
+  { lang: 'en', slug: 'saudi', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','riyadh-complete-guide','ronaldo-saudi-arabia','saudi-arabia-history','saudi-asir-abha-guide','saudi-coffee-culture-guide','saudi-eastern-province-guide','saudi-football-global','saudi-hail-northern-region-guide','saudi-national-day','saudi-no-rivers','saudi-tabuk-neom-region-guide'] },
+  { lang: 'ar', slug: 'saudi', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','riyadh-complete-guide','ronaldo-saudi-arabia','saudi-arabia-history','saudi-asir-abha-guide','saudi-coffee-culture-guide','saudi-eastern-province-guide','saudi-football-global','saudi-hail-northern-region-guide','saudi-national-day','saudi-no-rivers','saudi-tabuk-neom-region-guide'] },
   { lang: 'ar', slug: 'vision-2030', files: ['kingdom-tower-riyadh','qiddiya-saudi-arabia','red-sea-project-saudi','riyadh-season','the-line-neom','what-is-neom'] },
+  { lang: 'ar', slug: 'dubai', files: ['best-beach-clubs-dubai','dubai-day-trips','dubai-free-things-to-do','dubai-nightlife-guide','dubai-parking-guide','dubai-shopping-guide'] },
   { lang: 'ar', slug: 'guides', files: ['absher-portal-guide','best-restaurants-riyadh','open-bank-account-saudi','qiyas-guide','qobool-guide','saudi-driving-license','saudi-health-insurance'] },
   { lang: 'ar', slug: 'islamic', files: ['hajj-guide','islamic-finance-guide','ramadan-health-guide','umrah-guide','what-is-zakat'] }
 ];
@@ -166,6 +168,15 @@ function updateArticleHtml(html, { lang, slug, title }) {
   return html;
 }
 
+async function fileExists(path) {
+  try {
+    await access(path);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function updateCardImages(html) {
   return html.replace(/<a href="\/(en|ar)\/article\/([a-z0-9-]+)\.html" class="article-card">([\s\S]*?)<div class="card-content">/g, (match, lang, slug, beforeContent) => {
     if (!categoryByArticle.has(`${lang}/${slug}`)) return match;
@@ -190,9 +201,10 @@ for (const lang of ['en', 'ar']) {
     if (!category) continue;
     const articlePath = join(dir, file);
     let html = await readFile(articlePath, 'utf8');
-    if (!html.includes('📷 Featured Image') && html.includes(imagePath(lang, slug))) continue;
+    const svgPath = join(imageDir, `${lang}-${slug}.svg`);
+    if (!html.includes('📷 Featured Image') && html.includes(imagePath(lang, slug)) && await fileExists(svgPath)) continue;
     const title = getTitle(html, slug);
-    await writeFile(join(imageDir, `${lang}-${slug}.svg`), svgFor({ lang, slug, title, category }));
+    await writeFile(svgPath, svgFor({ lang, slug, title, category }));
     html = updateArticleHtml(html, { lang, slug, title });
     await writeFile(articlePath, html);
     updated.push(`${lang}/${slug}`);
