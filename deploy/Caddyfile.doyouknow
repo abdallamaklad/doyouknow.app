@@ -18,6 +18,23 @@ doyouknow.app, www.doyouknow.app {
 	try_files {path} {path}/index.html
 	file_server
 
+	# Serve the language-appropriate custom 404 page (missing URLs
+	# previously returned an empty 404 body).
+	handle_errors {
+		@notfound expression {err.status_code} == 404
+		handle @notfound {
+			@ar path /ar/*
+			handle @ar {
+				rewrite * /ar/404.html
+				file_server
+			}
+			handle {
+				rewrite * /en/404.html
+				file_server
+			}
+		}
+	}
+
 	header {
 		Strict-Transport-Security "max-age=31536000; includeSubDomains"
 		X-Content-Type-Options "nosniff"
