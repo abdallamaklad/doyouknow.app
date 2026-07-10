@@ -13,15 +13,11 @@ const googleTag = `<!-- Google tag (gtag.js) -->
   gtag('config', 'G-6VQZY87LJB');
 </script>`;
 
-const editorialReview = new Set([
-  'en/article/what-is-chatgpt.html',
-  'en/article/what-is-google-gemini.html',
-  'en/article/hajj-guide.html',
-  'en/article/islamic-finance-guide.html',
-  'en/article/ramadan-health-guide.html',
-  'en/article/umrah-guide.html',
-  'en/article/what-is-zakat.html'
-]);
+// editorial-review.json is the single source of truth for the noindex queue.
+const editorialReviewPolicy = JSON.parse(await readFile(join(root, 'editorial-review.json'), 'utf8'));
+const editorialReview = new Set(
+  Object.values(editorialReviewPolicy.pages).flat().map((path) => path.replace(/^\//, ''))
+);
 const removedContent = new Set([
   'en/article/10-facts-about-uae-formation.html',
   'en/article/bedouin-culture-uae.html',

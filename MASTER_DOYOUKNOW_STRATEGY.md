@@ -1,5 +1,37 @@
 # Master doyouknow.app Strategy
 
+---
+
+## ⚡ 2026-07-10 review addendum (read this first)
+
+Full-site re-audit on 2026-07-10 (repo + live prod checks). Status of the 2026-07-07 findings and new work:
+
+### Fixed in this pass (branch `worktree-site-audit-july10`)
+1. **Editorial-release desync (new, P1):** `prepare.mjs` hardcoded a 7-page noindex set that ignored `editorial-review.json`. Five articles cleared by the 2026-07-08 review (hajj-guide, umrah-guide, what-is-zakat, islamic-finance-guide, ramadan-health-guide) were still noindex/out-of-sitemap on EN while their AR twins were indexed. `prepare.mjs` now reads the JSON as single source of truth — editing the JSON + build is the whole release mechanism from now on. EN search index 229 → 234.
+2. **Fake forms (new, P0-trust):** Contact + Work With Us forms discarded every submission (inline `onsubmit` fake alert; contact variant had a quote-mismatch SyntaxError so even the alert never fired). Now deliver via `mailto:hello@doyouknow.app` with all field values + honest toast + GA4 `contact_form_submit` event. Newsletter "✓ Subscribed!" lie replaced with a prefilled subscribe email (real ESP still recommended — see MARKETING_STRATEGY.md).
+3. **Dead/wrong footer links (new):** removed `href="#"` Authors/Careers links (158 pages, both languages); fixed EN "KSA" → pointed at `/ar/` category (79 pages) and AR "الإمارات" → pointed at `/en/` category (42 pages); `#categories` anchor made absolute per language; legacy "Best Of"/"Compare" labels renamed to real category names.
+4. **Dark-mode brand invisibility (new):** `.logo` color `#0F172A` on a `#0F172A` header — site name invisible in dark theme on every page; global `a:hover` had the same hardcoded color. Both fixed with `[data-theme="dark"]` overrides; verified by screenshot EN+AR.
+5. **F-03 (custom 404) — repo half done:** `handle_errors` block added to `deploy/Caddyfile.doyouknow` (serves `/en/404.html` or `/ar/404.html` by path). **Still requires manual apply on the VPS** — see prod cleanup below.
+6. New internal doc `MARKETING_STRATEGY.md` created and added to deploy EXCLUDE.
+
+### ⚠️ Still open on production (manual, needs VPS access)
+The rsync deploy has no `--delete`, so internal docs added to the EXCLUDE list on 2026-07-07 **are still live on prod** (all verified HTTP 200 on 2026-07-10): `/research/humanization-summary.md`, `/research/competitor-gap-analysis.md`, `/marketing/ad-creative-variations.md`, `/docs/strategy-review.md`, `/traffic-monetization-plan.md`, `/seo-audit-report-2026-06-30.md`, `/MASTER_DOYOUKNOW_STRATEGY.md`, `/editorial-review.json`.
+
+**Manual remediation (run on the VPS, web root `/var/www/doyouknow/current`):**
+```bash
+cd /var/www/doyouknow/current
+rm -rf research marketing docs design
+rm -f traffic-monetization-plan.md seo-audit-report-2026-06-30.md MASTER_DOYOUKNOW_STRATEGY.md MARKETING_STRATEGY.md editorial-review.json
+# then apply the updated deploy/Caddyfile.doyouknow site block, `caddy validate`, reload
+# verify: each URL above returns 404, and a missing article URL returns the styled 404 page
+```
+Note `editorial-review.json` is needed by nothing at runtime (build-time only) — safe to delete from the web root.
+
+### Verification run 2026-07-10
+`npm test` → SEO/link audit passed, 259 pages, 0 errors. `npm run build` → idempotent (zero diff on rebuild). `node --check site.js` OK. Browser-verified: contact form submit (single listener, toast, mailto), footer links, EN/AR homepages in dark mode, RTL.
+
+---
+
 **Audit date:** 2026-07-07 · **Auditor:** deep production-readiness review (code + live-site verification against https://doyouknow.app)
 **Scope:** 173 HTML pages (61 EN articles, 81 AR articles, 11 category pages, hubs/legal/404/offline), 9 build/audit scripts, deploy pipeline, live server behavior.
 
