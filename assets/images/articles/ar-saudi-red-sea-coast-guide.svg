@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">دليل قبول: التقديم ومتابعة القبول الجامعي — doyouknow.app illustration</title>
-  <desc id="desc">Original doyouknow.app editorial artwork for دليل قبول: التقديم ومتابعة القبول الجامعي.</desc>
+  <title id="title">دليل الساحل الغربي للبحر الأحمر: أملج والوجه والجزر — doyouknow.app illustration</title>
+  <desc id="desc">Original doyouknow.app editorial artwork for دليل الساحل الغربي للبحر الأحمر: أملج والوجه والجزر.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#123C69"/>
-      <stop offset="58%" stop-color="#22C55E"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
+      <stop offset="0%" stop-color="#052E16"/>
+      <stop offset="58%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
     </linearGradient>
     <radialGradient id="glow" cx="76%" cy="22%" r="58%">
       <stop offset="0%" stop-color="#fff" stop-opacity=".35"/>
@@ -23,16 +23,16 @@
   <circle cx="884" cy="170" r="360" fill="url(#glow)"/>
   <path d="M0 520 C160 438 302 560 460 478 C632 388 772 496 936 414 C1049 357 1136 372 1200 338 L1200 675 L0 675Z" fill="#fff" opacity=".13"/>
   <g filter="url(#shadow)" transform="translate(0 0)">
-    <path d="M350 190h392c33 0 60 27 60 60v246c0 33-27 60-60 60H350c-33 0-60-27-60-60V250c0-33 27-60 60-60Z" fill="#fff" opacity=".16"/><path d="M378 284h336M378 356h336M378 428h222" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".72"/><path d="m734 410 47 47 88-105" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" opacity=".82"/>
+    <path d="M320 475h520M380 475V255h400v220M420 255v-58h320v58" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".72"/><path d="M430 330h300M430 390h300" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".62"/><path d="M360 540c116-58 284-58 400 0" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".42"/>
   </g>
   <g transform="translate(0 0)" direction="rtl">
     <text x="1080" y="122" text-anchor="end" fill="#fff" opacity=".82" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
-    <text x="1080" y="202" text-anchor="end" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">دليل قبول: التقديم ومتابعة القبول الجامعي</text>
-    <text x="1080" y="262" text-anchor="end" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">Practical Guide</text>
-    <rect x="760" y="300" width="320" height="8" rx="4" fill="#F59E0B"/>
+    <text x="1080" y="202" text-anchor="end" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">دليل الساحل الغربي للبحر الأحمر: أملج والوجه…</text>
+    <text x="1080" y="262" text-anchor="end" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">السعودية</text>
+    <rect x="760" y="300" width="320" height="8" rx="4" fill="#F8FAFC"/>
   </g>
   <g transform="translate(120 542)">
     <rect width="386" height="58" rx="29" fill="#fff" opacity=".14"/>
-    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">Practical Guide</text>
+    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">السعودية</text>
   </g>
 </svg>
