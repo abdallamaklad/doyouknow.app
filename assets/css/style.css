@@ -320,6 +320,7 @@ a {
 }
 
 a:hover { color: #0F172A; text-decoration: underline; }
+[data-theme="dark"] a:hover { color: #F8FAFC; }
 
 img { max-width: 100%; height: auto; border-radius: var(--radius-lg); display: block; }
 
@@ -403,6 +404,9 @@ blockquote {
 }
 
 .logo:hover { text-decoration: none; color: var(--color-primary-deep); }
+
+[data-theme="dark"] .logo,
+[data-theme="dark"] .logo:hover { color: var(--color-text-primary); }
 
 .logo-icon {
   width: 32px;

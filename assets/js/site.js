@@ -854,6 +854,29 @@
         });
     });
 
+    // --- Contact Forms (mailto delivery — static site, no form backend) ---
+    document.querySelectorAll('form.contact-form').forEach(function(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var isAr = (document.documentElement.lang || 'en') === 'ar';
+            var lines = [];
+            var subject = isAr ? 'رسالة عبر doyouknow.app' : 'Message via doyouknow.app';
+            form.querySelectorAll('input, select, textarea').forEach(function(field) {
+                var label = field.closest('label');
+                var name = label ? label.textContent.trim().split('\n')[0].trim() : (field.name || field.type);
+                if (/^(subject|الموضوع)/i.test(name) && field.value.trim()) subject = field.value.trim();
+                lines.push(name + ': ' + field.value.trim());
+            });
+            window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(lines.join('\n'));
+            showToast(isAr ? 'جارٍ فتح تطبيق البريد لإرسال رسالتك إلى hello@doyouknow.app' : 'Opening your email app to send your message to hello@doyouknow.app', 'success', 6000);
+            sendGA4Event('contact_form_submit', {
+                page: window.location.pathname,
+                language: isAr ? 'ar' : 'en'
+            });
+        });
+    });
+
     // --- Newsletter Forms ---
     document.querySelectorAll('.newsletter-form, .newsletter-signup, .footer-newsletter').forEach(function(form) {
         const btn = form.querySelector('button, .btn');
@@ -885,8 +908,12 @@
             }
             input.style.borderColor = 'var(--color-secondary-accent)';
             input.setAttribute('aria-invalid', 'false');
-            input.value = '';
-            showToast('✓ Subscribed!', 'success', 3000);
+            var nlSubject = lang === 'ar' ? 'اشتراك في نشرة doyouknow.app' : 'Subscribe to the doyouknow.app newsletter';
+            var nlBody = lang === 'ar'
+                ? 'أرغب في الاشتراك في النشرة البريدية.\nبريدي الإلكتروني: ' + email
+                : 'Please subscribe me to the newsletter.\nMy email: ' + email;
+            window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(nlSubject) + '&body=' + encodeURIComponent(nlBody);
+            showToast(lang === 'ar' ? 'جارٍ فتح تطبيق البريد لتأكيد اشتراكك' : 'Opening your email app to confirm your subscription', 'success', 6000);
             var method = form.classList.contains('footer-newsletter') ? 'footer_cta' : 'inline_cta';
             var emailDomain = email.split('@')[1] || '';
             sendGA4Event('newsletter_signup', {
