@@ -9,11 +9,12 @@ const categories = [
   { lang: 'en', slug: 'guides', files: ['best-beach-clubs-dubai','best-beaches-dubai','best-brunches-dubai','best-restaurants-dubai','dewa-setup-guide','dubai-day-trips','dubai-driving-car-guide','dubai-families-guide','dubai-fitness-outdoor-guide','dubai-free-things-to-do','dubai-nightlife-guide','dubai-parking-guide','dubai-shopping-guide','dubai-traffic-fines-guide','dubai-water-parks-guide','emirates-id-guide','renting-apartment-dubai','save-money-dubai','start-business-dubai','uae-corporate-tax','uae-golden-visa-guide','uae-residence-visa-types','uae-school-year-guide'] },
   { lang: 'en', slug: 'technology', files: ['what-is-chatgpt','what-is-google-gemini'] },
   { lang: 'en', slug: 'saudi', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','riyadh-complete-guide','ronaldo-saudi-arabia','saudi-arabia-history','saudi-archaeology-ancient-sites-guide','saudi-asir-abha-guide','saudi-coffee-culture-guide','saudi-eastern-province-guide','saudi-education-system-guide','saudi-football-global','saudi-hail-northern-region-guide','saudi-national-day','saudi-no-rivers','saudi-red-sea-coast-guide','saudi-tabuk-neom-region-guide','saudi-traditional-crafts-souks-guide','saudi-traditional-dress-culture-guide','saudi-wildlife-nature-reserves-guide'] },
+  { lang: 'en', slug: 'saudi-guides', files: ['absher-portal-guide','open-bank-account-saudi','qiyas-guide','qobool-guide','renting-apartment-riyadh','saudi-driving-license','saudi-family-visit-visa','saudi-health-insurance','saudi-iqama-guide','saudi-mobile-plans-guide','saudi-nafath-guide','saudi-sadad-payments'] },
   { lang: 'en', slug: 'islamic', files: ['five-pillars-of-islam','hajj-guide','hijri-calendar-explained','islamic-finance-guide','islamic-new-year-celebrations','laylat-al-qadr-explained','ramadan-health-guide','sadaqah-vs-zakat','two-holy-mosques-history','umrah-guide','what-is-zakat'] },
   { lang: 'ar', slug: 'saudi', files: ['alula-saudi-arabia','best-places-saudi-arabia','diriyah-saudi-arabia','edge-of-the-world-riyadh','pearl-diving-saudi','riyadh-complete-guide','ronaldo-saudi-arabia','saudi-arabia-history','saudi-archaeology-ancient-sites-guide','saudi-asir-abha-guide','saudi-coffee-culture-guide','saudi-eastern-province-guide','saudi-education-system-guide','saudi-football-global','saudi-hail-northern-region-guide','saudi-national-day','saudi-no-rivers','saudi-red-sea-coast-guide','saudi-tabuk-neom-region-guide','saudi-traditional-crafts-souks-guide','saudi-traditional-dress-culture-guide','saudi-wildlife-nature-reserves-guide'] },
   { lang: 'ar', slug: 'vision-2030', files: ['kingdom-tower-riyadh','qiddiya-saudi-arabia','red-sea-project-saudi','riyadh-season','the-line-neom','what-is-neom'] },
   { lang: 'ar', slug: 'dubai', files: ['best-beach-clubs-dubai','best-brunches-dubai','dubai-art-culture-scene','dubai-day-trips','dubai-driving-car-guide','dubai-families-guide','dubai-fitness-outdoor-guide','dubai-free-things-to-do','dubai-nightlife-guide','dubai-parking-guide','dubai-shopping-guide','dubai-water-parks-guide'] },
-  { lang: 'ar', slug: 'guides', files: ['absher-portal-guide','best-restaurants-riyadh','dewa-setup-guide','dubai-traffic-fines-guide','emirates-id-guide','open-bank-account-saudi','qiyas-guide','qobool-guide','renting-apartment-dubai','saudi-driving-license','saudi-health-insurance','uae-residence-visa-types','uae-school-year-guide'] },
+  { lang: 'ar', slug: 'guides', files: ['absher-portal-guide','best-restaurants-riyadh','dewa-setup-guide','dubai-traffic-fines-guide','emirates-id-guide','open-bank-account-saudi','qiyas-guide','qobool-guide','renting-apartment-dubai','renting-apartment-riyadh','saudi-driving-license','saudi-e-visa-guide','saudi-family-visit-visa','saudi-health-insurance','saudi-iqama-guide','saudi-mobile-plans-guide','saudi-nafath-guide','saudi-sadad-payments','uae-residence-visa-types','uae-school-year-guide'] },
   { lang: 'ar', slug: 'islamic', files: ['five-pillars-of-islam','hajj-guide','hijri-calendar-explained','islamic-finance-guide','islamic-new-year-celebrations','laylat-al-qadr-explained','ramadan-health-guide','sadaqah-vs-zakat','two-holy-mosques-history','umrah-guide','what-is-zakat'] }
 ];
 
@@ -24,6 +25,7 @@ const categoryByArticle = new Map(categories.flatMap((category) =>
 const palettes = {
   dubai: ['#0F172A', '#0EA5E9', '#F59E0B'],
   guides: ['#123C69', '#22C55E', '#F59E0B'],
+  'saudi-guides': ['#123C69', '#22C55E', '#F59E0B'],
   technology: ['#111827', '#6366F1', '#06B6D4'],
   saudi: ['#052E16', '#16A34A', '#F8FAFC'],
   'vision-2030': ['#111827', '#A855F7', '#F59E0B'],
@@ -34,6 +36,7 @@ const palettes = {
 const labels = {
   dubai: 'Dubai & UAE',
   guides: 'Practical Guide',
+  'saudi-guides': 'Saudi Guide',
   technology: 'Technology',
   saudi: 'السعودية',
   'vision-2030': 'رؤية 2030',
@@ -43,6 +46,7 @@ const labels = {
 
 const icons = {
   dubai: `<path d="M315 475V220l54-70 54 70v255M505 475V156l42-58 42 58v319M700 475V255l58-68 58 68v220" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".72"/><path d="M260 475h625" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".72"/>`,
+  'saudi-guides': `<path d="M350 190h392c33 0 60 27 60 60v246c0 33-27 60-60 60H350c-33 0-60-27-60-60V250c0-33 27-60 60-60Z" fill="#fff" opacity=".16"/><path d="M378 284h336M378 356h336M378 428h222" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".72"/><path d="m734 410 47 47 88-105" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" opacity=".82"/>`,
   guides: `<path d="M350 190h392c33 0 60 27 60 60v246c0 33-27 60-60 60H350c-33 0-60-27-60-60V250c0-33 27-60 60-60Z" fill="#fff" opacity=".16"/><path d="M378 284h336M378 356h336M378 428h222" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".72"/><path d="m734 410 47 47 88-105" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" opacity=".82"/>`,
   technology: `<path d="M420 175h310c44 0 80 36 80 80v220c0 44-36 80-80 80H420c-44 0-80-36-80-80V255c0-44 36-80 80-80Z" fill="#fff" opacity=".14"/><path d="M410 315c55-78 122-78 177 0s122 78 177 0M410 420c55 78 122 78 177 0s122-78 177 0" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round" opacity=".76"/><circle cx="502" cy="365" r="18" fill="#fff" opacity=".82"/><circle cx="672" cy="365" r="18" fill="#fff" opacity=".82"/>`,
   saudi: `<path d="M320 475h520M380 475V255h400v220M420 255v-58h320v58" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".72"/><path d="M430 330h300M430 390h300" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".62"/><path d="M360 540c116-58 284-58 400 0" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".42"/>`,
