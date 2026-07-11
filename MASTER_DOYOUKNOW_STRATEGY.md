@@ -2,6 +2,31 @@
 
 ---
 
+## ⚡ 2026-07-11 review addendum (read this first)
+
+Follow-up session to the 2026-07-10 audit: closed out its manual VPS remediation, then coordinated/shipped two new bilingual content batches (T46 business/marketing, T47 Islamic knowledge) through commit, verification, and deploy.
+
+### VPS remediation from 2026-07-10 — now done
+- PR #1 (`worktree-site-audit-july10`) merged to `main` (`ea2193c`).
+- Applied the `handle_errors` 404 block to the live Caddy config at `/root/qulture/deploy/Caddyfile` (validated + graceful reload; all 4 domains on the shared box confirmed healthy after). Verified both `/en/404.html` and `/ar/404.html` now serve on missing URLs.
+- Deleted the 8 previously-exposed internal docs from `/var/www/doyouknow/current` (research/, marketing/, docs/, design/, the strategy/audit `.md` files, `editorial-review.json`); all now 404 on prod.
+
+### T46 (Business & Marketing) and T47 (Islamic Knowledge) — both live
+- T46: 6 bilingual articles (Dubai company registration, golden visa, Saudi SME support, UAE free zones, UAE vs Saudi setup, why Dubai is rich). Primary-source verified — 4 stale official-source URLs fixed (u.ae paths restructured, DMCC page moved, wrong D33 domain); all other claims already appropriately hedged. Released from noindex. Merged via PR #4.
+- T47: 6 bilingual articles (five pillars, Hijri calendar, Islamic New Year, Laylat al-Qadr, sadaqah vs zakat, Two Holy Mosques history). Originally drafted at ~40% of the 2.5k-3.5k word spec — expanded all 12 files to 2.2k-2.5k words. Primary-source verified — 3 **invented/dead** cited domains fixed (`haramainshareef.gov.sa`, `zakat.gov.sa`, `zakatfund.gov.ae` all NXDOMAIN → replaced with real official sites). Released from noindex. Merged via PR #3 (after #4, per a documented `editorial-review.json`/`prepare.mjs` conflict-resolution plan — union both sides, don't hand-merge generated files).
+- Both verified live 2026-07-11: 24/24 new pages return `index, follow`, present in sitemap.xml, tiled correctly on both category pages, and searchable in both language indexes (EN index now 128 articles).
+
+### New failure modes found this session (watch for these in future batches)
+1. **Shared-checkout contamination, twice.** Multiple agents (Codex, Kimi, parallel Claude sessions) working directly in `/Users/abdallamaklad/Documents/Doyouknow` without isolation caused two incidents: uncommitted business-batch edits leaking into an islamic-batch commit (fixed in `7fc5e4e`), and — more subtly — Codex's uncommitted `prepare.mjs`/`add-article-images.mjs` category-list edits getting baked into Kimi's original T47 commit, which then crashed the build with `ENOENT` (only found and fixed in `d6ea8bf`, because an earlier `npm run build 2>&1 | tail -N` had piped away the actual crash). **Always isolate in a worktree; always check real exit codes, not a piped tail.**
+2. **Word-count spec undershoot.** T47 shipped at roughly 40% of the requested 2.5k-3.5k words per file — this needs an explicit self-check step (strip tags, count words, expand until in range) built into the task spec, not just stated as a target.
+3. **Invented source URLs.** Three of T47's cited "official" sources were domains that don't exist (NXDOMAIN, not just geo-blocked). Any citation added by an agent needs an actual reachability check before shipping, distinguishing "geo-blocked/slow" (acceptable, cross-reference via search) from "doesn't resolve" (fabricated, must fix).
+4. **Background-agent session limits.** Both forks dispatched for T46/T47 verification hit an API session-limit mid-task and reported a misleading "still running" status on resume before the real cutoff was discovered. Don't fully trust a resumed fork's self-report — verify actual git state (`log`, `diff --stat`) before accepting "done."
+
+### Next up (in flight as of 2026-07-11)
+T48 (deploy, done by Codex before this addendum was written), T49 (Kimi — 6 more bilingual Saudi practical-service guides: iqama, family visit visa, Nafath, SADAD, renting in Riyadh, mobile plans), T50 (Codex — 6 more bilingual UAE practical-service guides: Emirates ID, residence visa comparison, renting in Dubai, DEWA setup, traffic fines, school year) — both already started in their own worktrees as of this writing.
+
+---
+
 ## ⚡ 2026-07-10 review addendum (read this first)
 
 Full-site re-audit on 2026-07-10 (repo + live prod checks). Status of the 2026-07-07 findings and new work:
