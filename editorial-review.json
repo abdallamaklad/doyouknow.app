@@ -1,35 +1,9 @@
 {
-  "policy": "Pages listed here are accessible but set to noindex,follow and excluded from the sitemap until reviewed against current primary sources. Evergreen lifestyle articles with usable structure and sources were released for indexing on 2026-06-26. The four government/business guides reviewed on 2026-07-07 and the four health/religious/travel guides reviewed on 2026-07-08 were removed after verification against official UAE, Saudi, WHO, and primary media sources. The six Business & Marketing guides (T46) were reviewed on 2026-07-10: all claims were already appropriately hedged with no fact-checkable hard numbers; 4 stale/broken official source URLs (u.ae golden-visa and free-zone paths, DMCC setup page, Dubai D33 citation) were corrected across both languages before release.",
-  "reviewedThrough": "2026-07-10",
+  "policy": "Pages listed here are accessible but set to noindex,follow and excluded from the sitemap until reviewed against current primary sources. Evergreen lifestyle articles with usable structure and sources were released for indexing on 2026-06-26. The four government/business guides reviewed on 2026-07-07 and the four health/religious/travel guides reviewed on 2026-07-08 were removed after verification against official UAE, Saudi, WHO, and primary media sources. The six Business & Marketing guides (T46) were reviewed on 2026-07-10: all claims were already appropriately hedged with no fact-checkable hard numbers; 4 stale/broken official source URLs were corrected across both languages before release. The six Islamic Knowledge & Culture guides (12 EN/AR pages) were reviewed and released on 2026-07-11 after source-URL verification and claims review against established references.",
+  "reviewedThrough": "2026-07-11",
   "pages": {
-    "government-legal-finance": [
-      "/en/article/why-is-dubai-rich.html",
-      "/ar/article/why-is-dubai-rich.html",
-      "/en/article/uae-free-zones-comparison.html",
-      "/ar/article/uae-free-zones-comparison.html",
-      "/en/article/uae-vs-saudi-business-setup.html",
-      "/ar/article/uae-vs-saudi-business-setup.html",
-      "/en/article/golden-visa-investor-track.html",
-      "/ar/article/golden-visa-investor-track.html",
-      "/en/article/dubai-company-registration-cost.html",
-      "/ar/article/dubai-company-registration-cost.html",
-      "/en/article/saudi-sme-support-programs.html",
-      "/ar/article/saudi-sme-support-programs.html"
-    ],
-    "health-religious-travel": [
-      "/en/article/five-pillars-of-islam.html",
-      "/en/article/hijri-calendar-explained.html",
-      "/en/article/islamic-new-year-celebrations.html",
-      "/en/article/laylat-al-qadr-explained.html",
-      "/en/article/sadaqah-vs-zakat.html",
-      "/en/article/two-holy-mosques-history.html",
-      "/ar/article/five-pillars-of-islam.html",
-      "/ar/article/hijri-calendar-explained.html",
-      "/ar/article/islamic-new-year-celebrations.html",
-      "/ar/article/laylat-al-qadr-explained.html",
-      "/ar/article/sadaqah-vs-zakat.html",
-      "/ar/article/two-holy-mosques-history.html"
-    ],
+    "government-legal-finance": [],
+    "health-religious-travel": [],
     "fast-changing-technology": [
       "/en/article/what-is-chatgpt.html",
       "/en/article/what-is-google-gemini.html"
