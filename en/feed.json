@@ -6,6 +6,66 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/dewa-setup-guide.html",
+      "url": "https://doyouknow.app/en/article/dewa-setup-guide.html",
+      "title": "DEWA Setup and Bills: Moving Into a Dubai Home",
+      "content_text": "A move-in guide for DEWA activation, deposits, green bills, tariff logic, Ejari links, final bills, and practical monthly utility planning in Dubai.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "UAE Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/dubai-traffic-fines-guide.html",
+      "url": "https://doyouknow.app/en/article/dubai-traffic-fines-guide.html",
+      "title": "Dubai Traffic Fines: Checking, Paying, Black Points",
+      "content_text": "A resident guide to checking Dubai traffic fines, paying through official channels, understanding black points, vehicle impoundment, and avoiding repeat penalties.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "UAE Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/emirates-id-guide.html",
+      "url": "https://doyouknow.app/en/article/emirates-id-guide.html",
+      "title": "Emirates ID: Application, Renewal, and Replacement",
+      "content_text": "A resident-focused Emirates ID guide covering ICP applications, renewal timing, replacement cards, typing centers, delivery, and expiry fines.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "UAE Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/renting-apartment-dubai.html",
+      "url": "https://doyouknow.app/en/article/renting-apartment-dubai.html",
+      "title": "Renting in Dubai: Ejari, RERA Calculator, Cheques",
+      "content_text": "A practical Dubai renting guide explaining Ejari, tenancy contracts, RERA rent guidance, cheques, deposits, notices, and move-in paperwork.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "UAE Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/uae-residence-visa-types.html",
+      "url": "https://doyouknow.app/en/article/uae-residence-visa-types.html",
+      "title": "UAE Residence Visas Compared: Work, Green, Golden, Family",
+      "content_text": "A decision-tree guide comparing UAE residence visa tracks for employees, freelancers, investors, families, students, retirees, and long-term residents.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "UAE Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/uae-school-year-guide.html",
+      "url": "https://doyouknow.app/en/article/uae-school-year-guide.html",
+      "title": "UAE School Year 2026-27: Terms, Fees, and Admissions",
+      "content_text": "A parent-focused UAE school year guide for 2026-27 covering KHDA, ADEK, admissions timing, fees, calendars, documents, and practical planning.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "UAE Practical Guides"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/best-brunches-dubai.html",
       "url": "https://doyouknow.app/en/article/best-brunches-dubai.html",
       "title": "Best Brunches in Dubai",
@@ -86,123 +146,63 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/saudi-sme-support-programs.html",
-      "url": "https://doyouknow.app/en/article/saudi-sme-support-programs.html",
-      "title": "Saudi Arabia's SME Support Programs Explained",
-      "content_text": "A founder-friendly guide to Saudi SME support programs, including Monsha’at services, financing support, guarantees, training, procurement, and growth resources.",
+      "id": "https://doyouknow.app/en/article/renting-apartment-riyadh.html",
+      "url": "https://doyouknow.app/en/article/renting-apartment-riyadh.html",
+      "title": "Renting an Apartment in Riyadh: Contracts, Ejar, and Costs",
+      "content_text": "A complete renter’s guide to Riyadh apartments: average rents, neighborhoods, Ejar contracts, deposits, and your rights under Saudi law.",
       "date_published": "2026-07-10",
-      "tags": [
-        "Business & Marketing"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/uae-free-zones-comparison.html",
-      "url": "https://doyouknow.app/en/article/uae-free-zones-comparison.html",
-      "title": "How Free Zones Work in the UAE: A Founder's Comparison",
-      "content_text": "Compare UAE free zones through a founder lens: licensing, offices, visas, tax, banking, mainland access, and how to choose the right jurisdiction.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Business & Marketing"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/uae-vs-saudi-business-setup.html",
-      "url": "https://doyouknow.app/en/article/uae-vs-saudi-business-setup.html",
-      "title": "UAE vs Saudi Arabia: Where Should You Start a Business?",
-      "content_text": "A founder-focused comparison of UAE and Saudi business setup, covering market size, speed, regulation, talent, costs, banking, and go-to-market strategy.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Business & Marketing"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-is-dubai-rich.html",
-      "url": "https://doyouknow.app/en/article/why-is-dubai-rich.html",
-      "title": "Why Is Dubai So Rich?",
-      "content_text": "A practical business explainer on how Dubai built wealth through trade, aviation, real estate, tourism, services, free zones, and long-term diversification.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Business & Marketing"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/absher-portal-guide.html",
-      "url": "https://doyouknow.app/en/article/absher-portal-guide.html",
-      "title": "How to Use Absher: Complete Guide for Residents",
-      "content_text": "A practical English guide to using Saudi Arabia's Absher platform: registration, login, residency renewal, traffic fines, visas, and common fixes.",
-      "date_published": "2026-07-09",
       "tags": [
         "Saudi Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/best-beach-clubs-dubai.html",
-      "url": "https://doyouknow.app/en/article/best-beach-clubs-dubai.html",
-      "title": "Best Beach Clubs in Dubai: How to Choose the Right Day Pass",
-      "content_text": "An evergreen Dubai beach club guide covering resort day passes, party pools, family-friendly venues, quiet luxury, booking tips, and seasonal planning.",
-      "date_published": "2026-07-09",
+      "id": "https://doyouknow.app/en/article/saudi-family-visit-visa.html",
+      "url": "https://doyouknow.app/en/article/saudi-family-visit-visa.html",
+      "title": "Saudi Family Visit Visa: Application, Extension, Rules",
+      "content_text": "How to apply for a Saudi family visit visa, extend it through Absher, and understand the rules for parents, spouses, and children.",
+      "date_published": "2026-07-10",
       "tags": [
-        "UAE Practical Guides"
+        "Saudi Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/best-places-saudi-arabia.html",
-      "url": "https://doyouknow.app/en/article/best-places-saudi-arabia.html",
-      "title": "10 Best Places to Visit in Saudi Arabia",
-      "content_text": "Discover the best places to visit in Saudi Arabia, from AlUla and Historic Jeddah to Asir, Riyadh, the Red Sea, and the Edge of the World.",
-      "date_published": "2026-07-09",
+      "id": "https://doyouknow.app/en/article/saudi-iqama-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-iqama-guide.html",
+      "title": "Iqama in Saudi Arabia: Renewal, Fees, and Dependents",
+      "content_text": "A complete guide to the Saudi iqama: how to apply, renew, pay fees, add dependents, and fix common issues using Absher and Muqeem.",
+      "date_published": "2026-07-10",
       "tags": [
-        "Saudi Arabia"
+        "Saudi Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/best-restaurants-riyadh.html",
-      "url": "https://doyouknow.app/en/article/best-restaurants-riyadh.html",
-      "title": "Best Restaurants in Riyadh: A Food Lover's Guide",
-      "content_text": "From Najdi classics to fine dining, discover the best restaurants in Riyadh. A practical guide for visitors, residents, and curious eaters.",
-      "date_published": "2026-07-09",
+      "id": "https://doyouknow.app/en/article/saudi-mobile-plans-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-mobile-plans-guide.html",
+      "title": "Saudi Mobile Plans: Compare STC, Mobily, Zain, Virgin",
+      "content_text": "Compare Saudi mobile operators, prepaid and postpaid plans, data allowances, 5G coverage, and how to get a SIM as a resident or visitor.",
+      "date_published": "2026-07-10",
       "tags": [
-        "Saudi Arabia"
+        "Saudi Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/dubai-day-trips.html",
-      "url": "https://doyouknow.app/en/article/dubai-day-trips.html",
-      "title": "Dubai Day Trips: Hatta, Al Ain &amp; Fujairah",
-      "content_text": "Plan the best day trips from Dubai with routes to Hatta, Al Ain, Fujairah, Khor Fakkan, Abu Dhabi, Sharjah, and Musandam.",
-      "date_published": "2026-07-09",
+      "id": "https://doyouknow.app/en/article/saudi-nafath-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-nafath-guide.html",
+      "title": "Nafath Saudi Arabia: Register, Log In, Access Services",
+      "content_text": "A practical guide to Nafath, Saudi Arabia’s unified national access platform: how to register, log in, link services, and fix common issues.",
+      "date_published": "2026-07-10",
       "tags": [
-        "UAE Practical Guides"
+        "Saudi Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/dubai-free-things-to-do.html",
-      "url": "https://doyouknow.app/en/article/dubai-free-things-to-do.html",
-      "title": "Dubai Free Things To Do: 50+ Ideas That Cost Nothing",
-      "content_text": "Discover 50+ free things to do in Dubai, from beaches and souks to fountains, heritage districts, public art, viewpoints, walks, and family ideas.",
-      "date_published": "2026-07-09",
+      "id": "https://doyouknow.app/en/article/saudi-sadad-payments.html",
+      "url": "https://doyouknow.app/en/article/saudi-sadad-payments.html",
+      "title": "SADAD Payments in Saudi Arabia: Bills, Fines, Bank Setup",
+      "content_text": "Learn how to use SADAD, Saudi Arabia’s national payment system, to pay government bills, traffic fines, utilities, and private invoices.",
+      "date_published": "2026-07-10",
       "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-nightlife-guide.html",
-      "url": "https://doyouknow.app/en/article/dubai-nightlife-guide.html",
-      "title": "Dubai Nightlife Guide: Bars, Clubs, Live Music &amp; Rules",
-      "content_text": "Plan a smart night out in Dubai with this evergreen guide to bars, clubs, lounges, live music, dress codes, transport, and licensing basics.",
-      "date_published": "2026-07-09",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-parking-guide.html",
-      "url": "https://doyouknow.app/en/article/dubai-parking-guide.html",
-      "title": "Dubai Parking Guide: RTA Zones, Apps, Payments &amp; Fines",
-      "content_text": "A practical Dubai parking guide explaining RTA public parking zones, payment apps, SMS basics, mall parking, common fines, and visitor tips.",
-      "date_published": "2026-07-09",
-      "tags": [
-        "UAE Practical Guides"
+        "Saudi Practical Guides"
       ]
     }
   ]
