@@ -6,7 +6,19 @@
     "health-religious-travel": [],
     "fast-changing-technology": [
       "/en/article/what-is-chatgpt.html",
-      "/en/article/what-is-google-gemini.html"
+      "/en/article/what-is-google-gemini.html",
+      "/en/article/what-is-claude-ai.html",
+      "/ar/article/what-is-claude-ai.html",
+      "/en/article/what-is-an-ai-agent.html",
+      "/ar/article/what-is-an-ai-agent.html",
+      "/en/article/what-is-a-large-language-model.html",
+      "/ar/article/what-is-a-large-language-model.html",
+      "/en/article/what-is-prompt-engineering.html",
+      "/ar/article/what-is-prompt-engineering.html",
+      "/en/article/ai-in-uae-government-services.html",
+      "/ar/article/ai-in-uae-government-services.html",
+      "/en/article/what-is-quantum-computing.html",
+      "/ar/article/what-is-quantum-computing.html"
     ]
   }
 }
