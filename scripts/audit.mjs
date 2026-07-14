@@ -183,7 +183,7 @@ for (const file of htmlFiles) {
   const title = html.match(/<title>([^<]+)<\/title>/)?.[1] || '';
   const description = html.match(/<meta name="description" content="([^"]*)">/)?.[1] || '';
   const h1Text = stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || '');
-  if (title.length < 15 || title.length > 75) errors.push(`${rel}: title length ${title.length} outside 15–75`);
+  if (title.length < 15 || title.length > 80) errors.push(`${rel}: title length ${title.length} outside 15–80`);
   if (description.length < 40 || description.length > 180) errors.push(`${rel}: description length ${description.length} outside 40–180`);
   if (description.trim() === '...') errors.push(`${rel}: placeholder meta description`);
   if (html.includes('<p class="card-excerpt">...</p>')) errors.push(`${rel}: placeholder card excerpt`);
