@@ -6,6 +6,76 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/grand-egyptian-museum-guide.html",
+      "url": "https://doyouknow.app/en/article/grand-egyptian-museum-guide.html",
+      "title": "Grand Egyptian Museum: Complete Visitor Guide",
+      "content_text": "Plan your visit to the Grand Egyptian Museum near Giza: what's inside, the complete Tutankhamun collection, ticket types, opening hours, and practical tips.",
+      "date_published": "2026-07-15",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egyptian-hieroglyphs-guide.html",
+      "url": "https://doyouknow.app/en/article/egyptian-hieroglyphs-guide.html",
+      "title": "Egyptian Hieroglyphs: How Ancient Writing Worked",
+      "content_text": "How Egyptian hieroglyphs actually worked as a writing system: phonetic and word signs, cartouches, hieratic and demotic scripts, and how they were deciphered.",
+      "date_published": "2026-07-14",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/tutankhamun-facts.html",
+      "url": "https://doyouknow.app/en/article/tutankhamun-facts.html",
+      "title": "Tutankhamun: Facts About the Boy King",
+      "content_text": "Key facts about Tutankhamun: his short reign, the 1922 discovery of his tomb by Howard Carter, the golden mask, the curse myth, and how he actually died.",
+      "date_published": "2026-07-14",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egyptian-mummies-facts.html",
+      "url": "https://doyouknow.app/en/article/egyptian-mummies-facts.html",
+      "title": "Egyptian Mummies: How Mummification Really Worked",
+      "content_text": "How ancient Egyptian mummification actually worked, step by step: natron drying, organ removal, canopic jars, linen wrapping, and where to see royal mummies today.",
+      "date_published": "2026-07-13",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/rosetta-stone-facts.html",
+      "url": "https://doyouknow.app/en/article/rosetta-stone-facts.html",
+      "title": "Rosetta Stone: Facts About the Key to Hieroglyphs",
+      "content_text": "How the Rosetta Stone was discovered, what it actually says, how it unlocked hieroglyphs in 1822, and why Egypt wants it back from the British Museum.",
+      "date_published": "2026-07-13",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egyptian-pharaohs-guide.html",
+      "url": "https://doyouknow.app/en/article/egyptian-pharaohs-guide.html",
+      "title": "Egyptian Pharaohs: Guide to Ancient Egypt's Rulers",
+      "content_text": "Who were Egypt's pharaohs? A guide to the role, power, and most important rulers of ancient Egypt, from Djoser and Khufu to Hatshepsut, Ramesses II, and Cleopatra.",
+      "date_published": "2026-07-12",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/valley-of-the-kings-guide.html",
+      "url": "https://doyouknow.app/en/article/valley-of-the-kings-guide.html",
+      "title": "Valley of the Kings: Complete Visitor Guide",
+      "content_text": "Plan your visit to the Valley of the Kings in Luxor: history, Tutankhamun's tomb, ticket types, which tombs to prioritize, and practical tips for 2026.",
+      "date_published": "2026-07-12",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/dewa-setup-guide.html",
       "url": "https://doyouknow.app/en/article/dewa-setup-guide.html",
       "title": "DEWA Setup and Bills: Moving Into a Dubai Home",
@@ -26,6 +96,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/egypt-ancient-history.html",
+      "url": "https://doyouknow.app/en/article/egypt-ancient-history.html",
+      "title": "Ancient Egypt History: Complete Timeline Guide",
+      "content_text": "A complete timeline of ancient Egyptian history, from the unification of Upper and Lower Egypt around 3100 BCE through the Old, Middle, and New Kingdoms to Cleopatra.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/emirates-id-guide.html",
       "url": "https://doyouknow.app/en/article/emirates-id-guide.html",
       "title": "Emirates ID: Application, Renewal, and Replacement",
@@ -33,6 +113,16 @@
       "date_published": "2026-07-11",
       "tags": [
         "UAE Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/great-sphinx-facts.html",
+      "url": "https://doyouknow.app/en/article/great-sphinx-facts.html",
+      "title": "Great Sphinx of Giza: Facts, History &amp; Mystery",
+      "content_text": "Facts about the Great Sphinx of Giza: its size, who built it, why its nose is missing, the Dream Stele, and what archaeologists know versus what remains debated.",
+      "date_published": "2026-07-11",
+      "tags": [
+        "Egypt"
       ]
     },
     {
@@ -113,96 +203,6 @@
       "date_published": "2026-07-10",
       "tags": [
         "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-fitness-outdoor-guide.html",
-      "url": "https://doyouknow.app/en/article/dubai-fitness-outdoor-guide.html",
-      "title": "Dubai Fitness &amp; Outdoor Activities",
-      "content_text": "Discover Dubai fitness and outdoor activities, from gyms and cycling tracks to beaches, desert walks, Hatta, running routes, and seasonal planning.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-water-parks-guide.html",
-      "url": "https://doyouknow.app/en/article/dubai-water-parks-guide.html",
-      "title": "Dubai Water Parks &amp; Theme Parks",
-      "content_text": "Compare Dubai water parks and theme parks by location, age group, ride style, weather, ticket format, transport, and family planning needs.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/golden-visa-investor-track.html",
-      "url": "https://doyouknow.app/en/article/golden-visa-investor-track.html",
-      "title": "What Is the UAE Golden Visa Investor Track?",
-      "content_text": "An evergreen explainer on the UAE Golden Visa investor routes, eligibility logic, documents, property and business investment considerations, and common mistakes.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Business & Marketing"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/renting-apartment-riyadh.html",
-      "url": "https://doyouknow.app/en/article/renting-apartment-riyadh.html",
-      "title": "Renting an Apartment in Riyadh: Contracts, Ejar, and Costs",
-      "content_text": "A complete renter’s guide to Riyadh apartments: average rents, neighborhoods, Ejar contracts, deposits, and your rights under Saudi law.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/saudi-family-visit-visa.html",
-      "url": "https://doyouknow.app/en/article/saudi-family-visit-visa.html",
-      "title": "Saudi Family Visit Visa: Application, Extension, Rules",
-      "content_text": "How to apply for a Saudi family visit visa, extend it through Absher, and understand the rules for parents, spouses, and children.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/saudi-iqama-guide.html",
-      "url": "https://doyouknow.app/en/article/saudi-iqama-guide.html",
-      "title": "Iqama in Saudi Arabia: Renewal, Fees, and Dependents",
-      "content_text": "A complete guide to the Saudi iqama: how to apply, renew, pay fees, add dependents, and fix common issues using Absher and Muqeem.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/saudi-mobile-plans-guide.html",
-      "url": "https://doyouknow.app/en/article/saudi-mobile-plans-guide.html",
-      "title": "Saudi Mobile Plans: Compare STC, Mobily, Zain, Virgin",
-      "content_text": "Compare Saudi mobile operators, prepaid and postpaid plans, data allowances, 5G coverage, and how to get a SIM as a resident or visitor.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/saudi-nafath-guide.html",
-      "url": "https://doyouknow.app/en/article/saudi-nafath-guide.html",
-      "title": "Nafath Saudi Arabia: Register, Log In, Access Services",
-      "content_text": "A practical guide to Nafath, Saudi Arabia’s unified national access platform: how to register, log in, link services, and fix common issues.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/saudi-sadad-payments.html",
-      "url": "https://doyouknow.app/en/article/saudi-sadad-payments.html",
-      "title": "SADAD Payments in Saudi Arabia: Bills, Fines, Bank Setup",
-      "content_text": "Learn how to use SADAD, Saudi Arabia’s national payment system, to pay government bills, traffic fines, utilities, and private invoices.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Saudi Practical Guides"
       ]
     }
   ]
