@@ -136,7 +136,7 @@ function outboundCitationHosts(html) {
 async function walk(dir) {
   const out = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
-    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'scripts') continue;
+    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'scripts' || entry.name === '.claude') continue;
     const path = join(dir, entry.name);
     entry.isDirectory() ? out.push(...await walk(path)) : out.push(path);
   }
