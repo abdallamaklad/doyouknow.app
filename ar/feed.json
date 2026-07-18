@@ -6,6 +6,186 @@
   "language": "ar",
   "items": [
     {
+      "id": "https://doyouknow.app/ar/article/egyptian-traditional-crafts.html",
+      "url": "https://doyouknow.app/ar/article/egyptian-traditional-crafts.html",
+      "title": "الحرف التقليدية المصرية: تراث حي",
+      "content_text": "دليل الحرف التقليدية المصرية: الخيامية، النحاس والأشغال المعدنية، نحت الألباستر، النسيج، وأين تشاهد الحرفيين يعملون اليوم.",
+      "date_published": "2026-07-23",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/coptic-heritage-egypt.html",
+      "url": "https://doyouknow.app/ar/article/coptic-heritage-egypt.html",
+      "title": "التراث القبطي في مصر: التاريخ والمجتمع",
+      "content_text": "مقدمة عن المسيحية القبطية في مصر: أصولها، وكنائس وأديرة مصر القديمة، والتقويم القبطي، وتقاليد المجتمع الحية اليوم.",
+      "date_published": "2026-07-22",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egyptian-music-culture.html",
+      "url": "https://doyouknow.app/ar/article/egyptian-music-culture.html",
+      "title": "ثقافة الموسيقى المصرية: التاريخ والأنواع",
+      "content_text": "نظرة عامة على الموسيقى المصرية: أم كلثوم والعصر الذهبي للموسيقى العربية، الآلات الكلاسيكية المصرية، الشعبي، ومشهد المهرجانات الحديث.",
+      "date_published": "2026-07-22",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/islamic-cairo-guide.html",
+      "url": "https://doyouknow.app/ar/article/islamic-cairo-guide.html",
+      "title": "القاهرة الإسلامية: دليل الحي القديم",
+      "content_text": "دليل القاهرة الإسلامية: شارع المعز، القلعة، سوق خان الخليلي، أبرز المساجد والمدارس، ونصائح عملية للاستكشاف في عام 2026.",
+      "date_published": "2026-07-22",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egypt-western-desert-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-western-desert-guide.html",
+      "title": "الصحراء الغربية المصرية: دليل الواحات والكثبان",
+      "content_text": "نظرة عامة على الصحراء الغربية المصرية: الواحات الخمس الكبرى، بحر الرمال العظيم، تخطيط دائرة صحراوية متعددة الأيام، ونصائح سلامة عملية لعام 2026.",
+      "date_published": "2026-07-21",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egyptian-cuisine-guide.html",
+      "url": "https://doyouknow.app/ar/article/egyptian-cuisine-guide.html",
+      "title": "دليل المطبخ المصري: الأطباق وأماكن الأكل",
+      "content_text": "دليل المطبخ المصري: الكشري، الفول المدمس، الملوخية، أطعمة الشارع الأساسية، الأطباق الإقليمية، وأين تجد طعاماً أصيلاً في عام 2026.",
+      "date_published": "2026-07-21",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/koshari-egyptian-food-guide.html",
+      "url": "https://doyouknow.app/ar/article/koshari-egyptian-food-guide.html",
+      "title": "الكشري: الطبق الوطني المصري بالتفصيل",
+      "content_text": "ما هو الكشري؟ تاريخ ومكونات وأصناف الطبق المصري المحبوب من طبقات الأرز والعدس والمكرونة، إلى جانب أماكن تجربته في عام 2026.",
+      "date_published": "2026-07-21",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/nile-river-facts.html",
+      "url": "https://doyouknow.app/ar/article/nile-river-facts.html",
+      "title": "حقائق عن نهر النيل: شريان حياة مصر",
+      "content_text": "حقائق أساسية عن نهر النيل: طوله ونقاش مصدره، ولماذا اعتمدت مصر القديمة على فيضانه، وتأثير السد العالي بأسوان، والرحلات النيلية اليوم.",
+      "date_published": "2026-07-20",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/red-sea-egypt-guide.html",
+      "url": "https://doyouknow.app/ar/article/red-sea-egypt-guide.html",
+      "title": "دليل البحر الأحمر المصري: الغوص والشواطئ",
+      "content_text": "نظرة عامة على ساحل البحر الأحمر المصري: لماذا تُعد الشعاب المرجانية غنية، وكيف تختار بين شرم الشيخ والغردقة والجونة ودهب، وأفضل وقت للزيارة.",
+      "date_published": "2026-07-20",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/white-desert-egypt.html",
+      "url": "https://doyouknow.app/ar/article/white-desert-egypt.html",
+      "title": "الصحراء البيضاء المصرية: دليل تشكيلات الطباشير",
+      "content_text": "خطط لرحلة إلى محمية الصحراء البيضاء المصرية: تشكيلات الصخور الطباشيرية، التخييم الليلي، كيفية الوصول من الفرافرة أو الواحات البحرية، ونصائح لعام 2026.",
+      "date_published": "2026-07-20",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/dahab-guide.html",
+      "url": "https://doyouknow.app/ar/article/dahab-guide.html",
+      "title": "دليل دهب: مدينة الغوص الهادئة في سيناء",
+      "content_text": "خطط لرحلتك إلى دهب: الحفرة الزرقاء، ثقافة الغطس الحر، المخيمات البدوية، رحلات جبل سيناء، ونصائح عملية لهذه المدينة الهادئة على البحر الأحمر.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/hurghada-guide.html",
+      "url": "https://doyouknow.app/ar/article/hurghada-guide.html",
+      "title": "دليل الغردقة: شواطئ البحر الأحمر والرياضات المائية",
+      "content_text": "خطط لرحلتك إلى الغردقة: السباحة السطحية في جزيرة الجفتون، ركوب الأمواج بالطائرة الورقية في الجونة، رحلات السفاري الصحراوية، وأفضل وقت للزيارة.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/sharm-el-sheikh-guide.html",
+      "url": "https://doyouknow.app/ar/article/sharm-el-sheikh-guide.html",
+      "title": "دليل شرم الشيخ: الغوص وحياة المنتجعات",
+      "content_text": "خطط لرحلتك إلى شرم الشيخ: محمية رأس محمد، الغوص في جزيرة تيران، خليج نعمة، أفضل وقت للزيارة، ونصائح عملية لعام 2026.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/siwa-oasis-guide.html",
+      "url": "https://doyouknow.app/ar/article/siwa-oasis-guide.html",
+      "title": "دليل واحة سيوة: بلدة مصر الصحراوية النائية",
+      "content_text": "خطط لرحلتك إلى واحة سيوة: معبد آمون، الثقافة الأمازيغية السيوية، البحيرات المالحة، رحلات بحر الرمال العظيم، ونصائح عملية لعام 2026.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/alexandria-travel-guide.html",
+      "url": "https://doyouknow.app/ar/article/alexandria-travel-guide.html",
+      "title": "دليل سفر الإسكندرية: مدينة مصر المتوسطية",
+      "content_text": "خطط لزيارة الإسكندرية: مكتبة الإسكندرية، قلعة قايتباي، المقابر الجوفية، الكورنيش المتوسطي، ونصائح عملية لعام 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/aswan-travel-guide.html",
+      "url": "https://doyouknow.app/ar/article/aswan-travel-guide.html",
+      "title": "دليل سفر أسوان: الثقافة النوبية والنيل",
+      "content_text": "خطط لزيارة أسوان: السد العالي، معبد فيلة، رحلات يوم إلى أبو سمبل، القرى النوبية، الإبحار بالفلوكة، ونصائح عملية لعام 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/cairo-complete-guide.html",
+      "url": "https://doyouknow.app/ar/article/cairo-complete-guide.html",
+      "title": "دليل القاهرة الشامل: الأحياء والمعالم",
+      "content_text": "دليل شامل للقاهرة: القاهرة الإسلامية، وسط البلد، الزمالك، الجيزة، التنقل في المدينة، أفضل وقت للزيارة، ونصائح عملية لعام 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/luxor-travel-guide.html",
+      "url": "https://doyouknow.app/ar/article/luxor-travel-guide.html",
+      "title": "دليل سفر الأقصر: طيبة القديمة ومعالمها",
+      "content_text": "خطط لزيارة الأقصر، طيبة القديمة: معبدا الكرنك والأقصر، وادي الملوك، رحلات المنطاد، ونصائح عملية لعام 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "مصر: التاريخ والثقافة"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html",
       "url": "https://doyouknow.app/ar/article/abu-dhabi-complete-guide.html",
       "title": "دليل أبوظبي الشامل: أهم المعالم والوجهات السياحية",
@@ -23,186 +203,6 @@
       "date_published": "2026-07-15",
       "tags": [
         "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/dubai-metro-guide.html",
-      "url": "https://doyouknow.app/ar/article/dubai-metro-guide.html",
-      "title": "دليل مترو دبي: كل ما تحتاجه للتنقل بذكاء",
-      "content_text": "دليل شامل لمترو دبي: الخطوط، المحطات، بطاقة نول، الأجرة، مواعيد التشغيل، والقواعد الأساسية. كل ما تحتاجه للتنقل بذكاء في دبي.",
-      "date_published": "2026-07-15",
-      "tags": [
-        "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/dubai-tourist-visa-guide.html",
-      "url": "https://doyouknow.app/ar/article/dubai-tourist-visa-guide.html",
-      "title": "دليل تأشيرة دبي السياحية 2026: 11 نوعاً والتقديم",
-      "content_text": "دليل شامل لتأشيرة دبي السياحية 2026: 11 نوعاً من تأشيرات الإمارات، الرسوم، مدة المعالجة، المتطلبات، خطوات التقديم، والأخطاء الشائعة.",
-      "date_published": "2026-07-15",
-      "tags": [
-        "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/grand-egyptian-museum-guide.html",
-      "url": "https://doyouknow.app/ar/article/grand-egyptian-museum-guide.html",
-      "title": "المتحف المصري الكبير: دليل الزائر الشامل",
-      "content_text": "خطط لزيارة المتحف المصري الكبير قرب الجيزة: ماذا يضم، مجموعة توت عنخ آمون الكاملة، أنواع التذاكر، مواعيد العمل، ونصائح عملية.",
-      "date_published": "2026-07-15",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/saudi-e-visa-guide.html",
-      "url": "https://doyouknow.app/ar/article/saudi-e-visa-guide.html",
-      "title": "دليل التأشيرة الإلكترونية السعودية: أنواعها والتقديم",
-      "content_text": "دليل كامل للتأشيرة الإلكترونية السعودية 2026: أنواع التأشيرات، شروط التقديم، الرسوم، مدة المعالجة، تأشيرة العمرة والأعمال، وكل ما يهم المسافر.",
-      "date_published": "2026-07-15",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egyptian-hieroglyphs-guide.html",
-      "url": "https://doyouknow.app/ar/article/egyptian-hieroglyphs-guide.html",
-      "title": "الهيروغليفية المصرية: كيف عملت الكتابة القديمة",
-      "content_text": "كيف عملت الهيروغليفية المصرية فعلياً كنظام كتابة: الرموز الصوتية والكلمية، الخراطيش، الكتابتان الهيراطيقية والديموطيقية، وكيف فُكّت رموزها.",
-      "date_published": "2026-07-14",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/tutankhamun-facts.html",
-      "url": "https://doyouknow.app/ar/article/tutankhamun-facts.html",
-      "title": "توت عنخ آمون: حقائق عن الملك الصبي",
-      "content_text": "حقائق أساسية عن توت عنخ آمون: حكمه القصير، اكتشاف مقبرته عام 1922 على يد هوارد كارتر، القناع الذهبي، أسطورة اللعنة، وكيف مات فعلياً.",
-      "date_published": "2026-07-14",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egyptian-mummies-facts.html",
-      "url": "https://doyouknow.app/ar/article/egyptian-mummies-facts.html",
-      "title": "المومياوات المصرية: كيف عمل التحنيط فعلياً",
-      "content_text": "كيف عمل التحنيط المصري القديم فعلياً، خطوة بخطوة: التجفيف بملح النطرون، إزالة الأعضاء، أواني الأحشاء، لف الكتان، وأين تُشاهد المومياوات الملكية اليوم.",
-      "date_published": "2026-07-13",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/rosetta-stone-facts.html",
-      "url": "https://doyouknow.app/ar/article/rosetta-stone-facts.html",
-      "title": "حجر رشيد: حقائق عن مفتاح الهيروغليفية",
-      "content_text": "كيف اكتُشف حجر رشيد، وماذا يقول فعلياً، وكيف فتح الباب أمام فك رموز الهيروغليفية عام 1822، ولماذا تطالب مصر باستعادته من المتحف البريطاني.",
-      "date_published": "2026-07-13",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egyptian-pharaohs-guide.html",
-      "url": "https://doyouknow.app/ar/article/egyptian-pharaohs-guide.html",
-      "title": "فراعنة مصر: دليل شامل لحكام مصر القديمة",
-      "content_text": "من هم فراعنة مصر؟ دليل عن دور وسلطة وأهم حكام مصر القديمة، من زوسر وخوفو إلى حتشبسوت ورمسيس الثاني وكليوباترا.",
-      "date_published": "2026-07-12",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/valley-of-the-kings-guide.html",
-      "url": "https://doyouknow.app/ar/article/valley-of-the-kings-guide.html",
-      "title": "وادي الملوك: دليل الزائر الشامل",
-      "content_text": "خطط لزيارة وادي الملوك في الأقصر: التاريخ، مقبرة توت عنخ آمون، أنواع التذاكر، أي المقابر تُعطى الأولوية، ونصائح عملية لعام 2026.",
-      "date_published": "2026-07-12",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/dewa-setup-guide.html",
-      "url": "https://doyouknow.app/ar/article/dewa-setup-guide.html",
-      "title": "تفعيل ديوا والفواتير عند الانتقال إلى منزل في دبي",
-      "content_text": "دليل تفعيل هيئة كهرباء ومياه دبي عند الانتقال: الوديعة، الفاتورة الخضراء، التعرفة، إيجاري، الفاتورة النهائية، وتخطيط المصروف الشهري.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/dubai-traffic-fines-guide.html",
-      "url": "https://doyouknow.app/ar/article/dubai-traffic-fines-guide.html",
-      "title": "مخالفات دبي المرورية: الاستعلام والدفع والنقاط السوداء",
-      "content_text": "دليل للمقيمين حول الاستعلام عن مخالفات دبي المرورية ودفعها عبر القنوات الرسمية وفهم النقاط السوداء والحجز وتجنب التكرار.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egypt-ancient-history.html",
-      "url": "https://doyouknow.app/ar/article/egypt-ancient-history.html",
-      "title": "تاريخ مصر القديمة: الخط الزمني الشامل",
-      "content_text": "خط زمني شامل لتاريخ مصر القديمة، من توحيد مصر العليا والسفلى حوالي 3100 قبل الميلاد مروراً بالدولة القديمة والوسطى والحديثة وصولاً إلى كليوباترا.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/emirates-id-guide.html",
-      "url": "https://doyouknow.app/ar/article/emirates-id-guide.html",
-      "title": "هوية الإمارات: التقديم والتجديد وبدل الفاقد",
-      "content_text": "دليل عملي لهوية الإمارات يشرح التقديم عبر الهيئة، التجديد، بدل الفاقد، مراكز الطباعة، التسليم، وغرامات التأخير.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/great-sphinx-facts.html",
-      "url": "https://doyouknow.app/ar/article/great-sphinx-facts.html",
-      "title": "أبو الهول العظيم: حقائق وتاريخ وغموض",
-      "content_text": "حقائق عن أبو الهول العظيم بالجيزة: حجمه، ومن بناه، وسبب فقدان أنفه، ولوحة الحلم، وما يعرفه علماء الآثار مقابل ما يظل موضع جدل.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/renting-apartment-dubai.html",
-      "url": "https://doyouknow.app/ar/article/renting-apartment-dubai.html",
-      "title": "استئجار شقة في دبي: إيجاري وحاسبة الزيادة والشيكات",
-      "content_text": "دليل عملي لاستئجار شقة في دبي يشرح إيجاري، العقود، حاسبة الزيادة، الشيكات، الوديعة، الإخطارات، وإجراءات الانتقال.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/uae-residence-visa-types.html",
-      "url": "https://doyouknow.app/ar/article/uae-residence-visa-types.html",
-      "title": "إقامات الإمارات: العمل والخضراء والذهبية والعائلية",
-      "content_text": "دليل مقارن لأنواع الإقامة في الإمارات: العمل، الإقامة الخضراء، الذهبية، العائلية، الطلابية، والتقاعدية.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/uae-school-year-guide.html",
-      "url": "https://doyouknow.app/ar/article/uae-school-year-guide.html",
-      "title": "العام الدراسي في الإمارات 2026-27: الفصول والرسوم والقبول",
-      "content_text": "دليل للأهالي عن العام الدراسي في الإمارات 2026-27 يشمل التقويم، KHDA وADEK، الرسوم، القبول، الوثائق، والتخطيط العملي.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "أدلة عملية في السعودية"
       ]
     }
   ]

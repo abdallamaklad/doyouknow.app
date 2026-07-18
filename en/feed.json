@@ -6,6 +6,186 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/egyptian-traditional-crafts.html",
+      "url": "https://doyouknow.app/en/article/egyptian-traditional-crafts.html",
+      "title": "Egyptian Traditional Crafts: A Living Heritage",
+      "content_text": "A guide to Egyptian traditional crafts: khayamiya tentmaking, copper and brasswork, alabaster carving, weaving, and where to see artisans working today.",
+      "date_published": "2026-07-23",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/coptic-heritage-egypt.html",
+      "url": "https://doyouknow.app/en/article/coptic-heritage-egypt.html",
+      "title": "Coptic Heritage in Egypt: History &amp; Community",
+      "content_text": "An introduction to Coptic Christianity in Egypt: its origins, Old Cairo's churches and monasteries, the Coptic calendar, and the community's living traditions today.",
+      "date_published": "2026-07-22",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egyptian-music-culture.html",
+      "url": "https://doyouknow.app/en/article/egyptian-music-culture.html",
+      "title": "Egyptian Music Culture: History &amp; Genres",
+      "content_text": "An overview of Egyptian music: Umm Kulthum and the golden age of Arab music, classical Egyptian instruments, shaabi, and the modern mahraganat scene.",
+      "date_published": "2026-07-22",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/islamic-cairo-guide.html",
+      "url": "https://doyouknow.app/en/article/islamic-cairo-guide.html",
+      "title": "Islamic Cairo: A Guide to the Medieval Quarter",
+      "content_text": "A guide to Islamic Cairo: al-Muizz Street, the Citadel, Khan el-Khalili bazaar, key mosques and madrasas, and practical tips for exploring in 2026.",
+      "date_published": "2026-07-22",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egypt-western-desert-guide.html",
+      "url": "https://doyouknow.app/en/article/egypt-western-desert-guide.html",
+      "title": "Egypt's Western Desert: Oases &amp; Dunes Guide",
+      "content_text": "An overview of Egypt's Western Desert: the five major oases, the Great Sand Sea, planning a multi-day desert circuit, and practical safety tips for 2026.",
+      "date_published": "2026-07-21",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egyptian-cuisine-guide.html",
+      "url": "https://doyouknow.app/en/article/egyptian-cuisine-guide.html",
+      "title": "Egyptian Cuisine Guide: Dishes &amp; Where to Eat",
+      "content_text": "A guide to Egyptian cuisine: koshari, ful medames, molokhia, street food staples, regional specialties, and where to find authentic food in 2026.",
+      "date_published": "2026-07-21",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/koshari-egyptian-food-guide.html",
+      "url": "https://doyouknow.app/en/article/koshari-egyptian-food-guide.html",
+      "title": "Koshari: Egypt's National Dish Explained",
+      "content_text": "What is koshari? The history, ingredients, and regional variations of Egypt's beloved layered rice, lentil, and pasta dish, plus where to try it in 2026.",
+      "date_published": "2026-07-21",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/nile-river-facts.html",
+      "url": "https://doyouknow.app/en/article/nile-river-facts.html",
+      "title": "Nile River Facts: Egypt's Lifeline Explained",
+      "content_text": "Key facts about the Nile River: its length and source debate, why ancient Egypt depended on its floods, the Aswan High Dam's impact, and Nile cruises today.",
+      "date_published": "2026-07-20",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/red-sea-egypt-guide.html",
+      "url": "https://doyouknow.app/en/article/red-sea-egypt-guide.html",
+      "title": "Red Sea Egypt Guide: Diving, Beaches &amp; Resorts",
+      "content_text": "An overview of Egypt's Red Sea coast: why the reefs are so rich, how to choose between Sharm El Sheikh, Hurghada, El Gouna, and Dahab, and when to visit.",
+      "date_published": "2026-07-20",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/white-desert-egypt.html",
+      "url": "https://doyouknow.app/en/article/white-desert-egypt.html",
+      "title": "White Desert Egypt: Chalk Formations Guide",
+      "content_text": "Plan a trip to Egypt's White Desert National Park: the chalk rock formations, overnight camping, how to get there from Farafra or Bahariya, and tips for 2026.",
+      "date_published": "2026-07-20",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/dahab-guide.html",
+      "url": "https://doyouknow.app/en/article/dahab-guide.html",
+      "title": "Dahab Guide: Egypt's Laid-Back Diving Town",
+      "content_text": "Plan your trip to Dahab: the Blue Hole, freediving culture, Bedouin camps, Mount Sinai treks, and practical tips for this relaxed Red Sea town in 2026.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/hurghada-guide.html",
+      "url": "https://doyouknow.app/en/article/hurghada-guide.html",
+      "title": "Hurghada Guide: Red Sea Beaches &amp; Water Sports",
+      "content_text": "Plan your trip to Hurghada: Giftun Island snorkeling, kitesurfing at El Gouna, desert safaris, best time to visit, and practical tips for 2026.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/sharm-el-sheikh-guide.html",
+      "url": "https://doyouknow.app/en/article/sharm-el-sheikh-guide.html",
+      "title": "Sharm El Sheikh Guide: Diving &amp; Resort Life",
+      "content_text": "Plan your trip to Sharm El Sheikh: Ras Mohammed National Park, Tiran Island diving, Naama Bay, best time to visit, and practical tips for 2026.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/siwa-oasis-guide.html",
+      "url": "https://doyouknow.app/en/article/siwa-oasis-guide.html",
+      "title": "Siwa Oasis Guide: Egypt's Remote Desert Town",
+      "content_text": "Plan your trip to Siwa Oasis: the Oracle Temple, Siwan Berber culture, salt lakes, Great Sand Sea excursions, and practical tips for 2026.",
+      "date_published": "2026-07-19",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/alexandria-travel-guide.html",
+      "url": "https://doyouknow.app/en/article/alexandria-travel-guide.html",
+      "title": "Alexandria Travel Guide: Egypt's Mediterranean City",
+      "content_text": "Plan your visit to Alexandria: the Bibliotheca Alexandrina, Qaitbay Citadel, catacombs, Mediterranean corniche, and practical tips for 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/aswan-travel-guide.html",
+      "url": "https://doyouknow.app/en/article/aswan-travel-guide.html",
+      "title": "Aswan Travel Guide: Nubian Culture &amp; the Nile",
+      "content_text": "Plan your visit to Aswan: the High Dam, Philae Temple, Abu Simbel day trips, Nubian villages, felucca sailing, and practical tips for 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/cairo-complete-guide.html",
+      "url": "https://doyouknow.app/en/article/cairo-complete-guide.html",
+      "title": "Cairo Complete Guide: Neighborhoods &amp; Sights",
+      "content_text": "A complete guide to Cairo: Islamic Cairo, Downtown, Zamalek, Giza, getting around the city, when to visit, and practical tips for 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/luxor-travel-guide.html",
+      "url": "https://doyouknow.app/en/article/luxor-travel-guide.html",
+      "title": "Luxor Travel Guide: Ancient Thebes &amp; Monuments",
+      "content_text": "Plan your visit to Luxor, ancient Thebes: Karnak and Luxor temples, the Valley of the Kings, hot air balloon rides, and practical tips for 2026.",
+      "date_published": "2026-07-18",
+      "tags": [
+        "Egypt"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/grand-egyptian-museum-guide.html",
       "url": "https://doyouknow.app/en/article/grand-egyptian-museum-guide.html",
       "title": "Grand Egyptian Museum: Complete Visitor Guide",
@@ -23,186 +203,6 @@
       "date_published": "2026-07-14",
       "tags": [
         "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/tutankhamun-facts.html",
-      "url": "https://doyouknow.app/en/article/tutankhamun-facts.html",
-      "title": "Tutankhamun: Facts About the Boy King",
-      "content_text": "Key facts about Tutankhamun: his short reign, the 1922 discovery of his tomb by Howard Carter, the golden mask, the curse myth, and how he actually died.",
-      "date_published": "2026-07-14",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/egyptian-mummies-facts.html",
-      "url": "https://doyouknow.app/en/article/egyptian-mummies-facts.html",
-      "title": "Egyptian Mummies: How Mummification Really Worked",
-      "content_text": "How ancient Egyptian mummification actually worked, step by step: natron drying, organ removal, canopic jars, linen wrapping, and where to see royal mummies today.",
-      "date_published": "2026-07-13",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/rosetta-stone-facts.html",
-      "url": "https://doyouknow.app/en/article/rosetta-stone-facts.html",
-      "title": "Rosetta Stone: Facts About the Key to Hieroglyphs",
-      "content_text": "How the Rosetta Stone was discovered, what it actually says, how it unlocked hieroglyphs in 1822, and why Egypt wants it back from the British Museum.",
-      "date_published": "2026-07-13",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/egyptian-pharaohs-guide.html",
-      "url": "https://doyouknow.app/en/article/egyptian-pharaohs-guide.html",
-      "title": "Egyptian Pharaohs: Guide to Ancient Egypt's Rulers",
-      "content_text": "Who were Egypt's pharaohs? A guide to the role, power, and most important rulers of ancient Egypt, from Djoser and Khufu to Hatshepsut, Ramesses II, and Cleopatra.",
-      "date_published": "2026-07-12",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/valley-of-the-kings-guide.html",
-      "url": "https://doyouknow.app/en/article/valley-of-the-kings-guide.html",
-      "title": "Valley of the Kings: Complete Visitor Guide",
-      "content_text": "Plan your visit to the Valley of the Kings in Luxor: history, Tutankhamun's tomb, ticket types, which tombs to prioritize, and practical tips for 2026.",
-      "date_published": "2026-07-12",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dewa-setup-guide.html",
-      "url": "https://doyouknow.app/en/article/dewa-setup-guide.html",
-      "title": "DEWA Setup and Bills: Moving Into a Dubai Home",
-      "content_text": "A move-in guide for DEWA activation, deposits, green bills, tariff logic, Ejari links, final bills, and practical monthly utility planning in Dubai.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-traffic-fines-guide.html",
-      "url": "https://doyouknow.app/en/article/dubai-traffic-fines-guide.html",
-      "title": "Dubai Traffic Fines: Checking, Paying, Black Points",
-      "content_text": "A resident guide to checking Dubai traffic fines, paying through official channels, understanding black points, vehicle impoundment, and avoiding repeat penalties.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/egypt-ancient-history.html",
-      "url": "https://doyouknow.app/en/article/egypt-ancient-history.html",
-      "title": "Ancient Egypt History: Complete Timeline Guide",
-      "content_text": "A complete timeline of ancient Egyptian history, from the unification of Upper and Lower Egypt around 3100 BCE through the Old, Middle, and New Kingdoms to Cleopatra.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/emirates-id-guide.html",
-      "url": "https://doyouknow.app/en/article/emirates-id-guide.html",
-      "title": "Emirates ID: Application, Renewal, and Replacement",
-      "content_text": "A resident-focused Emirates ID guide covering ICP applications, renewal timing, replacement cards, typing centers, delivery, and expiry fines.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/great-sphinx-facts.html",
-      "url": "https://doyouknow.app/en/article/great-sphinx-facts.html",
-      "title": "Great Sphinx of Giza: Facts, History &amp; Mystery",
-      "content_text": "Facts about the Great Sphinx of Giza: its size, who built it, why its nose is missing, the Dream Stele, and what archaeologists know versus what remains debated.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/renting-apartment-dubai.html",
-      "url": "https://doyouknow.app/en/article/renting-apartment-dubai.html",
-      "title": "Renting in Dubai: Ejari, RERA Calculator, Cheques",
-      "content_text": "A practical Dubai renting guide explaining Ejari, tenancy contracts, RERA rent guidance, cheques, deposits, notices, and move-in paperwork.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/uae-residence-visa-types.html",
-      "url": "https://doyouknow.app/en/article/uae-residence-visa-types.html",
-      "title": "UAE Residence Visas Compared: Work, Green, Golden, Family",
-      "content_text": "A decision-tree guide comparing UAE residence visa tracks for employees, freelancers, investors, families, students, retirees, and long-term residents.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/uae-school-year-guide.html",
-      "url": "https://doyouknow.app/en/article/uae-school-year-guide.html",
-      "title": "UAE School Year 2026-27: Terms, Fees, and Admissions",
-      "content_text": "A parent-focused UAE school year guide for 2026-27 covering KHDA, ADEK, admissions timing, fees, calendars, documents, and practical planning.",
-      "date_published": "2026-07-11",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/best-brunches-dubai.html",
-      "url": "https://doyouknow.app/en/article/best-brunches-dubai.html",
-      "title": "Best Brunches in Dubai",
-      "content_text": "An evergreen guide to Dubai brunches by format, neighborhood, cuisine, atmosphere, family suitability, booking style, and how to choose without stale prices.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-art-culture-scene.html",
-      "url": "https://doyouknow.app/en/article/dubai-art-culture-scene.html",
-      "title": "Dubai Art &amp; Culture Scene",
-      "content_text": "Explore Dubai art and culture through Alserkal Avenue, museums, heritage districts, galleries, design spaces, festivals, and practical planning tips.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Dubai & UAE Places"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-company-registration-cost.html",
-      "url": "https://doyouknow.app/en/article/dubai-company-registration-cost.html",
-      "title": "How Much Does It Cost to Register a Company in Dubai?",
-      "content_text": "An evergreen cost framework for Dubai company registration, covering license tiers, offices, visas, government fees, compliance, banking, and renewal planning.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "Business & Marketing"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-driving-car-guide.html",
-      "url": "https://doyouknow.app/en/article/dubai-driving-car-guide.html",
-      "title": "Dubai Driving &amp; Car Ownership Guide",
-      "content_text": "A descriptive Dubai driving and car ownership guide covering resident licences, road habits, buying, renting, insurance, Salik, parking, and practical safety.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/dubai-families-guide.html",
-      "url": "https://doyouknow.app/en/article/dubai-families-guide.html",
-      "title": "Dubai for Families",
-      "content_text": "Plan Dubai with kids using this family guide to attractions, parks, beaches, malls, school context, transport, heat planning, and relaxed itineraries.",
-      "date_published": "2026-07-10",
-      "tags": [
-        "UAE Practical Guides"
       ]
     }
   ]
