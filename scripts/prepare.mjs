@@ -136,7 +136,7 @@ function escapeHtml(value) {
 }
 
 function decodeHtmlEntities(value) {
-  return value.replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&quot;', '"').replaceAll('&#039;', "'");
+  return value.replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&quot;', '"').replaceAll('&#039;', "'").replaceAll('&#x27;', "'");
 }
 
 function absoluteUrl(relativePath) {
@@ -961,7 +961,7 @@ for (const group of categoryGroups) {
     articles.push({
       slug,
       title: decodeHtmlEntities(article.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '') || slug),
-      description: article.match(/<meta name="description" content="([^"]*)">/)?.[1] || '',
+      description: decodeHtmlEntities(article.match(/<meta name="description" content="([^"]*)">/)?.[1] || ''),
       noindex: editorialReview.has(`${group.lang}/article/${slug}.html`)
     });
   }
@@ -1097,8 +1097,8 @@ for (const file of searchFiles) {
   const html = await readFile(file, 'utf8');
   if (html.includes('name="robots" content="noindex')) continue;
 
-  const title = (html.match(/<title>([^<]+)<\/title>/)?.[1] || '').trim();
-  const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '';
+  const title = decodeHtmlEntities((html.match(/<title>([^<]+)<\/title>/)?.[1] || '').trim());
+  const description = decodeHtmlEntities(html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '');
 
   const lang = html.match(/<html[^>]*\blang="([^"]+)"/)?.[1] || (rel.startsWith('ar/') ? 'ar' : 'en');
 
