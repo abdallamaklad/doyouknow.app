@@ -335,6 +335,7 @@ World Cup scheduler already has its own audit (`audit-worldcup-scheduler.mjs`, p
 | 3.5 | Accessibility pass: alt-text audit rule, skip link, focus states, RTL mobile test | P2 | axe-core clean on 6 canary pages |
 
 ### Stage 4 — Content scaling and topic authority (ongoing)
+- **Trending-topic source of truth:** `google-trends-topics.md` (repo root) is refreshed every Monday and Thursday with topic suggestions. Check it before researching trending-topic batches (e.g. the technology hub) ad hoc — it supersedes manual web research when present and current.
 - Translate-adapt the 5 highest-demand AR-only evergreens into EN (The Line, AlUla, Diriyah, Edge of the World, Red Sea Project).
 - Deepen Dubai cluster (highest EN traffic potential): parking guide, salaries/cost-of-living, school guide — all evergreen, all safe.
 - Post-tournament World Cup wrap-up articles (results now historical fact = safe) to capture the long tail before interest decays.
