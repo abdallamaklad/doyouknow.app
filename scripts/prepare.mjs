@@ -135,6 +135,10 @@ function escapeHtml(value) {
   return value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 }
 
+function decodeHtmlEntities(value) {
+  return value.replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&quot;', '"').replaceAll('&#039;', "'");
+}
+
 function absoluteUrl(relativePath) {
   if (relativePath === 'index.html') return 'https://doyouknow.app/';
   if (relativePath === 'en/index.html') return 'https://doyouknow.app/en/';
@@ -956,7 +960,7 @@ for (const group of categoryGroups) {
     const article = await readFile(articlePath, 'utf8');
     articles.push({
       slug,
-      title: article.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '') || slug,
+      title: decodeHtmlEntities(article.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '') || slug),
       description: article.match(/<meta name="description" content="([^"]*)">/)?.[1] || '',
       noindex: editorialReview.has(`${group.lang}/article/${slug}.html`)
     });
