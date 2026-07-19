@@ -118,6 +118,27 @@
     closeBtn?.addEventListener('click', closeMenu);
     overlay?.addEventListener('click', closeMenu);
 
+    // --- Countries / Categories dropdown nav ---
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+        const dropdown = toggle.nextElementSibling;
+        function closeDropdown() { dropdown?.classList.remove('active'); toggle.setAttribute('aria-expanded', 'false'); }
+        function openDropdown() {
+            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
+            document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+            dropdown?.classList.add('active'); toggle.setAttribute('aria-expanded', 'true');
+        }
+        toggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggle.getAttribute('aria-expanded') === 'true' ? closeDropdown() : openDropdown();
+        });
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item-countries, .nav-item-categories')) {
+            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
+            document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+        }
+    });
+
     // --- Keyboard Shortcuts ---
     const isInputTarget = function(target) {
         return target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable;
@@ -156,6 +177,7 @@
         if (e.key === 'Escape') {
             closeMenu();
             closeKeyboardHelp();
+            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
             if (searchOverlay.classList.contains('active')) {
                 closeSearch();
             }

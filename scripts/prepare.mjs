@@ -77,7 +77,55 @@ const categoryGroups = [
   { lang: 'ar', slug: 'islamic', title: 'الثقافة والمعرفة الإسلامية', description: 'شروحات عربية واضحة حول العبادات والتمويل الإسلامي والمواسم الدينية مع احترام السياق والمصادر الموثوقة.', files: ['five-pillars-of-islam','hajj-guide','hijri-calendar-explained','islamic-finance-guide','islamic-new-year-celebrations','laylat-al-qadr-explained','ramadan-health-guide','sadaqah-vs-zakat','two-holy-mosques-history','umrah-guide','what-is-zakat'] },
   { lang: 'ar', slug: 'egypt', title: 'مصر: التاريخ والثقافة', description: 'اكتشف تاريخ مصر القديمة وفراعنتها ومعالمها وثقافتها الحية من خلال مقالات عربية واضحة وموثوقة.', files: ['pyramids-of-giza-facts','egypt-ancient-history','great-sphinx-facts','egyptian-pharaohs-guide','valley-of-the-kings-guide','egyptian-mummies-facts','rosetta-stone-facts','tutankhamun-facts','egyptian-hieroglyphs-guide','grand-egyptian-museum-guide','cairo-complete-guide','luxor-travel-guide','aswan-travel-guide','alexandria-travel-guide','sharm-el-sheikh-guide','hurghada-guide','dahab-guide','siwa-oasis-guide','nile-river-facts','red-sea-egypt-guide','white-desert-egypt','egypt-western-desert-guide','egyptian-cuisine-guide','koshari-egyptian-food-guide','coptic-heritage-egypt','islamic-cairo-guide','egyptian-music-culture','egyptian-traditional-crafts'] },
   { lang: 'ar', slug: 'egypt-guides', title: 'أدلة عملية في مصر', description: 'أدلة عربية واضحة للمسافرين إلى مصر، تغطي التأشيرات والعملة والتنقل وتخطيط الرحلة.', files: ['egypt-e-visa-guide','egypt-tourist-visa-guide','best-time-visit-egypt','getting-around-egypt','egypt-sim-mobile-guide','egypt-money-currency-guide','egypt-tipping-baksheesh-guide','egypt-safety-guide','cairo-airport-guide','nile-cruise-guide','egypt-driving-guide','egypt-bank-account-guide'] },
+  { lang: 'en', slug: 'around-the-world', title: 'Around the World', description: 'Global stories and cultural explainers from around the world, coming soon to doyouknow.app.', files: [] },
+  { lang: 'en', slug: 'self-care', title: 'Self Care', description: 'Practical self-care guidance for everyday wellbeing, mindfulness, and healthy routines, coming soon.', files: [] },
+  { lang: 'en', slug: 'science', title: 'Science', description: 'Clear explainers on science, discovery, and how the natural world works, coming soon to doyouknow.app.', files: [] },
+  { lang: 'en', slug: 'art', title: 'Art', description: 'Stories about art, design, and creative culture from the region and beyond, coming soon.', files: [] },
+  { lang: 'en', slug: 'stories', title: 'Stories', description: 'Human-interest stories and narrative features worth reading, coming soon to doyouknow.app.', files: [] },
+  { lang: 'en', slug: 'health', title: 'Health', description: 'Clear, carefully sourced explainers on health topics relevant to everyday life, coming soon.', files: [] },
+  { lang: 'en', slug: 'nutrition', title: 'Nutrition', description: 'Practical guidance on nutrition, diet, and healthy eating habits, coming soon to doyouknow.app.', files: [] },
+  { lang: 'en', slug: 'education', title: 'Education', description: 'Guides on education systems, learning paths, and academic opportunities, coming soon.', files: [] },
+  { lang: 'en', slug: 'family', title: 'Family', description: 'Practical guidance for family life, parenting, and household decisions, coming soon.', files: [] },
+  { lang: 'en', slug: 'people-society', title: 'People and Society', description: 'Explainers on culture, community, and how people live across the region, coming soon.', files: [] },
+  { lang: 'en', slug: 'entertainment-games', title: 'Entertainment and Games', description: 'Coverage of entertainment, gaming, and leisure culture, coming soon to doyouknow.app.', files: [] },
+  { lang: 'ar', slug: 'around-the-world', title: 'حول العالم', description: 'قصص وشروحات ثقافية من حول العالم، ستُضاف قريباً إلى doyouknow.app.', files: [] },
+  { lang: 'ar', slug: 'self-care', title: 'العناية الذاتية', description: 'إرشادات عملية للعناية الذاتية والراحة النفسية والعادات الصحية اليومية، قريباً على الموقع.', files: [] },
+  { lang: 'ar', slug: 'science', title: 'العلوم', description: 'شروحات واضحة عن العلوم والاكتشافات وكيفية عمل العالم الطبيعي، ستُضاف قريباً إلى الموقع.', files: [] },
+  { lang: 'ar', slug: 'art', title: 'الفن', description: 'قصص عن الفن والتصميم والثقافة الإبداعية من المنطقة والعالم، ستُضاف قريباً.', files: [] },
+  { lang: 'ar', slug: 'stories', title: 'قصص', description: 'قصص إنسانية وتقارير سردية تستحق القراءة، ستُضاف قريباً إلى doyouknow.app.', files: [] },
+  { lang: 'ar', slug: 'health', title: 'الصحة', description: 'شروحات موثوقة وواضحة عن مواضيع صحية تهم الحياة اليومية، ستُضاف قريباً إلى الموقع.', files: [] },
+  { lang: 'ar', slug: 'nutrition', title: 'التغذية', description: 'إرشادات عملية عن التغذية والنظام الغذائي وعادات الأكل الصحية، ستُضاف قريباً.', files: [] },
+  { lang: 'ar', slug: 'education', title: 'التعليم', description: 'أدلة عن الأنظمة التعليمية ومسارات التعلم والفرص الأكاديمية، ستُضاف قريباً إلى الموقع.', files: [] },
+  { lang: 'ar', slug: 'family', title: 'الأسرة', description: 'إرشادات عملية لحياة الأسرة وتربية الأبناء وقرارات المنزل اليومية، ستُضاف قريباً.', files: [] },
+  { lang: 'ar', slug: 'people-society', title: 'الناس والمجتمع', description: 'شروحات عن الثقافة والمجتمع وأسلوب حياة الناس في المنطقة، ستُضاف قريباً إلى الموقع.', files: [] },
+  { lang: 'ar', slug: 'entertainment-games', title: 'الترفيه والألعاب', description: 'تغطية للترفيه والألعاب وثقافة أوقات الفراغ، ستُضاف قريباً إلى doyouknow.app.', files: [] },
 ];
+
+const siteNav = {
+  countries: [
+    { slug: 'dubai', titleEn: 'UAE', titleAr: 'الإمارات' },
+    { slug: 'saudi', titleEn: 'KSA', titleAr: 'السعودية' },
+    { slug: 'egypt', titleEn: 'Egypt', titleAr: 'مصر' }
+  ],
+  categories: [
+    { slug: 'practical-guide', titleEn: 'Practical Guide', titleAr: 'دليل عملي', kind: 'aggregator' },
+    { slug: 'around-the-world', titleEn: 'Around the World', titleAr: 'حول العالم', kind: 'placeholder' },
+    { slug: 'self-care', titleEn: 'Self Care', titleAr: 'العناية الذاتية', kind: 'placeholder' },
+    { slug: 'business', titleEn: 'Business and Economy', titleAr: 'الأعمال والاقتصاد', kind: 'group' },
+    { slug: 'technology', titleEn: 'Technology', titleAr: 'التقنية', kind: 'group' },
+    { slug: 'science', titleEn: 'Science', titleAr: 'العلوم', kind: 'placeholder' },
+    { slug: 'art', titleEn: 'Art', titleAr: 'الفن', kind: 'placeholder' },
+    { slug: 'stories', titleEn: 'Stories', titleAr: 'قصص', kind: 'placeholder' },
+    { slug: 'health', titleEn: 'Health', titleAr: 'الصحة', kind: 'placeholder' },
+    { slug: 'nutrition', titleEn: 'Nutrition', titleAr: 'التغذية', kind: 'placeholder' },
+    { slug: 'islamic', titleEn: 'Islamic Knowledge', titleAr: 'المعرفة الإسلامية', kind: 'group' },
+    { slug: 'education', titleEn: 'Education', titleAr: 'التعليم', kind: 'placeholder' },
+    { slug: 'family', titleEn: 'Family', titleAr: 'الأسرة', kind: 'placeholder' },
+    { slug: 'people-society', titleEn: 'People and Society', titleAr: 'الناس والمجتمع', kind: 'placeholder' },
+    { slug: 'world-cup-2026', titleEn: 'Sports', titleAr: 'الرياضة', kind: 'external-reuse' },
+    { slug: 'entertainment-games', titleEn: 'Entertainment and Games', titleAr: 'الترفيه والألعاب', kind: 'placeholder' }
+  ]
+};
 const categoryByArticle = new Map(categoryGroups.flatMap((group) =>
   group.files.map((slug) => [`${group.lang}/article/${slug}.html`, group])
 ));
@@ -108,6 +156,30 @@ pairedPages.set('en/category/egypt.html', 'ar/category/egypt.html');
 pairedPages.set('ar/category/egypt.html', 'en/category/egypt.html');
 pairedPages.set('en/category/egypt-guides.html', 'ar/category/egypt-guides.html');
 pairedPages.set('ar/category/egypt-guides.html', 'en/category/egypt-guides.html');
+pairedPages.set('en/category/around-the-world.html', 'ar/category/around-the-world.html');
+pairedPages.set('ar/category/around-the-world.html', 'en/category/around-the-world.html');
+pairedPages.set('en/category/self-care.html', 'ar/category/self-care.html');
+pairedPages.set('ar/category/self-care.html', 'en/category/self-care.html');
+pairedPages.set('en/category/science.html', 'ar/category/science.html');
+pairedPages.set('ar/category/science.html', 'en/category/science.html');
+pairedPages.set('en/category/art.html', 'ar/category/art.html');
+pairedPages.set('ar/category/art.html', 'en/category/art.html');
+pairedPages.set('en/category/stories.html', 'ar/category/stories.html');
+pairedPages.set('ar/category/stories.html', 'en/category/stories.html');
+pairedPages.set('en/category/health.html', 'ar/category/health.html');
+pairedPages.set('ar/category/health.html', 'en/category/health.html');
+pairedPages.set('en/category/nutrition.html', 'ar/category/nutrition.html');
+pairedPages.set('ar/category/nutrition.html', 'en/category/nutrition.html');
+pairedPages.set('en/category/education.html', 'ar/category/education.html');
+pairedPages.set('ar/category/education.html', 'en/category/education.html');
+pairedPages.set('en/category/family.html', 'ar/category/family.html');
+pairedPages.set('ar/category/family.html', 'en/category/family.html');
+pairedPages.set('en/category/people-society.html', 'ar/category/people-society.html');
+pairedPages.set('ar/category/people-society.html', 'en/category/people-society.html');
+pairedPages.set('en/category/entertainment-games.html', 'ar/category/entertainment-games.html');
+pairedPages.set('ar/category/entertainment-games.html', 'en/category/entertainment-games.html');
+pairedPages.set('en/category/practical-guide.html', 'ar/category/practical-guide.html');
+pairedPages.set('ar/category/practical-guide.html', 'en/category/practical-guide.html');
 
 async function walk(dir) {
   const out = [];
@@ -351,6 +423,10 @@ function isCriticalSelector(selector) {
   if (s.startsWith('.lang-switch') || s.startsWith('.theme-toggle') || s.startsWith('.search-toggle')) return true;
   if (s.startsWith('.mobile-menu-btn')) return true;
   if (s.startsWith('.mobile-nav')) return true;
+  if (s.startsWith('.nav-dropdown')) return true;
+  if (s.startsWith('.nav-item-countries') || s.startsWith('.nav-item-categories')) return true;
+  if (s.startsWith('.mobile-nav-heading')) return true;
+  if (s.startsWith('.empty-category-state')) return true;
   if (s.startsWith('.hero-section')) return true;
   if (s.startsWith('.hero-inner')) return true;
   if (s.startsWith('.hero-title')) return true;
@@ -498,6 +574,140 @@ function linkExistingCategory(html, relativeFile) {
     .replace(/"item":\s*"https:\/\/doyouknow\.app\/(?:en|ar)\/category\/General\.html"/g, `"item": "${categoryUrl}"`);
   html = html.replace(/(<span class="category-badge[^"]*"><a href=")[^"]+(">)([\s\S]*?)(<\/a><\/span>)/, `$1${categoryHref}$2${escapeHtml(categoryTitle)}$4`);
   html = html.replace(/(<nav class="breadcrumb" aria-label="breadcrumb"><ol><li><a href="\/(?:en|ar)\/">[\s\S]*?<\/a><\/li><li><a href=")[^"]+(">)([\s\S]*?)(<\/a><\/li>)/, `$1${categoryHref}$2${escapeHtml(categoryTitle)}$4`);
+  return html;
+}
+
+
+function buildNavListItems(lang) {
+  const rtl = lang === 'ar';
+  const countries = siteNav.countries.map((c) => ({
+    href: `/${lang}/category/${c.slug}.html`,
+    label: rtl ? c.titleAr : c.titleEn
+  }));
+  const categories = siteNav.categories.map((c) => ({
+    href: `/${lang}/category/${c.slug}.html`,
+    label: rtl ? c.titleAr : c.titleEn
+  }));
+  return { countries, categories };
+}
+
+function renderFullHeader(lang) {
+  const rtl = lang === 'ar';
+  const home = `/${lang}/`;
+  const nav = buildNavListItems(lang);
+  const t = rtl ? {
+    skip: 'انتقل إلى المحتوى',
+    home: 'الرئيسية',
+    countries: 'الدول',
+    categories: 'الأقسام',
+    about: 'عن الموقع',
+    contact: 'اتصل بنا',
+    mainNavAria: 'التنقل الرئيسي',
+    search: 'بحث',
+    switchLang: 'تغيير اللغة',
+    switchLangLabel: 'English',
+    toggleDark: 'تبديل الوضع الداكن',
+    openMenu: 'فتح القائمة',
+    closeMenu: 'إغلاق القائمة',
+    mobileNavAria: 'القائمة المتنقلة'
+  } : {
+    skip: 'Skip to content',
+    home: 'Home',
+    countries: 'Countries',
+    categories: 'Categories',
+    about: 'About',
+    contact: 'Contact',
+    mainNavAria: 'Main navigation',
+    search: 'Search',
+    switchLang: 'Switch language',
+    switchLangLabel: 'العربية',
+    toggleDark: 'Toggle dark mode',
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
+    mobileNavAria: 'Mobile menu'
+  };
+
+  const countriesLis = nav.countries.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
+  const categoriesLis = nav.categories.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
+  const countriesMenuId = `countries-menu-${lang}`;
+  const categoriesMenuId = `categories-menu-${lang}`;
+
+  const desktopNav = `<nav class="main-nav" role="navigation" aria-label="${t.mainNavAria}"><ul class="nav-links"><li><a href="${home}">${t.home}</a></li><li class="nav-item-countries"><button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="${countriesMenuId}">${t.countries}</button><ul class="nav-dropdown" id="${countriesMenuId}">${countriesLis}</ul></li><li class="nav-item-categories"><button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="${categoriesMenuId}">${t.categories}</button><ul class="nav-dropdown nav-dropdown-mega" id="${categoriesMenuId}">${categoriesLis}</ul></li><li><a href="/${lang}/about.html">${t.about}</a></li><li><a href="/${lang}/contact.html">${t.contact}</a></li></ul></nav>`;
+
+  const header = `<header class="site-header" role="banner"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app home"><div class="logo-icon" aria-hidden="true"></div><span class="logo-text">doyouknow<span class="accent">.app</span></span></a>${desktopNav}<div class="header-controls"><button class="search-toggle" aria-label="${t.search}" title="${t.search}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><button class="lang-switch" aria-label="${t.switchLang}">${t.switchLangLabel}</button><button class="theme-toggle" aria-label="${t.toggleDark}">🌙</button></div><button class="mobile-menu-btn" aria-label="${t.openMenu}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button></div></header>`;
+
+  const mobileCountriesLis = nav.countries.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
+  const mobileCategoriesLis = nav.categories.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
+
+  const mobileNav = `<div class="mobile-nav-overlay" role="presentation" aria-hidden="true"></div><nav class="mobile-nav" aria-label="${t.mobileNavAria}"><button class="mobile-nav-close" aria-label="${t.closeMenu}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button><ul class="mobile-nav-links"><li><a href="${home}">${t.home}</a></li><li class="mobile-nav-heading">${t.countries}</li>${mobileCountriesLis}<li class="mobile-nav-heading">${t.categories}</li>${mobileCategoriesLis}<li><a href="/${lang}/about.html">${t.about}</a></li><li><a href="/${lang}/contact.html">${t.contact}</a></li></ul></nav>`;
+
+  return `<a href="#main-content" class="skip-link">${t.skip}</a>\n${header}\n${mobileNav}`;
+}
+
+function renderFullFooter(lang) {
+  const rtl = lang === 'ar';
+  const home = `/${lang}/`;
+  const t = rtl ? {
+    tagline: 'هل تعلم؟ الآن أنت تعلم.',
+    emailPlaceholder: 'أدخل بريدك الإلكتروني',
+    subscribe: 'اشترك',
+    explore: 'استكشف',
+    categoriesLabel: 'الأقسام',
+    didYouKnow: 'هل تعلم',
+    dubaiUae: 'دبي والإمارات',
+    guides: 'دليل عملي',
+    sitemap: 'خريطة الموقع',
+    company: 'الشركة',
+    aboutUs: 'من نحن',
+    workWithUs: 'اعمل معنا',
+    editorialPolicy: 'السياسة التحريرية',
+    contact: 'اتصل بنا',
+    privacy: 'الخصوصية',
+    terms: 'الشروط',
+    connect: 'تواصل',
+    newsletter: 'النشرة البريدية'
+  } : {
+    tagline: 'Did you know? Now you do.',
+    emailPlaceholder: 'Enter your email',
+    subscribe: 'Subscribe',
+    explore: 'Explore',
+    categoriesLabel: 'Categories',
+    didYouKnow: 'Did You Know',
+    dubaiUae: 'Dubai &amp; UAE',
+    guides: 'Guides',
+    sitemap: 'Sitemap',
+    company: 'Company',
+    aboutUs: 'About Us',
+    workWithUs: 'Work With Us',
+    editorialPolicy: 'Editorial Policy',
+    contact: 'Contact',
+    privacy: 'Privacy',
+    terms: 'Terms',
+    connect: 'Connect',
+    newsletter: 'Newsletter'
+  };
+
+  return `<footer class="site-footer" role="contentinfo"><div class="footer-inner"><div class="footer-brand"><span class="logo-text">doyouknow.app</span><p class="tagline">${t.tagline}</p><div class="footer-newsletter"><input type="email" placeholder="${t.emailPlaceholder}" aria-label="${t.emailPlaceholder}"><button class="btn btn-primary" type="button">${t.subscribe}</button></div></div><div class="footer-column"><p class="footer-heading">${t.explore}</p><ul class="footer-links"><li><a href="/${lang}/#categories">${t.categoriesLabel}</a></li><li><a href="${home}">${t.didYouKnow}</a></li><li><a href="/${lang}/category/dubai.html">${t.dubaiUae}</a></li><li><a href="/${lang}/category/practical-guide.html">${t.guides}</a></li><li><a href="/sitemap.xml">${t.sitemap}</a></li></ul></div><div class="footer-column"><p class="footer-heading">${t.company}</p><ul class="footer-links"><li><a href="/${lang}/about.html">${t.aboutUs}</a></li><li><a href="/${lang}/work-with-us.html">${t.workWithUs}</a></li><li><a href="/${lang}/about.html">${t.editorialPolicy}</a></li><li><a href="/${lang}/contact.html">${t.contact}</a></li><li><a href="/${lang}/privacy.html">${t.privacy}</a></li><li><a href="/${lang}/terms.html">${t.terms}</a></li></ul></div><div class="footer-column"><p class="footer-heading">${t.connect}</p><ul class="footer-links"><li><a href="https://instagram.com/doyouknowapp">Instagram</a></li><li><a href="https://tiktok.com/@doyouknowapp">TikTok</a></li><li><a href="https://twitter.com/doyouknowapp">X / Twitter</a></li><li><a href="https://youtube.com/doyouknowapp">YouTube</a></li><li><a href="https://wa.me/">WhatsApp</a></li><li><a href="#newsletter">${t.newsletter}</a></li></ul></div></div><div class="footer-bottom"><span class="copyright">© 2026 doyouknow.app</span><div class="social-links"><a href="https://instagram.com/doyouknowapp" target="_blank" rel="noopener" aria-label="IG Instagram">IG</a><a href="https://twitter.com/doyouknowapp" target="_blank" rel="noopener" aria-label="X / Twitter">X</a><a href="https://youtube.com/doyouknowapp" target="_blank" rel="noopener" aria-label="YT YouTube">YT</a><a href="https://tiktok.com/@doyouknowapp" target="_blank" rel="noopener" aria-label="TT TikTok">TT</a></div></div></footer>`;
+}
+
+function injectSharedHeader(html, relativeFile) {
+  if (relativeFile === 'en/newsletter-template.html' || relativeFile === 'ar/newsletter-template.html') return html;
+  const lang = /<html[^>]*\blang="ar"/.test(html) ? 'ar' : 'en';
+  html = html
+    .replace(/<a href="#main-content" class="skip-link">[\s\S]*?<\/a>\s*/, '')
+    .replace(/<header class="site-header"[\s\S]*?<\/header>\s*/, '')
+    .replace(/<div class="mobile-nav-overlay"[\s\S]*?<\/nav>\s*/, '')
+    .replace(/<footer class="site-footer"[\s\S]*?<\/footer>\s*/, '');
+  const headerBundle = renderFullHeader(lang);
+  const footerBundle = renderFullFooter(lang);
+  if (/<body[^>]*>/.test(html)) {
+    html = html.replace(/(<body[^>]*>)/, `$1${headerBundle}`);
+  }
+  if (html.includes('</body>')) {
+    html = html.replace('</body>', `${footerBundle}</body>`);
+  } else {
+    html += footerBundle;
+  }
   return html;
 }
 
@@ -855,35 +1065,13 @@ for (const file of htmlFiles) {
     .replaceAll('href="/ar/category/General.html">هل تعلم</a>', 'href="/ar/">هل تعلم</a>')
     .replaceAll('href="/ar/category/General.html">الأفضل</a>', 'href="/ar/category/saudi.html">الأفضل</a>')
     .replaceAll('href="/ar/category/General.html">قارن</a>', 'href="/ar/category/guides.html">قارن</a>');
-  html = html
-    .replace(/<a href="\/en\/category\/(?:uae|General)\.html" class="category-tile">(?=[\s\S]*?<h4>UAE history<\/h4>)[\s\S]*?<\/a>/g, '')
-    .replace(/<a href="\/en\/category\/General\.html" class="category-tile">(?=<div class="tile-icon">◈)/g, '<a href="/en/category/dubai.html" class="category-tile">')
-    .replace(/<a href="\/en\/category\/General\.html" class="category-tile">(?=<div class="tile-icon">✓)/g, '<a href="/en/category/guides.html" class="category-tile">')
-    .replace(/<a href="\/en\/category\/General\.html" class="category-tile">(?=<div class="tile-icon">✦)/g, '<a href="/en/category/technology.html" class="category-tile">')
-    .replaceAll('30 articles', '22 articles');
-  html = html.replace(
-    '<a href="/en/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>General</h4><span>30 articles</span></div></a>',
-    '<a href="/en/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>Dubai &amp; places</h4><span>14 articles</span></div></a><a href="/en/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>Practical guides</h4><span>6 articles</span></div></a><a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>'
-  );
-  html = html.replace(
-    '<a href="/ar/category/General.html" class="category-tile"><div class="tile-icon" style="background:#64748B15;color:#64748B;">📚</div><div class="tile-info"><h4>عام</h4><span>28 مقال</span></div></a>',
-    '<a href="/ar/category/dubai.html" class="category-tile"><div class="tile-icon">◈</div><div class="tile-info"><h4>دبي والإمارات</h4><span>19 مقالاً</span></div></a><a href="/ar/category/saudi.html" class="category-tile"><div class="tile-icon">🏛️</div><div class="tile-info"><h4>تاريخ السعودية</h4><span>10 مقالات</span></div></a><a href="/ar/category/vision-2030.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>رؤية 2030</h4><span>7 مقالات</span></div></a><a href="/ar/category/guides.html" class="category-tile"><div class="tile-icon">✓</div><div class="tile-info"><h4>أدلة عملية</h4><span>8 مقالات</span></div></a><a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>11 مقالاً</span></div></a>'
-  );
-  html = html
-    .replaceAll('<span>13 articles</span>', '<span>14 articles</span>')
-    .replaceAll('<span>5 مقالات</span></div></a><a href="/ar/category/islamic.html"', '<span>11 مقالاً</span></div></a><a href="/ar/category/islamic.html"')
-    .replaceAll('<span>6 مقالات</span></div></a><a href="/ar/category/islamic.html"', '<span>11 مقالاً</span></div></a><a href="/ar/category/islamic.html"');
-  if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
-    html = html.replace(
-      '<a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a>',
-      '<a href="/en/category/technology.html" class="category-tile"><div class="tile-icon">✦</div><div class="tile-info"><h4>Technology</h4><span>2 articles</span></div></a><a href="/en/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>World Cup 2026</h4><span>20 articles</span></div></a>'
-    );
-  }
-  if (relativeFile === 'ar/index.html' && !html.includes('/ar/category/world-cup-2026.html')) {
-    html = html.replace(
-      '<a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>11 مقالاً</span></div></a>',
-      '<a href="/ar/category/islamic.html" class="category-tile"><div class="tile-icon">◆</div><div class="tile-info"><h4>معرفة إسلامية</h4><span>11 مقالاً</span></div></a><a href="/ar/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>كأس العالم 2026</h4><span>20 مقالاً</span></div></a>'
-    );
+  if (relativeFile === 'en/index.html' || relativeFile === 'ar/index.html') {
+    const tileLang = relativeFile.startsWith('ar/') ? 'ar' : 'en';
+    const homepageTileSlugs = ['practical-guide', 'technology', 'business', 'islamic', 'world-cup-2026'];
+    const homepageTileIcons = { 'practical-guide': '✓', technology: '✦', business: '💼', islamic: '◆', 'world-cup-2026': '⚽' };
+    const tileLabels = new Map(siteNav.categories.map((c) => [c.slug, tileLang === 'ar' ? c.titleAr : c.titleEn]));
+    const tilesHtml = homepageTileSlugs.map((slug) => `<a href="/${tileLang}/category/${slug}.html" class="category-tile"><div class="tile-icon">${homepageTileIcons[slug]}</div><div class="tile-info"><span class="tile-title">${escapeHtml(tileLabels.get(slug))}</span></div></a>`).join('');
+    html = html.replace(/<div class="category-explorer">[\s\S]*?<\/div>\s*(?=<div class="section-header">)/, `<div class="category-explorer">${tilesHtml}</div>\n`);
   }
   html = html.replaceAll('"url": "/assets/images/logo.png"', '"url": "https://doyouknow.app/assets/images/logo.png"');
   if (!html.includes('rel="icon"')) {
@@ -911,6 +1099,7 @@ for (const file of htmlFiles) {
   html = optimizeImageAttributes(html);
   html = normalizePerformanceAndAccessibility(html);
   html = linkExistingCategory(html, relativeFile);
+  html = injectSharedHeader(html, relativeFile);
   // --- PWA manifest, apple-touch-icon, and theme-color ---
   const pageLang = /<html[^>]*\blang="ar"/.test(html) ? 'ar' : 'en';
   const manifestHref = pageLang === 'ar' ? '/manifest-ar.json' : '/manifest.json';
@@ -925,18 +1114,7 @@ for (const file of htmlFiles) {
   } else {
     html = html.replace('</head>', '<meta name="theme-color" content="#F59E0B">\n</head>');
   }
-  if (relativeFile === 'en/index.html' && !html.includes('/en/category/world-cup-2026.html')) {
-    html = html.replace(
-      '</div><div class="section-header">\n<h2>Latest Articles</h2>',
-      '<a href="/en/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>World Cup 2026</h4><span>20 articles</span></div></a>\n</div><div class="section-header">\n<h2>Latest Articles</h2>'
-    );
-  }
-  if (relativeFile === 'ar/index.html' && !html.includes('/ar/category/world-cup-2026.html')) {
-    html = html.replace(
-      '</div><div class="section-header">\n<h2>أحدث المقالات</h2>',
-      '<a href="/ar/category/world-cup-2026.html" class="category-tile"><div class="tile-icon">⚽</div><div class="tile-info"><h4>كأس العالم 2026</h4><span>20 مقالاً</span></div></a>\n</div><div class="section-header">\n<h2>أحدث المقالات</h2>'
-    );
-  }
+
   html = normalizePerformanceAndAccessibility(html);
   html = injectResourceHints(html);
   html = injectCriticalCSS(html, criticalCSS);
@@ -968,20 +1146,53 @@ for (const group of categoryGroups) {
   const rtl = group.lang === 'ar';
   const canonical = `https://doyouknow.app/${group.lang}/category/${group.slug}.html`;
   const home = `/${group.lang}/`;
-  const cards = articles.map((article, index) => {
-    const delay = (index % 3) + 1;
-    const priority = articles.indexOf(article) < 3
-      ? 'loading="eager" fetchpriority="high"'
-      : 'loading="lazy"';
-    const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="800" height="450" ${priority}>`;
-    return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card reveal reveal-delay-${delay}">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
-  }).join('');
+  const cards = articles.length > 0
+    ? `<div class="article-grid">${articles.map((article, index) => {
+        const delay = (index % 3) + 1;
+        const priority = index < 3
+          ? 'loading="eager" fetchpriority="high"'
+          : 'loading="lazy"';
+        const image = `<img class="card-image" src="${articleImagePath(group.lang, article.slug)}" alt="" width="800" height="450" ${priority}>`;
+        return `<a href="/${group.lang}/article/${article.slug}.html" class="article-card reveal reveal-delay-${delay}">${image}<div class="card-content"><span class="category-badge">${escapeHtml(group.title)}</span><h2 class="card-title">${escapeHtml(article.title)}</h2><p class="card-excerpt">${escapeHtml(article.description)}</p></div></a>`;
+      }).join('')}</div>`
+    : `<div class="empty-category-state"><p>${rtl ? 'قريباً: المزيد من المقالات في هذا القسم.' : 'More articles for this category are coming soon.'}</p><a href="${home}" class="btn btn-secondary">${rtl ? 'استكشف كل المقالات' : 'Explore all articles'}</a></div>`;
+  const visionCrossLink = group.slug === 'saudi'
+    ? `<p class="hero-subtitle" style="margin-inline:0"><a href="/${group.lang}/category/vision-2030.html">${rtl ? 'استكشف أيضاً رؤية السعودية 2030 والمشاريع الكبرى ←' : 'Also explore Saudi Vision 2030 & Megaprojects →'}</a></p>`
+    : '';
   const itemList = articles.filter((a) => !a.noindex).map((article, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://doyouknow.app/${group.lang}/article/${article.slug}.html`, name: article.title }));
   const alternateBlock = hreflangBlock(`${group.lang}/category/${group.slug}.html`, group.lang, canonical);
   const manifestLink = rtl ? '<link rel="manifest" href="/manifest-ar.json">' : '<link rel="manifest" href="/manifest.json">';
-  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta name="theme-color" content="#F59E0B">${manifestLink}<link rel="apple-touch-icon" href="/assets/images/icon-192.png"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}<link rel="alternate" type="application/rss+xml" title="RSS" href="/${group.lang}/rss.xml"><link rel="alternate" type="application/json" title="JSON Feed" href="/${group.lang}/feed.json"></head><body><a href="#main-content" class="skip-link">${rtl ? 'انتقل إلى المحتوى' : 'Skip to content'}</a><header class="site-header"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app"><span class="logo-text">doyouknow<span class="accent">.app</span></span></a><nav class="main-nav" aria-label="${rtl ? 'التنقل الرئيسي' : 'Main navigation'}"><ul class="nav-links"><li><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a></li><li><a href="${home}">${rtl ? 'كل المقالات' : 'All articles'}</a></li><li><a href="/${rtl ? 'en' : 'ar'}/">${rtl ? 'English' : 'العربية'}</a></li></ul></nav></div></header><main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p><div class="article-grid">${cards}</div></section></main><footer class="site-footer"><div class="footer-bottom"><span>© 2026 doyouknow.app</span><a href="${home}">${rtl ? 'الرئيسية' : 'Home'}</a>${rtl ? ' · <a href="/ar/work-with-us.html">اعمل معنا</a>' : ' · <a href="/en/work-with-us.html">Work With Us</a>'}</div></footer><script src="/assets/js/site.js" defer></script></body></html>`;
+  const page = `<!doctype html><html lang="${group.lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(group.description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta name="theme-color" content="#F59E0B">${manifestLink}<link rel="apple-touch-icon" href="/assets/images/icon-192.png"><meta property="og:title" content="${escapeHtml(group.title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(group.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${group.lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(group.title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:group.title, description:group.description, url:canonical, inLanguage:group.lang, mainEntity:{ '@type':'ItemList', itemListElement:itemList } })}</script>${googleTag}<link rel="alternate" type="application/rss+xml" title="RSS" href="/${group.lang}/rss.xml"><link rel="alternate" type="application/json" title="JSON Feed" href="/${group.lang}/feed.json"></head><body>${renderFullHeader(group.lang)}<main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(group.title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(group.description)}</p>${visionCrossLink}${cards}</section></main>${renderFullFooter(group.lang)}<script src="/assets/js/site.js" defer></script></body></html>`;
   await writeFile(join(root, group.lang, 'category', `${group.slug}.html`), injectCriticalCSS(optimizeImageAttributes(page), criticalCSS));
 }
+
+async function renderGuidesAggregatorPage(lang) {
+  const rtl = lang === 'ar';
+  const canonical = `https://doyouknow.app/${lang}/category/practical-guide.html`;
+  const title = rtl ? 'دليل عملي' : 'Practical Guide';
+  const description = rtl
+    ? 'تصفح الأدلة العملية للإمارات والسعودية ومصر في مكان واحد، وتغطي التأشيرات والعملة والتنقل وخطوات الإقامة.'
+    : 'Browse practical guides for the UAE, Saudi Arabia, and Egypt in one place, covering visas, money, transport, and everyday planning.';
+  const tiles = rtl
+    ? [
+        { href: '/ar/category/guides.html', label: 'أدلة الإمارات والسعودية', icon: '✓' },
+        { href: '/ar/category/egypt-guides.html', label: 'أدلة مصر', icon: '✓' }
+      ]
+    : [
+        { href: '/en/category/guides.html', label: 'UAE Guides', icon: '✓' },
+        { href: '/en/category/saudi-guides.html', label: 'Saudi Guides', icon: '✓' },
+        { href: '/en/category/egypt-guides.html', label: 'Egypt Guides', icon: '✓' }
+      ];
+  const tilesHtml = tiles.map((tile) => `<a href="${tile.href}" class="category-tile"><div class="tile-icon">${tile.icon}</div><div class="tile-info"><span class="tile-title">${escapeHtml(tile.label)}</span></div></a>`).join('');
+  const alternateBlock = hreflangBlock(`${lang}/category/practical-guide.html`, lang, canonical);
+  const manifestLink = rtl ? '<link rel="manifest" href="/manifest-ar.json">' : '<link rel="manifest" href="/manifest.json">';
+  const page = `<!doctype html><html lang="${lang}"${rtl ? ' dir="rtl"' : ''} data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index, follow"><link rel="canonical" href="${canonical}">${alternateBlock}<link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml"><meta name="theme-color" content="#F59E0B">${manifestLink}<link rel="apple-touch-icon" href="/assets/images/icon-192.png"><meta property="og:title" content="${escapeHtml(title)} | doyouknow.app"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://doyouknow.app/assets/images/og-${lang}.png"><meta name="twitter:card" content="summary_large_image"><title>${escapeHtml(title)} | doyouknow.app</title><link rel="stylesheet" href="/assets/css/style.css"><script type="application/ld+json">${JSON.stringify({ '@context':'https://schema.org', '@type':'CollectionPage', name:title, description, url:canonical, inLanguage:lang })}</script>${googleTag}<link rel="alternate" type="application/rss+xml" title="RSS" href="/${lang}/rss.xml"><link rel="alternate" type="application/json" title="JSON Feed" href="/${lang}/feed.json"></head><body>${renderFullHeader(lang)}<main id="main-content"><section class="content-section"><p class="category-badge">doyouknow.app</p><h1>${escapeHtml(title)}</h1><p class="hero-subtitle" style="margin-inline:0">${escapeHtml(description)}</p><div class="category-explorer">${tilesHtml}</div></section></main>${renderFullFooter(lang)}<script src="/assets/js/site.js" defer></script></body></html>`;
+  await writeFile(join(root, lang, 'category', 'practical-guide.html'), injectCriticalCSS(optimizeImageAttributes(page), criticalCSS));
+}
+
+await renderGuidesAggregatorPage('en');
+await renderGuidesAggregatorPage('ar');
+
 
 const sitemapFiles = (await walk(root)).filter((path) => path.endsWith('.html'));
 const sitemapUrls = new Map();
