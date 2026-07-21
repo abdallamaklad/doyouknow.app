@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Saudi Retirement and Pensions: Ages, Rules, and GOSI Explained — doyouknow.app illustration</title>
+  <desc id="desc">Original doyouknow.app editorial artwork for Saudi Retirement and Pensions: Ages, Rules, and GOSI Explained.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#701A10"/><stop offset="58%" stop-color="#C2410C"/><stop offset="100%" stop-color="#0F766E"/></linearGradient>
+    <radialGradient id="glow" cx="76%" cy="22%" r="58%"><stop offset="0%" stop-color="#fff" stop-opacity=".35"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2.5" fill="#fff" opacity=".16"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#020617" flood-opacity=".38"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/><rect width="1200" height="675" fill="url(#dots)" opacity=".72"/><circle cx="884" cy="170" r="360" fill="url(#glow)"/>
+  <path d="M0 520 C160 438 302 560 460 478 C632 388 772 496 936 414 C1049 357 1136 372 1200 338 L1200 675 L0 675Z" fill="#fff" opacity=".13"/>
+  <g filter="url(#shadow)">
+    <circle cx="620" cy="400" r="90" fill="none" stroke="#FDE68A" stroke-width="18" opacity=".85"/>
+    <path d="M360 500h520" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".72"/>
+    <path d="M480 500c0-90 20-150 40-190M520 310c-50-10-90 10-110 50M520 310c10-55-10-95-50-115M520 310c50-30 100-30 140 0M520 310c60 0 100 30 115 70" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".72"/>
+    <path d="M760 500c0-60 12-100 26-126M786 374c-34-8-60 6-74 34M786 374c6-38-8-64-34-78M786 374c34-20 68-20 94 0M786 374c40 0 66 20 78 46" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" opacity=".62"/>
+  </g>
+  <text x="120" y="122" text-anchor="start" fill="#fff" opacity=".82" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
+  <text x="120" y="196" text-anchor="start" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900">Saudi Retirement &amp; Pensions:</text>
+  <text x="120" y="248" text-anchor="start" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900">Ages, Rules &amp; GOSI Explained</text>
+  <text x="120" y="306" text-anchor="start" fill="#fff" opacity=".86" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Saudi Practical Guides</text>
+  <rect x="120" y="336" width="320" height="8" rx="4" fill="#FDE68A"/>
+</svg>
