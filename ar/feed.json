@@ -86,6 +86,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/history-of-trivia-games.html",
+      "url": "https://doyouknow.app/ar/article/history-of-trivia-games.html",
+      "title": "كيف أصبحت ألعاب المعلومات العامة رائجة",
+      "content_text": "من مسابقات الراديو إلى Trivial Pursuit إلى أمسيات الحانات، إليك كيف تحولت متعة اختبار المعرفة البسيطة إلى هواية عالمية.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "الترفيه والألعاب"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-ancient-egyptians-told-time.html",
       "url": "https://doyouknow.app/ar/article/how-ancient-egyptians-told-time.html",
       "title": "كيف كان المصريون القدماء يحسبون الوقت",
@@ -126,10 +136,40 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-olympic-host-cities-are-chosen.html",
+      "url": "https://doyouknow.app/ar/article/how-olympic-host-cities-are-chosen.html",
+      "title": "كيف يتم اختيار المدن المضيفة للأولمبياد",
+      "content_text": "استضافة الأولمبياد تتطلب سنوات من الترشح والتقييم الفني والتصويت من أعضاء اللجنة الأولمبية الدولية. إليك كيف تفوز مدينة فعلياً باستضافة الألعاب.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "حول العالم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-stock-markets-work.html",
+      "url": "https://doyouknow.app/ar/article/how-stock-markets-work.html",
+      "title": "كيف تعمل الأسواق المالية",
+      "content_text": "تتيح الأسواق المالية للمستثمرين شراء وبيع حصص ملكية صغيرة في الشركات. إليك كيف يعمل اكتشاف الأسعار والطرح العام والبورصات فعلياً.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/legend-of-atlantis.html",
       "url": "https://doyouknow.app/ar/article/legend-of-atlantis.html",
       "title": "أسطورة أتلانتس المفقودة",
       "content_text": "وصف أفلاطون أتلانتس كحضارة جزيرة مفقودة قبل 2400 عام. إليك ما كتبه فعلياً ولماذا لا يزال العلماء يتجادلون حول معناها.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "قصص"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/legend-of-el-dorado.html",
+      "url": "https://doyouknow.app/ar/article/legend-of-el-dorado.html",
+      "title": "أسطورة إل دورادو",
+      "content_text": "بدأت إل دورادو كطقس حقيقي يتضمن ملكاً ذهبياً، ثم تحولت إلى أسطورة مدينة ضائعة دفعت قروناً من الحملات الفاشلة.",
       "date_published": "2026-07-25",
       "tags": [
         "قصص"
@@ -146,63 +186,23 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/sovereign-wealth-funds-explained.html",
-      "url": "https://doyouknow.app/ar/article/sovereign-wealth-funds-explained.html",
-      "title": "ما هو صندوق الثروة السيادية؟",
-      "content_text": "تدير صناديق الثروة السيادية تريليونات من مدخرات الدول، من صندوق النرويج إلى عمالقة الإمارات والسعودية وقطر. إليك كيف تعمل فعلياً.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-are-love-languages.html",
-      "url": "https://doyouknow.app/ar/article/what-are-love-languages.html",
-      "title": "ما هي لغات الحب الخمس؟",
-      "content_text": "يقترح إطار لغات الحب الخمس أن الناس يفضلون طرقاً مختلفة لإعطاء الحب وتلقيه. إليك ما يقوله الإطار وما تُظهره الأبحاث.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الأسرة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-cholesterol.html",
-      "url": "https://doyouknow.app/ar/article/what-is-cholesterol.html",
-      "title": "فهم الكوليسترول: الأساسيات",
-      "content_text": "الكوليسترول ليس ضاراً بالكامل — يحتاجه جسمك. إليك الفرق الحقيقي بين LDL وHDL والدهون الثلاثية، وما يؤثر فعلياً على أرقامك.",
+      "id": "https://doyouknow.app/ar/article/migraine-vs-headache-difference.html",
+      "url": "https://doyouknow.app/ar/article/migraine-vs-headache-difference.html",
+      "title": "الشقيقة والصداع: ما الفرق؟",
+      "content_text": "ليس كل ألم في الرأس متشابهاً. إليك كيف تختلف الشقيقة عن صداع التوتر العادي، ولماذا يؤثر هذا الفرق على العلاج.",
       "date_published": "2026-07-25",
       "tags": [
         "الصحة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/what-is-decision-fatigue.html",
-      "url": "https://doyouknow.app/ar/article/what-is-decision-fatigue.html",
-      "title": "ما هو إرهاق اتخاذ القرار؟",
-      "content_text": "إرهاق اتخاذ القرار يفسّر لماذا تسوء خياراتك كلما اتخذت قرارات أكثر خلال اليوم — أثبتته بشكل شهير دراسة على قضاة الإفراج المشروط.",
+      "id": "https://doyouknow.app/ar/article/only-child-personality-myths.html",
+      "url": "https://doyouknow.app/ar/article/only-child-personality-myths.html",
+      "title": "خرافات شخصية الطفل الوحيد: تدقيق الحقائق",
+      "content_text": "كثيراً ما يُوصف الطفل الوحيد بأنه مدلل أو وحيد اجتماعياً. إليك ما تُظهره الأبحاث الفعلية عن سمات شخصية الطفل الوحيد.",
       "date_published": "2026-07-25",
       "tags": [
-        "العناية الذاتية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-fermentation.html",
-      "url": "https://doyouknow.app/ar/article/what-is-fermentation.html",
-      "title": "ما هو التخمير؟",
-      "content_text": "يحفظ التخمير الطعام باستخدام بكتيريا أو خميرة أو فطريات، ويعود تاريخه لأكثر من 9000 عام. إليك كيف يعمل فعلياً وما الذي يجعله صحياً.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "التغذية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-kinetic-art.html",
-      "url": "https://doyouknow.app/ar/article/what-is-kinetic-art.html",
-      "title": "ما هو الفن الحركي؟",
-      "content_text": "يحوّل الفن الحركي الحركة الحقيقية إلى وسيط بحد ذاته، من موبايلات كالدر المدفوعة بالرياح إلى المنحوتات المزودة بمحركات اليوم. إليك كيف بدأ.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الفن"
+        "الأسرة"
       ]
     }
   ]
