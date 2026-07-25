@@ -19,6 +19,8 @@ Open `http://127.0.0.1:4173`. English lives under `/en/`, Arabic under `/ar/` wi
 3. Install `deploy/nginx.conf`, test Nginx, and issue a TLS certificate with Certbot.
 4. Add `VPS_HOST`, `VPS_USER`, `VPS_PATH`, and `VPS_SSH_KEY` as GitHub Actions secrets for continuous deployment.
 
+The workflow uses rsync `--delete` for the public tree, so removed HTML and assets do not remain on the VPS as stale URLs. Review the deletion-safe release gate and manual dry-run procedure in [docs/SAFE_RELEASE.md](docs/SAFE_RELEASE.md) before a production release.
+
 The current VPS uses Caddy in Docker alongside other applications. Its production site block is maintained in `deploy/Caddyfile.doyouknow`; mount `/var/www/doyouknow/current` at `/srv/doyouknow:ro` in the existing Caddy service.
 
 ## World Cup 2026 live updater

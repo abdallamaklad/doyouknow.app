@@ -1,5 +1,6 @@
 import { readdir, readFile, writeFile, mkdir, access } from 'node:fs/promises';
-import { join, dirname, basename } from 'node:path';
+import { accessSync, constants as fsConstants } from 'node:fs';
+import { join, dirname, basename, delimiter } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
@@ -78,10 +79,15 @@ function isArabicSvg(svg) {
 
 function findChromeExecutable() {
   const candidates = [
+    // Explicit configuration always wins. This is used by CI and Linux hosts
+    // where Chrome is installed outside the standard package paths.
     process.env.PUPPETEER_EXECUTABLE_PATH,
+    process.env.CHROME_PATH,
+    // Preserve the existing macOS behavior.
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary',
     '/Applications/Chromium.app/Contents/MacOS/Chromium',
+    // Common Linux package locations.
     '/usr/bin/google-chrome',
     '/usr/bin/google-chrome-stable',
     '/usr/bin/chromium',
@@ -89,10 +95,15 @@ function findChromeExecutable() {
     '/usr/local/bin/google-chrome',
     '/usr/local/bin/chromium',
     '/snap/bin/chromium',
+    // Finally discover a browser installed elsewhere on PATH.
+    ...((process.env.PATH || '').split(delimiter).filter(Boolean).map((dir) =>
+      ['google-chrome', 'google-chrome-stable', 'chromium', 'chromium-browser']
+        .map((name) => join(dir, name))
+    ).flat()),
   ].filter(Boolean);
   return candidates.find((p) => {
     try {
-      access(p);
+      accessSync(p, fsConstants.X_OK);
       return true;
     } catch {
       return false;

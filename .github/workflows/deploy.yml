@@ -24,4 +24,7 @@ jobs:
           REMOTE_HOST: ${{ env.VPS_HOST }}
           REMOTE_USER: ${{ env.VPS_USER }}
           TARGET: ${{ env.VPS_PATH }}
+          # Mirror the generated tree, deleting removed HTML/assets so stale
+          # footer URLs cannot survive on the VPS. Review VPS_PATH before merge.
+          ARGS: "-rlptgoDz --delete"
           EXCLUDE: "/.git/, /.github/, /scripts/, package.json, package-lock.json, README.md, /deploy/, /docs/, /marketing/, /research/, /design/, editorial-review.json, seo-audit-report-2026-06-30.md, traffic-monetization-plan.md, MASTER_DOYOUKNOW_STRATEGY.md, MARKETING_STRATEGY.md"
