@@ -86,6 +86,46 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/history-of-stained-glass-art.html",
+      "url": "https://doyouknow.app/en/article/history-of-stained-glass-art.html",
+      "title": "The History of Stained Glass Art",
+      "content_text": "Stained glass windows turned church walls into glowing storytelling devices for a population who mostly couldn't read. Here's how the technique developed over a thousand years.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Art"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-tabletop-role-playing-games.html",
+      "url": "https://doyouknow.app/en/article/history-of-tabletop-role-playing-games.html",
+      "title": "The History of Tabletop Role-Playing Games",
+      "content_text": "Dungeons & Dragons grew out of a hobby for refighting Napoleonic battles with miniature figures. Here's how tabletop RPGs became their own category of game.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-the-abacus.html",
+      "url": "https://doyouknow.app/en/article/history-of-the-abacus.html",
+      "title": "The History of the Abacus",
+      "content_text": "Long before calculators, merchants used a simple frame of beads to add, subtract, and multiply at remarkable speed. Here's how it evolved across civilizations.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Education"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-the-jigsaw-puzzle.html",
+      "url": "https://doyouknow.app/en/article/history-of-the-jigsaw-puzzle.html",
+      "title": "The History of the Jigsaw Puzzle",
+      "content_text": "The jigsaw puzzle started as a geography teaching tool cut apart with a hand saw, not as a toy for children to play with. Here's how it became a global pastime.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/history-of-the-kaaba-kiswah.html",
       "url": "https://doyouknow.app/en/article/history-of-the-kaaba-kiswah.html",
       "title": "The History of the Kaaba's Kiswah",
@@ -146,6 +186,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-credit-scores-work.html",
+      "url": "https://doyouknow.app/en/article/how-credit-scores-work.html",
+      "title": "How Do Credit Scores Actually Work?",
+      "content_text": "A credit score compresses years of borrowing behavior into a single number lenders use to judge risk. Here's what actually goes into the calculation, and why it can vary.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-currency-pegs-work.html",
       "url": "https://doyouknow.app/en/article/how-currency-pegs-work.html",
       "title": "How Currency Pegs Work",
@@ -153,56 +203,6 @@
       "date_published": "2026-07-25",
       "tags": [
         "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-do-hurricanes-form.html",
-      "url": "https://doyouknow.app/en/article/how-do-hurricanes-form.html",
-      "title": "How Do Hurricanes Actually Form?",
-      "content_text": "Hurricanes begin as ordinary tropical storms over warm ocean water. Here's the exact chain of conditions that turns one into a spinning giant, and why its eye stays eerily calm.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-franchising-works.html",
-      "url": "https://doyouknow.app/en/article/how-franchising-works.html",
-      "title": "How Franchising Actually Works",
-      "content_text": "Franchising lets brands expand using someone else's capital and labor. Here's how the fees, royalties, and control actually work behind the model.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-olympic-host-cities-are-chosen.html",
-      "url": "https://doyouknow.app/en/article/how-olympic-host-cities-are-chosen.html",
-      "title": "How Olympic Host Cities Are Chosen",
-      "content_text": "Hosting the Olympics takes years of bidding, technical evaluation, and a vote by IOC members. Here's how a city actually wins the Games.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Around the World"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-stock-markets-work.html",
-      "url": "https://doyouknow.app/en/article/how-stock-markets-work.html",
-      "title": "How Stock Markets Work",
-      "content_text": "Stock markets let investors buy and sell tiny ownership stakes in companies. Here's how price discovery, IPOs, and exchanges actually work.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-the-flipped-classroom-works.html",
-      "url": "https://doyouknow.app/en/article/how-the-flipped-classroom-works.html",
-      "title": "How the Flipped Classroom Model Works",
-      "content_text": "Two chemistry teachers began recording lectures for students who missed class, then noticed the recordings worked better than class itself. That accident became a teaching model.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Education"
       ]
     }
   ]
