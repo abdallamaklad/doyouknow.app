@@ -72,15 +72,25 @@
         return PREFERS_DARK.matches ? 'dark' : 'light';
     }
 
-    function setTheme(theme) {
+    function applyTheme(theme, options) {
+        const track = !options || options.track !== false;
         html.setAttribute('data-theme', theme);
-        localStorage.setItem(STORAGE_KEY, theme);
         const btn = document.querySelector('.theme-toggle');
         if (btn) btn.innerHTML = theme === 'dark' ? '☀️' : '🌙';
-        sendGA4Event('dark_mode_toggle', { theme: theme });
+        if (track) {
+            sendGA4Event('dark_mode_toggle', {
+                theme: theme,
+                method: options && options.method ? options.method : 'user_toggle'
+            });
+        }
     }
 
-    setTheme(getTheme());
+    function setTheme(theme, method) {
+        localStorage.setItem(STORAGE_KEY, theme);
+        applyTheme(theme, { track: true, method: method || 'user_toggle' });
+    }
+
+    applyTheme(getTheme(), { track: false });
 
     document.querySelector('.theme-toggle')?.addEventListener('click', function() {
         const current = html.getAttribute('data-theme');
@@ -89,7 +99,7 @@
 
     PREFERS_DARK.addEventListener('change', function(e) {
         if (!localStorage.getItem(STORAGE_KEY)) {
-            setTheme(e.matches ? 'dark' : 'light');
+            setTheme(e.matches ? 'dark' : 'light', 'system_preference');
         }
     });
 
@@ -892,9 +902,11 @@
             window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(subject) +
                 '&body=' + encodeURIComponent(lines.join('\n'));
             showToast(isAr ? 'جارٍ فتح تطبيق البريد لإرسال رسالتك إلى hello@doyouknow.app' : 'Opening your email app to send your message to hello@doyouknow.app', 'success', 6000);
-            sendGA4Event('contact_form_submit', {
+            sendGA4Event('contact_form_intent', {
                 page: window.location.pathname,
-                language: isAr ? 'ar' : 'en'
+                language: isAr ? 'ar' : 'en',
+                method: 'mailto',
+                conversion_event: false
             });
         });
     });
@@ -938,10 +950,18 @@
             showToast(lang === 'ar' ? 'جارٍ فتح تطبيق البريد لتأكيد اشتراكك' : 'Opening your email app to confirm your subscription', 'success', 6000);
             var method = form.classList.contains('footer-newsletter') ? 'footer_cta' : 'inline_cta';
             var emailDomain = email.split('@')[1] || '';
-            sendGA4Event('newsletter_signup', {
-                method: method,
+            sendGA4Event('newsletter_signup_intent', {
+                method: 'mailto',
+                source: method,
                 language: lang,
-                email_domain: emailDomain
+                email_domain: emailDomain,
+                conversion_event: false
+            });
+            sendGA4Event('generate_lead_intent', {
+                method: 'mailto',
+                source: method,
+                language: lang,
+                conversion_event: false
             });
         });
     });
