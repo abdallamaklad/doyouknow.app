@@ -72,36 +72,59 @@
         return PREFERS_DARK.matches ? 'dark' : 'light';
     }
 
+    // Keep theme setup idempotent. Static pages can be re-evaluated during
+    // hydration/navigation; registering another handler would double-track a
+    // single user action.
+    const themeRuntime = window.__DYK_THEME_RUNTIME__ || (window.__DYK_THEME_RUNTIME__ = {
+        initialized: false,
+        toggleBound: false,
+        preferenceBound: false
+    });
+
     function applyTheme(theme, options) {
-        const track = !options || options.track !== false;
+        const track = options && options.track === true;
         html.setAttribute('data-theme', theme);
         const btn = document.querySelector('.theme-toggle');
         if (btn) btn.innerHTML = theme === 'dark' ? '☀️' : '🌙';
         if (track) {
             sendGA4Event('dark_mode_toggle', {
                 theme: theme,
-                method: options && options.method ? options.method : 'user_toggle'
+                method: options.method
             });
         }
     }
 
     function setTheme(theme, method) {
+        const current = html.getAttribute('data-theme');
         localStorage.setItem(STORAGE_KEY, theme);
-        applyTheme(theme, { track: true, method: method || 'user_toggle' });
+        applyTheme(theme, {
+            track: themeRuntime.initialized && current !== theme,
+            method: method || 'user_toggle'
+        });
     }
 
+    // Initialization, persisted-preference restoration, and the initial
+    // system preference lookup are state changes—not user interactions.
     applyTheme(getTheme(), { track: false });
+    themeRuntime.initialized = true;
 
-    document.querySelector('.theme-toggle')?.addEventListener('click', function() {
-        const current = html.getAttribute('data-theme');
-        setTheme(current === 'dark' ? 'light' : 'dark');
-    });
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle && !themeRuntime.toggleBound) {
+        themeToggle.addEventListener('click', function() {
+            const current = html.getAttribute('data-theme');
+            setTheme(current === 'dark' ? 'light' : 'dark');
+        });
+        themeRuntime.toggleBound = true;
+    }
 
-    PREFERS_DARK.addEventListener('change', function(e) {
-        if (!localStorage.getItem(STORAGE_KEY)) {
-            setTheme(e.matches ? 'dark' : 'light', 'system_preference');
-        }
-    });
+    if (!themeRuntime.preferenceBound) {
+        PREFERS_DARK.addEventListener('change', function(e) {
+            if (!localStorage.getItem(STORAGE_KEY)) {
+                setTheme(e.matches ? 'dark' : 'light', 'system_preference');
+            }
+        });
+        themeRuntime.preferenceBound = true;
+    }
 
     // --- Mobile Menu ---
     const menuBtn = document.querySelector('.mobile-menu-btn');
@@ -886,83 +909,112 @@
         });
     });
 
-    // --- Contact Forms (mailto delivery — static site, no form backend) ---
+    // --- Lead capture instrumentation ---
+    // Conversion events are reserved for a confirmed capture response. Static mailto
+    // fallbacks only record intent because opening a mail client is not a submission.
+    var leadCaptureInFlight = typeof WeakSet === 'function' ? new WeakSet() : null;
+    var leadConversions = typeof WeakMap === 'function' ? new WeakMap() : null;
+    function leadParams(form, method, outcome) {
+        return {
+            form_type: form.classList.contains('contact-form') ? 'contact' : 'newsletter',
+            method: method,
+            outcome: outcome,
+            language: document.documentElement.lang || 'en'
+        };
+    }
+    function emitLeadConversion(form, eventName, method) {
+        var events = leadConversions ? (leadConversions.get(form) || new Set()) : null;
+        if (events && events.has(eventName)) return;
+        if (events) {
+            events.add(eventName);
+            leadConversions.set(form, events);
+        }
+        sendGA4Event(eventName, leadParams(form, method, 'success'));
+    }
+    function captureLead(form, payload, onSuccess, onFailure) {
+        var endpoint = form.getAttribute('data-capture-endpoint') || form.getAttribute('action');
+        if (!endpoint || endpoint === '#' || /^mailto:/i.test(endpoint)) return false;
+        if (leadCaptureInFlight && leadCaptureInFlight.has(form)) return true;
+        if (leadCaptureInFlight) leadCaptureInFlight.add(form);
+        fetch(endpoint, {
+            method: (form.getAttribute('method') || 'POST').toUpperCase(),
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+            credentials: 'omit'
+        }).then(function(response) {
+            if (!response.ok) throw new Error('capture failed');
+            onSuccess();
+        }).catch(function() {
+            if (leadCaptureInFlight) leadCaptureInFlight.delete(form);
+            onFailure();
+        });
+        return true;
+    }
+    function mailtoIntent(form, method) {
+        sendGA4Event(form.classList.contains('contact-form') ? 'contact_form_intent' : 'newsletter_signup_intent',
+            leadParams(form, method, 'intent'));
+    }
+
     document.querySelectorAll('form.contact-form').forEach(function(form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+            if (leadCaptureInFlight && leadCaptureInFlight.has(form)) return;
             var isAr = (document.documentElement.lang || 'en') === 'ar';
-            var lines = [];
+            var fields = form.querySelectorAll('input, select, textarea');
+            var lines = [], payload = {};
             var subject = isAr ? 'رسالة عبر doyouknow.app' : 'Message via doyouknow.app';
-            form.querySelectorAll('input, select, textarea').forEach(function(field) {
-                var label = field.closest('label');
-                var name = label ? label.textContent.trim().split('\n')[0].trim() : (field.name || field.type);
-                if (/^(subject|الموضوع)/i.test(name) && field.value.trim()) subject = field.value.trim();
-                lines.push(name + ': ' + field.value.trim());
+            fields.forEach(function(field) {
+                var value = field.value.trim();
+                var name = field.name || field.type;
+                if (/^(subject|الموضوع)$/i.test(name) && value) subject = value;
+                lines.push(name + ': ' + value);
+                if (name) payload[name] = value;
             });
-            window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(subject) +
-                '&body=' + encodeURIComponent(lines.join('\n'));
-            showToast(isAr ? 'جارٍ فتح تطبيق البريد لإرسال رسالتك إلى hello@doyouknow.app' : 'Opening your email app to send your message to hello@doyouknow.app', 'success', 6000);
-            sendGA4Event('contact_form_intent', {
-                page: window.location.pathname,
-                language: isAr ? 'ar' : 'en',
-                method: 'mailto',
-                conversion_event: false
-            });
+            var method = form.getAttribute('data-capture-endpoint') ? 'api' : 'mailto';
+            var success = function() {
+                emitLeadConversion(form, 'contact_form_submit', method);
+                showToast(isAr ? 'تم إرسال رسالتك بنجاح' : 'Your message was sent successfully', 'success', 6000);
+            };
+            var fallback = function() {
+                window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\\n'));
+                mailtoIntent(form, 'mailto');
+            };
+            if (!captureLead(form, payload, success, fallback)) fallback();
         });
     });
 
     // --- Newsletter Forms ---
     document.querySelectorAll('.newsletter-form, .newsletter-signup, .footer-newsletter').forEach(function(form) {
-        const btn = form.querySelector('button, .btn');
-        const input = form.querySelector('input[type="email"]');
-        if (!btn || !input) return;
-        btn.addEventListener('click', function(e) {
+        var input = form.querySelector('input[type="email"]');
+        if (!input) return;
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
-            const email = input.value.trim();
-            var lang = document.documentElement.lang || 'en';
-            if (!email) {
+            if (leadCaptureInFlight && leadCaptureInFlight.has(form)) return;
+            var email = input.value.trim(), lang = document.documentElement.lang || 'en';
+            if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
                 input.style.borderColor = 'var(--color-error)';
                 input.setAttribute('aria-invalid', 'true');
-                showToast('Please enter a valid email address', 'error', 4000);
-                sendGA4Event('newsletter_error', {
-                    error_type: 'empty',
-                    language: lang
-                });
-                return;
-            }
-            if (!email.includes('@')) {
-                input.style.borderColor = 'var(--color-error)';
-                input.setAttribute('aria-invalid', 'true');
-                showToast('Please enter a valid email address', 'error', 4000);
-                sendGA4Event('newsletter_error', {
-                    error_type: 'invalid_email',
-                    language: lang
-                });
+                sendGA4Event('newsletter_error', { error_type: 'invalid_email', language: lang });
                 return;
             }
             input.style.borderColor = 'var(--color-secondary-accent)';
             input.setAttribute('aria-invalid', 'false');
-            var nlSubject = lang === 'ar' ? 'اشتراك في نشرة doyouknow.app' : 'Subscribe to the doyouknow.app newsletter';
-            var nlBody = lang === 'ar'
-                ? 'أرغب في الاشتراك في النشرة البريدية.\nبريدي الإلكتروني: ' + email
-                : 'Please subscribe me to the newsletter.\nMy email: ' + email;
-            window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(nlSubject) + '&body=' + encodeURIComponent(nlBody);
-            showToast(lang === 'ar' ? 'جارٍ فتح تطبيق البريد لتأكيد اشتراكك' : 'Opening your email app to confirm your subscription', 'success', 6000);
-            var method = form.classList.contains('footer-newsletter') ? 'footer_cta' : 'inline_cta';
-            var emailDomain = email.split('@')[1] || '';
-            sendGA4Event('newsletter_signup_intent', {
-                method: 'mailto',
-                source: method,
-                language: lang,
-                email_domain: emailDomain,
-                conversion_event: false
-            });
-            sendGA4Event('generate_lead_intent', {
-                method: 'mailto',
-                source: method,
-                language: lang,
-                conversion_event: false
-            });
+            var method = form.getAttribute('data-capture-endpoint') ? 'api' : 'mailto';
+            var source = form.classList.contains('footer-newsletter') ? 'footer_cta' : 'inline_cta';
+            var payload = { email: email, language: lang, source: source };
+            var success = function() {
+                emitLeadConversion(form, 'newsletter_signup', method);
+                emitLeadConversion(form, 'generate_lead', method);
+                showToast(lang === 'ar' ? 'تم تأكيد اشتراكك بنجاح' : 'You are subscribed successfully', 'success', 6000);
+            };
+            var fallback = function() {
+                var subject = lang === 'ar' ? 'اشتراك في نشرة doyouknow.app' : 'Subscribe to the doyouknow.app newsletter';
+                var body = lang === 'ar' ? 'أرغب في الاشتراك في النشرة البريدية.\\nبريدي الإلكتروني: ' + email : 'Please subscribe me to the newsletter.\\nMy email: ' + email;
+                window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                mailtoIntent(form, 'mailto');
+                sendGA4Event('generate_lead_intent', leadParams(form, 'mailto', 'intent'));
+            };
+            if (!captureLead(form, payload, success, fallback)) fallback();
         });
     });
 
