@@ -900,6 +900,30 @@
     });
 
     // --- Newsletter Forms ---
+    // Keep campaign attribution across the mailto handoff without storing the email address.
+    var NEWSLETTER_ATTRIBUTION_KEY = 'dyk-newsletter-attribution';
+    var NEWSLETTER_ATTRIBUTION_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    function getNewsletterAttribution() {
+        var attribution = {};
+        try {
+            var query = new URLSearchParams(window.location.search);
+            NEWSLETTER_ATTRIBUTION_KEYS.forEach(function(key) {
+                var value = query.get(key) || sessionStorage.getItem(key);
+                if (value) {
+                    attribution[key] = value;
+                    sessionStorage.setItem(key, value);
+                }
+            });
+            if (Object.keys(attribution).length) {
+                localStorage.setItem(NEWSLETTER_ATTRIBUTION_KEY, JSON.stringify(attribution));
+            } else {
+                attribution = JSON.parse(localStorage.getItem(NEWSLETTER_ATTRIBUTION_KEY) || '{}');
+            }
+        } catch (e) {}
+        return attribution;
+    }
+    var newsletterAttribution = getNewsletterAttribution();
+
     document.querySelectorAll('.newsletter-form, .newsletter-signup, .footer-newsletter').forEach(function(form) {
         const btn = form.querySelector('button, .btn');
         const input = form.querySelector('input[type="email"]');
@@ -934,15 +958,35 @@
             var nlBody = lang === 'ar'
                 ? 'أرغب في الاشتراك في النشرة البريدية.\nبريدي الإلكتروني: ' + email
                 : 'Please subscribe me to the newsletter.\nMy email: ' + email;
-            window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(nlSubject) + '&body=' + encodeURIComponent(nlBody);
             showToast(lang === 'ar' ? 'جارٍ فتح تطبيق البريد لتأكيد اشتراكك' : 'Opening your email app to confirm your subscription', 'success', 6000);
             var method = form.classList.contains('footer-newsletter') ? 'footer_cta' : 'inline_cta';
             var emailDomain = email.split('@')[1] || '';
+            var attribution = newsletterAttribution;
+            var attributionQuery = Object.keys(attribution).map(function(key) {
+                return key + '=' + encodeURIComponent(attribution[key]);
+            }).join('&');
             sendGA4Event('newsletter_signup', {
                 method: method,
                 language: lang,
-                email_domain: emailDomain
+                email_domain: emailDomain,
+                utm_source: attribution.utm_source || '(direct)',
+                utm_medium: attribution.utm_medium || '(none)',
+                utm_campaign: attribution.utm_campaign || '(not set)'
             });
+            try {
+                localStorage.setItem('dyk-newsletter-pending', JSON.stringify({
+                    timestamp: new Date().toISOString(),
+                    method: method,
+                    language: lang,
+                    email_domain: emailDomain,
+                    attribution: attribution
+                }));
+            } catch (e) {}
+            // Append attribution to the mailto body so the owner can reconcile signups.
+            if (attributionQuery) {
+                nlBody += '\n\nCampaign: ' + attributionQuery;
+            }
+            window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(nlSubject) + '&body=' + encodeURIComponent(nlBody);
         });
     });
 
