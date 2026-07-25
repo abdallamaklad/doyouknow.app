@@ -288,10 +288,6 @@ function renderArticle(article, index, lang) {
       '@type': 'Organization',
       name: 'doyouknow.app Editorial Team',
       url: `https://doyouknow.app/${lang}/about.html`,
-      sameAs: [
-        'https://instagram.com/doyouknowapp',
-        'https://twitter.com/doyouknowapp'
-      ]
     },
     publisher: { '@type': 'Organization', name: 'doyouknow.app', logo: { '@type': 'ImageObject', url: 'https://doyouknow.app/assets/images/logo.png' } },
     datePublished: today,
