@@ -66,6 +66,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/history-of-fresco-painting.html",
+      "url": "https://doyouknow.app/en/article/history-of-fresco-painting.html",
+      "title": "The History of Fresco Painting",
+      "content_text": "Michelangelo had roughly eight hours before each patch of plaster dried, mistakes and all. Here is how fresco painting works and why it forces total commitment.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Art"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-pinball-machines.html",
+      "url": "https://doyouknow.app/en/article/history-of-pinball-machines.html",
+      "title": "The History of Pinball Machines",
+      "content_text": "Pinball survived a decades-long ban in several major cities before becoming a bar-and-arcade fixture. Here's how a coin-operated novelty turned into a game of skill.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/history-of-the-kaaba-kiswah.html",
       "url": "https://doyouknow.app/en/article/history-of-the-kaaba-kiswah.html",
       "title": "The History of the Kaaba's Kiswah",
@@ -126,6 +146,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-currency-pegs-work.html",
+      "url": "https://doyouknow.app/en/article/how-currency-pegs-work.html",
+      "title": "How Currency Pegs Work",
+      "content_text": "The UAE dirham and Saudi riyal have stayed locked to the US dollar for decades. Here is what a currency peg actually does and what it costs a central bank to defend one.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-do-hurricanes-form.html",
+      "url": "https://doyouknow.app/en/article/how-do-hurricanes-form.html",
+      "title": "How Do Hurricanes Actually Form?",
+      "content_text": "Hurricanes begin as ordinary tropical storms over warm ocean water. Here's the exact chain of conditions that turns one into a spinning giant, and why its eye stays eerily calm.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-franchising-works.html",
       "url": "https://doyouknow.app/en/article/how-franchising-works.html",
       "title": "How Franchising Actually Works",
@@ -156,53 +196,13 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/legend-of-atlantis.html",
-      "url": "https://doyouknow.app/en/article/legend-of-atlantis.html",
-      "title": "The Legend of Atlantis",
-      "content_text": "Plato described Atlantis as a lost island civilization 2,400 years ago. Here's what he wrote and why scholars still debate its meaning.",
+      "id": "https://doyouknow.app/en/article/how-the-flipped-classroom-works.html",
+      "url": "https://doyouknow.app/en/article/how-the-flipped-classroom-works.html",
+      "title": "How the Flipped Classroom Model Works",
+      "content_text": "Two chemistry teachers began recording lectures for students who missed class, then noticed the recordings worked better than class itself. That accident became a teaching model.",
       "date_published": "2026-07-25",
       "tags": [
-        "Stories"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/legend-of-el-dorado.html",
-      "url": "https://doyouknow.app/en/article/legend-of-el-dorado.html",
-      "title": "The Legend of El Dorado",
-      "content_text": "El Dorado began as a real ritual involving a golden king, then grew into a myth of a lost city that drove centuries of doomed expeditions.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Stories"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/legend-of-the-queen-of-sheba.html",
-      "url": "https://doyouknow.app/en/article/legend-of-the-queen-of-sheba.html",
-      "title": "The Legend of the Queen of Sheba",
-      "content_text": "The Queen of Sheba appears in the Bible, the Quran as Bilqis, and Ethiopian legend. Here's what the ancient sources actually say about her.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Stories"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/migraine-vs-headache-difference.html",
-      "url": "https://doyouknow.app/en/article/migraine-vs-headache-difference.html",
-      "title": "Migraine vs. Headache: What's the Difference?",
-      "content_text": "Not all head pain is the same. Here's how migraine differs from an ordinary tension headache, and why the distinction affects treatment.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Health"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/morocco-egypt-algeria-world-cup-2026.html",
-      "url": "https://doyouknow.app/en/article/morocco-egypt-algeria-world-cup-2026.html",
-      "title": "Morocco vs Egypt vs Algeria World Cup 2026: Who Looks Strongest?",
-      "content_text": "Morocco vs Egypt vs Algeria at World Cup 2026: compare recent tournament evidence, playing profiles, key questions, and what to watch without betting or hype.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "World Cup 2026 & Arab Football"
+        "Education"
       ]
     }
   ]

@@ -66,6 +66,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/history-of-fresco-painting.html",
+      "url": "https://doyouknow.app/ar/article/history-of-fresco-painting.html",
+      "title": "تاريخ رسم الفريسك",
+      "content_text": "كان أمام مايكل أنجلو نحو ثماني ساعات فقط قبل أن يجف كل قطعة من الجص، بأخطائها أيضاً. إليك كيف يعمل رسم الفريسك ولماذا يفرض التزاماً كاملاً بلا رجعة.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "الفن"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/history-of-pinball-machines.html",
+      "url": "https://doyouknow.app/ar/article/history-of-pinball-machines.html",
+      "title": "تاريخ آلات البينبول",
+      "content_text": "نجت آلات البينبول من حظر استمر عقوداً في عدة مدن كبرى قبل أن تصبح ركناً ثابتاً في الحانات وصالات الألعاب. إليك كيف تحوّلت لعبة معدنية بسيطة إلى لعبة مهارة حقيقية.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "الترفيه والألعاب"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/history-of-the-kaaba-kiswah.html",
       "url": "https://doyouknow.app/ar/article/history-of-the-kaaba-kiswah.html",
       "title": "تاريخ كسوة الكعبة",
@@ -126,6 +146,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-currency-pegs-work.html",
+      "url": "https://doyouknow.app/ar/article/how-currency-pegs-work.html",
+      "title": "كيف يعمل ربط العملة؟",
+      "content_text": "ظل الدرهم الإماراتي والريال السعودي مربوطين بالدولار الأمريكي لعقود. إليك ما يفعله ربط العملة فعلياً وما الذي يكلّفه على البنك المركزي للدفاع عنه.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-do-hurricanes-form.html",
+      "url": "https://doyouknow.app/ar/article/how-do-hurricanes-form.html",
+      "title": "كيف تتشكل الأعاصير فعلياً؟",
+      "content_text": "تبدأ الأعاصير كعواصف استوائية عادية فوق مياه محيط دافئة. إليك السلسلة الدقيقة من الظروف التي تحوّلها إلى عملاق دوّار، ولماذا تبقى عينها هادئة بشكل غريب.",
+      "date_published": "2026-07-25",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-franchising-works.html",
       "url": "https://doyouknow.app/ar/article/how-franchising-works.html",
       "title": "كيف يعمل نظام الامتياز التجاري فعلياً",
@@ -156,53 +196,13 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/legend-of-atlantis.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-atlantis.html",
-      "title": "أسطورة أتلانتس المفقودة",
-      "content_text": "وصف أفلاطون أتلانتس كحضارة جزيرة مفقودة قبل 2400 عام. إليك ما كتبه فعلياً ولماذا لا يزال العلماء يتجادلون حول معناها.",
+      "id": "https://doyouknow.app/ar/article/how-the-flipped-classroom-works.html",
+      "url": "https://doyouknow.app/ar/article/how-the-flipped-classroom-works.html",
+      "title": "كيف يعمل نموذج الفصل المقلوب؟",
+      "content_text": "بدأ معلما كيمياء بتسجيل محاضراتهما للطلاب الذين تغيبوا عن الحصة، ثم لاحظا أمراً: التسجيلات كانت أنجح من الحصة نفسها. تلك المصادفة تحولت إلى نموذج تعليمي.",
       "date_published": "2026-07-25",
       "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/legend-of-el-dorado.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-el-dorado.html",
-      "title": "أسطورة إل دورادو",
-      "content_text": "بدأت إل دورادو كطقس حقيقي يتضمن ملكاً ذهبياً، ثم تحولت إلى أسطورة مدينة ضائعة دفعت قروناً من الحملات الفاشلة.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/legend-of-the-queen-of-sheba.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-the-queen-of-sheba.html",
-      "title": "أسطورة ملكة سبأ",
-      "content_text": "تظهر ملكة سبأ في التوراة والقرآن باسم بلقيس وفي الأسطورة الإثيوبية. إليك ما تقوله المصادر القديمة فعلياً عنها.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/migraine-vs-headache-difference.html",
-      "url": "https://doyouknow.app/ar/article/migraine-vs-headache-difference.html",
-      "title": "الشقيقة والصداع: ما الفرق؟",
-      "content_text": "ليس كل ألم في الرأس متشابهاً. إليك كيف تختلف الشقيقة عن صداع التوتر العادي، ولماذا يؤثر هذا الفرق على العلاج.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الصحة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/only-child-personality-myths.html",
-      "url": "https://doyouknow.app/ar/article/only-child-personality-myths.html",
-      "title": "خرافات شخصية الطفل الوحيد: تدقيق الحقائق",
-      "content_text": "كثيراً ما يُوصف الطفل الوحيد بأنه مدلل أو وحيد اجتماعياً. إليك ما تُظهره الأبحاث الفعلية عن سمات شخصية الطفل الوحيد.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الأسرة"
+        "التعليم"
       ]
     }
   ]
