@@ -107,9 +107,9 @@ const categoryGroups = [
 
 const siteNav = {
   countries: [
-    { slug: 'dubai', titleEn: 'UAE', titleAr: 'الإمارات' },
-    { slug: 'saudi', titleEn: 'KSA', titleAr: 'السعودية' },
-    { slug: 'egypt', titleEn: 'Egypt', titleAr: 'مصر' }
+    { slug: 'dubai', titleEn: 'UAE', titleAr: 'الإمارات', flag: '🇦🇪' },
+    { slug: 'saudi', titleEn: 'KSA', titleAr: 'السعودية', flag: '🇸🇦' },
+    { slug: 'egypt', titleEn: 'Egypt', titleAr: 'مصر', flag: '🇪🇬' }
   ],
   categories: [
     { slug: 'practical-guide', titleEn: 'Practical Guide', titleAr: 'دليل عملي', kind: 'aggregator' },
@@ -130,6 +130,25 @@ const siteNav = {
     { slug: 'entertainment-games', titleEn: 'Entertainment and Games', titleAr: 'الترفيه والألعاب', kind: 'placeholder' }
   ]
 };
+// Themed sections for the Categories mega menu, so 16 links stay scannable.
+// Every slug here must exist in siteNav.categories (asserted below).
+const navCategorySections = [
+  { titleEn: 'Guides & Places', titleAr: 'أدلة وأماكن', slugs: ['practical-guide', 'around-the-world'] },
+  { titleEn: 'Health & Family', titleAr: 'الصحة والأسرة', slugs: ['self-care', 'health', 'nutrition', 'family'] },
+  { titleEn: 'Knowledge', titleAr: 'المعرفة', slugs: ['science', 'technology', 'education', 'islamic'] },
+  { titleEn: 'Culture & Leisure', titleAr: 'الثقافة والترفيه', slugs: ['art', 'stories', 'world-cup-2026', 'entertainment-games'] },
+  { titleEn: 'Business & Society', titleAr: 'الأعمال والمجتمع', slugs: ['business', 'people-society'] }
+];
+{
+  const known = new Set(siteNav.categories.map((c) => c.slug));
+  const placed = navCategorySections.flatMap((s) => s.slugs);
+  const missing = [...known].filter((s) => !placed.includes(s));
+  const unknown = placed.filter((s) => !known.has(s));
+  const dupes = placed.filter((s, i) => placed.indexOf(s) !== i);
+  if (missing.length || unknown.length || dupes.length) {
+    throw new Error(`navCategorySections mismatch — missing: ${missing}, unknown: ${unknown}, duplicated: ${dupes}`);
+  }
+}
 const categoryByArticle = new Map(categoryGroups.flatMap((group) =>
   group.files.map((slug) => [`${group.lang}/article/${slug}.html`, group])
 ));
@@ -617,13 +636,22 @@ function buildNavListItems(lang) {
   const rtl = lang === 'ar';
   const countries = siteNav.countries.map((c) => ({
     href: `/${lang}/category/${c.slug}.html`,
-    label: rtl ? c.titleAr : c.titleEn
+    label: rtl ? c.titleAr : c.titleEn,
+    flag: c.flag
   }));
+  const categoryBySlug = new Map(siteNav.categories.map((c) => [c.slug, c]));
   const categories = siteNav.categories.map((c) => ({
     href: `/${lang}/category/${c.slug}.html`,
     label: rtl ? c.titleAr : c.titleEn
   }));
-  return { countries, categories };
+  const categorySections = navCategorySections.map((section) => ({
+    title: rtl ? section.titleAr : section.titleEn,
+    items: section.slugs.map((slug) => {
+      const c = categoryBySlug.get(slug);
+      return { href: `/${lang}/category/${slug}.html`, label: rtl ? c.titleAr : c.titleEn };
+    })
+  }));
+  return { countries, categories, categorySections };
 }
 
 function renderFullHeader(lang) {
@@ -662,17 +690,24 @@ function renderFullHeader(lang) {
     mobileNavAria: 'Mobile menu'
   };
 
-  const countriesLis = nav.countries.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
-  const categoriesLis = nav.categories.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
+  const countriesLis = nav.countries.map((c) => `<li><a href="${c.href}"><span class="nav-flag" aria-hidden="true">${c.flag}</span>${escapeHtml(c.label)}</a></li>`).join('');
+  // heading is a <span>, not a <p>, on purpose: the search-index excerpt falls back to
+  // the first <p> on the page, and a header <p> would shadow real page copy
+  const categoriesGroups = nav.categorySections.map((section) =>
+    `<div class="nav-dropdown-group"><span class="nav-dropdown-heading">${escapeHtml(section.title)}</span><ul>${section.items.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('')}</ul></div>`
+  ).join('');
   const countriesMenuId = `countries-menu-${lang}`;
   const categoriesMenuId = `categories-menu-${lang}`;
 
-  const desktopNav = `<nav class="main-nav" role="navigation" aria-label="${t.mainNavAria}"><ul class="nav-links"><li><a href="${home}">${t.home}</a></li><li class="nav-item-countries"><button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="${countriesMenuId}">${t.countries}</button><ul class="nav-dropdown" id="${countriesMenuId}">${countriesLis}</ul></li><li class="nav-item-categories"><button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="${categoriesMenuId}">${t.categories}</button><ul class="nav-dropdown nav-dropdown-mega" id="${categoriesMenuId}">${categoriesLis}</ul></li><li><a href="/${lang}/about.html">${t.about}</a></li><li><a href="/${lang}/contact.html">${t.contact}</a></li></ul></nav>`;
+  const desktopNav = `<nav class="main-nav" role="navigation" aria-label="${t.mainNavAria}"><ul class="nav-links"><li><a href="${home}">${t.home}</a></li><li class="nav-item-countries"><button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="${countriesMenuId}">${t.countries}</button><ul class="nav-dropdown" id="${countriesMenuId}">${countriesLis}</ul></li><li class="nav-item-categories"><button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="${categoriesMenuId}">${t.categories}</button><div class="nav-dropdown nav-dropdown-mega" id="${categoriesMenuId}">${categoriesGroups}</div></li><li><a href="/${lang}/about.html">${t.about}</a></li><li><a href="/${lang}/contact.html">${t.contact}</a></li></ul></nav>`;
 
   const header = `<header class="site-header" role="banner"><div class="header-inner"><a href="${home}" class="logo" aria-label="doyouknow.app home"><div class="logo-icon" aria-hidden="true"></div><span class="logo-text">doyouknow<span class="accent">.app</span></span></a>${desktopNav}<div class="header-controls"><button class="search-toggle" aria-label="${t.search}" title="${t.search}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><button class="lang-switch" aria-label="${t.switchLang}">${t.switchLangLabel}</button><button class="theme-toggle" aria-label="${t.toggleDark}">🌙</button></div><button class="mobile-menu-btn" aria-label="${t.openMenu}" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button></div></header>`;
 
-  const mobileCountriesLis = nav.countries.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
-  const mobileCategoriesLis = nav.categories.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('');
+  const mobileCountriesLis = nav.countries.map((c) => `<li><a href="${c.href}"><span class="nav-flag" aria-hidden="true">${c.flag}</span>${escapeHtml(c.label)}</a></li>`).join('');
+  // mirror the desktop section grouping so the mobile list is scannable too
+  const mobileCategoriesLis = nav.categorySections.map((section) =>
+    `<li class="mobile-nav-subheading">${escapeHtml(section.title)}</li>${section.items.map((c) => `<li><a href="${c.href}">${escapeHtml(c.label)}</a></li>`).join('')}`
+  ).join('');
 
   const mobileNav = `<div class="mobile-nav-overlay" role="presentation" aria-hidden="true"></div><nav class="mobile-nav" aria-label="${t.mobileNavAria}"><button class="mobile-nav-close" aria-label="${t.closeMenu}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button><ul class="mobile-nav-links"><li><a href="${home}">${t.home}</a></li><li class="mobile-nav-heading">${t.countries}</li>${mobileCountriesLis}<li class="mobile-nav-heading">${t.categories}</li>${mobileCategoriesLis}<li><a href="/${lang}/about.html">${t.about}</a></li><li><a href="/${lang}/contact.html">${t.contact}</a></li></ul></nav>`;
 

@@ -119,24 +119,81 @@
     overlay?.addEventListener('click', closeMenu);
 
     // --- Countries / Categories dropdown nav ---
-    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
-        const dropdown = toggle.nextElementSibling;
-        function closeDropdown() { dropdown?.classList.remove('active'); toggle.setAttribute('aria-expanded', 'false'); }
+    // JS drives open/close state so pointer, touch and keyboard all agree.
+    // The CSS :hover fallback is disabled by adding .nav-js (see style.css).
+    function closeAllDropdowns(except) {
+        document.querySelectorAll('.nav-dropdown.active').forEach(function(d) {
+            if (d !== except) d.classList.remove('active');
+        });
+        document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) {
+            const dd = t.parentElement && t.parentElement.querySelector('.nav-dropdown');
+            if (dd !== except) t.setAttribute('aria-expanded', 'false');
+        });
+    }
+
+    document.querySelectorAll('.main-nav').forEach(function(n) { n.classList.add('nav-js'); });
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    document.querySelectorAll('.nav-item-countries, .nav-item-categories').forEach(function(item) {
+        const toggle = item.querySelector('.nav-dropdown-toggle');
+        const dropdown = item.querySelector('.nav-dropdown');
+        if (!toggle || !dropdown) return;
+        let closeTimer = null;
+
         function openDropdown() {
-            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
-            document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
-            dropdown?.classList.add('active'); toggle.setAttribute('aria-expanded', 'true');
+            clearTimeout(closeTimer);
+            closeAllDropdowns(dropdown);
+            dropdown.classList.add('active');
+            toggle.setAttribute('aria-expanded', 'true');
         }
+        function closeDropdown() {
+            clearTimeout(closeTimer);
+            dropdown.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+        // small grace period so a brief slip off the menu doesn't close it
+        function scheduleClose() {
+            clearTimeout(closeTimer);
+            closeTimer = setTimeout(closeDropdown, 180);
+        }
+
         toggle.addEventListener('click', function(e) {
             e.stopPropagation();
             toggle.getAttribute('aria-expanded') === 'true' ? closeDropdown() : openDropdown();
         });
-    });
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.nav-item-countries, .nav-item-categories')) {
-            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
-            document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+
+        if (canHover) {
+            item.addEventListener('mouseenter', openDropdown);
+            item.addEventListener('mouseleave', scheduleClose);
         }
+
+        item.addEventListener('focusin', openDropdown);
+        item.addEventListener('focusout', function(e) {
+            if (!item.contains(e.relatedTarget)) closeDropdown();
+        });
+
+        toggle.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                openDropdown();
+                const first = dropdown.querySelector('a');
+                if (first) first.focus();
+            }
+        });
+
+        dropdown.addEventListener('keydown', function(e) {
+            if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp' && e.key !== 'Escape') return;
+            const links = Array.prototype.slice.call(dropdown.querySelectorAll('a'));
+            const i = links.indexOf(document.activeElement);
+            e.preventDefault();
+            if (e.key === 'Escape') { closeDropdown(); toggle.focus(); }
+            else if (e.key === 'ArrowDown') (links[i + 1] || links[0]).focus();
+            else (links[i - 1] || links[links.length - 1]).focus();
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item-countries, .nav-item-categories')) closeAllDropdowns();
     });
 
     // --- Keyboard Shortcuts ---
@@ -177,7 +234,7 @@
         if (e.key === 'Escape') {
             closeMenu();
             closeKeyboardHelp();
-            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
+            closeAllDropdowns();
             if (searchOverlay.classList.contains('active')) {
                 closeSearch();
             }
