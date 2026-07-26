@@ -6,6 +6,16 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/cairo-metro-guide.html",
+      "url": "https://doyouknow.app/en/article/cairo-metro-guide.html",
+      "title": "Cairo Metro Guide: Lines, Tickets, and Tips",
+      "content_text": "The Cairo Metro was the first metro system in Africa and the Middle East. Here is how its lines, tickets, and women-only cars work.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/egypt-bank-account-guide.html",
       "url": "https://doyouknow.app/en/article/egypt-bank-account-guide.html",
       "title": "Opening a Bank Account in Egypt: Guide",
@@ -26,6 +36,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/egypt-mobile-wallets-guide.html",
+      "url": "https://doyouknow.app/en/article/egypt-mobile-wallets-guide.html",
+      "title": "Mobile Wallets in Egypt: How They Work",
+      "content_text": "Mobile wallets like Vodafone Cash and InstaPay have grown fast in Egypt as digital alternatives to cash for everyday payments.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-remittances-work.html",
+      "url": "https://doyouknow.app/en/article/how-remittances-work.html",
+      "title": "How Remittances Work and Why They Matter",
+      "content_text": "Remittances are money sent home by people working abroad, moving through banks, money transfer operators, and mobile wallets.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/nile-cruise-guide.html",
       "url": "https://doyouknow.app/en/article/nile-cruise-guide.html",
       "title": "Nile Cruise Guide: Luxor to Aswan Trip Planning",
@@ -36,173 +66,143 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/cairo-airport-guide.html",
-      "url": "https://doyouknow.app/en/article/cairo-airport-guide.html",
-      "title": "Cairo International Airport Guide",
-      "content_text": "Navigating Cairo International Airport (CAI): terminals, visa on arrival, getting into the city, SIM cards, and practical tips for a smooth arrival in 2026.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/en/article/saudi-mada-payment-system-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-mada-payment-system-guide.html",
+      "title": "What Is Mada, Saudi Arabia's National Payment Network?",
+      "content_text": "Mada is Saudi Arabia's domestic debit card network, regulated by SAMA, used for most in-store and online card payments in the Kingdom.",
+      "date_published": "2026-07-26",
       "tags": [
-        "Egypt Practical Guides"
+        "Saudi Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/egypt-safety-guide.html",
-      "url": "https://doyouknow.app/en/article/egypt-safety-guide.html",
-      "title": "Egypt Safety Guide for Travelers",
-      "content_text": "Practical safety information for visiting Egypt in 2026: general crime, road safety, common tourist scams, health precautions, and staying informed while traveling.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/en/article/saudi-traffic-fines-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-traffic-fines-guide.html",
+      "title": "How Saudi Traffic Fines Work: A Practical Guide",
+      "content_text": "How Saudi Arabia enforces traffic violations through the Saher camera system, points, and how to check and pay fines via Absher.",
+      "date_published": "2026-07-26",
       "tags": [
-        "Egypt Practical Guides"
+        "Saudi Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/egypt-tipping-baksheesh-guide.html",
-      "url": "https://doyouknow.app/en/article/egypt-tipping-baksheesh-guide.html",
-      "title": "Egypt Tipping & Baksheesh Guide",
-      "content_text": "Understanding tipping in Egypt: what baksheesh means, typical amounts for restaurants, hotels, guides, and drivers, and practical tips for 2026.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Egypt Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-fresco-painting.html",
-      "url": "https://doyouknow.app/en/article/history-of-fresco-painting.html",
-      "title": "The History of Fresco Painting",
-      "content_text": "Michelangelo had roughly eight hours before each patch of plaster dried, mistakes and all. Here is how fresco painting works and why it forces total commitment.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Art"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-pinball-machines.html",
-      "url": "https://doyouknow.app/en/article/history-of-pinball-machines.html",
-      "title": "The History of Pinball Machines",
-      "content_text": "Pinball survived a decades-long ban in several major cities before becoming a bar-and-arcade fixture. Here's how a coin-operated novelty turned into a game of skill.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-stained-glass-art.html",
-      "url": "https://doyouknow.app/en/article/history-of-stained-glass-art.html",
-      "title": "The History of Stained Glass Art",
-      "content_text": "Stained glass windows turned church walls into glowing storytelling devices for a population who mostly couldn't read. Here's how the technique developed over a thousand years.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Art"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-tabletop-role-playing-games.html",
-      "url": "https://doyouknow.app/en/article/history-of-tabletop-role-playing-games.html",
-      "title": "The History of Tabletop Role-Playing Games",
-      "content_text": "Dungeons & Dragons grew out of a hobby for refighting Napoleonic battles with miniature figures. Here's how tabletop RPGs became their own category of game.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-the-abacus.html",
-      "url": "https://doyouknow.app/en/article/history-of-the-abacus.html",
-      "title": "The History of the Abacus",
-      "content_text": "Long before calculators, merchants used a simple frame of beads to add, subtract, and multiply at remarkable speed. Here's how it evolved across civilizations.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Education"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-the-jigsaw-puzzle.html",
-      "url": "https://doyouknow.app/en/article/history-of-the-jigsaw-puzzle.html",
-      "title": "The History of the Jigsaw Puzzle",
-      "content_text": "The jigsaw puzzle started as a geography teaching tool cut apart with a hand saw, not as a toy for children to play with. Here's how it became a global pastime.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-the-kaaba-kiswah.html",
-      "url": "https://doyouknow.app/en/article/history-of-the-kaaba-kiswah.html",
-      "title": "The History of the Kaaba's Kiswah",
-      "content_text": "The Kiswah, the Kaaba's black silk covering, is remade every year using 670kg of silk and gold thread. Here's the history behind this tradition.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Islamic Knowledge & Culture"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-the-rubiks-cube.html",
-      "url": "https://doyouknow.app/en/article/history-of-the-rubiks-cube.html",
-      "title": "The History of the Rubik's Cube",
-      "content_text": "The Rubik's Cube was invented as a teaching tool in 1974 and has 43 quintillion possible combinations. Here's the story behind the iconic puzzle.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/history-of-trivia-games.html",
-      "url": "https://doyouknow.app/en/article/history-of-trivia-games.html",
-      "title": "How Trivia Games Became So Popular",
-      "content_text": "From radio quiz shows to Trivial Pursuit to pub trivia nights, here's how the simple pleasure of testing knowledge became a global pastime.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-ancient-egyptians-told-time.html",
-      "url": "https://doyouknow.app/en/article/how-ancient-egyptians-told-time.html",
-      "title": "How Ancient Egyptians Told Time",
-      "content_text": "Ancient Egyptians divided the day into 24 hours using sundials and water clocks thousands of years before mechanical clocks existed.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "Egypt"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-blood-types-work.html",
-      "url": "https://doyouknow.app/en/article/how-blood-types-work.html",
-      "title": "How Blood Types Work",
-      "content_text": "Blood types are defined by antigens Karl Landsteiner discovered in 1901. Here's how the ABO and Rh systems work and why matching matters.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/en/article/understanding-insulin-resistance.html",
+      "url": "https://doyouknow.app/en/article/understanding-insulin-resistance.html",
+      "title": "Understanding Insulin Resistance",
+      "content_text": "Insulin resistance means cells respond poorly to insulin, forcing the pancreas to work harder, and is a key step toward type 2 diabetes.",
+      "date_published": "2026-07-26",
       "tags": [
         "Health"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-coral-reefs-form.html",
-      "url": "https://doyouknow.app/en/article/how-coral-reefs-form.html",
-      "title": "How Coral Reefs Form",
-      "content_text": "Coral reefs are built by tiny polyps over thousands of years, powered by a hidden partnership with algae. Here's how these structures form.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/en/article/understanding-sandwich-generation.html",
+      "url": "https://doyouknow.app/en/article/understanding-sandwich-generation.html",
+      "title": "Understanding the Sandwich Generation",
+      "content_text": "The sandwich generation refers to adults simultaneously raising children and caring for aging parents, often under real financial strain.",
+      "date_published": "2026-07-26",
       "tags": [
-        "Science"
+        "Family"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-credit-scores-work.html",
-      "url": "https://doyouknow.app/en/article/how-credit-scores-work.html",
-      "title": "How Do Credit Scores Actually Work?",
-      "content_text": "A credit score compresses years of borrowing behavior into a single number lenders use to judge risk. Here's what actually goes into the calculation, and why it can vary.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/en/article/what-are-superfoods-fact-vs-marketing.html",
+      "url": "https://doyouknow.app/en/article/what-are-superfoods-fact-vs-marketing.html",
+      "title": "Are Superfoods Real, or Just Marketing?",
+      "content_text": "The word superfood has no official scientific definition. It is a marketing term for nutrient-dense foods, not a category regulators recognize.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Nutrition"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-a-gap-year.html",
+      "url": "https://doyouknow.app/en/article/what-is-a-gap-year.html",
+      "title": "What Is a Gap Year, and Is It Worth It?",
+      "content_text": "A gap year is a planned break from formal study, often used for travel, work, or volunteering, before continuing education or a career.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Education"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-cloud-computing.html",
+      "url": "https://doyouknow.app/en/article/what-is-cloud-computing.html",
+      "title": "What Is Cloud Computing, Explained Simply?",
+      "content_text": "Cloud computing means renting computing power, storage, and software over the internet instead of running your own servers.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-diriyah-gate.html",
+      "url": "https://doyouknow.app/en/article/what-is-diriyah-gate.html",
+      "title": "What Is the Diriyah Gate Project?",
+      "content_text": "Diriyah Gate is a Saudi giga-project redeveloping the historic At-Turaif UNESCO site into a heritage, culture, and hospitality district.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Saudi Vision 2030 & Megaprojects"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-dropshipping.html",
+      "url": "https://doyouknow.app/en/article/what-is-dropshipping.html",
+      "title": "What Is Dropshipping and How Does It Work?",
+      "content_text": "Dropshipping lets a store sell products it never stocks, with the supplier shipping directly to the customer instead.",
+      "date_published": "2026-07-26",
       "tags": [
         "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-currency-pegs-work.html",
-      "url": "https://doyouknow.app/en/article/how-currency-pegs-work.html",
-      "title": "How Currency Pegs Work",
-      "content_text": "The UAE dirham and Saudi riyal have stayed locked to the US dollar for decades. Here is what a currency peg actually does and what it costs a central bank to defend one.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/en/article/what-is-emotional-resilience.html",
+      "url": "https://doyouknow.app/en/article/what-is-emotional-resilience.html",
+      "title": "What Is Emotional Resilience?",
+      "content_text": "Emotional resilience is the ability to adapt and recover from stress and setbacks, a skill that can be strengthened rather than a fixed trait.",
+      "date_published": "2026-07-26",
       "tags": [
-        "Business and Economy"
+        "Self Care"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-glycemic-load.html",
+      "url": "https://doyouknow.app/en/article/what-is-glycemic-load.html",
+      "title": "What Is Glycemic Load? Glycemic Index vs. Load",
+      "content_text": "Glycemic load adjusts the glycemic index for actual portion size, giving a more realistic picture of a food's effect on blood sugar.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Nutrition"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-king-salman-park.html",
+      "url": "https://doyouknow.app/en/article/what-is-king-salman-park.html",
+      "title": "What Is King Salman Park in Riyadh?",
+      "content_text": "King Salman Park is a PIF giga-project in central Riyadh built around a huge new urban park, cultural venues, and a botanical garden.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Saudi Vision 2030 & Megaprojects"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-microlearning.html",
+      "url": "https://doyouknow.app/en/article/what-is-microlearning.html",
+      "title": "What Is Microlearning?",
+      "content_text": "Microlearning breaks lessons into short, focused chunks, often just a few minutes long, designed to fit into small pockets of time.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Education"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/what-is-permissive-parenting.html",
+      "url": "https://doyouknow.app/en/article/what-is-permissive-parenting.html",
+      "title": "What Is Permissive Parenting?",
+      "content_text": "Permissive parenting combines high warmth with few rules or limits, one of four parenting styles first described by psychologist Diana Baumrind.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Family"
       ]
     }
   ]
