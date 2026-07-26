@@ -297,7 +297,10 @@ async function findSvgs(dirs) {
   for (const dir of dirs) {
     const entries = await readdir(dir, { withFileTypes: true });
     for (const entry of entries) {
-      if (entry.isFile() && entry.name.endsWith('.svg')) {
+      // `*.art.svg` is the in-page display artwork: deliberately text-free, so
+      // there is nothing to rasterise for social. Only the text-bearing OG
+      // sources (`<lang>-<slug>.svg`) become PNGs.
+      if (entry.isFile() && entry.name.endsWith('.svg') && !entry.name.endsWith('.art.svg')) {
         out.push(join(dir, entry.name));
       }
     }

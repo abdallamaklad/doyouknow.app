@@ -293,9 +293,11 @@ function stripSearchAction(html) {
 }
 
 function articleImagePath(lang, slug) {
+  // In-page display artwork carries no text (see design/design-system.md).
+  // The text-bearing `${lang}-${slug}.svg` is the social/OG source only.
   return worldCupArticleSlugs.includes(slug)
     ? `/assets/images/world-cup-2026/${slug}.svg`
-    : `/assets/images/articles/${lang}-${slug}.svg`;
+    : `/assets/images/articles/${lang}-${slug}.art.svg`;
 }
 
 function articleRasterImagePath(lang, slug) {
@@ -326,10 +328,13 @@ function updateArticlePageImage(html, relativeFile) {
   if (categoryByArticle.has(relativeFile)) {
     const title = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim() || slug;
     const alt = lang === 'ar' ? `رسم توضيحي لمقال ${title}` : `Editorial illustration for ${title}`;
-    html = html.replace(
-      /<div class="featured-image"[\s\S]*?<\/div>/,
-      `<img class="featured-image" src="${imagePath}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
-    );
+    const featured = `<img class="featured-image" src="${imagePath}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`;
+    // Handle the placeholder <div> and an already-rendered <img> alike, so a
+    // rebuild keeps pages on the text-free artwork instead of silently
+    // reverting them to the text-bearing social source.
+    html = html.includes('<div class="featured-image"')
+      ? html.replace(/<div class="featured-image"[\s\S]*?<\/div>/, featured)
+      : html.replace(/<img class="featured-image"[^>]*>/, featured);
   }
   html = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (script, raw) => {
     try {
@@ -347,8 +352,10 @@ function updateArticlePageImage(html, relativeFile) {
 
 function updateArticleCardImages(html) {
   let cardIndex = 0;
-  return html.replace(/<a href="\/(en|ar)\/article\/([a-z0-9-]+)\.html" class="article-card">([\s\S]*?)<div class="card-content">/g, (match, lang, slug, beforeContent) => {
-    if (!categoryByArticle.has(`${lang}/article/${slug}.html`)) return match;
+  // Cards carry extra classes in the source markup ("article-card reveal
+  // reveal-delay-2"). Matching only the bare class left those cards pointing at
+  // the old text-bearing artwork, so capture the full class list and keep it.
+  return html.replace(/<a href="\/(en|ar)\/article\/([a-z0-9-]+)\.html" class="(article-card[^"]*)">([\s\S]*?)<div class="card-content">/g, (match, lang, slug, classes, beforeContent) => {
     cardIndex += 1;
     const priority = cardIndex <= 3
       ? 'loading="eager" fetchpriority="high"'
@@ -358,7 +365,7 @@ function updateArticleCardImages(html) {
       .replace(/<img class="card-image"[^>]*>/g, '')
       .replace(/<div class="card-image"[\s\S]*?<\/div>/g, '')
       .replace(/<span[^>]*>📷<\/span><\/div>/g, '');
-    return `<a href="/${lang}/article/${slug}.html" class="article-card">${image}${cleaned}<div class="card-content">`;
+    return `<a href="/${lang}/article/${slug}.html" class="${classes}">${image}${cleaned}<div class="card-content">`;
   });
 }
 

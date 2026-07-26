@@ -27,13 +27,12 @@
   </g>
   <g transform="translate(0 0)" direction="ltr">
     <text x="120" y="122" text-anchor="start" fill="#fff" opacity=".82" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
-    <text x="120" y="202" text-anchor="start" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">Diriyah: The Birthplace</text>
-    <text x="120" y="262" text-anchor="start" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">of Saudi Arabia</text>
-    <text x="120" y="322" text-anchor="start" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">Saudi Arabia</text>
-    <rect x="120" y="360" width="320" height="8" rx="4" fill="#F8FAFC"/>
+    <text x="120" y="202" text-anchor="start" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">Diriyah: The Birthplace of Saudi Arabia</text>
+    <text x="120" y="262" text-anchor="start" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">السعودية</text>
+    <rect x="120" y="300" width="320" height="8" rx="4" fill="#F8FAFC"/>
   </g>
   <g transform="translate(120 542)">
-    <rect width="280" height="58" rx="29" fill="#fff" opacity=".14"/>
-    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">Saudi Arabia</text>
+    <rect width="386" height="58" rx="29" fill="#fff" opacity=".14"/>
+    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">السعودية</text>
   </g>
 </svg>

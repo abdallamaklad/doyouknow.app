@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">دليل مواقف دبي: مناطق هيئة الطرق، التطبيقات، الدفع والمخالفات — doyouknow.app illustration</title>
-  <desc id="desc">Original doyouknow.app editorial artwork for دليل مواقف دبي: مناطق هيئة الطرق، التطبيقات، الدفع والمخالفات.</desc>
+  <title id="title">دليل مواقف دبي: المناطق والتطبيقات والدفع — doyouknow.app illustration</title>
+  <desc id="desc">Original doyouknow.app editorial artwork for دليل مواقف دبي: المناطق والتطبيقات والدفع.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0F172A"/>
@@ -27,7 +27,7 @@
   </g>
   <g transform="translate(0 0)" direction="rtl">
     <text x="1080" y="122" text-anchor="end" fill="#fff" opacity=".82" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
-    <text x="1080" y="202" text-anchor="end" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">دليل مواقف دبي: مناطق هيئة الطرق، التطبيقات،…</text>
+    <text x="1080" y="202" text-anchor="end" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">دليل مواقف دبي: المناطق والتطبيقات والدفع</text>
     <text x="1080" y="262" text-anchor="end" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">Dubai &amp; UAE</text>
     <rect x="760" y="300" width="320" height="8" rx="4" fill="#F59E0B"/>
   </g>
