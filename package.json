@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/render-og-rasters.mjs && node scripts/prepare.mjs",
+    "build": "node scripts/render-og-rasters.mjs --quiet && node scripts/prepare.mjs",
     "test": "node scripts/audit.mjs && node scripts/audit-worldcup-scheduler.mjs",
     "start": "node scripts/serve.mjs",
     "worldcup:update": "node scripts/update-worldcup-stats.mjs",

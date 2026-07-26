@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile, mkdir, access } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir, access, stat } from 'node:fs/promises';
 import { join, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
@@ -15,6 +15,8 @@ const TARGET_HEIGHT = 630;
 const SOURCE_HEIGHT = 675;
 const MAX_FILE_KB = 140;
 const MAX_TITLE_WIDTH = 960; // 1200 - 2*120 margin
+const DEFAULT_RENDER_TIMEOUT_MS = 90_000;
+const DEFAULT_BUILD_TIMEOUT_MS = 30 * 60 * 1000;
 
 const fontSpecs = [
   { pkg: 'inter', src: 'inter-latin-400-normal.woff2', name: 'Inter-400.ttf', family: 'Inter', weight: 400 },
@@ -76,7 +78,7 @@ function isArabicSvg(svg) {
   return /<html[^>]*\blang="ar"/.test(svg) || /dir="rtl"/.test(svg) || /[\u0600-\u06FF]/.test(svg);
 }
 
-function findChromeExecutable() {
+async function findChromeExecutable() {
   const candidates = [
     process.env.PUPPETEER_EXECUTABLE_PATH,
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
@@ -90,14 +92,15 @@ function findChromeExecutable() {
     '/usr/local/bin/chromium',
     '/snap/bin/chromium',
   ].filter(Boolean);
-  return candidates.find((p) => {
+  for (const candidate of candidates) {
     try {
-      access(p);
-      return true;
+      await access(candidate);
+      return candidate;
     } catch {
-      return false;
+      // Try the next known installation path.
     }
-  });
+  }
+  return undefined;
 }
 
 async function renderSvg(browser, svgPath, outputPath, fontFaces) {
@@ -114,6 +117,7 @@ async function renderSvg(browser, svgPath, outputPath, fontFaces) {
 
   const page = await browser.newPage();
   try {
+    page.setDefaultTimeout(Number(process.env.OG_PAGE_TIMEOUT_MS || DEFAULT_RENDER_TIMEOUT_MS));
     await page.setViewport({ width: TARGET_WIDTH, height: SOURCE_HEIGHT, deviceScaleFactor: 1 });
     const isArabic = /[\u0600-\u06FF]/.test(svg);
     await page.setContent(`<!DOCTYPE html>
@@ -301,67 +305,120 @@ async function findSvgs(dirs) {
   return out.sort();
 }
 
+async function isRasterCurrent(outputPath, inputPaths) {
+  try {
+    const output = await stat(outputPath);
+    const inputStats = await Promise.all(inputPaths.map((p) => stat(p)));
+    const newestInput = Math.max(...inputStats.map((item) => item.mtimeMs));
+    return output.size > 0 && output.mtimeMs >= newestInput;
+  } catch {
+    return false;
+  }
+}
+
 async function main() {
   const testMode = process.argv.includes('--test');
+  const force = process.argv.includes('--force') || process.env.OG_FORCE === '1';
+  const quiet = process.argv.includes('--quiet') && !process.argv.includes('--verbose');
   const testSlugs = ['en-burj-khalifa-facts', 'ar-burj-khalifa-facts', 'saudi-arabia-world-cup-2026'];
+  const renderTimeoutMs = Number(process.env.OG_RENDER_TIMEOUT_MS || DEFAULT_RENDER_TIMEOUT_MS);
+  const buildTimeoutMs = Number(process.env.OG_BUILD_TIMEOUT_MS || DEFAULT_BUILD_TIMEOUT_MS);
+  const startedAt = Date.now();
+  let browser = null;
+  let shuttingDown = false;
 
-  puppeteer = (await import('puppeteer-core')).default;
-  const chromePath = findChromeExecutable();
-  if (!chromePath) {
-    console.error('Chrome/Chromium executable not found. Set PUPPETEER_EXECUTABLE_PATH or install Chrome.');
-    process.exit(1);
-  }
-  console.log('Using Chrome:', chromePath);
-
-  const fontFaces = await buildFontFaces();
+  const closeBrowser = async (signal) => {
+    if (shuttingDown) return;
+    shuttingDown = true;
+    if (!quiet && signal) console.error(`Received ${signal}; closing Chrome before exit`);
+    if (browser) {
+      try { await browser.close(); } catch { /* Chrome may already be gone. */ }
+      browser = null;
+    }
+    if (signal) process.exitCode = signal === 'SIGTERM' ? 143 : 130;
+  };
+  const handleSignal = (signal) => {
+    void closeBrowser(signal).finally(() => process.exit(signal === 'SIGTERM' ? 143 : 130));
+  };
+  process.once('SIGTERM', () => handleSignal('SIGTERM'));
+  process.once('SIGINT', () => handleSignal('SIGINT'));
 
   const imageDirs = [
     join(root, 'assets/images/articles'),
     join(root, 'assets/images/world-cup-2026'),
   ];
   const svgs = await findSvgs(imageDirs);
-  const toRender = testMode
+  const candidates = testMode
     ? svgs.filter((p) => testSlugs.includes(basename(p, '.svg')))
     : svgs;
-
-  if (toRender.length === 0) {
-    console.log('No SVGs matched.');
-    return;
+  const rendererInputs = [fileURLToPath(import.meta.url), ...fontSpecs.map((spec) => join(root, 'node_modules', `@fontsource/${spec.pkg}`, 'files', spec.src))];
+  const toRender = [];
+  let skipped = 0;
+  for (const svgPath of candidates) {
+    const outputPath = join(dirname(svgPath), `${basename(svgPath, '.svg')}.png`);
+    if (!force && await isRasterCurrent(outputPath, [svgPath, ...rendererInputs])) skipped += 1;
+    else toRender.push({ svgPath, outputPath });
   }
 
-  const browser = await puppeteer.launch({
+  if (!toRender.length) {
+    console.log(`OG raster summary: ${candidates.length} current, ${skipped} skipped, 0 rendered`);
+    return;
+  }
+  if (Date.now() - startedAt > buildTimeoutMs) throw new Error(`OG raster build exceeded ${buildTimeoutMs}ms before rendering`);
+
+  puppeteer = (await import('puppeteer-core')).default;
+  const chromePath = await findChromeExecutable();
+  if (!chromePath) throw new Error('Chrome/Chromium executable not found. Set PUPPETEER_EXECUTABLE_PATH or install Chrome.');
+  const fontFaces = await buildFontFaces();
+  browser = await puppeteer.launch({
     executablePath: chromePath,
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
   });
 
-  console.log(`Rendering ${toRender.length} SVG(s) to ${TARGET_WIDTH}×${TARGET_HEIGHT} PNG…`);
   const results = [];
+  let failed = 0;
   try {
-    for (const svgPath of toRender) {
-      const outputPath = join(dirname(svgPath), `${basename(svgPath, '.svg')}.png`);
+    for (const { svgPath, outputPath } of toRender) {
+      if (Date.now() - startedAt > buildTimeoutMs) throw new Error(`OG raster build exceeded ${buildTimeoutMs}ms`);
       try {
-        const size = await renderSvg(browser, svgPath, outputPath, fontFaces);
+        let size;
+        for (let attempt = 0; attempt < 2; attempt += 1) {
+          try {
+            size = await Promise.race([
+              renderSvg(browser, svgPath, outputPath, fontFaces),
+              new Promise((_, reject) => setTimeout(() => reject(new Error(`render timeout after ${renderTimeoutMs}ms`)), renderTimeoutMs)),
+            ]);
+            break;
+          } catch (err) {
+            if (!shuttingDown && attempt === 0 && /connection closed|target closed|browser has disconnected/i.test(err.message)) {
+              try { await browser.close(); } catch { /* Browser already disconnected. */ }
+              browser = await puppeteer.launch({
+                executablePath: chromePath,
+                headless: true,
+                args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+              });
+              continue;
+            }
+            throw err;
+          }
+        }
         results.push({ svg: svgPath, png: outputPath, size });
-        console.log(`✓ ${outputPath.replace(root, '')} (${(size / 1024).toFixed(1)} KB)`);
+        if (!quiet) console.log(`✓ ${outputPath.replace(root, '')} (${(size / 1024).toFixed(1)} KB)`);
       } catch (err) {
+        failed += 1;
         console.error(`✗ ${svgPath.replace(root, '')}: ${err.message}`);
-        process.exitCode = 1;
+        break;
       }
     }
   } finally {
-    await browser.close();
+    await closeBrowser();
   }
 
   const oversized = results.filter((r) => r.size > MAX_FILE_KB * 1024);
-  if (oversized.length) {
-    console.warn(`\nWarning: ${oversized.length} file(s) exceed ${MAX_FILE_KB} KB:`);
-    for (const r of oversized) {
-      console.warn(`  ${r.png.replace(root, '')} — ${(r.size / 1024).toFixed(1)} KB`);
-    }
-  }
-
-  console.log(`\nDone. Rendered ${results.length} PNG(s).`);
+  if (oversized.length && !quiet) console.warn(`Warning: ${oversized.length} file(s) exceed ${MAX_FILE_KB} KB`);
+  console.log(`OG raster summary: ${candidates.length - skipped} pending, ${skipped} skipped, ${results.length} rendered, ${failed} failed`);
+  if (failed) process.exitCode = 1;
 }
 
 main().catch((err) => {
