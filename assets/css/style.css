@@ -3077,3 +3077,114 @@ html[dir="rtl"] .wc-mini-list {
     transition: none !important;
   }
 }
+
+/* ============================================
+   Explore index — homepage listing (Direction B)
+   Rows, not tiles: the headline does the work and the thumbnail is an aid.
+   Written with logical properties, so RTL needs no mirrored overrides.
+   ============================================ */
+.index-list {
+  max-width: var(--max-content);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
+.index-row {
+  display: grid;
+  grid-template-columns: 96px 1fr auto;
+  gap: var(--space-5);
+  align-items: start;
+  padding-block: var(--space-5);
+  border-block-start: 1px solid var(--color-border-light);
+  color: inherit;
+  text-decoration: none;
+  transition: background var(--transition-fast);
+}
+
+.index-row:hover {
+  background: var(--color-surface-light);
+  text-decoration: none;
+}
+
+.index-thumb {
+  inline-size: 96px;
+  block-size: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+
+.index-main {
+  display: grid;
+  gap: var(--space-2);
+  min-inline-size: 0;
+}
+
+.index-eyebrow {
+  font-size: var(--t-label);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cat, var(--color-primary-accent));
+}
+
+/* Arabic takes no tracking and does not uppercase. */
+[lang="ar"] .index-eyebrow {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.index-title {
+  font-family: var(--font-en);
+  font-size: var(--t-h3);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+[lang="ar"] .index-title { font-family: var(--font-ar); line-height: 1.45; }
+
+[data-theme="dark"] .index-title { color: #F8FAFC; }
+
+.index-excerpt {
+  font-size: var(--t-small);
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.index-meta {
+  display: grid;
+  gap: var(--space-1);
+  justify-items: end;
+  font-size: var(--t-caption);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.index-count {
+  font-size: var(--t-caption);
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .index-list { padding-inline: var(--space-4); }
+  .index-row {
+    grid-template-columns: 72px 1fr;
+    gap: var(--space-4);
+    padding-block: var(--space-4);
+  }
+  .index-thumb { inline-size: 72px; }
+  .index-meta {
+    grid-column: 2;
+    grid-auto-flow: column;
+    justify-content: start;
+    justify-items: start;
+    gap: var(--space-3);
+  }
+}

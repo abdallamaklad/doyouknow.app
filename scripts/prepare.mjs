@@ -1401,6 +1401,8 @@ for (const file of searchFiles) {
 
   const keywords = getKeywords(html, description, lang);
 
+  const readTime = stripHtmlTags(html.match(/<span class="read-time">([\s\S]*?)<\/span>/)?.[1] || '').trim();
+
   articles.push({
     title,
     description,
@@ -1412,7 +1414,8 @@ for (const file of searchFiles) {
     slug,
     keywords,
     type,
-    datePublished
+    datePublished,
+    readTime
   });
 }
 
@@ -1508,6 +1511,106 @@ function generateJsonFeed(items, lang, title, homePageUrl, feedUrl) {
 const articleItems = articles.filter(a => a.type === 'article');
 const enArticleItems = articleItems.filter(a => a.language === 'en').sort((a, b) => b.datePublished.localeCompare(a.datePublished)).slice(0, 20);
 const arArticleItems = articleItems.filter(a => a.language === 'ar').sort((a, b) => b.datePublished.localeCompare(a.datePublished)).slice(0, 20);
+
+// --- Homepage index (Explore surface) ---
+//
+// The homepage listing used to be hand-authored rows, which is why it ran in
+// alphabetical slug order and every badge read "General" while the feeds were
+// already correct. Generating it from the same records the feeds use keeps the
+// two in step permanently: newest first, real category, real read time.
+
+const HOME_INDEX_COUNT = 12;
+
+// Category text tints — see design/design-system.md §Category Palette.
+// Every value clears 4.5:1 on white; the brighter display hues fail as text.
+const categoryTint = {
+  dubai: '#0369A1', saudi: '#4D7C0F', 'saudi-guides': '#4D7C0F',
+  'practical-guide': '#6D28D9', guides: '#6D28D9', technology: '#0F766E',
+  islamic: '#B45309', health: '#BE123C', nutrition: '#BE123C',
+  science: '#1D4ED8', stories: '#9A3412', egypt: '#9A3412',
+  'egypt-guides': '#0F766E',
+  'vision-2030': '#6D28D9', business: '#0F766E', education: '#1D4ED8',
+  family: '#BE123C', 'self-care': '#BE123C', art: '#9A3412',
+  'around-the-world': '#0369A1', 'people-society': '#6D28D9',
+  'world-cup-2026': '#4D7C0F', 'entertainment-games': '#6D28D9'
+};
+
+const unmappedCategories = new Set();
+
+function formatIndexDate(iso, lang) {
+  const d = new Date(`${iso}T00:00:00Z`);
+  if (Number.isNaN(d.getTime())) return iso;
+  try {
+    return new Intl.DateTimeFormat(lang === 'ar' ? 'ar-AE' : 'en-GB',
+      { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d);
+  } catch { return iso; }
+}
+
+function renderHomeIndex(items, lang) {
+  const rows = items.map((item) => {
+    if (item.categorySlug && !categoryTint[item.categorySlug]) {
+      // Warn rather than silently falling back — an unmapped category loses its
+      // scent in the listing, which is the whole point of the index.
+      unmappedCategories.add(item.categorySlug);
+    }
+    const tint = categoryTint[item.categorySlug] || '#B45309';
+    const href = item.url.replace('https://doyouknow.app', '');
+    const art = `/assets/images/articles/${lang}-${item.slug}.art.svg`;
+    const cleanTitle = item.title.replace(/\s*\|\s*doyouknow\.app$/, '');
+    const meta = [formatIndexDate(item.datePublished, lang), item.readTime]
+      .filter(Boolean)
+      .map((v) => `<span>${escapeHtml(v)}</span>`).join('');
+    return `<a class="index-row" href="${href}">`
+      + `<img class="index-thumb" src="${art}" alt="" width="800" height="450" loading="lazy" decoding="async">`
+      + `<span class="index-main">`
+      + `<span class="index-eyebrow" style="--cat:${tint}">${escapeHtml(item.category)}</span>`
+      + `<span class="index-title">${escapeHtml(cleanTitle)}</span>`
+      + `<span class="index-excerpt">${escapeHtml(item.excerpt || item.description)}</span>`
+      + `</span>`
+      + `<span class="index-meta">${meta}</span>`
+      + `</a>`;
+  }).join('');
+  return `<div class="index-list" data-generated="home-index">${rows}</div>`;
+}
+
+async function writeHomeIndex(lang, items) {
+  const file = join(root, lang, 'index.html');
+  let html = await readFile(file, 'utf8');
+  const block = renderHomeIndex(items.slice(0, HOME_INDEX_COUNT), lang);
+  // Replace whichever form is present so the step is idempotent across builds.
+  const generated = /<div class="index-list" data-generated="home-index">[\s\S]*?<\/div>\s*(?=<div class="content-section"|<\/main>)/;
+  const legacy = /<div class="article-grid">[\s\S]*?<\/div>\s*(?=<div class="content-section"|<\/main>)/;
+  if (generated.test(html)) html = html.replace(generated, block);
+  else if (legacy.test(html)) html = html.replace(legacy, block);
+  else return false;
+
+  const total = items.length;
+  const label = lang === 'ar'
+    ? `${total} مقالاً · الأحدث أولاً`
+    : `${total} articles · newest first`;
+  const count = `<span class="index-count">${escapeHtml(label)}</span>`;
+  // The old "View all" pointed at a single category, not at everything. State
+  // the real count instead of linking somewhere the label does not promise.
+  if (/<span class="index-count">/.test(html)) {
+    html = html.replace(/<span class="index-count">[\s\S]*?<\/span>/, count);
+  } else {
+    html = html.replace(/<a [^>]*class="view-all"[^>]*>[\s\S]*?<\/a>/, count);
+  }
+  await writeFile(file, html);
+  return true;
+}
+
+const enAllArticles = articleItems.filter(a => a.language === 'en')
+  .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
+const arAllArticles = articleItems.filter(a => a.language === 'ar')
+  .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
+
+const wroteEn = await writeHomeIndex('en', enAllArticles);
+const wroteAr = await writeHomeIndex('ar', arAllArticles);
+console.log(`Homepage index: en ${wroteEn ? 'written' : 'skipped'}, ar ${wroteAr ? 'written' : 'skipped'} (newest first).`);
+if (unmappedCategories.size > 0) {
+  console.warn(`Warning: no category tint for ${[...unmappedCategories].sort().join(', ')} — add to categoryTint in prepare.mjs.`);
+}
 
 await writeFile(join(root, 'en', 'rss.xml'), generateRss(enArticleItems, 'en', 'doyouknow.app - English', 'Surprising facts about UAE, Saudi Arabia, and the world.', 'https://doyouknow.app/en/'));
 await writeFile(join(root, 'ar', 'rss.xml'), generateRss(arArticleItems, 'ar', 'doyouknow.app - العربية', 'Surprising facts about UAE, Saudi Arabia, and the world.', 'https://doyouknow.app/ar/'));

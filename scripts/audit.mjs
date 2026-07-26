@@ -265,7 +265,10 @@ for (const file of htmlFiles) {
   for (const img of html.matchAll(/<img\b[^>]*>/g)) {
     const tag = img[0];
     const alt = tag.match(/\balt="([^"]*)"/);
-    const isDecorativeCardImage = /\bclass="[^"]*\bcard-image\b/.test(tag) && alt && alt[1] === '';
+    // Listing thumbnails sit inside a link whose text already names the
+    // article. An empty alt is correct here; a descriptive one would make
+    // screen readers announce the same title twice.
+    const isDecorativeCardImage = /\bclass="[^"]*\b(card-image|index-thumb)\b/.test(tag) && alt && alt[1] === '';
     if ((!alt || !alt[1].trim()) && !isDecorativeCardImage) {
       errors.push(`${rel}: image missing non-empty alt text ${tag.slice(0, 120)}`);
     }
