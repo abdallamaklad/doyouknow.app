@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>390px mobile check</title>
+<!--
+  Local mobile QA harness. Browser window resizing proved unreliable during the
+  redesign, so each page is loaded in a 390px iframe instead: an iframe gets its
+  own viewport, so the site's media queries respond to the frame width.
+  Run `npm start` first, then open /design/mobile-check.html.
+  design/ is excluded from the production rsync, so this never ships.
+-->
+<style>
+ body{margin:0;background:#0e1116;color:#e6edf3;font:13px system-ui;display:flex;gap:20px;padding:12px;overflow-x:auto}
+ figure{margin:0;flex:none}figcaption{padding:6px 2px;font-weight:600}
+ iframe{width:390px;height:1450px;border:1px solid #444;background:#fff}
+</style>
+<figure><figcaption>EN home</figcaption><iframe src="http://127.0.0.1:4173/en/"></iframe></figure>
+<figure><figcaption>AR home</figcaption><iframe src="http://127.0.0.1:4173/ar/"></iframe></figure>
+<figure><figcaption>EN article</figcaption><iframe src="http://127.0.0.1:4173/en/article/burj-khalifa-facts.html"></iframe></figure>
+<figure><figcaption>AR article</figcaption><iframe src="http://127.0.0.1:4173/ar/article/burj-khalifa-facts.html"></iframe></figure>
+<figure><figcaption>EN category</figcaption><iframe src="http://127.0.0.1:4173/en/category/dubai.html"></iframe></figure>
