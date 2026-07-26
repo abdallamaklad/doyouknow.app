@@ -76,6 +76,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/egypt-internet-broadband-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-internet-broadband-guide.html",
+      "title": "الإنترنت المنزلي في مصر: دليل عملي للإنترنت الثابت",
+      "content_text": "يقدم عدة مزودين خدمة الإنترنت المنزلي الثابت في مصر عبر الألياف الضوئية أو DSL أو الإنترنت اللاسلكي 4G/5G، وتختلف الباقات والأسعار بشكل كبير حسب المنطقة والتقنية.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/egypt-mobile-wallets-guide.html",
       "url": "https://doyouknow.app/ar/article/egypt-mobile-wallets-guide.html",
       "title": "المحافظ الرقمية في مصر: كيف تعمل",
@@ -116,6 +126,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/egypt-work-permit-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-work-permit-guide.html",
+      "title": "كيف يحصل الأجانب على تصريح عمل في مصر؟",
+      "content_text": "يحتاج الأجانب العاملون في مصر عموماً إلى تصريح عمل من وزارة القوى العاملة وتصريح إقامة، وعادة ما يكفلهم صاحب عمل مصري.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/history-of-emoji.html",
       "url": "https://doyouknow.app/ar/article/history-of-emoji.html",
       "title": "تاريخ الإيموجي",
@@ -146,6 +166,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/history-of-the-hijra.html",
+      "url": "https://doyouknow.app/ar/article/history-of-the-hijra.html",
+      "title": "تاريخ الهجرة: الحدث الذي شكّل الإسلام",
+      "content_text": "الهجرة هي انتقال النبي محمد من مكة إلى المدينة عام 622 ميلادية، وهو حدث بالغ الأهمية لدرجة أنه يمثل بداية التقويم الهجري الإسلامي.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الثقافة والمعرفة الإسلامية"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/history-of-the-quran-compilation.html",
       "url": "https://doyouknow.app/ar/article/history-of-the-quran-compilation.html",
       "title": "كيف جُمع القرآن الكريم وحُفظ؟",
@@ -170,36 +200,6 @@
       "url": "https://doyouknow.app/ar/article/how-central-banks-control-inflation.html",
       "title": "كيف تتحكم البنوك المركزية في التضخم؟",
       "content_text": "تدير البنوك المركزية التضخم بشكل أساسي عبر رفع أو خفض أسعار الفائدة، ما يؤثر على الاقتراض والإنفاق والطلب العام في الاقتصاد.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-do-solar-panels-work.html",
-      "url": "https://doyouknow.app/ar/article/how-do-solar-panels-work.html",
-      "title": "كيف تعمل الألواح الشمسية فعليًا؟",
-      "content_text": "تحوّل الألواح الشمسية ضوء الشمس مباشرة إلى كهرباء عبر التأثير الكهروضوئي، وهي ظاهرة لوحظت لأول مرة في القرن التاسع عشر.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-passport-power-rankings-work.html",
-      "url": "https://doyouknow.app/ar/article/how-passport-power-rankings-work.html",
-      "title": "كيف تُحسب تصنيفات قوة جوازات السفر فعليًا؟",
-      "content_text": "تُرتّب تصنيفات قوة جوازات السفر، مثل مؤشر هينلي، الدول بحسب عدد الوجهات التي يمكن لمواطنيها دخولها دون تأشيرة مسبقة.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "حول العالم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-remittances-work.html",
-      "url": "https://doyouknow.app/ar/article/how-remittances-work.html",
-      "title": "كيف تعمل التحويلات المالية ولماذا تهم",
-      "content_text": "التحويلات المالية هي أموال يرسلها العاملون في الخارج إلى أوطانهم، عبر البنوك وشركات تحويل الأموال والمحافظ الرقمية.",
       "date_published": "2026-07-26",
       "tags": [
         "الأعمال والاقتصاد"
