@@ -6,6 +6,66 @@
   "language": "ar",
   "items": [
     {
+      "id": "https://doyouknow.app/ar/article/dubai-canal-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-canal-guide.html",
+      "title": "قناة دبي المائية: دليل شامل",
+      "content_text": "قناة دبي المائية ممر مائي بطول 3.2 كيلومتر يمتد من خور دبي إلى الخليج العربي، تصطف على جانبيه ممرات وجسور وتطويرات سكنية وضيافة.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/dubai-hills-estate-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-hills-estate-guide.html",
+      "title": "دبي هيلز إستيت: دليل شامل",
+      "content_text": "دبي هيلز إستيت مجتمع سكني كبير مخطط رئيسياً مبني حول ملعب غولف بطولي من 18 حفرة، متموضع كحي أخضر موجَّه للعائلات.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/dubai-safari-park-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-safari-park-guide.html",
+      "title": "دبي سفاري بارك: دليل شامل",
+      "content_text": "دبي سفاري بارك حديقة حياة برية كبيرة تجمع بين سفاري بالسيارة وقرى قابلة للمشي وحيوانات مُنقذة أو مُربّاة عبر عدة مناطق موضوعية.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egypt-birth-certificate-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-birth-certificate-guide.html",
+      "title": "كيف تحصل على شهادة ميلاد في مصر",
+      "content_text": "تُصدر شهادات الميلاد المصرية عبر هيئة الأحوال المدنية بعد الإبلاغ عن الميلاد، عادة من المستشفى، ضمن مهلة قانونية محددة.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egypt-marriage-registration-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-marriage-registration-guide.html",
+      "title": "كيف يعمل تسجيل الزواج في مصر",
+      "content_text": "يُوثَّق الزواج في مصر رسمياً عبر عقد زواج مدني مُسجَّل لدى مأذون، خطوة مطلوبة منفصلة عن الاحتفالات الدينية أو الاجتماعية.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egypt-postal-service-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-postal-service-guide.html",
+      "title": "خدمة البريد المصري: دليل عملي",
+      "content_text": "يتولى البريد المصري، المشغّل البريدي الوطني، توصيل الرسائل والطرود ودفع الفواتير وخدمات مالية أساسية عبر فروع في أنحاء البلاد.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/egypt-traffic-fines-guide.html",
       "url": "https://doyouknow.app/ar/article/egypt-traffic-fines-guide.html",
       "title": "دليل المخالفات والغرامات المرورية في مصر",
@@ -33,6 +93,16 @@
       "date_published": "2026-07-27",
       "tags": [
         "التغذية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/history-of-linocut-printmaking.html",
+      "url": "https://doyouknow.app/ar/article/history-of-linocut-printmaking.html",
+      "title": "تاريخ الطباعة بالحفر على اللينوليوم",
+      "content_text": "الحفر على اللينوليوم تقنية طباعة بارزة تستخدم لينوليوم منحوتاً، طُوِّرت في أوائل القرن العشرين كبديل يسهل الوصول إليه للطباعة التقليدية بالقوالب الخشبية.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الفن"
       ]
     },
     {
@@ -66,6 +136,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-cdns-work.html",
+      "url": "https://doyouknow.app/ar/article/how-cdns-work.html",
+      "title": "كيف تعمل شبكات توصيل المحتوى (CDN)؟",
+      "content_text": "تُخزّن شبكة CDN نسخاً من محتوى الموقع على خوادم حول العالم، مُوصِّلة إياه من الموقع الأقرب للزائر لتقليل وقت التحميل.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-do-tornadoes-form.html",
+      "url": "https://doyouknow.app/ar/article/how-do-tornadoes-form.html",
+      "title": "كيف تتكوّن الأعاصير القمعية فعلياً؟",
+      "content_text": "تتكوّن الأعاصير القمعية عندما يخلق قص الرياح عموداً أفقياً دوّاراً من الهواء يميله تيار صعود عاصفة رعدية إلى وضع رأسي، مضيقاً إياه إلى قمع عنيف.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-do-volcanoes-erupt.html",
       "url": "https://doyouknow.app/ar/article/how-do-volcanoes-erupt.html",
       "title": "كيف تثور البراكين فعلياً؟",
@@ -73,6 +163,26 @@
       "date_published": "2026-07-27",
       "tags": [
         "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-does-3d-printing-work.html",
+      "url": "https://doyouknow.app/ar/article/how-does-3d-printing-work.html",
+      "title": "كيف تعمل الطباعة ثلاثية الأبعاد فعلياً؟",
+      "content_text": "تبني الطباعة ثلاثية الأبعاد أجساماً فيزيائية طبقة تلو الأخرى من نموذج رقمي، باستخدام تقنيات مثل بثق البلاستيك المنصهر أو راتنج يُصلَّب بالضوء.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-facial-recognition-works.html",
+      "url": "https://doyouknow.app/ar/article/how-facial-recognition-works.html",
+      "title": "كيف تعمل تقنية التعرف على الوجه فعلياً؟",
+      "content_text": "التعرف على الوجه يُخطِّط قياسات وجه فريدة إلى نموذج رقمي، ثم يقارن ذلك النموذج بالبيانات المخزنة لتحديد هوية شخص أو التحقق منها.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
       ]
     },
     {
@@ -93,116 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-lottery-draws-work.html",
-      "url": "https://doyouknow.app/ar/article/how-lottery-draws-work.html",
-      "title": "كيف تعمل سحوبات اليانصيب الوطنية فعلياً",
-      "content_text": "تستخدم سحوبات اليانصيب مولدات أرقام عشوائية معتمدة أو آلات كرات فيزيائية، مع مدققين مستقلين وسحوبات علنية مصممة لإثبات النزاهة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/legend-of-anansi-the-spider.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-anansi-the-spider.html",
-      "title": "أسطورة أنانسي العنكبوت",
-      "content_text": "أنانسي عنكبوت محتال ذكي من الفولكلور الغرب أفريقي يتفوق بذكائه على شخصيات أقوى، وأصبح بطلاً شعبياً كاريبياً أيضاً.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/legend-of-beowulf.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-beowulf.html",
-      "title": "أسطورة بيوولف",
-      "content_text": "بيوولف قصيدة ملحمية بالإنجليزية القديمة عن بطل يهزم الوحش غريندل، وهي من أقدم الأعمال الأدبية الإنجليزية الباقية.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/legend-of-the-kraken.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-the-kraken.html",
-      "title": "أسطورة الكراكن",
-      "content_text": "الكراكن وحش بحري أسطوري من الفولكلور الاسكندنافي، يُقال إنه كبير بما يكفي لأن يُخطأ بجزيرة قبل أن يجر السفن تحت الماء.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/mosaic-art-history.html",
-      "url": "https://doyouknow.app/ar/article/mosaic-art-history.html",
-      "title": "تاريخ فن الفسيفساء",
-      "content_text": "فن الفسيفساء، المصنوع من قطع صغيرة من الحجر أو الزجاج أو البلاط، يعود لأكثر من 4000 عام وانتشر عبر ثقافات من بلاد الرافدين إلى بيزنطة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الفن"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/understanding-compassion-fatigue.html",
-      "url": "https://doyouknow.app/ar/article/understanding-compassion-fatigue.html",
-      "title": "فهم إرهاق التعاطف",
-      "content_text": "إرهاق التعاطف هو الإنهاك العاطفي الذي قد يصيب الأشخاص الذين يرعون الآخرين المتألمين مراراً، وهو شائع بين مقدمي الرعاية والمساعدين.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "العناية الذاتية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/understanding-the-barnum-effect.html",
-      "url": "https://doyouknow.app/ar/article/understanding-the-barnum-effect.html",
-      "title": "فهم تأثير بارنوم",
-      "content_text": "تأثير بارنوم يصف لماذا يُقيّم الناس أوصاف الشخصية الغامضة العامة كدقيقة جداً، معتقدين أنها كُتبت خصيصاً لهم.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الناس والمجتمع"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-causes-earthquakes.html",
-      "url": "https://doyouknow.app/ar/article/what-causes-earthquakes.html",
-      "title": "ما الذي يسبب الزلازل؟",
-      "content_text": "تحدث الزلازل عندما يتحرر فجأة إجهاد متراكم على طول خطوط الصدع، مرسلاً موجات زلزالية عبر الأرض مع تحرك الصفائح التكتونية.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-5g.html",
-      "url": "https://doyouknow.app/ar/article/what-is-5g.html",
-      "title": "ما هي شبكة 5G وكيف تختلف عن 4G؟",
-      "content_text": "5G هو الجيل الخامس من تقنية شبكات الجوال، يقدم سرعات أسرع بكثير وزمن استجابة أقل من 4G عبر ترددات لاسلكية جديدة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-a-trade-deficit.html",
-      "url": "https://doyouknow.app/ar/article/what-is-a-trade-deficit.html",
-      "title": "ما هو العجز التجاري؟",
-      "content_text": "العجز التجاري يحدث عندما تستورد دولة سلعاً وخدمات بقيمة أكبر مما تصدّره، وهو ليس تلقائياً علامة ضعف اقتصادي.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-a-vpn.html",
-      "url": "https://doyouknow.app/ar/article/what-is-a-vpn.html",
-      "title": "ما هي شبكة VPN وكيف تعمل؟",
-      "content_text": "تشفّر شبكة VPN حركة الإنترنت لديك وتوجهها عبر خادم بعيد، مخفيةً موقعك الحقيقي وحامية بياناتك على الشبكات العامة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "التقنية"
       ]
     }
   ]

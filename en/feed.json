@@ -6,6 +6,66 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/dubai-canal-guide.html",
+      "url": "https://doyouknow.app/en/article/dubai-canal-guide.html",
+      "title": "Dubai Canal: A Complete Guide",
+      "content_text": "Dubai Canal is a 3.2-kilometer waterway extending Dubai Creek to the Arabian Gulf, lined with promenades, bridges, and residential and hospitality developments.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/dubai-hills-estate-guide.html",
+      "url": "https://doyouknow.app/en/article/dubai-hills-estate-guide.html",
+      "title": "Dubai Hills Estate: A Complete Guide",
+      "content_text": "Dubai Hills Estate is a large master-planned residential community built around an 18-hole championship golf course, positioned as a green, family-oriented district.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/dubai-safari-park-guide.html",
+      "url": "https://doyouknow.app/en/article/dubai-safari-park-guide.html",
+      "title": "Dubai Safari Park: A Complete Guide",
+      "content_text": "Dubai Safari Park is a large wildlife park combining a drive-through safari, walkable villages, and rescued or bred animals across several themed zones.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egypt-birth-certificate-guide.html",
+      "url": "https://doyouknow.app/en/article/egypt-birth-certificate-guide.html",
+      "title": "How to Get a Birth Certificate in Egypt",
+      "content_text": "Egyptian birth certificates are issued through the Civil Status Authority after the birth is reported, usually by the hospital, within a set legal deadline.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egypt-marriage-registration-guide.html",
+      "url": "https://doyouknow.app/en/article/egypt-marriage-registration-guide.html",
+      "title": "How Marriage Registration Works in Egypt",
+      "content_text": "Marriage in Egypt is formalized through a civil marriage contract registered at a notary office, a required step separate from religious or social ceremonies.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egypt-postal-service-guide.html",
+      "url": "https://doyouknow.app/en/article/egypt-postal-service-guide.html",
+      "title": "Egypt Postal Service: A Practical Guide",
+      "content_text": "Egypt Post, the national postal operator, handles mail and parcel delivery, bill payments, and basic financial services through branches across the country.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/egypt-traffic-fines-guide.html",
       "url": "https://doyouknow.app/en/article/egypt-traffic-fines-guide.html",
       "title": "Egypt Traffic Fines and Violations Guide",
@@ -33,6 +93,16 @@
       "date_published": "2026-07-27",
       "tags": [
         "Nutrition"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-linocut-printmaking.html",
+      "url": "https://doyouknow.app/en/article/history-of-linocut-printmaking.html",
+      "title": "The History of Linocut Printmaking",
+      "content_text": "Linocut is a relief printmaking technique using carved linoleum, developed in the early 20th century as an accessible alternative to traditional woodblock printing.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Art"
       ]
     },
     {
@@ -66,6 +136,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-cdns-work.html",
+      "url": "https://doyouknow.app/en/article/how-cdns-work.html",
+      "title": "How Do CDNs Work? The Network That Speeds Up the Internet",
+      "content_text": "A CDN stores copies of website content on servers around the world, delivering it from the location nearest a visitor to reduce loading time.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
+      "url": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
+      "title": "How Do Tornadoes Actually Form?",
+      "content_text": "Tornadoes form when wind shear creates a horizontal spinning column of air that a thunderstorm's updraft tilts vertical, tightening into a violent funnel.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-do-volcanoes-erupt.html",
       "url": "https://doyouknow.app/en/article/how-do-volcanoes-erupt.html",
       "title": "How Do Volcanoes Actually Erupt?",
@@ -73,6 +163,26 @@
       "date_published": "2026-07-27",
       "tags": [
         "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-does-3d-printing-work.html",
+      "url": "https://doyouknow.app/en/article/how-does-3d-printing-work.html",
+      "title": "How Does 3D Printing Actually Work?",
+      "content_text": "3D printing builds physical objects layer by layer from a digital model, using techniques like melted plastic extrusion or resin cured by light.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-facial-recognition-works.html",
+      "url": "https://doyouknow.app/en/article/how-facial-recognition-works.html",
+      "title": "How Does Facial Recognition Technology Actually Work?",
+      "content_text": "Facial recognition maps unique facial measurements into a numerical template, then compares that template against stored data to identify or verify a person.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Technology Explained"
       ]
     },
     {
@@ -93,116 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-lottery-draws-work.html",
-      "url": "https://doyouknow.app/en/article/how-lottery-draws-work.html",
-      "title": "How National Lottery Draws Actually Work",
-      "content_text": "Lottery draws use certified random number generators or physical ball machines, with independent auditors and public draws designed to prove fairness.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/legend-of-anansi-the-spider.html",
-      "url": "https://doyouknow.app/en/article/legend-of-anansi-the-spider.html",
-      "title": "The Legend of Anansi the Spider",
-      "content_text": "Anansi is a clever trickster spider from West African folklore who outwits stronger characters through wit rather than strength, and became a Caribbean folk hero too.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Stories"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/legend-of-beowulf.html",
-      "url": "https://doyouknow.app/en/article/legend-of-beowulf.html",
-      "title": "The Legend of Beowulf",
-      "content_text": "Beowulf is an Old English epic poem about a hero who defeats the monster Grendel, and it's one of the oldest surviving works of English literature.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Stories"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/legend-of-the-kraken.html",
-      "url": "https://doyouknow.app/en/article/legend-of-the-kraken.html",
-      "title": "The Legend of the Kraken",
-      "content_text": "The Kraken is a legendary sea monster from Scandinavian folklore, said to be large enough to be mistaken for an island before dragging ships underwater.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Stories"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/mosaic-art-history.html",
-      "url": "https://doyouknow.app/en/article/mosaic-art-history.html",
-      "title": "The History of Mosaic Art",
-      "content_text": "Mosaic art, made from small pieces of stone, glass, or tile, dates back over 4,000 years and spread across cultures from Mesopotamia to Byzantium.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Art"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/understanding-compassion-fatigue.html",
-      "url": "https://doyouknow.app/en/article/understanding-compassion-fatigue.html",
-      "title": "Understanding Compassion Fatigue",
-      "content_text": "Compassion fatigue is the emotional exhaustion that can affect people who repeatedly care for others in distress, common among caregivers and helpers.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Self Care"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/understanding-the-barnum-effect.html",
-      "url": "https://doyouknow.app/en/article/understanding-the-barnum-effect.html",
-      "title": "Understanding the Barnum Effect",
-      "content_text": "The Barnum effect describes why people rate vague, generic personality descriptions as highly accurate, believing they were written specifically for them.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "People and Society"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-causes-earthquakes.html",
-      "url": "https://doyouknow.app/en/article/what-causes-earthquakes.html",
-      "title": "What Causes Earthquakes?",
-      "content_text": "Earthquakes happen when built-up stress along fault lines suddenly releases, sending seismic waves through the ground as tectonic plates shift.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-5g.html",
-      "url": "https://doyouknow.app/en/article/what-is-5g.html",
-      "title": "What Is 5G and How Is It Different From 4G?",
-      "content_text": "5G is the fifth generation of mobile network technology, offering significantly faster speeds and lower latency than 4G through new radio frequencies.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-a-trade-deficit.html",
-      "url": "https://doyouknow.app/en/article/what-is-a-trade-deficit.html",
-      "title": "What Is a Trade Deficit?",
-      "content_text": "A trade deficit happens when a country imports more goods and services in value than it exports, and it isn't automatically a sign of economic weakness.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-a-vpn.html",
-      "url": "https://doyouknow.app/en/article/what-is-a-vpn.html",
-      "title": "What Is a VPN and How Does It Work?",
-      "content_text": "A VPN encrypts your internet traffic and routes it through a remote server, masking your real location and protecting your data on public networks.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Technology Explained"
       ]
     }
   ]
