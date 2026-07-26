@@ -26,6 +26,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/dubai-mall-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-mall-guide.html",
+      "title": "دبي مول: حقائق عن أكثر وجهة تجارية زيارةً في العالم",
+      "content_text": "دبي مول ليس مجرد مركز تسوق — بل يضم حوض أسماك ضخماً وحلبة تزلج وشلالاً، ويستقبل زواراً سنوياً يفوق معظم مدن الملاهي.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/dubai-marina-guide.html",
       "url": "https://doyouknow.app/ar/article/dubai-marina-guide.html",
       "title": "دبي مارينا: دليل شامل للحي الساحلي",
@@ -136,10 +146,30 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/global-village-dubai-guide.html",
+      "url": "https://doyouknow.app/ar/article/global-village-dubai-guide.html",
+      "title": "القرية العالمية في دبي: دليل شامل",
+      "content_text": "القرية العالمية منتزه ثقافي وترفيهي موسمي في دبي، تدير فيه عشرات الدول أجنحة مخصصة للتسوق والطعام والعروض.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/history-of-emoji.html",
       "url": "https://doyouknow.app/ar/article/history-of-emoji.html",
       "title": "تاريخ الإيموجي",
       "content_text": "نشأ الإيموجي في اليابان أواخر التسعينيات، ويوحّده اليوم اتحاد يونيكود عالميًا كي يظهر بشكل متسق عبر الأجهزة.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الترفيه والألعاب"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/history-of-stop-motion-animation.html",
+      "url": "https://doyouknow.app/ar/article/history-of-stop-motion-animation.html",
+      "title": "تاريخ التحريك بالتوقف اللقطي وتحريك الصلصال",
+      "content_text": "التحريك بالتوقف اللقطي سبق تحريك الرسوم المتحركة، ويعتمد على تصوير حركات فيزيائية دقيقة لقطة تلو الأخرى. إليك كيف تطورت هذه التقنية.",
       "date_published": "2026-07-26",
       "tags": [
         "الترفيه والألعاب"
@@ -166,43 +196,13 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/history-of-the-hijra.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-hijra.html",
-      "title": "تاريخ الهجرة: الحدث الذي شكّل الإسلام",
-      "content_text": "الهجرة هي انتقال النبي محمد من مكة إلى المدينة عام 622 ميلادية، وهو حدث بالغ الأهمية لدرجة أنه يمثل بداية التقويم الهجري الإسلامي.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الثقافة والمعرفة الإسلامية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-the-quran-compilation.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-quran-compilation.html",
-      "title": "كيف جُمع القرآن الكريم وحُفظ؟",
-      "content_text": "تضمن جمع القرآن الكريم الحفظ الشفهي خلال حياة النبي محمد ثم جهد توثيق كتابي رسمي في عهد الخلفاء الأوائل.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الثقافة والمعرفة الإسلامية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-the-video-game-console.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-video-game-console.html",
-      "title": "تاريخ أجهزة ألعاب الفيديو",
-      "content_text": "تطورت أجهزة ألعاب الفيديو من جهاز منزلي عام 1972 برسومات بسيطة من نقاط وخطوط إلى مراكز ترفيه متصلة عالية الدقة موجودة في غرف المعيشة اليوم.",
+      "id": "https://doyouknow.app/ar/article/history-of-the-drive-in-movie-theater.html",
+      "url": "https://doyouknow.app/ar/article/history-of-the-drive-in-movie-theater.html",
+      "title": "تاريخ سينما السيارات (الدرايف إن)",
+      "content_text": "حصلت سينما السيارات على براءة اختراع عام 1933 كوسيلة للعائلات لمشاهدة الأفلام دون مغادرة سياراتها. إليك كيف ازدهرت ثم تراجعت لاحقاً.",
       "date_published": "2026-07-26",
       "tags": [
         "الترفيه والألعاب"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-central-banks-control-inflation.html",
-      "url": "https://doyouknow.app/ar/article/how-central-banks-control-inflation.html",
-      "title": "كيف تتحكم البنوك المركزية في التضخم؟",
-      "content_text": "تدير البنوك المركزية التضخم بشكل أساسي عبر رفع أو خفض أسعار الفائدة، ما يؤثر على الاقتراض والإنفاق والطلب العام في الاقتصاد.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الأعمال والاقتصاد"
       ]
     }
   ]
