@@ -23,6 +23,39 @@ A premium, bilingual, content-first design system optimized for mobile-first con
 
 ---
 
+## Direction: Editorial Index (adopted)
+
+The system's committed direction. Recorded here so later work inherits the
+decision rather than re-litigating it.
+
+**Surface archetypes.** Every page commits to one archetype before any styling:
+
+| Page | Archetype | Consequence |
+|---|---|---|
+| Home | **Explore** | Search + category rail above the fold; a dense index, not a landing page. A marketing hero is wrong here. |
+| Category | **Explore** | Same index unit, scoped. Shows its own count. |
+| Article | **Decide/Learn** | One idea per section; the only place a lead image belongs. |
+| Newsletter | **Configure** | One task, no decoration. |
+| About / Contact | **Decide/Learn** | Prose. No filler team tiles. |
+
+**Posture.** Rows, not tiles: the headline does the work and the thumbnail is a
+96px aid. Amber is a *rule and marker*, not a fill. Navy is ink. An editorial
+serif carries display type; Inter/Cairo carry body.
+
+**Non-negotiables that fall out of this.**
+1. Display artwork carries **no text**. Titles live in HTML only — never baked
+   into an image. (Text in artwork cannot wrap, cannot localise, and clipped
+   the Arabic hero on ~361 pages.) Social/OG rasters are the sole exception:
+   they are never read as page content and have their own fitting logic.
+2. RTL is achieved with **logical properties** (`margin-inline`, `padding-inline`,
+   `inset-inline`, `border-inline`), never by mirroring physical properties in
+   `[lang="ar"]` overrides. A Latin wordmark inside RTL text must be isolated
+   with `direction:ltr` or `<bdi>`.
+3. Listings sort **newest first**, matching the RSS/JSON feeds.
+4. Every article shows its real category. "General" is not a category.
+
+---
+
 ## Color System
 
 ### Primary Palette
@@ -43,13 +76,33 @@ A premium, bilingual, content-first design system optimized for mobile-first con
 | Dark Gray | `#475569` | Secondary text | `#94A3B8` |
 | Charcoal | `#1E293B` | Card bg dark | `#1E293B` |
 
-### Accent Palette
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Rose | `#F43F5E` | Alerts, trending, urgent |
-| Purple | `#8B5CF6` | Featured, special categories |
-| Teal | `#14B8A6` | Lifestyle, culture, wellness |
-| Orange | `#F97316` | Hero gradients, warm highlights |
+### Category Palette (text-safe)
+
+One hue per category, used on the eyebrow label and the thumbnail field so a
+listing carries scent. Values below are the **light-mode text** tints; each is
+verified against `#FFFFFF`. The brighter display tints (`#F43F5E`, `#8B5CF6`,
+`#14B8A6`, `#F97316`) are decorative fills only — they fail AA as text and must
+never carry a label.
+
+| Category | Text tint | Contrast on white |
+|---|---|---|
+| Dubai & UAE Places | `#0369A1` | 5.93:1 |
+| Saudi Arabia | `#4D7C0F` | 4.99:1 |
+| Practical Guide | `#6D28D9` | 7.10:1 |
+| Technology | `#0F766E` | 5.47:1 |
+| Islamic Knowledge | `#B45309` | 5.02:1 |
+| Health | `#BE123C` | 6.29:1 |
+| Science | `#1D4ED8` | 6.70:1 |
+| Stories | `#9A3412` | 7.31:1 |
+
+### Contrast floor
+
+WCAG AA (4.5:1) for all text. Two tokens previously failed and are corrected:
+
+| Token | Was | Now |
+|---|---|---|
+| Muted text, light | `#94A3B8` — 2.56:1 ❌ | `#64748B` — 4.56:1 ✅ |
+| Muted text, dark | `#64748B` — 3.07:1 ❌ | `#94A3B8` — 5.71:1 ✅ |
 
 ### Gradient Usage
 ```css
@@ -83,17 +136,34 @@ font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 ```
 
 ### Type Scale
-| Level | Mobile | Tablet | Desktop | Weight | Line Height |
-|-------|--------|--------|---------|--------|-------------|
-| Display | 28px | 36px | 48px | 700-800 | 1.2 |
-| H1 | 24px | 32px | 42px | 700 | 1.3 |
-| H2 | 20px | 26px | 32px | 600 | 1.4 |
-| H3 | 18px | 22px | 24px | 600 | 1.5 |
-| Body | 16px | 16px | 16px | 400 | 1.6 |
-| Lead | 18px | 18px | 20px | 400 | 1.6 |
-| Small | 14px | 14px | 14px | 400 | 1.5 |
-| Caption | 12px | 12px | 12px | 500 | 1.4 |
-| Label | 11px | 11px | 11px | 600 | 1.2 |
+
+**These are tokens, not a table.** Use `var(--t-*)` — never a raw `font-size`.
+(This scale was specified here from the start but was never tokenised; the
+stylesheet accumulated 128 ad-hoc `font-size` declarations across ~30 values
+and 11 hand-rolled clamp ramps instead. That is what made the site read
+"assembled" rather than designed.)
+
+```css
+--t-display: clamp(28px, 4.2vw, 48px);  /* 700–800 · lh 1.1  */
+--t-h1:      clamp(24px, 3.4vw, 42px);  /* 700     · lh 1.2  */
+--t-h2:      clamp(20px, 2.6vw, 32px);  /* 600     · lh 1.25 */
+--t-h3:      clamp(18px, 1.9vw, 24px);  /* 600     · lh 1.3  */
+--t-lead:    clamp(18px, 1.4vw, 20px);  /* 400     · lh 1.6  */
+--t-body:    16px;                      /* 400     · lh 1.6  */
+--t-small:   14px;                      /* 400     · lh 1.5  */
+--t-caption: 12px;                      /* 500     · lh 1.4  */
+--t-label:   11px;                      /* 600     · lh 1.2  */
+```
+
+### Measure
+
+```css
+--measure: 68ch;   /* article body */
+```
+
+Not a pixel width. The previous `800px` at `1.05rem` produced ~95 characters
+per line — roughly 30% past comfortable reading, and worse in Arabic at
+`line-height: 1.75`.
 
 ### Arabic Typography Rules
 - `font-family: 'Cairo', 'Tajawal', sans-serif;`
@@ -340,23 +410,27 @@ Table of Contents
 
 ## Page Layouts
 
-### Homepage
+### Homepage — **Explore**
 ```
 ┌─────────────────────────────────────┐
 │ [Header: Logo | Nav | Search | Lang]│
 ├─────────────────────────────────────┤
-│ [Hero: Featured Article]            │
-│                                     │
-│ [Category Explorer: Grid of 8]     │
-│                                     │
-│ [Latest Articles: 3-card grid]     │
-│                                     │
-│ [Newsletter Banner]                 │
-│                                     │
-│ [Footer: Logo | Links | Social |   │
-│  Legal]                             │
+│ [Masthead: tagline + amber rule]    │
+│ [Search ————————————————————]      │
+│ [Category rail: chips]              │
+├─────────────────────────────────────┤
+│ [Index — newest first, N articles]  │
+│  ▸ thumb │ eyebrow / title / excerpt │ date
+│  ▸ thumb │ eyebrow / title / excerpt │ date
+│  ▸ …                                 │
+├─────────────────────────────────────┤
+│ [Footer]                            │
 └─────────────────────────────────────┘
 ```
+
+Rows, not a card grid — roughly 3× more of the library per screen. No marketing
+hero, no promo tile, no CTA block reserving space for a form that is switched
+off. Every row carries its real category colour, date and read time.
 
 ### Article Page
 ```
