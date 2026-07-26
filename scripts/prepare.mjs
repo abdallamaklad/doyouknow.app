@@ -328,13 +328,23 @@ function updateArticlePageImage(html, relativeFile) {
   if (categoryByArticle.has(relativeFile)) {
     const title = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim() || slug;
     const alt = lang === 'ar' ? `رسم توضيحي لمقال ${title}` : `Editorial illustration for ${title}`;
-    const featured = `<img class="featured-image" src="${imagePath}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`;
-    // Handle the placeholder <div> and an already-rendered <img> alike, so a
-    // rebuild keeps pages on the text-free artwork instead of silently
-    // reverting them to the text-bearing social source.
-    html = html.includes('<div class="featured-image"')
-      ? html.replace(/<div class="featured-image"[\s\S]*?<\/div>/, featured)
-      : html.replace(/<img class="featured-image"[^>]*>/, featured);
+    // Replace the placeholder <div> if it is still there.
+    if (html.includes('<div class="featured-image"')) {
+      html = html.replace(
+        /<div class="featured-image"[\s\S]*?<\/div>/,
+        `<img class="featured-image" src="${imagePath}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
+      );
+    }
+    // Otherwise rewrite the src in place on any hero image, whatever its class
+    // list. Three variants exist in the corpus — "featured-image",
+    // "article-hero-image", and the combined "featured-image
+    // article-hero-image" — so matching by class prefix silently missed some
+    // and left them on the text-bearing artwork. Rewriting only the attribute
+    // also preserves each tag's existing alt, decoding and priority hints.
+    html = html.replace(
+      /<img\b[^>]*\bclass="[^"]*\b(?:featured-image|article-hero-image)\b[^"]*"[^>]*>/g,
+      (tag) => tag.replace(/\bsrc="[^"]*"/, `src="${imagePath}"`)
+    );
   }
   html = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (script, raw) => {
     try {
