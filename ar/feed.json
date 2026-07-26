@@ -26,6 +26,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/dubai-marina-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-marina-guide.html",
+      "title": "دبي مارينا: دليل شامل للحي الساحلي",
+      "content_text": "دبي مارينا حي ساحلي اصطناعي مبني حول قناة مائية صناعية، ويُعرف بأفق ناطحات السحاب والممشى الساحلي والكثافة السكانية العالية.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/dubai-opera-guide.html",
       "url": "https://doyouknow.app/ar/article/dubai-opera-guide.html",
       "title": "دار أوبرا دبي: داخل صرح الفنون الأدائية في الإمارة",
@@ -76,6 +86,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/egypt-national-id-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-national-id-guide.html",
+      "title": "بطاقة الرقم القومي المصرية: ما هي ولماذا تهم؟",
+      "content_text": "بطاقة الرقم القومي المصرية وثيقة هوية إلزامية للمواطنين والمقيمين، مطلوبة للمعاملات المصرفية والصحية ومعظم المعاملات الرسمية.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egypt-property-ownership-foreigners-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-property-ownership-foreigners-guide.html",
+      "title": "هل يمكن للأجانب تملك العقارات في مصر؟ دليل عملي",
+      "content_text": "يمكن للأجانب تملك العقارات في مصر قانونياً بشروط محددة، تشمل قيوداً على الموقع والمساحة وتوقيت إعادة البيع تختلف حسب نوع العقار.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/egypt-universal-health-insurance-guide.html",
       "url": "https://doyouknow.app/ar/article/egypt-universal-health-insurance-guide.html",
       "title": "نظام التأمين الصحي الشامل في مصر: ما يجب معرفته",
@@ -116,6 +146,36 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/history-of-the-quran-compilation.html",
+      "url": "https://doyouknow.app/ar/article/history-of-the-quran-compilation.html",
+      "title": "كيف جُمع القرآن الكريم وحُفظ؟",
+      "content_text": "تضمن جمع القرآن الكريم الحفظ الشفهي خلال حياة النبي محمد ثم جهد توثيق كتابي رسمي في عهد الخلفاء الأوائل.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الثقافة والمعرفة الإسلامية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/history-of-the-video-game-console.html",
+      "url": "https://doyouknow.app/ar/article/history-of-the-video-game-console.html",
+      "title": "تاريخ أجهزة ألعاب الفيديو",
+      "content_text": "تطورت أجهزة ألعاب الفيديو من جهاز منزلي عام 1972 برسومات بسيطة من نقاط وخطوط إلى مراكز ترفيه متصلة عالية الدقة موجودة في غرف المعيشة اليوم.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الترفيه والألعاب"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-central-banks-control-inflation.html",
+      "url": "https://doyouknow.app/ar/article/how-central-banks-control-inflation.html",
+      "title": "كيف تتحكم البنوك المركزية في التضخم؟",
+      "content_text": "تدير البنوك المركزية التضخم بشكل أساسي عبر رفع أو خفض أسعار الفائدة، ما يؤثر على الاقتراض والإنفاق والطلب العام في الاقتصاد.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-do-solar-panels-work.html",
       "url": "https://doyouknow.app/ar/article/how-do-solar-panels-work.html",
       "title": "كيف تعمل الألواح الشمسية فعليًا؟",
@@ -143,66 +203,6 @@
       "date_published": "2026-07-26",
       "tags": [
         "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-saudi-arabias-public-investment-fund-works.html",
-      "url": "https://doyouknow.app/ar/article/how-saudi-arabias-public-investment-fund-works.html",
-      "title": "كيف يعمل صندوق الاستثمارات العامة السعودي؟",
-      "content_text": "صندوق الاستثمارات العامة هو صندوق الثروة السيادي في السعودية، ويوجّه إيرادات مرتبطة بالنفط نحو المشاريع الكبرى ومحفظة استثمارية عالمية ضمن رؤية 2030.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "رؤية السعودية 2030 والمشاريع الكبرى"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/legend-of-pandoras-box.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-pandoras-box.html",
-      "title": "أسطورة صندوق باندورا",
-      "content_text": "في الأساطير الإغريقية، وُصف وعاء باندورا الذي حوى شرور العالم أصلًا بأنه جرة لا صندوق، وفُتح بدافع الفضول، فلم يبقَ بداخله سوى الأمل.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/legend-of-the-loch-ness-monster.html",
-      "url": "https://doyouknow.app/ar/article/legend-of-the-loch-ness-monster.html",
-      "title": "أسطورة وحش بحيرة لوخ نس",
-      "content_text": "يُقال إن وحش بحيرة لوخ نس، أو \"نيسي\"، يسكن بحيرة اسكتلندية كبيرة، وتُروى مشاهدات حديثة له منذ ما يقارب قرنًا دون تأكيد علمي.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "قصص"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/nile-cruise-guide.html",
-      "url": "https://doyouknow.app/ar/article/nile-cruise-guide.html",
-      "title": "دليل الرحلات النيلية: من الأقصر إلى أسوان",
-      "content_text": "كيفية تخطيط رحلة نيلية بين الأقصر وأسوان: خيارات مدة الرحلة، ما تتضمنه، اختيار السفينة، محطات المعابد، ونصائح حجز عملية لعام 2026.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/saudi-mada-payment-system-guide.html",
-      "url": "https://doyouknow.app/ar/article/saudi-mada-payment-system-guide.html",
-      "title": "ما هي مدى، شبكة الدفع الوطنية في السعودية؟",
-      "content_text": "مدى هي شبكة بطاقات الخصم المحلية في السعودية، ينظمها البنك المركزي السعودي، وتُستخدم في معظم مدفوعات البطاقات داخل المملكة.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/saudi-traffic-fines-guide.html",
-      "url": "https://doyouknow.app/ar/article/saudi-traffic-fines-guide.html",
-      "title": "كيف تعمل المخالفات المرورية في السعودية: دليل عملي",
-      "content_text": "كيف تُطبَّق المخالفات المرورية في السعودية عبر نظام ساهر ونقاط المخالفات، وكيفية الاستعلام والدفع عبر أبشر.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "أدلة عملية في السعودية"
       ]
     }
   ]
