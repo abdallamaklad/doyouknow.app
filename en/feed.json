@@ -6,6 +6,16 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/ain-dubai-observation-wheel-facts.html",
+      "url": "https://doyouknow.app/en/article/ain-dubai-observation-wheel-facts.html",
+      "title": "Ain Dubai: Facts About the World's Tallest Observation Wheel",
+      "content_text": "Ain Dubai, on Bluewaters Island, was recognized by Guinness World Records as the tallest and largest observation wheel in the world at its 2021 opening.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/cairo-metro-guide.html",
       "url": "https://doyouknow.app/en/article/cairo-metro-guide.html",
       "title": "Cairo Metro Guide: Lines, Tickets, and Tips",
@@ -16,10 +26,30 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/dubai-opera-guide.html",
+      "url": "https://doyouknow.app/en/article/dubai-opera-guide.html",
+      "title": "Dubai Opera: Inside the Emirate's Performing Arts Venue",
+      "content_text": "Dubai Opera is a multi-format performing arts venue in Downtown Dubai, designed to resemble a traditional dhow boat and hosting opera, concerts, and theater.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/egypt-bank-account-guide.html",
       "url": "https://doyouknow.app/en/article/egypt-bank-account-guide.html",
       "title": "Opening a Bank Account in Egypt: Guide",
       "content_text": "How foreign residents can open a bank account in Egypt: required documents, choosing a bank, account types, and practical tips for expats and long-term visitors.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/egypt-customs-import-guide.html",
+      "url": "https://doyouknow.app/en/article/egypt-customs-import-guide.html",
+      "title": "Egypt Customs and Import Rules: A Practical Guide",
+      "content_text": "Bringing goods into Egypt, whether personal items or commercial shipments, involves Egyptian Customs Authority rules on duty-free allowances, declarations, and duties.",
       "date_published": "2026-07-26",
       "tags": [
         "Egypt Practical Guides"
@@ -46,6 +76,66 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/egypt-universal-health-insurance-guide.html",
+      "url": "https://doyouknow.app/en/article/egypt-universal-health-insurance-guide.html",
+      "title": "Egypt's Universal Health Insurance System: What to Know",
+      "content_text": "Egypt has been rolling out a Universal Health Insurance system since 2019, gradually replacing the older health insurance scheme governorate by governorate.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-emoji.html",
+      "url": "https://doyouknow.app/en/article/history-of-emoji.html",
+      "title": "The History of Emoji",
+      "content_text": "Emoji originated in late-1990s Japan and are now standardized worldwide by the Unicode Consortium so they display consistently across devices.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-the-adhan.html",
+      "url": "https://doyouknow.app/en/article/history-of-the-adhan.html",
+      "title": "The History of the Adhan, Islam's Call to Prayer",
+      "content_text": "The adhan, Islam's call to prayer, traces to the earliest years of the Muslim community in Medina and is traditionally linked to a companion of the Prophet Muhammad.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Islamic Knowledge & Culture"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/history-of-the-crossword-puzzle.html",
+      "url": "https://doyouknow.app/en/article/history-of-the-crossword-puzzle.html",
+      "title": "The History of the Crossword Puzzle",
+      "content_text": "The modern crossword puzzle traces to a 1913 word-cross puzzle published in a New York newspaper, and it became a global pastime within about a decade.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-do-solar-panels-work.html",
+      "url": "https://doyouknow.app/en/article/how-do-solar-panels-work.html",
+      "title": "How Do Solar Panels Actually Work?",
+      "content_text": "Solar panels convert sunlight directly into electricity using the photovoltaic effect, a phenomenon first observed in the 19th century.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-passport-power-rankings-work.html",
+      "url": "https://doyouknow.app/en/article/how-passport-power-rankings-work.html",
+      "title": "How Passport Power Rankings Actually Work",
+      "content_text": "Passport power rankings like the Henley Passport Index rank countries by how many destinations their citizens can enter without a prior visa.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Around the World"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-remittances-work.html",
       "url": "https://doyouknow.app/en/article/how-remittances-work.html",
       "title": "How Remittances Work and Why They Matter",
@@ -53,6 +143,36 @@
       "date_published": "2026-07-26",
       "tags": [
         "Business and Economy"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-saudi-arabias-public-investment-fund-works.html",
+      "url": "https://doyouknow.app/en/article/how-saudi-arabias-public-investment-fund-works.html",
+      "title": "How Does Saudi Arabia's Public Investment Fund Work?",
+      "content_text": "The Public Investment Fund is Saudi Arabia's sovereign wealth fund, channeling oil-linked revenue into giga-projects and a global investment portfolio under Vision 2030.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Saudi Vision 2030 & Megaprojects"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/legend-of-pandoras-box.html",
+      "url": "https://doyouknow.app/en/article/legend-of-pandoras-box.html",
+      "title": "The Legend of Pandora's Box",
+      "content_text": "In Greek mythology, Pandora's container of the world's evils, originally described as a jar rather than a box, was opened out of curiosity, leaving only hope inside.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Stories"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/legend-of-the-loch-ness-monster.html",
+      "url": "https://doyouknow.app/en/article/legend-of-the-loch-ness-monster.html",
+      "title": "The Legend of the Loch Ness Monster",
+      "content_text": "The Loch Ness Monster, or \"Nessie,\" is said to inhabit a large Scottish lake, with modern sightings reported for nearly a century though never scientifically confirmed.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "Stories"
       ]
     },
     {
@@ -83,126 +203,6 @@
       "date_published": "2026-07-26",
       "tags": [
         "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/understanding-insulin-resistance.html",
-      "url": "https://doyouknow.app/en/article/understanding-insulin-resistance.html",
-      "title": "Understanding Insulin Resistance",
-      "content_text": "Insulin resistance means cells respond poorly to insulin, forcing the pancreas to work harder, and is a key step toward type 2 diabetes.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Health"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/understanding-sandwich-generation.html",
-      "url": "https://doyouknow.app/en/article/understanding-sandwich-generation.html",
-      "title": "Understanding the Sandwich Generation",
-      "content_text": "The sandwich generation refers to adults simultaneously raising children and caring for aging parents, often under real financial strain.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Family"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-are-superfoods-fact-vs-marketing.html",
-      "url": "https://doyouknow.app/en/article/what-are-superfoods-fact-vs-marketing.html",
-      "title": "Are Superfoods Real, or Just Marketing?",
-      "content_text": "The word superfood has no official scientific definition. It is a marketing term for nutrient-dense foods, not a category regulators recognize.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Nutrition"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-a-gap-year.html",
-      "url": "https://doyouknow.app/en/article/what-is-a-gap-year.html",
-      "title": "What Is a Gap Year, and Is It Worth It?",
-      "content_text": "A gap year is a planned break from formal study, often used for travel, work, or volunteering, before continuing education or a career.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Education"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-cloud-computing.html",
-      "url": "https://doyouknow.app/en/article/what-is-cloud-computing.html",
-      "title": "What Is Cloud Computing, Explained Simply?",
-      "content_text": "Cloud computing means renting computing power, storage, and software over the internet instead of running your own servers.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-diriyah-gate.html",
-      "url": "https://doyouknow.app/en/article/what-is-diriyah-gate.html",
-      "title": "What Is the Diriyah Gate Project?",
-      "content_text": "Diriyah Gate is a Saudi giga-project redeveloping the historic At-Turaif UNESCO site into a heritage, culture, and hospitality district.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Saudi Vision 2030 & Megaprojects"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-dropshipping.html",
-      "url": "https://doyouknow.app/en/article/what-is-dropshipping.html",
-      "title": "What Is Dropshipping and How Does It Work?",
-      "content_text": "Dropshipping lets a store sell products it never stocks, with the supplier shipping directly to the customer instead.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-emotional-resilience.html",
-      "url": "https://doyouknow.app/en/article/what-is-emotional-resilience.html",
-      "title": "What Is Emotional Resilience?",
-      "content_text": "Emotional resilience is the ability to adapt and recover from stress and setbacks, a skill that can be strengthened rather than a fixed trait.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Self Care"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-glycemic-load.html",
-      "url": "https://doyouknow.app/en/article/what-is-glycemic-load.html",
-      "title": "What Is Glycemic Load? Glycemic Index vs. Load",
-      "content_text": "Glycemic load adjusts the glycemic index for actual portion size, giving a more realistic picture of a food's effect on blood sugar.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Nutrition"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-king-salman-park.html",
-      "url": "https://doyouknow.app/en/article/what-is-king-salman-park.html",
-      "title": "What Is King Salman Park in Riyadh?",
-      "content_text": "King Salman Park is a PIF giga-project in central Riyadh built around a huge new urban park, cultural venues, and a botanical garden.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Saudi Vision 2030 & Megaprojects"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-microlearning.html",
-      "url": "https://doyouknow.app/en/article/what-is-microlearning.html",
-      "title": "What Is Microlearning?",
-      "content_text": "Microlearning breaks lessons into short, focused chunks, often just a few minutes long, designed to fit into small pockets of time.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Education"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-permissive-parenting.html",
-      "url": "https://doyouknow.app/en/article/what-is-permissive-parenting.html",
-      "title": "What Is Permissive Parenting?",
-      "content_text": "Permissive parenting combines high warmth with few rules or limits, one of four parenting styles first described by psychologist Diana Baumrind.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "Family"
       ]
     }
   ]

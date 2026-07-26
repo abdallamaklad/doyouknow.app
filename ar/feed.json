@@ -6,6 +6,16 @@
   "language": "ar",
   "items": [
     {
+      "id": "https://doyouknow.app/ar/article/ain-dubai-observation-wheel-facts.html",
+      "url": "https://doyouknow.app/ar/article/ain-dubai-observation-wheel-facts.html",
+      "title": "عين دبي: حقائق عن أطول عجلة مراقبة في العالم",
+      "content_text": "حصلت عين دبي، الواقعة في جزيرة بلوواترز، على اعتراف موسوعة غينيس للأرقام القياسية كأطول وأكبر عجلة مراقبة في العالم عند افتتاحها عام 2021.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/cairo-metro-guide.html",
       "url": "https://doyouknow.app/ar/article/cairo-metro-guide.html",
       "title": "دليل مترو القاهرة: الخطوط والتذاكر ونصائح",
@@ -16,10 +26,30 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/dubai-opera-guide.html",
+      "url": "https://doyouknow.app/ar/article/dubai-opera-guide.html",
+      "title": "دار أوبرا دبي: داخل صرح الفنون الأدائية في الإمارة",
+      "content_text": "دار أوبرا دبي صرح متعدد الأغراض للفنون الأدائية في وسط مدينة دبي، صُمم على هيئة قارب دهو التقليدي، ويستضيف عروض الأوبرا والحفلات الموسيقية والمسرح.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/egypt-bank-account-guide.html",
       "url": "https://doyouknow.app/ar/article/egypt-bank-account-guide.html",
       "title": "فتح حساب بنكي في مصر: دليل",
       "content_text": "كيف يمكن للمقيمين الأجانب فتح حساب بنكي في مصر: المستندات المطلوبة، اختيار البنك، أنواع الحسابات، ونصائح عملية للمغتربين والزوار طويلي الأمد.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/egypt-customs-import-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-customs-import-guide.html",
+      "title": "الجمارك المصرية وقواعد الاستيراد: دليل عملي",
+      "content_text": "يخضع إدخال البضائع إلى مصر، سواء كانت أمتعة شخصية أو شحنات تجارية، لقواعد مصلحة الجمارك المصرية المتعلقة بالإعفاءات والإقرارات والرسوم.",
       "date_published": "2026-07-26",
       "tags": [
         "أدلة عملية في مصر"
@@ -46,6 +76,66 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/egypt-universal-health-insurance-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-universal-health-insurance-guide.html",
+      "title": "نظام التأمين الصحي الشامل في مصر: ما يجب معرفته",
+      "content_text": "تطبّق مصر تدريجيًا نظام التأمين الصحي الشامل منذ عام 2019، ليحل تدريجيًا محل نظام التأمين الصحي القديم محافظة تلو الأخرى.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/history-of-emoji.html",
+      "url": "https://doyouknow.app/ar/article/history-of-emoji.html",
+      "title": "تاريخ الإيموجي",
+      "content_text": "نشأ الإيموجي في اليابان أواخر التسعينيات، ويوحّده اليوم اتحاد يونيكود عالميًا كي يظهر بشكل متسق عبر الأجهزة.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الترفيه والألعاب"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/history-of-the-adhan.html",
+      "url": "https://doyouknow.app/ar/article/history-of-the-adhan.html",
+      "title": "تاريخ الأذان: نداء الصلاة في الإسلام",
+      "content_text": "يعود الأذان، نداء الصلاة في الإسلام، إلى أولى سنوات المجتمع المسلم في المدينة المنورة، وترتبط نشأته تقليديًا بأحد صحابة النبي محمد.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الثقافة والمعرفة الإسلامية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/history-of-the-crossword-puzzle.html",
+      "url": "https://doyouknow.app/ar/article/history-of-the-crossword-puzzle.html",
+      "title": "تاريخ لغز الكلمات المتقاطعة",
+      "content_text": "يعود لغز الكلمات المتقاطعة الحديث إلى لغز \"كلمات متقاطعة\" نُشر عام 1913 في صحيفة في نيويورك، وتحول خلال نحو عقد إلى تسلية عالمية.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الترفيه والألعاب"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-do-solar-panels-work.html",
+      "url": "https://doyouknow.app/ar/article/how-do-solar-panels-work.html",
+      "title": "كيف تعمل الألواح الشمسية فعليًا؟",
+      "content_text": "تحوّل الألواح الشمسية ضوء الشمس مباشرة إلى كهرباء عبر التأثير الكهروضوئي، وهي ظاهرة لوحظت لأول مرة في القرن التاسع عشر.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-passport-power-rankings-work.html",
+      "url": "https://doyouknow.app/ar/article/how-passport-power-rankings-work.html",
+      "title": "كيف تُحسب تصنيفات قوة جوازات السفر فعليًا؟",
+      "content_text": "تُرتّب تصنيفات قوة جوازات السفر، مثل مؤشر هينلي، الدول بحسب عدد الوجهات التي يمكن لمواطنيها دخولها دون تأشيرة مسبقة.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "حول العالم"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-remittances-work.html",
       "url": "https://doyouknow.app/ar/article/how-remittances-work.html",
       "title": "كيف تعمل التحويلات المالية ولماذا تهم",
@@ -53,6 +143,36 @@
       "date_published": "2026-07-26",
       "tags": [
         "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-saudi-arabias-public-investment-fund-works.html",
+      "url": "https://doyouknow.app/ar/article/how-saudi-arabias-public-investment-fund-works.html",
+      "title": "كيف يعمل صندوق الاستثمارات العامة السعودي؟",
+      "content_text": "صندوق الاستثمارات العامة هو صندوق الثروة السيادي في السعودية، ويوجّه إيرادات مرتبطة بالنفط نحو المشاريع الكبرى ومحفظة استثمارية عالمية ضمن رؤية 2030.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "رؤية السعودية 2030 والمشاريع الكبرى"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/legend-of-pandoras-box.html",
+      "url": "https://doyouknow.app/ar/article/legend-of-pandoras-box.html",
+      "title": "أسطورة صندوق باندورا",
+      "content_text": "في الأساطير الإغريقية، وُصف وعاء باندورا الذي حوى شرور العالم أصلًا بأنه جرة لا صندوق، وفُتح بدافع الفضول، فلم يبقَ بداخله سوى الأمل.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "قصص"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/legend-of-the-loch-ness-monster.html",
+      "url": "https://doyouknow.app/ar/article/legend-of-the-loch-ness-monster.html",
+      "title": "أسطورة وحش بحيرة لوخ نس",
+      "content_text": "يُقال إن وحش بحيرة لوخ نس، أو \"نيسي\"، يسكن بحيرة اسكتلندية كبيرة، وتُروى مشاهدات حديثة له منذ ما يقارب قرنًا دون تأكيد علمي.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "قصص"
       ]
     },
     {
@@ -83,126 +203,6 @@
       "date_published": "2026-07-26",
       "tags": [
         "أدلة عملية في السعودية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/understanding-insulin-resistance.html",
-      "url": "https://doyouknow.app/ar/article/understanding-insulin-resistance.html",
-      "title": "فهم مقاومة الأنسولين",
-      "content_text": "مقاومة الأنسولين تعني استجابة ضعيفة للخلايا للأنسولين، ما يجبر البنكرياس على العمل بجهد أكبر، وهي خطوة رئيسية نحو السكري من النوع الثاني.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الصحة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/understanding-sandwich-generation.html",
-      "url": "https://doyouknow.app/ar/article/understanding-sandwich-generation.html",
-      "title": "فهم جيل الشطيرة",
-      "content_text": "يشير جيل الشطيرة إلى البالغين الذين يربّون أطفالهم ويرعون آباءهم المسنين في آنٍ واحد، غالباً تحت ضغط مالي حقيقي.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الأسرة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-are-superfoods-fact-vs-marketing.html",
-      "url": "https://doyouknow.app/ar/article/what-are-superfoods-fact-vs-marketing.html",
-      "title": "هل الأطعمة الخارقة حقيقية، أم مجرد تسويق؟",
-      "content_text": "مصطلح الطعام الخارق لا يملك تعريفاً علمياً رسمياً. إنه مصطلح تسويقي لأطعمة غنية بالعناصر الغذائية، وليس فئة معترف بها رسمياً.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "التغذية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-a-gap-year.html",
-      "url": "https://doyouknow.app/ar/article/what-is-a-gap-year.html",
-      "title": "ما هي سنة الفجوة، وهل تستحق ذلك؟",
-      "content_text": "سنة الفجوة توقف مخطط عن الدراسة النظامية، غالباً للسفر أو العمل أو التطوع، قبل متابعة التعليم أو المسار المهني.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "التعليم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-cloud-computing.html",
-      "url": "https://doyouknow.app/ar/article/what-is-cloud-computing.html",
-      "title": "ما هي الحوسبة السحابية ببساطة؟",
-      "content_text": "الحوسبة السحابية تعني استئجار قدرة حاسوبية وتخزين وبرامج عبر الإنترنت بدلاً من تشغيل خوادمك الخاصة.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-diriyah-gate.html",
-      "url": "https://doyouknow.app/ar/article/what-is-diriyah-gate.html",
-      "title": "ما هو مشروع بوابة الدرعية؟",
-      "content_text": "بوابة الدرعية مشروع سعودي عملاق يعيد تطوير موقع الطريف التاريخي المسجل في اليونسكو ليصبح وجهة تراثية وثقافية وضيافة.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "رؤية السعودية 2030 والمشاريع الكبرى"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-dropshipping.html",
-      "url": "https://doyouknow.app/ar/article/what-is-dropshipping.html",
-      "title": "ما هو الدروبشيبينغ وكيف يعمل؟",
-      "content_text": "يتيح الدروبشيبينغ للمتجر بيع منتجات لا يخزنها أبداً، حيث يشحن المورّد المنتج مباشرة إلى العميل بدلاً من ذلك.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-emotional-resilience.html",
-      "url": "https://doyouknow.app/ar/article/what-is-emotional-resilience.html",
-      "title": "ما هي المرونة العاطفية؟",
-      "content_text": "المرونة العاطفية هي القدرة على التكيف والتعافي من الضغوط والانتكاسات، وهي مهارة يمكن تقويتها وليست سمة ثابتة.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "العناية الذاتية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-glycemic-load.html",
-      "url": "https://doyouknow.app/ar/article/what-is-glycemic-load.html",
-      "title": "ما هو الحمل الجلايسيمي، وكيف يختلف عن المؤشر الجلايسيمي؟",
-      "content_text": "يعدّل الحمل الجلايسيمي المؤشر الجلايسيمي حسب حجم الحصة الفعلي، ما يعطي صورة أكثر واقعية لتأثير الطعام على سكر الدم.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "التغذية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-king-salman-park.html",
-      "url": "https://doyouknow.app/ar/article/what-is-king-salman-park.html",
-      "title": "ما هو حديقة الملك سلمان في الرياض؟",
-      "content_text": "حديقة الملك سلمان مشروع عملاق تابع لصندوق الاستثمارات العامة في وسط الرياض، يضم حديقة حضرية ضخمة ومرافق ثقافية وحديقة نباتية.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "رؤية السعودية 2030 والمشاريع الكبرى"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-microlearning.html",
-      "url": "https://doyouknow.app/ar/article/what-is-microlearning.html",
-      "title": "ما هو التعلم المصغّر؟",
-      "content_text": "يقسّم التعلم المصغّر الدروس إلى وحدات قصيرة ومركّزة، غالباً بضع دقائق فقط، مصممة لتناسب أوقات الفراغ الصغيرة.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "التعليم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/what-is-permissive-parenting.html",
-      "url": "https://doyouknow.app/ar/article/what-is-permissive-parenting.html",
-      "title": "ما هو التربية المتساهلة؟",
-      "content_text": "تجمع التربية المتساهلة بين دفء عالٍ وقواعد أو حدود قليلة، وهي أحد أنماط التربية الأربعة التي وصفتها عالمة النفس ديانا بومريند أول مرة.",
-      "date_published": "2026-07-26",
-      "tags": [
-        "الأسرة"
       ]
     }
   ]
