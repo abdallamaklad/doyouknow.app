@@ -6,6 +6,16 @@
   "language": "ar",
   "items": [
     {
+      "id": "https://doyouknow.app/ar/article/cairo-metro-guide.html",
+      "url": "https://doyouknow.app/ar/article/cairo-metro-guide.html",
+      "title": "دليل مترو القاهرة: الخطوط والتذاكر ونصائح",
+      "content_text": "كان مترو القاهرة أول شبكة مترو في أفريقيا والشرق الأوسط. إليك كيف تعمل خطوطه وتذاكره وعرباته المخصصة للسيدات.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/egypt-bank-account-guide.html",
       "url": "https://doyouknow.app/ar/article/egypt-bank-account-guide.html",
       "title": "فتح حساب بنكي في مصر: دليل",
@@ -26,6 +36,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/egypt-mobile-wallets-guide.html",
+      "url": "https://doyouknow.app/ar/article/egypt-mobile-wallets-guide.html",
+      "title": "المحافظ الرقمية في مصر: كيف تعمل",
+      "content_text": "نمت المحافظ الرقمية مثل فودافون كاش وInstaPay بسرعة في مصر كبدائل رقمية للنقد في المدفوعات اليومية.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "أدلة عملية في مصر"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-remittances-work.html",
+      "url": "https://doyouknow.app/ar/article/how-remittances-work.html",
+      "title": "كيف تعمل التحويلات المالية ولماذا تهم",
+      "content_text": "التحويلات المالية هي أموال يرسلها العاملون في الخارج إلى أوطانهم، عبر البنوك وشركات تحويل الأموال والمحافظ الرقمية.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/nile-cruise-guide.html",
       "url": "https://doyouknow.app/ar/article/nile-cruise-guide.html",
       "title": "دليل الرحلات النيلية: من الأقصر إلى أسوان",
@@ -36,173 +66,143 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/cairo-airport-guide.html",
-      "url": "https://doyouknow.app/ar/article/cairo-airport-guide.html",
-      "title": "دليل مطار القاهرة الدولي",
-      "content_text": "التنقل في مطار القاهرة الدولي (CAI): الصالات، التأشيرة عند الوصول، الوصول إلى المدينة، شرائح الهاتف، ونصائح عملية لوصول سلس في عام 2026.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/ar/article/saudi-mada-payment-system-guide.html",
+      "url": "https://doyouknow.app/ar/article/saudi-mada-payment-system-guide.html",
+      "title": "ما هي مدى، شبكة الدفع الوطنية في السعودية؟",
+      "content_text": "مدى هي شبكة بطاقات الخصم المحلية في السعودية، ينظمها البنك المركزي السعودي، وتُستخدم في معظم مدفوعات البطاقات داخل المملكة.",
+      "date_published": "2026-07-26",
       "tags": [
-        "أدلة عملية في مصر"
+        "أدلة عملية في السعودية"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/egypt-safety-guide.html",
-      "url": "https://doyouknow.app/ar/article/egypt-safety-guide.html",
-      "title": "دليل السلامة للمسافرين في مصر",
-      "content_text": "معلومات سلامة عملية لزيارة مصر في عام 2026: الجريمة العامة، سلامة الطرق، عمليات النصب الشائعة على السياح، الاحتياطات الصحية، والبقاء على اطلاع أثناء السفر.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/ar/article/saudi-traffic-fines-guide.html",
+      "url": "https://doyouknow.app/ar/article/saudi-traffic-fines-guide.html",
+      "title": "كيف تعمل المخالفات المرورية في السعودية: دليل عملي",
+      "content_text": "كيف تُطبَّق المخالفات المرورية في السعودية عبر نظام ساهر ونقاط المخالفات، وكيفية الاستعلام والدفع عبر أبشر.",
+      "date_published": "2026-07-26",
       "tags": [
-        "أدلة عملية في مصر"
+        "أدلة عملية في السعودية"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/egypt-tipping-baksheesh-guide.html",
-      "url": "https://doyouknow.app/ar/article/egypt-tipping-baksheesh-guide.html",
-      "title": "دليل الإكرامية والبقشيش في مصر",
-      "content_text": "فهم الإكرامية في مصر: ماذا يعني البقشيش، والمبالغ النموذجية للمطاعم والفنادق والمرشدين والسائقين، ونصائح عملية لعام 2026.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-fresco-painting.html",
-      "url": "https://doyouknow.app/ar/article/history-of-fresco-painting.html",
-      "title": "تاريخ رسم الفريسك",
-      "content_text": "كان أمام مايكل أنجلو نحو ثماني ساعات فقط قبل أن يجف كل قطعة من الجص، بأخطائها أيضاً. إليك كيف يعمل رسم الفريسك ولماذا يفرض التزاماً كاملاً بلا رجعة.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الفن"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-pinball-machines.html",
-      "url": "https://doyouknow.app/ar/article/history-of-pinball-machines.html",
-      "title": "تاريخ آلات البينبول",
-      "content_text": "نجت آلات البينبول من حظر استمر عقوداً في عدة مدن كبرى قبل أن تصبح ركناً ثابتاً في الحانات وصالات الألعاب. إليك كيف تحوّلت لعبة معدنية بسيطة إلى لعبة مهارة حقيقية.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الترفيه والألعاب"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-stained-glass-art.html",
-      "url": "https://doyouknow.app/ar/article/history-of-stained-glass-art.html",
-      "title": "تاريخ فن الزجاج المعشّق",
-      "content_text": "حوّلت نوافذ الزجاج المعشّق جدران الكنائس إلى وسيلة سرد متوهجة لجمهور كان معظمه لا يجيد القراءة. إليك كيف تطورت هذه الحرفة على مدى أكثر من ألف عام.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الفن"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-tabletop-role-playing-games.html",
-      "url": "https://doyouknow.app/ar/article/history-of-tabletop-role-playing-games.html",
-      "title": "تاريخ ألعاب تقمّص الأدوار على الطاولة",
-      "content_text": "نشأت لعبة \"الزنازين والتنانين\" من هواية إعادة تمثيل معارك نابليون بمجسّمات صغيرة. إليك كيف تحوّلت ألعاب تقمّص الأدوار إلى فئة قائمة بذاتها.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الترفيه والألعاب"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-the-abacus.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-abacus.html",
-      "title": "تاريخ المعداد (الأباكوس)",
-      "content_text": "قبل زمن طويل من الآلات الحاسبة الإلكترونية، استخدم التجار والرياضيون إطاراً بسيطاً من الخرز للجمع والطرح والضرب بسرعة لافتة. إليك كيف تطور المعداد عبر الحضارات.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "التعليم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-the-jigsaw-puzzle.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-jigsaw-puzzle.html",
-      "title": "تاريخ لعبة تركيب الصور (البازل)",
-      "content_text": "بدأت لعبة البازل كأداة تعليمية لتدريس الجغرافيا وكانت تُقطَّع بمنشار يدوي، لا كلعبة للأطفال. إليك كيف تحوّلت إلى هواية عالمية.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الترفيه والألعاب"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-the-kaaba-kiswah.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-kaaba-kiswah.html",
-      "title": "تاريخ كسوة الكعبة",
-      "content_text": "تُصنع كسوة الكعبة، الغطاء الحريري الأسود، من جديد كل عام باستخدام 670 كيلوغراماً من الحرير وخيوط الذهب. إليك تاريخ هذا التقليد العريق.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الثقافة والمعرفة الإسلامية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-the-rubiks-cube.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-rubiks-cube.html",
-      "title": "تاريخ مكعب روبيك",
-      "content_text": "اخترع مكعب روبيك كأداة تعليمية عام 1974 ولديه 43 كوينتيليون تركيبة ممكنة. إليك قصة هذا اللغز الأيقوني.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الترفيه والألعاب"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-trivia-games.html",
-      "url": "https://doyouknow.app/ar/article/history-of-trivia-games.html",
-      "title": "كيف أصبحت ألعاب المعلومات العامة رائجة",
-      "content_text": "من مسابقات الراديو إلى Trivial Pursuit إلى أمسيات الحانات، إليك كيف تحولت متعة اختبار المعرفة البسيطة إلى هواية عالمية.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "الترفيه والألعاب"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-ancient-egyptians-told-time.html",
-      "url": "https://doyouknow.app/ar/article/how-ancient-egyptians-told-time.html",
-      "title": "كيف كان المصريون القدماء يحسبون الوقت",
-      "content_text": "قسّم المصريون القدماء اليوم إلى 24 ساعة باستخدام الساعات الشمسية والمائية قبل آلاف السنين من وجود الساعات الميكانيكية.",
-      "date_published": "2026-07-25",
-      "tags": [
-        "مصر: التاريخ والثقافة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-blood-types-work.html",
-      "url": "https://doyouknow.app/ar/article/how-blood-types-work.html",
-      "title": "كيف تعمل فصائل الدم",
-      "content_text": "تُحدَّد فصائل الدم بمستضدات اكتشفها كارل لاندشتاينر عام 1901. إليك كيف يعمل نظاما ABO وريسوس فعلياً ولماذا تطابق الفصيلة مهم.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/ar/article/understanding-insulin-resistance.html",
+      "url": "https://doyouknow.app/ar/article/understanding-insulin-resistance.html",
+      "title": "فهم مقاومة الأنسولين",
+      "content_text": "مقاومة الأنسولين تعني استجابة ضعيفة للخلايا للأنسولين، ما يجبر البنكرياس على العمل بجهد أكبر، وهي خطوة رئيسية نحو السكري من النوع الثاني.",
+      "date_published": "2026-07-26",
       "tags": [
         "الصحة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-coral-reefs-form.html",
-      "url": "https://doyouknow.app/ar/article/how-coral-reefs-form.html",
-      "title": "كيف تتكوّن الشعاب المرجانية",
-      "content_text": "تُبنى الشعاب المرجانية بواسطة بوليبات صغيرة عبر آلاف السنين، مدعومة بشراكة خفية مع الطحالب. إليك كيف تتكوّن هذه البنى فعلياً.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/ar/article/understanding-sandwich-generation.html",
+      "url": "https://doyouknow.app/ar/article/understanding-sandwich-generation.html",
+      "title": "فهم جيل الشطيرة",
+      "content_text": "يشير جيل الشطيرة إلى البالغين الذين يربّون أطفالهم ويرعون آباءهم المسنين في آنٍ واحد، غالباً تحت ضغط مالي حقيقي.",
+      "date_published": "2026-07-26",
       "tags": [
-        "العلوم"
+        "الأسرة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-credit-scores-work.html",
-      "url": "https://doyouknow.app/ar/article/how-credit-scores-work.html",
-      "title": "كيف تعمل درجات التصنيف الائتماني فعلياً؟",
-      "content_text": "تختصر الدرجة الائتمانية سنوات من السلوك المالي في رقم واحد يستخدمه المقرضون لتقييم المخاطر. إليك ما يدخل فعلياً في حسابها ولماذا تختلف بين النماذج.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/ar/article/what-are-superfoods-fact-vs-marketing.html",
+      "url": "https://doyouknow.app/ar/article/what-are-superfoods-fact-vs-marketing.html",
+      "title": "هل الأطعمة الخارقة حقيقية، أم مجرد تسويق؟",
+      "content_text": "مصطلح الطعام الخارق لا يملك تعريفاً علمياً رسمياً. إنه مصطلح تسويقي لأطعمة غنية بالعناصر الغذائية، وليس فئة معترف بها رسمياً.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "التغذية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-a-gap-year.html",
+      "url": "https://doyouknow.app/ar/article/what-is-a-gap-year.html",
+      "title": "ما هي سنة الفجوة، وهل تستحق ذلك؟",
+      "content_text": "سنة الفجوة توقف مخطط عن الدراسة النظامية، غالباً للسفر أو العمل أو التطوع، قبل متابعة التعليم أو المسار المهني.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "التعليم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-cloud-computing.html",
+      "url": "https://doyouknow.app/ar/article/what-is-cloud-computing.html",
+      "title": "ما هي الحوسبة السحابية ببساطة؟",
+      "content_text": "الحوسبة السحابية تعني استئجار قدرة حاسوبية وتخزين وبرامج عبر الإنترنت بدلاً من تشغيل خوادمك الخاصة.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-diriyah-gate.html",
+      "url": "https://doyouknow.app/ar/article/what-is-diriyah-gate.html",
+      "title": "ما هو مشروع بوابة الدرعية؟",
+      "content_text": "بوابة الدرعية مشروع سعودي عملاق يعيد تطوير موقع الطريف التاريخي المسجل في اليونسكو ليصبح وجهة تراثية وثقافية وضيافة.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "رؤية السعودية 2030 والمشاريع الكبرى"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-dropshipping.html",
+      "url": "https://doyouknow.app/ar/article/what-is-dropshipping.html",
+      "title": "ما هو الدروبشيبينغ وكيف يعمل؟",
+      "content_text": "يتيح الدروبشيبينغ للمتجر بيع منتجات لا يخزنها أبداً، حيث يشحن المورّد المنتج مباشرة إلى العميل بدلاً من ذلك.",
+      "date_published": "2026-07-26",
       "tags": [
         "الأعمال والاقتصاد"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-currency-pegs-work.html",
-      "url": "https://doyouknow.app/ar/article/how-currency-pegs-work.html",
-      "title": "كيف يعمل ربط العملة؟",
-      "content_text": "ظل الدرهم الإماراتي والريال السعودي مربوطين بالدولار الأمريكي لعقود. إليك ما يفعله ربط العملة فعلياً وما الذي يكلّفه على البنك المركزي للدفاع عنه.",
-      "date_published": "2026-07-25",
+      "id": "https://doyouknow.app/ar/article/what-is-emotional-resilience.html",
+      "url": "https://doyouknow.app/ar/article/what-is-emotional-resilience.html",
+      "title": "ما هي المرونة العاطفية؟",
+      "content_text": "المرونة العاطفية هي القدرة على التكيف والتعافي من الضغوط والانتكاسات، وهي مهارة يمكن تقويتها وليست سمة ثابتة.",
+      "date_published": "2026-07-26",
       "tags": [
-        "الأعمال والاقتصاد"
+        "العناية الذاتية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-glycemic-load.html",
+      "url": "https://doyouknow.app/ar/article/what-is-glycemic-load.html",
+      "title": "ما هو الحمل الجلايسيمي، وكيف يختلف عن المؤشر الجلايسيمي؟",
+      "content_text": "يعدّل الحمل الجلايسيمي المؤشر الجلايسيمي حسب حجم الحصة الفعلي، ما يعطي صورة أكثر واقعية لتأثير الطعام على سكر الدم.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "التغذية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-king-salman-park.html",
+      "url": "https://doyouknow.app/ar/article/what-is-king-salman-park.html",
+      "title": "ما هو حديقة الملك سلمان في الرياض؟",
+      "content_text": "حديقة الملك سلمان مشروع عملاق تابع لصندوق الاستثمارات العامة في وسط الرياض، يضم حديقة حضرية ضخمة ومرافق ثقافية وحديقة نباتية.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "رؤية السعودية 2030 والمشاريع الكبرى"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-microlearning.html",
+      "url": "https://doyouknow.app/ar/article/what-is-microlearning.html",
+      "title": "ما هو التعلم المصغّر؟",
+      "content_text": "يقسّم التعلم المصغّر الدروس إلى وحدات قصيرة ومركّزة، غالباً بضع دقائق فقط، مصممة لتناسب أوقات الفراغ الصغيرة.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "التعليم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/what-is-permissive-parenting.html",
+      "url": "https://doyouknow.app/ar/article/what-is-permissive-parenting.html",
+      "title": "ما هو التربية المتساهلة؟",
+      "content_text": "تجمع التربية المتساهلة بين دفء عالٍ وقواعد أو حدود قليلة، وهي أحد أنماط التربية الأربعة التي وصفتها عالمة النفس ديانا بومريند أول مرة.",
+      "date_published": "2026-07-26",
+      "tags": [
+        "الأسرة"
       ]
     }
   ]
