@@ -133,10 +133,19 @@ function outboundCitationHosts(html) {
   return hosts;
 }
 
+const ignoredDirectoryNames = new Set(['.git', 'node_modules', 'scripts', '.claude', '.worktrees']);
+
+function shouldIgnoreDirectory(name) {
+  return ignoredDirectoryNames.has(name)
+    || name.startsWith('.hermes-')
+    || name.startsWith('scratch')
+    || name.startsWith('tmp-');
+}
+
 async function walk(dir) {
   const out = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
-    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'scripts' || entry.name === '.claude') continue;
+    if (entry.isDirectory() && shouldIgnoreDirectory(entry.name)) continue;
     const path = join(dir, entry.name);
     entry.isDirectory() ? out.push(...await walk(path)) : out.push(path);
   }
