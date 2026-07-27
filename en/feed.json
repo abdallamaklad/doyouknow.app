@@ -136,6 +136,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-antibiotic-resistance-actually-spreads.html",
+      "url": "https://doyouknow.app/en/article/how-antibiotic-resistance-actually-spreads.html",
+      "title": "How Antibiotic Resistance Actually Spreads",
+      "content_text": "Resistance is not something individual people develop. Here's how bacteria acquire and share it, why agriculture matters, and why the drug pipeline dried up.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-apis-work.html",
       "url": "https://doyouknow.app/en/article/how-apis-work.html",
       "title": "How Do APIs Work? The Bridge That Lets Apps Talk",
@@ -190,16 +200,6 @@
       "url": "https://doyouknow.app/en/article/how-do-volcanoes-erupt.html",
       "title": "How Do Volcanoes Actually Erupt?",
       "content_text": "Volcanic eruptions happen when molten rock, gas, and pressure inside the Earth build up until they force their way through a weak point in the crust.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-does-3d-printing-work.html",
-      "url": "https://doyouknow.app/en/article/how-does-3d-printing-work.html",
-      "title": "How Does 3D Printing Actually Work?",
-      "content_text": "3D printing builds physical objects layer by layer from a digital model, using techniques like melted plastic extrusion or resin cured by light.",
       "date_published": "2026-07-27",
       "tags": [
         "Science"

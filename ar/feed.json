@@ -136,6 +136,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-antibiotic-resistance-actually-spreads.html",
+      "url": "https://doyouknow.app/ar/article/how-antibiotic-resistance-actually-spreads.html",
+      "title": "كيف تنتشر مقاومة المضادات الحيوية فعلياً",
+      "content_text": "المقاومة ليست شيئاً يُطوِّره أفراد. إليك كيف تكتسبها البكتيريا وتتشاركها، ولماذا تهم الزراعة، ولماذا جف خط أنابيب الأدوية.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-apis-work.html",
       "url": "https://doyouknow.app/ar/article/how-apis-work.html",
       "title": "كيف تعمل واجهات برمجة التطبيقات (APIs)؟",
@@ -190,16 +200,6 @@
       "url": "https://doyouknow.app/ar/article/how-do-volcanoes-erupt.html",
       "title": "كيف تثور البراكين فعلياً؟",
       "content_text": "تحدث الثورات البركانية عندما تتراكم الصخور المنصهرة والغاز والضغط داخل الأرض حتى تشق طريقها عبر نقطة ضعف في القشرة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-does-3d-printing-work.html",
-      "url": "https://doyouknow.app/ar/article/how-does-3d-printing-work.html",
-      "title": "كيف تعمل الطباعة ثلاثية الأبعاد فعلياً؟",
-      "content_text": "تبني الطباعة ثلاثية الأبعاد أجساماً فيزيائية طبقة تلو الأخرى من نموذج رقمي، باستخدام تقنيات مثل بثق البلاستيك المنصهر أو راتنج يُصلَّب بالضوء.",
       "date_published": "2026-07-27",
       "tags": [
         "العلوم"
