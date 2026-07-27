@@ -3,7 +3,7 @@
    Cache-first strategy with stale-while-revalidate for HTML
    ============================================ */
 
-const CACHE_NAME = 'dyk-9db6ae32615d';
+const CACHE_NAME = 'dyk-6cba3da83def';
 
 // Core shell pages and assets
 const CORE_URLS = [
