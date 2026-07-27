@@ -116,6 +116,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-airline-ticket-pricing-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-airline-ticket-pricing-actually-works.html",
+      "title": "How Airline Ticket Pricing Actually Works",
+      "content_text": "Two passengers in adjacent seats can pay wildly different fares. Here's the revenue management machinery behind how airline prices are actually set.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-al-azhar-education-system-works.html",
       "url": "https://doyouknow.app/en/article/how-al-azhar-education-system-works.html",
       "title": "How Al-Azhar's Islamic Education System Works",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-football-transfer-fees-are-actually-set.html",
-      "url": "https://doyouknow.app/en/article/how-football-transfer-fees-are-actually-set.html",
-      "title": "How Football Transfer Fees Are Actually Set",
-      "content_text": "Behind every headline transfer number is a negotiation shaped by contract length, release clauses, and accounting rules. Here's how fees actually get set.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Business and Economy"
       ]
     }
   ]
