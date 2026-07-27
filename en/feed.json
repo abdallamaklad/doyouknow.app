@@ -156,6 +156,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-banks-actually-create-money.html",
+      "url": "https://doyouknow.app/en/article/how-banks-actually-create-money.html",
+      "title": "How Banks Actually Create Money",
+      "content_text": "Banks do not lend out deposits. They create new money when they lend, which is the opposite of what most people are taught. Here's how it genuinely works.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
       "url": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
       "title": "How Carbon Dating Actually Works",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "Health"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
-      "url": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
-      "title": "How Do Tornadoes Actually Form?",
-      "content_text": "Tornadoes form when wind shear creates a horizontal spinning column of air that a thunderstorm's updraft tilts vertical, tightening into a violent funnel.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Science"
       ]
     }
   ]

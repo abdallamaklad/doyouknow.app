@@ -156,6 +156,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-banks-actually-create-money.html",
+      "url": "https://doyouknow.app/ar/article/how-banks-actually-create-money.html",
+      "title": "كيف تخلق البنوك المال فعلياً",
+      "content_text": "لا تُقرض البنوك الودائع. تخلق مالاً جديداً عند الإقراض، وهو عكس ما يُعلَّم لمعظم الناس. إليك كيف يعمل فعلياً.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
       "url": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
       "title": "كيف يعمل التأريخ بالكربون فعلياً",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "الصحة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-do-tornadoes-form.html",
-      "url": "https://doyouknow.app/ar/article/how-do-tornadoes-form.html",
-      "title": "كيف تتكوّن الأعاصير القمعية فعلياً؟",
-      "content_text": "تتكوّن الأعاصير القمعية عندما يخلق قص الرياح عموداً أفقياً دوّاراً من الهواء يميله تيار صعود عاصفة رعدية إلى وضع رأسي، مضيقاً إياه إلى قمع عنيف.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "العلوم"
       ]
     }
   ]
