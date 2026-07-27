@@ -166,6 +166,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-credit-card-companies-actually-make-money.html",
+      "url": "https://doyouknow.app/en/article/how-credit-card-companies-actually-make-money.html",
+      "title": "How Credit Card Companies Actually Make Money",
+      "content_text": "Cards offer rewards, insurance and interest-free periods, yet the industry is enormously profitable. Here's where the money genuinely comes from.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
       "url": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
       "title": "How Do Tornadoes Actually Form?",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-ev-battery-degradation-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-ev-battery-degradation-actually-works.html",
-      "title": "How EV Battery Degradation Actually Works",
-      "content_text": "Electric vehicle batteries don't suddenly stop working, but they do lose capacity. Here's the real chemistry behind why, and how long they last.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Technology Explained"
       ]
     }
   ]
