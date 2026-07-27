@@ -865,26 +865,11 @@ function extractFaqPairs(html, lang) {
   if (shareBar !== -1) endIndex = Math.min(endIndex, shareBar);
   const faqContent = faqSection.slice(0, endIndex);
 
-  if (lang === 'ar') {
-    const pRegex = /<p[^>]*>([\s\S]*?)<\/p>/g;
-    let p;
-    let pendingQuestion = null;
-    while ((p = pRegex.exec(faqContent)) !== null) {
-      const text = p[1].trim();
-      if (/<strong>/.test(text)) {
-        if (pendingQuestion) {
-          faqs.push({ question: pendingQuestion, answer: '' });
-        }
-        pendingQuestion = stripHtmlTags(text);
-      } else if (pendingQuestion) {
-        faqs.push({ question: pendingQuestion, answer: stripHtmlTags(text) });
-        pendingQuestion = null;
-      }
-    }
-    if (pendingQuestion) {
-      faqs.push({ question: pendingQuestion, answer: '' });
-    }
-  } else {
+  // Two markup styles exist across the site: <h3>Question</h3><p>Answer</p>, and
+  // <p><strong>Question</strong></p><p>Answer</p>. Try the heading style first, then
+  // fall back. Both styles appear in both languages, so neither can be keyed on lang.
+  const extractFromHeadings = () => {
+    const out = [];
     const h3Regex = /<h3[^>]*>([\s\S]*?)<\/h3>/g;
     const pRegex = /<p[^>]*>([\s\S]*?)<\/p>/g;
     const h3Positions = [];
@@ -902,14 +887,46 @@ function extractFaqPairs(html, lang) {
       const nextH3 = h3Positions[i + 1];
       const answers = pPositions.filter(pp => pp.index > q.index && (!nextH3 || pp.index < nextH3.index));
       if (answers.length > 0) {
-        faqs.push({ question: stripHtmlTags(q.text), answer: stripHtmlTags(answers[0].text) });
+        out.push({ question: stripHtmlTags(q.text), answer: stripHtmlTags(answers[0].text) });
       } else {
-        faqs.push({ question: stripHtmlTags(q.text), answer: '' });
+        out.push({ question: stripHtmlTags(q.text), answer: '' });
       }
     }
-  }
+    return out;
+  };
 
-  return faqs;
+  const extractFromBoldParagraphs = () => {
+    const out = [];
+    const pRegex = /<p[^>]*>([\s\S]*?)<\/p>/g;
+    let p;
+    let pendingQuestion = null;
+    while ((p = pRegex.exec(faqContent)) !== null) {
+      const text = p[1].trim();
+      // Only treat a paragraph as a question when it opens with <strong> and that
+      // bold run covers essentially the whole paragraph. Answers sometimes contain
+      // an inline <strong>, which would otherwise be misread as a new question.
+      const boldMatch = text.match(/^<strong>([\s\S]*?)<\/strong>/);
+      const isQuestion = boldMatch
+        && stripHtmlTags(boldMatch[1]).trim().length >= stripHtmlTags(text).trim().length - 2;
+      if (isQuestion) {
+        if (pendingQuestion) {
+          out.push({ question: pendingQuestion, answer: '' });
+        }
+        pendingQuestion = stripHtmlTags(text);
+      } else if (pendingQuestion) {
+        out.push({ question: pendingQuestion, answer: stripHtmlTags(text) });
+        pendingQuestion = null;
+      }
+    }
+    if (pendingQuestion) {
+      out.push({ question: pendingQuestion, answer: '' });
+    }
+    return out;
+  };
+
+  const fromHeadings = extractFromHeadings();
+  if (fromHeadings.length > 0) return fromHeadings;
+  return extractFromBoldParagraphs();
 }
 
 function injectSchemas(html, relativeFile) {
