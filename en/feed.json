@@ -146,6 +146,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
+      "title": "How Carbon Dating Actually Works",
+      "content_text": "Radiocarbon dating can determine the age of organic material thousands of years old. Here's the physics behind it, and the limits that are rarely mentioned.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-cdns-work.html",
       "url": "https://doyouknow.app/en/article/how-cdns-work.html",
       "title": "How Do CDNs Work? The Network That Speeds Up the Internet",
@@ -190,16 +200,6 @@
       "url": "https://doyouknow.app/en/article/how-ev-battery-degradation-actually-works.html",
       "title": "How EV Battery Degradation Actually Works",
       "content_text": "Electric vehicle batteries don't suddenly stop working, but they do lose capacity. Here's the real chemistry behind why, and how long they last.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-facial-recognition-works.html",
-      "url": "https://doyouknow.app/en/article/how-facial-recognition-works.html",
-      "title": "How Does Facial Recognition Technology Actually Work?",
-      "content_text": "Facial recognition maps unique facial measurements into a numerical template, then compares that template against stored data to identify or verify a person.",
       "date_published": "2026-07-27",
       "tags": [
         "Technology Explained"

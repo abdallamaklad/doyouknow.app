@@ -119,6 +119,14 @@
     <category>Technology Explained</category>
   </item>
   <item>
+    <title>How Carbon Dating Actually Works</title>
+    <link>https://doyouknow.app/en/article/how-carbon-dating-actually-works.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-carbon-dating-actually-works.html</guid>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Radiocarbon dating can determine the age of organic material thousands of years old. Here's the physics behind it, and the limits that are rarely mentioned.</description>
+    <category>Science</category>
+  </item>
+  <item>
     <title>How Do CDNs Work? The Network That Speeds Up the Internet</title>
     <link>https://doyouknow.app/en/article/how-cdns-work.html</link>
     <guid isPermaLink="true">https://doyouknow.app/en/article/how-cdns-work.html</guid>
@@ -156,14 +164,6 @@
     <guid isPermaLink="true">https://doyouknow.app/en/article/how-ev-battery-degradation-actually-works.html</guid>
     <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
     <description>Electric vehicle batteries don't suddenly stop working, but they do lose capacity. Here's the real chemistry behind why, and how long they last.</description>
-    <category>Technology Explained</category>
-  </item>
-  <item>
-    <title>How Does Facial Recognition Technology Actually Work?</title>
-    <link>https://doyouknow.app/en/article/how-facial-recognition-works.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-facial-recognition-works.html</guid>
-    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
-    <description>Facial recognition maps unique facial measurements into a numerical template, then compares that template against stored data to identify or verify a person.</description>
     <category>Technology Explained</category>
   </item>
 </channel>

@@ -146,6 +146,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
+      "title": "كيف يعمل التأريخ بالكربون فعلياً",
+      "content_text": "يستطيع التأريخ بالكربون المشع تحديد عمر مواد عضوية عمرها آلاف السنين. إليك الفيزياء وراءه، والحدود التي نادراً ما تُذكَر.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-cdns-work.html",
       "url": "https://doyouknow.app/ar/article/how-cdns-work.html",
       "title": "كيف تعمل شبكات توصيل المحتوى (CDN)؟",
@@ -190,16 +200,6 @@
       "url": "https://doyouknow.app/ar/article/how-ev-battery-degradation-actually-works.html",
       "title": "كيف يعمل تدهور بطارية السيارة الكهربائية فعلياً",
       "content_text": "لا تتوقف بطاريات السيارات الكهربائية عن العمل فجأة، لكنها تفقد سعة بمرور الوقت. إليك الكيمياء الحقيقية وراء السبب، وماذا يعني ذلك لمدة استمرار بطارية سيارة كهربائية فعلياً.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-facial-recognition-works.html",
-      "url": "https://doyouknow.app/ar/article/how-facial-recognition-works.html",
-      "title": "كيف تعمل تقنية التعرف على الوجه فعلياً؟",
-      "content_text": "التعرف على الوجه يُخطِّط قياسات وجه فريدة إلى نموذج رقمي، ثم يقارن ذلك النموذج بالبيانات المخزنة لتحديد هوية شخص أو التحقق منها.",
       "date_published": "2026-07-27",
       "tags": [
         "التقنية"
