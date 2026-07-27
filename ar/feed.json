@@ -166,6 +166,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-blood-donation-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-blood-donation-actually-works.html",
+      "title": "كيف يعمل التبرع بالدم فعلياً",
+      "content_text": "يُفصَل الدم المتبرَّع به لمكونات ويُفحَص ويُطابَق وينتهي خلال أسابيع. إليك سلسلة الإمداد التي لم يستبدلها أبداً بديل مُصنَّع.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الصحة"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
       "url": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
       "title": "كيف يعمل التأريخ بالكربون فعلياً",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-dental-cavities-actually-form.html",
-      "url": "https://doyouknow.app/ar/article/how-dental-cavities-actually-form.html",
-      "title": "كيف تتشكل تسوسات الأسنان فعلياً",
-      "content_text": "لا يسبب السكر التسوس مباشرة بل الحمض من بكتيريا تتغذى عليه. إليك الكيمياء، ولماذا يهم التواتر أكثر من الكمية، وما يمنعها فعلياً.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الصحة"
       ]
     }
   ]

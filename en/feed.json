@@ -166,6 +166,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-blood-donation-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-blood-donation-actually-works.html",
+      "title": "How Blood Donation Actually Works",
+      "content_text": "Donated blood is separated into components, tested, matched and expires within weeks. Here's the logistics chain that has never been replaced by a manufactured substitute.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Health"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
       "url": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
       "title": "How Carbon Dating Actually Works",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-dental-cavities-actually-form.html",
-      "url": "https://doyouknow.app/en/article/how-dental-cavities-actually-form.html",
-      "title": "How Dental Cavities Actually Form",
-      "content_text": "Cavities are not caused by sugar directly but by acid from bacteria feeding on it. Here's the chemistry, why frequency matters more than quantity, and what actually prevents them.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Health"
       ]
     }
   ]
