@@ -1,2 +1,329 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>doyouknow.app</title><link>https://doyouknow.app/</link><description>Facts and practical guides from doyouknow.app</description></channel></rss>
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>doyouknow.app</title>
+    <link>https://doyouknow.app/</link>
+    <description>Facts and practical guides from doyouknow.app</description>
+    <language>en-ar</language>
+    <item>
+      <title>Dubai Canal: A Complete Guide</title>
+      <link>https://doyouknow.app/en/article/dubai-canal-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/dubai-canal-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Dubai Canal is a 3.2-kilometer waterway extending Dubai Creek to the Arabian Gulf, lined with promenades, bridges, and residential and hospitality developments.</description>
+      <category>Dubai &amp; UAE Places</category>
+    </item>
+    <item>
+      <title>قناة دبي المائية: دليل شامل</title>
+      <link>https://doyouknow.app/ar/article/dubai-canal-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/dubai-canal-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>قناة دبي المائية ممر مائي بطول 3.2 كيلومتر يمتد من خور دبي إلى الخليج العربي، تصطف على جانبيه ممرات وجسور وتطويرات سكنية وضيافة.</description>
+      <category>دبي والإمارات</category>
+    </item>
+    <item>
+      <title>Dubai Hills Estate: A Complete Guide</title>
+      <link>https://doyouknow.app/en/article/dubai-hills-estate-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/dubai-hills-estate-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Dubai Hills Estate is a large master-planned residential community built around an 18-hole championship golf course, positioned as a green, family-oriented district.</description>
+      <category>Dubai &amp; UAE Places</category>
+    </item>
+    <item>
+      <title>دبي هيلز إستيت: دليل شامل</title>
+      <link>https://doyouknow.app/ar/article/dubai-hills-estate-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/dubai-hills-estate-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>دبي هيلز إستيت مجتمع سكني كبير مخطط رئيسياً مبني حول ملعب غولف بطولي من 18 حفرة، متموضع كحي أخضر موجَّه للعائلات.</description>
+      <category>دبي والإمارات</category>
+    </item>
+    <item>
+      <title>Dubai Safari Park: A Complete Guide</title>
+      <link>https://doyouknow.app/en/article/dubai-safari-park-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/dubai-safari-park-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Dubai Safari Park is a large wildlife park combining a drive-through safari, walkable villages, and rescued or bred animals across several themed zones.</description>
+      <category>Dubai &amp; UAE Places</category>
+    </item>
+    <item>
+      <title>دبي سفاري بارك: دليل شامل</title>
+      <link>https://doyouknow.app/ar/article/dubai-safari-park-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/dubai-safari-park-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>دبي سفاري بارك حديقة حياة برية كبيرة تجمع بين سفاري بالسيارة وقرى قابلة للمشي وحيوانات مُنقذة أو مُربّاة عبر عدة مناطق موضوعية.</description>
+      <category>دبي والإمارات</category>
+    </item>
+    <item>
+      <title>How to Get a Birth Certificate in Egypt</title>
+      <link>https://doyouknow.app/en/article/egypt-birth-certificate-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/egypt-birth-certificate-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Egyptian birth certificates are issued through the Civil Status Authority after the birth is reported, usually by the hospital, within a set legal deadline.</description>
+      <category>Egypt Practical Guides</category>
+    </item>
+    <item>
+      <title>كيف تحصل على شهادة ميلاد في مصر</title>
+      <link>https://doyouknow.app/ar/article/egypt-birth-certificate-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/egypt-birth-certificate-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>تُصدر شهادات الميلاد المصرية عبر هيئة الأحوال المدنية بعد الإبلاغ عن الميلاد، عادة من المستشفى، ضمن مهلة قانونية محددة.</description>
+      <category>أدلة عملية في مصر</category>
+    </item>
+    <item>
+      <title>How Marriage Registration Works in Egypt</title>
+      <link>https://doyouknow.app/en/article/egypt-marriage-registration-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/egypt-marriage-registration-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Marriage in Egypt is formalized through a civil marriage contract registered at a notary office, a required step separate from religious or social ceremonies.</description>
+      <category>Egypt Practical Guides</category>
+    </item>
+    <item>
+      <title>كيف يعمل تسجيل الزواج في مصر</title>
+      <link>https://doyouknow.app/ar/article/egypt-marriage-registration-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/egypt-marriage-registration-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>يُوثَّق الزواج في مصر رسمياً عبر عقد زواج مدني مُسجَّل لدى مأذون، خطوة مطلوبة منفصلة عن الاحتفالات الدينية أو الاجتماعية.</description>
+      <category>أدلة عملية في مصر</category>
+    </item>
+    <item>
+      <title>Egypt Postal Service: A Practical Guide</title>
+      <link>https://doyouknow.app/en/article/egypt-postal-service-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/egypt-postal-service-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Egypt Post, the national postal operator, handles mail and parcel delivery, bill payments, and basic financial services through branches across the country.</description>
+      <category>Egypt Practical Guides</category>
+    </item>
+    <item>
+      <title>خدمة البريد المصري: دليل عملي</title>
+      <link>https://doyouknow.app/ar/article/egypt-postal-service-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/egypt-postal-service-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>يتولى البريد المصري، المشغّل البريدي الوطني، توصيل الرسائل والطرود ودفع الفواتير وخدمات مالية أساسية عبر فروع في أنحاء البلاد.</description>
+      <category>أدلة عملية في مصر</category>
+    </item>
+    <item>
+      <title>Egypt Traffic Fines and Violations Guide</title>
+      <link>https://doyouknow.app/en/article/egypt-traffic-fines-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/egypt-traffic-fines-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Traffic fines in Egypt are issued electronically through smart cameras and traffic police, with penalties ranging from small fees to vehicle impoundment.</description>
+      <category>Egypt Practical Guides</category>
+    </item>
+    <item>
+      <title>دليل المخالفات والغرامات المرورية في مصر</title>
+      <link>https://doyouknow.app/ar/article/egypt-traffic-fines-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/egypt-traffic-fines-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>تُصدر الغرامات المرورية في مصر إلكترونياً عبر كاميرات ذكية وشرطة المرور، مع عقوبات تتراوح من رسوم صغيرة إلى حجز المركبة.</description>
+      <category>أدلة عملية في مصر</category>
+    </item>
+    <item>
+      <title>Egypt Electricity and Utility Bills: A Practical Guide</title>
+      <link>https://doyouknow.app/en/article/egypt-utility-bills-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/egypt-utility-bills-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Electricity, water, and gas in Egypt are billed by state-run utility companies, with electricity priced on a tiered scale based on monthly consumption.</description>
+      <category>Egypt Practical Guides</category>
+    </item>
+    <item>
+      <title>دليل عملي لفواتير الكهرباء والمرافق في مصر</title>
+      <link>https://doyouknow.app/ar/article/egypt-utility-bills-guide.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/egypt-utility-bills-guide.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>تُفوتَر الكهرباء والمياه والغاز في مصر عبر شركات مرافق حكومية، مع تسعير الكهرباء وفق شرائح استهلاك متدرجة شهرياً.</description>
+      <category>أدلة عملية في مصر</category>
+    </item>
+    <item>
+      <title>Food Allergies vs Food Intolerances: What's the Difference</title>
+      <link>https://doyouknow.app/en/article/food-allergies-vs-intolerances.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/food-allergies-vs-intolerances.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>A food allergy involves the immune system and can be life-threatening, while a food intolerance is a digestive issue that causes discomfort but isn't dangerous.</description>
+      <category>Nutrition</category>
+    </item>
+    <item>
+      <title>الحساسية الغذائية وعدم تحمل الطعام: ما الفرق</title>
+      <link>https://doyouknow.app/ar/article/food-allergies-vs-intolerances.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/food-allergies-vs-intolerances.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>الحساسية الغذائية تتضمن الجهاز المناعي ويمكن أن تكون مهددة للحياة، بينما عدم تحمل الطعام مشكلة هضمية تسبب انزعاجاً لكنها ليست خطيرة.</description>
+      <category>التغذية</category>
+    </item>
+    <item>
+      <title>The History of Linocut Printmaking</title>
+      <link>https://doyouknow.app/en/article/history-of-linocut-printmaking.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/history-of-linocut-printmaking.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Linocut is a relief printmaking technique using carved linoleum, developed in the early 20th century as an accessible alternative to traditional woodblock printing.</description>
+      <category>Art</category>
+    </item>
+    <item>
+      <title>تاريخ الطباعة بالحفر على اللينوليوم</title>
+      <link>https://doyouknow.app/ar/article/history-of-linocut-printmaking.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/history-of-linocut-printmaking.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>الحفر على اللينوليوم تقنية طباعة بارزة تستخدم لينوليوم منحوتاً، طُوِّرت في أوائل القرن العشرين كبديل يسهل الوصول إليه للطباعة التقليدية بالقوالب الخشبية.</description>
+      <category>الفن</category>
+    </item>
+    <item>
+      <title>The History of the Prophet's Mosque in Medina</title>
+      <link>https://doyouknow.app/en/article/history-of-the-prophets-mosque.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/history-of-the-prophets-mosque.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The Prophet's Mosque in Medina was built in 622 CE by Prophet Muhammad himself and has grown from a simple structure into one of Islam's holiest sites.</description>
+      <category>Islamic Knowledge &amp; Culture</category>
+    </item>
+    <item>
+      <title>تاريخ المسجد النبوي في المدينة المنورة</title>
+      <link>https://doyouknow.app/ar/article/history-of-the-prophets-mosque.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/history-of-the-prophets-mosque.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>بُني المسجد النبوي في المدينة المنورة عام 622 ميلادي على يد النبي محمد نفسه، وتطور من بناء بسيط إلى أحد أقدس مواقع الإسلام.</description>
+      <category>الثقافة والمعرفة الإسلامية</category>
+    </item>
+    <item>
+      <title>How Al-Azhar's Islamic Education System Works</title>
+      <link>https://doyouknow.app/en/article/how-al-azhar-education-system-works.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-al-azhar-education-system-works.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Al-Azhar operates a parallel education track in Egypt, from primary school through university, combining religious and modern academic subjects.</description>
+      <category>Islamic Knowledge &amp; Culture</category>
+    </item>
+    <item>
+      <title>كيف يعمل نظام التعليم الأزهري</title>
+      <link>https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>يدير الأزهر مساراً تعليمياً موازياً في مصر، من المرحلة الابتدائية حتى الجامعة، يجمع بين المواد الدينية والأكاديمية الحديثة.</description>
+      <category>الثقافة والمعرفة الإسلامية</category>
+    </item>
+    <item>
+      <title>How Do APIs Work? The Bridge That Lets Apps Talk</title>
+      <link>https://doyouknow.app/en/article/how-apis-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-apis-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>An API is a defined set of rules that lets one piece of software request data or functions from another, acting as a structured bridge between programs.</description>
+      <category>Technology Explained</category>
+    </item>
+    <item>
+      <title>كيف تعمل واجهات برمجة التطبيقات (APIs)؟</title>
+      <link>https://doyouknow.app/ar/article/how-apis-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-apis-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>واجهة برمجة التطبيقات مجموعة قواعد محددة تتيح لبرنامج طلب بيانات أو وظائف من برنامج آخر، عاملة كجسر منظم بين البرامج.</description>
+      <category>التقنية</category>
+    </item>
+    <item>
+      <title>How Do CDNs Work? The Network That Speeds Up the Internet</title>
+      <link>https://doyouknow.app/en/article/how-cdns-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-cdns-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>A CDN stores copies of website content on servers around the world, delivering it from the location nearest a visitor to reduce loading time.</description>
+      <category>Technology Explained</category>
+    </item>
+    <item>
+      <title>كيف تعمل شبكات توصيل المحتوى (CDN)؟</title>
+      <link>https://doyouknow.app/ar/article/how-cdns-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-cdns-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>تُخزّن شبكة CDN نسخاً من محتوى الموقع على خوادم حول العالم، مُوصِّلة إياه من الموقع الأقرب للزائر لتقليل وقت التحميل.</description>
+      <category>التقنية</category>
+    </item>
+    <item>
+      <title>How Do Tornadoes Actually Form?</title>
+      <link>https://doyouknow.app/en/article/how-do-tornadoes-form.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-do-tornadoes-form.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Tornadoes form when wind shear creates a horizontal spinning column of air that a thunderstorm's updraft tilts vertical, tightening into a violent funnel.</description>
+      <category>Science</category>
+    </item>
+    <item>
+      <title>كيف تتكوّن الأعاصير القمعية فعلياً؟</title>
+      <link>https://doyouknow.app/ar/article/how-do-tornadoes-form.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-do-tornadoes-form.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>تتكوّن الأعاصير القمعية عندما يخلق قص الرياح عموداً أفقياً دوّاراً من الهواء يميله تيار صعود عاصفة رعدية إلى وضع رأسي، مضيقاً إياه إلى قمع عنيف.</description>
+      <category>العلوم</category>
+    </item>
+    <item>
+      <title>How Do Volcanoes Actually Erupt?</title>
+      <link>https://doyouknow.app/en/article/how-do-volcanoes-erupt.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-do-volcanoes-erupt.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Volcanic eruptions happen when molten rock, gas, and pressure inside the Earth build up until they force their way through a weak point in the crust.</description>
+      <category>Science</category>
+    </item>
+    <item>
+      <title>كيف تثور البراكين فعلياً؟</title>
+      <link>https://doyouknow.app/ar/article/how-do-volcanoes-erupt.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-do-volcanoes-erupt.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>تحدث الثورات البركانية عندما تتراكم الصخور المنصهرة والغاز والضغط داخل الأرض حتى تشق طريقها عبر نقطة ضعف في القشرة.</description>
+      <category>العلوم</category>
+    </item>
+    <item>
+      <title>How Does 3D Printing Actually Work?</title>
+      <link>https://doyouknow.app/en/article/how-does-3d-printing-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-does-3d-printing-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>3D printing builds physical objects layer by layer from a digital model, using techniques like melted plastic extrusion or resin cured by light.</description>
+      <category>Science</category>
+    </item>
+    <item>
+      <title>كيف تعمل الطباعة ثلاثية الأبعاد فعلياً؟</title>
+      <link>https://doyouknow.app/ar/article/how-does-3d-printing-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-does-3d-printing-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>تبني الطباعة ثلاثية الأبعاد أجساماً فيزيائية طبقة تلو الأخرى من نموذج رقمي، باستخدام تقنيات مثل بثق البلاستيك المنصهر أو راتنج يُصلَّب بالضوء.</description>
+      <category>العلوم</category>
+    </item>
+    <item>
+      <title>How Does Facial Recognition Technology Actually Work?</title>
+      <link>https://doyouknow.app/en/article/how-facial-recognition-works.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-facial-recognition-works.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Facial recognition maps unique facial measurements into a numerical template, then compares that template against stored data to identify or verify a person.</description>
+      <category>Technology Explained</category>
+    </item>
+    <item>
+      <title>كيف تعمل تقنية التعرف على الوجه فعلياً؟</title>
+      <link>https://doyouknow.app/ar/article/how-facial-recognition-works.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-facial-recognition-works.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>التعرف على الوجه يُخطِّط قياسات وجه فريدة إلى نموذج رقمي، ثم يقارن ذلك النموذج بالبيانات المخزنة لتحديد هوية شخص أو التحقق منها.</description>
+      <category>التقنية</category>
+    </item>
+    <item>
+      <title>How Gold Prices Are Determined Globally</title>
+      <link>https://doyouknow.app/en/article/how-gold-prices-are-determined-globally.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-gold-prices-are-determined-globally.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Gold's global price is set through continuous trading on international markets, driven by central bank demand, the US dollar, and investor sentiment.</description>
+      <category>Business and Economy</category>
+    </item>
+    <item>
+      <title>كيف تُحدَّد أسعار الذهب عالمياً</title>
+      <link>https://doyouknow.app/ar/article/how-gold-prices-are-determined-globally.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-gold-prices-are-determined-globally.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>يُحدَّد سعر الذهب العالمي عبر تداول مستمر في الأسواق الدولية، مدفوعاً بطلب البنوك المركزية والدولار الأمريكي ومعنويات المستثمرين.</description>
+      <category>الأعمال والاقتصاد</category>
+    </item>
+    <item>
+      <title>How Import Tariffs Actually Work</title>
+      <link>https://doyouknow.app/en/article/how-import-tariffs-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/en/article/how-import-tariffs-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>An import tariff is a tax a government charges on goods entering the country, usually collected from the importer at customs before goods are released.</description>
+      <category>Business and Economy</category>
+    </item>
+    <item>
+      <title>كيف تعمل الرسوم الجمركية على الاستيراد فعلياً</title>
+      <link>https://doyouknow.app/ar/article/how-import-tariffs-work.html</link>
+      <guid isPermaLink="true">https://doyouknow.app/ar/article/how-import-tariffs-work.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>الرسم الجمركي على الاستيراد ضريبة تفرضها الحكومة على البضائع الداخلة للبلاد، وتُجمع عادة من المستورد عند الجمارك قبل الإفراج عن البضائع.</description>
+      <category>الأعمال والاقتصاد</category>
+    </item>
+  </channel>
+</rss>
