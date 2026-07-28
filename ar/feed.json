@@ -6,126 +6,6 @@
   "language": "ar",
   "items": [
     {
-      "id": "https://doyouknow.app/ar/article/dubai-canal-guide.html",
-      "url": "https://doyouknow.app/ar/article/dubai-canal-guide.html",
-      "title": "قناة دبي المائية: دليل شامل",
-      "content_text": "قناة دبي المائية ممر مائي بطول 3.2 كيلومتر يمتد من خور دبي إلى الخليج العربي، تصطف على جانبيه ممرات وجسور وتطويرات سكنية وضيافة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/dubai-hills-estate-guide.html",
-      "url": "https://doyouknow.app/ar/article/dubai-hills-estate-guide.html",
-      "title": "دبي هيلز إستيت: دليل شامل",
-      "content_text": "دبي هيلز إستيت مجتمع سكني كبير مخطط رئيسياً مبني حول ملعب غولف بطولي من 18 حفرة، متموضع كحي أخضر موجَّه للعائلات.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/dubai-safari-park-guide.html",
-      "url": "https://doyouknow.app/ar/article/dubai-safari-park-guide.html",
-      "title": "دبي سفاري بارك: دليل شامل",
-      "content_text": "دبي سفاري بارك حديقة حياة برية كبيرة تجمع بين سفاري بالسيارة وقرى قابلة للمشي وحيوانات مُنقذة أو مُربّاة عبر عدة مناطق موضوعية.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egypt-birth-certificate-guide.html",
-      "url": "https://doyouknow.app/ar/article/egypt-birth-certificate-guide.html",
-      "title": "كيف تحصل على شهادة ميلاد في مصر",
-      "content_text": "تُصدر شهادات الميلاد المصرية عبر هيئة الأحوال المدنية بعد الإبلاغ عن الميلاد، عادة من المستشفى، ضمن مهلة قانونية محددة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egypt-marriage-registration-guide.html",
-      "url": "https://doyouknow.app/ar/article/egypt-marriage-registration-guide.html",
-      "title": "كيف يعمل تسجيل الزواج في مصر",
-      "content_text": "يُوثَّق الزواج في مصر رسمياً عبر عقد زواج مدني مُسجَّل لدى مأذون، خطوة مطلوبة منفصلة عن الاحتفالات الدينية أو الاجتماعية.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egypt-postal-service-guide.html",
-      "url": "https://doyouknow.app/ar/article/egypt-postal-service-guide.html",
-      "title": "خدمة البريد المصري: دليل عملي",
-      "content_text": "يتولى البريد المصري، المشغّل البريدي الوطني، توصيل الرسائل والطرود ودفع الفواتير وخدمات مالية أساسية عبر فروع في أنحاء البلاد.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egypt-traffic-fines-guide.html",
-      "url": "https://doyouknow.app/ar/article/egypt-traffic-fines-guide.html",
-      "title": "دليل المخالفات والغرامات المرورية في مصر",
-      "content_text": "تُصدر الغرامات المرورية في مصر إلكترونياً عبر كاميرات ذكية وشرطة المرور، مع عقوبات تتراوح من رسوم صغيرة إلى حجز المركبة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/egypt-utility-bills-guide.html",
-      "url": "https://doyouknow.app/ar/article/egypt-utility-bills-guide.html",
-      "title": "دليل عملي لفواتير الكهرباء والمرافق في مصر",
-      "content_text": "تُفوتَر الكهرباء والمياه والغاز في مصر عبر شركات مرافق حكومية، مع تسعير الكهرباء وفق شرائح استهلاك متدرجة شهرياً.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/food-allergies-vs-intolerances.html",
-      "url": "https://doyouknow.app/ar/article/food-allergies-vs-intolerances.html",
-      "title": "الحساسية الغذائية وعدم تحمل الطعام: ما الفرق",
-      "content_text": "الحساسية الغذائية تتضمن الجهاز المناعي ويمكن أن تكون مهددة للحياة، بينما عدم تحمل الطعام مشكلة هضمية تسبب انزعاجاً لكنها ليست خطيرة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "التغذية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-linocut-printmaking.html",
-      "url": "https://doyouknow.app/ar/article/history-of-linocut-printmaking.html",
-      "title": "تاريخ الطباعة بالحفر على اللينوليوم",
-      "content_text": "الحفر على اللينوليوم تقنية طباعة بارزة تستخدم لينوليوم منحوتاً، طُوِّرت في أوائل القرن العشرين كبديل يسهل الوصول إليه للطباعة التقليدية بالقوالب الخشبية.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الفن"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/history-of-the-prophets-mosque.html",
-      "url": "https://doyouknow.app/ar/article/history-of-the-prophets-mosque.html",
-      "title": "تاريخ المسجد النبوي في المدينة المنورة",
-      "content_text": "بُني المسجد النبوي في المدينة المنورة عام 622 ميلادي على يد النبي محمد نفسه، وتطور من بناء بسيط إلى أحد أقدس مواقع الإسلام.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الثقافة والمعرفة الإسلامية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-airline-ticket-pricing-actually-works.html",
-      "url": "https://doyouknow.app/ar/article/how-airline-ticket-pricing-actually-works.html",
-      "title": "كيف يعمل تسعير تذاكر الطيران فعلياً",
-      "content_text": "يمكن لراكبين في مقعدين متجاورين دفع أجرتين مختلفتين بشدة. إليك آلية إدارة الإيرادات وراء كيفية تحديد أسعار الطيران فعلياً.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html",
       "url": "https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html",
       "title": "كيف تعمل أنظمة أمتعة المطارات فعلياً",
@@ -136,43 +16,83 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html",
-      "url": "https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html",
-      "title": "كيف يعمل نظام التعليم الأزهري",
-      "content_text": "يدير الأزهر مساراً تعليمياً موازياً في مصر، من المرحلة الابتدائية حتى الجامعة، يجمع بين المواد الدينية والأكاديمية الحديثة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "الثقافة والمعرفة الإسلامية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-antibiotic-resistance-actually-spreads.html",
-      "url": "https://doyouknow.app/ar/article/how-antibiotic-resistance-actually-spreads.html",
-      "title": "كيف تنتشر مقاومة المضادات الحيوية فعلياً",
-      "content_text": "المقاومة ليست شيئاً يُطوِّره أفراد. إليك كيف تكتسبها البكتيريا وتتشاركها، ولماذا تهم الزراعة، ولماذا جف خط أنابيب الأدوية.",
+      "id": "https://doyouknow.app/ar/article/how-recycling-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-recycling-actually-works.html",
+      "title": "كيف تعمل إعادة التدوير فعلياً",
+      "content_text": "يُعاد تدوير الألومنيوم إلى أجل غير مسمى وبربح، ومعظم البلاستيك لا يفعل أياً منهما، ويستطيع عنصر خاطئ إفساد دفعة كاملة. الفرق كيمياء، لا جهد.",
       "date_published": "2026-07-27",
       "tags": [
         "العلوم"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-apis-work.html",
-      "url": "https://doyouknow.app/ar/article/how-apis-work.html",
-      "title": "كيف تعمل واجهات برمجة التطبيقات (APIs)؟",
-      "content_text": "واجهة برمجة التطبيقات مجموعة قواعد محددة تتيح لبرنامج طلب بيانات أو وظائف من برنامج آخر، عاملة كجسر منظم بين البرامج.",
+      "id": "https://doyouknow.app/ar/article/how-electricity-grids-stay-balanced.html",
+      "url": "https://doyouknow.app/ar/article/how-electricity-grids-stay-balanced.html",
+      "title": "كيف تبقى شبكات الكهرباء متوازنة",
+      "content_text": "تُنتَج الكهرباء وتُستهلَك في اللحظة ذاتها، ويعمل النظام كله بطاقة مُخزَّنة تكاد تكون معدومة، والتردد هو الإشارة التي تمنعه من الانهيار.",
       "date_published": "2026-07-27",
       "tags": [
         "التقنية"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-app-store-commissions-actually-work.html",
-      "url": "https://doyouknow.app/ar/article/how-app-store-commissions-actually-work.html",
-      "title": "كيف تعمل عمولات متاجر التطبيقات فعلياً",
-      "content_text": "نُسخت حصة الثلاثين بالمئة من عمل أقدم، وتنطبق على أقل بكثير مما يفترض الناس، وتُفكِّكها الآن المحاكم والمنظمون. إليك البنية الفعلية.",
+      "id": "https://doyouknow.app/ar/article/how-clinical-trials-actually-work.html",
+      "url": "https://doyouknow.app/ar/article/how-clinical-trials-actually-work.html",
+      "title": "كيف تعمل التجارب السريرية فعلياً",
+      "content_text": "معظم الأدوية التي تبلغ الاختبار البشري لا تزال تفشل، والتعمية تهم أكثر من حجم العينة، وأكبر مشكلة تجارب لم تُنشَر أبداً. إليك الآلية الفعلية.",
       "date_published": "2026-07-27",
       "tags": [
-        "الأعمال والاقتصاد"
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-satellite-navigation-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-satellite-navigation-actually-works.html",
+      "title": "كيف تعمل الملاحة بالأقمار الصناعية فعلياً",
+      "content_text": "لا تعرف الأقمار أين أنت ولا تستقبل منك شيئاً. النظام بث ساعة، وهذا سبب أهمية النسبية وسبب معرفة هاتفك للوقت ذرياً.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-wildfires-actually-spread.html",
+      "url": "https://doyouknow.app/ar/article/how-wildfires-actually-spread.html",
+      "title": "كيف تنتشر حرائق البرية فعلياً",
+      "content_text": "الخشب لا يحترق، والنيران تخلق طقسها الخاص، ومعظم المنازل تُفقَد للجمرات بدلاً من اللهب. إليك آلية سلوك النار ولماذا ارتد الإخماد.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-refrigeration-changed-what-we-eat.html",
+      "url": "https://doyouknow.app/ar/article/how-refrigeration-changed-what-we-eat.html",
+      "title": "كيف غيّر التبريد ما نأكله",
+      "content_text": "لا يقتل التبريد شيئاً، وكانت مُبرِّداته الأولى سامة، وأتلفت بدائلها طبقة الأوزون. إليك التقنية التي يعتمد عليها النظام الغذائي بأكمله الآن.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-noise-cancelling-headphones-work.html",
+      "url": "https://doyouknow.app/ar/article/how-noise-cancelling-headphones-work.html",
+      "title": "كيف تعمل سماعات إلغاء الضجيج",
+      "content_text": "يعمل الإلغاء ببراعة على هدير المحركات وبالكاد إطلاقاً على الكلام، والسبب فيزياء بدلاً من جودة منتج. إليك ما يُحدِّد الأداء فعلياً.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-sunscreen-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-sunscreen-actually-works.html",
+      "title": "كيف يعمل واقي الشمس فعلياً",
+      "content_text": "معامل الحماية ليس مضاعف وقت، ويضع معظم الناس ربع الكمية المُختبَرة، ولا يخبرك الرقم شيئاً عن الإشعاع المُسبِّب للشيخوخة. إليك الكيمياء الفعلية.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الصحة"
       ]
     },
     {
@@ -186,23 +106,103 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-blood-donation-actually-works.html",
-      "url": "https://doyouknow.app/ar/article/how-blood-donation-actually-works.html",
-      "title": "كيف يعمل التبرع بالدم فعلياً",
-      "content_text": "يُفصَل الدم المتبرَّع به لمكونات ويُفحَص ويُطابَق وينتهي خلال أسابيع. إليك سلسلة الإمداد التي لم يستبدلها أبداً بديل مُصنَّع.",
+      "id": "https://doyouknow.app/ar/article/how-dental-cavities-actually-form.html",
+      "url": "https://doyouknow.app/ar/article/how-dental-cavities-actually-form.html",
+      "title": "كيف تتشكل تسوسات الأسنان فعلياً",
+      "content_text": "لا يسبب السكر التسوس مباشرة بل الحمض من بكتيريا تتغذى عليه. إليك الكيمياء، ولماذا يهم التواتر أكثر من الكمية، وما يمنعها فعلياً.",
       "date_published": "2026-07-27",
       "tags": [
         "الصحة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
-      "url": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
-      "title": "كيف يعمل التأريخ بالكربون فعلياً",
-      "content_text": "يستطيع التأريخ بالكربون المشع تحديد عمر مواد عضوية عمرها آلاف السنين. إليك الفيزياء وراءه، والحدود التي نادراً ما تُذكَر.",
+      "id": "https://doyouknow.app/ar/article/how-laser-vision-correction-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-laser-vision-correction-actually-works.html",
+      "title": "كيف يعمل تصحيح البصر بالليزر فعلياً",
+      "content_text": "يستطيع إعادة تشكيل القرنية بالليزر إلغاء الحاجة للنظارات. إليك البصريات وراءه، وما تتضمنه الإجراءات فعلياً، والحدود الحقيقية.",
       "date_published": "2026-07-27",
       "tags": [
-        "العلوم"
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-motivation-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-motivation-actually-works.html",
+      "title": "كيف تعمل الدافعية فعلياً",
+      "content_text": "انتظار الشعور بالدافعية أكثر أخطاء الإنتاجية شيوعاً. إليك ما يقوله البحث عن مصدر الدافعية ولماذا يسبقها الفعل عادة.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العناية الذاتية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-passports-came-to-exist.html",
+      "url": "https://doyouknow.app/ar/article/how-passports-came-to-exist.html",
+      "title": "كيف نشأت جوازات السفر",
+      "content_text": "لمعظم التاريخ كان بإمكانك عبور الحدود دون وثائق. إليك كيف أصبح جواز السفر عالمياً، ولماذا قُوومت الصور، وماذا تعني فجوة القوة الآن.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "حول العالم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-shipping-containers-changed-global-trade.html",
+      "url": "https://doyouknow.app/ar/article/how-shipping-containers-changed-global-trade.html",
+      "title": "كيف غيّرت حاويات الشحن التجارة العالمية",
+      "content_text": "أعاد صندوق فولاذي بسيط تنظيم الاقتصاد العالمي بشمولية أكبر من معظم التقنيات. إليك لماذا كان التوحيد أهم من الصندوق نفسه.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-smartphone-chips-are-designed.html",
+      "url": "https://doyouknow.app/ar/article/how-smartphone-chips-are-designed.html",
+      "title": "كيف تُصمَّم وتُصنَّع شرائح الهواتف الذكية فعلياً",
+      "content_text": "خلف كل إطلاق هاتف رائد تقف دورة تصميم شرائح متعددة السنوات تمتد عبر الهندسة المعمارية والتصنيع والتغليف. إليك كيف تُصنع شريحة هاتف ذكي فعلياً.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-supermarkets-actually-make-money.html",
+      "url": "https://doyouknow.app/ar/article/how-supermarkets-actually-make-money.html",
+      "title": "كيف تربح المتاجر الكبرى المال فعلياً",
+      "content_text": "هوامش البقالة من الأنحف في التجزئة، وهذا سبب مجيء الربح من مدفوعات الموردين والمنتجات ذات العلامة الخاصة والتدفق النقدي بدلاً من من بيع الطعام.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-drinking-water-treatment-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-drinking-water-treatment-actually-works.html",
+      "title": "كيف تعمل معالجة مياه الشرب فعلياً",
+      "content_text": "أنقذت الكلورة أرواحاً أكثر من معظم الأدوية، والأنبوب يهم أكثر من المحطة. إليك ما تُزيله المعالجة فعلياً، وما لم تُصمَّم أبداً لإزالته.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/why-time-zones-exist-and-who-decides-them.html",
+      "url": "https://doyouknow.app/ar/article/why-time-zones-exist-and-who-decides-them.html",
+      "title": "لماذا توجد المناطق الزمنية ومن يُقرِّرها",
+      "content_text": "اخترعت السكك الحديدية المناطق الزمنية، لا الحكومات، وحدودها سياسية بدلاً من فلكية. إليك من يُحدِّدها فعلياً ولماذا تستمر بالتغير.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الناس والمجتمع"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-elevators-actually-work.html",
+      "url": "https://doyouknow.app/ar/article/how-elevators-actually-work.html",
+      "title": "كيف تعمل المصاعد فعلياً",
+      "content_text": "المصاعد موزونة بثقل موازن، ولا تستطيع السقوط الحر، وتُوزَّع بخوارزميات تحل مشكلة صعبة فعلاً. الاختراع الذي جعل ناطحات السحاب ممكنة كان المكبح.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
       ]
     }
   ]
