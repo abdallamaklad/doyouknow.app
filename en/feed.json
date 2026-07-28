@@ -126,6 +126,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-airport-baggage-systems-actually-work.html",
+      "url": "https://doyouknow.app/en/article/how-airport-baggage-systems-actually-work.html",
+      "title": "How Airport Baggage Systems Actually Work",
+      "content_text": "A bag travels kilometres underground, is screened by CT, and is tracked by radio tag. Most bags that go missing are simply late, and connections cause most of it.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Technology Explained"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-al-azhar-education-system-works.html",
       "url": "https://doyouknow.app/en/article/how-al-azhar-education-system-works.html",
       "title": "How Al-Azhar's Islamic Education System Works",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-cdns-work.html",
-      "url": "https://doyouknow.app/en/article/how-cdns-work.html",
-      "title": "How Do CDNs Work? The Network That Speeds Up the Internet",
-      "content_text": "A CDN stores copies of website content on servers around the world, delivering it from the location nearest a visitor to reduce loading time.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Technology Explained"
       ]
     }
   ]

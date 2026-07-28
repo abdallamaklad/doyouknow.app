@@ -126,6 +126,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html",
+      "url": "https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html",
+      "title": "كيف تعمل أنظمة أمتعة المطارات فعلياً",
+      "content_text": "تسافر الحقيبة كيلومترات تحت الأرض، وتُفحَص بالتصوير المقطعي، وتُتتبَّع ببطاقة راديوية. معظم الحقائب المفقودة متأخرة فقط، وتُسبِّب الترانزيتات معظم ذلك.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html",
       "url": "https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html",
       "title": "كيف يعمل نظام التعليم الأزهري",
@@ -193,16 +203,6 @@
       "date_published": "2026-07-27",
       "tags": [
         "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-cdns-work.html",
-      "url": "https://doyouknow.app/ar/article/how-cdns-work.html",
-      "title": "كيف تعمل شبكات توصيل المحتوى (CDN)؟",
-      "content_text": "تُخزّن شبكة CDN نسخاً من محتوى الموقع على خوادم حول العالم، مُوصِّلة إياه من الموقع الأقرب للزائر لتقليل وقت التحميل.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "التقنية"
       ]
     }
   ]

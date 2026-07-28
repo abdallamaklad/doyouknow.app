@@ -103,6 +103,14 @@
     <category>الأعمال والاقتصاد</category>
   </item>
   <item>
+    <title>كيف تعمل أنظمة أمتعة المطارات فعلياً</title>
+    <link>https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html</guid>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+    <description>تسافر الحقيبة كيلومترات تحت الأرض، وتُفحَص بالتصوير المقطعي، وتُتتبَّع ببطاقة راديوية. معظم الحقائب المفقودة متأخرة فقط، وتُسبِّب الترانزيتات معظم ذلك.</description>
+    <category>التقنية</category>
+  </item>
+  <item>
     <title>كيف يعمل نظام التعليم الأزهري</title>
     <link>https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html</link>
     <guid isPermaLink="true">https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html</guid>
@@ -157,14 +165,6 @@
     <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
     <description>يستطيع التأريخ بالكربون المشع تحديد عمر مواد عضوية عمرها آلاف السنين. إليك الفيزياء وراءه، والحدود التي نادراً ما تُذكَر.</description>
     <category>العلوم</category>
-  </item>
-  <item>
-    <title>كيف تعمل شبكات توصيل المحتوى (CDN)؟</title>
-    <link>https://doyouknow.app/ar/article/how-cdns-work.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-cdns-work.html</guid>
-    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
-    <description>تُخزّن شبكة CDN نسخاً من محتوى الموقع على خوادم حول العالم، مُوصِّلة إياه من الموقع الأقرب للزائر لتقليل وقت التحميل.</description>
-    <category>التقنية</category>
   </item>
 </channel>
 </rss>

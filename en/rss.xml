@@ -103,6 +103,14 @@
     <category>Business and Economy</category>
   </item>
   <item>
+    <title>How Airport Baggage Systems Actually Work</title>
+    <link>https://doyouknow.app/en/article/how-airport-baggage-systems-actually-work.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-airport-baggage-systems-actually-work.html</guid>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+    <description>A bag travels kilometres underground, is screened by CT, and is tracked by radio tag. Most bags that go missing are simply late, and connections cause most of it.</description>
+    <category>Technology Explained</category>
+  </item>
+  <item>
     <title>How Al-Azhar's Islamic Education System Works</title>
     <link>https://doyouknow.app/en/article/how-al-azhar-education-system-works.html</link>
     <guid isPermaLink="true">https://doyouknow.app/en/article/how-al-azhar-education-system-works.html</guid>
@@ -157,14 +165,6 @@
     <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
     <description>Radiocarbon dating can determine the age of organic material thousands of years old. Here's the physics behind it, and the limits that are rarely mentioned.</description>
     <category>Science</category>
-  </item>
-  <item>
-    <title>How Do CDNs Work? The Network That Speeds Up the Internet</title>
-    <link>https://doyouknow.app/en/article/how-cdns-work.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-cdns-work.html</guid>
-    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
-    <description>A CDN stores copies of website content on servers around the world, delivering it from the location nearest a visitor to reduce loading time.</description>
-    <category>Technology Explained</category>
   </item>
 </channel>
 </rss>
