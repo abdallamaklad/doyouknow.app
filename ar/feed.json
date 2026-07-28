@@ -116,6 +116,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/ar/article/how-airline-ticket-pricing-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-airline-ticket-pricing-actually-works.html",
+      "title": "كيف يعمل تسعير تذاكر الطيران فعلياً",
+      "content_text": "يمكن لراكبين في مقعدين متجاورين دفع أجرتين مختلفتين بشدة. إليك آلية إدارة الإيرادات وراء كيفية تحديد أسعار الطيران فعلياً.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html",
+      "url": "https://doyouknow.app/ar/article/how-airport-baggage-systems-actually-work.html",
+      "title": "كيف تعمل أنظمة أمتعة المطارات فعلياً",
+      "content_text": "تسافر الحقيبة كيلومترات تحت الأرض، وتُفحَص بالتصوير المقطعي، وتُتتبَّع ببطاقة راديوية. معظم الحقائب المفقودة متأخرة فقط، وتُسبِّب الترانزيتات معظم ذلك.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html",
       "url": "https://doyouknow.app/ar/article/how-al-azhar-education-system-works.html",
       "title": "كيف يعمل نظام التعليم الأزهري",
@@ -123,6 +143,16 @@
       "date_published": "2026-07-27",
       "tags": [
         "الثقافة والمعرفة الإسلامية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-antibiotic-resistance-actually-spreads.html",
+      "url": "https://doyouknow.app/ar/article/how-antibiotic-resistance-actually-spreads.html",
+      "title": "كيف تنتشر مقاومة المضادات الحيوية فعلياً",
+      "content_text": "المقاومة ليست شيئاً يُطوِّره أفراد. إليك كيف تكتسبها البكتيريا وتتشاركها، ولماذا تهم الزراعة، ولماذا جف خط أنابيب الأدوية.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
       ]
     },
     {
@@ -136,73 +166,43 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-cdns-work.html",
-      "url": "https://doyouknow.app/ar/article/how-cdns-work.html",
-      "title": "كيف تعمل شبكات توصيل المحتوى (CDN)؟",
-      "content_text": "تُخزّن شبكة CDN نسخاً من محتوى الموقع على خوادم حول العالم، مُوصِّلة إياه من الموقع الأقرب للزائر لتقليل وقت التحميل.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-do-tornadoes-form.html",
-      "url": "https://doyouknow.app/ar/article/how-do-tornadoes-form.html",
-      "title": "كيف تتكوّن الأعاصير القمعية فعلياً؟",
-      "content_text": "تتكوّن الأعاصير القمعية عندما يخلق قص الرياح عموداً أفقياً دوّاراً من الهواء يميله تيار صعود عاصفة رعدية إلى وضع رأسي، مضيقاً إياه إلى قمع عنيف.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-do-volcanoes-erupt.html",
-      "url": "https://doyouknow.app/ar/article/how-do-volcanoes-erupt.html",
-      "title": "كيف تثور البراكين فعلياً؟",
-      "content_text": "تحدث الثورات البركانية عندما تتراكم الصخور المنصهرة والغاز والضغط داخل الأرض حتى تشق طريقها عبر نقطة ضعف في القشرة.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-does-3d-printing-work.html",
-      "url": "https://doyouknow.app/ar/article/how-does-3d-printing-work.html",
-      "title": "كيف تعمل الطباعة ثلاثية الأبعاد فعلياً؟",
-      "content_text": "تبني الطباعة ثلاثية الأبعاد أجساماً فيزيائية طبقة تلو الأخرى من نموذج رقمي، باستخدام تقنيات مثل بثق البلاستيك المنصهر أو راتنج يُصلَّب بالضوء.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-facial-recognition-works.html",
-      "url": "https://doyouknow.app/ar/article/how-facial-recognition-works.html",
-      "title": "كيف تعمل تقنية التعرف على الوجه فعلياً؟",
-      "content_text": "التعرف على الوجه يُخطِّط قياسات وجه فريدة إلى نموذج رقمي، ثم يقارن ذلك النموذج بالبيانات المخزنة لتحديد هوية شخص أو التحقق منها.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-gold-prices-are-determined-globally.html",
-      "url": "https://doyouknow.app/ar/article/how-gold-prices-are-determined-globally.html",
-      "title": "كيف تُحدَّد أسعار الذهب عالمياً",
-      "content_text": "يُحدَّد سعر الذهب العالمي عبر تداول مستمر في الأسواق الدولية، مدفوعاً بطلب البنوك المركزية والدولار الأمريكي ومعنويات المستثمرين.",
+      "id": "https://doyouknow.app/ar/article/how-app-store-commissions-actually-work.html",
+      "url": "https://doyouknow.app/ar/article/how-app-store-commissions-actually-work.html",
+      "title": "كيف تعمل عمولات متاجر التطبيقات فعلياً",
+      "content_text": "نُسخت حصة الثلاثين بالمئة من عمل أقدم، وتنطبق على أقل بكثير مما يفترض الناس، وتُفكِّكها الآن المحاكم والمنظمون. إليك البنية الفعلية.",
       "date_published": "2026-07-27",
       "tags": [
         "الأعمال والاقتصاد"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-import-tariffs-work.html",
-      "url": "https://doyouknow.app/ar/article/how-import-tariffs-work.html",
-      "title": "كيف تعمل الرسوم الجمركية على الاستيراد فعلياً",
-      "content_text": "الرسم الجمركي على الاستيراد ضريبة تفرضها الحكومة على البضائع الداخلة للبلاد، وتُجمع عادة من المستورد عند الجمارك قبل الإفراج عن البضائع.",
+      "id": "https://doyouknow.app/ar/article/how-banks-actually-create-money.html",
+      "url": "https://doyouknow.app/ar/article/how-banks-actually-create-money.html",
+      "title": "كيف تخلق البنوك المال فعلياً",
+      "content_text": "لا تُقرض البنوك الودائع. تخلق مالاً جديداً عند الإقراض، وهو عكس ما يُعلَّم لمعظم الناس. إليك كيف يعمل فعلياً.",
       "date_published": "2026-07-27",
       "tags": [
         "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-blood-donation-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-blood-donation-actually-works.html",
+      "title": "كيف يعمل التبرع بالدم فعلياً",
+      "content_text": "يُفصَل الدم المتبرَّع به لمكونات ويُفحَص ويُطابَق وينتهي خلال أسابيع. إليك سلسلة الإمداد التي لم يستبدلها أبداً بديل مُصنَّع.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-carbon-dating-actually-works.html",
+      "title": "كيف يعمل التأريخ بالكربون فعلياً",
+      "content_text": "يستطيع التأريخ بالكربون المشع تحديد عمر مواد عضوية عمرها آلاف السنين. إليك الفيزياء وراءه، والحدود التي نادراً ما تُذكَر.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "العلوم"
       ]
     }
   ]

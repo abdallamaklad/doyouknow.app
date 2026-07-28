@@ -116,6 +116,26 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-airline-ticket-pricing-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-airline-ticket-pricing-actually-works.html",
+      "title": "How Airline Ticket Pricing Actually Works",
+      "content_text": "Two passengers in adjacent seats can pay wildly different fares. Here's the revenue management machinery behind how airline prices are actually set.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-airport-baggage-systems-actually-work.html",
+      "url": "https://doyouknow.app/en/article/how-airport-baggage-systems-actually-work.html",
+      "title": "How Airport Baggage Systems Actually Work",
+      "content_text": "A bag travels kilometres underground, is screened by CT, and is tracked by radio tag. Most bags that go missing are simply late, and connections cause most of it.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Technology Explained"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-al-azhar-education-system-works.html",
       "url": "https://doyouknow.app/en/article/how-al-azhar-education-system-works.html",
       "title": "How Al-Azhar's Islamic Education System Works",
@@ -123,6 +143,16 @@
       "date_published": "2026-07-27",
       "tags": [
         "Islamic Knowledge & Culture"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-antibiotic-resistance-actually-spreads.html",
+      "url": "https://doyouknow.app/en/article/how-antibiotic-resistance-actually-spreads.html",
+      "title": "How Antibiotic Resistance Actually Spreads",
+      "content_text": "Resistance is not something individual people develop. Here's how bacteria acquire and share it, why agriculture matters, and why the drug pipeline dried up.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Science"
       ]
     },
     {
@@ -136,73 +166,43 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-cdns-work.html",
-      "url": "https://doyouknow.app/en/article/how-cdns-work.html",
-      "title": "How Do CDNs Work? The Network That Speeds Up the Internet",
-      "content_text": "A CDN stores copies of website content on servers around the world, delivering it from the location nearest a visitor to reduce loading time.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
-      "url": "https://doyouknow.app/en/article/how-do-tornadoes-form.html",
-      "title": "How Do Tornadoes Actually Form?",
-      "content_text": "Tornadoes form when wind shear creates a horizontal spinning column of air that a thunderstorm's updraft tilts vertical, tightening into a violent funnel.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-do-volcanoes-erupt.html",
-      "url": "https://doyouknow.app/en/article/how-do-volcanoes-erupt.html",
-      "title": "How Do Volcanoes Actually Erupt?",
-      "content_text": "Volcanic eruptions happen when molten rock, gas, and pressure inside the Earth build up until they force their way through a weak point in the crust.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-does-3d-printing-work.html",
-      "url": "https://doyouknow.app/en/article/how-does-3d-printing-work.html",
-      "title": "How Does 3D Printing Actually Work?",
-      "content_text": "3D printing builds physical objects layer by layer from a digital model, using techniques like melted plastic extrusion or resin cured by light.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-facial-recognition-works.html",
-      "url": "https://doyouknow.app/en/article/how-facial-recognition-works.html",
-      "title": "How Does Facial Recognition Technology Actually Work?",
-      "content_text": "Facial recognition maps unique facial measurements into a numerical template, then compares that template against stored data to identify or verify a person.",
-      "date_published": "2026-07-27",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-gold-prices-are-determined-globally.html",
-      "url": "https://doyouknow.app/en/article/how-gold-prices-are-determined-globally.html",
-      "title": "How Gold Prices Are Determined Globally",
-      "content_text": "Gold's global price is set through continuous trading on international markets, driven by central bank demand, the US dollar, and investor sentiment.",
+      "id": "https://doyouknow.app/en/article/how-app-store-commissions-actually-work.html",
+      "url": "https://doyouknow.app/en/article/how-app-store-commissions-actually-work.html",
+      "title": "How App Store Commissions Actually Work",
+      "content_text": "The 30 percent cut was copied from an older business, applies to far less than people assume, and is now being unwound by courts and regulators. Here's the actual structure.",
       "date_published": "2026-07-27",
       "tags": [
         "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-import-tariffs-work.html",
-      "url": "https://doyouknow.app/en/article/how-import-tariffs-work.html",
-      "title": "How Import Tariffs Actually Work",
-      "content_text": "An import tariff is a tax a government charges on goods entering the country, usually collected from the importer at customs before goods are released.",
+      "id": "https://doyouknow.app/en/article/how-banks-actually-create-money.html",
+      "url": "https://doyouknow.app/en/article/how-banks-actually-create-money.html",
+      "title": "How Banks Actually Create Money",
+      "content_text": "Banks do not lend out deposits. They create new money when they lend, which is the opposite of what most people are taught. Here's how it genuinely works.",
       "date_published": "2026-07-27",
       "tags": [
         "Business and Economy"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-blood-donation-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-blood-donation-actually-works.html",
+      "title": "How Blood Donation Actually Works",
+      "content_text": "Donated blood is separated into components, tested, matched and expires within weeks. Here's the logistics chain that has never been replaced by a manufactured substitute.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Health"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-carbon-dating-actually-works.html",
+      "title": "How Carbon Dating Actually Works",
+      "content_text": "Radiocarbon dating can determine the age of organic material thousands of years old. Here's the physics behind it, and the limits that are rarely mentioned.",
+      "date_published": "2026-07-27",
+      "tags": [
+        "Science"
       ]
     }
   ]
