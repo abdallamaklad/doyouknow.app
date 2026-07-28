@@ -1474,7 +1474,9 @@ for (const file of searchFiles) {
     keywords,
     type,
     datePublished,
-    readTime
+    readTime,
+    // Repo-relative path, used to break datePublished ties by commit recency.
+    path: rel
   });
 }
 
@@ -1500,7 +1502,11 @@ const index = {
 };
 
 const searchIndexByLanguage = (lang) => {
-  const languageArticles = articles.filter((article) => article.language === lang);
+  // `path` is a build-time field for commit-recency lookup. The search index is
+  // downloaded by every visitor, so strip it rather than shipping repo layout.
+  const languageArticles = articles
+    .filter((article) => article.language === lang)
+    .map(({ path, ...article }) => article);
   return {
     version: index.version,
     generated: toIsoDateTime(latestPublishedDate(languageArticles)),
@@ -1568,8 +1574,49 @@ function generateJsonFeed(items, lang, title, homePageUrl, feedUrl) {
 }
 
 const articleItems = articles.filter(a => a.type === 'article');
-const enArticleItems = articleItems.filter(a => a.language === 'en').sort((a, b) => b.datePublished.localeCompare(a.datePublished)).slice(0, 20);
-const arArticleItems = articleItems.filter(a => a.language === 'ar').sort((a, b) => b.datePublished.localeCompare(a.datePublished)).slice(0, 20);
+
+// datePublished is day-granular and a whole wave is generated in one sitting, so
+// well over a hundred articles can share the newest date. Sorting on it alone is
+// a stable no-op across those ties, leaving them in filesystem walk order —
+// alphabetical — which pushed brand-new articles below older ones whose slug
+// happened to sort earlier. Break ties on the commit that last touched the file,
+// which is the only real recency signal in a static build.
+async function commitRecencyByPath() {
+  const map = new Map();
+  try {
+    const { execFile } = await import('node:child_process');
+    const { promisify } = await import('node:util');
+    const { stdout } = await promisify(execFile)(
+      'git',
+      ['log', '--pretty=format:%x00%aI', '--name-only', '--diff-filter=AMR'],
+      { cwd: root, maxBuffer: 256 * 1024 * 1024 }
+    );
+    let commitDate = null;
+    for (const line of stdout.split('\n')) {
+      if (line.startsWith('\0')) { commitDate = line.slice(1); continue; }
+      const file = line.trim();
+      // git log is newest-first, so the first time a path appears is its latest commit.
+      if (file && commitDate && !map.has(file)) map.set(file, commitDate);
+    }
+  } catch {
+    // Not a git checkout, or git unavailable: fall back to date-only ordering.
+  }
+  return map;
+}
+
+const commitRecency = await commitRecencyByPath();
+
+function byNewestFirst(a, b) {
+  const byDate = b.datePublished.localeCompare(a.datePublished);
+  if (byDate !== 0) return byDate;
+  const byCommit = (commitRecency.get(b.path) || '').localeCompare(commitRecency.get(a.path) || '');
+  if (byCommit !== 0) return byCommit;
+  // Last resort so builds stay reproducible rather than walk-order dependent.
+  return a.slug.localeCompare(b.slug);
+}
+
+const enArticleItems = articleItems.filter(a => a.language === 'en').sort(byNewestFirst).slice(0, 20);
+const arArticleItems = articleItems.filter(a => a.language === 'ar').sort(byNewestFirst).slice(0, 20);
 
 // --- Homepage index (Explore surface) ---
 //
@@ -1659,10 +1706,8 @@ async function writeHomeIndex(lang, items) {
   return true;
 }
 
-const enAllArticles = articleItems.filter(a => a.language === 'en')
-  .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
-const arAllArticles = articleItems.filter(a => a.language === 'ar')
-  .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
+const enAllArticles = articleItems.filter(a => a.language === 'en').sort(byNewestFirst);
+const arAllArticles = articleItems.filter(a => a.language === 'ar').sort(byNewestFirst);
 
 const wroteEn = await writeHomeIndex('en', enAllArticles);
 const wroteAr = await writeHomeIndex('ar', arAllArticles);
@@ -1675,6 +1720,22 @@ await writeFile(join(root, 'en', 'rss.xml'), generateRss(enArticleItems, 'en', '
 await writeFile(join(root, 'ar', 'rss.xml'), generateRss(arArticleItems, 'ar', 'doyouknow.app - العربية', 'Surprising facts about UAE, Saudi Arabia, and the world.', 'https://doyouknow.app/ar/'));
 await writeFile(join(root, 'en', 'feed.json'), generateJsonFeed(enArticleItems, 'en', 'doyouknow.app - English', 'https://doyouknow.app/en/', 'https://doyouknow.app/en/feed.json'));
 await writeFile(join(root, 'ar', 'feed.json'), generateJsonFeed(arArticleItems, 'ar', 'doyouknow.app - العربية', 'https://doyouknow.app/ar/', 'https://doyouknow.app/ar/feed.json'));
+
+// The root feed is the one the site footer links to, but it was hand-authored and
+// therefore froze the moment it was written — it still listed only the wave that
+// happened to be current that day. Generate it from the same records as the
+// per-language feeds so it can never drift again. Both languages are interleaved
+// newest-first, matching what the hand-written file was trying to be.
+const rootFeedItems = [...enArticleItems, ...arArticleItems]
+  .sort(byNewestFirst)
+  .slice(0, 40);
+await writeFile(join(root, 'rss.xml'), generateRss(
+  rootFeedItems,
+  'en-ar',
+  'doyouknow.app',
+  'Facts and practical guides from doyouknow.app',
+  'https://doyouknow.app/'
+));
 
 console.log('Generated RSS and JSON feeds.');
 
