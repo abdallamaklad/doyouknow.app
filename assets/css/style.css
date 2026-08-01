@@ -2910,9 +2910,7 @@ html[dir="rtl"] .wc-mini-list {
 /* Selection */
 ::selection { background: rgba(245,158,11,0.2); color: var(--color-text-primary); }
 /* Newsletter capture is intentionally hidden until a consent-aware provider is connected. */
-.newsletter-signup,
-.footer-newsletter,
-.signup-form { display: none !important; }
+
 
 /* ============================================
    Print Styles — Professional Print Experience
