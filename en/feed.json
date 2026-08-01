@@ -6,203 +6,203 @@
   "language": "en",
   "items": [
     {
-      "id": "https://doyouknow.app/en/article/how-egypts-real-estate-registration-shahr-al-aqari-works.html",
-      "url": "https://doyouknow.app/en/article/how-egypts-real-estate-registration-shahr-al-aqari-works.html",
-      "title": "How Egypt's Real Estate Registration System Works",
-      "content_text": "Egypt's official property registration system protects buyers from fraud in ways a simple sale contract cannot. Here is how it actually works.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Egypt Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-saudi-arabias-new-rail-lines-are-actually-being-built.html",
-      "url": "https://doyouknow.app/en/article/how-saudi-arabias-new-rail-lines-are-actually-being-built.html",
-      "title": "How Saudi Arabia's New Rail Lines Are Actually Being Built",
-      "content_text": "Saudi Arabia is expanding its rail network fast. Here is how desert rail lines get engineered, funded, and connected to ports and cities.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Saudi Vision 2030 & Megaprojects"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-sports-medals-are-actually-manufactured.html",
-      "url": "https://doyouknow.app/en/article/how-sports-medals-are-actually-manufactured.html",
-      "title": "How Sports Medals Are Actually Made",
-      "content_text": "How Olympic-style gold, silver, and bronze medals are actually designed, minted, and secured, including why a 'gold' medal is mostly silver underneath.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Stories"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-streaming-recommendation-algorithms-actually-work.html",
-      "url": "https://doyouknow.app/en/article/how-streaming-recommendation-algorithms-actually-work.html",
-      "title": "How Streaming Recommendation Algorithms Actually Work",
-      "content_text": "How streaming recommendations actually work: collaborative filtering, the cold-start problem, why watch time drives everything, and why guesses are sometimes eerily right.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-the-elm-platform-handles-saudi-government-services.html",
-      "url": "https://doyouknow.app/en/article/how-the-elm-platform-handles-saudi-government-services.html",
-      "title": "How Saudi Arabia's Elm Platform Handles Government Services",
-      "content_text": "Elm is a public-private technology company behind many Saudi digital services, distinct from Absher. Here is how it actually works.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-weather-records-are-actually-verified.html",
-      "url": "https://doyouknow.app/en/article/how-weather-records-are-actually-verified.html",
-      "title": "How a 'Record' Heat Wave Actually Gets Verified",
-      "content_text": "A record-breaking temperature claim isn't official until it survives a slow, methodical verification process. Here's how that process works.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-childrens-product-recalls-are-so-common.html",
-      "url": "https://doyouknow.app/en/article/why-childrens-product-recalls-are-so-common.html",
-      "title": "Why Children's Product Recalls Happen So Often",
-      "content_text": "Why toys and baby gear get recalled far more often than adult products: stricter safety thresholds, how recalls actually get triggered, and what parents should check.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Family"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-clock-changes-dont-happen-on-the-same-date-everywhere.html",
-      "url": "https://doyouknow.app/en/article/why-clock-changes-dont-happen-on-the-same-date-everywhere.html",
-      "title": "Why Clock Changes Don't Happen on the Same Date Everywhere",
-      "content_text": "Why daylight saving transitions fall on different dates in different countries, why some places skip the change entirely, and the scheduling chaos this creates.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Around the World"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-cricket-bowlers-get-called-for-throwing.html",
-      "url": "https://doyouknow.app/en/article/why-cricket-bowlers-get-called-for-throwing.html",
-      "title": "Why Cricket Bowlers Get Called for 'Throwing' the Ball",
-      "content_text": "Cricket bowlers get called for 'throwing' when their elbow bends too much mid-action. Here's the biomechanics rule and how it's actually tested.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-deepfake-detection-lags-behind-deepfake-creation.html",
-      "url": "https://doyouknow.app/en/article/why-deepfake-detection-lags-behind-deepfake-creation.html",
-      "title": "Why Deepfake Detection Keeps Losing to Deepfake Creation",
-      "content_text": "Deepfake detectors are structurally always a step behind generators. Here's why the arms race is so lopsided and what actually helps.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/how-ad-blockers-actually-detect-and-remove-ads.html",
+      "url": "https://doyouknow.app/en/article/how-ad-blockers-actually-detect-and-remove-ads.html",
+      "title": "How Ad Blockers Actually Detect and Remove Ads",
+      "content_text": "Ad blockers rely on crowdsourced filter lists, CSS hiding, and network request blocking, locked in a constant technical arms race with publishers.",
+      "date_published": "2026-08-01",
       "tags": [
         "Technology Explained"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-doomscrolling-is-so-hard-to-stop.html",
-      "url": "https://doyouknow.app/en/article/why-doomscrolling-is-so-hard-to-stop.html",
-      "title": "Why Doomscrolling Is So Hard to Stop, Even When It Feels Bad",
-      "content_text": "Doomscrolling isn't a willpower failure. It's a predictable response to how feeds are built and how attention actually works.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/how-browser-autofill-actually-stores-and-protects-your-data.html",
+      "url": "https://doyouknow.app/en/article/how-browser-autofill-actually-stores-and-protects-your-data.html",
+      "title": "How Browser Autofill Actually Stores Your Data",
+      "content_text": "How browser autofill actually stores your name, address, and card details, how it's protected, and the real attack vectors worth knowing about.",
+      "date_published": "2026-08-01",
       "tags": [
-        "Self Care"
+        "Technology Explained"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-exam-halls-have-such-strict-rules.html",
-      "url": "https://doyouknow.app/en/article/why-exam-halls-have-such-strict-rules.html",
-      "title": "Why Exam Halls Follow Such Strict, Almost Ritualistic Rules",
-      "content_text": "The history behind exam-hall rules: seating spacing, timing precision, sealed papers, and why each requirement traces back to a real, documented cheating method.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Education"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-extreme-heat-is-deadlier-than-extreme-cold.html",
-      "url": "https://doyouknow.app/en/article/why-extreme-heat-is-deadlier-than-extreme-cold.html",
-      "title": "Why Extreme Heat Kills More People Than Extreme Cold",
-      "content_text": "Heat overwhelms the body's cooling system faster than cold overwhelms its warming system. Here's the physiology behind the deadlier extreme.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Health"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-flight-prices-seem-to-rise-after-you-search-twice.html",
-      "url": "https://doyouknow.app/en/article/why-flight-prices-seem-to-rise-after-you-search-twice.html",
-      "title": "Why Flight Prices Seem to Rise the Moment You Search Twice",
-      "content_text": "Airline pricing explained: why fares change between searches, why clearing cookies sometimes seems to work, and what actually moves the number you see.",
-      "date_published": "2026-07-31",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-gulf-humidity-feels-worse-than-the-temperature-suggests.html",
-      "url": "https://doyouknow.app/en/article/why-gulf-humidity-feels-worse-than-the-temperature-suggests.html",
-      "title": "Why Gulf Humidity Feels Worse Than the Thermometer Says",
-      "content_text": "Why a Gulf summer day can feel far hotter than the reported temperature: the science of heat index, wet-bulb temperature, and why coastal humidity is different from desert heat.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/how-dubai-desalinates-water-for-a-desert-city.html",
+      "url": "https://doyouknow.app/en/article/how-dubai-desalinates-water-for-a-desert-city.html",
+      "title": "How Dubai Desalinates Water for a Desert City",
+      "content_text": "Dubai has almost no natural freshwater. Here's how desalination technology turns Gulf seawater into the city's entire water supply.",
+      "date_published": "2026-08-01",
       "tags": [
         "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-moon-sighting-still-matters-for-islamic-dates.html",
-      "url": "https://doyouknow.app/en/article/why-moon-sighting-still-matters-for-islamic-dates.html",
-      "title": "Why Moon Sighting Still Matters for Setting Islamic Dates",
-      "content_text": "Why Islamic months still start with observing the crescent moon rather than a fixed calendar, and why different countries sometimes announce different dates for the same occasion.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/how-esports-tournament-prize-pools-get-so-large.html",
+      "url": "https://doyouknow.app/en/article/how-esports-tournament-prize-pools-get-so-large.html",
+      "title": "How Esports Tournament Prize Pools Get So Large",
+      "content_text": "Esports prize pools can dwarf traditional sports purses. Here's how crowdfunding, sponsorship, and streaming revenue actually build them.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-neom-airport-is-being-built-for-a-city-that-doesnt-fully-exist-yet.html",
+      "url": "https://doyouknow.app/en/article/how-neom-airport-is-being-built-for-a-city-that-doesnt-fully-exist-yet.html",
+      "title": "How NEOM Airport Is Built for a City That Isn't Finished",
+      "content_text": "NEOM Airport is being built ahead of the population it will serve. Here's the unusual planning logic behind building transport infrastructure first.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Saudi Vision 2030 & Megaprojects"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-quran-memorization-hifz-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-quran-memorization-hifz-actually-works.html",
+      "title": "How Quran Memorization (Hifz) Actually Works",
+      "content_text": "The traditional methods, cognitive science, and institutions behind hifz, the practice of memorizing the entire Quran, explained factually and neutrally.",
+      "date_published": "2026-08-01",
       "tags": [
         "Islamic Knowledge & Culture"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-movie-premieres-still-matter-in-the-streaming-era.html",
-      "url": "https://doyouknow.app/en/article/why-movie-premieres-still-matter-in-the-streaming-era.html",
-      "title": "Why Movie Premieres Still Matter in the Streaming Era",
-      "content_text": "Movie premieres still happen even when films stream days later. Here's the marketing and economic logic that keeps the red carpet alive.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/how-saudi-arabia-recruits-international-talent-for-giga-projects.html",
+      "url": "https://doyouknow.app/en/article/how-saudi-arabia-recruits-international-talent-for-giga-projects.html",
+      "title": "How Saudi Arabia Recruits Talent for Giga-Projects",
+      "content_text": "How Saudi Arabia attracts international engineers, planners, and specialists for its giga-projects: visas, incentives, partnerships, and challenges.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Saudi Vision 2030 & Megaprojects"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-saudi-arabias-traffic-point-system-najm-works.html",
+      "url": "https://doyouknow.app/en/article/how-saudi-arabias-traffic-point-system-najm-works.html",
+      "title": "How Saudi Arabia's Traffic Violation Point System Works",
+      "content_text": "A general overview of how traffic violations accumulate against a Saudi driver's license, how Najm fits in, and the shift to automated enforcement.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Saudi Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-the-saudi-iqama-renewal-process-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-the-saudi-iqama-renewal-process-actually-works.html",
+      "title": "How the Saudi Iqama Renewal Process Actually Works",
+      "content_text": "How Saudi residency permit (Iqama) renewal actually works: the digital process via Absher, sponsor role, insurance requirements, and timing.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Saudi Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-to-apply-for-an-egyptian-marriage-certificate-as-a-foreigner.html",
+      "url": "https://doyouknow.app/en/article/how-to-apply-for-an-egyptian-marriage-certificate-as-a-foreigner.html",
+      "title": "How to Apply for an Egyptian Marriage Certificate as a Foreigner",
+      "content_text": "A general overview of how foreigners marry in Egypt: required documents, the notary's role, embassy paperwork, and what to verify before applying.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-to-get-a-business-license-in-egypt.html",
+      "url": "https://doyouknow.app/en/article/how-to-get-a-business-license-in-egypt.html",
+      "title": "How to Get a Business License in Egypt",
+      "content_text": "A practical overview of registering a business in Egypt: legal structures, commercial registry, tax registration, permits, and digitization efforts.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-travel-insurance-claims-actually-get-approved-or-denied.html",
+      "url": "https://doyouknow.app/en/article/how-travel-insurance-claims-actually-get-approved-or-denied.html",
+      "title": "How Travel Insurance Claims Actually Get Approved or Denied",
+      "content_text": "Why travel insurance claims get denied more often than travelers expect, what adjusters actually check, and how to protect a claim before you even travel.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Practical Guide"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-world-cup-broadcast-rights-are-sold-around-the-world.html",
+      "url": "https://doyouknow.app/en/article/how-world-cup-broadcast-rights-are-sold-around-the-world.html",
+      "title": "How World Cup Broadcast Rights Are Sold Around the World",
+      "content_text": "FIFA sells World Cup broadcast rights territory by territory rather than as one global deal. Here's how that market actually works.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-world-cup-host-cities-were-actually-selected.html",
+      "url": "https://doyouknow.app/en/article/how-world-cup-host-cities-were-actually-selected.html",
+      "title": "How World Cup Host Cities Were Actually Selected",
+      "content_text": "How FIFA actually selects World Cup host cities: bid evaluation criteria, stadium and infrastructure scoring, and why some large cities were passed over.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/the-engineering-story-behind-the-suez-canal-expansion.html",
+      "url": "https://doyouknow.app/en/article/the-engineering-story-behind-the-suez-canal-expansion.html",
+      "title": "The Engineering Story Behind the Suez Canal Expansion",
+      "content_text": "Egypt dug a parallel channel to let ships pass in both directions at once — here's how the Suez Canal expansion was engineered and why it mattered.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Stories"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/the-real-history-behind-the-golden-ratio-in-design.html",
+      "url": "https://doyouknow.app/en/article/the-real-history-behind-the-golden-ratio-in-design.html",
+      "title": "The Real History Behind the Golden Ratio in Design",
+      "content_text": "What the golden ratio actually is mathematically, why claims it shaped the Parthenon and pyramids are mostly myth, and where it's genuinely used today.",
+      "date_published": "2026-08-01",
+      "tags": [
+        "Stories"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-art-forgeries-are-so-hard-to-catch.html",
+      "url": "https://doyouknow.app/en/article/why-art-forgeries-are-so-hard-to-catch.html",
+      "title": "Why Art Forgeries Are So Hard to Catch",
+      "content_text": "How art forgers fool experts for decades, the science used to catch them, and why the art market's own structure makes forgery so hard to detect.",
+      "date_published": "2026-08-01",
       "tags": [
         "Art"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-rumors-about-public-figures-spread-faster-than-facts.html",
-      "url": "https://doyouknow.app/en/article/why-rumors-about-public-figures-spread-faster-than-facts.html",
-      "title": "Why Rumors About Public Figures Spread Faster Than the Facts",
-      "content_text": "The psychology and platform mechanics that let an unverified claim about a public figure outrun its correction, and how to read the next viral claim more carefully.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/why-auroras-appear-in-different-colors.html",
+      "url": "https://doyouknow.app/en/article/why-auroras-appear-in-different-colors.html",
+      "title": "Why the Northern and Southern Lights Appear in Different Colors",
+      "content_text": "Aurora colors depend on which atmospheric gas gets struck by solar particles and at what altitude, which is why green dominates but red and purple also appear.",
+      "date_published": "2026-08-01",
       "tags": [
-        "People and Society"
+        "Science"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-sports-drinks-contain-more-sugar-than-people-realize.html",
-      "url": "https://doyouknow.app/en/article/why-sports-drinks-contain-more-sugar-than-people-realize.html",
-      "title": "Why Sports Drinks Contain More Sugar Than People Realize",
-      "content_text": "Sports drinks carry more sugar than most people expect. Here's the science behind why, and when water actually works better.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/why-blood-pressure-readings-differ-between-arms.html",
+      "url": "https://doyouknow.app/en/article/why-blood-pressure-readings-differ-between-arms.html",
+      "title": "Why Blood Pressure Readings Differ Between Arms",
+      "content_text": "Why blood pressure often reads differently on your left and right arm, when a small gap is normal, and when a bigger one matters.",
+      "date_published": "2026-08-01",
       "tags": [
-        "Nutrition"
+        "Health"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-the-2026-world-cup-expanded-to-48-teams.html",
-      "url": "https://doyouknow.app/en/article/why-the-2026-world-cup-expanded-to-48-teams.html",
-      "title": "Why the 2026 World Cup Expanded to 48 Teams",
-      "content_text": "The 2026 World Cup is the first with 48 teams instead of 32. Here is why FIFA expanded it and what actually changes on the pitch.",
-      "date_published": "2026-07-31",
+      "id": "https://doyouknow.app/en/article/why-browser-extensions-can-be-riskier-than-apps.html",
+      "url": "https://doyouknow.app/en/article/why-browser-extensions-can-be-riskier-than-apps.html",
+      "title": "Why Browser Extensions Can Be Riskier Than Apps",
+      "content_text": "Browser extensions often get sweeping page access with far less vetting than app-store apps, and popular ones can be sold and turned malicious overnight.",
+      "date_published": "2026-08-01",
       "tags": [
-        "Dubai & UAE Places"
+        "Technology Explained"
       ]
     }
   ]
