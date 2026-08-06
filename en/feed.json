@@ -6,203 +6,203 @@
   "language": "en",
   "items": [
     {
-      "id": "https://doyouknow.app/en/article/how-ad-blockers-actually-detect-and-remove-ads.html",
-      "url": "https://doyouknow.app/en/article/how-ad-blockers-actually-detect-and-remove-ads.html",
-      "title": "How Ad Blockers Actually Detect and Remove Ads",
-      "content_text": "Ad blockers rely on crowdsourced filter lists, CSS hiding, and network request blocking, locked in a constant technical arms race with publishers.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-browser-autofill-actually-stores-and-protects-your-data.html",
-      "url": "https://doyouknow.app/en/article/how-browser-autofill-actually-stores-and-protects-your-data.html",
-      "title": "How Browser Autofill Actually Stores Your Data",
-      "content_text": "How browser autofill actually stores your name, address, and card details, how it's protected, and the real attack vectors worth knowing about.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-dubai-desalinates-water-for-a-desert-city.html",
-      "url": "https://doyouknow.app/en/article/how-dubai-desalinates-water-for-a-desert-city.html",
-      "title": "How Dubai Desalinates Water for a Desert City",
-      "content_text": "Dubai has almost no natural freshwater. Here's how desalination technology turns Gulf seawater into the city's entire water supply.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-buy-now-pay-later-actually-makes-money.html",
+      "url": "https://doyouknow.app/en/article/how-buy-now-pay-later-actually-makes-money.html",
+      "title": "How Buy Now, Pay Later Actually Makes Money",
+      "content_text": "The business model behind buy-now-pay-later apps, how they profit without charging interest, and the debt risks regulators are watching.",
+      "date_published": "2026-08-03",
       "tags": [
         "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-esports-tournament-prize-pools-get-so-large.html",
-      "url": "https://doyouknow.app/en/article/how-esports-tournament-prize-pools-get-so-large.html",
-      "title": "How Esports Tournament Prize Pools Get So Large",
-      "content_text": "Esports prize pools can dwarf traditional sports purses. Here's how crowdfunding, sponsorship, and streaming revenue actually build them.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-neom-airport-is-being-built-for-a-city-that-doesnt-fully-exist-yet.html",
-      "url": "https://doyouknow.app/en/article/how-neom-airport-is-being-built-for-a-city-that-doesnt-fully-exist-yet.html",
-      "title": "How NEOM Airport Is Built for a City That Isn't Finished",
-      "content_text": "NEOM Airport is being built ahead of the population it will serve. Here's the unusual planning logic behind building transport infrastructure first.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Saudi Vision 2030 & Megaprojects"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-quran-memorization-hifz-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-quran-memorization-hifz-actually-works.html",
-      "title": "How Quran Memorization (Hifz) Actually Works",
-      "content_text": "The traditional methods, cognitive science, and institutions behind hifz, the practice of memorizing the entire Quran, explained factually and neutrally.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Islamic Knowledge & Culture"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-saudi-arabia-recruits-international-talent-for-giga-projects.html",
-      "url": "https://doyouknow.app/en/article/how-saudi-arabia-recruits-international-talent-for-giga-projects.html",
-      "title": "How Saudi Arabia Recruits Talent for Giga-Projects",
-      "content_text": "How Saudi Arabia attracts international engineers, planners, and specialists for its giga-projects: visas, incentives, partnerships, and challenges.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Saudi Vision 2030 & Megaprojects"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-saudi-arabias-traffic-point-system-najm-works.html",
-      "url": "https://doyouknow.app/en/article/how-saudi-arabias-traffic-point-system-najm-works.html",
-      "title": "How Saudi Arabia's Traffic Violation Point System Works",
-      "content_text": "A general overview of how traffic violations accumulate against a Saudi driver's license, how Najm fits in, and the shift to automated enforcement.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-the-saudi-iqama-renewal-process-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-the-saudi-iqama-renewal-process-actually-works.html",
-      "title": "How the Saudi Iqama Renewal Process Actually Works",
-      "content_text": "How Saudi residency permit (Iqama) renewal actually works: the digital process via Absher, sponsor role, insurance requirements, and timing.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Saudi Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-to-apply-for-an-egyptian-marriage-certificate-as-a-foreigner.html",
-      "url": "https://doyouknow.app/en/article/how-to-apply-for-an-egyptian-marriage-certificate-as-a-foreigner.html",
-      "title": "How to Apply for an Egyptian Marriage Certificate as a Foreigner",
-      "content_text": "A general overview of how foreigners marry in Egypt: required documents, the notary's role, embassy paperwork, and what to verify before applying.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Egypt Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-to-get-a-business-license-in-egypt.html",
-      "url": "https://doyouknow.app/en/article/how-to-get-a-business-license-in-egypt.html",
-      "title": "How to Get a Business License in Egypt",
-      "content_text": "A practical overview of registering a business in Egypt: legal structures, commercial registry, tax registration, permits, and digitization efforts.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Egypt Practical Guides"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-travel-insurance-claims-actually-get-approved-or-denied.html",
-      "url": "https://doyouknow.app/en/article/how-travel-insurance-claims-actually-get-approved-or-denied.html",
-      "title": "How Travel Insurance Claims Actually Get Approved or Denied",
-      "content_text": "Why travel insurance claims get denied more often than travelers expect, what adjusters actually check, and how to protect a claim before you even travel.",
-      "date_published": "2026-08-01",
-      "tags": [
-        "Practical Guide"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-world-cup-broadcast-rights-are-sold-around-the-world.html",
-      "url": "https://doyouknow.app/en/article/how-world-cup-broadcast-rights-are-sold-around-the-world.html",
-      "title": "How World Cup Broadcast Rights Are Sold Around the World",
-      "content_text": "FIFA sells World Cup broadcast rights territory by territory rather than as one global deal. Here's how that market actually works.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-dubais-metro-was-built-so-fast.html",
+      "url": "https://doyouknow.app/en/article/how-dubais-metro-was-built-so-fast.html",
+      "title": "How Dubai's Metro Was Built So Fast",
+      "content_text": "The engineering and planning decisions that let Dubai build one of the world's longest driverless metro networks in under five years.",
+      "date_published": "2026-08-03",
       "tags": [
         "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-world-cup-host-cities-were-actually-selected.html",
-      "url": "https://doyouknow.app/en/article/how-world-cup-host-cities-were-actually-selected.html",
-      "title": "How World Cup Host Cities Were Actually Selected",
-      "content_text": "How FIFA actually selects World Cup host cities: bid evaluation criteria, stadium and infrastructure scoring, and why some large cities were passed over.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-egypts-vat-registration-process-works.html",
+      "url": "https://doyouknow.app/en/article/how-egypts-vat-registration-process-works.html",
+      "title": "How Egypt's VAT Registration Process Works",
+      "content_text": "A practical walkthrough of who needs to register for VAT in Egypt, the documents required, and common filing mistakes.",
+      "date_published": "2026-08-03",
       "tags": [
         "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/the-engineering-story-behind-the-suez-canal-expansion.html",
-      "url": "https://doyouknow.app/en/article/the-engineering-story-behind-the-suez-canal-expansion.html",
-      "title": "The Engineering Story Behind the Suez Canal Expansion",
-      "content_text": "Egypt dug a parallel channel to let ships pass in both directions at once — here's how the Suez Canal expansion was engineered and why it mattered.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-facial-recognition-unlock-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-facial-recognition-unlock-actually-works.html",
+      "title": "How Facial Recognition Unlock Actually Works",
+      "content_text": "The sensors and math behind phone face unlock, why it can be fooled in some conditions, and how it compares to fingerprint security.",
+      "date_published": "2026-08-03",
       "tags": [
-        "Stories"
+        "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/the-real-history-behind-the-golden-ratio-in-design.html",
-      "url": "https://doyouknow.app/en/article/the-real-history-behind-the-golden-ratio-in-design.html",
-      "title": "The Real History Behind the Golden Ratio in Design",
-      "content_text": "What the golden ratio actually is mathematically, why claims it shaped the Parthenon and pyramids are mostly myth, and where it's genuinely used today.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-honorifics-differ-across-cultures.html",
+      "url": "https://doyouknow.app/en/article/how-honorifics-differ-across-cultures.html",
+      "title": "How Honorifics Differ Across Cultures",
+      "content_text": "How titles and honorifics encode social relationships differently across languages and cultures, and why getting them wrong causes offense.",
+      "date_published": "2026-08-03",
       "tags": [
-        "Stories"
+        "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-art-forgeries-are-so-hard-to-catch.html",
-      "url": "https://doyouknow.app/en/article/why-art-forgeries-are-so-hard-to-catch.html",
-      "title": "Why Art Forgeries Are So Hard to Catch",
-      "content_text": "How art forgers fool experts for decades, the science used to catch them, and why the art market's own structure makes forgery so hard to detect.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-lightning-actually-forms.html",
+      "url": "https://doyouknow.app/en/article/how-lightning-actually-forms.html",
+      "title": "How Lightning Actually Forms",
+      "content_text": "The atmospheric physics behind how storm clouds build up electrical charge and release it as lightning, and why some storms produce more than others.",
+      "date_published": "2026-08-03",
       "tags": [
-        "Art"
+        "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-auroras-appear-in-different-colors.html",
-      "url": "https://doyouknow.app/en/article/why-auroras-appear-in-different-colors.html",
-      "title": "Why the Northern and Southern Lights Appear in Different Colors",
-      "content_text": "Aurora colors depend on which atmospheric gas gets struck by solar particles and at what altitude, which is why green dominates but red and purple also appear.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-spaced-repetition-improves-memory.html",
+      "url": "https://doyouknow.app/en/article/how-spaced-repetition-improves-memory.html",
+      "title": "How Spaced Repetition Improves Memory",
+      "content_text": "The cognitive science behind spaced repetition, why it outperforms cramming, and how popular study apps put it into practice.",
+      "date_published": "2026-08-03",
       "tags": [
-        "Science"
+        "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-blood-pressure-readings-differ-between-arms.html",
-      "url": "https://doyouknow.app/en/article/why-blood-pressure-readings-differ-between-arms.html",
-      "title": "Why Blood Pressure Readings Differ Between Arms",
-      "content_text": "Why blood pressure often reads differently on your left and right arm, when a small gap is normal, and when a bigger one matters.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-vaccines-train-the-immune-system.html",
+      "url": "https://doyouknow.app/en/article/how-vaccines-train-the-immune-system.html",
+      "title": "How Vaccines Train the Immune System",
+      "content_text": "The immune science behind how vaccines create lasting protection, and why some require boosters while others don't.",
+      "date_published": "2026-08-03",
       "tags": [
-        "Health"
+        "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-browser-extensions-can-be-riskier-than-apps.html",
-      "url": "https://doyouknow.app/en/article/why-browser-extensions-can-be-riskier-than-apps.html",
-      "title": "Why Browser Extensions Can Be Riskier Than Apps",
-      "content_text": "Browser extensions often get sweeping page access with far less vetting than app-store apps, and popular ones can be sold and turned malicious overnight.",
-      "date_published": "2026-08-01",
+      "id": "https://doyouknow.app/en/article/how-video-game-difficulty-curves-are-designed.html",
+      "url": "https://doyouknow.app/en/article/how-video-game-difficulty-curves-are-designed.html",
+      "title": "How Video Game Difficulty Curves Are Designed",
+      "content_text": "The design principles behind pacing a game's difficulty, and how developers balance challenge against player frustration.",
+      "date_published": "2026-08-03",
       "tags": [
-        "Technology Explained"
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-vpns-actually-protect-your-privacy.html",
+      "url": "https://doyouknow.app/en/article/how-vpns-actually-protect-your-privacy.html",
+      "title": "How VPNs Actually Protect Your Privacy",
+      "content_text": "What a VPN actually encrypts and hides, what it doesn't protect against, and how to tell a genuinely useful VPN from marketing hype.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-zakat-calculation-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-zakat-calculation-actually-works.html",
+      "title": "How Zakat Calculation Actually Works",
+      "content_text": "A practical explanation of how zakat is calculated on savings, gold, and assets, and the nisab threshold that determines who owes it.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-deja-vu-happens.html",
+      "url": "https://doyouknow.app/en/article/why-deja-vu-happens.html",
+      "title": "Why Deja Vu Happens",
+      "content_text": "The leading neuroscience theories for why deja vu occurs, how common it is, and what it might reveal about how memory actually works.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-digital-detoxes-rarely-stick.html",
+      "url": "https://doyouknow.app/en/article/why-digital-detoxes-rarely-stick.html",
+      "title": "Why Digital Detoxes Rarely Stick",
+      "content_text": "Why most digital detoxes fail within days, what habit-change research says actually works, and where the popular 'dopamine addiction' framing oversimplifies the science.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-doctors-recommend-different-cholesterol-targets.html",
+      "url": "https://doyouknow.app/en/article/why-doctors-recommend-different-cholesterol-targets.html",
+      "title": "Why Doctors Recommend Different Cholesterol Targets",
+      "content_text": "Why cholesterol guidelines vary by age, risk profile, and country, and what the numbers on a lipid panel actually mean for heart health.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-dubai-became-a-global-aviation-hub.html",
+      "url": "https://doyouknow.app/en/article/why-dubai-became-a-global-aviation-hub.html",
+      "title": "Why Dubai Became a Global Aviation Hub",
+      "content_text": "The geography, policy, and infrastructure bets that turned Dubai into one of the world's busiest international aviation hubs.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-dynamic-pricing-frustrates-consumers.html",
+      "url": "https://doyouknow.app/en/article/why-dynamic-pricing-frustrates-consumers.html",
+      "title": "Why Dynamic Pricing Frustrates Consumers",
+      "content_text": "How dynamic and surge pricing algorithms actually set prices in real time, and why they trigger such strong consumer backlash.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-egypts-currency-fluctuations-affect-daily-life.html",
+      "url": "https://doyouknow.app/en/article/why-egypts-currency-fluctuations-affect-daily-life.html",
+      "title": "Why Egypt's Currency Fluctuations Affect Daily Life",
+      "content_text": "How changes in the Egyptian pound's value ripple into everyday prices, savings, and imports, explained in plain terms.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-fingerprints-never-change-throughout-life.html",
+      "url": "https://doyouknow.app/en/article/why-fingerprints-never-change-throughout-life.html",
+      "title": "Why Fingerprints Never Change Throughout Life",
+      "content_text": "How fingerprint ridges form before birth, why they stay the same for life even as skin ages, and what can actually alter or erase them.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-forest-bathing-became-a-wellness-trend.html",
+      "url": "https://doyouknow.app/en/article/why-forest-bathing-became-a-wellness-trend.html",
+      "title": "Why Forest Bathing Became a Wellness Trend",
+      "content_text": "The Japanese practice of shinrin-yoku, what the research actually shows about time in nature and stress, and where the evidence gets overstated.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-ramadan-fasting-hours-differ-by-country.html",
+      "url": "https://doyouknow.app/en/article/why-ramadan-fasting-hours-differ-by-country.html",
+      "title": "Why Ramadan Fasting Hours Differ by Country",
+      "content_text": "How Ramadan fasting hours are calculated based on sunrise and sunset, and why they vary so widely by latitude and season.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Dubai & UAE Places"
       ]
     }
   ]
