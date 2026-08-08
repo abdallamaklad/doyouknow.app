@@ -16,16 +16,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-dubais-metro-was-built-so-fast.html",
-      "url": "https://doyouknow.app/en/article/how-dubais-metro-was-built-so-fast.html",
-      "title": "How Dubai's Metro Was Built So Fast",
-      "content_text": "The engineering and planning decisions that let Dubai build one of the world's longest driverless metro networks in under five years.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "Dubai & UAE Places"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/en/article/how-egypts-vat-registration-process-works.html",
       "url": "https://doyouknow.app/en/article/how-egypts-vat-registration-process-works.html",
       "title": "How Egypt's VAT Registration Process Works",
@@ -146,16 +136,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-dubai-became-a-global-aviation-hub.html",
-      "url": "https://doyouknow.app/en/article/why-dubai-became-a-global-aviation-hub.html",
-      "title": "Why Dubai Became a Global Aviation Hub",
-      "content_text": "The geography, policy, and infrastructure bets that turned Dubai into one of the world's busiest international aviation hubs.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "Dubai & UAE Places"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/en/article/why-dynamic-pricing-frustrates-consumers.html",
       "url": "https://doyouknow.app/en/article/why-dynamic-pricing-frustrates-consumers.html",
       "title": "Why Dynamic Pricing Frustrates Consumers",
@@ -203,6 +183,26 @@
       "date_published": "2026-08-03",
       "tags": [
         "Islamic Knowledge & Culture"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-remakes-and-reboots-dominate-hollywood.html",
+      "url": "https://doyouknow.app/en/article/why-remakes-and-reboots-dominate-hollywood.html",
+      "title": "Why Remakes and Reboots Dominate Hollywood",
+      "content_text": "The financial logic studios use to greenlight remakes over original films, and why audiences keep showing up anyway.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-some-metals-are-magnetic-and-others-arent.html",
+      "url": "https://doyouknow.app/en/article/why-some-metals-are-magnetic-and-others-arent.html",
+      "title": "Why Some Metals Are Magnetic and Others Aren't",
+      "content_text": "The atomic structure that determines whether a metal responds to magnets, and why common metals like aluminum and copper don't.",
+      "date_published": "2026-08-03",
+      "tags": [
+        "Science"
       ]
     }
   ]
