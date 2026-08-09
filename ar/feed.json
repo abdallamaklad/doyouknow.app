@@ -6,13 +6,143 @@
   "language": "ar",
   "items": [
     {
-      "id": "https://doyouknow.app/ar/article/how-buy-now-pay-later-actually-makes-money.html",
-      "url": "https://doyouknow.app/ar/article/how-buy-now-pay-later-actually-makes-money.html",
-      "title": "كيف تُحقق خدمات الشراء الآن والدفع لاحقاً أرباحها فعلياً؟",
-      "content_text": "نموذج العمل وراء تطبيقات الشراء الآن والدفع لاحقاً، وكيف تُحقق أرباحاً دون فرض فوائد، ومخاطر الديون التي تراقبها الجهات التنظيمية.",
-      "date_published": "2026-08-03",
+      "id": "https://doyouknow.app/ar/article/how-cultural-gift-giving-etiquette-differs-worldwide.html",
+      "url": "https://doyouknow.app/ar/article/how-cultural-gift-giving-etiquette-differs-worldwide.html",
+      "title": "كيف تختلف آداب تقديم الهدايا بين الثقافات حول العالم؟",
+      "content_text": "من المظاريف الحمراء في الصين إلى طقوس التغليف في اليابان، جولة في العادات والمحظورات التي تحكم كيفية تقديم الهدايا واستقبالها حول العالم.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "الناس والمجتمع"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-dubais-desalination-plants-actually-work.html",
+      "url": "https://doyouknow.app/ar/article/how-dubais-desalination-plants-actually-work.html",
+      "title": "كيف تعمل محطات تحلية المياه في دبي فعلياً؟",
+      "content_text": "يأتي معظم مياه الشرب في دبي من البحر. إليك كيف تعمل فعلياً تقنيات التحلية والمقايضات الطاقية وأنظمة التخزين وراء ذلك.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "دبي والإمارات"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-facial-recognition-bias-happens.html",
+      "url": "https://doyouknow.app/ar/article/how-facial-recognition-bias-happens.html",
+      "title": "كيف يحدث التحيز في التعرف على الوجه",
+      "content_text": "كيف تنتهي أنظمة التعرف على الوجه بأداء متفاوت حسب لون البشرة والجنس والعمر، وما الذي وجدته اختبارات NIST والباحثون حول أسباب ذلك.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-flash-sales-manipulate-buying-decisions.html",
+      "url": "https://doyouknow.app/ar/article/how-flash-sales-manipulate-buying-decisions.html",
+      "title": "كيف تتلاعب عروض الفلاش سيل بقرارات الشراء؟",
+      "content_text": "لماذا تدفعنا عروض الفلاش سيل المحدودة زمنياً إلى الشراء الاندفاعي، وماذا يقول علم النفس وأبحاث التجزئة عن الحيل الكامنة خلف عداد العد التنازلي.",
+      "date_published": "2026-08-08",
       "tags": [
         "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-noise-cancelling-headphones-actually-work.html",
+      "url": "https://doyouknow.app/ar/article/how-noise-cancelling-headphones-actually-work.html",
+      "title": "كيف تعمل سماعات إلغاء الضوضاء فعلياً",
+      "content_text": "كيف تستخدم سماعات إلغاء الضوضاء الميكروفونات وموجات صوتية معكوسة لإلغاء الضجيج، ولماذا تنجح مع أزيز المحركات أكثر من الأصوات البشرية، وما حدودها الفعلية.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-the-forgetting-curve-shapes-study-habits.html",
+      "url": "https://doyouknow.app/ar/article/how-the-forgetting-curve-shapes-study-habits.html",
+      "title": "كيف يشكّل منحنى النسيان عادات المذاكرة؟",
+      "content_text": "رسم هيرمان إيبنغهاوس منحنى تلاشي الذاكرة قبل أكثر من قرن، وما زال هذا المنحنى يوجّه كيفية بناء الباحثين لعادات مذاكرة فعالة اليوم.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "التعليم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-the-placebo-effect-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-the-placebo-effect-actually-works.html",
+      "title": "كيف يعمل تأثير الدواء الوهمي فعلياً؟",
+      "content_text": "العلم العصبي الحقيقي وراء الدواء الوهمي: كيمياء الدماغ، الاشتراط، لون الحبوب، الجراحة الوهمية، وكيف يُغيِّر الاعتقاد الجسد فعلياً.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-vaccination-herd-immunity-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-vaccination-herd-immunity-actually-works.html",
+      "title": "كيف تعمل مناعة القطيع عبر التطعيم فعلياً؟",
+      "content_text": "الرياضيات الحقيقية وراء مناعة القطيع: أرقام التكاثر، عتبات التطعيم، تراجع المناعة، ولماذا المفهوم أهش مما يبدو.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/why-ai-chatbots-sometimes-hallucinate-facts.html",
+      "url": "https://doyouknow.app/ar/article/why-ai-chatbots-sometimes-hallucinate-facts.html",
+      "title": "لماذا تهلوس روبوتات الدردشة الذكية بالحقائق أحياناً",
+      "content_text": "لماذا تُولّد نماذج اللغة الكبيرة معلومات خاطئة بثقة، وكيف يجعل التنبؤ بالكلمة التالية هذا أمراً حتمياً، وماذا يفعل الباحثون لتقليله.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/why-handwriting-practice-still-matters-in-a-digital-age.html",
+      "url": "https://doyouknow.app/ar/article/why-handwriting-practice-still-matters-in-a-digital-age.html",
+      "title": "لماذا لا تزال ممارسة الكتابة اليدوية مهمة في العصر الرقمي؟",
+      "content_text": "لماذا يستمر الباحثون في إيجاد فوائد تعليمية حقيقية للكتابة اليدوية حتى مع سيطرة لوحات المفاتيح وأدوات الذكاء الاصطناعي على معظم الكتابة اليومية.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "التعليم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/why-multigenerational-households-are-rising-again.html",
+      "url": "https://doyouknow.app/ar/article/why-multigenerational-households-are-rising-again.html",
+      "title": "لماذا تعود الأسر متعددة الأجيال للانتشار من جديد؟",
+      "content_text": "ارتفاع تكاليف السكن، وتقدم عمر الآباء، وتغير العادات الثقافية تدفع عدداً متزايداً من الأسر الأمريكية للعيش مجدداً مع ثلاثة أجيال أو أكثر تحت سقف واحد.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "الأسرة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/why-some-people-never-get-hangovers.html",
+      "url": "https://doyouknow.app/ar/article/why-some-people-never-get-hangovers.html",
+      "title": "لماذا لا يُصاب بعض الناس بالمخمار أبداً؟",
+      "content_text": "العلم الحقيقي وراء آثار الكحول: الأسيتالديهيد، الجينات، مركبات الكونجينر، والجفاف، ولماذا يبدو أن قلة محظوظة تفلت من متاعب صباح اليوم التالي.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/why-we-forget-dreams-so-quickly.html",
+      "url": "https://doyouknow.app/ar/article/why-we-forget-dreams-so-quickly.html",
+      "title": "لماذا ننسى أحلامنا بهذه السرعة؟",
+      "content_text": "علم الأعصاب وراء تلاشي الأحلام الحية خلال دقائق من الاستيقاظ، من كيمياء الدماغ أثناء نوم الريم إلى تفاوت الناس في تذكُّر أحلامهم.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "الصحة"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/why-your-phone-battery-degrades-over-time.html",
+      "url": "https://doyouknow.app/ar/article/why-your-phone-battery-degrades-over-time.html",
+      "title": "لماذا تتدهور بطارية هاتفك مع مرور الوقت",
+      "content_text": "لماذا تفقد بطاريات الهاتف بالليثيوم أيون سعتها مع التقدم في العمر، وما الذي يحدث فعلياً داخل الخلية أثناء دورات الشحن، وأي العادات تُبطئ التدهور فعلياً.",
+      "date_published": "2026-08-08",
+      "tags": [
+        "التقنية"
       ]
     },
     {
@@ -36,26 +166,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-facial-recognition-unlock-actually-works.html",
-      "url": "https://doyouknow.app/ar/article/how-facial-recognition-unlock-actually-works.html",
-      "title": "كيف يعمل فتح الجوال بالتعرف على الوجه فعلياً؟",
-      "content_text": "كيف يعمل فتح الجوال بالتعرف على الوجه فعلياً، وأين يمكن خداعه، وكيف تُقارن بصمة الوجه ببصمة الإصبع من ناحية الأمان الحقيقي.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-honorifics-differ-across-cultures.html",
-      "url": "https://doyouknow.app/ar/article/how-honorifics-differ-across-cultures.html",
-      "title": "كيف تختلف صيغ التبجيل والألقاب عبر الثقافات؟",
-      "content_text": "كيف تُشفّر الألقاب وصيغ التبجيل العلاقات الاجتماعية بشكل مختلف عبر اللغات والثقافات، ولماذا يُسبب إخطاؤها إساءة حقيقية.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "الناس والمجتمع"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/ar/article/how-lightning-actually-forms.html",
       "url": "https://doyouknow.app/ar/article/how-lightning-actually-forms.html",
       "title": "كيف يتشكّل البرق فعلياً؟",
@@ -63,16 +173,6 @@
       "date_published": "2026-08-03",
       "tags": [
         "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-spaced-repetition-improves-memory.html",
-      "url": "https://doyouknow.app/ar/article/how-spaced-repetition-improves-memory.html",
-      "title": "كيف يحسّن التكرار المتباعد الذاكرة؟",
-      "content_text": "العلم المعرفي وراء التكرار المتباعد، ولماذا يتفوق على الحشو الدراسي، وكيف تطبقه تطبيقات المذاكرة الشهيرة عملياً.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "التعليم"
       ]
     },
     {
@@ -86,16 +186,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-vaccines-train-the-immune-system.html",
-      "url": "https://doyouknow.app/ar/article/how-vaccines-train-the-immune-system.html",
-      "title": "كيف تُدرّب اللقاحات جهاز المناعة؟",
-      "content_text": "علم المناعة وراء قدرة اللقاحات على بناء حماية دائمة، ولماذا تحتاج بعض اللقاحات لجرعات معززة بينما لا تحتاجها أخرى.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "الصحة"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/ar/article/how-video-game-difficulty-curves-are-designed.html",
       "url": "https://doyouknow.app/ar/article/how-video-game-difficulty-curves-are-designed.html",
       "title": "كيف تُصمَّم منحنيات صعوبة ألعاب الفيديو؟",
@@ -106,100 +196,10 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-vpns-actually-protect-your-privacy.html",
-      "url": "https://doyouknow.app/ar/article/how-vpns-actually-protect-your-privacy.html",
-      "title": "كيف تحمي الشبكة الافتراضية الخاصة (VPN) خصوصيتك فعلياً؟",
-      "content_text": "ماذا تُشفّر الشبكة الافتراضية الخاصة فعلياً وماذا تُخفي، وأين تتوقف حمايتها، وكيف تُميّز مزود VPN جاداً عن ضجيج تسويقي.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/ar/article/how-zakat-calculation-actually-works.html",
       "url": "https://doyouknow.app/ar/article/how-zakat-calculation-actually-works.html",
       "title": "كيف يُحسب مقدار الزكاة فعلياً؟",
       "content_text": "شرح عملي لكيفية حساب الزكاة على المدخرات والذهب والأصول، ونصاب الزكاة الذي يحدد من تجب عليه.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "الثقافة والمعرفة الإسلامية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-art-restoration-controversies-divide-historians.html",
-      "url": "https://doyouknow.app/ar/article/why-art-restoration-controversies-divide-historians.html",
-      "title": "لماذا تثير خلافات ترميم الأعمال الفنية جدلاً بين المؤرخين؟",
-      "content_text": "لماذا يثير تنظيف وترميم الروائع الفنية القديمة جدلاً حاداً بين مؤرخي الفن، وما الذي يتعرض فعلاً للخطر في هذه العملية.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "الفن"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-deja-vu-happens.html",
-      "url": "https://doyouknow.app/ar/article/why-deja-vu-happens.html",
-      "title": "لماذا تحدث ظاهرة الديجا فو؟",
-      "content_text": "أبرز نظريات علم الأعصاب لتفسير سبب حدوث الديجا فو، ومدى شيوعها، وما تكشفه عن آلية عمل الذاكرة فعلياً.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-doctors-recommend-different-cholesterol-targets.html",
-      "url": "https://doyouknow.app/ar/article/why-doctors-recommend-different-cholesterol-targets.html",
-      "title": "لماذا يوصي الأطباء بأهداف كوليسترول مختلفة لكل شخص؟",
-      "content_text": "لماذا لا يوجد رقم كوليسترول طبيعي واحد يناسب الجميع، وكيف يُحدِّد العمر والسكري والتاريخ العائلي هدفك الفعلي.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "الصحة"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-dubai-became-a-global-aviation-hub.html",
-      "url": "https://doyouknow.app/ar/article/why-dubai-became-a-global-aviation-hub.html",
-      "title": "لماذا أصبحت دبي مركزاً عالمياً للطيران؟",
-      "content_text": "الجغرافيا والسياسات والرهانات على البنية التحتية التي حوّلت دبي إلى واحدة من أكثر مراكز الطيران الدولية ازدحاماً في العالم.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "دبي والإمارات"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-dynamic-pricing-frustrates-consumers.html",
-      "url": "https://doyouknow.app/ar/article/why-dynamic-pricing-frustrates-consumers.html",
-      "title": "لماذا يثير التسعير الديناميكي غضب المستهلكين؟",
-      "content_text": "كيف تحدد خوارزميات التسعير الديناميكي والتسعير المتصاعد الأسعار لحظياً، ولماذا تثير كل هذا الغضب لدى المستهلكين.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-egypts-currency-fluctuations-affect-daily-life.html",
-      "url": "https://doyouknow.app/ar/article/why-egypts-currency-fluctuations-affect-daily-life.html",
-      "title": "لماذا تؤثر تقلبات الجنيه المصري على الحياة اليومية؟",
-      "content_text": "كيف تنتقل التغيرات في قيمة الجنيه المصري إلى أسعار السلع اليومية والمدخرات والواردات، بأسلوب مبسّط.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "أدلة عملية في مصر"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-fingerprints-never-change-throughout-life.html",
-      "url": "https://doyouknow.app/ar/article/why-fingerprints-never-change-throughout-life.html",
-      "title": "لماذا لا تتغير البصمات مدى الحياة؟",
-      "content_text": "كيف تتشكل خطوط البصمة قبل الولادة، ولماذا تبقى كما هي مدى الحياة رغم تجدد الجلد، وما الذي يمكن أن يغيّرها أو يمحوها فعلياً.",
-      "date_published": "2026-08-03",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-ramadan-fasting-hours-differ-by-country.html",
-      "url": "https://doyouknow.app/ar/article/why-ramadan-fasting-hours-differ-by-country.html",
-      "title": "لماذا تختلف ساعات صيام رمضان من بلد إلى آخر؟",
-      "content_text": "كيف تُحسب ساعات صيام رمضان بناءً على الفجر والغروب، ولماذا تتفاوت بشكل كبير جداً بحسب خط العرض والفصل.",
       "date_published": "2026-08-03",
       "tags": [
         "الثقافة والمعرفة الإسلامية"
