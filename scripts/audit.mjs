@@ -93,7 +93,10 @@ function extractConstArray(source, name) {
 
 function extractCategoryGroups(prepareSource) {
   const worldCupArticleSlugs = Function(`return ${extractConstArray(prepareSource, 'worldCupArticleSlugs')}`)();
-  const worldCupCategorySlugs = [...worldCupArticleSlugs, 'arab-teams-world-cup-2026-pillar'];
+  const worldCupCategorySlugs = Function(
+    'worldCupArticleSlugs',
+    `return ${extractConstArray(prepareSource, 'worldCupCategorySlugs')}`
+  )(worldCupArticleSlugs);
   return Function(
     'worldCupArticleSlugs',
     'worldCupCategorySlugs',
