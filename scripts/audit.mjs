@@ -93,7 +93,10 @@ function extractConstArray(source, name) {
 
 function extractCategoryGroups(prepareSource) {
   const worldCupArticleSlugs = Function(`return ${extractConstArray(prepareSource, 'worldCupArticleSlugs')}`)();
-  const worldCupCategorySlugs = [...worldCupArticleSlugs, 'arab-teams-world-cup-2026-pillar'];
+  const worldCupCategorySlugs = Function(
+    'worldCupArticleSlugs',
+    `return ${extractConstArray(prepareSource, 'worldCupCategorySlugs')}`
+  )(worldCupArticleSlugs);
   return Function(
     'worldCupArticleSlugs',
     'worldCupCategorySlugs',
@@ -136,7 +139,7 @@ function outboundCitationHosts(html) {
 async function walk(dir) {
   const out = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
-    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'scripts' || entry.name === '.claude' || entry.name === '.worktrees') continue;
+    if (entry.name === '.git' || entry.name === 'node_modules' || entry.name === 'scripts' || entry.name === '.claude' || entry.name === '.worktrees' || entry.name === 'design') continue;
     const path = join(dir, entry.name);
     entry.isDirectory() ? out.push(...await walk(path)) : out.push(path);
   }
@@ -265,7 +268,10 @@ for (const file of htmlFiles) {
   for (const img of html.matchAll(/<img\b[^>]*>/g)) {
     const tag = img[0];
     const alt = tag.match(/\balt="([^"]*)"/);
-    const isDecorativeCardImage = /\bclass="[^"]*\bcard-image\b/.test(tag) && alt && alt[1] === '';
+    // Listing thumbnails sit inside a link whose text already names the
+    // article. An empty alt is correct here; a descriptive one would make
+    // screen readers announce the same title twice.
+    const isDecorativeCardImage = /\bclass="[^"]*\b(card-image|index-thumb)\b/.test(tag) && alt && alt[1] === '';
     if ((!alt || !alt[1].trim()) && !isDecorativeCardImage) {
       errors.push(`${rel}: image missing non-empty alt text ${tag.slice(0, 120)}`);
     }

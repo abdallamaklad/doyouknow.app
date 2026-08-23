@@ -2,3 +2,9 @@
 assets/images/og-source.png
 node_modules/
 scripts/fonts/
+
+# Agent working directories. These hold full repo copies (2.3 GB combined at
+# the time of writing), so an unscoped `git add -A` would otherwise stage all
+# of it.
+.claude/
+.worktrees/

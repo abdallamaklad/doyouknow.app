@@ -3,7 +3,7 @@
   <desc id="desc">Original doyouknow.app editorial artwork for Umrah: A Step-by-Step Guide — Everything You Need to Know Before You Travel.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="0%" stop-color="#064E3B"/>
       <stop offset="58%" stop-color="#14B8A6"/>
       <stop offset="100%" stop-color="#FDE68A"/>
     </linearGradient>
@@ -23,17 +23,16 @@
   <circle cx="884" cy="170" r="360" fill="url(#glow)"/>
   <path d="M0 520 C160 438 302 560 460 478 C632 388 772 496 936 414 C1049 357 1136 372 1200 338 L1200 675 L0 675Z" fill="#fff" opacity=".13"/>
   <g filter="url(#shadow)" transform="translate(0 0)">
-    <path d="M600 170c-90 0-160 70-160 160 0 70 45 130 110 155" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".55"/><path d="M780 200c40 30 65 75 65 125 0 35-10 65-30 90" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".45"/><circle cx="780" cy="210" r="50" fill="#fff" opacity=".2"/><path d="M330 520h520" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".55"/>
+    <path d="M590 150c-92 12-163 91-163 186 0 104 84 188 188 188 77 0 143-46 172-112-31 19-68 30-107 30-113 0-205-92-205-205 0-31 7-60 19-87Z" fill="#fff" opacity=".24"/><path d="M790 190 815 250l65 5-50 42 16 64-56-34-56 34 16-64-50-42 65-5Z" fill="#fff" opacity=".7"/><path d="M330 520h520" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".55"/>
   </g>
   <g transform="translate(0 0)" direction="ltr">
     <text x="120" y="122" text-anchor="start" fill="#fff" opacity=".82" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
-    <text x="120" y="202" text-anchor="start" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">Umrah: A Step-by-Step</text>
-    <text x="120" y="262" text-anchor="start" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">Guide</text>
-    <text x="120" y="322" text-anchor="start" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">Islamic Knowledge &amp; Culture</text>
-    <rect x="120" y="360" width="320" height="8" rx="4" fill="#FDE68A"/>
+    <text x="120" y="202" text-anchor="start" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">Umrah: A Step-by-Step Guide — Everything You Need to…</text>
+    <text x="120" y="262" text-anchor="start" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">معرفة إسلامية</text>
+    <rect x="120" y="300" width="320" height="8" rx="4" fill="#FDE68A"/>
   </g>
   <g transform="translate(120 542)">
-    <rect width="280" height="58" rx="29" fill="#fff" opacity=".14"/>
-    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">Islamic Knowledge</text>
+    <rect width="386" height="58" rx="29" fill="#fff" opacity=".14"/>
+    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">معرفة إسلامية</text>
   </g>
 </svg>

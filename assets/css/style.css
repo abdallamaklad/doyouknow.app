@@ -13,7 +13,10 @@
   --color-surface-light: #FFFFFF;
   --color-text-primary: #1E293B;
   --color-text-secondary: #64748B;
-  --color-text-muted: #94A3B8;
+  /* Was #94A3B8 — 2.56:1 on white, failing AA for card dates and read time.
+     No grey lighter than this clears 4.5:1 on white, so the muted tier now
+     separates from secondary by size and weight rather than by colour. */
+  --color-text-muted: #64748B;
   --color-border-light: #E2E8F0;
   --color-error: #EF4444;
   --color-info: #3B82F6;
@@ -33,6 +36,23 @@
   --color-accent-orange: #F97316;
   --color-accent-rose: #F43F5E;
   
+  /* Type scale — see design/design-system.md §Type Scale.
+     Use these; do not add raw font-size values. */
+  --t-display: clamp(28px, 4.2vw, 48px);
+  --t-h1: clamp(24px, 3.4vw, 42px);
+  --t-h2: clamp(20px, 2.6vw, 32px);
+  --t-h3: clamp(18px, 1.9vw, 24px);
+  --t-lead: clamp(18px, 1.4vw, 20px);
+  --t-body: 16px;
+  --t-small: 14px;
+  --t-caption: 12px;
+  --t-label: 11px;
+
+  /* Reading measure. 800px at 1.05rem ran to ~95 characters per line. */
+  --measure: 68ch;
+  /* Minimum interactive target. */
+  --tap: 44px;
+
   --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-ar: 'Cairo', 'Tajawal', 'Noto Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -80,7 +100,8 @@
   --color-surface-elevated: #334155;
   --color-text-primary: #E2E8F0;
   --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
+  /* Was #64748B — 3.07:1 on the dark card surface, failing AA. */
+  --color-text-muted: #94A3B8;
   --color-border-light: #334155;
   --color-border-hover: #475569;
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
@@ -306,10 +327,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #F8FAFC;
 }
 
-h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 700; line-height: 1.1; }
-h2 { font-size: clamp(24px, 4vw, 36px); font-weight: 600; line-height: 1.2; }
-h3 { font-size: clamp(20px, 3vw, 28px); font-weight: 600; line-height: 1.25; }
-h4 { font-size: clamp(18px, 2.5vw, 22px); font-weight: 600; line-height: 1.3; }
+h1 { font-size: var(--t-h1); font-weight: 700; line-height: 1.2; }
+h2 { font-size: var(--t-h2); font-weight: 600; line-height: 1.25; }
+h3 { font-size: var(--t-h3); font-weight: 600; line-height: 1.3; }
+h4 { font-size: var(--t-lead); font-weight: 600; line-height: 1.35; }
 
 p { margin-bottom: var(--space-4); font-size: 1.05rem; line-height: 1.65; }
 
@@ -453,8 +474,11 @@ blockquote {
 .nav-links a {
   color: var(--color-text-primary);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: var(--t-small);
   padding: var(--space-2) 0;
+  min-height: var(--tap);
+  display: inline-flex;
+  align-items: center;
   position: relative;
   transition: color var(--transition-fast);
 }
@@ -478,20 +502,44 @@ blockquote {
 
 /* Countries / Categories dropdown nav */
 .nav-item-countries, .nav-item-categories { position: relative; }
-.nav-dropdown-toggle { background: none; border: none; font: inherit; color: inherit; font-weight: 500; cursor: pointer; padding: var(--space-2) 0; display: flex; align-items: center; gap: 4px; }
-.nav-dropdown-toggle::after { content: '▾'; font-size: 0.7em; }
-.nav-dropdown { display: none; position: absolute; top: 100%; left: 0; background: var(--color-surface-light); border: 1px solid var(--color-border-light); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); list-style: none; padding: var(--space-3); margin-top: var(--space-2); z-index: 1001; }
-.nav-dropdown.active { display: block; }
-.nav-dropdown li a { display: block; padding: var(--space-2) var(--space-3); white-space: nowrap; border-radius: var(--radius-md); }
-.nav-dropdown li a:hover { background: var(--color-bg-light); text-decoration: none; }
-.nav-dropdown-mega { grid-template-columns: repeat(2, minmax(180px, 1fr)); gap: var(--space-1) var(--space-5); width: 420px; }
-.nav-dropdown-mega.active { display: grid; }
+.nav-dropdown-toggle { background: none; border: none; font: inherit; color: inherit; font-weight: 500; cursor: pointer; padding: var(--space-2) 0; display: flex; align-items: center; gap: 6px; border-radius: var(--radius-sm); transition: color var(--transition-fast); }
+/* chevron drawn from borders so it can rotate smoothly when the menu opens */
+.nav-dropdown-toggle::after { content: ''; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform var(--transition-fast); }
+.nav-dropdown-toggle:hover { color: var(--color-primary-accent); }
+.nav-dropdown-toggle[aria-expanded="true"] { color: var(--color-primary-accent); }
+.nav-dropdown-toggle[aria-expanded="true"]::after { transform: translateY(1px) rotate(-135deg); }
+.nav-dropdown-toggle:focus-visible { outline: 2px solid var(--color-primary-accent); outline-offset: 3px; }
+.nav-dropdown { display: none; position: absolute; top: calc(100% + 10px); left: 0; background: var(--color-surface-light); border: 1px solid var(--color-border-light); border-radius: var(--radius-xl); box-shadow: 0 12px 32px rgba(15, 23, 42, 0.13), 0 2px 8px rgba(15, 23, 42, 0.06); list-style: none; padding: var(--space-3); margin: 0; z-index: 1001; min-width: 190px; }
+/* invisible bridge across the visual gap: keeps the pointer "inside" the menu on the way down */
+.nav-dropdown::before { content: ''; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
+.nav-dropdown.active { display: block; animation: navDropdownIn 0.16s ease-out; }
+.nav-dropdown li a { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-3); white-space: nowrap; border-radius: var(--radius-md); color: var(--color-text-primary); font-size: 0.93rem; font-weight: 500; transition: background var(--transition-fast), color var(--transition-fast); }
+.nav-dropdown li a:hover { background: var(--color-bg-light); color: var(--color-primary-accent); text-decoration: none; }
+.nav-dropdown li a:focus-visible { outline: 2px solid var(--color-primary-accent); outline-offset: -2px; background: var(--color-bg-light); text-decoration: none; }
+.nav-dropdown li a[aria-current="page"] { color: var(--color-primary-accent); background: var(--color-bg-light); }
+.nav-dropdown .nav-flag { font-size: 1.05rem; line-height: 1; }
+/* Categories mega menu: grouped into labelled sections, balanced across columns */
+.nav-dropdown-mega { left: 50%; translate: -50% 0; width: max-content; max-width: min(660px, calc(100vw - 32px)); padding: var(--space-4) var(--space-5); columns: 3; column-gap: var(--space-6); }
+.nav-dropdown-mega.active { display: block; }
+.nav-dropdown-group { break-inside: avoid; margin-bottom: var(--space-4); }
+.nav-dropdown-group:last-child { margin-bottom: 0; }
+.nav-dropdown-group ul { list-style: none; padding: 0; margin: 0; }
+.nav-dropdown-heading { display: block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); padding: 0 var(--space-3) var(--space-2); margin: 0; }
+@keyframes navDropdownIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 [lang="ar"] .nav-dropdown { left: auto; right: 0; }
+[lang="ar"] .nav-dropdown-mega { left: 50%; right: auto; }
 .mobile-nav-heading { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); padding: var(--space-4) 0 var(--space-1); border-bottom: none !important; }
+.mobile-nav-subheading { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--color-primary-accent); padding: var(--space-3) 0 var(--space-1); border-bottom: none !important; opacity: 0.85; }
+.mobile-nav-links .nav-flag { margin-inline-end: var(--space-2); }
 .empty-category-state { max-width: var(--max-content); margin: 0 auto; padding: var(--space-7) var(--space-5); text-align: center; color: var(--color-text-secondary); }
+@media (max-width: 1080px) { .nav-dropdown-mega { columns: 2; max-width: min(460px, calc(100vw - 32px)); } }
+/* No-JS fallback: hover alone opens the menus (site.js adds .nav-js and takes over) */
 @media (hover: hover) and (pointer: fine) {
-  .nav-item-countries:hover .nav-dropdown { display: block; }
-  .nav-item-categories:hover .nav-dropdown-mega { display: grid; }
+  .main-nav:not(.nav-js) .nav-item-countries:hover .nav-dropdown { display: block; }
+  .main-nav:not(.nav-js) .nav-item-categories:hover .nav-dropdown-mega { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-dropdown.active { animation: none; }
 }
 
 /* Header controls */
@@ -507,8 +555,12 @@ blockquote {
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-md);
   padding: var(--space-2) var(--space-3);
+  /* These measured ~35px; 44px is the accessibility floor. */
+  min-height: var(--tap);
+  min-width: var(--tap);
+  justify-content: center;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: var(--t-small);
   font-weight: 500;
   color: var(--color-text-secondary);
   transition: all var(--transition-fast);
@@ -665,7 +717,9 @@ blockquote {
 }
 
 .trending-pill {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
   padding: var(--space-2) var(--space-4);
   background: var(--color-bg-light);
   border: 1px solid var(--color-border-light);
@@ -678,10 +732,12 @@ blockquote {
   text-decoration: none;
 }
 
+/* These render as non-interactive <span>s. Until they become real links in the
+   Explore rail, they must not advertise interactivity they do not have. */
+.trending-pill { cursor: default; }
 .trending-pill:hover {
-  border-color: var(--color-primary-accent);
-  color: var(--color-primary-accent);
-  transform: translateY(-2px);
+  border-color: var(--color-border-light);
+  color: var(--color-text-secondary);
   text-decoration: none;
 }
 
@@ -916,7 +972,9 @@ blockquote {
 
 /* Article page */
 .article-page {
-  max-width: 800px;
+  /* Character-based, not pixel-based: keeps the measure comfortable in both
+     Inter and Cairo instead of only in Latin. */
+  max-width: var(--measure);
   margin: 0 auto;
   padding: var(--space-6) var(--space-5);
 }
@@ -2852,9 +2910,7 @@ html[dir="rtl"] .wc-mini-list {
 /* Selection */
 ::selection { background: rgba(245,158,11,0.2); color: var(--color-text-primary); }
 /* Newsletter capture is intentionally hidden until a consent-aware provider is connected. */
-.newsletter-signup,
-.footer-newsletter,
-.signup-form { display: none !important; }
+
 
 /* ============================================
    Print Styles — Professional Print Experience
@@ -3041,5 +3097,116 @@ html[dir="rtl"] .wc-mini-list {
     transform: none !important;
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* ============================================
+   Explore index — homepage listing (Direction B)
+   Rows, not tiles: the headline does the work and the thumbnail is an aid.
+   Written with logical properties, so RTL needs no mirrored overrides.
+   ============================================ */
+.index-list {
+  max-width: var(--max-content);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
+.index-row {
+  display: grid;
+  grid-template-columns: 96px 1fr auto;
+  gap: var(--space-5);
+  align-items: start;
+  padding-block: var(--space-5);
+  border-block-start: 1px solid var(--color-border-light);
+  color: inherit;
+  text-decoration: none;
+  transition: background var(--transition-fast);
+}
+
+.index-row:hover {
+  background: var(--color-surface-light);
+  text-decoration: none;
+}
+
+.index-thumb {
+  inline-size: 96px;
+  block-size: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+
+.index-main {
+  display: grid;
+  gap: var(--space-2);
+  min-inline-size: 0;
+}
+
+.index-eyebrow {
+  font-size: var(--t-label);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cat, var(--color-primary-accent));
+}
+
+/* Arabic takes no tracking and does not uppercase. */
+[lang="ar"] .index-eyebrow {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.index-title {
+  font-family: var(--font-en);
+  font-size: var(--t-h3);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+[lang="ar"] .index-title { font-family: var(--font-ar); line-height: 1.45; }
+
+[data-theme="dark"] .index-title { color: #F8FAFC; }
+
+.index-excerpt {
+  font-size: var(--t-small);
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.index-meta {
+  display: grid;
+  gap: var(--space-1);
+  justify-items: end;
+  font-size: var(--t-caption);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.index-count {
+  font-size: var(--t-caption);
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .index-list { padding-inline: var(--space-4); }
+  .index-row {
+    grid-template-columns: 72px 1fr;
+    gap: var(--space-4);
+    padding-block: var(--space-4);
+  }
+  .index-thumb { inline-size: 72px; }
+  .index-meta {
+    grid-column: 2;
+    grid-auto-flow: column;
+    justify-content: start;
+    justify-items: start;
+    gap: var(--space-3);
   }
 }

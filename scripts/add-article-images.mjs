@@ -53,7 +53,9 @@ const icons = {
   saudi: `<path d="M320 475h520M380 475V255h400v220M420 255v-58h320v58" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".72"/><path d="M430 330h300M430 390h300" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".62"/><path d="M360 540c116-58 284-58 400 0" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".42"/>`,
   'vision-2030': `<path d="M565 126 628 314l198 2-159 116 59 190-161-112-162 112 60-190-160-116 198-2Z" fill="#fff" opacity=".2"/><path d="M376 490c150-175 310-175 470 0" fill="none" stroke="#fff" stroke-width="22" stroke-linecap="round" opacity=".72"/><path d="M440 390h250M520 300h250" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".7"/>`,
   islamic: `<path d="M590 150c-92 12-163 91-163 186 0 104 84 188 188 188 77 0 143-46 172-112-31 19-68 30-107 30-113 0-205-92-205-205 0-31 7-60 19-87Z" fill="#fff" opacity=".24"/><path d="M790 190 815 250l65 5-50 42 16 64-56-34-56 34 16-64-50-42 65-5Z" fill="#fff" opacity=".7"/><path d="M330 520h520" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".55"/>`,
-  general: `<circle cx="600" cy="340" r="180" fill="#fff" opacity=".14"/><path d="M500 340h200M600 240v200" stroke="#fff" stroke-width="22" stroke-linecap="round" opacity=".72"/>`
+  // Abstract concentric arcs. Deliberately not a glyph: a plus/cross reads as
+  // an "add" affordance or a broken placeholder, not as editorial artwork.
+  general: `<circle cx="600" cy="340" r="190" fill="#fff" opacity=".10"/><circle cx="600" cy="340" r="132" fill="none" stroke="#fff" stroke-width="16" opacity=".38"/><circle cx="600" cy="340" r="74" fill="#fff" opacity=".22"/><path d="M330 470c150-96 330-96 480 0" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".34"/>`
 };
 
 function escapeHtml(value) {
@@ -83,16 +85,36 @@ function shortTitle(title, lang) {
   return title.length > limit ? `${title.slice(0, limit - 1).trim()}…` : title;
 }
 
-function imagePath(lang, slug) {
+// Social/OG source: text-bearing, rasterised to PNG by render-og-rasters.mjs.
+// Never shown in-page.
+function ogSourcePath(lang, slug) {
   return `/assets/images/articles/${lang}-${slug}.svg`;
 }
 
-function svgFor({ lang, slug, title, category }) {
+// In-page display artwork: carries no text at all. Titles live in the HTML, so
+// they wrap, localise and are read once. Baking the title in was what clipped
+// the Arabic hero to a single word across ~361 pages.
+function imagePath(lang, slug) {
+  return `/assets/images/articles/${lang}-${slug}.art.svg`;
+}
+
+function svgFor({ lang, slug, title, category, withText = true }) {
   const [bg, primary, accent] = palettes[category] || palettes.general;
   const isRtl = lang === 'ar';
   const label = labels[category] || labels.general;
   const titleX = isRtl ? 1080 : 120;
   const anchor = isRtl ? 'end' : 'start';
+
+  const textBlock = !withText ? '' : `<g transform="translate(0 0)" direction="${isRtl ? 'rtl' : 'ltr'}">
+    <text x="${titleX}" y="122" text-anchor="${anchor}" fill="#fff" opacity=".82" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
+    <text x="${titleX}" y="202" text-anchor="${anchor}" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">${escapeHtml(shortTitle(title, lang))}</text>
+    <text x="${titleX}" y="262" text-anchor="${anchor}" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">${escapeHtml(label)}</text>
+    <rect x="${isRtl ? 760 : 120}" y="300" width="320" height="8" rx="4" fill="${accent}"/>
+  </g>
+  <g transform="translate(120 542)">
+    <rect width="386" height="58" rx="29" fill="#fff" opacity=".14"/>
+    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">${escapeHtml(label)}</text>
+  </g>`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
   <title id="title">${escapeHtml(title)} — doyouknow.app illustration</title>
@@ -121,16 +143,7 @@ function svgFor({ lang, slug, title, category }) {
   <g filter="url(#shadow)" transform="translate(0 0)">
     ${icons[category] || icons.general}
   </g>
-  <g transform="translate(0 0)" direction="${isRtl ? 'rtl' : 'ltr'}">
-    <text x="${titleX}" y="122" text-anchor="${anchor}" fill="#fff" opacity=".82" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
-    <text x="${titleX}" y="202" text-anchor="${anchor}" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">${escapeHtml(shortTitle(title, lang))}</text>
-    <text x="${titleX}" y="262" text-anchor="${anchor}" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">${escapeHtml(label)}</text>
-    <rect x="${isRtl ? 760 : 120}" y="300" width="320" height="8" rx="4" fill="${accent}"/>
-  </g>
-  <g transform="translate(120 542)">
-    <rect width="386" height="58" rx="29" fill="#fff" opacity=".14"/>
-    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">${escapeHtml(label)}</text>
-  </g>
+  ${textBlock}
 </svg>
 `;
 }
@@ -160,18 +173,43 @@ function updateArticleSchema(html, imageUrl) {
 
 function updateArticleHtml(html, { lang, slug, title }) {
   const path = imagePath(lang, slug);
-  const url = `https://doyouknow.app${path}`;
+  // Social cards point at the rasterised OG source, not the display artwork.
+  // prepare.mjs sets this too; keeping them in step avoids a transient bad value.
+  const url = `https://doyouknow.app${ogSourcePath(lang, slug).replace(/\.svg$/, '.png')}`;
   const alt = lang === 'ar'
     ? `رسم توضيحي لمقال ${title}`
     : `Editorial illustration for ${title}`;
 
   html = updateSocialImages(html, url);
+  // Replace the placeholder <div> if it is still there.
+  if (html.includes('<div class="featured-image"')) {
+    html = html.replace(
+      /<div class="featured-image"[\s\S]*?<\/div>/,
+      `<img class="featured-image" src="${path}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
+    );
+  }
+  // Otherwise rewrite the src in place on any hero image, whatever its class
+  // list. Three variants exist — "featured-image", "article-hero-image", and
+  // the combined "featured-image article-hero-image" — so matching by class
+  // prefix silently skipped 42 pages. Mirrors updateArticlePageImage in
+  // prepare.mjs; keep the two in step.
   html = html.replace(
-    /<div class="featured-image"[\s\S]*?<\/div>/,
-    `<img class="featured-image" src="${path}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
+    /<img\b[^>]*\bclass="[^"]*\b(?:featured-image|article-hero-image)\b[^"]*"[^>]*>/g,
+    (tag) => tag.replace(/\bsrc="[^"]*"/, `src="${path}"`)
   );
   html = updateArticleSchema(html, url);
   return html;
+}
+
+// Only touch the file when the bytes actually change. Rewriting an unchanged
+// OG source would bump its mtime and force render-og-rasters to re-rasterise
+// all 722 PNGs for nothing.
+async function writeIfChanged(path, contents) {
+  try {
+    if (await readFile(path, 'utf8') === contents) return false;
+  } catch { /* missing file: fall through and write */ }
+  await writeFile(path, contents);
+  return true;
 }
 
 async function fileExists(path) {
@@ -185,7 +223,6 @@ async function fileExists(path) {
 
 function updateCardImages(html) {
   return html.replace(/<a href="\/(en|ar)\/article\/([a-z0-9-]+)\.html" class="article-card">([\s\S]*?)<div class="card-content">/g, (match, lang, slug, beforeContent) => {
-    if (!categoryByArticle.has(`${lang}/${slug}`)) return match;
     const img = `<img class="card-image" src="${imagePath(lang, slug)}" alt="" width="1200" height="675" loading="lazy">`;
     const cleaned = beforeContent
       .replace(/<img class="card-image"[^>]*>/g, '')
@@ -203,14 +240,23 @@ for (const lang of ['en', 'ar']) {
   for (const file of await readdir(dir)) {
     if (!file.endsWith('.html')) continue;
     const slug = file.replace('.html', '');
-    const category = categoryByArticle.get(`${lang}/${slug}`);
-    if (!category) continue;
+    // Every article gets artwork. Articles outside the curated category map
+    // fall back to the general palette rather than being skipped — otherwise
+    // they keep the old text-bearing image and its RTL clipping.
+    const category = categoryByArticle.get(`${lang}/${slug}`) || 'general';
     const articlePath = join(dir, file);
     let html = await readFile(articlePath, 'utf8');
-    const svgPath = join(imageDir, `${lang}-${slug}.svg`);
-    if (!html.includes('📷 Featured Image') && html.includes(imagePath(lang, slug)) && await fileExists(svgPath)) continue;
+    const ogSvgPath = join(imageDir, `${lang}-${slug}.svg`);
+    const artSvgPath = join(imageDir, `${lang}-${slug}.art.svg`);
+    if (!html.includes('📷 Featured Image')
+      && html.includes(imagePath(lang, slug))
+      && await fileExists(ogSvgPath)
+      && await fileExists(artSvgPath)) continue;
     const title = getTitle(html, slug);
-    await writeFile(svgPath, svgFor({ lang, slug, title, category }));
+    // Two artefacts, two jobs: text-bearing source for the social raster,
+    // text-free artwork for the page itself.
+    await writeIfChanged(ogSvgPath, svgFor({ lang, slug, title, category, withText: true }));
+    await writeIfChanged(artSvgPath, svgFor({ lang, slug, title, category, withText: false }));
     html = updateArticleHtml(html, { lang, slug, title });
     await writeFile(articlePath, html);
     updated.push(`${lang}/${slug}`);

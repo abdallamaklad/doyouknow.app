@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>doyouknow.app — three design directions</title>
+<style>
+/* ============================================================
+   OPTION BOARD CHROME  (not part of any proposed design)
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --chrome-bg:#0e1116; --chrome-panel:#161b22; --chrome-line:#262d38;
+  --chrome-ink:#e6edf3; --chrome-dim:#8b949e; --chrome-accent:#F59E0B;
+  --chrome-font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --chrome-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+body{background:var(--chrome-bg);color:var(--chrome-ink);font-family:var(--chrome-font);
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.board-head{position:sticky;top:0;z-index:50;background:rgba(14,17,22,.92);
+  backdrop-filter:blur(10px);border-block-end:1px solid var(--chrome-line);
+  padding:14px clamp(16px,3vw,32px)}
+.board-head-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  max-width:1320px;margin-inline:auto}
+.board-title{font-size:15px;font-weight:650;letter-spacing:-.01em;margin-inline-end:auto}
+.board-title span{color:var(--chrome-dim);font-weight:400}
+.ctl{display:flex;align-items:center;gap:6px}
+.ctl-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--chrome-dim);font-weight:600}
+.seg{display:flex;background:var(--chrome-panel);border:1px solid var(--chrome-line);border-radius:8px;padding:3px;gap:2px}
+.seg button{background:none;border:0;color:var(--chrome-dim);font:inherit;font-size:13px;font-weight:550;
+  padding:7px 13px;min-height:34px;border-radius:6px;cursor:pointer;transition:background .12s,color .12s}
+.seg button:hover{color:var(--chrome-ink)}
+.seg button[aria-pressed="true"]{background:var(--chrome-accent);color:#111}
+.seg button:focus-visible{outline:2px solid var(--chrome-accent);outline-offset:2px}
+.board-body{max-width:1320px;margin-inline:auto;padding:clamp(20px,3vw,40px) clamp(16px,3vw,32px) 96px}
+.dir{display:none}
+.dir.is-on{display:block}
+.dir-head{border-block-end:1px solid var(--chrome-line);padding-block-end:22px;margin-block-end:32px}
+.dir-kicker{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--chrome-accent)}
+.dir-name{font-size:clamp(26px,3.4vw,36px);font-weight:700;letter-spacing:-.02em;margin-block:8px 12px;line-height:1.15}
+.dir-sur{font-size:15px;color:var(--chrome-ink);max-width:72ch}
+.dir-sur strong{color:var(--chrome-accent);font-weight:650}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;
+  background:var(--chrome-line);border:1px solid var(--chrome-line);border-radius:10px;overflow:hidden;margin-block-start:22px}
+.fact{background:var(--chrome-panel);padding:14px 16px}
+.fact dt{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--chrome-dim);margin-block-end:5px}
+.fact dd{font-size:13.5px;line-height:1.5}
+.spec-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--chrome-dim);margin-block:40px 10px;display:flex;align-items:baseline;gap:10px}
+.spec-label::after{content:"";flex:1;height:1px;background:var(--chrome-line)}
+.spec-note{font-size:13px;color:var(--chrome-dim);margin-block-end:14px;max-width:78ch}
+.frame{border:1px solid var(--chrome-line);border-radius:12px;overflow:hidden;background:#fff}
+.frame[data-theme="dark"]{background:#0B1120}
+
+/* ============================================================
+   PREVIEW RESET + SHARED TOKENS
+   Every proposed style below is scoped to .pv
+   ============================================================ */
+.pv{
+  /* type scale — implements design-system.md §Type Scale, which the
+     current CSS never tokenised (128 ad-hoc font-size declarations) */
+  --t-display:clamp(28px,4.2vw,48px);
+  --t-h1:clamp(24px,3.4vw,42px);
+  --t-h2:clamp(20px,2.6vw,32px);
+  --t-h3:clamp(18px,1.9vw,24px);
+  --t-lead:clamp(18px,1.4vw,20px);
+  --t-body:16px; --t-small:14px; --t-caption:12px; --t-label:11px;
+
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:20px;--s6:24px;--s7:32px;--s8:48px;--s9:64px;
+
+  --measure:68ch;              /* was ~95ch at 800px — too wide */
+  --tap:44px;                  /* enforced hit target */
+  --r-sm:6px;--r-md:10px;--r-lg:14px;--r-full:999px;
+
+  font-family:var(--f-body);
+  font-size:var(--t-body);
+  line-height:1.6;
+  color:var(--ink);
+  background:var(--paper);
+  container-type:inline-size;
+}
+.pv *,.pv *::before,.pv *::after{box-sizing:border-box}
+.pv h1,.pv h2,.pv h3,.pv h4{font-family:var(--f-display);color:var(--ink);line-height:1.2;font-weight:var(--w-display)}
+.pv p{margin:0}
+.pv a{color:inherit;text-decoration:none}
+.pv button{font:inherit;cursor:pointer}
+.pv :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Arabic: real logical-property RTL, not 28 mirrored overrides */
+.pv[dir="rtl"]{--f-body:var(--f-ar-body);--f-display:var(--f-ar-display);
+  line-height:1.85;word-spacing:.05em;letter-spacing:0}
+.pv[dir="rtl"] h1,.pv[dir="rtl"] h2,.pv[dir="rtl"] h3{line-height:1.45}
+
+/* ---------- font stacks ----------
+   Local stacks only — the board ships no webfonts so it stays self-contained.
+   Real implementation cost is stated per direction. */
+.pv{--f-sys:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --f-serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --f-ar-sans:"Cairo","Tajawal","Noto Sans Arabic","Geeza Pro",sans-serif;
+    --f-ar-naskh:"Amiri","Noto Naskh Arabic","Geeza Pro",serif}
+
+/* ============================================================
+   DIRECTION A — REFINED SYSTEM
+   ============================================================ */
+.pv-a{
+  --f-body:var(--f-sys);--f-display:var(--f-sys);
+  --f-ar-body:var(--f-ar-sans);--f-ar-display:var(--f-ar-sans);
+  --w-display:650;
+  --paper:#FAFAFA;--surface:#FFFFFF;--ink:#1E293B;--ink-strong:#0F172A;
+  --muted:#64748B;                    /* was #94A3B8 → 2.56:1 FAIL, now 4.76:1 */
+  --line:#E2E8F0;--accent:#B45309;--on-accent:#fff;
+}
+.frame[data-theme="dark"] .pv-a{
+  --paper:#0B1120;--surface:#1E293B;--ink:#E2E8F0;--ink-strong:#F8FAFC;
+  --muted:#94A3B8;                    /* was #64748B → 3.07:1 FAIL, now 5.71:1 */
+  --line:#334155;--accent:#F59E0B;--on-accent:#0F172A;
+}
+
+/* ============================================================
+   DIRECTION B — EDITORIAL INDEX
+   ============================================================ */
+.pv-b{
+  --f-body:var(--f-sys);--f-display:var(--f-serif);
+  --f-ar-body:var(--f-ar-sans);--f-ar-display:var(--f-ar-naskh);
+  --w-display:600;
+  --paper:#FCFBF8;--surface:#FFFFFF;--ink:#1A2233;--ink-strong:#0F172A;
+  --muted:#5C6880;--line:#E5E1D8;--accent:#B45309;--on-accent:#fff;
+}
+.frame[data-theme="dark"] .pv-b{
+  --paper:#0C1017;--surface:#141A24;--ink:#DDE3EC;--ink-strong:#F8FAFC;
+  --muted:#96A1B5;--line:#242C39;--accent:#F59E0B;--on-accent:#0F172A;
+}
+.pv-b h1,.pv-b h2,.pv-b h3{letter-spacing:-.015em}
+
+/* ============================================================
+   DIRECTION C — FACT FIRST
+   ============================================================ */
+.pv-c{
+  --f-body:var(--f-sys);--f-display:var(--f-sys);
+  --f-ar-body:var(--f-ar-sans);--f-ar-display:var(--f-ar-sans);
+  --w-display:800;
+  --paper:#F6F4EF;--surface:#FFFFFF;--ink:#0F172A;--ink-strong:#0F172A;
+  --muted:#5A6478;--line:#E3DFD6;--accent:#B45309;--on-accent:#fff;
+}
+.frame[data-theme="dark"] .pv-c{
+  --paper:#080D16;--surface:#101A2C;--ink:#E8EDF5;--ink-strong:#FFFFFF;
+  --muted:#93A0B8;--line:#1E2B42;--accent:#F59E0B;--on-accent:#0F172A;
+}
+.pv-c h1,.pv-c h2{letter-spacing:-.03em}
+
+/* ============================================================
+   SHARED PREVIEW COMPONENTS
+   ============================================================ */
+.pv-bar{display:flex;align-items:center;gap:var(--s5);padding:var(--s3) var(--s5);
+  border-block-end:1px solid var(--line);background:var(--surface);min-height:60px}
+.pv-logo{display:flex;align-items:center;gap:var(--s3);font-weight:700;font-size:17px;
+  color:var(--ink-strong);letter-spacing:-.01em;margin-inline-end:auto;
+  /* the wordmark is a Latin trademark — it must not mirror in RTL */
+  direction:ltr;font-family:var(--f-sys)}
+.pv-dot{inline-size:26px;block-size:26px;border-radius:50%;background:var(--accent);
+  display:grid;place-items:center;flex:none}
+.pv-dot::after{content:"";inline-size:8px;block-size:8px;border-radius:50%;background:var(--surface)}
+.pv-logo em{font-style:normal;color:var(--accent)}
+.pv-navlink{font-size:var(--t-small);font-weight:550;color:var(--muted);
+  min-block-size:var(--tap);display:inline-flex;align-items:center;padding-inline:var(--s2)}
+.pv-navlink:hover{color:var(--accent)}
+
+/* search — the affordance an Explore surface actually needs */
+.pv-search{display:flex;align-items:center;gap:var(--s3);inline-size:100%;
+  min-block-size:var(--tap);padding:0 var(--s4);border:1px solid var(--line);
+  border-radius:var(--r-full);background:var(--surface);color:var(--muted);font-size:var(--t-small)}
+.pv-search svg{flex:none;opacity:.65}
+
+/* category chips — real taxonomy, real colours */
+.pv-chips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.pv-chip{display:inline-flex;align-items:center;gap:var(--s2);min-block-size:36px;
+  padding-inline:var(--s4);border-radius:var(--r-full);border:1px solid var(--line);
+  background:var(--surface);font-size:var(--t-small);font-weight:550;color:var(--ink);
+  transition:border-color .12s,color .12s}
+.pv-chip:hover{border-color:var(--accent);color:var(--accent)}
+.pv-chip i{inline-size:7px;block-size:7px;border-radius:50%;background:var(--cat,var(--accent));flex:none}
+.pv-chip[data-on]{background:var(--ink-strong);color:var(--paper);border-color:var(--ink-strong)}
+
+/* eyebrow / meta */
+.pv-eyebrow{font-size:var(--t-label);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cat,var(--accent))}
+.pv[dir="rtl"] .pv-eyebrow{letter-spacing:0}
+.pv-meta{display:flex;align-items:center;gap:var(--s3);font-size:var(--t-caption);color:var(--muted)}
+.pv-meta span{display:inline-flex;align-items:center;gap:var(--s2)}
+.pv-meta span+span::before{content:"";inline-size:3px;block-size:3px;border-radius:50%;
+  background:currentColor;opacity:.6}
+
+/* thumbnails: abstract colour fields, no baked-in text, no fake illustration */
+.pv-thumb{position:relative;overflow:hidden;border-radius:var(--r-md);flex:none;
+  background:
+    radial-gradient(120% 90% at 82% 18%, color-mix(in oklab,var(--cat,var(--accent)) 42%, transparent) 0%, transparent 62%),
+    linear-gradient(152deg, color-mix(in oklab,var(--cat,var(--accent)) 20%, var(--surface)) 0%, var(--surface) 78%);
+  border:1px solid var(--line)}
+.pv-thumb::after{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(115deg,transparent 0 13px,color-mix(in oklab,var(--cat,var(--accent)) 9%,transparent) 13px 14px)}
+
+.pv-foot{padding:var(--s5);border-block-start:1px solid var(--line);
+  font-size:var(--t-caption);color:var(--muted);background:var(--surface)}
+
+@media (prefers-reduced-motion:reduce){.pv *{transition:none!important;animation:none!important}}
+
+/* ---------- A: masthead + grid ---------- */
+.a-mast{padding:var(--s7) var(--s5) var(--s6);background:var(--surface);border-block-end:1px solid var(--line)}
+.a-mast-in{max-inline-size:1120px;margin-inline:auto;display:grid;gap:var(--s4)}
+.a-mast h1{font-size:var(--t-h1);color:var(--ink-strong);font-weight:700;line-height:1.15}
+.a-mast p{font-size:var(--t-lead);color:var(--muted);max-inline-size:60ch}
+.a-tools{display:flex;gap:var(--s4);flex-wrap:wrap;align-items:center;margin-block-start:var(--s2)}
+.a-tools .pv-search{max-inline-size:380px}
+.a-sec{max-inline-size:1120px;margin-inline:auto;padding:var(--s7) var(--s5)}
+.a-sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s4);margin-block-end:var(--s5)}
+.a-sec-head h2{font-size:var(--t-h2)}
+.a-sec-head a{font-size:var(--t-small);font-weight:650;color:var(--accent);min-block-size:var(--tap);display:inline-flex;align-items:center}
+.a-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:var(--s5)}
+.a-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r-lg);overflow:hidden;transition:border-color .15s,transform .15s}
+.a-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.a-card .pv-thumb{aspect-ratio:16/9;border:0;border-radius:0}
+.a-card-body{padding:var(--s5);display:grid;gap:var(--s3);flex:1;align-content:start}
+.a-card h3{font-size:var(--t-h3);line-height:1.3}
+.a-card p{font-size:var(--t-small);color:var(--muted);line-height:1.55}
+.a-card .pv-meta{margin-block-start:auto;padding-block-start:var(--s3)}
+
+/* ---------- B: index ---------- */
+.b-mast{padding:var(--s7) var(--s5) var(--s6);border-block-end:1px solid var(--line)}
+.b-mast-in{max-inline-size:1120px;margin-inline:auto}
+.b-rule{display:flex;align-items:center;gap:var(--s4);margin-block-end:var(--s5)}
+.b-rule h1{font-size:var(--t-h2);font-weight:600;white-space:nowrap}
+.b-rule::after{content:"";flex:1;height:2px;background:var(--accent);opacity:.85}
+.b-mast p{font-size:var(--t-lead);color:var(--muted);max-inline-size:56ch;margin-block-end:var(--s5)}
+.b-tools{display:grid;gap:var(--s4);max-inline-size:640px}
+.b-sec{max-inline-size:1120px;margin-inline:auto;padding:var(--s6) var(--s5) var(--s7)}
+.b-sec-head{display:flex;align-items:baseline;gap:var(--s4);margin-block-end:var(--s3)}
+.b-sec-head h2{font-size:var(--t-h3);font-weight:600}
+.b-sec-head small{font-size:var(--t-caption);color:var(--muted);font-family:var(--f-body)}
+.b-list{display:grid}
+.b-row{display:grid;grid-template-columns:auto 1fr auto;gap:var(--s5);align-items:start;
+  padding-block:var(--s5);border-block-start:1px solid var(--line);transition:background .12s}
+.b-row:hover{background:var(--surface)}
+.b-row .pv-thumb{inline-size:96px;aspect-ratio:4/3}
+.b-row-main{display:grid;gap:var(--s2);min-inline-size:0}
+.b-row h3{font-size:var(--t-h3);line-height:1.28;font-weight:600}
+.b-row p{font-size:var(--t-small);color:var(--muted);line-height:1.55;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.b-row-side{text-align:end;font-size:var(--t-caption);color:var(--muted);white-space:nowrap;
+  display:grid;gap:var(--s1);justify-items:end}
+@container (max-width:640px){
+  .b-row{grid-template-columns:auto 1fr}
+  .b-row-side{grid-column:2;text-align:start;justify-items:start;flex-direction:row}
+}
+
+/* ---------- C: fact-first ---------- */
+.c-mast{padding:var(--s8) var(--s5) var(--s7);position:relative;overflow:hidden}
+.c-mast-in{max-inline-size:1120px;margin-inline:auto;position:relative;z-index:1}
+.c-kicker{font-size:var(--t-label);font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-block-end:var(--s4)}
+.pv[dir="rtl"] .c-kicker{letter-spacing:0}
+.c-fact{font-size:var(--t-display);font-weight:800;line-height:1.08;letter-spacing:-.03em;
+  max-inline-size:20ch;color:var(--ink-strong);margin-block-end:var(--s4)}
+.c-fact b{color:var(--accent);font-weight:800}
+.c-src{font-size:var(--t-small);color:var(--muted);display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
+.c-src a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;
+  min-block-size:var(--tap);display:inline-flex;align-items:center}
+.c-sec{max-inline-size:1120px;margin-inline:auto;padding:var(--s6) var(--s5) var(--s8)}
+.c-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--s4)}
+.c-tile{grid-column:span 4;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r-lg);padding:var(--s5);display:grid;gap:var(--s3);align-content:start;
+  transition:border-color .15s}
+.c-tile:hover{border-color:var(--accent)}
+.c-tile.is-lead{grid-column:span 6;row-gap:var(--s4)}
+.c-tile.is-wide{grid-column:span 6}
+.c-tile .c-num{font-size:var(--t-display);font-weight:800;line-height:.92;letter-spacing:-.04em;
+  color:var(--accent);font-variant-numeric:tabular-nums}
+.c-tile h3{font-size:var(--t-h3);line-height:1.3;font-weight:700}
+.c-tile.is-lead h3{font-size:var(--t-h2)}
+.c-tile p{font-size:var(--t-small);color:var(--muted);line-height:1.55}
+@container (max-width:820px){.c-tile,.c-tile.is-lead,.c-tile.is-wide{grid-column:span 12}}
+
+/* ---------- article header specimen (title appears ONCE) ---------- */
+.art{padding:var(--s7) var(--s5);max-inline-size:1120px;margin-inline:auto}
+.art-crumb{font-size:var(--t-caption);color:var(--muted);margin-block-end:var(--s5);
+  display:flex;gap:var(--s2);align-items:center;flex-wrap:wrap}
+.art-crumb i{opacity:.5;font-style:normal}
+.art-in{max-inline-size:var(--measure)}
+.art h1{font-size:var(--t-h1);line-height:1.16;margin-block:var(--s3) var(--s4);color:var(--ink-strong)}
+.art-byline{display:flex;align-items:center;gap:var(--s3);font-size:var(--t-caption);color:var(--muted);
+  padding-block-end:var(--s5);border-block-end:1px solid var(--line)}
+.art-av{inline-size:30px;block-size:30px;border-radius:50%;background:var(--accent);color:var(--on-accent);
+  display:grid;place-items:center;font-size:10px;font-weight:750;flex:none}
+.art-hero{margin-block:var(--s6);aspect-ratio:16/7;border-radius:var(--r-md)}
+.art-body{font-size:var(--t-lead);line-height:1.72;color:var(--ink);max-inline-size:var(--measure)}
+.art-body p+p{margin-block-start:var(--s5)}
+.art-flag{margin-block-start:var(--s5);padding:var(--s4);border-radius:var(--r-md);
+  background:var(--surface);border:1px solid var(--line);font-size:var(--t-caption);color:var(--muted)}
+
+/* ---------- type + colour specimens ---------- */
+.sp-type{padding:var(--s6) var(--s5);display:grid;gap:var(--s4)}
+.sp-row{display:grid;grid-template-columns:118px 1fr;gap:var(--s5);align-items:baseline;
+  padding-block-end:var(--s4);border-block-end:1px solid var(--line)}
+.sp-tag{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);
+  font-family:var(--f-sys)}
+.sp-swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:var(--s3);
+  padding:var(--s6) var(--s5)}
+.sw{border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;background:var(--surface)}
+.sw-chip{block-size:52px;background:var(--c)}
+.sw-txt{padding:var(--s3);font-size:var(--t-caption);display:grid;gap:2px}
+.sw-txt b{font-weight:650;font-size:var(--t-small);color:var(--ink)}
+.sw-txt code{font-family:var(--chrome-mono);color:var(--muted);font-size:11px}
+
+.legend{font-size:12.5px;color:var(--chrome-dim);margin-block-start:10px;display:flex;gap:16px;flex-wrap:wrap}
+.legend b{color:var(--chrome-ink);font-weight:600}
+</style>
+</head>
+<body>
+
+<header class="board-head">
+  <div class="board-head-row">
+    <div class="board-title">doyouknow.app — three design directions <span>· Phase 2 option board</span></div>
+    <div class="ctl"><span class="ctl-label">Lang</span>
+      <div class="seg" id="segLang">
+        <button data-v="en" aria-pressed="true">EN</button>
+        <button data-v="ar" aria-pressed="false">العربية</button>
+      </div>
+    </div>
+    <div class="ctl"><span class="ctl-label">Theme</span>
+      <div class="seg" id="segTheme">
+        <button data-v="light" aria-pressed="true">Light</button>
+        <button data-v="dark" aria-pressed="false">Dark</button>
+      </div>
+    </div>
+    <div class="ctl"><span class="ctl-label">Direction</span>
+      <div class="seg" id="segDir">
+        <button data-v="a" aria-pressed="true">A · Refined</button>
+        <button data-v="b" aria-pressed="false">B · Editorial</button>
+        <button data-v="c" aria-pressed="false">C · Fact-first</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="board-body">
+
+<!-- ==================== DIRECTION A ==================== -->
+<section class="dir is-on" data-dir="a">
+  <div class="dir-head">
+    <div class="dir-kicker">Direction A · Conservative</div>
+    <h1 class="dir-name">Refined System</h1>
+    <p class="dir-sur">Keeps today's structure and the navy + amber identity. Commits the homepage to <strong>Explore</strong> only enough to add search and a real category rail — the card grid stays. Everything else is correctness work: the documented type scale finally becomes tokens, category colour finally reaches the badges, contrast and hit targets reach AA.</p>
+    <dl class="facts">
+      <div class="fact"><dt>Fixes</dt><dd>Type scale, contrast, hit targets, sort order, "General" badges, title-in-image, RTL logical properties</dd></div>
+      <div class="fact"><dt>Leaves</dt><dd>Composition largely as-is — still a card grid over a masthead</dd></div>
+      <div class="fact"><dt>Type cost</dt><dd>None. Inter + Cairo/Tajawal, already loaded</dd></div>
+      <div class="fact"><dt>Risk</dt><dd>Lowest. Ships fastest; least differentiated — competent, not distinctive</dd></div>
+    </dl>
+  </div>
+
+  <div class="spec-label">Home · above the fold</div>
+  <p class="spec-note">Search and category filters appear above the fold — the minimum an Explore surface owes a 361-article library. The dead newsletter block and the decorative gradient panel are gone.</p>
+  <div class="frame" data-theme="light">
+    <div class="pv pv-a" dir="ltr">
+      <div class="pv-bar">
+        <a class="pv-logo"><span class="pv-dot"></span>doyouknow<em>.app</em></a>
+        <a class="pv-navlink" data-t="nav1">Countries</a>
+        <a class="pv-navlink" data-t="nav2">Categories</a>
+        <a class="pv-navlink" data-t="nav3">About</a>
+      </div>
+      <div class="a-mast">
+        <div class="a-mast-in">
+          <h1 data-t="tagline">Did you know? Now you do.</h1>
+          <p data-t="sub">Surprising facts and explainers about the UAE, Saudi Arabia, and the world.</p>
+          <div class="a-tools">
+            <span class="pv-search">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span data-t="search">Search 361 articles…</span>
+            </span>
+          </div>
+          <div class="pv-chips" style="margin-block-start:var(--s2)">
+            <a class="pv-chip" data-on><i style="--cat:#B45309"></i><span data-t="c_all">All</span></a>
+            <a class="pv-chip"><i style="--cat:#0EA5E9"></i><span data-t="c_uae">UAE</span></a>
+            <a class="pv-chip"><i style="--cat:#65A30D"></i><span data-t="c_ksa">Saudi Arabia</span></a>
+            <a class="pv-chip"><i style="--cat:#8B5CF6"></i><span data-t="c_guide">Practical Guide</span></a>
+            <a class="pv-chip"><i style="--cat:#14B8A6"></i><span data-t="c_tech">Technology</span></a>
+            <a class="pv-chip"><i style="--cat:#D97706"></i><span data-t="c_islam">Islamic Knowledge</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="a-sec">
+        <div class="a-sec-head">
+          <h2 data-t="latest">Latest</h2>
+          <a data-t="viewall">Browse all →</a>
+        </div>
+        <div class="a-grid">
+          <a class="a-card"><span class="pv-thumb" style="--cat:#0EA5E9"></span>
+            <div class="a-card-body">
+              <span class="pv-eyebrow" style="--cat:#0EA5E9" data-t="cat_uae">Dubai &amp; UAE Places</span>
+              <h3 data-t="t1">Burj Khalifa: 10 Surprising Facts You Didn't Know</h3>
+              <p data-t="e1">Discover the design, engineering, and records behind the world's tallest building.</p>
+              <div class="pv-meta"><span data-t="d1">26 June 2026</span><span data-t="r1">6 min read</span></div>
+            </div></a>
+          <a class="a-card"><span class="pv-thumb" style="--cat:#65A30D"></span>
+            <div class="a-card-body">
+              <span class="pv-eyebrow" style="--cat:#65A30D" data-t="cat_ksa">Saudi Arabia</span>
+              <h3 data-t="t2">AlUla: Saudi Arabia's Archaeological Wonder</h3>
+              <p data-t="e2">From Hegra and the Nabataeans to the modern tourism shift under Vision 2030.</p>
+              <div class="pv-meta"><span data-t="d2">18 June 2026</span><span data-t="r2">4 min read</span></div>
+            </div></a>
+          <a class="a-card"><span class="pv-thumb" style="--cat:#8B5CF6"></span>
+            <div class="a-card-body">
+              <span class="pv-eyebrow" style="--cat:#8B5CF6" data-t="cat_guide">Practical Guide</span>
+              <h3 data-t="t3">Dubai Metro Guide</h3>
+              <p data-t="e3">Lines, stations, Nol cards, fares, accessibility, and practical travel tips.</p>
+              <div class="pv-meta"><span data-t="d3">15 June 2026</span><span data-t="r3">7 min read</span></div>
+            </div></a>
+        </div>
+      </div>
+      <div class="pv-foot" data-t="foot">© 2026 doyouknow.app · Did you know? Now you do.</div>
+    </div>
+  </div>
+  <p class="legend"><b>Note</b> Thumbnails are abstract colour fields keyed to category — no text baked into artwork, no illustration pretending to be product imagery.</p>
+</section>
+
+<!-- ==================== DIRECTION B ==================== -->
+<section class="dir" data-dir="b">
+  <div class="dir-head">
+    <div class="dir-kicker">Direction B · Strong fit</div>
+    <h1 class="dir-name">Editorial Index</h1>
+    <p class="dir-sur">Commits fully to <strong>Explore</strong>. The homepage stops being a landing page and becomes an index: a compact masthead, search, category rail, then a dense text-led list where the headline does the work and the thumbnail is a 96px aid. Amber stops being a fill and becomes a rule — a mark of structure. A serif display face gives the knowledge brand a voice that Inter alone cannot.</p>
+    <dl class="facts">
+      <div class="fact"><dt>Composition</dt><dd>Rows, not tiles. Roughly 3× more articles visible per screen</dd></div>
+      <div class="fact"><dt>Identity</dt><dd>Serif headlines + naskh Arabic; amber as rule/marker, navy as ink</dd></div>
+      <div class="fact"><dt>Type cost</dt><dd>One display family, 2 weights, subset — budget ~30–45KB. Arabic naskh adds ~40KB if adopted</dd></div>
+      <div class="fact"><dt>Risk</dt><dd>Moderate. Biggest craft gain per unit of risk; needs a real font decision</dd></div>
+    </dl>
+  </div>
+
+  <div class="spec-label">Home · above the fold</div>
+  <p class="spec-note">Same content budget as A, far more of the library visible. Every row carries its own category colour, date and read time — the scent that "GENERAL ×11" destroys today.</p>
+  <div class="frame" data-theme="light">
+    <div class="pv pv-b" dir="ltr">
+      <div class="pv-bar">
+        <a class="pv-logo"><span class="pv-dot"></span>doyouknow<em>.app</em></a>
+        <a class="pv-navlink" data-t="nav1">Countries</a>
+        <a class="pv-navlink" data-t="nav2">Categories</a>
+        <a class="pv-navlink" data-t="nav3">About</a>
+      </div>
+      <div class="b-mast">
+        <div class="b-mast-in">
+          <div class="b-rule"><h1 data-t="tagline">Did you know? Now you do.</h1></div>
+          <p data-t="sub">Surprising facts and explainers about the UAE, Saudi Arabia, and the world.</p>
+          <div class="b-tools">
+            <span class="pv-search">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span data-t="search">Search 361 articles…</span>
+            </span>
+            <div class="pv-chips">
+              <a class="pv-chip" data-on><i style="--cat:#B45309"></i><span data-t="c_all">All</span></a>
+              <a class="pv-chip"><i style="--cat:#0EA5E9"></i><span data-t="c_uae">UAE</span></a>
+              <a class="pv-chip"><i style="--cat:#65A30D"></i><span data-t="c_ksa">Saudi Arabia</span></a>
+              <a class="pv-chip"><i style="--cat:#8B5CF6"></i><span data-t="c_guide">Practical Guide</span></a>
+              <a class="pv-chip"><i style="--cat:#14B8A6"></i><span data-t="c_tech">Technology</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-sec">
+        <div class="b-sec-head"><h2 data-t="latest">Latest</h2><small data-t="count">361 articles · newest first</small></div>
+        <div class="b-list">
+          <a class="b-row"><span class="pv-thumb" style="--cat:#0EA5E9"></span>
+            <div class="b-row-main">
+              <span class="pv-eyebrow" style="--cat:#0EA5E9" data-t="cat_uae">Dubai &amp; UAE Places</span>
+              <h3 data-t="t1">Burj Khalifa: 10 Surprising Facts You Didn't Know</h3>
+              <p data-t="e1">Discover the design, engineering, and records behind the world's tallest building.</p>
+            </div>
+            <div class="b-row-side"><span data-t="d1">26 June 2026</span><span data-t="r1">6 min read</span></div></a>
+          <a class="b-row"><span class="pv-thumb" style="--cat:#65A30D"></span>
+            <div class="b-row-main">
+              <span class="pv-eyebrow" style="--cat:#65A30D" data-t="cat_ksa">Saudi Arabia</span>
+              <h3 data-t="t2">AlUla: Saudi Arabia's Archaeological Wonder</h3>
+              <p data-t="e2">From Hegra and the Nabataeans to the modern tourism shift under Vision 2030.</p>
+            </div>
+            <div class="b-row-side"><span data-t="d2">18 June 2026</span><span data-t="r2">4 min read</span></div></a>
+          <a class="b-row"><span class="pv-thumb" style="--cat:#8B5CF6"></span>
+            <div class="b-row-main">
+              <span class="pv-eyebrow" style="--cat:#8B5CF6" data-t="cat_guide">Practical Guide</span>
+              <h3 data-t="t3">Dubai Metro Guide</h3>
+              <p data-t="e3">Lines, stations, Nol cards, fares, accessibility, and practical travel tips.</p>
+            </div>
+            <div class="b-row-side"><span data-t="d3">15 June 2026</span><span data-t="r3">7 min read</span></div></a>
+          <a class="b-row"><span class="pv-thumb" style="--cat:#14B8A6"></span>
+            <div class="b-row-main">
+              <span class="pv-eyebrow" style="--cat:#14B8A6" data-t="cat_guide2">Practical Guide</span>
+              <h3 data-t="t4">How to Use Absher: A Complete Guide for Residents</h3>
+              <p data-t="e4">Registration, sign-in, the services that matter most, and common problems solved.</p>
+            </div>
+            <div class="b-row-side"><span data-t="d4">12 June 2026</span><span data-t="r4">5 min read</span></div></a>
+          <a class="b-row"><span class="pv-thumb" style="--cat:#F43F5E"></span>
+            <div class="b-row-main">
+              <span class="pv-eyebrow" style="--cat:#F43F5E" data-t="cat_ksa2">Saudi Arabia</span>
+              <h3 data-t="t5">The Edge of the World: A Natural Wonder Near Riyadh</h3>
+              <p data-t="e5">How to reach it, when to go, and what makes the escarpment worth the drive.</p>
+            </div>
+            <div class="b-row-side"><span data-t="d5">9 June 2026</span><span data-t="r5">5 min read</span></div></a>
+        </div>
+      </div>
+      <div class="pv-foot" data-t="foot">© 2026 doyouknow.app · Did you know? Now you do.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DIRECTION C ==================== -->
+<section class="dir" data-dir="c">
+  <div class="dir-head">
+    <div class="dir-kicker">Direction C · Divergent</div>
+    <h1 class="dir-name">Fact First</h1>
+    <p class="dir-sur">Still <strong>Explore</strong>, but the brand promise leads. Instead of a tagline the masthead states an actual verified fact from the library, with its source and a link to the article — the site demonstrates its value in the first screen rather than describing it. Below, tiles are weighted by editorial importance, not poured into an even grid. Warm paper in light, deep navy field in dark.</p>
+    <dl class="facts">
+      <div class="fact"><dt>Bet</dt><dd>Curiosity is the product — show a fact, don't promise facts</dd></div>
+      <div class="fact"><dt>Composition</dt><dd>12-col grid with genuine weight differences; numerals as editorial furniture</dd></div>
+      <div class="fact"><dt>Editorial cost</dt><dd>Needs a curated, sourced "fact of the day" per language. Real ongoing work</dd></div>
+      <div class="fact"><dt>Risk</dt><dd>Highest. Strongest identity; fails loudly if the fact rotation is ever stale or unsourced</dd></div>
+    </dl>
+  </div>
+
+  <div class="spec-label">Home · above the fold</div>
+  <p class="spec-note">The masthead fact is real and attributed to the article it came from. If a fact cannot be sourced it must not run — that constraint is the direction's whole integrity.</p>
+  <div class="frame" data-theme="light">
+    <div class="pv pv-c" dir="ltr">
+      <div class="pv-bar">
+        <a class="pv-logo"><span class="pv-dot"></span>doyouknow<em>.app</em></a>
+        <a class="pv-navlink" data-t="nav1">Countries</a>
+        <a class="pv-navlink" data-t="nav2">Categories</a>
+        <a class="pv-navlink" data-t="nav3">About</a>
+      </div>
+      <div class="c-mast">
+        <div class="c-mast-in">
+          <div class="c-kicker" data-t="c_today">Today · Dubai &amp; UAE</div>
+          <p class="c-fact" data-t="c_factline">The Burj Khalifa's foundation reaches <b>50 metres</b> underground.</p>
+          <div class="c-src">
+            <span data-t="c_from">From</span>
+            <a data-t="t1">Burj Khalifa: 10 Surprising Facts You Didn't Know</a>
+          </div>
+        </div>
+      </div>
+      <div class="c-sec">
+        <div class="pv-chips" style="margin-block-end:var(--s6)">
+          <a class="pv-chip" data-on><i style="--cat:#B45309"></i><span data-t="c_all">All</span></a>
+          <a class="pv-chip"><i style="--cat:#0EA5E9"></i><span data-t="c_uae">UAE</span></a>
+          <a class="pv-chip"><i style="--cat:#65A30D"></i><span data-t="c_ksa">Saudi Arabia</span></a>
+          <a class="pv-chip"><i style="--cat:#8B5CF6"></i><span data-t="c_guide">Practical Guide</span></a>
+        </div>
+        <div class="c-grid">
+          <a class="c-tile is-lead"><span class="c-num">10</span>
+            <span class="pv-eyebrow" style="--cat:#0EA5E9" data-t="cat_uae">Dubai &amp; UAE Places</span>
+            <h3 data-t="t1">Burj Khalifa: 10 Surprising Facts You Didn't Know</h3>
+            <p data-t="e1">Discover the design, engineering, and records behind the world's tallest building.</p>
+            <div class="pv-meta"><span data-t="d1">26 June 2026</span><span data-t="r1">6 min read</span></div></a>
+          <a class="c-tile is-wide">
+            <span class="pv-eyebrow" style="--cat:#65A30D" data-t="cat_ksa">Saudi Arabia</span>
+            <h3 data-t="t2">AlUla: Saudi Arabia's Archaeological Wonder</h3>
+            <p data-t="e2">From Hegra and the Nabataeans to the modern tourism shift under Vision 2030.</p>
+            <div class="pv-meta"><span data-t="d2">18 June 2026</span><span data-t="r2">4 min read</span></div></a>
+          <a class="c-tile">
+            <span class="pv-eyebrow" style="--cat:#8B5CF6" data-t="cat_guide">Practical Guide</span>
+            <h3 data-t="t3">Dubai Metro Guide</h3>
+            <div class="pv-meta"><span data-t="r3">7 min read</span></div></a>
+          <a class="c-tile">
+            <span class="pv-eyebrow" style="--cat:#14B8A6" data-t="cat_guide2">Practical Guide</span>
+            <h3 data-t="t4">How to Use Absher: A Complete Guide for Residents</h3>
+            <div class="pv-meta"><span data-t="r4">5 min read</span></div></a>
+          <a class="c-tile">
+            <span class="pv-eyebrow" style="--cat:#F43F5E" data-t="cat_ksa2">Saudi Arabia</span>
+            <h3 data-t="t5">The Edge of the World: A Natural Wonder Near Riyadh</h3>
+            <div class="pv-meta"><span data-t="r5">5 min read</span></div></a>
+        </div>
+      </div>
+      <div class="pv-foot" data-t="foot">© 2026 doyouknow.app · Did you know? Now you do.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SHARED SPECIMENS ==================== -->
+<section>
+  <div class="spec-label">Article header · all directions</div>
+  <p class="spec-note">The headline appears <strong>once</strong>. Artwork carries no text, so it cannot clip or overflow — which is what breaks ~361 Arabic heroes today. Measure drops from ~95 characters to 68.</p>
+  <div class="frame" data-theme="light">
+    <div class="pv pv-active-clone" id="artClone" dir="ltr">
+      <div class="pv-bar">
+        <a class="pv-logo"><span class="pv-dot"></span>doyouknow<em>.app</em></a>
+      </div>
+      <div class="art">
+        <div class="art-crumb"><span data-t="home">Home</span><i>›</i><span data-t="cat_uae">Dubai &amp; UAE Places</span></div>
+        <div class="art-in">
+          <span class="pv-eyebrow" style="--cat:#0EA5E9" data-t="cat_uae">Dubai &amp; UAE Places</span>
+          <h1 data-t="t1">Burj Khalifa: 10 Surprising Facts You Didn't Know</h1>
+          <div class="art-byline">
+            <span class="art-av">DE</span>
+            <span data-t="byline">doyouknow.app Editorial Team</span>
+            <span data-t="d1">26 June 2026</span>
+            <span data-t="r1">6 min read</span>
+          </div>
+        </div>
+        <span class="pv-thumb art-hero" style="--cat:#0EA5E9"></span>
+        <div class="art-body">
+          <p data-t="body1">The tower's design takes its geometry from the Hymenocallis, a desert flower whose three-lobed form gave engineers a way to buttress a very tall, very slender building against wind.</p>
+          <p data-t="body2">That shape is not decoration. Each setback as the tower rises interrupts the wind so it cannot organise into a single rhythm strong enough to sway the structure.</p>
+        </div>
+        <div class="art-flag" data-t="flag">Measure set to 68ch — comfortable reading. Today's 800px at 1.05rem runs to roughly 95 characters per line.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-label">Type scale · implements design-system.md</div>
+  <p class="spec-note">The scale below is already written into <code>design/design-system.md</code> §Type Scale — it was simply never tokenised. Today's CSS has 0 type tokens and 128 raw <code>font-size</code> declarations across ~30 values and 11 hand-rolled clamp ramps.</p>
+  <div class="frame" data-theme="light">
+    <div class="pv pv-type-clone" id="typeClone" dir="ltr">
+      <div class="sp-type">
+        <div class="sp-row"><span class="sp-tag">Display</span><span style="font-family:var(--f-display);font-size:var(--t-display);font-weight:800;line-height:1.1;letter-spacing:-.02em" data-t="sp_display">Did you know? Now you do.</span></div>
+        <div class="sp-row"><span class="sp-tag">H1</span><span style="font-family:var(--f-display);font-size:var(--t-h1);font-weight:700;line-height:1.2" data-t="t1">Burj Khalifa: 10 Surprising Facts</span></div>
+        <div class="sp-row"><span class="sp-tag">H2</span><span style="font-family:var(--f-display);font-size:var(--t-h2);font-weight:600" data-t="latest">Latest</span></div>
+        <div class="sp-row"><span class="sp-tag">H3</span><span style="font-family:var(--f-display);font-size:var(--t-h3);font-weight:600" data-t="t3">Dubai Metro Guide</span></div>
+        <div class="sp-row"><span class="sp-tag">Lead</span><span style="font-size:var(--t-lead);color:var(--muted)" data-t="sub">Surprising facts and explainers about the UAE, Saudi Arabia, and the world.</span></div>
+        <div class="sp-row"><span class="sp-tag">Body 16</span><span style="font-size:var(--t-body)" data-t="body2">That shape is not decoration. Each setback as the tower rises interrupts the wind.</span></div>
+        <div class="sp-row"><span class="sp-tag">Small 14</span><span style="font-size:var(--t-small);color:var(--muted)" data-t="e3">Lines, stations, Nol cards, fares, accessibility, and practical travel tips.</span></div>
+        <div class="sp-row"><span class="sp-tag">Caption 12</span><span style="font-size:var(--t-caption);color:var(--muted)" data-t="d1">26 June 2026</span></div>
+        <div class="sp-row" style="border:0"><span class="sp-tag">Label 11</span><span class="pv-eyebrow" style="--cat:#0EA5E9" data-t="cat_uae">Dubai &amp; UAE Places</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-label">Category colour · corrected for contrast</div>
+  <p class="spec-note">Eight category hues, each carrying a real category instead of the single "General" badge shipping today. Values below are the light-mode text tints; every one clears 4.5:1 on white.</p>
+  <div class="frame" data-theme="light">
+    <div class="pv pv-sw-clone" id="swClone" dir="ltr">
+      <div class="sp-swatches">
+        <div class="sw"><div class="sw-chip" style="--c:#0369A1"></div><div class="sw-txt"><b data-t="cat_uae">Dubai &amp; UAE Places</b><code>#0369A1 · 5.9:1</code></div></div>
+        <div class="sw"><div class="sw-chip" style="--c:#4D7C0F"></div><div class="sw-txt"><b data-t="cat_ksa">Saudi Arabia</b><code>#4D7C0F · 4.99:1</code></div></div>
+        <div class="sw"><div class="sw-chip" style="--c:#6D28D9"></div><div class="sw-txt"><b data-t="cat_guide">Practical Guide</b><code>#6D28D9 · 7.10:1</code></div></div>
+        <div class="sw"><div class="sw-chip" style="--c:#0F766E"></div><div class="sw-txt"><b data-t="c_tech">Technology</b><code>#0F766E · 5.47:1</code></div></div>
+        <div class="sw"><div class="sw-chip" style="--c:#B45309"></div><div class="sw-txt"><b data-t="c_islam">Islamic Knowledge</b><code>#B45309 · 5.0:1</code></div></div>
+        <div class="sw"><div class="sw-chip" style="--c:#BE123C"></div><div class="sw-txt"><b data-t="c_health">Health</b><code>#BE123C · 6.29:1</code></div></div>
+        <div class="sw"><div class="sw-chip" style="--c:#1D4ED8"></div><div class="sw-txt"><b data-t="c_sci">Science</b><code>#1D4ED8 · 6.7:1</code></div></div>
+        <div class="sw"><div class="sw-chip" style="--c:#9A3412"></div><div class="sw-txt"><b data-t="c_stories">Stories</b><code>#9A3412 · 7.31:1</code></div></div>
+      </div>
+    </div>
+  </div>
+  <p class="legend"><b>Contrast</b> computed against #FFFFFF. <b>Today</b> card dates run #94A3B8 at 2.56:1 (fails AA); dark-mode muted runs 3.07:1.</p>
+</section>
+
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  /* Real strings from the live site. Arabic is copied from ar/ output,
+     not translated here — titles, categories and read-times are genuine. */
+  var AR = {
+    nav1:"الدول", nav2:"الأقسام", nav3:"عن الموقع",
+    tagline:"هل تعلم؟ الآن تعلم.",
+    sub:"حقائق مذهلة وشروحات عن الإمارات والسعودية والعالم.",
+    search:"ابحث في 361 مقالاً…",
+    latest:"الأحدث", viewall:"تصفح الكل ←", count:"361 مقالاً · الأحدث أولاً",
+    c_all:"الكل", c_uae:"الإمارات", c_ksa:"السعودية",
+    c_guide:"دليل عملي", c_tech:"التقنية", c_islam:"المعرفة الإسلامية",
+    c_health:"الصحة", c_sci:"العلوم", c_stories:"قصص",
+    cat_uae:"دبي والإمارات", cat_ksa:"السعودية",
+    cat_guide:"دليل عملي", cat_guide2:"دليل عملي", cat_ksa2:"السعودية",
+    t1:"برج خليفة: 10 حقائق مذهلة لا تعرفها",
+    t2:"العلا: عجيبة السعودية الأثرية",
+    t3:"دليل مترو دبي",
+    t4:"كيف تستخدم منصة أبشر: دليل شامل للمقيمين",
+    t5:"حافة العالم: عجيبة طبيعية قرب الرياض",
+    e1:"اكتشف التصميم والهندسة والأرقام القياسية وراء أطول مبنى في العالم.",
+    e2:"اكتشف العلا، الكنز الأثري السعودي. من مدائن صالح وحضارة النبط إلى التحول السياحي الحديث تحت رؤية 2030.",
+    e3:"الخطوط والمحطات وبطاقة نول والأجور وإمكانية الوصول ونصائح عملية للتنقل.",
+    e4:"دليل عملي لاستخدام منصة أبشر السعودية. التسجيل، تسجيل الدخول، أهم الخدمات، والمشاكل الشائعة وكيفية حلها.",
+    e5:"كيف تصل إليها، ومتى تذهب، وما الذي يجعل الرحلة تستحق العناء.",
+    d1:"٢٦ يونيو ٢٠٢٦", d2:"١٨ يونيو ٢٠٢٦", d3:"١٥ يونيو ٢٠٢٦",
+    d4:"١٢ يونيو ٢٠٢٦", d5:"٩ يونيو ٢٠٢٦",
+    r1:"6 دقائق", r2:"4 دقائق", r3:"7 دقائق", r4:"5 دقائق", r5:"5 دقائق",
+    home:"الرئيسية", byline:"فريق التحرير في دويوكنو",
+    /* <bdi> isolates the Latin trademark so bidi reordering cannot mangle it */
+    foot:"© 2026 <bdi>doyouknow.app</bdi> · هل تعلم؟ الآن تعلم.",
+    c_today:"اليوم · دبي والإمارات",
+    c_factline:"يمتد أساس برج خليفة إلى <b>50 متراً</b> تحت الأرض.",
+    c_from:"من مقال",
+    sp_display:"هل تعلم؟ الآن تعلم.",
+    body1:"يستمد تصميم البرج هندسته من زهرة الهيمينوكاليس الصحراوية، التي منح شكلها الثلاثي المهندسين وسيلة لتدعيم مبنى شديد الارتفاع والنحافة ضد الرياح.",
+    body2:"هذا الشكل ليس زخرفة. كل انحسار مع ارتفاع البرج يقطع الرياح فلا تنتظم في إيقاع واحد قوي بما يكفي لهز المبنى.",
+    flag:"عرض السطر 68 حرفاً — قراءة مريحة. الحالي 800 بكسل يصل إلى نحو 95 حرفاً في السطر."
+  };
+
+  var nodes = document.querySelectorAll('[data-t]');
+  var EN = {};
+  nodes.forEach(function(n){ EN[n.getAttribute('data-t')] = n.innerHTML; });
+
+  var state = {
+    dir:  localStorage.getItem('dyk-dir')   || 'a',
+    lang: localStorage.getItem('dyk-lang')  || 'en',
+    theme:localStorage.getItem('dyk-theme') || 'light'
+  };
+
+  function applyLang(){
+    var ar = state.lang === 'ar';
+    var map = ar ? AR : EN;
+    nodes.forEach(function(n){
+      var k = n.getAttribute('data-t');
+      if (map[k] !== undefined) n.innerHTML = map[k];
+      else if (!ar && EN[k] !== undefined) n.innerHTML = EN[k];
+    });
+    document.querySelectorAll('.pv').forEach(function(p){
+      p.setAttribute('dir', ar ? 'rtl' : 'ltr');
+      p.setAttribute('lang', ar ? 'ar' : 'en');
+    });
+  }
+
+  function applyTheme(){
+    document.querySelectorAll('.frame').forEach(function(f){
+      f.setAttribute('data-theme', state.theme);
+    });
+  }
+
+  /* shared specimens adopt the active direction's tokens */
+  function applyDir(){
+    document.querySelectorAll('.dir').forEach(function(s){
+      s.classList.toggle('is-on', s.getAttribute('data-dir') === state.dir);
+    });
+    ['artClone','typeClone','swClone'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.classList.remove('pv-a','pv-b','pv-c');
+      el.classList.add('pv-' + state.dir);
+    });
+  }
+
+  function wire(id, key, fn){
+    var seg = document.getElementById(id);
+    if (!seg) return;
+    seg.addEventListener('click', function(e){
+      var b = e.target.closest('button');
+      if (!b) return;
+      state[key] = b.getAttribute('data-v');
+      localStorage.setItem('dyk-' + key, state[key]);
+      sync(seg, state[key]);
+      fn();
+    });
+    sync(seg, state[key]);
+  }
+  function sync(seg, v){
+    seg.querySelectorAll('button').forEach(function(b){
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-v') === v));
+    });
+  }
+
+  wire('segDir','dir',applyDir);
+  wire('segLang','lang',applyLang);
+  wire('segTheme','theme',applyTheme);
+
+  applyDir(); applyLang(); applyTheme();
+})();
+</script>
+</body>
+</html>

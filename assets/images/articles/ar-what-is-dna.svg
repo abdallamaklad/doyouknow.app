@@ -3,9 +3,9 @@
   <desc id="desc">Original doyouknow.app editorial artwork for ما هو الحمض النووي وكيف يحمل المعلومات.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#082032"/>
-      <stop offset="58%" stop-color="#0EA5E9"/>
-      <stop offset="100%" stop-color="#5EEAD4"/>
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="58%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
     <radialGradient id="glow" cx="76%" cy="22%" r="58%">
       <stop offset="0%" stop-color="#fff" stop-opacity=".35"/>
@@ -23,16 +23,16 @@
   <circle cx="884" cy="170" r="360" fill="url(#glow)"/>
   <path d="M0 520 C160 438 302 560 460 478 C632 388 772 496 936 414 C1049 357 1136 372 1200 338 L1200 675 L0 675Z" fill="#fff" opacity=".13"/>
   <g filter="url(#shadow)" transform="translate(0 0)">
-    <circle cx="600" cy="330" r="170" fill="#fff" opacity=".16"/><circle cx="600" cy="330" r="170" fill="none" stroke="#fff" stroke-width="14" opacity=".7"/><circle cx="600" cy="330" r="90" fill="none" stroke="#fff" stroke-width="10" opacity=".5"/><circle cx="600" cy="330" r="14" fill="#fff" opacity=".85"/>
+    <circle cx="600" cy="340" r="190" fill="#fff" opacity=".10"/><circle cx="600" cy="340" r="132" fill="none" stroke="#fff" stroke-width="16" opacity=".38"/><circle cx="600" cy="340" r="74" fill="#fff" opacity=".22"/><path d="M330 470c150-96 330-96 480 0" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".34"/>
   </g>
   <g transform="translate(0 0)" direction="rtl">
     <text x="1080" y="122" text-anchor="end" fill="#fff" opacity=".82" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">DOYOUKNOW.APP</text>
     <text x="1080" y="202" text-anchor="end" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="56" font-weight="900">ما هو الحمض النووي وكيف يحمل المعلومات</text>
-    <text x="1080" y="262" text-anchor="end" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">العلوم</text>
-    <rect x="760" y="300" width="320" height="8" rx="4" fill="#5EEAD4"/>
+    <text x="1080" y="262" text-anchor="end" fill="#fff" opacity=".86" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="30" font-weight="700">doyouknow.app</text>
+    <rect x="760" y="300" width="320" height="8" rx="4" fill="#38BDF8"/>
   </g>
   <g transform="translate(120 542)">
     <rect width="386" height="58" rx="29" fill="#fff" opacity=".14"/>
-    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">العلوم</text>
+    <text x="32" y="38" fill="#fff" font-family="Inter, Cairo, Tajawal, Arial, sans-serif" font-size="24" font-weight="800">doyouknow.app</text>
   </g>
 </svg>

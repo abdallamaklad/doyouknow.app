@@ -152,24 +152,81 @@
     overlay?.addEventListener('click', closeMenu);
 
     // --- Countries / Categories dropdown nav ---
-    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
-        const dropdown = toggle.nextElementSibling;
-        function closeDropdown() { dropdown?.classList.remove('active'); toggle.setAttribute('aria-expanded', 'false'); }
+    // JS drives open/close state so pointer, touch and keyboard all agree.
+    // The CSS :hover fallback is disabled by adding .nav-js (see style.css).
+    function closeAllDropdowns(except) {
+        document.querySelectorAll('.nav-dropdown.active').forEach(function(d) {
+            if (d !== except) d.classList.remove('active');
+        });
+        document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) {
+            const dd = t.parentElement && t.parentElement.querySelector('.nav-dropdown');
+            if (dd !== except) t.setAttribute('aria-expanded', 'false');
+        });
+    }
+
+    document.querySelectorAll('.main-nav').forEach(function(n) { n.classList.add('nav-js'); });
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    document.querySelectorAll('.nav-item-countries, .nav-item-categories').forEach(function(item) {
+        const toggle = item.querySelector('.nav-dropdown-toggle');
+        const dropdown = item.querySelector('.nav-dropdown');
+        if (!toggle || !dropdown) return;
+        let closeTimer = null;
+
         function openDropdown() {
-            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
-            document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
-            dropdown?.classList.add('active'); toggle.setAttribute('aria-expanded', 'true');
+            clearTimeout(closeTimer);
+            closeAllDropdowns(dropdown);
+            dropdown.classList.add('active');
+            toggle.setAttribute('aria-expanded', 'true');
         }
+        function closeDropdown() {
+            clearTimeout(closeTimer);
+            dropdown.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+        // small grace period so a brief slip off the menu doesn't close it
+        function scheduleClose() {
+            clearTimeout(closeTimer);
+            closeTimer = setTimeout(closeDropdown, 180);
+        }
+
         toggle.addEventListener('click', function(e) {
             e.stopPropagation();
             toggle.getAttribute('aria-expanded') === 'true' ? closeDropdown() : openDropdown();
         });
-    });
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.nav-item-countries, .nav-item-categories')) {
-            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
-            document.querySelectorAll('.nav-dropdown-toggle[aria-expanded="true"]').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+
+        if (canHover) {
+            item.addEventListener('mouseenter', openDropdown);
+            item.addEventListener('mouseleave', scheduleClose);
         }
+
+        item.addEventListener('focusin', openDropdown);
+        item.addEventListener('focusout', function(e) {
+            if (!item.contains(e.relatedTarget)) closeDropdown();
+        });
+
+        toggle.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                openDropdown();
+                const first = dropdown.querySelector('a');
+                if (first) first.focus();
+            }
+        });
+
+        dropdown.addEventListener('keydown', function(e) {
+            if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp' && e.key !== 'Escape') return;
+            const links = Array.prototype.slice.call(dropdown.querySelectorAll('a'));
+            const i = links.indexOf(document.activeElement);
+            e.preventDefault();
+            if (e.key === 'Escape') { closeDropdown(); toggle.focus(); }
+            else if (e.key === 'ArrowDown') (links[i + 1] || links[0]).focus();
+            else (links[i - 1] || links[links.length - 1]).focus();
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item-countries, .nav-item-categories')) closeAllDropdowns();
     });
 
     // --- Keyboard Shortcuts ---
@@ -210,7 +267,7 @@
         if (e.key === 'Escape') {
             closeMenu();
             closeKeyboardHelp();
-            document.querySelectorAll('.nav-dropdown.active').forEach(function(d) { d.classList.remove('active'); });
+            closeAllDropdowns();
             if (searchOverlay.classList.contains('active')) {
                 closeSearch();
             }
@@ -921,6 +978,11 @@
             outcome: outcome,
             language: document.documentElement.lang || 'en'
         };
+        if (!form.classList.contains('contact-form') && typeof newsletterAttribution === 'object') {
+            params.utm_source = newsletterAttribution.utm_source || '(direct)';
+            params.utm_medium = newsletterAttribution.utm_medium || '(none)';
+            params.utm_campaign = newsletterAttribution.utm_campaign || '(not set)';
+        }
     }
     function emitLeadConversion(form, eventName, method) {
         var events = leadConversions ? (leadConversions.get(form) || new Set()) : null;
@@ -984,6 +1046,30 @@
     });
 
     // --- Newsletter Forms ---
+    // Keep campaign attribution across the mailto handoff without storing the email address.
+    var NEWSLETTER_ATTRIBUTION_KEY = 'dyk-newsletter-attribution';
+    var NEWSLETTER_ATTRIBUTION_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    function getNewsletterAttribution() {
+        var attribution = {};
+        try {
+            var query = new URLSearchParams(window.location.search);
+            NEWSLETTER_ATTRIBUTION_KEYS.forEach(function(key) {
+                var value = query.get(key) || sessionStorage.getItem(key);
+                if (value) {
+                    attribution[key] = value;
+                    sessionStorage.setItem(key, value);
+                }
+            });
+            if (Object.keys(attribution).length) {
+                localStorage.setItem(NEWSLETTER_ATTRIBUTION_KEY, JSON.stringify(attribution));
+            } else {
+                attribution = JSON.parse(localStorage.getItem(NEWSLETTER_ATTRIBUTION_KEY) || '{}');
+            }
+        } catch (e) {}
+        return attribution;
+    }
+    var newsletterAttribution = getNewsletterAttribution();
+
     document.querySelectorAll('.newsletter-form, .newsletter-signup, .footer-newsletter').forEach(function(form) {
         var input = form.querySelector('input[type="email"]');
         if (!input) return;
@@ -1008,9 +1094,25 @@
                 showToast(lang === 'ar' ? 'تم تأكيد اشتراكك بنجاح' : 'You are subscribed successfully', 'success', 6000);
             };
             var fallback = function() {
-                var subject = lang === 'ar' ? 'اشتراك في نشرة doyouknow.app' : 'Subscribe to the doyouknow.app newsletter';
-                var body = lang === 'ar' ? 'أرغب في الاشتراك في النشرة البريدية.\\nبريدي الإلكتروني: ' + email : 'Please subscribe me to the newsletter.\\nMy email: ' + email;
-                window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                var nlSubject = lang === 'ar' ? 'اشتراك في نشرة doyouknow.app' : 'Subscribe to the doyouknow.app newsletter';
+                var nlBody = lang === 'ar'
+                    ? 'أرغب في الاشتراك في النشرة البريدية.\nبريدي الإلكتروني: ' + email
+                    : 'Please subscribe me to the newsletter.\nMy email: ' + email;
+                var attribution = newsletterAttribution;
+                var attributionQuery = Object.keys(attribution).map(function(key) {
+                    return key + '=' + encodeURIComponent(attribution[key]);
+                }).join('&');
+                if (attributionQuery) nlBody += '\n\nCampaign: ' + attributionQuery;
+                try {
+                    localStorage.setItem('dyk-newsletter-pending', JSON.stringify({
+                        timestamp: new Date().toISOString(),
+                        outcome: 'intent',
+                        method: 'mailto',
+                        language: lang,
+                        attribution: attribution
+                    }));
+                } catch (e) {}
+                window.location.href = 'mailto:hello@doyouknow.app?subject=' + encodeURIComponent(nlSubject) + '&body=' + encodeURIComponent(nlBody);
                 mailtoIntent(form, 'mailto');
                 sendGA4Event('generate_lead_intent', leadParams(form, 'mailto', 'intent'));
             };
