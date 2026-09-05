@@ -68,4 +68,15 @@ jobs:
           echo "Caddyfile at: $CADDYFILE"
           echo "--- doyouknow.app block in Caddyfile ---"
           grep -B2 -A20 "doyouknow.app" "$CADDYFILE"
+          echo "--- how many times does doyouknow.app appear in Caddyfile? ---"
+          grep -c "doyouknow.app" "$CADDYFILE"
+          echo "--- exact stat of the telomeres file ---"
+          stat /var/www/doyouknow/current/en/article/how-telomeres-actually-control-cellular-aging.html
+          echo "--- byte-exact filename listing (find, not ls|grep) ---"
+          find /var/www/doyouknow/current/en/article -maxdepth 1 -iname "*telomere*" -print0 | xargs -0 -I{} echo "FOUND: [{}]"
+          echo "--- first 200 bytes of the file ---"
+          head -c 200 /var/www/doyouknow/current/en/article/how-telomeres-actually-control-cellular-aging.html
+          echo ""
+          echo "--- compare perms to a known-working file ---"
+          stat /var/www/doyouknow/current/en/article/how-airline-ticket-pricing-actually-works.html
           REMOTE_SCRIPT
