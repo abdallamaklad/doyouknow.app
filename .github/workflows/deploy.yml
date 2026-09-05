@@ -47,4 +47,11 @@ jobs:
           ls "$VPS_PATH/en/article" | grep telomeres || echo "telomeres file NOT FOUND"
           echo "--- write test ---"
           touch "$VPS_PATH/en/article/_deploy_write_test" && echo "write OK" && rm "$VPS_PATH/en/article/_deploy_write_test" || echo "write FAILED"
+          echo "--- docker containers ---"
+          docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
+          echo "--- docker containers with mounts (looking for the webroot or a static-site server) ---"
+          for c in $(docker ps -q); do
+            echo "== $(docker inspect --format '{{.Name}}' "$c") =="
+            docker inspect --format '{{range .Mounts}}{{.Source}} -> {{.Destination}} ({{.Type}}){{"\n"}}{{end}}' "$c"
+          done
           REMOTE_SCRIPT
