@@ -101,8 +101,17 @@ jobs:
           echo "--- make the real request now, then check caddy logs for it ---"
           curl -sk -o /dev/null --resolve doyouknow.app:443:127.0.0.1 "https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html?diag=$(date +%s)"
           sleep 2
-          echo "--- last 60 lines of caddy container logs ---"
-          docker logs qulture-caddy-1 --tail 60 2>&1
+          echo "--- BEFORE restart: telomeres status ---"
+          curl -sk -o /dev/null -w "before: %{http_code}\n" --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html
+          echo "--- restarting caddy container to clear stale filesystem view ---"
+          docker restart qulture-caddy-1
+          sleep 8
+          echo "--- AFTER restart: verify all sites on this container ---"
+          curl -sk -o /dev/null -w "doyouknow telomeres: %{http_code}\n" --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html
+          curl -sk -o /dev/null -w "doyouknow known-good: %{http_code}\n" --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-airline-ticket-pricing-actually-works.html
+          curl -sk -o /dev/null -w "qulture.tech: %{http_code}\n" --resolve qulture.tech:443:127.0.0.1 https://qulture.tech/
+          curl -sk -o /dev/null -w "wearequantara.com: %{http_code}\n" --resolve wearequantara.com:443:127.0.0.1 https://wearequantara.com/
+          curl -sk -o /dev/null -w "verbito.ai: %{http_code}\n" --resolve verbito.ai:443:127.0.0.1 https://verbito.ai/
           echo "--- FULL doyouknow.app Caddy block (brace-depth tracked) ---"
           awk '
             /^doyouknow\.app,/ { printing=1 }
