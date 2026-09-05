@@ -98,6 +98,11 @@ jobs:
           echo "--- docker cp: pull the file directly out of the running caddy container (read-only, no exec) ---"
           docker cp qulture-caddy-1:/srv/doyouknow/en/article/how-telomeres-actually-control-cellular-aging.html /tmp/from_container.html && echo "docker cp OK, size: $(stat -c %s /tmp/from_container.html)" || echo "docker cp FAILED - file not visible inside container"
           docker cp qulture-caddy-1:/srv/doyouknow/en/article/how-airline-ticket-pricing-actually-works.html /tmp/from_container_good.html && echo "known-good docker cp OK, size: $(stat -c %s /tmp/from_container_good.html)" || echo "known-good docker cp FAILED"
+          echo "--- make the real request now, then check caddy logs for it ---"
+          curl -sk -o /dev/null --resolve doyouknow.app:443:127.0.0.1 "https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html?diag=$(date +%s)"
+          sleep 2
+          echo "--- last 60 lines of caddy container logs ---"
+          docker logs qulture-caddy-1 --tail 60 2>&1
           echo "--- FULL doyouknow.app Caddy block (brace-depth tracked) ---"
           awk '
             /^doyouknow\.app,/ { printing=1 }
