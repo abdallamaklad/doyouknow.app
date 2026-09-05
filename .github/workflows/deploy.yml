@@ -79,4 +79,13 @@ jobs:
           echo ""
           echo "--- compare perms to a known-working file ---"
           stat /var/www/doyouknow/current/en/article/how-airline-ticket-pricing-actually-works.html
+          echo "--- what is listening on 443? ---"
+          ss -tlnp | grep :443 || netstat -tlnp | grep :443 || echo "NO LISTENER INFO"
+          echo "--- second occurrence context of doyouknow.app in Caddyfile ---"
+          grep -n "doyouknow.app" "$CADDYFILE"
+          echo "--- host-level caddy processes (outside docker) ---"
+          ps aux | grep -i caddy | grep -v grep || echo "no host-level caddy process"
+          echo "--- test from inside the box against localhost with Host header ---"
+          curl -s -o /dev/null -w "localhost curl code: %{http_code}\n" -H "Host: doyouknow.app" http://localhost/en/article/how-telomeres-actually-control-cellular-aging.html
+          curl -sk -o /dev/null -w "localhost https curl code: %{http_code}\n" -H "Host: doyouknow.app" https://localhost/en/article/how-telomeres-actually-control-cellular-aging.html
           REMOTE_SCRIPT
