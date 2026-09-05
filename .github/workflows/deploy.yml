@@ -85,7 +85,9 @@ jobs:
           grep -n "doyouknow.app" "$CADDYFILE"
           echo "--- host-level caddy processes (outside docker) ---"
           ps aux | grep -i caddy | grep -v grep || echo "no host-level caddy process"
-          echo "--- test from inside the box against localhost with Host header ---"
-          curl -s -o /dev/null -w "localhost curl code: %{http_code}\n" -H "Host: doyouknow.app" http://localhost/en/article/how-telomeres-actually-control-cellular-aging.html
-          curl -sk -o /dev/null -w "localhost https curl code: %{http_code}\n" -H "Host: doyouknow.app" https://localhost/en/article/how-telomeres-actually-control-cellular-aging.html
+          echo "--- test from inside the box, correct SNI via --resolve (real origin test) ---"
+          curl -sk -o /dev/null -w "origin https telomeres: %{http_code}\n" --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html || echo "curl exit: $?"
+          curl -sk -o /dev/null -w "origin https known-good: %{http_code}\n" --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-airline-ticket-pricing-actually-works.html || echo "curl exit: $?"
+          echo "--- full response body head for telomeres via origin ---"
+          curl -sk --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html | head -c 300 || echo "curl body fetch failed"
           REMOTE_SCRIPT
