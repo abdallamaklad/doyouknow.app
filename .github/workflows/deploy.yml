@@ -90,4 +90,18 @@ jobs:
           curl -sk -o /dev/null -w "origin https known-good: %{http_code}\n" --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-airline-ticket-pricing-actually-works.html || echo "curl exit: $?"
           echo "--- full response body head for telomeres via origin ---"
           curl -sk --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html | head -c 300 || echo "curl body fetch failed"
+          echo ""
+          echo "--- FULL doyouknow.app Caddy block (brace-depth tracked) ---"
+          awk '
+            /^doyouknow\.app,/ { printing=1 }
+            printing {
+              print
+              n = gsub(/{/, "{")
+              depth += n
+              n = gsub(/}/, "}")
+              depth -= n
+              if (depth == 0 && printing == 2) exit
+              if (depth > 0) printing = 2
+            }
+          ' "$CADDYFILE"
           REMOTE_SCRIPT
