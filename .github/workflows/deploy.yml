@@ -28,3 +28,23 @@ jobs:
           # footer URLs cannot survive on the VPS. Review VPS_PATH before merge.
           ARGS: "-rlptgoDz --delete"
           EXCLUDE: "/.git/, /.github/, /scripts/, package.json, package-lock.json, README.md, /deploy/, /docs/, /marketing/, /research/, /design/, editorial-review.json, seo-audit-report-2026-06-30.md, traffic-monetization-plan.md, MASTER_DOYOUKNOW_STRATEGY.md, MARKETING_STRATEGY.md"
+      - name: TEMP diagnostic - VPS disk/webroot check
+        if: ${{ env.VPS_HOST != '' }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$VPS_SSH_KEY" > ~/.ssh/deploy_diag_key
+          chmod 600 ~/.ssh/deploy_diag_key
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_diag_key "$VPS_USER@$VPS_HOST" "VPS_PATH='$VPS_PATH' bash -s" <<'REMOTE_SCRIPT'
+          echo "--- whoami / id ---"
+          whoami
+          id
+          echo "--- df -h ---"
+          df -h
+          echo "--- VPS_PATH resolved to: $VPS_PATH ---"
+          ls -la "$VPS_PATH"
+          echo "--- en/article count and telomeres check ---"
+          ls "$VPS_PATH/en/article" | wc -l
+          ls "$VPS_PATH/en/article" | grep telomeres || echo "telomeres file NOT FOUND"
+          echo "--- write test ---"
+          touch "$VPS_PATH/en/article/_deploy_write_test" && echo "write OK" && rm "$VPS_PATH/en/article/_deploy_write_test" || echo "write FAILED"
+          REMOTE_SCRIPT
