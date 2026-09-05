@@ -63,4 +63,9 @@ jobs:
           ls -la /var/www/doyouknow/
           echo "telomeres check inside the bind-mounted path directly:"
           ls /var/www/doyouknow/current/en/article/ | grep telomeres || echo "NOT FOUND in current"
+          echo "--- locating Caddyfile on host ---"
+          CADDYFILE=$(find / -maxdepth 6 -iname "Caddyfile" 2>/dev/null | head -1)
+          echo "Caddyfile at: $CADDYFILE"
+          echo "--- doyouknow.app block in Caddyfile ---"
+          grep -B2 -A20 "doyouknow.app" "$CADDYFILE"
           REMOTE_SCRIPT
