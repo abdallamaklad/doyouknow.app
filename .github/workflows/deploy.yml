@@ -91,6 +91,13 @@ jobs:
           echo "--- full response body head for telomeres via origin ---"
           curl -sk --resolve doyouknow.app:443:127.0.0.1 https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html | head -c 300 || echo "curl body fetch failed"
           echo ""
+          echo "--- hex dump of the exact filename bytes (checking for hidden unicode chars) ---"
+          ls /var/www/doyouknow/current/en/article/ | grep -i telomere | xxd | head -20
+          echo "--- expected filename hex for comparison ---"
+          echo -n "how-telomeres-actually-control-cellular-aging.html" | xxd
+          echo "--- docker cp: pull the file directly out of the running caddy container (read-only, no exec) ---"
+          docker cp qulture-caddy-1:/srv/doyouknow/en/article/how-telomeres-actually-control-cellular-aging.html /tmp/from_container.html && echo "docker cp OK, size: $(stat -c %s /tmp/from_container.html)" || echo "docker cp FAILED - file not visible inside container"
+          docker cp qulture-caddy-1:/srv/doyouknow/en/article/how-airline-ticket-pricing-actually-works.html /tmp/from_container_good.html && echo "known-good docker cp OK, size: $(stat -c %s /tmp/from_container_good.html)" || echo "known-good docker cp FAILED"
           echo "--- FULL doyouknow.app Caddy block (brace-depth tracked) ---"
           awk '
             /^doyouknow\.app,/ { printing=1 }
