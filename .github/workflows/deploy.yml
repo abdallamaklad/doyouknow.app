@@ -54,4 +54,13 @@ jobs:
             echo "== $(docker inspect --format '{{.Name}}' "$c") =="
             docker inspect --format '{{range .Mounts}}{{.Source}} -> {{.Destination}} ({{.Type}}){{"\n"}}{{end}}' "$c"
           done
+          echo "--- resolved paths comparison ---"
+          echo "realpath of VPS_PATH:"
+          realpath "$VPS_PATH"
+          echo "realpath of /var/www/doyouknow/current:"
+          realpath /var/www/doyouknow/current
+          echo "ls -la /var/www/doyouknow/ (parent dir, to see symlink target):"
+          ls -la /var/www/doyouknow/
+          echo "telomeres check inside the bind-mounted path directly:"
+          ls /var/www/doyouknow/current/en/article/ | grep telomeres || echo "NOT FOUND in current"
           REMOTE_SCRIPT
