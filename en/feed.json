@@ -6,203 +6,203 @@
   "language": "en",
   "items": [
     {
-      "id": "https://doyouknow.app/en/article/how-egypts-fanous-lantern-tradition-actually-began.html",
-      "url": "https://doyouknow.app/en/article/how-egypts-fanous-lantern-tradition-actually-began.html",
-      "title": "How Egypt's Fanous Lantern Tradition Actually Began",
-      "content_text": "Egypt's Ramadan lantern traces back over a thousand years to a Fatimid caliph's arrival in Cairo, and it became a national industry almost by accident.",
-      "date_published": "2026-09-05",
+      "id": "https://doyouknow.app/en/article/how-air-traffic-control-radar-actually-tracks-planes.html",
+      "url": "https://doyouknow.app/en/article/how-air-traffic-control-radar-actually-tracks-planes.html",
+      "title": "How Air Traffic Control Radar Actually Tracks Planes",
+      "content_text": "Controllers watching busy airspace do more than bounce radio waves off metal. Modern tracking blends radar with planes broadcasting their own exact position automatically.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Egypt"
+        "Technology Explained"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-egypts-income-tax-system-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-egypts-income-tax-system-actually-works.html",
-      "title": "How Egypt's Income Tax System Actually Works",
-      "content_text": "Egypt taxes salaried employees mostly through automatic payroll withholding, while a huge informal and cash economy remains largely outside the net.",
-      "date_published": "2026-09-05",
+      "id": "https://doyouknow.app/en/article/how-airlines-actually-decide-boarding-groups.html",
+      "url": "https://doyouknow.app/en/article/how-airlines-actually-decide-boarding-groups.html",
+      "title": "How Airlines Actually Decide Boarding Groups",
+      "content_text": "Boarding order looks arbitrary from the gate, but airlines run simulations balancing loyalty tiers, fare class, seat location, and aisle-clogging physics before calling groups.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Egypt Practical Guides"
+        "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-egypts-thanaweya-amma-exam-shapes-university-life.html",
-      "url": "https://doyouknow.app/en/article/how-egypts-thanaweya-amma-exam-shapes-university-life.html",
-      "title": "How Egypt's Thanaweya Amma Exam Shapes University Life",
-      "content_text": "A single exam score decides which university and even which major an Egyptian teenager can study, making Thanaweya Amma one of the most consequential tests anywhere.",
-      "date_published": "2026-09-05",
+      "id": "https://doyouknow.app/en/article/how-airport-duty-free-shops-actually-make-money.html",
+      "url": "https://doyouknow.app/en/article/how-airport-duty-free-shops-actually-make-money.html",
+      "title": "How Airport Duty-Free Shops Actually Make Money",
+      "content_text": "Duty-free prices look like a discount, but the real profit engine is rent-paying concession deals, a captive audience with time to kill, and margins high-street shops never charge.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Education"
+        "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html",
-      "url": "https://doyouknow.app/en/article/how-telomeres-actually-control-cellular-aging.html",
-      "title": "How Telomeres Actually Control Cellular Aging",
-      "content_text": "Every time a cell divides, the caps on its chromosomes get a little shorter. Here's how telomeres actually work and what their shrinking has to do with aging.",
-      "date_published": "2026-09-05",
+      "id": "https://doyouknow.app/en/article/how-airport-immigration-e-gates-actually-verify-your-identity.html",
+      "url": "https://doyouknow.app/en/article/how-airport-immigration-e-gates-actually-verify-your-identity.html",
+      "title": "How Airport Immigration E-Gates Actually Verify Your Identity",
+      "content_text": "E-gates at Dubai and Riyadh airports clear travelers in seconds. Behind that speed sits a chain of passport chip reads, live face scans, and watchlist checks running invisibly.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-airport-lounges-actually-decide-who-gets-in.html",
+      "url": "https://doyouknow.app/en/article/how-airport-lounges-actually-decide-who-gets-in.html",
+      "title": "How Airport Lounges Actually Decide Who Gets In",
+      "content_text": "A lounge entry system juggles airline status tiers, credit card deals, day-pass sales, and a hard seat limit, all decided by an agent scanning your card in under ten seconds.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Practical Guide"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-arabic-calligraphy-fonts-are-actually-digitized-for-computers.html",
+      "url": "https://doyouknow.app/en/article/how-arabic-calligraphy-fonts-are-actually-digitized-for-computers.html",
+      "title": "How Arabic Calligraphy Gets Digitized for Computers",
+      "content_text": "Arabic script joins letters into flowing shapes that change with every neighbor. Turning that into a working computer font took decades of type engineering most readers never see.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Art"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-camel-milk-is-actually-processed-and-sold-in-the-gulf.html",
+      "url": "https://doyouknow.app/en/article/how-camel-milk-is-actually-processed-and-sold-in-the-gulf.html",
+      "title": "How Camel Milk Is Actually Processed and Sold in the Gulf",
+      "content_text": "Camel milk cannot be pasteurized on the same equipment as cow milk. Getting it into supermarket cartons and chocolate bars required rebuilding the dairy process from scratch.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Nutrition"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-cinema-projection-technology-actually-changed-from-film-to-digital.html",
+      "url": "https://doyouknow.app/en/article/how-cinema-projection-technology-actually-changed-from-film-to-digital.html",
+      "title": "How Cinema Projection Changed From Film to Digital",
+      "content_text": "A movie reel weighing dozens of kilograms and a hard drive weighing a few hundred grams can show the exact same film. That transition reshaped how movies are shipped worldwide.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Entertainment and Games"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-cpap-machines-actually-treat-sleep-apnea.html",
+      "url": "https://doyouknow.app/en/article/how-cpap-machines-actually-treat-sleep-apnea.html",
+      "title": "How CPAP Machines Actually Treat Sleep Apnea",
+      "content_text": "A CPAP machine does not force air into the lungs. It uses gentle, continuous pressure to prop open an airway that would otherwise collapse dozens of times a night.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Health"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-desert-hot-air-balloon-rides-actually-work.html",
+      "url": "https://doyouknow.app/en/article/how-desert-hot-air-balloon-rides-actually-work.html",
+      "title": "How Desert Hot Air Balloon Rides Actually Work",
+      "content_text": "Every sunrise balloon flight over the Dubai desert depends on a narrow weather window, a burner strong enough to lift a basket, and pilots reading wind layers guests never notice.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Dubai & UAE Places"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-desert-mirages-actually-form.html",
+      "url": "https://doyouknow.app/en/article/how-desert-mirages-actually-form.html",
+      "title": "How Desert Mirages Actually Form",
+      "content_text": "That shimmering pool of water on a hot highway is not an illusion your eyes invent. It is light bending through layers of unevenly heated air, and it can be photographed.",
+      "date_published": "2026-09-06",
       "tags": [
         "Science"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-egypts-microbuses-actually-move-millions-daily.html",
-      "url": "https://doyouknow.app/en/article/how-egypts-microbuses-actually-move-millions-daily.html",
-      "title": "How Egypt's Microbuses Actually Move Millions Daily",
-      "content_text": "Egypt's microbuses have no timetable, no fixed stops, and no single owner, yet they move more daily passengers than the country's entire metro network.",
-      "date_published": "2026-09-04",
+      "id": "https://doyouknow.app/en/article/how-e-ink-displays-actually-work.html",
+      "url": "https://doyouknow.app/en/article/how-e-ink-displays-actually-work.html",
+      "title": "How E Ink Displays Actually Work",
+      "content_text": "E-ink screens on e-readers can hold an image for weeks without power. The trick is millions of microscopic capsules filled with charged black and white particles.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Egypt Practical Guides"
+        "Technology Explained"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-childrens-allowance-systems-actually-shape-money-habits.html",
-      "url": "https://doyouknow.app/en/article/how-childrens-allowance-systems-actually-shape-money-habits.html",
-      "title": "How Children's Allowance Systems Actually Shape Money Habits",
-      "content_text": "Pay kids for chores or give allowance unconditionally? Economists and psychologists have tested this for decades. Here's what actually shapes money habits.",
-      "date_published": "2026-08-25",
+      "id": "https://doyouknow.app/en/article/how-falcon-hospitals-in-the-uae-actually-treat-birds.html",
+      "url": "https://doyouknow.app/en/article/how-falcon-hospitals-in-the-uae-actually-treat-birds.html",
+      "title": "How Falcon Hospitals in the UAE Actually Treat Birds",
+      "content_text": "Falcons in the Gulf carry passports and get CT scans. Behind that sits a genuinely sophisticated avian medical system built around a bird woven deep into Emirati heritage.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Family"
+        "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-islamic-inheritance-law-faraid-calculations-actually-work.html",
-      "url": "https://doyouknow.app/en/article/how-islamic-inheritance-law-faraid-calculations-actually-work.html",
-      "title": "How Islamic Inheritance Law (Faraid) Calculations Actually Work",
-      "content_text": "Islamic inheritance law assigns fixed shares to specific relatives before anyone can allocate the rest. Here's how faraid calculations actually work.",
-      "date_published": "2026-08-25",
+      "id": "https://doyouknow.app/en/article/how-food-delivery-apps-actually-price-your-order.html",
+      "url": "https://doyouknow.app/en/article/how-food-delivery-apps-actually-price-your-order.html",
+      "title": "How Food Delivery Apps Actually Price Your Order",
+      "content_text": "The total on a delivery app is never just the menu price. Commission fees, dynamic delivery pricing, and small markups on the food itself all stack quietly before checkout.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Islamic Knowledge & Culture"
+        "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/what-is-tafsir-and-how-it-differs-from-quran-translation.html",
-      "url": "https://doyouknow.app/en/article/what-is-tafsir-and-how-it-differs-from-quran-translation.html",
-      "title": "What Is Tafsir, and How Does It Differ From Translation",
-      "content_text": "A Quran translation renders words into another language. Tafsir does something far more ambitious. Here's what Islamic exegesis actually involves.",
-      "date_published": "2026-08-24",
+      "id": "https://doyouknow.app/en/article/how-frankincense-and-myrrh-are-actually-harvested-and-traded.html",
+      "url": "https://doyouknow.app/en/article/how-frankincense-and-myrrh-are-actually-harvested-and-traded.html",
+      "title": "How Frankincense and Myrrh Are Actually Harvested and Traded",
+      "content_text": "Long before oil, the Arabian Peninsula grew rich on tree resin. The ancient harvesting method has barely changed, but the global trade around it has been transformed completely.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Islamic Knowledge & Culture"
+        "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-in-law-relationships-are-culturally-scripted-so-differently.html",
-      "url": "https://doyouknow.app/en/article/why-in-law-relationships-are-culturally-scripted-so-differently.html",
-      "title": "Why In-Law Relationships Are Culturally Scripted So Differently",
-      "content_text": "A mother-in-law relationship is a warm daily bond in some cultures and a formalized, distant one in others. Here's why in-law roles are scripted so differently.",
-      "date_published": "2026-08-24",
+      "id": "https://doyouknow.app/en/article/how-honeybee-colonies-actually-make-honey.html",
+      "url": "https://doyouknow.app/en/article/how-honeybee-colonies-actually-make-honey.html",
+      "title": "How Honeybee Colonies Actually Make Honey",
+      "content_text": "Honey is not simply stored nectar. It is nectar transformed twice, once by enzymes inside a bee and once by evaporation in the hive, into a substance that can last millennia.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-marathon-course-certification-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-marathon-course-certification-actually-works.html",
+      "title": "How Marathon Course Certification Actually Works",
+      "content_text": "A marathon world record can be wiped from the books if the course measured a few meters short. Behind every certified race sits a surprisingly rigorous bicycle measurement science.",
+      "date_published": "2026-09-06",
       "tags": [
         "People and Society"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-child-custody-arrangements-actually-get-decided.html",
-      "url": "https://doyouknow.app/en/article/how-child-custody-arrangements-actually-get-decided.html",
-      "title": "How Child Custody Arrangements Actually Get Decided",
-      "content_text": "Courts don't split children 50/50 by default. Here's the actual legal standard judges use to decide who a child lives with after separation.",
-      "date_published": "2026-08-23",
+      "id": "https://doyouknow.app/en/article/how-the-jebel-jais-zipline-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-the-jebel-jais-zipline-actually-works.html",
+      "title": "How the Jebel Jais Zipline Actually Works",
+      "content_text": "Riders on the world’s longest zipline hit highway speeds thousands of feet above a desert canyon. The system holding them up relies on physics most guests never think to ask about.",
+      "date_published": "2026-09-06",
       "tags": [
-        "Family"
+        "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-wudu-ablution-rules-actually-work.html",
-      "url": "https://doyouknow.app/en/article/how-wudu-ablution-rules-actually-work.html",
-      "title": "How Wudu (Ablution) Rules Actually Work",
-      "content_text": "Five daily prayers require a specific ritual washing beforehand. Here's how wudu's exact sequence, its invalidators, and its substitutes actually work.",
-      "date_published": "2026-08-23",
+      "id": "https://doyouknow.app/en/article/how-the-ramadan-cannon-firing-tradition-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-the-ramadan-cannon-firing-tradition-actually-works.html",
+      "title": "How the Ramadan Cannon-Firing Tradition Actually Works",
+      "content_text": "A cannon blast tells millions of fasting people it is time to eat. Behind that boom sits a centuries-old Egyptian tradition and a modern logistics operation across many cities.",
+      "date_published": "2026-09-06",
       "tags": [
         "Islamic Knowledge & Culture"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-islamic-funeral-rites-janazah-actually-work.html",
-      "url": "https://doyouknow.app/en/article/how-islamic-funeral-rites-janazah-actually-work.html",
-      "title": "How Islamic Funeral Rites (Janazah) Actually Work",
-      "content_text": "Islamic funeral rites move fast and follow a fixed sequence. Here's how the washing, shrouding, prayer, and burial of Janazah actually work.",
-      "date_published": "2026-08-22",
+      "id": "https://doyouknow.app/en/article/how-zamzam-water-is-actually-bottled-and-distributed-worldwide.html",
+      "url": "https://doyouknow.app/en/article/how-zamzam-water-is-actually-bottled-and-distributed-worldwide.html",
+      "title": "How Zamzam Water Is Actually Bottled and Distributed Worldwide",
+      "content_text": "Millions of pilgrims want to bring Zamzam water home every year. Saudi authorities built an entire logistics and quality-control system to move a sacred well’s output worldwide.",
+      "date_published": "2026-09-06",
       "tags": [
         "Islamic Knowledge & Culture"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-nasal-breathing-vs-mouth-breathing-affects-your-health.html",
-      "url": "https://doyouknow.app/en/article/how-nasal-breathing-vs-mouth-breathing-affects-your-health.html",
-      "title": "How Nasal Breathing vs Mouth Breathing Affects Your Health",
-      "content_text": "Breathing through your nose and breathing through your mouth are not interchangeable. Here's what actually changes in your body depending on which one you use.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Self Care"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-phantom-limb-pain-actually-happens.html",
-      "url": "https://doyouknow.app/en/article/how-phantom-limb-pain-actually-happens.html",
-      "title": "How Phantom Limb Pain Actually Happens",
-      "content_text": "Most amputees feel sensation, and often pain, in a limb that is no longer there. Here's what neuroscience actually knows about why the brain does this.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Health"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-saudi-falconry-licensing-and-heritage-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-saudi-falconry-licensing-and-heritage-actually-works.html",
-      "title": "How Saudi Falconry Licensing Actually Works",
-      "content_text": "Owning a falcon in Saudi Arabia requires a passport, a microchip, and a government license. Here's how the Kingdom actually regulates its most prized bird.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Saudi Arabia"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-the-jeddah-corniche-formula-1-street-circuit-was-actually-built.html",
-      "url": "https://doyouknow.app/en/article/how-the-jeddah-corniche-formula-1-street-circuit-was-actually-built.html",
-      "title": "How the Jeddah F1 Street Circuit Was Built",
-      "content_text": "Jeddah's F1 track is the fastest street circuit in the world, built along a seafront corniche in under a year. Here's how that engineering feat actually happened.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Saudi Arabia"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-the-king-abdulaziz-camel-festival-beauty-pageant-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-the-king-abdulaziz-camel-festival-beauty-pageant-actually-works.html",
-      "title": "How the King Abdulaziz Camel Festival Works",
-      "content_text": "Saudi Arabia's biggest camel festival hands out millions in prize money for the most beautiful camel. Here's how the judging, and the scandals, actually work.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Saudi Arabia"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-the-runners-high-actually-works-in-the-brain.html",
-      "url": "https://doyouknow.app/en/article/how-the-runners-high-actually-works-in-the-brain.html",
-      "title": "How the Runner's High Actually Works in the Brain",
-      "content_text": "For decades the runner's high was blamed on endorphins. Brain imaging tells a more interesting story involving the body's own cannabis-like molecules.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Health"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-vagus-nerve-stimulation-claims-actually-hold-up.html",
-      "url": "https://doyouknow.app/en/article/how-vagus-nerve-stimulation-claims-actually-hold-up.html",
-      "title": "How Vagus Nerve Stimulation Claims Actually Hold Up",
-      "content_text": "Cold water on the face, humming, and gadgets on your ear are all sold as vagus nerve hacks. Here's what the actual science behind vagal tone can and cannot support.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Self Care"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-grandparents-play-such-different-roles-across-cultures.html",
-      "url": "https://doyouknow.app/en/article/why-grandparents-play-such-different-roles-across-cultures.html",
-      "title": "Why Grandparents Play Such Different Roles Across Cultures",
-      "content_text": "In some cultures grandparents co-raise children daily; in others they visit occasionally. Here's why grandparenting looks so different around the world.",
-      "date_published": "2026-08-22",
-      "tags": [
-        "Family"
       ]
     }
   ]
