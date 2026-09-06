@@ -972,17 +972,18 @@
     var leadCaptureInFlight = typeof WeakSet === 'function' ? new WeakSet() : null;
     var leadConversions = typeof WeakMap === 'function' ? new WeakMap() : null;
     function leadParams(form, method, outcome) {
-        return {
+        var params = {
             form_type: form.classList.contains('contact-form') ? 'contact' : 'newsletter',
             method: method,
             outcome: outcome,
             language: document.documentElement.lang || 'en'
         };
-        if (!form.classList.contains('contact-form') && typeof newsletterAttribution === 'object') {
+        if (!form.classList.contains('contact-form') && typeof newsletterAttribution === 'object' && newsletterAttribution) {
             params.utm_source = newsletterAttribution.utm_source || '(direct)';
             params.utm_medium = newsletterAttribution.utm_medium || '(none)';
             params.utm_campaign = newsletterAttribution.utm_campaign || '(not set)';
         }
+        return params;
     }
     function emitLeadConversion(form, eventName, method) {
         var events = leadConversions ? (leadConversions.get(form) || new Set()) : null;
