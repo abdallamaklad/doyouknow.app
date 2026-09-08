@@ -6,203 +6,203 @@
   "language": "en",
   "items": [
     {
-      "id": "https://doyouknow.app/en/article/how-air-traffic-control-radar-actually-tracks-planes.html",
-      "url": "https://doyouknow.app/en/article/how-air-traffic-control-radar-actually-tracks-planes.html",
-      "title": "How Air Traffic Control Radar Actually Tracks Planes",
-      "content_text": "Controllers watching busy airspace do more than bounce radio waves off metal. Modern tracking blends radar with planes broadcasting their own exact position automatically.",
-      "date_published": "2026-09-06",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-airlines-actually-decide-boarding-groups.html",
-      "url": "https://doyouknow.app/en/article/how-airlines-actually-decide-boarding-groups.html",
-      "title": "How Airlines Actually Decide Boarding Groups",
-      "content_text": "Boarding order looks arbitrary from the gate, but airlines run simulations balancing loyalty tiers, fare class, seat location, and aisle-clogging physics before calling groups.",
-      "date_published": "2026-09-06",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-airport-duty-free-shops-actually-make-money.html",
-      "url": "https://doyouknow.app/en/article/how-airport-duty-free-shops-actually-make-money.html",
-      "title": "How Airport Duty-Free Shops Actually Make Money",
-      "content_text": "Duty-free prices look like a discount, but the real profit engine is rent-paying concession deals, a captive audience with time to kill, and margins high-street shops never charge.",
-      "date_published": "2026-09-06",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-airport-immigration-e-gates-actually-verify-your-identity.html",
-      "url": "https://doyouknow.app/en/article/how-airport-immigration-e-gates-actually-verify-your-identity.html",
-      "title": "How Airport Immigration E-Gates Actually Verify Your Identity",
-      "content_text": "E-gates at Dubai and Riyadh airports clear travelers in seconds. Behind that speed sits a chain of passport chip reads, live face scans, and watchlist checks running invisibly.",
-      "date_published": "2026-09-06",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-airport-lounges-actually-decide-who-gets-in.html",
-      "url": "https://doyouknow.app/en/article/how-airport-lounges-actually-decide-who-gets-in.html",
-      "title": "How Airport Lounges Actually Decide Who Gets In",
-      "content_text": "A lounge entry system juggles airline status tiers, credit card deals, day-pass sales, and a hard seat limit, all decided by an agent scanning your card in under ten seconds.",
+      "id": "https://doyouknow.app/en/article/how-airline-flight-delay-compensation-actually-gets-calculated.html",
+      "url": "https://doyouknow.app/en/article/how-airline-flight-delay-compensation-actually-gets-calculated.html",
+      "title": "How Airline Flight-Delay Compensation Gets Calculated",
+      "content_text": "The same delayed flight can owe one passenger nothing and another several hundred euros, based on rules most travelers never read. Here is how the calculation works.",
       "date_published": "2026-09-06",
       "tags": [
         "Practical Guide"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-arabic-calligraphy-fonts-are-actually-digitized-for-computers.html",
-      "url": "https://doyouknow.app/en/article/how-arabic-calligraphy-fonts-are-actually-digitized-for-computers.html",
-      "title": "How Arabic Calligraphy Gets Digitized for Computers",
-      "content_text": "Arabic script joins letters into flowing shapes that change with every neighbor. Turning that into a working computer font took decades of type engineering most readers never see.",
+      "id": "https://doyouknow.app/en/article/how-alulas-nabatean-tombs-were-actually-carved-into-sandstone.html",
+      "url": "https://doyouknow.app/en/article/how-alulas-nabatean-tombs-were-actually-carved-into-sandstone.html",
+      "title": "How AlUla's Nabatean Tombs Were Actually Carved",
+      "content_text": "More than a hundred tombs at Hegra were cut directly into standing sandstone outcrops nearly two thousand years ago, entirely from the top down. Here is how that actually worked.",
       "date_published": "2026-09-06",
       "tags": [
-        "Art"
+        "Saudi Arabia"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-camel-milk-is-actually-processed-and-sold-in-the-gulf.html",
-      "url": "https://doyouknow.app/en/article/how-camel-milk-is-actually-processed-and-sold-in-the-gulf.html",
-      "title": "How Camel Milk Is Actually Processed and Sold in the Gulf",
-      "content_text": "Camel milk cannot be pasteurized on the same equipment as cow milk. Getting it into supermarket cartons and chocolate bars required rebuilding the dairy process from scratch.",
+      "id": "https://doyouknow.app/en/article/how-ancient-egyptian-canopic-jars-actually-preserved-organs.html",
+      "url": "https://doyouknow.app/en/article/how-ancient-egyptian-canopic-jars-actually-preserved-organs.html",
+      "title": "How Ancient Egyptian Canopic Jars Preserved Organs",
+      "content_text": "During mummification, four specific organs were removed, dried, and sealed into four separate jars, each protected by a different god. Here is exactly how and why that worked.",
       "date_published": "2026-09-06",
       "tags": [
-        "Nutrition"
+        "Egypt"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-cinema-projection-technology-actually-changed-from-film-to-digital.html",
-      "url": "https://doyouknow.app/en/article/how-cinema-projection-technology-actually-changed-from-film-to-digital.html",
-      "title": "How Cinema Projection Changed From Film to Digital",
-      "content_text": "A movie reel weighing dozens of kilograms and a hard drive weighing a few hundred grams can show the exact same film. That transition reshaped how movies are shipped worldwide.",
+      "id": "https://doyouknow.app/en/article/how-baby-sleep-regressions-actually-happen-and-why-they-end.html",
+      "url": "https://doyouknow.app/en/article/how-baby-sleep-regressions-actually-happen-and-why-they-end.html",
+      "title": "How Baby Sleep Regressions Happen and Why They End",
+      "content_text": "A baby who was finally sleeping through the night can suddenly start waking every hour again, seemingly overnight. Here is what is actually happening in a developing brain.",
       "date_published": "2026-09-06",
       "tags": [
-        "Entertainment and Games"
+        "Family"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-cpap-machines-actually-treat-sleep-apnea.html",
-      "url": "https://doyouknow.app/en/article/how-cpap-machines-actually-treat-sleep-apnea.html",
-      "title": "How CPAP Machines Actually Treat Sleep Apnea",
-      "content_text": "A CPAP machine does not force air into the lungs. It uses gentle, continuous pressure to prop open an airway that would otherwise collapse dozens of times a night.",
-      "date_published": "2026-09-06",
-      "tags": [
-        "Health"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-desert-hot-air-balloon-rides-actually-work.html",
-      "url": "https://doyouknow.app/en/article/how-desert-hot-air-balloon-rides-actually-work.html",
-      "title": "How Desert Hot Air Balloon Rides Actually Work",
-      "content_text": "Every sunrise balloon flight over the Dubai desert depends on a narrow weather window, a burner strong enough to lift a basket, and pilots reading wind layers guests never notice.",
-      "date_published": "2026-09-06",
-      "tags": [
-        "Dubai & UAE Places"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-desert-mirages-actually-form.html",
-      "url": "https://doyouknow.app/en/article/how-desert-mirages-actually-form.html",
-      "title": "How Desert Mirages Actually Form",
-      "content_text": "That shimmering pool of water on a hot highway is not an illusion your eyes invent. It is light bending through layers of unevenly heated air, and it can be photographed.",
-      "date_published": "2026-09-06",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-e-ink-displays-actually-work.html",
-      "url": "https://doyouknow.app/en/article/how-e-ink-displays-actually-work.html",
-      "title": "How E Ink Displays Actually Work",
-      "content_text": "E-ink screens on e-readers can hold an image for weeks without power. The trick is millions of microscopic capsules filled with charged black and white particles.",
+      "id": "https://doyouknow.app/en/article/how-digital-car-keys-on-your-phone-actually-unlock-a-car.html",
+      "url": "https://doyouknow.app/en/article/how-digital-car-keys-on-your-phone-actually-unlock-a-car.html",
+      "title": "How Digital Car Keys Actually Unlock Your Car",
+      "content_text": "A phone can unlock a car through the same case, a locked screen, or even a dead battery. Here is the radio technology that actually makes that possible.",
       "date_published": "2026-09-06",
       "tags": [
         "Technology Explained"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-falcon-hospitals-in-the-uae-actually-treat-birds.html",
-      "url": "https://doyouknow.app/en/article/how-falcon-hospitals-in-the-uae-actually-treat-birds.html",
-      "title": "How Falcon Hospitals in the UAE Actually Treat Birds",
-      "content_text": "Falcons in the Gulf carry passports and get CT scans. Behind that sits a genuinely sophisticated avian medical system built around a bird woven deep into Emirati heritage.",
+      "id": "https://doyouknow.app/en/article/how-dubais-salik-toll-system-actually-charges-drivers-without-stopping.html",
+      "url": "https://doyouknow.app/en/article/how-dubais-salik-toll-system-actually-charges-drivers-without-stopping.html",
+      "title": "How Dubai's Salik Toll System Actually Charges Drivers",
+      "content_text": "Cars cross Salik toll gates on Sheikh Zayed Road at full speed with no barrier and no stopping. Here is the actual technology that reads every vehicle and bills it automatically.",
       "date_published": "2026-09-06",
       "tags": [
         "Dubai & UAE Places"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-food-delivery-apps-actually-price-your-order.html",
-      "url": "https://doyouknow.app/en/article/how-food-delivery-apps-actually-price-your-order.html",
-      "title": "How Food Delivery Apps Actually Price Your Order",
-      "content_text": "The total on a delivery app is never just the menu price. Commission fees, dynamic delivery pricing, and small markups on the food itself all stack quietly before checkout.",
+      "id": "https://doyouknow.app/en/article/how-food-irradiation-actually-preserves-food-without-chemicals.html",
+      "url": "https://doyouknow.app/en/article/how-food-irradiation-actually-preserves-food-without-chemicals.html",
+      "title": "How Food Irradiation Preserves Food Without Chemicals",
+      "content_text": "Irradiated food never touches a chemical preservative, yet the process still triggers lingering fear. Here is what the radiation actually does, and does not do, to your food.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Nutrition"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-insurance-underwriters-actually-decide-what-you-pay.html",
+      "url": "https://doyouknow.app/en/article/how-insurance-underwriters-actually-decide-what-you-pay.html",
+      "title": "How Insurance Underwriters Decide What You Pay",
+      "content_text": "Two drivers with the same car and accident history can still get very different insurance quotes. Here is what an underwriter is actually calculating behind the scenes.",
       "date_published": "2026-09-06",
       "tags": [
         "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-frankincense-and-myrrh-are-actually-harvested-and-traded.html",
-      "url": "https://doyouknow.app/en/article/how-frankincense-and-myrrh-are-actually-harvested-and-traded.html",
-      "title": "How Frankincense and Myrrh Are Actually Harvested and Traded",
-      "content_text": "Long before oil, the Arabian Peninsula grew rich on tree resin. The ancient harvesting method has barely changed, but the global trade around it has been transformed completely.",
+      "id": "https://doyouknow.app/en/article/how-invoice-factoring-actually-gives-small-businesses-instant-cash.html",
+      "url": "https://doyouknow.app/en/article/how-invoice-factoring-actually-gives-small-businesses-instant-cash.html",
+      "title": "How Invoice Factoring Gives Businesses Instant Cash",
+      "content_text": "A small business owed money by a slow-paying client can sell that unpaid invoice today for cash. Here is exactly how factoring turns a promise to pay into money now.",
       "date_published": "2026-09-06",
       "tags": [
         "Business and Economy"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-honeybee-colonies-actually-make-honey.html",
-      "url": "https://doyouknow.app/en/article/how-honeybee-colonies-actually-make-honey.html",
-      "title": "How Honeybee Colonies Actually Make Honey",
-      "content_text": "Honey is not simply stored nectar. It is nectar transformed twice, once by enzymes inside a bee and once by evaporation in the hive, into a substance that can last millennia.",
+      "id": "https://doyouknow.app/en/article/how-lasik-eye-surgery-actually-reshapes-your-cornea.html",
+      "url": "https://doyouknow.app/en/article/how-lasik-eye-surgery-actually-reshapes-your-cornea.html",
+      "title": "How LASIK Eye Surgery Actually Reshapes Your Cornea",
+      "content_text": "LASIK fixes blurry vision in about ten minutes by cutting a flap in the cornea and reshaping the tissue beneath it with a laser. Here is exactly how that works.",
       "date_published": "2026-09-06",
       "tags": [
-        "Science"
+        "Health"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-marathon-course-certification-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-marathon-course-certification-actually-works.html",
-      "title": "How Marathon Course Certification Actually Works",
-      "content_text": "A marathon world record can be wiped from the books if the course measured a few meters short. Behind every certified race sits a surprisingly rigorous bicycle measurement science.",
+      "id": "https://doyouknow.app/en/article/how-left-handedness-actually-persists-in-every-human-population.html",
+      "url": "https://doyouknow.app/en/article/how-left-handedness-actually-persists-in-every-human-population.html",
+      "title": "How Left-Handedness Persists in Every Human Population",
+      "content_text": "Roughly one in ten people worldwide is left-handed, a rate that has stayed remarkably stable across cultures and centuries despite real historical pressure to stamp it out.",
       "date_published": "2026-09-06",
       "tags": [
         "People and Society"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-the-jebel-jais-zipline-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-the-jebel-jais-zipline-actually-works.html",
-      "title": "How the Jebel Jais Zipline Actually Works",
-      "content_text": "Riders on the world’s longest zipline hit highway speeds thousands of feet above a desert canyon. The system holding them up relies on physics most guests never think to ask about.",
+      "id": "https://doyouknow.app/en/article/how-movie-subtitle-timing-is-actually-synced-to-dialogue.html",
+      "url": "https://doyouknow.app/en/article/how-movie-subtitle-timing-is-actually-synced-to-dialogue.html",
+      "title": "How Movie Subtitle Timing Is Actually Synced",
+      "content_text": "A subtitle has to appear, stay readable, and disappear in a window measured in fractions of a second, without ever catching up to or lagging behind the actor speaking.",
       "date_published": "2026-09-06",
       "tags": [
-        "Dubai & UAE Places"
+        "Entertainment and Games"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-the-ramadan-cannon-firing-tradition-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-the-ramadan-cannon-firing-tradition-actually-works.html",
-      "title": "How the Ramadan Cannon-Firing Tradition Actually Works",
-      "content_text": "A cannon blast tells millions of fasting people it is time to eat. Behind that boom sits a centuries-old Egyptian tradition and a modern logistics operation across many cities.",
+      "id": "https://doyouknow.app/en/article/how-salt-actually-preserved-meat-before-refrigeration-existed.html",
+      "url": "https://doyouknow.app/en/article/how-salt-actually-preserved-meat-before-refrigeration-existed.html",
+      "title": "How Salt Preserved Meat Before Refrigeration Existed",
+      "content_text": "For most of human history, a slab of meat packed in salt could last months without spoiling. Here is the actual chemistry that made that possible, and why it still works today.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Nutrition"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-starlink-dishes-actually-track-fast-moving-satellites.html",
+      "url": "https://doyouknow.app/en/article/how-starlink-dishes-actually-track-fast-moving-satellites.html",
+      "title": "How Starlink Dishes Actually Track Satellites",
+      "content_text": "A Starlink dish has no motors, yet it locks onto a satellite crossing the sky at 27,000 km/h and hands off to the next one seconds later. Here is how.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-the-common-cold-actually-spreads-faster-in-winter.html",
+      "url": "https://doyouknow.app/en/article/how-the-common-cold-actually-spreads-faster-in-winter.html",
+      "title": "How the Common Cold Spreads Faster in Winter",
+      "content_text": "Cold weather itself does not cause colds, yet infections still spike every winter. The real reasons involve indoor air, nose temperature, and virus survival.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Health"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-the-king-fahd-causeway-actually-connects-saudi-arabia-to-bahrain.html",
+      "url": "https://doyouknow.app/en/article/how-the-king-fahd-causeway-actually-connects-saudi-arabia-to-bahrain.html",
+      "title": "How the King Fahd Causeway Actually Works",
+      "content_text": "A 25km chain of bridges and a man-made island lets cars drive from Saudi Arabia to Bahrain across open sea, with a full immigration checkpoint sitting in the middle of the water.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Saudi Arabia"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-tsunami-warning-systems-actually-detect-a-wave-before-it-hits.html",
+      "url": "https://doyouknow.app/en/article/how-tsunami-warning-systems-actually-detect-a-wave-before-it-hits.html",
+      "title": "How Tsunami Warning Systems Actually Detect Waves",
+      "content_text": "Out in the open ocean a tsunami is barely a ripple, invisible to ships sailing right over it. Here is how sensors on the seafloor still catch it in time.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-umrah-crowd-management-actually-tracks-millions-of-pilgrims.html",
+      "url": "https://doyouknow.app/en/article/how-umrah-crowd-management-actually-tracks-millions-of-pilgrims.html",
+      "title": "How Umrah Crowd Management Tracks Millions of Pilgrims",
+      "content_text": "Tens of millions of pilgrims now circle the Kaaba every year without the chaos crowd size would predict. Here is the actual system tracking them minute by minute.",
       "date_published": "2026-09-06",
       "tags": [
         "Islamic Knowledge & Culture"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-zamzam-water-is-actually-bottled-and-distributed-worldwide.html",
-      "url": "https://doyouknow.app/en/article/how-zamzam-water-is-actually-bottled-and-distributed-worldwide.html",
-      "title": "How Zamzam Water Is Actually Bottled and Distributed Worldwide",
-      "content_text": "Millions of pilgrims want to bring Zamzam water home every year. Saudi authorities built an entire logistics and quality-control system to move a sacred well’s output worldwide.",
+      "id": "https://doyouknow.app/en/article/how-venice-actually-stays-above-water-while-slowly-sinking.html",
+      "url": "https://doyouknow.app/en/article/how-venice-actually-stays-above-water-while-slowly-sinking.html",
+      "title": "How Venice Stays Above Water While Slowly Sinking",
+      "content_text": "Venice is built on wooden posts driven into a lagoon, sinking a little more every year while the sea around it rises. Here is the engineering keeping the city afloat.",
       "date_published": "2026-09-06",
       "tags": [
-        "Islamic Knowledge & Culture"
+        "Around the World"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-volcanic-lightning-actually-forms-inside-an-ash-cloud.html",
+      "url": "https://doyouknow.app/en/article/how-volcanic-lightning-actually-forms-inside-an-ash-cloud.html",
+      "title": "How Volcanic Lightning Forms in Ash Clouds",
+      "content_text": "Some of the most dramatic photos in nature show lightning bolts inside an erupting volcano's ash cloud. Here is the actual physics that charges up that ash.",
+      "date_published": "2026-09-06",
+      "tags": [
+        "Science"
       ]
     }
   ]
