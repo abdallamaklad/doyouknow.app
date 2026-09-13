@@ -18,6 +18,16 @@ const editorialReviewPolicy = JSON.parse(await readFile(join(root, 'editorial-re
 const editorialReview = new Set(
   Object.values(editorialReviewPolicy.pages).flat().map((path) => path.replace(/^\//, ''))
 );
+
+// Slugs with a real Higgsfield photograph (assets/images/articles/<slug>.jpg,
+// shared across en/ar) take that file instead of the legacy per-language
+// `.art.svg` illustration. Without this, every prepare.mjs run silently
+// reverts already-photo-converted articles back to the SVG naming.
+const higgsfieldPhotoSlugs = new Set(
+  (await readdir(join(root, 'assets/images/articles')))
+    .filter((file) => file.endsWith('.jpg'))
+    .map((file) => file.replace(/\.jpg$/, ''))
+);
 const removedContent = new Set([
   'en/article/10-facts-about-uae-formation.html',
   'en/article/bedouin-culture-uae.html',
@@ -317,15 +327,15 @@ function stripSearchAction(html) {
 function articleImagePath(lang, slug) {
   // In-page display artwork carries no text (see design/design-system.md).
   // The text-bearing `${lang}-${slug}.svg` is the social/OG source only.
-  return worldCupArticleSlugs.includes(slug)
-    ? `/assets/images/world-cup-2026/${slug}.svg`
-    : `/assets/images/articles/${lang}-${slug}.art.svg`;
+  if (worldCupArticleSlugs.includes(slug)) return `/assets/images/world-cup-2026/${slug}.svg`;
+  if (higgsfieldPhotoSlugs.has(slug)) return `/assets/images/articles/${slug}.jpg`;
+  return `/assets/images/articles/${lang}-${slug}.art.svg`;
 }
 
 function articleRasterImagePath(lang, slug) {
-  return worldCupArticleSlugs.includes(slug)
-    ? `/assets/images/world-cup-2026/${slug}.png`
-    : `/assets/images/articles/${lang}-${slug}.png`;
+  if (worldCupArticleSlugs.includes(slug)) return `/assets/images/world-cup-2026/${slug}.png`;
+  if (higgsfieldPhotoSlugs.has(slug)) return `/assets/images/articles/${slug}.jpg`;
+  return `/assets/images/articles/${lang}-${slug}.png`;
 }
 
 function updateSocialImageTags(html, imageUrl) {
@@ -1663,7 +1673,7 @@ function renderHomeIndex(items, lang) {
     }
     const tint = categoryTint[item.categorySlug] || '#B45309';
     const href = item.url.replace('https://doyouknow.app', '');
-    const art = `/assets/images/articles/${lang}-${item.slug}.art.svg`;
+    const art = articleImagePath(lang, item.slug);
     const cleanTitle = item.title.replace(/\s*\|\s*doyouknow\.app$/, '');
     const meta = [formatIndexDate(item.datePublished, lang), item.readTime]
       .filter(Boolean)
