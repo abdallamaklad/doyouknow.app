@@ -1,0 +1,4 @@
+{
+  "$schema": "Owner approval records for approval-required content (health, religion, finance, legal, government-procedure). The pre-publish gate scripts/sensitivity-screen.mjs refuses to publish a flagged slug unless an entry with decision=\"approved\" exists here. One entry per EN slug (the AR pair is covered by the same record). Record the evidence link (Discord operations thread message) for every decision. decision=\"removed\" means the owner ordered the page taken down; the gate fails if the page is present.",
+  "approvals": {}
+}
