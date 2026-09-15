@@ -6,200 +6,200 @@
   "language": "en",
   "items": [
     {
-      "id": "https://doyouknow.app/en/article/how-a-compass-actually-finds-magnetic-north.html",
-      "url": "https://doyouknow.app/en/article/how-a-compass-actually-finds-magnetic-north.html",
-      "title": "How a Compass Actually Finds Magnetic North",
-      "content_text": "A compass needle aligns with Earth's own magnetic field, not true north, which is why every accurate reading needs a small correction called declination.",
+      "id": "https://doyouknow.app/en/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html",
+      "url": "https://doyouknow.app/en/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html",
+      "title": "How Content Creators Use AI Tools to Speed Up Their Workflow",
+      "content_text": "How content creators actually use AI tools: brainstorming, repurposing long videos into shorts, prompt templates for voice, and where automation still falls short.",
+      "date_published": "2026-09-15",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/why-the-same-ai-prompt-gives-different-answers-every-time.html",
+      "url": "https://doyouknow.app/en/article/why-the-same-ai-prompt-gives-different-answers-every-time.html",
+      "title": "Why the Same AI Prompt Gives Different Answers Every Time",
+      "content_text": "Why running the same prompt through ChatGPT, Claude, or Gemini twice can produce two different answers: temperature, sampling, context, and silent model updates explained.",
+      "date_published": "2026-09-15",
+      "tags": [
+        "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-a-bulletproof-vest-actually-stops-a-bullet.html",
+      "url": "https://doyouknow.app/en/article/how-a-bulletproof-vest-actually-stops-a-bullet.html",
+      "title": "How a Bulletproof Vest Actually Stops a Bullet",
+      "content_text": "A soft vest doesn't block a bullet — it catches it in a web of ultra-strong fibers that spread the impact energy sideways across a wide area before the tip ever reaches skin.",
       "date_published": "2026-09-12",
       "tags": [
         "Science"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-a-defibrillator-actually-restarts-a-stopped-heart.html",
-      "url": "https://doyouknow.app/en/article/how-a-defibrillator-actually-restarts-a-stopped-heart.html",
-      "title": "How a Defibrillator Actually Restarts a Stopped Heart",
-      "content_text": "A defibrillator doesn't restart a flatlined heart — it delivers a brief, powerful shock that stops chaotic electrical activity so the heart's own natural rhythm can resume.",
+      "id": "https://doyouknow.app/en/article/how-a-toilet-actually-flushes-without-a-pump.html",
+      "url": "https://doyouknow.app/en/article/how-a-toilet-actually-flushes-without-a-pump.html",
+      "title": "How a Toilet Actually Flushes Without a Pump",
+      "content_text": "A toilet flush uses only gravity and siphon suction created by a specially shaped trapway, pulling waste out with no motor or pump involved at all.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html",
+      "url": "https://doyouknow.app/en/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html",
+      "title": "How an Umbrella Actually Survives Strong Wind",
+      "content_text": "A well-designed umbrella survives gusts not by resisting wind head-on but by flexing and venting force through hinged ribs engineered to bend before they break.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html",
+      "url": "https://doyouknow.app/en/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html",
+      "title": "Why You're Actually a Night Owl or Early Bird",
+      "content_text": "Your sleep schedule isn't a habit — it's set by genes controlling a roughly 24-hour internal clock, and forcing it against your chronotype has real health costs.",
       "date_published": "2026-09-12",
       "tags": [
         "Health"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-a-fire-extinguisher-actually-puts-out-different-kinds-of-fire.html",
-      "url": "https://doyouknow.app/en/article/how-a-fire-extinguisher-actually-puts-out-different-kinds-of-fire.html",
-      "title": "How a Fire Extinguisher Actually Fights Different Fires",
-      "content_text": "A fire extinguisher doesn't just spray water — it breaks one leg of the fire's chemical triangle, and using the wrong agent on the wrong fuel can make a fire far more dangerous.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-hologram-actually-stores-a-3d-image-on-a-flat-surface.html",
-      "url": "https://doyouknow.app/en/article/how-a-hologram-actually-stores-a-3d-image-on-a-flat-surface.html",
-      "title": "How a Hologram Actually Stores a 3D Image on a Flat Surface",
-      "content_text": "A hologram doesn't record a picture — it records an interference pattern of light waves, letting a flat piece of film somehow show a scene from different angles.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-jet-engine-actually-generates-thrust.html",
-      "url": "https://doyouknow.app/en/article/how-a-jet-engine-actually-generates-thrust.html",
-      "title": "How a Jet Engine Actually Generates Thrust",
-      "content_text": "A jet engine sucks in air, compresses it, burns fuel to expand it violently, then blasts it out the back — Newton's third law does the rest.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-kaleidoscope-actually-turns-a-few-beads-into-endless-patterns.html",
-      "url": "https://doyouknow.app/en/article/how-a-kaleidoscope-actually-turns-a-few-beads-into-endless-patterns.html",
-      "title": "How a Kaleidoscope Turns a Few Beads into Endless Patterns",
-      "content_text": "A kaleidoscope holds a handful of loose beads and mirrors, yet never repeats. The trick isn't the beads — it's how mirror angles multiply one glimpse into endless symmetry.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-mars-rover-actually-navigates-without-real-time-human-control.html",
-      "url": "https://doyouknow.app/en/article/how-a-mars-rover-actually-navigates-without-real-time-human-control.html",
-      "title": "How a Mars Rover Navigates Without Real-Time Human Control",
-      "content_text": "No one on Earth can drive a Mars rover with a joystick — the delay is too long, so it looks at the ground itself and decides, in real time, whether it's about to fall off a cliff.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-nuclear-reactor-actually-generates-electricity.html",
-      "url": "https://doyouknow.app/en/article/how-a-nuclear-reactor-actually-generates-electricity.html",
-      "title": "How a Nuclear Reactor Actually Generates Electricity",
-      "content_text": "A nuclear reactor splits uranium atoms to release heat, which boils water into steam that spins a turbine — the reaction never touches the electricity-generating machinery.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-parachute-actually-slows-a-falling-body.html",
-      "url": "https://doyouknow.app/en/article/how-a-parachute-actually-slows-a-falling-body.html",
-      "title": "How a Parachute Actually Slows a Falling Body",
-      "content_text": "A parachute doesn't stop gravity — it trades a small canopy for a huge one, turning a compact skydiver into a wide, slow-falling shape air resistance can balance against weight.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-pressure-cooker-actually-cooks-food-faster.html",
-      "url": "https://doyouknow.app/en/article/how-a-pressure-cooker-actually-cooks-food-faster.html",
-      "title": "How a Pressure Cooker Actually Cooks Food Faster",
-      "content_text": "A pressure cooker doesn't just trap heat — it traps steam until pressure rises high enough to push water's boiling point far above 100°C, which is the entire secret to its speed.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Nutrition"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-seismograph-actually-measures-an-earthquake.html",
-      "url": "https://doyouknow.app/en/article/how-a-seismograph-actually-measures-an-earthquake.html",
-      "title": "How a Seismograph Actually Measures an Earthquake",
-      "content_text": "A seismograph doesn't feel the ground shake — it exploits a mass's inertia, letting the earth move around a motionless weight while a sensor records the difference.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-smoke-detector-actually-tells-smoke-from-clean-air.html",
-      "url": "https://doyouknow.app/en/article/how-a-smoke-detector-actually-tells-smoke-from-clean-air.html",
-      "title": "How a Smoke Detector Actually Tells Smoke From Clean Air",
-      "content_text": "Most home smoke detectors don't smell smoke — they watch a beam of light or a stream of ions, and the two designs catch fires at genuinely different speeds.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-a-submarine-actually-controls-its-buoyancy.html",
-      "url": "https://doyouknow.app/en/article/how-a-submarine-actually-controls-its-buoyancy.html",
-      "title": "How a Submarine Actually Controls Its Buoyancy",
-      "content_text": "A submarine dives and surfaces by flooding or emptying ballast tanks with seawater, adjusting its own weight until it exactly balances the water it displaces.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "Science"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-an-x-ray-machine-actually-sees-inside-the-body.html",
-      "url": "https://doyouknow.app/en/article/how-an-x-ray-machine-actually-sees-inside-the-body.html",
-      "title": "How an X-Ray Machine Actually Sees Inside the Body",
-      "content_text": "X-rays pass easily through soft tissue but are absorbed by dense bone, so the machine isn't seeing directly — it's photographing a shadow of whatever blocked the beam.",
+      "id": "https://doyouknow.app/en/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html",
+      "url": "https://doyouknow.app/en/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html",
+      "title": "How Braces Actually Straighten Teeth With Slow, Constant Force",
+      "content_text": "Braces don't push teeth through solid bone. They apply light, sustained pressure that triggers living bone to dissolve on one side of the tooth and rebuild on the other.",
       "date_published": "2026-09-12",
       "tags": [
         "Health"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-bats-actually-see-the-world-through-echolocation.html",
-      "url": "https://doyouknow.app/en/article/how-bats-actually-see-the-world-through-echolocation.html",
-      "title": "How Bats Actually See the World Through Echolocation",
-      "content_text": "A bat doesn't listen for sound in the dark — it shouts constantly and reconstructs an entire three-dimensional world purely from the timing and pitch of what bounces back.",
+      "id": "https://doyouknow.app/en/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html",
+      "url": "https://doyouknow.app/en/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html",
+      "title": "How Bubble Wrap Actually Cushions a Package",
+      "content_text": "Bubble wrap protects fragile items by trapping compressible air pockets that absorb and spread impact force, and it was originally invented in 1957 as textured wallpaper.",
       "date_published": "2026-09-12",
       "tags": [
         "Science"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-espresso-extraction-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-espresso-extraction-actually-works.html",
-      "title": "How Espresso Extraction Actually Works",
-      "content_text": "Espresso isn't just strong coffee — it's a specific extraction forcing near-boiling water through compacted grounds at 9 bars, pulling out a chemical mix no drip method can.",
+      "id": "https://doyouknow.app/en/article/how-chameleons-actually-change-their-skin-color.html",
+      "url": "https://doyouknow.app/en/article/how-chameleons-actually-change-their-skin-color.html",
+      "title": "How Chameleons Actually Change Their Skin Color",
+      "content_text": "Chameleons don't change color by shuffling pigment. They actively tune a lattice of guanine nanocrystals in their skin, physically shifting which wavelengths of light bounce back.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html",
+      "url": "https://doyouknow.app/en/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html",
+      "title": "How Chewing Gum Actually Stays Soft Instead of Dissolving",
+      "content_text": "Chewing gum survives saliva because its base is made of insoluble polymers water cannot break apart, unlike the sugar and flavoring that dissolve within minutes.",
       "date_published": "2026-09-12",
       "tags": [
         "Nutrition"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-glaciers-actually-carve-valleys-and-move-downhill.html",
-      "url": "https://doyouknow.app/en/article/how-glaciers-actually-carve-valleys-and-move-downhill.html",
-      "title": "How Glaciers Actually Carve Valleys and Move Downhill",
-      "content_text": "A glacier isn't a frozen, static block — it's a slowly deforming river of ice that flows under its own weight, grinding rock and carving valleys over thousands of years.",
+      "id": "https://doyouknow.app/en/article/how-fireworks-actually-get-their-different-colors.html",
+      "url": "https://doyouknow.app/en/article/how-fireworks-actually-get-their-different-colors.html",
+      "title": "How Fireworks Actually Get Their Different Colors",
+      "content_text": "Firework colors come from metal salts burning at set temperatures, each element emitting a distinct wavelength as its electrons jump back to a lower energy state.",
       "date_published": "2026-09-12",
       "tags": [
         "Science"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-the-eiffel-tower-actually-grows-taller-in-summer.html",
-      "url": "https://doyouknow.app/en/article/how-the-eiffel-tower-actually-grows-taller-in-summer.html",
-      "title": "How the Eiffel Tower Actually Grows Taller in Summer",
-      "content_text": "The Eiffel Tower physically grows up to 15 centimeters on hot summer days — not an illusion, but simple thermal expansion acting on 7,300 tons of sun-heated iron.",
+      "id": "https://doyouknow.app/en/article/how-ice-skates-actually-glide-with-almost-no-friction.html",
+      "url": "https://doyouknow.app/en/article/how-ice-skates-actually-glide-with-almost-no-friction.html",
+      "title": "How Ice Skates Actually Glide With Almost No Friction",
+      "content_text": "Ice skates don't glide because ice is naturally slippery. A thin blade under body weight creates a microscopic liquid water layer that the skater rides on.",
       "date_published": "2026-09-12",
       "tags": [
         "Science"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-velcro-actually-grips-with-thousands-of-tiny-hooks.html",
-      "url": "https://doyouknow.app/en/article/how-velcro-actually-grips-with-thousands-of-tiny-hooks.html",
-      "title": "How Velcro Actually Grips With Thousands of Tiny Hooks",
-      "content_text": "Velcro isn't sticky at all — it's two different woven surfaces, one bristling with tiny hooks and one made of soft loops, with grip that comes purely from mechanical snagging.",
+      "id": "https://doyouknow.app/en/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html",
+      "url": "https://doyouknow.app/en/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html",
+      "title": "How Laser Eye Surgery Actually Reshapes the Cornea",
+      "content_text": "LASIK doesn't fix the eye's lens or retina — it vaporizes microscopic layers of the clear cornea itself, permanently reshaping how it bends light onto the retina.",
       "date_published": "2026-09-12",
       "tags": [
-        "Technology Explained"
+        "Health"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/why-a-boomerang-actually-flies-back-to-the-thrower.html",
-      "url": "https://doyouknow.app/en/article/why-a-boomerang-actually-flies-back-to-the-thrower.html",
-      "title": "Why a Boomerang Actually Flies Back to the Thrower",
-      "content_text": "A returning boomerang isn't spinning magic — it's a fast-spinning wing whose two arms generate uneven lift, and that imbalance steadily steers the whole flight path into a curve.",
+      "id": "https://doyouknow.app/en/article/how-memory-foam-actually-molds-to-your-body.html",
+      "url": "https://doyouknow.app/en/article/how-memory-foam-actually-molds-to-your-body.html",
+      "title": "How Memory Foam Actually Molds to Your Body",
+      "content_text": "Memory foam doesn't just compress like ordinary foam — its open-cell structure softens with body heat and slowly flows around pressure points, then springs back.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-octopuses-actually-camouflage-in-under-a-second.html",
+      "url": "https://doyouknow.app/en/article/how-octopuses-actually-camouflage-in-under-a-second.html",
+      "title": "How Octopuses Actually Camouflage in Under a Second",
+      "content_text": "An octopus can match a coral reef's color, texture, and pattern almost instantly using skin controlled directly by its brain and a body it cannot actually see in color.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-optical-illusions-actually-trick-the-brain.html",
+      "url": "https://doyouknow.app/en/article/how-optical-illusions-actually-trick-the-brain.html",
+      "title": "How Optical Illusions Actually Trick the Brain",
+      "content_text": "An illusion isn't your eyes malfunctioning — it's your brain's shortcut prediction system, built for split-second decisions, guessing wrong about a scene engineered to fool it.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html",
+      "url": "https://doyouknow.app/en/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html",
+      "title": "How Papermaking Turns Wood Fibers Into Paper",
+      "content_text": "Paper has no glue holding it together. Wood fibers drained onto a screen and pressed dry let hydrogen bonds between the fibers lock the sheet into a solid.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html",
+      "url": "https://doyouknow.app/en/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html",
+      "title": "How Phantom Traffic Jams Actually Form With No Accident or Cause",
+      "content_text": "A phantom traffic jam needs no crash or obstacle — just one driver braking slightly harder than necessary, which small overreactions amplify into a full stop.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html",
+      "url": "https://doyouknow.app/en/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html",
+      "title": "How Rip Currents Actually Pull Swimmers Out to Sea",
+      "content_text": "A rip current isn't a whirlpool pulling swimmers under — it's a narrow, fast river of water escaping to sea through a sandbar gap, pulling outward, never down.",
+      "date_published": "2026-09-12",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-volcanoes-actually-erupt.html",
+      "url": "https://doyouknow.app/en/article/how-volcanoes-actually-erupt.html",
+      "title": "How Volcanoes Actually Erupt",
+      "content_text": "An eruption isn't just melted rock pushing up — it's dissolved gas trying to escape a liquid under pressure, the same physics that makes a shaken soda can explode when opened.",
       "date_published": "2026-09-12",
       "tags": [
         "Science"
