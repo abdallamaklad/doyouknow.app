@@ -5,325 +5,325 @@
   <link>https://doyouknow.app/</link>
   <description>Facts and practical guides from doyouknow.app</description>
   <language>en-ar</language>
-  <lastBuildDate>Sat, 12 Sep 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 15 Sep 2026 00:00:00 GMT</lastBuildDate>
   <item>
-    <title>How a Compass Actually Finds Magnetic North</title>
-    <link>https://doyouknow.app/en/article/how-a-compass-actually-finds-magnetic-north.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-compass-actually-finds-magnetic-north.html</guid>
+    <title>How Content Creators Use AI Tools to Speed Up Their Workflow</title>
+    <link>https://doyouknow.app/en/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html</guid>
+    <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
+    <description>How content creators actually use AI tools: brainstorming, repurposing long videos into shorts, prompt templates for voice, and where automation still falls short.</description>
+    <category>Business and Economy</category>
+  </item>
+  <item>
+    <title>كيف يستخدم صانعو المحتوى الذكاء الاصطناعي لتسريع عملهم</title>
+    <link>https://doyouknow.app/ar/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html</guid>
+    <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
+    <description>نظرة واقعية على كيفية استخدام صانعي المحتوى فعليًا لأدوات الذكاء الاصطناعي: العصف الذهني، وتحويل الفيديوهات الطويلة إلى مقاطع قصيرة، وقوالب الأسئلة، وأين لا تزال الأتمتة قاصرة.</description>
+    <category>الأعمال والاقتصاد</category>
+  </item>
+  <item>
+    <title>Why the Same AI Prompt Gives Different Answers Every Time</title>
+    <link>https://doyouknow.app/en/article/why-the-same-ai-prompt-gives-different-answers-every-time.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/why-the-same-ai-prompt-gives-different-answers-every-time.html</guid>
+    <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
+    <description>Why running the same prompt through ChatGPT, Claude, or Gemini twice can produce two different answers: temperature, sampling, context, and silent model updates explained.</description>
+    <category>Technology Explained</category>
+  </item>
+  <item>
+    <title>لماذا تختلف إجابة الذكاء الاصطناعي في كل مرة؟</title>
+    <link>https://doyouknow.app/ar/article/why-the-same-ai-prompt-gives-different-answers-every-time.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/why-the-same-ai-prompt-gives-different-answers-every-time.html</guid>
+    <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
+    <description>لماذا يمكن أن يُنتج الطلب النصي نفسه في ChatGPT أو Claude أو Gemini إجابتين مختلفتين في كل مرة: درجة الحرارة، وأخذ العينات، والسياق، وتحديثات النموذج الصامتة، كلها موضحة.</description>
+    <category>التقنية</category>
+  </item>
+  <item>
+    <title>How a Bulletproof Vest Actually Stops a Bullet</title>
+    <link>https://doyouknow.app/en/article/how-a-bulletproof-vest-actually-stops-a-bullet.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-bulletproof-vest-actually-stops-a-bullet.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A compass needle aligns with Earth's own magnetic field, not true north, which is why every accurate reading needs a small correction called declination.</description>
+    <description>A soft vest doesn't block a bullet — it catches it in a web of ultra-strong fibers that spread the impact energy sideways across a wide area before the tip ever reaches skin.</description>
     <category>Science</category>
   </item>
   <item>
-    <title>كيف تجد البوصلة فعلياً الشمال المغناطيسي</title>
-    <link>https://doyouknow.app/ar/article/how-a-compass-actually-finds-magnetic-north.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-compass-actually-finds-magnetic-north.html</guid>
+    <title>كيف توقف السترة الواقية من الرصاص الرصاصة فعلياً</title>
+    <link>https://doyouknow.app/ar/article/how-a-bulletproof-vest-actually-stops-a-bullet.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-bulletproof-vest-actually-stops-a-bullet.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>تصطف إبرة البوصلة مع المجال المغناطيسي للأرض نفسه وليس الشمال الحقيقي، ولهذا تحتاج كل قراءة دقيقة إلى تصحيح صغير يُسمى الانحراف المغناطيسي.</description>
+    <description>السترة اللينة لا توقف الرصاصة، بل تلتقطها بشبكة من الألياف فائقة القوة توزع طاقة الاصطدام جانبياً عبر مساحة واسعة قبل أن يصل الطرف إلى الجلد.</description>
     <category>العلوم</category>
   </item>
   <item>
-    <title>How a Defibrillator Actually Restarts a Stopped Heart</title>
-    <link>https://doyouknow.app/en/article/how-a-defibrillator-actually-restarts-a-stopped-heart.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-defibrillator-actually-restarts-a-stopped-heart.html</guid>
+    <title>How a Toilet Actually Flushes Without a Pump</title>
+    <link>https://doyouknow.app/en/article/how-a-toilet-actually-flushes-without-a-pump.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-toilet-actually-flushes-without-a-pump.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A defibrillator doesn't restart a flatlined heart — it delivers a brief, powerful shock that stops chaotic electrical activity so the heart's own natural rhythm can resume.</description>
+    <description>A toilet flush uses only gravity and siphon suction created by a specially shaped trapway, pulling waste out with no motor or pump involved at all.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف تُصرّف المرحاض فعلياً دون أي مضخة</title>
+    <link>https://doyouknow.app/ar/article/how-a-toilet-actually-flushes-without-a-pump.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-toilet-actually-flushes-without-a-pump.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>يعتمد صرف المرحاض فقط على الجاذبية وشفط سيفوني ينشئه ممر مصمم بشكل خاص، فيسحب الفضلات دون أي محرك أو مضخة على الإطلاق.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How an Umbrella Actually Survives Strong Wind</title>
+    <link>https://doyouknow.app/en/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>A well-designed umbrella survives gusts not by resisting wind head-on but by flexing and venting force through hinged ribs engineered to bend before they break.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف ينجو المظلة فعلياً من الرياح دون أن تنقلب للداخل</title>
+    <link>https://doyouknow.app/ar/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>تنجو المظلة الجيدة التصميم من هبات الرياح ليس بمقاومتها مباشرة، بل بالانثناء وتصريف الهواء وإعادة توزيع القوة عبر نظام من الأضلاع المفصلية المصممة للانحناء قبل أن تنكسر.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>Why You're Actually a Night Owl or Early Bird</title>
+    <link>https://doyouknow.app/en/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>Your sleep schedule isn't a habit — it's set by genes controlling a roughly 24-hour internal clock, and forcing it against your chronotype has real health costs.</description>
     <category>Health</category>
   </item>
   <item>
-    <title>كيف يعيد جهاز الصدمات القلبية فعلياً تشغيل قلب متوقف</title>
-    <link>https://doyouknow.app/ar/article/how-a-defibrillator-actually-restarts-a-stopped-heart.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-defibrillator-actually-restarts-a-stopped-heart.html</guid>
+    <title>لماذا أنت فعلياً شخص ليلي أو صباحي</title>
+    <link>https://doyouknow.app/ar/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا يعيد جهاز الصدمات القلبية تشغيل قلب متوقف تماماً — بل يرسل صدمة قوية وموجزة توقف النشاط الكهربائي الفوضوي ليتمكن الإيقاع الطبيعي للقلب من استئناف عمله.</description>
+    <description>جدول نومك ليس عادة، بل تُحدده جينات تتحكم بساعة داخلية مدتها 24 ساعة تقريباً، وإجباره ضد نمطك الزمني له تكاليف صحية قابلة للقياس.</description>
     <category>الصحة</category>
   </item>
   <item>
-    <title>How a Fire Extinguisher Actually Fights Different Fires</title>
-    <link>https://doyouknow.app/en/article/how-a-fire-extinguisher-actually-puts-out-different-kinds-of-fire.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-fire-extinguisher-actually-puts-out-different-kinds-of-fire.html</guid>
+    <title>How Braces Actually Straighten Teeth With Slow, Constant Force</title>
+    <link>https://doyouknow.app/en/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A fire extinguisher doesn't just spray water — it breaks one leg of the fire's chemical triangle, and using the wrong agent on the wrong fuel can make a fire far more dangerous.</description>
-    <category>Science</category>
-  </item>
-  <item>
-    <title>كيف يطفئ طفاية الحريق فعلياً أنواعاً مختلفة من النار</title>
-    <link>https://doyouknow.app/ar/article/how-a-fire-extinguisher-actually-puts-out-different-kinds-of-fire.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-fire-extinguisher-actually-puts-out-different-kinds-of-fire.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا ترش طفاية الحريق الماء فحسب — بل تكسر أحد أضلاع مثلث النار الكيميائي، واستخدام العامل الخاطئ على الوقود الخاطئ قد يجعل الحريق أخطر بكثير.</description>
-    <category>العلوم</category>
-  </item>
-  <item>
-    <title>How a Hologram Actually Stores a 3D Image on a Flat Surface</title>
-    <link>https://doyouknow.app/en/article/how-a-hologram-actually-stores-a-3d-image-on-a-flat-surface.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-hologram-actually-stores-a-3d-image-on-a-flat-surface.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A hologram doesn't record a picture — it records an interference pattern of light waves, letting a flat piece of film somehow show a scene from different angles.</description>
-    <category>Technology Explained</category>
-  </item>
-  <item>
-    <title>كيف تخزّن الهولوغرام فعلياً صورة ثلاثية الأبعاد على سطح مسطح</title>
-    <link>https://doyouknow.app/ar/article/how-a-hologram-actually-stores-a-3d-image-on-a-flat-surface.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-hologram-actually-stores-a-3d-image-on-a-flat-surface.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا تسجّل الهولوغرام صورة إطلاقاً — بل تسجّل نمط تداخل لموجات الضوء، وهذا النمط هو السبب الوحيد الذي يجعل قطعة فيلم مسطحة تُظهر لك مشهداً من زوايا مختلفة.</description>
-    <category>التقنية</category>
-  </item>
-  <item>
-    <title>How a Jet Engine Actually Generates Thrust</title>
-    <link>https://doyouknow.app/en/article/how-a-jet-engine-actually-generates-thrust.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-jet-engine-actually-generates-thrust.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A jet engine sucks in air, compresses it, burns fuel to expand it violently, then blasts it out the back — Newton's third law does the rest.</description>
-    <category>Technology Explained</category>
-  </item>
-  <item>
-    <title>كيف يولّد محرك الطائرة النفاث الدفع فعلياً</title>
-    <link>https://doyouknow.app/ar/article/how-a-jet-engine-actually-generates-thrust.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-jet-engine-actually-generates-thrust.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>يسحب محرك الطائرة النفاث الهواء ويضغطه ويحرق الوقود لتمديده بعنف ثم يقذفه من الخلف — ويقوم قانون نيوتن الثالث بالباقي.</description>
-    <category>التقنية</category>
-  </item>
-  <item>
-    <title>How a Kaleidoscope Turns a Few Beads into Endless Patterns</title>
-    <link>https://doyouknow.app/en/article/how-a-kaleidoscope-actually-turns-a-few-beads-into-endless-patterns.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-kaleidoscope-actually-turns-a-few-beads-into-endless-patterns.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A kaleidoscope holds a handful of loose beads and mirrors, yet never repeats. The trick isn't the beads — it's how mirror angles multiply one glimpse into endless symmetry.</description>
-    <category>Science</category>
-  </item>
-  <item>
-    <title>كيف يحوّل الكاليدوسكوب فعلياً بضع خرزات إلى أنماط لا نهائية</title>
-    <link>https://doyouknow.app/ar/article/how-a-kaleidoscope-actually-turns-a-few-beads-into-endless-patterns.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-kaleidoscope-actually-turns-a-few-beads-into-endless-patterns.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>يحتوي الكاليدوسكوب على حفنة من الخرزات ومرآتين أو ثلاث، ومع ذلك لا يبدو أنه يكرر نفسه. الحيلة ليست في الخرزات — بل في مضاعفة زوايا المرايا للمحة واحدة إلى تناظر لا نهائي.</description>
-    <category>العلوم</category>
-  </item>
-  <item>
-    <title>How a Mars Rover Navigates Without Real-Time Human Control</title>
-    <link>https://doyouknow.app/en/article/how-a-mars-rover-actually-navigates-without-real-time-human-control.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-mars-rover-actually-navigates-without-real-time-human-control.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>No one on Earth can drive a Mars rover with a joystick — the delay is too long, so it looks at the ground itself and decides, in real time, whether it's about to fall off a cliff.</description>
-    <category>Science</category>
-  </item>
-  <item>
-    <title>كيف يتنقل مسبار المريخ فعلياً دون تحكم بشري في الوقت الفعلي</title>
-    <link>https://doyouknow.app/ar/article/how-a-mars-rover-actually-navigates-without-real-time-human-control.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-mars-rover-actually-navigates-without-real-time-human-control.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا يمكن لأحد على الأرض قيادة مسبار مريخي بعصا تحكم — تأخير الاتصال طويل جداً، لذا يجب على المسبار أن ينظر للأرض بنفسه ويقرر، في الوقت الفعلي، ما إذا كان على وشك السقوط من منحدر.</description>
-    <category>العلوم</category>
-  </item>
-  <item>
-    <title>How a Nuclear Reactor Actually Generates Electricity</title>
-    <link>https://doyouknow.app/en/article/how-a-nuclear-reactor-actually-generates-electricity.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-nuclear-reactor-actually-generates-electricity.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A nuclear reactor splits uranium atoms to release heat, which boils water into steam that spins a turbine — the reaction never touches the electricity-generating machinery.</description>
-    <category>Science</category>
-  </item>
-  <item>
-    <title>كيف يولّد المفاعل النووي فعلياً الكهرباء</title>
-    <link>https://doyouknow.app/ar/article/how-a-nuclear-reactor-actually-generates-electricity.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-nuclear-reactor-actually-generates-electricity.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>يشطر المفاعل النووي ذرات اليورانيوم لإطلاق الحرارة، التي تغلي الماء لتحويله إلى بخار يُدير توربيناً — والتفاعل نفسه لا يلامس أبداً آلات توليد الكهرباء.</description>
-    <category>العلوم</category>
-  </item>
-  <item>
-    <title>How a Parachute Actually Slows a Falling Body</title>
-    <link>https://doyouknow.app/en/article/how-a-parachute-actually-slows-a-falling-body.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-parachute-actually-slows-a-falling-body.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A parachute doesn't stop gravity — it trades a small canopy for a huge one, turning a compact skydiver into a wide, slow-falling shape air resistance can balance against weight.</description>
-    <category>Science</category>
-  </item>
-  <item>
-    <title>كيف تُبطئ المظلة فعلياً جسماً ساقطاً</title>
-    <link>https://doyouknow.app/ar/article/how-a-parachute-actually-slows-a-falling-body.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-parachute-actually-slows-a-falling-body.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا توقف المظلة الجاذبية — بل تستبدل مساحة صغيرة بأخرى ضخمة، محوّلة القافز المضغوط إلى شكل عريض بطيء السقوط يمكن لمقاومة الهواء أخيراً موازنته مع الوزن.</description>
-    <category>العلوم</category>
-  </item>
-  <item>
-    <title>How a Pressure Cooker Actually Cooks Food Faster</title>
-    <link>https://doyouknow.app/en/article/how-a-pressure-cooker-actually-cooks-food-faster.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-pressure-cooker-actually-cooks-food-faster.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A pressure cooker doesn't just trap heat — it traps steam until pressure rises high enough to push water's boiling point far above 100°C, which is the entire secret to its speed.</description>
-    <category>Nutrition</category>
-  </item>
-  <item>
-    <title>كيف تطبخ قدر الضغط الطعام فعلياً أسرع</title>
-    <link>https://doyouknow.app/ar/article/how-a-pressure-cooker-actually-cooks-food-faster.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-pressure-cooker-actually-cooks-food-faster.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا تحبس قدر الضغط الحرارة فحسب — بل تحبس البخار حتى يرتفع الضغط بما يكفي لدفع نقطة غليان الماء إلى ما فوق 100 درجة مئوية بكثير، وهذا هو السر الكامل وراء سرعتها.</description>
-    <category>التغذية</category>
-  </item>
-  <item>
-    <title>How a Seismograph Actually Measures an Earthquake</title>
-    <link>https://doyouknow.app/en/article/how-a-seismograph-actually-measures-an-earthquake.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-seismograph-actually-measures-an-earthquake.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A seismograph doesn't feel the ground shake — it exploits a mass's inertia, letting the earth move around a motionless weight while a sensor records the difference.</description>
-    <category>Science</category>
-  </item>
-  <item>
-    <title>كيف يقيس مقياس الزلازل فعلياً حدوث زلزال</title>
-    <link>https://doyouknow.app/ar/article/how-a-seismograph-actually-measures-an-earthquake.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-seismograph-actually-measures-an-earthquake.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا يشعر مقياس الزلازل باهتزاز الأرض — بل يستغل قصور الكتلة الذاتي، تاركاً الأرض تتحرك حول وزن شبه ثابت بينما يسجل قلم أو مستشعر الفرق.</description>
-    <category>العلوم</category>
-  </item>
-  <item>
-    <title>How a Smoke Detector Actually Tells Smoke From Clean Air</title>
-    <link>https://doyouknow.app/en/article/how-a-smoke-detector-actually-tells-smoke-from-clean-air.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-smoke-detector-actually-tells-smoke-from-clean-air.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>Most home smoke detectors don't smell smoke — they watch a beam of light or a stream of ions, and the two designs catch fires at genuinely different speeds.</description>
-    <category>Technology Explained</category>
-  </item>
-  <item>
-    <title>كيف يميّز كاشف الدخان فعلياً الدخان عن الهواء النظيف</title>
-    <link>https://doyouknow.app/ar/article/how-a-smoke-detector-actually-tells-smoke-from-clean-air.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-smoke-detector-actually-tells-smoke-from-clean-air.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا تشمّ معظم كاشفات الدخان المنزلية الدخان إطلاقاً — بل تراقب شعاع ضوء أو تياراً دقيقاً من الأيونات، والتصميمان مختلفان لدرجة أنهما يكتشفان الحرائق بسرعات مختلفة فعلياً.</description>
-    <category>التقنية</category>
-  </item>
-  <item>
-    <title>How a Submarine Actually Controls Its Buoyancy</title>
-    <link>https://doyouknow.app/en/article/how-a-submarine-actually-controls-its-buoyancy.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-a-submarine-actually-controls-its-buoyancy.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A submarine dives and surfaces by flooding or emptying ballast tanks with seawater, adjusting its own weight until it exactly balances the water it displaces.</description>
-    <category>Science</category>
-  </item>
-  <item>
-    <title>كيف تتحكم الغواصة فعلياً في طفوها</title>
-    <link>https://doyouknow.app/ar/article/how-a-submarine-actually-controls-its-buoyancy.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-a-submarine-actually-controls-its-buoyancy.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>تغوص الغواصة وتطفو بملء أو تفريغ خزانات الصابورة بمياه البحر، ضابطة بدقة وزنها الخاص حتى يوازن تماماً وزن الماء الذي تزيحه.</description>
-    <category>العلوم</category>
-  </item>
-  <item>
-    <title>How an X-Ray Machine Actually Sees Inside the Body</title>
-    <link>https://doyouknow.app/en/article/how-an-x-ray-machine-actually-sees-inside-the-body.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-an-x-ray-machine-actually-sees-inside-the-body.html</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>X-rays pass easily through soft tissue but are absorbed by dense bone, so the machine isn't seeing directly — it's photographing a shadow of whatever blocked the beam.</description>
+    <description>Braces don't push teeth through solid bone. They apply light, sustained pressure that triggers living bone to dissolve on one side of the tooth and rebuild on the other.</description>
     <category>Health</category>
   </item>
   <item>
-    <title>كيف ترى آلة الأشعة السينية فعلياً داخل الجسم</title>
-    <link>https://doyouknow.app/ar/article/how-an-x-ray-machine-actually-sees-inside-the-body.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-an-x-ray-machine-actually-sees-inside-the-body.html</guid>
+    <title>كيف يُقوّم التقويم الأسنان فعلياً بقوة بطيئة ومستمرة</title>
+    <link>https://doyouknow.app/ar/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>تمر الأشعة السينية بسهولة عبر الأنسجة الرخوة لكن تمتصها العظام الكثيفة، فالآلة لا ترى شيئاً مباشرة — بل تُصوّر ظل ما اعترض الشعاع في طريقه إلى الكاشف.</description>
+    <description>لا يدفع التقويم الأسنان عبر عظم صلب، بل يطبّق ضغطاً خفيفاً ومستمراً يحفّز العظم الحي على الذوبان في جهة والبناء من جديد في الجهة المقابلة.</description>
     <category>الصحة</category>
   </item>
   <item>
-    <title>How Bats Actually See the World Through Echolocation</title>
-    <link>https://doyouknow.app/en/article/how-bats-actually-see-the-world-through-echolocation.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-bats-actually-see-the-world-through-echolocation.html</guid>
+    <title>How Bubble Wrap Actually Cushions a Package</title>
+    <link>https://doyouknow.app/en/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A bat doesn't listen for sound in the dark — it shouts constantly and reconstructs an entire three-dimensional world purely from the timing and pitch of what bounces back.</description>
+    <description>Bubble wrap protects fragile items by trapping compressible air pockets that absorb and spread impact force, and it was originally invented in 1957 as textured wallpaper.</description>
     <category>Science</category>
   </item>
   <item>
-    <title>كيف ترى الخفافيش فعلياً العالم عبر تحديد الموقع بالصدى</title>
-    <link>https://doyouknow.app/ar/article/how-bats-actually-see-the-world-through-echolocation.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-bats-actually-see-the-world-through-echolocation.html</guid>
+    <title>كيف يحمي غلاف الفقاعات فعلياً الطرود من الصدمات</title>
+    <link>https://doyouknow.app/ar/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>لا تستمع الخفافيش للصوت في الظلام — بل تصرخ باستمرار وتعيد بناء عالم ثلاثي الأبعاد كامل بحتاً من توقيت وطبقة ما يرتد إليها.</description>
+    <description>يحمي غلاف الفقاعات الأغراض الهشة عبر حبس جيوب هواء قابلة للانضغاط تمتص القوة وتوزعها، وقد اخترع أصلاً عام 1957 كورق حائط مزخرف.</description>
     <category>العلوم</category>
   </item>
   <item>
-    <title>How Espresso Extraction Actually Works</title>
-    <link>https://doyouknow.app/en/article/how-espresso-extraction-actually-works.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-espresso-extraction-actually-works.html</guid>
+    <title>How Chameleons Actually Change Their Skin Color</title>
+    <link>https://doyouknow.app/en/article/how-chameleons-actually-change-their-skin-color.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-chameleons-actually-change-their-skin-color.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>Espresso isn't just strong coffee — it's a specific extraction forcing near-boiling water through compacted grounds at 9 bars, pulling out a chemical mix no drip method can.</description>
+    <description>Chameleons don't change color by shuffling pigment. They actively tune a lattice of guanine nanocrystals in their skin, physically shifting which wavelengths of light bounce back.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف يغيّر الحرباء لون جلده فعلياً</title>
+    <link>https://doyouknow.app/ar/article/how-chameleons-actually-change-their-skin-color.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-chameleons-actually-change-their-skin-color.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>لا يغيّر الحرباء لونه بتحريك الصبغات. بل يضبط شبكة من بلورات الغوانين النانوية في جلده، فيغيّر فعلياً الأطوال الموجية للضوء المرتد.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How Chewing Gum Actually Stays Soft Instead of Dissolving</title>
+    <link>https://doyouknow.app/en/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>Chewing gum survives saliva because its base is made of insoluble polymers water cannot break apart, unlike the sugar and flavoring that dissolve within minutes.</description>
     <category>Nutrition</category>
   </item>
   <item>
-    <title>كيف يعمل استخلاص الإسبريسو فعلياً</title>
-    <link>https://doyouknow.app/ar/article/how-espresso-extraction-actually-works.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-espresso-extraction-actually-works.html</guid>
+    <title>كيف تبقى علكة المضغ طرية فعلياً بدلاً من أن تذوب</title>
+    <link>https://doyouknow.app/ar/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>الإسبريسو ليس مجرد قهوة قوية — بل استخلاص محدد يدفع الماء شبه المغلي عبر بن مضغوط بضغط 9 بار، ساحباً خليطاً كيميائياً مختلفاً عمّا يمكن لأي طريقة تنقيط أو صب أن تُنتجه أبداً.</description>
+    <description>تنجو علكة المضغ من اللعاب لأن قاعدتها مصنوعة من بوليمرات غير قابلة للذوبان لا يستطيع الماء تفكيكها، خلافاً للسكر والنكهة المحيطين بها اللذين يذوبان خلال دقائق.</description>
     <category>التغذية</category>
   </item>
   <item>
-    <title>How Glaciers Actually Carve Valleys and Move Downhill</title>
-    <link>https://doyouknow.app/en/article/how-glaciers-actually-carve-valleys-and-move-downhill.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-glaciers-actually-carve-valleys-and-move-downhill.html</guid>
+    <title>How Fireworks Actually Get Their Different Colors</title>
+    <link>https://doyouknow.app/en/article/how-fireworks-actually-get-their-different-colors.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-fireworks-actually-get-their-different-colors.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A glacier isn't a frozen, static block — it's a slowly deforming river of ice that flows under its own weight, grinding rock and carving valleys over thousands of years.</description>
+    <description>Firework colors come from metal salts burning at set temperatures, each element emitting a distinct wavelength as its electrons jump back to a lower energy state.</description>
     <category>Science</category>
   </item>
   <item>
-    <title>كيف تنحت الأنهار الجليدية فعلياً الأودية وتتحرك منحدرة</title>
-    <link>https://doyouknow.app/ar/article/how-glaciers-actually-carve-valleys-and-move-downhill.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-glaciers-actually-carve-valleys-and-move-downhill.html</guid>
+    <title>كيف تحصل الألعاب النارية فعلياً على ألوانها المختلفة</title>
+    <link>https://doyouknow.app/ar/article/how-fireworks-actually-get-their-different-colors.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-fireworks-actually-get-their-different-colors.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>النهر الجليدي ليس كتلة متجمدة ثابتة — بل نهر جليد يتشوّه ببطء ويتدفق تحت وزنه الخاص، طاحناً الصخر إلى مسحوق وناحتاً أودية كاملة عبر آلاف السنين من الحركة الدؤوبة والصبورة.</description>
+    <description>تأتي ألوان الألعاب النارية من احتراق أملاح معدنية عند درجات حرارة محددة، إذ يُصدر كل عنصر طول موجة ضوء مميزاً بينما تقفز إلكتروناته إلى مستوى طاقة أدنى.</description>
     <category>العلوم</category>
   </item>
   <item>
-    <title>How the Eiffel Tower Actually Grows Taller in Summer</title>
-    <link>https://doyouknow.app/en/article/how-the-eiffel-tower-actually-grows-taller-in-summer.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-the-eiffel-tower-actually-grows-taller-in-summer.html</guid>
+    <title>How Ice Skates Actually Glide With Almost No Friction</title>
+    <link>https://doyouknow.app/en/article/how-ice-skates-actually-glide-with-almost-no-friction.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-ice-skates-actually-glide-with-almost-no-friction.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>The Eiffel Tower physically grows up to 15 centimeters on hot summer days — not an illusion, but simple thermal expansion acting on 7,300 tons of sun-heated iron.</description>
+    <description>Ice skates don't glide because ice is naturally slippery. A thin blade under body weight creates a microscopic liquid water layer that the skater rides on.</description>
     <category>Science</category>
   </item>
   <item>
-    <title>كيف يزداد برج إيفل فعلياً ارتفاعاً في الصيف</title>
-    <link>https://doyouknow.app/ar/article/how-the-eiffel-tower-actually-grows-taller-in-summer.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-the-eiffel-tower-actually-grows-taller-in-summer.html</guid>
+    <title>كيف تنزلق أحذية التزلج فعلياً بأقل احتكاك تقريباً</title>
+    <link>https://doyouknow.app/ar/article/how-ice-skates-actually-glide-with-almost-no-friction.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-ice-skates-actually-glide-with-almost-no-friction.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>ينمو برج إيفل فعلياً حتى 15 سنتيمتراً في أيام الصيف الحارة — ليس وهماً، بل تمدداً حرارياً بسيطاً يُؤثّر على 7300 طن من الحديد المُسخّن بشكل غير متساوٍ بالشمس.</description>
+    <description>لا تنزلق أحذية التزلج لأن الجليد زلق طبيعياً، بل لأن النصل الرفيع تحت وزن الجسم يخلق طبقة مجهرية من الماء السائل يركبها المتزلج فعلياً، لا الجليد الصلب نفسه.</description>
     <category>العلوم</category>
   </item>
   <item>
-    <title>How Velcro Actually Grips With Thousands of Tiny Hooks</title>
-    <link>https://doyouknow.app/en/article/how-velcro-actually-grips-with-thousands-of-tiny-hooks.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/how-velcro-actually-grips-with-thousands-of-tiny-hooks.html</guid>
+    <title>How Laser Eye Surgery Actually Reshapes the Cornea</title>
+    <link>https://doyouknow.app/en/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>Velcro isn't sticky at all — it's two different woven surfaces, one bristling with tiny hooks and one made of soft loops, with grip that comes purely from mechanical snagging.</description>
-    <category>Technology Explained</category>
+    <description>LASIK doesn't fix the eye's lens or retina — it vaporizes microscopic layers of the clear cornea itself, permanently reshaping how it bends light onto the retina.</description>
+    <category>Health</category>
   </item>
   <item>
-    <title>كيف يتمسك الفيلكرو فعلياً بآلاف الخطافات الصغيرة</title>
-    <link>https://doyouknow.app/ar/article/how-velcro-actually-grips-with-thousands-of-tiny-hooks.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-velcro-actually-grips-with-thousands-of-tiny-hooks.html</guid>
+    <title>كيف تُعيد جراحة الليزر تشكيل القرنية فعلياً</title>
+    <link>https://doyouknow.app/ar/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>الفيلكرو ليس لزجاً إطلاقاً — بل سطحان منسوجان مختلفان تماماً، أحدهما مليء بخطافات صغيرة والآخر مصنوع من حلقات ناعمة، ويأتي التماسك بحتاً من التعلّق الميكانيكي.</description>
-    <category>التقنية</category>
+    <description>لا يُصلح الليزك عدسة العين أو الشبكية، بل يُبخّر بدقة طبقات مجهرية من القرنية الشفافة نفسها، مُعيداً تشكيل طريقة انحناء الضوء بشكل دائم لتسقط الصورة بشكل صحيح على الشبكية.</description>
+    <category>الصحة</category>
   </item>
   <item>
-    <title>Why a Boomerang Actually Flies Back to the Thrower</title>
-    <link>https://doyouknow.app/en/article/why-a-boomerang-actually-flies-back-to-the-thrower.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/en/article/why-a-boomerang-actually-flies-back-to-the-thrower.html</guid>
+    <title>How Memory Foam Actually Molds to Your Body</title>
+    <link>https://doyouknow.app/en/article/how-memory-foam-actually-molds-to-your-body.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-memory-foam-actually-molds-to-your-body.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>A returning boomerang isn't spinning magic — it's a fast-spinning wing whose two arms generate uneven lift, and that imbalance steadily steers the whole flight path into a curve.</description>
+    <description>Memory foam doesn't just compress like ordinary foam — its open-cell structure softens with body heat and slowly flows around pressure points, then springs back.</description>
     <category>Science</category>
   </item>
   <item>
-    <title>لماذا يعود البومرانغ فعلياً إلى من رماه</title>
-    <link>https://doyouknow.app/ar/article/why-a-boomerang-actually-flies-back-to-the-thrower.html</link>
-    <guid isPermaLink="true">https://doyouknow.app/ar/article/why-a-boomerang-actually-flies-back-to-the-thrower.html</guid>
+    <title>كيف يتشكل إسفنج الذاكرة فعلياً حسب جسمك</title>
+    <link>https://doyouknow.app/ar/article/how-memory-foam-actually-molds-to-your-body.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-memory-foam-actually-molds-to-your-body.html</guid>
     <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <description>البومرانغ العائد ليس سحراً دوارّاً — بل جناح يدور بسرعة تولّد ذراعاه رفعاً غير متساوٍ، وهذا الخلل يوجّه مسار الطيران بأكمله باستمرار إلى منحنى.</description>
+    <description>إسفنج الذاكرة لا ينضغط فقط كالإسفنج العادي، بل بُنيته المفتوحة الخلايا مصممة لتلين بحرارة الجسم وتتدفق ببطء حول نقاط الضغط، ثم تعود ببطء مماثل.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How Octopuses Actually Camouflage in Under a Second</title>
+    <link>https://doyouknow.app/en/article/how-octopuses-actually-camouflage-in-under-a-second.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-octopuses-actually-camouflage-in-under-a-second.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>An octopus can match a coral reef's color, texture, and pattern almost instantly using skin controlled directly by its brain and a body it cannot actually see in color.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف يتموّه الأخطبوط فعلياً في أقل من ثانية</title>
+    <link>https://doyouknow.app/ar/article/how-octopuses-actually-camouflage-in-under-a-second.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-octopuses-actually-camouflage-in-under-a-second.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>يستطيع الأخطبوط مطابقة لون وملمس ونقش شعاب مرجانية بشكل شبه فوري باستخدام جلد يتحكم فيه دماغه مباشرة، رغم أنه لا يرى جسده فعلياً بالألوان.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How Optical Illusions Actually Trick the Brain</title>
+    <link>https://doyouknow.app/en/article/how-optical-illusions-actually-trick-the-brain.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-optical-illusions-actually-trick-the-brain.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>An illusion isn't your eyes malfunctioning — it's your brain's shortcut prediction system, built for split-second decisions, guessing wrong about a scene engineered to fool it.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف تخدع الخدع البصرية الدماغ فعلياً</title>
+    <link>https://doyouknow.app/ar/article/how-optical-illusions-actually-trick-the-brain.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-optical-illusions-actually-trick-the-brain.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>الخدعة البصرية ليست خللاً في عينيك، بل نظام التنبؤ المُختصر في دماغك، المصمم لقرارات نجاة سريعة، يُخمّن خطأً حول مشهد صُمم عمداً لخداعه.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How Papermaking Turns Wood Fibers Into Paper</title>
+    <link>https://doyouknow.app/en/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>Paper has no glue holding it together. Wood fibers drained onto a screen and pressed dry let hydrogen bonds between the fibers lock the sheet into a solid.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف تحوّل صناعة الورق فعلياً ألياف الخشب المفككة إلى ورقة صلبة</title>
+    <link>https://doyouknow.app/ar/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>لا يحتوي الورق على أي غراء يماسكه. تُصرَّف ألياف الخشب المعلّقة في الماء على شاشة وتُضغط حتى تجف، تاركة الروابط الهيدروجينية بين الألياف نفسها تُثبّت الورقة كصلبة متماسكة.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How Phantom Traffic Jams Actually Form With No Accident or Cause</title>
+    <link>https://doyouknow.app/en/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>A phantom traffic jam needs no crash or obstacle — just one driver braking slightly harder than necessary, which small overreactions amplify into a full stop.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف تتشكّل فعلياً اختناقات المرور الوهمية دون أي حادث أو سبب</title>
+    <link>https://doyouknow.app/ar/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>لا يحتاج اختناق المرور الوهمي إلى حادث أو عائق، بل مجرد سائق يكبح أكثر من اللازم، وهو ما يمكن أن تضخّمه ردود فعل مبالغ فيها إلى توقف كامل خلفه.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How Rip Currents Actually Pull Swimmers Out to Sea</title>
+    <link>https://doyouknow.app/en/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>A rip current isn't a whirlpool pulling swimmers under — it's a narrow, fast river of water escaping to sea through a sandbar gap, pulling outward, never down.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف تسحب فعلياً التيارات الخلفية السباحين نحو عمق البحر</title>
+    <link>https://doyouknow.app/ar/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>التيار الخلفي ليس دوامة تسحب السباحين للأسفل، بل نهر ضيق سريع الحركة من المياه يهرب عائداً للبحر عبر فجوة في الحاجز الرملي، ولا يسحب إلا للخارج، لا للأسفل أبداً.</description>
+    <category>العلوم</category>
+  </item>
+  <item>
+    <title>How Volcanoes Actually Erupt</title>
+    <link>https://doyouknow.app/en/article/how-volcanoes-actually-erupt.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/en/article/how-volcanoes-actually-erupt.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>An eruption isn't just melted rock pushing up — it's dissolved gas trying to escape a liquid under pressure, the same physics that makes a shaken soda can explode when opened.</description>
+    <category>Science</category>
+  </item>
+  <item>
+    <title>كيف تثور البراكين فعلياً</title>
+    <link>https://doyouknow.app/ar/article/how-volcanoes-actually-erupt.html</link>
+    <guid isPermaLink="true">https://doyouknow.app/ar/article/how-volcanoes-actually-erupt.html</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>الثوران ليس مجرد صخر منصهر يندفع للأعلى، بل غاز مذاب يحاول الهروب من سائل تحت ضغط، نفس فيزياء انفجار علبة صودا مهزوزة عند فتحها.</description>
     <category>العلوم</category>
   </item>
 </channel>
