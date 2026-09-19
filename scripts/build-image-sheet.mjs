@@ -30,22 +30,37 @@ function cell(value) {
 // --compact keeps only the unique subject per row; the shared style and
 // negative clauses are given to the agent once (editorial/hermes-brief.md)
 // instead of being repeated identically in 106 cells.
+// --gpt emits the GPT Image 2.5 prompt form: one self-contained instruction
+// per row, ready to paste, with the exclusion stated positively.
 const compact = args.includes('--compact');
+const gpt = args.includes('--gpt');
 
-const headers = compact
-  ? ['#', 'slug', 'filename', 'title', 'category', 'subject', 'status', 'notes']
-  : ['#', 'slug', 'filename', 'title', 'category', 'prompt', 'status', 'notes'];
+function gptPrompt(slug) {
+  // A few scenes have writing as part of the subject (handwriting practice, a
+  // ruler, a map, a printing block). For those the closing asks for the marks
+  // to be illegible rather than absent, which would contradict the scene.
+  const finish = spec._gpt_finish_overrides?.[slug] || spec._gpt_finish;
+  return `${spec._gpt_style} ${spec.prompts[slug]} ${finish}`;
+}
 
-const rows = manifest.map((m, i) => [
-  i + 1,
-  m.slug,
-  `${m.slug}.jpg`,
-  m.title,
-  m.category,
-  compact ? spec.prompts[m.slug] : `${spec._style} Subject: ${spec.prompts[m.slug]} ${spec._negative}`,
-  '',
-  ''
-]);
+const headers = gpt
+  ? ['#', 'filename', 'title', 'prompt', 'status', 'notes']
+  : compact
+    ? ['#', 'slug', 'filename', 'title', 'category', 'subject', 'status', 'notes']
+    : ['#', 'slug', 'filename', 'title', 'category', 'prompt', 'status', 'notes'];
+
+const rows = manifest.map((m, i) => gpt
+  ? [i + 1, `${m.slug}.jpg`, m.title, gptPrompt(m.slug), '', '']
+  : [
+      i + 1,
+      m.slug,
+      `${m.slug}.jpg`,
+      m.title,
+      m.category,
+      compact ? spec.prompts[m.slug] : `${spec._style} Subject: ${spec.prompts[m.slug]} ${spec._negative}`,
+      '',
+      ''
+    ]);
 
 const missingPrompt = manifest.filter((m) => !spec.prompts[m.slug]);
 if (missingPrompt.length) {

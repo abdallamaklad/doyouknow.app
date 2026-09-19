@@ -1,8 +1,31 @@
 # Hero image generation brief — 106 remaining articles
 
-Companion to `editorial/image-generation-sheet.csv` (full prompt per row) and
-`editorial/image-generation-sheet-compact.csv` (subject only, for the Google
-Sheet). Use whichever suits the runner.
+Three sheets, same 106 rows:
+
+| File | Prompt column | Use |
+| --- | --- | --- |
+| `image-generation-sheet-gpt.csv` | full, GPT Image 2.5 form | **default** — paste straight into Hermes |
+| `image-generation-sheet.csv` | full, keyword/diffusion form | Higgsfield or another diffusion model |
+| `image-generation-sheet-compact.csv` | subject only | reading and editing the briefs |
+
+## Why there are two prompt forms
+
+The diffusion form ends with a long list of forbidden things ("no text, no
+logos, no captions, no watermarks…"). That works on a diffusion model, which
+scores against the whole string, but it works against an instruction-following
+model like GPT Image 2.5: naming a thing in a negative list is still naming it,
+and the model tends to render it.
+
+The GPT form therefore states the constraint once, positively —
+*"Every surface in the frame is blank and unmarked"* — and reads as a single
+instruction rather than a keyword stack.
+
+Four rows have writing as part of the subject (handwriting practice, a ruler, a
+world map, a printing block). Asking those for "no lettering" contradicts the
+scene, so their closing asks for the marks to be **illegible** instead. They are
+stored as `_gpt_finish_overrides` in `image-prompts.json`.
+
+## Composing by hand
 
 The compact sheet holds only the unique **subject** per row. The style and
 negative clauses below are identical for all 106 and are given to the agent
