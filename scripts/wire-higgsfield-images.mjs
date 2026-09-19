@@ -2,8 +2,14 @@ import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const root = process.cwd();
-const jobTmp = process.env.JOBTMP || '/Users/abdallamaklad/.claude/jobs/f082850f/tmp';
-const doneSlugs = (await readFile(join(jobTmp, 'done-slugs.txt'), 'utf8'))
+
+// Slug list: --slugs <file> (preferred, repo-relative or absolute), else
+// JOBTMP/done-slugs.txt for backwards compatibility with the original run.
+const argv = process.argv.slice(2);
+const slugsFlag = argv.indexOf('--slugs') === -1 ? null : argv[argv.indexOf('--slugs') + 1];
+const slugsPath = slugsFlag || join(process.env.JOBTMP || '.', 'done-slugs.txt');
+
+const doneSlugs = (await readFile(slugsPath, 'utf8'))
   .split('\n').map((s) => s.trim()).filter(Boolean);
 const doneSet = new Set(doneSlugs);
 
@@ -71,9 +77,13 @@ function updateArticleHtml(html, { lang, slug, title }) {
       `<img class="featured-image" src="${path}" alt="${escapeHtml(alt)}" width="1200" height="675" loading="eager" fetchpriority="high">`
     );
   }
+  // These heroes are photographs, so the alt text must not keep describing them
+  // as an illustration ("Editorial illustration for" / "رسم توضيحي لمقال").
   html = html.replace(
     /<img\b[^>]*\bclass="[^"]*\b(?:featured-image|article-hero-image)\b[^"]*"[^>]*>/g,
-    (tag) => tag.replace(/\bsrc="[^"]*"/, `src="${path}"`)
+    (tag) => tag
+      .replace(/\bsrc="[^"]*"/, `src="${path}"`)
+      .replace(/\balt="[^"]*"/, `alt="${escapeHtml(alt)}"`)
   );
   html = updateArticleSchema(html, url);
   return html;
