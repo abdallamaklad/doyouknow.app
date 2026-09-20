@@ -8,6 +8,34 @@ Three sheets, same 106 rows:
 | `image-generation-sheet.csv` | full, keyword/diffusion form | Higgsfield or another diffusion model |
 | `image-generation-sheet-compact.csv` | subject only | reading and editing the briefs |
 
+## The prompt must never sound like an edit
+
+GPT's image tool refused a row with:
+
+> *"I can generate it, but the image tool is currently treating this request as
+> an edit and requires an existing image target. Please upload any image (even a
+> blank placeholder)."*
+
+The cause was grammar, not content. The prompt said **"Shoot it in natural
+available light…"**, and the four override rows opened with **"Keep any written
+marks soft and illegible…"**. An imperative verb plus a pronoun — *shoot it*,
+*keep the marks*, *let the photograph carry* — reads as an instruction to act on
+a picture that already exists. That routes the request to the image **edit**
+path, which then blocks waiting for a source image.
+
+Every clause is now declarative: it describes a photograph rather than ordering
+an action on one. "Shoot it in natural available light" became "The light is
+natural and available". Each prompt also opens by saying it is generated from
+scratch with no source picture.
+
+`scripts/check-image-prompts.mjs` fails the build if `shoot it`, `keep the`,
+`let the photograph`, `make it`, `edit`, `adjust`, `change the`, `remove the` or
+`using this image` reappears in any prompt, so this cannot regress quietly.
+
+Note the disclaimer avoids the word "edit" entirely, for the same reason the
+exclusion clause avoids listing forbidden objects: naming a mode is a way of
+suggesting it.
+
 ## Why there are two prompt forms
 
 The diffusion form ends with a long list of forbidden things ("no text, no

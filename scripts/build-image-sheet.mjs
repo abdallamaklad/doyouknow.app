@@ -43,14 +43,29 @@ function gptPrompt(slug) {
   return `${spec._gpt_style} ${spec.prompts[slug]} ${finish}`;
 }
 
+// Rows already generated, so a rebuilt sheet resumes rather than restarts.
+let progress = { done: {} };
+try {
+  progress = JSON.parse(await readFile(join(root, 'editorial', 'image-progress.json'), 'utf8'));
+} catch { /* no progress recorded yet */ }
+const done = progress.done || {};
+
 const headers = gpt
-  ? ['#', 'filename', 'title', 'prompt', 'status', 'notes']
+  ? ['#', 'filename', 'title', 'prompt', 'status', 'notes', 'image_url']
   : compact
     ? ['#', 'slug', 'filename', 'title', 'category', 'subject', 'status', 'notes']
     : ['#', 'slug', 'filename', 'title', 'category', 'prompt', 'status', 'notes'];
 
 const rows = manifest.map((m, i) => gpt
-  ? [i + 1, `${m.slug}.jpg`, m.title, gptPrompt(m.slug), '', '']
+  ? [
+      i + 1,
+      `${m.slug}.jpg`,
+      m.title,
+      gptPrompt(m.slug),
+      done[m.slug]?.status || '',
+      done[m.slug]?.notes || '',
+      done[m.slug]?.image_url || ''
+    ]
   : [
       i + 1,
       m.slug,

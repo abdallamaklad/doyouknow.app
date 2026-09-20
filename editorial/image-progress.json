@@ -1,0 +1,20 @@
+{
+  "_note": "Rows already generated, carried into regenerated sheets so a rebuild never loses progress. Verified against the Drive folder 16j21FDf8O6S7W3VLP5o4mgAQLGc88hw4, which is the source of truth — the sheet had not recorded why-eye-contact-norms-vary-by-culture even though the file existed.",
+  "done": {
+    "why-art-forgeries-are-so-hard-to-catch": {
+      "status": "generated",
+      "notes": "1600x900 JPG, verified: correct subject, no text in frame.",
+      "image_url": "https://drive.google.com/file/d/1W7MB0iarAG9ca-IXDBD4dH2LdK09z6zS/view"
+    },
+    "why-extreme-heat-is-deadlier-than-extreme-cold": {
+      "status": "generated",
+      "notes": "1600x900 JPG.",
+      "image_url": "https://drive.google.com/file/d/1L08UmgJM7_Y-ysJDchG6jZYPf9yLiIwF/view"
+    },
+    "why-eye-contact-norms-vary-by-culture": {
+      "status": "generated",
+      "notes": "1600x900 JPG. File existed in Drive but was missing from the sheet.",
+      "image_url": "https://drive.google.com/file/d/18azrLeNpE1MZAX07JZq-wxaR2DhWrG89/view"
+    }
+  }
+}
