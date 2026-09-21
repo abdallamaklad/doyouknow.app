@@ -30,4 +30,7 @@ jobs:
           # Mirror the generated tree, deleting removed HTML/assets so stale
           # footer URLs cannot survive on the VPS. Review VPS_PATH before merge.
           ARGS: "-rlptgoDz --delete"
-          EXCLUDE: "/.git/, /.github/, /scripts/, package.json, package-lock.json, README.md, /deploy/, /docs/, /marketing/, /research/, /design/, editorial-review.json, seo-audit-report-2026-06-30.md, traffic-monetization-plan.md, MASTER_DOYOUKNOW_STRATEGY.md, MARKETING_STRATEGY.md"
+          # .env* is excluded because rsync mirrors into the public web root —
+          # without this, .env.example would be served at doyouknow.app/.env.example,
+          # which is exactly what credential scanners crawl for.
+          EXCLUDE: "/.git/, /.github/, /scripts/, package.json, package-lock.json, README.md, .env, .env.example, /deploy/, /docs/, /marketing/, /research/, /design/, editorial-review.json, seo-audit-report-2026-06-30.md, traffic-monetization-plan.md, MASTER_DOYOUKNOW_STRATEGY.md, MARKETING_STRATEGY.md"

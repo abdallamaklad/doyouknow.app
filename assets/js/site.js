@@ -15,6 +15,57 @@
         }
     }
 
+    // --- GA4 user_id ---
+    // Sending a stable per-person id lets GA4 stitch the same reader's sessions
+    // and devices together (the property's Reporting Identity is "Blended", so
+    // it starts using this the moment it appears on events — no GA4-side setup).
+    //
+    // The site is static and has no accounts today, so nothing calls these yet.
+    // They are the single integration point for when it does: either define
+    // window.DYK_USER_ID before this file loads (server-rendered page), or call
+    // window.dykAnalytics.setUserId(id) after login and clearUserId() on logout.
+    //
+    // Deliberately gtag('set') rather than a second gtag('config'): re-running
+    // config for the same measurement ID fires another automatic page_view and
+    // would double-count every logged-in session. 'set' applies the id to all
+    // subsequent events, which is what we actually want.
+    function isOpaqueUserId(id) {
+        // GA4's terms forbid sending email, phone, or name as user_id. Rejecting
+        // anything email-shaped here means a future wiring mistake degrades to
+        // "no user_id" instead of shipping PII to Google.
+        if (typeof id !== 'string' && typeof id !== 'number') return false;
+        var value = String(id).trim();
+        if (!value || value.length > 256) return false;
+        return value.indexOf('@') === -1;
+    }
+
+    function setGA4UserId(id) {
+        if (!isOpaqueUserId(id)) {
+            console.warn('[GA4] refusing non-opaque user_id — use an internal id, never an email');
+            return false;
+        }
+        if (typeof gtag !== 'function') return false;
+        gtag('set', { user_id: String(id).trim() });
+        return true;
+    }
+
+    function clearGA4UserId() {
+        if (typeof gtag !== 'function') return;
+        gtag('set', { user_id: null });
+    }
+
+    // Apply a server-supplied id before anything else is sent, so the page_view
+    // at the bottom of this file already carries it.
+    if (typeof window.DYK_USER_ID !== 'undefined' && window.DYK_USER_ID !== null) {
+        setGA4UserId(window.DYK_USER_ID);
+    }
+
+    window.dykAnalytics = {
+        track: sendGA4Event,
+        setUserId: setGA4UserId,
+        clearUserId: clearGA4UserId
+    };
+
     function getArticleSlug() {
         var canonical = document.querySelector('link[rel="canonical"]');
         if (canonical) {
