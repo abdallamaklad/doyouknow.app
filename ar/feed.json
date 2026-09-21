@@ -6,203 +6,203 @@
   "language": "ar",
   "items": [
     {
-      "id": "https://doyouknow.app/ar/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html",
-      "url": "https://doyouknow.app/ar/article/how-content-creators-actually-use-ai-tools-to-speed-up-their-workflow.html",
-      "title": "كيف يستخدم صانعو المحتوى الذكاء الاصطناعي لتسريع عملهم",
-      "content_text": "نظرة واقعية على كيفية استخدام صانعي المحتوى فعليًا لأدوات الذكاء الاصطناعي: العصف الذهني، وتحويل الفيديوهات الطويلة إلى مقاطع قصيرة، وقوالب الأسئلة، وأين لا تزال الأتمتة قاصرة.",
-      "date_published": "2026-09-15",
+      "id": "https://doyouknow.app/ar/article/how-a-bruise-actually-forms-and-changes-color.html",
+      "url": "https://doyouknow.app/ar/article/how-a-bruise-actually-forms-and-changes-color.html",
+      "title": "كيف تتكوّن الكدمة وتغيّر لونها فعلياً",
+      "content_text": "الكدمة دم محتجز تحت جلد سليم، وألوانها المتبدّلة تتبع التفكك الكيميائي للهيموغلوبين بينما يستعيد جسمك الحديد الذي فيه.",
+      "date_published": "2026-09-20",
       "tags": [
-        "الأعمال والاقتصاد"
+        "الصحة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/why-the-same-ai-prompt-gives-different-answers-every-time.html",
-      "url": "https://doyouknow.app/ar/article/why-the-same-ai-prompt-gives-different-answers-every-time.html",
-      "title": "لماذا تختلف إجابة الذكاء الاصطناعي في كل مرة؟",
-      "content_text": "لماذا يمكن أن يُنتج الطلب النصي نفسه في ChatGPT أو Claude أو Gemini إجابتين مختلفتين في كل مرة: درجة الحرارة، وأخذ العينات، والسياق، وتحديثات النموذج الصامتة، كلها موضحة.",
-      "date_published": "2026-09-15",
+      "id": "https://doyouknow.app/ar/article/how-a-candle-flame-actually-sustains-itself.html",
+      "url": "https://doyouknow.app/ar/article/how-a-candle-flame-actually-sustains-itself.html",
+      "title": "كيف تُبقي شعلة الشمعة نفسها مشتعلة فعلياً",
+      "content_text": "تحرق الشمعة بخار الشمع لا الشمع الصلب. فشعلتها تذيب الوقود وترفعه بالخاصية الشعرية وتبخّره في حلقة ذاتية التنظيم تثبت ساعات دون أي تحكّم.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-a-catalytic-converter-actually-cleans-exhaust.html",
+      "url": "https://doyouknow.app/ar/article/how-a-catalytic-converter-actually-cleans-exhaust.html",
+      "title": "كيف ينقّي المحوّل الحفّاز عادم السيارة فعلياً",
+      "content_text": "يستخدم المحوّل الحفّاز طبقة رقيقة من المعادن النفيسة لإعادة ترتيب غازات العادم السامة إلى غازات غير ضارة، دون أن يُستهلك هو نفسه في العملية.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-a-microwave-oven-actually-heats-food.html",
+      "url": "https://doyouknow.app/ar/article/how-a-microwave-oven-actually-heats-food.html",
+      "title": "كيف يسخّن فرن الميكروويف الطعام فعلياً",
+      "content_text": "يسخّن الميكروويف الطعام عبر جعل جزيئات الماء تدور مليارات المرات في الثانية، فيتولّد الحرارة من الاحتكاك الجزيئي من الخارج إلى الداخل لا العكس.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-a-pin-tumbler-lock-actually-works.html",
+      "url": "https://doyouknow.app/ar/article/how-a-pin-tumbler-lock-actually-works.html",
+      "title": "كيف يعمل قفل الأسطوانة ذو المسامير فعلياً",
+      "content_text": "لا يدور قفل الأسطوانة ذو المسامير إلا حين تُرفع كل مجموعة مسامير محمّلة بنابض إلى الارتفاع الصحيح تماماً، فيصطفّ فراغ خفي يُسمى خط القص.",
+      "date_published": "2026-09-20",
       "tags": [
         "التقنية"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-a-bulletproof-vest-actually-stops-a-bullet.html",
-      "url": "https://doyouknow.app/ar/article/how-a-bulletproof-vest-actually-stops-a-bullet.html",
-      "title": "كيف توقف السترة الواقية من الرصاص الرصاصة فعلياً",
-      "content_text": "السترة اللينة لا توقف الرصاصة، بل تلتقطها بشبكة من الألياف فائقة القوة توزع طاقة الاصطدام جانبياً عبر مساحة واسعة قبل أن يصل الطرف إلى الجلد.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-a-seatbelt-actually-locks-in-a-crash.html",
+      "url": "https://doyouknow.app/ar/article/how-a-seatbelt-actually-locks-in-a-crash.html",
+      "title": "كيف يُقفل حزام الأمان في الحادث فعلياً",
+      "content_text": "يبقى حزام الأمان مرخياً حتى تستشعر كرة فولاذية أو ثقل دوّار تباطؤاً مفاجئاً، فيقفل البكرة فوراً ثم يدير كيفية تباطؤ جسمك.",
+      "date_published": "2026-09-20",
       "tags": [
-        "العلوم"
+        "التقنية"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-a-toilet-actually-flushes-without-a-pump.html",
-      "url": "https://doyouknow.app/ar/article/how-a-toilet-actually-flushes-without-a-pump.html",
-      "title": "كيف تُصرّف المرحاض فعلياً دون أي مضخة",
-      "content_text": "يعتمد صرف المرحاض فقط على الجاذبية وشفط سيفوني ينشئه ممر مصمم بشكل خاص، فيسحب الفضلات دون أي محرك أو مضخة على الإطلاق.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html",
-      "url": "https://doyouknow.app/ar/article/how-an-umbrella-actually-survives-wind-without-turning-inside-out.html",
-      "title": "كيف ينجو المظلة فعلياً من الرياح دون أن تنقلب للداخل",
-      "content_text": "تنجو المظلة الجيدة التصميم من هبات الرياح ليس بمقاومتها مباشرة، بل بالانثناء وتصريف الهواء وإعادة توزيع القوة عبر نظام من الأضلاع المفصلية المصممة للانحناء قبل أن تنكسر.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html",
-      "url": "https://doyouknow.app/ar/article/how-being-a-night-owl-or-early-bird-is-actually-determined-by-biology.html",
-      "title": "لماذا أنت فعلياً شخص ليلي أو صباحي",
-      "content_text": "جدول نومك ليس عادة، بل تُحدده جينات تتحكم بساعة داخلية مدتها 24 ساعة تقريباً، وإجباره ضد نمطك الزمني له تكاليف صحية قابلة للقياس.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-a-sunburn-actually-damages-skin-cells.html",
+      "url": "https://doyouknow.app/ar/article/how-a-sunburn-actually-damages-skin-cells.html",
+      "title": "كيف تتلف حروق الشمس خلايا الجلد فعلياً",
+      "content_text": "حرق الشمس ليس تلفاً حرارياً. فالضوء فوق البنفسجي يكسر الحمض النووي مباشرة، والاحمرار هو جهازك المناعي يزيل خلايا تلفت بما يتعذّر إصلاحه بأمان.",
+      "date_published": "2026-09-20",
       "tags": [
         "الصحة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html",
-      "url": "https://doyouknow.app/ar/article/how-braces-actually-straighten-teeth-with-slow-constant-force.html",
-      "title": "كيف يُقوّم التقويم الأسنان فعلياً بقوة بطيئة ومستمرة",
-      "content_text": "لا يدفع التقويم الأسنان عبر عظم صلب، بل يطبّق ضغطاً خفيفاً ومستمراً يحفّز العظم الحي على الذوبان في جهة والبناء من جديد في الجهة المقابلة.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-a-violin-actually-turns-a-string-into-sound.html",
+      "url": "https://doyouknow.app/ar/article/how-a-violin-actually-turns-a-string-into-sound.html",
+      "title": "كيف يحوّل الكمان وتراً مهتزاً إلى صوت فعلياً",
+      "content_text": "وتر الكمان المهتز لا يحرّك هواءً يُذكر. ومهمة الآلة الحقيقية تحويل تلك الحركة الضئيلة إلى صوت عبر صندوق خشبي مضبوط بعناية.",
+      "date_published": "2026-09-20",
       "tags": [
-        "الصحة"
+        "الفن"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html",
-      "url": "https://doyouknow.app/ar/article/how-bubble-wrap-actually-cushions-a-package-and-why-people-cant-stop-popping-it.html",
-      "title": "كيف يحمي غلاف الفقاعات فعلياً الطرود من الصدمات",
-      "content_text": "يحمي غلاف الفقاعات الأغراض الهشة عبر حبس جيوب هواء قابلة للانضغاط تمتص القوة وتوزعها، وقد اخترع أصلاً عام 1957 كورق حائط مزخرف.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-chameleons-actually-change-their-skin-color.html",
-      "url": "https://doyouknow.app/ar/article/how-chameleons-actually-change-their-skin-color.html",
-      "title": "كيف يغيّر الحرباء لون جلده فعلياً",
-      "content_text": "لا يغيّر الحرباء لونه بتحريك الصبغات. بل يضبط شبكة من بلورات الغوانين النانوية في جلده، فيغيّر فعلياً الأطوال الموجية للضوء المرتد.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html",
-      "url": "https://doyouknow.app/ar/article/how-chewing-gum-actually-stays-soft-instead-of-dissolving.html",
-      "title": "كيف تبقى علكة المضغ طرية فعلياً بدلاً من أن تذوب",
-      "content_text": "تنجو علكة المضغ من اللعاب لأن قاعدتها مصنوعة من بوليمرات غير قابلة للذوبان لا يستطيع الماء تفكيكها، خلافاً للسكر والنكهة المحيطين بها اللذين يذوبان خلال دقائق.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-artificial-sweeteners-actually-trick-your-taste-buds.html",
+      "url": "https://doyouknow.app/ar/article/how-artificial-sweeteners-actually-trick-your-taste-buds.html",
+      "title": "كيف تخدع المحلّيات الصناعية براعمك الذوقية فعلياً",
+      "content_text": "تلائم المحلّيات مستقبل الحلاوة في اللسان أوثق بكثير من السكر، فتُطلق إشارة شديدة بينما تمرّ عبر الجسم دون أن تُستعمل.",
+      "date_published": "2026-09-20",
       "tags": [
         "التغذية"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-fireworks-actually-get-their-different-colors.html",
-      "url": "https://doyouknow.app/ar/article/how-fireworks-actually-get-their-different-colors.html",
-      "title": "كيف تحصل الألعاب النارية فعلياً على ألوانها المختلفة",
-      "content_text": "تأتي ألوان الألعاب النارية من احتراق أملاح معدنية عند درجات حرارة محددة، إذ يُصدر كل عنصر طول موجة ضوء مميزاً بينما تقفز إلكتروناته إلى مستوى طاقة أدنى.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-auctions-actually-set-a-price.html",
+      "url": "https://doyouknow.app/ar/article/how-auctions-actually-set-a-price.html",
+      "title": "كيف تحدّد المزادات السعر فعلياً",
+      "content_text": "المزاد لا يكتشف قيمة الشيء. إنه يكتشف ما سيدفعه أكثر المزايدين تفاؤلاً، وهذا سؤال مختلف اختلافاً معتبراً.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-composting-actually-turns-food-scraps-into-soil.html",
+      "url": "https://doyouknow.app/ar/article/how-composting-actually-turns-food-scraps-into-soil.html",
+      "title": "كيف يحوّل التسميد بقايا الطعام إلى تربة فعلياً",
+      "content_text": "التسميد هضم ميكروبي محكوم: تفكّك البكتيريا والفطريات البقايا وتولّد حرارتها بنفسها وتترك خلفها دبالاً مستقراً يغذّي التربة ويحسّن بنيتها.",
+      "date_published": "2026-09-20",
       "tags": [
         "العلوم"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-ice-skates-actually-glide-with-almost-no-friction.html",
-      "url": "https://doyouknow.app/ar/article/how-ice-skates-actually-glide-with-almost-no-friction.html",
-      "title": "كيف تنزلق أحذية التزلج فعلياً بأقل احتكاك تقريباً",
-      "content_text": "لا تنزلق أحذية التزلج لأن الجليد زلق طبيعياً، بل لأن النصل الرفيع تحت وزن الجسم يخلق طبقة مجهرية من الماء السائل يركبها المتزلج فعلياً، لا الجليد الصلب نفسه.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-creatine-actually-works-in-muscle.html",
+      "url": "https://doyouknow.app/ar/article/how-creatine-actually-works-in-muscle.html",
+      "title": "كيف يعمل الكرياتين في العضلات فعلياً",
+      "content_text": "الكرياتين ليس هرموناً ولا منبّهاً. إنه يعيد شحن أسرع عملة طاقة في عضلاتك، فيتيح لك إنتاج شغل أكبر قليلاً قبل أن يحلّ التعب.",
+      "date_published": "2026-09-20",
       "tags": [
-        "العلوم"
+        "التغذية"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html",
-      "url": "https://doyouknow.app/ar/article/how-laser-eye-surgery-actually-reshapes-the-cornea.html",
-      "title": "كيف تُعيد جراحة الليزر تشكيل القرنية فعلياً",
-      "content_text": "لا يُصلح الليزك عدسة العين أو الشبكية، بل يُبخّر بدقة طبقات مجهرية من القرنية الشفافة نفسها، مُعيداً تشكيل طريقة انحناء الضوء بشكل دائم لتسقط الصورة بشكل صحيح على الشبكية.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-fire-sprinklers-actually-decide-to-activate.html",
+      "url": "https://doyouknow.app/ar/article/how-fire-sprinklers-actually-decide-to-activate.html",
+      "title": "كيف تقرّر مرشّات الحريق أن تعمل فعلياً",
+      "content_text": "مرشّات الحريق لا يشغّلها الدخان ولا تنطلق كلها معاً. فكل رأس ينفتح على حدة حين تفجّر الحرارة أمبولة زجاجية صغيرة فوقه.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-hair-dye-actually-changes-hair-color.html",
+      "url": "https://doyouknow.app/ar/article/how-hair-dye-actually-changes-hair-color.html",
+      "title": "كيف تغيّر صبغة الشعر لونه فعلياً",
+      "content_text": "الصبغة الدائمة لا تغلّف الشعر. إنها تنفش الساق وتفتحها وتدمّر صبغتك الطبيعية وتبني جزيئات لون جديدة محبوسة داخل الليف.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "العناية الذاتية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-insurance-premiums-are-actually-calculated.html",
+      "url": "https://doyouknow.app/ar/article/how-insurance-premiums-are-actually-calculated.html",
+      "title": "كيف تُحتسب أقساط التأمين فعلياً",
+      "content_text": "قسط التأمين ليس تخميناً. إنه متوسط كلفة مطالبتك المتوقّعة مضافاً إليه تحميل للمصاريف وعدم اليقين والربح، مسعّراً بنمذجة إحصائية.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-license-plate-recognition-actually-reads-a-plate.html",
+      "url": "https://doyouknow.app/ar/article/how-license-plate-recognition-actually-reads-a-plate.html",
+      "title": "كيف يقرأ نظام التعرّف على لوحات المركبات اللوحة فعلياً",
+      "content_text": "يستخدم التعرّف الآلي على اللوحات ضوءاً تحت أحمر وطلاءات عاكسة وتعرّفاً على الحروف لقراءة لوحة المركبة في أجزاء من الثانية ليلاً أو نهاراً.",
+      "date_published": "2026-09-20",
+      "tags": [
+        "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-scars-actually-form-and-why-some-fade.html",
+      "url": "https://doyouknow.app/ar/article/how-scars-actually-form-and-why-some-fade.html",
+      "title": "كيف تتكوّن الندبات ولماذا يتلاشى بعضها فعلياً",
+      "content_text": "تتكوّن الندبة لأن الجسم يرمّم الجروح العميقة بكولاجين سريع غير منتظم بدل إعادة بناء بنية الجلد الأصلية التي لا يستطيع استبدالها.",
+      "date_published": "2026-09-20",
       "tags": [
         "الصحة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-memory-foam-actually-molds-to-your-body.html",
-      "url": "https://doyouknow.app/ar/article/how-memory-foam-actually-molds-to-your-body.html",
-      "title": "كيف يتشكل إسفنج الذاكرة فعلياً حسب جسمك",
-      "content_text": "إسفنج الذاكرة لا ينضغط فقط كالإسفنج العادي، بل بُنيته المفتوحة الخلايا مصممة لتلين بحرارة الجسم وتتدفق ببطء حول نقاط الضغط، ثم تعود ببطء مماثل.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-superglue-actually-bonds-in-seconds.html",
+      "url": "https://doyouknow.app/ar/article/how-superglue-actually-bonds-in-seconds.html",
+      "title": "كيف يلصق الغراء الفوري في ثوانٍ فعلياً",
+      "content_text": "الغراء الفوري لا يجف. فالرطوبة الضئيلة على كل سطح تُشعل تفاعلاً متسلسلاً يربط جزيئاته في شبكة بلاستيكية صلبة خلال ثوانٍ معدودة.",
+      "date_published": "2026-09-20",
       "tags": [
         "العلوم"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-octopuses-actually-camouflage-in-under-a-second.html",
-      "url": "https://doyouknow.app/ar/article/how-octopuses-actually-camouflage-in-under-a-second.html",
-      "title": "كيف يتموّه الأخطبوط فعلياً في أقل من ثانية",
-      "content_text": "يستطيع الأخطبوط مطابقة لون وملمس ونقش شعاب مرجانية بشكل شبه فوري باستخدام جلد يتحكم فيه دماغه مباشرة، رغم أنه لا يرى جسده فعلياً بالألوان.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-tattoo-ink-actually-stays-in-your-skin-permanently.html",
+      "url": "https://doyouknow.app/ar/article/how-tattoo-ink-actually-stays-in-your-skin-permanently.html",
+      "title": "كيف يبقى حبر الوشم في جلدك دائماً فعلياً",
+      "content_text": "حبر الوشم دائم لأن خلايا المناعة تبتلع الصبغة وتبقى مكانها، فتحبس الحبر في الأدمة بعد التئام الجرح نفسه بزمن طويل.",
+      "date_published": "2026-09-20",
       "tags": [
-        "العلوم"
+        "الصحة"
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-optical-illusions-actually-trick-the-brain.html",
-      "url": "https://doyouknow.app/ar/article/how-optical-illusions-actually-trick-the-brain.html",
-      "title": "كيف تخدع الخدع البصرية الدماغ فعلياً",
-      "content_text": "الخدعة البصرية ليست خللاً في عينيك، بل نظام التنبؤ المُختصر في دماغك، المصمم لقرارات نجاة سريعة، يُخمّن خطأً حول مشهد صُمم عمداً لخداعه.",
-      "date_published": "2026-09-12",
+      "id": "https://doyouknow.app/ar/article/how-touchscreens-actually-know-where-your-finger-is.html",
+      "url": "https://doyouknow.app/ar/article/how-touchscreens-actually-know-where-your-finger-is.html",
+      "title": "كيف تعرف الشاشات اللمسية موضع إصبعك فعلياً",
+      "content_text": "تستشعر الشاشة اللمسية الحديثة إصبعك بقياس تغيّرات ضئيلة في مجال كهربائي غير مرئي، لا بالكشف عن ضغط يدك أو حرارتها.",
+      "date_published": "2026-09-20",
       "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html",
-      "url": "https://doyouknow.app/ar/article/how-papermaking-actually-turns-loose-wood-fibers-into-a-solid-sheet.html",
-      "title": "كيف تحوّل صناعة الورق فعلياً ألياف الخشب المفككة إلى ورقة صلبة",
-      "content_text": "لا يحتوي الورق على أي غراء يماسكه. تُصرَّف ألياف الخشب المعلّقة في الماء على شاشة وتُضغط حتى تجف، تاركة الروابط الهيدروجينية بين الألياف نفسها تُثبّت الورقة كصلبة متماسكة.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html",
-      "url": "https://doyouknow.app/ar/article/how-phantom-traffic-jams-actually-form-with-no-accident-or-cause.html",
-      "title": "كيف تتشكّل فعلياً اختناقات المرور الوهمية دون أي حادث أو سبب",
-      "content_text": "لا يحتاج اختناق المرور الوهمي إلى حادث أو عائق، بل مجرد سائق يكبح أكثر من اللازم، وهو ما يمكن أن تضخّمه ردود فعل مبالغ فيها إلى توقف كامل خلفه.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html",
-      "url": "https://doyouknow.app/ar/article/how-rip-currents-actually-pull-swimmers-out-to-sea.html",
-      "title": "كيف تسحب فعلياً التيارات الخلفية السباحين نحو عمق البحر",
-      "content_text": "التيار الخلفي ليس دوامة تسحب السباحين للأسفل، بل نهر ضيق سريع الحركة من المياه يهرب عائداً للبحر عبر فجوة في الحاجز الرملي، ولا يسحب إلا للخارج، لا للأسفل أبداً.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-volcanoes-actually-erupt.html",
-      "url": "https://doyouknow.app/ar/article/how-volcanoes-actually-erupt.html",
-      "title": "كيف تثور البراكين فعلياً",
-      "content_text": "الثوران ليس مجرد صخر منصهر يندفع للأعلى، بل غاز مذاب يحاول الهروب من سائل تحت ضغط، نفس فيزياء انفجار علبة صودا مهزوزة عند فتحها.",
-      "date_published": "2026-09-12",
-      "tags": [
-        "العلوم"
+        "التقنية"
       ]
     }
   ]

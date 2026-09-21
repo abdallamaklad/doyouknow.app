@@ -4,6 +4,32 @@ import { join } from 'node:path';
 const root = process.cwd();
 const imageDir = join(root, 'assets', 'images', 'articles');
 
+// World Cup articles keep their bespoke artwork under assets/images/world-cup-2026/.
+// Mirrors worldCupArticleSlugs in scripts/prepare.mjs.
+const worldCupSlugs = new Set([
+  'morocco-world-cup-2026', 'egypt-world-cup-2026', 'saudi-arabia-world-cup-2026',
+  'tunisia-world-cup-2026', 'algeria-world-cup-2026', 'iraq-world-cup-2026',
+  'jordan-world-cup-2026', 'qatar-world-cup-2026', 'arab-teams-world-cup-2026',
+  'morocco-defensive-structure-world-cup-2026', 'egypt-midfield-world-cup-2026',
+  'saudi-technical-ceiling-world-cup-2026', 'tunisia-defensive-grit-world-cup-2026',
+  'algeria-attack-world-cup-2026', 'iraq-jordan-tournament-discipline-world-cup-2026',
+  'arab-team-semifinals-world-cup-2026', 'world-cup-2026-group-stage-pressure-arab-teams',
+  'morocco-egypt-algeria-world-cup-2026', 'arab-fans-world-cup-2026',
+  'arab-football-legacy-world-cup-2026', 'world-cup-2026-final-referee',
+  'world-cup-2026-tickets-guide', 'ballon-dor-2026-explained', 'marc-cucurella-profile',
+]);
+
+// Slugs that already have a real photograph (assets/images/articles/<slug>.jpg,
+// shared across en/ar) must keep it. Without this guard the art-regeneration
+// pass below rewrites those pages back to the legacy `.art.svg` illustration
+// and the legacy OG raster, silently undoing every photo conversion.
+// Mirrors the same guard in scripts/prepare.mjs.
+const photoSlugs = new Set(
+  (await readdir(imageDir))
+    .filter((file) => file.endsWith('.jpg'))
+    .map((file) => file.replace(/\.jpg$/, ''))
+);
+
 const categories = [
   { lang: 'en', slug: 'dubai', files: ['burj-khalifa-facts','deep-dive-dubai','dubai-art-culture-scene','dubai-frame','dubai-metro-guide','dubai-miracle-garden','dubai-police-lamborghini','dubai-vs-abu-dhabi','expo-city-dubai','hidden-gems-uae','louvre-abu-dhabi','palm-jumeirah-engineering','sheikh-zayed-grand-mosque-guide','uae-imports-sand','yas-island-abu-dhabi'] },
   { lang: 'en', slug: 'guides', files: ['best-beach-clubs-dubai','best-beaches-dubai','best-brunches-dubai','best-restaurants-dubai','dewa-setup-guide','du-etisalat-sim-guide','dubai-day-trips','dubai-driving-car-guide','dubai-families-guide','dubai-fitness-outdoor-guide','dubai-free-things-to-do','dubai-nightlife-guide','dubai-parking-guide','dubai-shopping-guide','dubai-traffic-fines-guide','dubai-water-parks-guide','emirates-id-guide','renting-apartment-dubai','save-money-dubai','start-business-dubai','uae-bank-account-types','uae-corporate-tax','uae-driving-license-guide','uae-golden-visa-guide','uae-gratuity-calculator-guide','uae-health-insurance-guide','uae-labor-law-basics','uae-residence-visa-types','uae-school-year-guide'] },
@@ -95,6 +121,10 @@ function ogSourcePath(lang, slug) {
 // they wrap, localise and are read once. Baking the title in was what clipped
 // the Arabic hero to a single word across ~361 pages.
 function imagePath(lang, slug) {
+  // A real photograph always wins: some World Cup articles were photo-converted
+  // too, so photoSlugs is checked before the World Cup artwork fallback.
+  if (photoSlugs.has(slug)) return `/assets/images/articles/${slug}.jpg`;
+  if (worldCupSlugs.has(slug)) return `/assets/images/world-cup-2026/${slug}.svg`;
   return `/assets/images/articles/${lang}-${slug}.art.svg`;
 }
 
@@ -175,7 +205,11 @@ function updateArticleHtml(html, { lang, slug, title }) {
   const path = imagePath(lang, slug);
   // Social cards point at the rasterised OG source, not the display artwork.
   // prepare.mjs sets this too; keeping them in step avoids a transient bad value.
-  const url = `https://doyouknow.app${ogSourcePath(lang, slug).replace(/\.svg$/, '.png')}`;
+  const url = photoSlugs.has(slug)
+    ? `https://doyouknow.app/assets/images/articles/${slug}.jpg`
+    : worldCupSlugs.has(slug)
+      ? `https://doyouknow.app/assets/images/world-cup-2026/${slug}.png`
+      : `https://doyouknow.app${ogSourcePath(lang, slug).replace(/\.svg$/, '.png')}`;
   const alt = lang === 'ar'
     ? `رسم توضيحي لمقال ${title}`
     : `Editorial illustration for ${title}`;
@@ -248,10 +282,13 @@ for (const lang of ['en', 'ar']) {
     let html = await readFile(articlePath, 'utf8');
     const ogSvgPath = join(imageDir, `${lang}-${slug}.svg`);
     const artSvgPath = join(imageDir, `${lang}-${slug}.art.svg`);
+    // Articles rendered from a photograph or from World Cup artwork never use
+    // the generated `<lang>-<slug>.svg` pair, so don't require it to exist --
+    // otherwise every run recreates hundreds of orphaned SVGs nothing links to.
+    const usesGeneratedArt = !photoSlugs.has(slug) && !worldCupSlugs.has(slug);
     if (!html.includes('📷 Featured Image')
       && html.includes(imagePath(lang, slug))
-      && await fileExists(ogSvgPath)
-      && await fileExists(artSvgPath)) continue;
+      && (!usesGeneratedArt || (await fileExists(ogSvgPath) && await fileExists(artSvgPath)))) continue;
     const title = getTitle(html, slug);
     // Two artefacts, two jobs: text-bearing source for the social raster,
     // text-free artwork for the page itself.
