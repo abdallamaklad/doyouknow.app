@@ -966,7 +966,13 @@ function injectSchemas(html, relativeFile) {
   const imageUrl = ogImage || (featuredImage ? (featuredImage.startsWith('http') ? featuredImage : `https://doyouknow.app${featuredImage}`) : '');
   const timeMatch = html.match(/<time datetime="([^"]+)">/);
   const datePublished = timeMatch?.[1] || '2026-06-26';
-  const dateModified = datePublished;
+  // Preserve an editorially-set dateModified from the existing JSON-LD (content
+  // refreshes bump it without republishing). Only fall back to datePublished
+  // for articles that have never carried a dateModified. Previously this line
+  // was `dateModified = datePublished`, which silently reverted every refresh
+  // (and sitemap lastmod with it) on the next build.
+  const existingModified = html.match(/"dateModified":\s*"([^"]+)"/)?.[1];
+  const dateModified = existingModified || datePublished;
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1] || `https://doyouknow.app/${relativeFile}`;
   const category = categoryByArticle.get(relativeFile) || categoryFallback.get(lang);
   const articleSection = category?.title || (lang === 'ar' ? 'عام' : 'General');

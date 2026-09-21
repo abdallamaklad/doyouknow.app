@@ -15,6 +15,9 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
+      # Keep committed sitemap.xml <lastmod> in sync with each page's dateModified
+      # (CI never runs `npm run build`, so without this the deployed sitemap drifts stale).
+      - run: node scripts/sync-sitemap-lastmod.mjs
       - run: npm test
       - name: Upload static site to VPS
         if: ${{ env.VPS_HOST != '' }}
