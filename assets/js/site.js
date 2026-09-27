@@ -1475,6 +1475,117 @@
         });
     });
 
+    // --- Telegram channel join prompt ---
+    // A web page cannot ask whether an app is installed, and probing tg:// on
+    // load throws an "invalid address" dialog on iOS devices without Telegram.
+    // So the prompt only appears on hard evidence the reader already uses
+    // Telegram: they are inside Telegram's in-app browser, or arrived from a
+    // Telegram link. Once seen, the evidence is remembered for this browser.
+    (function initTelegramPrompt() {
+        var TG_SEEN_KEY = 'dyk-tg-user';
+        var TG_STATE_KEY = 'dyk-tg-prompt';
+        var SNOOZE_MS = 30 * 24 * 60 * 60 * 1000;
+        var SHOW_DELAY_MS = 4000;
+
+        function storageGet(key) {
+            try { return localStorage.getItem(key); } catch (e) { return null; }
+        }
+        function storageSet(key, value) {
+            try { localStorage.setItem(key, value); } catch (e) {}
+        }
+
+        function detectTelegramSignal() {
+            if (typeof window.TelegramWebviewProxy !== 'undefined') return 'in_app_browser';
+            if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) return 'mini_app';
+            if (/\bTelegram\b/i.test(navigator.userAgent || '')) return 'user_agent';
+            if (/^https?:\/\/([a-z0-9-]+\.)*(t\.me|telegram\.me|telegram\.org)(\/|$)/i.test(document.referrer || '')) return 'referrer';
+            try {
+                var source = (new URLSearchParams(window.location.search).get('utm_source') || '').toLowerCase();
+                if (source === 'telegram' || source === 'tg') return 'utm_source';
+            } catch (e) {}
+            return storageGet(TG_SEEN_KEY) ? 'remembered' : '';
+        }
+
+        var signal = detectTelegramSignal();
+        if (!signal) return;
+        if (signal !== 'remembered') storageSet(TG_SEEN_KEY, signal);
+
+        var state = {};
+        try { state = JSON.parse(storageGet(TG_STATE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+        if (state.joined) return;
+        if (state.dismissedAt && Date.now() - state.dismissedAt < SNOOZE_MS) return;
+
+        var isAr = (document.documentElement.lang || 'en') === 'ar';
+        var channelUrl = isAr ? 'https://t.me/doyouknowappar' : 'https://t.me/doyouknowapp';
+        var copy = isAr ? {
+            title: 'تابعنا على تيليجرام',
+            body: 'معلومة مدهشة جديدة كل يوم، مباشرة في تيليجرام.',
+            join: 'انضم إلى القناة',
+            later: 'ليس الآن',
+            close: 'إغلاق'
+        } : {
+            title: 'Join us on Telegram',
+            body: 'One surprising fact every day, straight to your Telegram.',
+            join: 'Join the channel',
+            later: 'Not now',
+            close: 'Close'
+        };
+
+        function buildPrompt() {
+            var card = document.createElement('div');
+            card.className = 'tg-prompt';
+            card.setAttribute('role', 'dialog');
+            card.setAttribute('aria-modal', 'false');
+            card.setAttribute('aria-labelledby', 'tg-prompt-title');
+            card.innerHTML =
+                '<button type="button" class="tg-prompt-close" aria-label="' + copy.close + '">&times;</button>' +
+                '<div class="tg-prompt-icon" aria-hidden="true">' +
+                    '<svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>' +
+                '</div>' +
+                '<div class="tg-prompt-text">' +
+                    '<p class="tg-prompt-title" id="tg-prompt-title">' + copy.title + '</p>' +
+                    '<p class="tg-prompt-body">' + copy.body + '</p>' +
+                    '<div class="tg-prompt-actions">' +
+                        '<a class="btn btn-primary tg-prompt-join" href="' + channelUrl + '" target="_blank" rel="noopener">' + copy.join + '</a>' +
+                        '<button type="button" class="btn btn-ghost tg-prompt-later">' + copy.later + '</button>' +
+                    '</div>' +
+                '</div>';
+            return card;
+        }
+
+        function show() {
+            if (document.querySelector('.tg-prompt')) return;
+            var card = buildPrompt();
+            document.body.appendChild(card);
+            requestAnimationFrame(function() { card.classList.add('is-visible'); });
+            sendGA4Event('telegram_prompt_shown', { signal: signal, language: isAr ? 'ar' : 'en' });
+
+            function hide(reason) {
+                if (reason === 'join') {
+                    storageSet(TG_STATE_KEY, JSON.stringify({ joined: true, at: Date.now() }));
+                } else {
+                    storageSet(TG_STATE_KEY, JSON.stringify({ dismissedAt: Date.now() }));
+                }
+                sendGA4Event(reason === 'join' ? 'telegram_prompt_join' : 'telegram_prompt_dismiss', {
+                    signal: signal,
+                    language: isAr ? 'ar' : 'en',
+                    method: reason
+                });
+                document.removeEventListener('keydown', onKey);
+                card.classList.remove('is-visible');
+                setTimeout(function() { if (card.parentNode) card.parentNode.removeChild(card); }, 300);
+            }
+            function onKey(e) { if (e.key === 'Escape') hide('escape'); }
+
+            card.querySelector('.tg-prompt-join').addEventListener('click', function() { hide('join'); });
+            card.querySelector('.tg-prompt-later').addEventListener('click', function() { hide('later'); });
+            card.querySelector('.tg-prompt-close').addEventListener('click', function() { hide('close'); });
+            document.addEventListener('keydown', onKey);
+        }
+
+        setTimeout(show, SHOW_DELAY_MS);
+    })();
+
     // --- Service Worker (PWA) ---
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js').catch(function() {
