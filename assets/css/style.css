@@ -3210,3 +3210,72 @@ html[dir="rtl"] .wc-mini-list {
     gap: var(--space-3);
   }
 }
+
+/* Telegram channel join prompt (shown only to detected Telegram users) */
+.tg-prompt {
+  position: fixed;
+  inset-block-end: var(--space-5);
+  inset-inline-end: var(--space-5);
+  z-index: 1200;
+  width: min(380px, calc(100vw - 2 * var(--space-4)));
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  padding-inline-end: var(--space-7);
+  background: var(--color-surface-light);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+  pointer-events: none;
+}
+.tg-prompt.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.tg-prompt-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #229ED9;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tg-prompt-text { min-width: 0; }
+.tg-prompt-title { font-weight: 700; font-size: 1.05rem; line-height: 1.3; margin: 0 0 var(--space-1); }
+.tg-prompt-body { font-size: 0.93rem; line-height: 1.5; color: var(--color-text-secondary); margin: 0 0 var(--space-4); }
+.tg-prompt-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.tg-prompt-actions .btn { min-height: var(--tap); padding: var(--space-2) var(--space-4); font-size: 0.9rem; }
+.tg-prompt-join, .tg-prompt-join:hover { color: var(--color-on-primary-accent); text-decoration: none; }
+.tg-prompt-close {
+  position: absolute;
+  inset-block-start: var(--space-2);
+  inset-inline-end: var(--space-2);
+  width: var(--tap);
+  height: var(--tap);
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+.tg-prompt-close:hover { color: var(--color-text-primary); background: var(--color-bg-light); }
+.tg-prompt-close:focus-visible, .tg-prompt-actions .btn:focus-visible { outline: 2px solid var(--color-primary-accent); outline-offset: 2px; }
+.tg-prompt:lang(ar) .tg-prompt-title, .tg-prompt:lang(ar) .tg-prompt-body, .tg-prompt:lang(ar) .tg-prompt-actions .btn { font-family: var(--font-ar); }
+@media (max-width: 640px) {
+  .tg-prompt {
+    inset-inline: var(--space-4);
+    inset-block-end: var(--space-4);
+    width: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tg-prompt { transition: none; transform: none; }
+}
+@media print { .tg-prompt { display: none !important; } }
