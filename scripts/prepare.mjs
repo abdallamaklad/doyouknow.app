@@ -1,4 +1,5 @@
 import { readdir, readFile, writeFile, access, unlink } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { createHash } from 'node:crypto';
 
@@ -354,7 +355,10 @@ function updateArticlePageImage(html, relativeFile) {
   const [, lang, slug] = match;
   const imagePath = articleImagePath(lang, slug);
   const isIndexable = !editorialReview.has(relativeFile);
-  const socialImagePath = isIndexable ? articleRasterImagePath(lang, slug) : imagePath;
+  // Noindexed pages are still shared on WhatsApp/X, which cannot render SVG
+  // previews — keep the raster whenever it has actually been rendered.
+  const rasterPath = articleRasterImagePath(lang, slug);
+  const socialImagePath = isIndexable || existsSync(join(root, rasterPath)) ? rasterPath : imagePath;
   const socialImageUrl = `https://doyouknow.app${socialImagePath}`;
   html = updateSocialImageTags(html, socialImageUrl);
   if (categoryByArticle.has(relativeFile)) {
