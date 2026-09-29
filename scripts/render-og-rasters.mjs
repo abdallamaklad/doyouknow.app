@@ -1,5 +1,6 @@
-import { readdir, readFile, writeFile, mkdir, access } from 'node:fs/promises';
-import { accessSync, constants as fsConstants } from 'node:fs';
+import { readdir, readFile, writeFile, mkdir, access, stat } from 'node:fs/promises';
+import { constants as fsConstants } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join, dirname, basename, delimiter } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
@@ -16,6 +17,10 @@ const TARGET_HEIGHT = 630;
 const SOURCE_HEIGHT = 675;
 const MAX_FILE_KB = 140;
 const MAX_TITLE_WIDTH = 960; // 1200 - 2*120 margin
+const DEFAULT_RENDER_TIMEOUT_MS = 90_000;
+// Lives under scripts/ so the deploy rsync (which excludes /scripts/) never ships it.
+const MANIFEST_PATH = join(__dirname, '.og-raster-manifest.json');
+const DEFAULT_BUILD_TIMEOUT_MS = 30 * 60 * 1000;
 
 const fontSpecs = [
   { pkg: 'inter', src: 'inter-latin-400-normal.woff2', name: 'Inter-400.ttf', family: 'Inter', weight: 400 },
@@ -77,7 +82,7 @@ function isArabicSvg(svg) {
   return /<html[^>]*\blang="ar"/.test(svg) || /dir="rtl"/.test(svg) || /[\u0600-\u06FF]/.test(svg);
 }
 
-function findChromeExecutable() {
+async function findChromeExecutable() {
   const candidates = [
     // Explicit configuration always wins. This is used by CI and Linux hosts
     // where Chrome is installed outside the standard package paths.
@@ -96,19 +101,21 @@ function findChromeExecutable() {
     '/usr/local/bin/chromium',
     '/snap/bin/chromium',
     // Finally discover a browser installed elsewhere on PATH.
-    ...((process.env.PATH || '').split(delimiter).filter(Boolean).map((dir) =>
+    ...((process.env.PATH || '').split(delimiter).filter(Boolean).flatMap((dir) =>
       ['google-chrome', 'google-chrome-stable', 'chromium', 'chromium-browser']
         .map((name) => join(dir, name))
-    ).flat()),
+    )),
   ].filter(Boolean);
-  return candidates.find((p) => {
+  for (const candidate of candidates) {
     try {
-      accessSync(p, fsConstants.X_OK);
-      return true;
+      // X_OK, not mere existence: a non-executable file here would launch nothing.
+      await access(candidate, fsConstants.X_OK);
+      return candidate;
     } catch {
-      return false;
+      // Try the next known installation path.
     }
-  });
+  }
+  return undefined;
 }
 
 async function renderSvg(browser, svgPath, outputPath, fontFaces) {
@@ -125,6 +132,7 @@ async function renderSvg(browser, svgPath, outputPath, fontFaces) {
 
   const page = await browser.newPage();
   try {
+    page.setDefaultTimeout(Number(process.env.OG_PAGE_TIMEOUT_MS || DEFAULT_RENDER_TIMEOUT_MS));
     await page.setViewport({ width: TARGET_WIDTH, height: SOURCE_HEIGHT, deviceScaleFactor: 1 });
     const isArabic = /[\u0600-\u06FF]/.test(svg);
     await page.setContent(`<!DOCTYPE html>
@@ -304,9 +312,7 @@ async function findSvgs(dirs) {
   for (const dir of dirs) {
     const entries = await readdir(dir, { withFileTypes: true });
     for (const entry of entries) {
-      // `*.art.svg` is the in-page display artwork: deliberately text-free, so
-      // there is nothing to rasterise for social. Only the text-bearing OG
-      // sources (`<lang>-<slug>.svg`) become PNGs.
+      // `*.art.svg` is in-page display artwork, not a text-bearing OG source.
       if (entry.isFile() && entry.name.endsWith('.svg') && !entry.name.endsWith('.art.svg')) {
         out.push(join(dir, entry.name));
       }
@@ -315,67 +321,183 @@ async function findSvgs(dirs) {
   return out.sort();
 }
 
+// The cache key is content-based, not mtime-based, and is committed to the repo
+// so it survives a fresh clone or a new worktree.
+//
+// mtime cannot work here. `git checkout` writes every file at checkout time, and
+// within one checkout it writes `<slug>.png` a fraction of a millisecond BEFORE
+// `<slug>.svg` (alphabetical order). Comparing mtimes therefore marked 2047 of
+// 2202 rasters stale on a median delta of 0.08ms — a pure checkout artifact. The
+// resulting full re-render is not byte-stable either (Chrome's text antialiasing
+// drifts between versions), so it rewrote every PNG with visually identical but
+// different bytes, i.e. a repo-wide diff of pure noise.
+async function hashFile(path) {
+  return createHash('sha256').update(await readFile(path)).digest('hex');
+}
+
+// Bump when the rendering logic changes in a way that alters output pixels.
+// This invalidates every cached raster on the next run.
+const RENDER_VERSION = '1';
+
+async function loadManifest() {
+  try {
+    return JSON.parse(await readFile(MANIFEST_PATH, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+async function saveManifest(manifest) {
+  const sorted = Object.fromEntries(Object.keys(manifest).sort().map((k) => [k, manifest[k]]));
+  await writeFile(MANIFEST_PATH, `${JSON.stringify(sorted, null, 2)}\n`);
+}
+
 async function main() {
   const testMode = process.argv.includes('--test');
+  const force = process.argv.includes('--force') || process.env.OG_FORCE === '1';
+  const quiet = process.argv.includes('--quiet') && !process.argv.includes('--verbose');
   const testSlugs = ['en-burj-khalifa-facts', 'ar-burj-khalifa-facts', 'saudi-arabia-world-cup-2026'];
+  const renderTimeoutMs = Number(process.env.OG_RENDER_TIMEOUT_MS || DEFAULT_RENDER_TIMEOUT_MS);
+  const buildTimeoutMs = Number(process.env.OG_BUILD_TIMEOUT_MS || DEFAULT_BUILD_TIMEOUT_MS);
+  const startedAt = Date.now();
+  let browser = null;
+  let shuttingDown = false;
 
-  puppeteer = (await import('puppeteer-core')).default;
-  const chromePath = findChromeExecutable();
-  if (!chromePath) {
-    console.error('Chrome/Chromium executable not found. Set PUPPETEER_EXECUTABLE_PATH or install Chrome.');
-    process.exit(1);
-  }
-  console.log('Using Chrome:', chromePath);
-
-  const fontFaces = await buildFontFaces();
+  const closeBrowser = async (signal) => {
+    if (shuttingDown) return;
+    shuttingDown = true;
+    if (!quiet && signal) console.error(`Received ${signal}; closing Chrome before exit`);
+    if (browser) {
+      try { await browser.close(); } catch { /* Chrome may already be gone. */ }
+      browser = null;
+    }
+    if (signal) process.exitCode = signal === 'SIGTERM' ? 143 : 130;
+  };
+  const handleSignal = (signal) => {
+    void closeBrowser(signal).finally(() => process.exit(signal === 'SIGTERM' ? 143 : 130));
+  };
+  process.once('SIGTERM', () => handleSignal('SIGTERM'));
+  process.once('SIGINT', () => handleSignal('SIGINT'));
 
   const imageDirs = [
     join(root, 'assets/images/articles'),
     join(root, 'assets/images/world-cup-2026'),
   ];
   const svgs = await findSvgs(imageDirs);
-  const toRender = testMode
+  const candidates = testMode
     ? svgs.filter((p) => testSlugs.includes(basename(p, '.svg')))
     : svgs;
+  // Fonts are a genuine input: a font-package bump changes glyph rasterisation,
+  // so their bytes are folded into every cache key.
+  const fontPaths = fontSpecs.map((spec) => join(root, 'node_modules', `@fontsource/${spec.pkg}`, 'files', spec.src));
+  const fontHashes = await Promise.all(fontPaths.map((f) => hashFile(f).catch(() => 'missing')));
+  const cachePrefix = `${RENDER_VERSION}:${fontHashes.join(',')}`;
 
-  if (toRender.length === 0) {
-    console.log('No SVGs matched.');
-    return;
+  const manifest = await loadManifest();
+  const toRender = [];
+  let skipped = 0;
+  let seeded = 0;
+  for (const svgPath of candidates) {
+    const outputPath = join(dirname(svgPath), `${basename(svgPath, '.svg')}.png`);
+    const key = createHash('sha256').update(`${cachePrefix}:`).update(await readFile(svgPath)).digest('hex');
+    const manifestKey = outputPath.replace(`${root}/`, '');
+    let current = false;
+    if (!force) {
+      let pngSize = 0;
+      try {
+        pngSize = (await stat(outputPath)).size;
+      } catch {
+        pngSize = 0;
+      }
+      if (pngSize > 0) {
+        if (manifest[manifestKey] === key) {
+          current = true;
+        } else if (!(manifestKey in manifest)) {
+          // Adoption path: a committed PNG with no manifest entry yet is taken as
+          // current and its key recorded, so switching to this cache does not
+          // re-render the 2,198 already-good rasters (a re-render is not
+          // byte-stable, so that would be a repo-wide diff of pure noise).
+          // Use --force to genuinely rebuild.
+          manifest[manifestKey] = key;
+          seeded += 1;
+          current = true;
+        }
+      }
+    }
+    if (current) skipped += 1;
+    else toRender.push({ svgPath, outputPath, key, manifestKey });
   }
 
-  const browser = await puppeteer.launch({
+  if (seeded) await saveManifest(manifest);
+  if (!toRender.length) {
+    console.log(`OG raster summary: ${candidates.length} current, ${skipped} skipped, 0 rendered${seeded ? `, ${seeded} adopted into cache` : ''}`);
+    return;
+  }
+  if (Date.now() - startedAt > buildTimeoutMs) throw new Error(`OG raster build exceeded ${buildTimeoutMs}ms before rendering`);
+
+  puppeteer = (await import('puppeteer-core')).default;
+  const chromePath = await findChromeExecutable();
+  if (!chromePath) throw new Error('Chrome/Chromium executable not found. Set PUPPETEER_EXECUTABLE_PATH or install Chrome.');
+  const fontFaces = await buildFontFaces();
+  browser = await puppeteer.launch({
     executablePath: chromePath,
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
   });
 
-  console.log(`Rendering ${toRender.length} SVG(s) to ${TARGET_WIDTH}×${TARGET_HEIGHT} PNG…`);
   const results = [];
+  let failed = 0;
   try {
-    for (const svgPath of toRender) {
-      const outputPath = join(dirname(svgPath), `${basename(svgPath, '.svg')}.png`);
+    for (const { svgPath, outputPath, key, manifestKey } of toRender) {
+      if (Date.now() - startedAt > buildTimeoutMs) throw new Error(`OG raster build exceeded ${buildTimeoutMs}ms`);
       try {
-        const size = await renderSvg(browser, svgPath, outputPath, fontFaces);
+        let size;
+        for (let attempt = 0; attempt < 2; attempt += 1) {
+          try {
+            size = await Promise.race([
+              renderSvg(browser, svgPath, outputPath, fontFaces),
+              new Promise((_, reject) => setTimeout(() => reject(new Error(`render timeout after ${renderTimeoutMs}ms`)), renderTimeoutMs)),
+            ]);
+            break;
+          } catch (err) {
+            if (!shuttingDown && attempt === 0 && /connection closed|target closed|browser has disconnected/i.test(err.message)) {
+              try { await browser.close(); } catch { /* Browser already disconnected. */ }
+              browser = await puppeteer.launch({
+                executablePath: chromePath,
+                headless: true,
+                args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+              });
+              continue;
+            }
+            throw err;
+          }
+        }
         results.push({ svg: svgPath, png: outputPath, size });
-        console.log(`✓ ${outputPath.replace(root, '')} (${(size / 1024).toFixed(1)} KB)`);
+        manifest[manifestKey] = key;
+        if (!quiet) console.log(`✓ ${outputPath.replace(root, '')} (${(size / 1024).toFixed(1)} KB)`);
       } catch (err) {
+        failed += 1;
         console.error(`✗ ${svgPath.replace(root, '')}: ${err.message}`);
-        process.exitCode = 1;
+        break;
       }
     }
   } finally {
-    await browser.close();
+    await closeBrowser();
+    // Written even on a failed or interrupted run so completed work is not redone.
+    await saveManifest(manifest);
   }
 
   const oversized = results.filter((r) => r.size > MAX_FILE_KB * 1024);
   if (oversized.length) {
-    console.warn(`\nWarning: ${oversized.length} file(s) exceed ${MAX_FILE_KB} KB:`);
+    // Always surfaced, even under --quiet: an oversized OG image is a real
+    // regression, and the production build passes --quiet on every run.
+    console.warn(`Warning: ${oversized.length} file(s) exceed ${MAX_FILE_KB} KB:`);
     for (const r of oversized) {
       console.warn(`  ${r.png.replace(root, '')} — ${(r.size / 1024).toFixed(1)} KB`);
     }
   }
-
-  console.log(`\nDone. Rendered ${results.length} PNG(s).`);
+  console.log(`OG raster summary: ${candidates.length - skipped} pending, ${skipped} skipped, ${results.length} rendered, ${failed} failed${seeded ? `, ${seeded} adopted into cache` : ''}`);
+  if (failed) process.exitCode = 1;
 }
 
 main().catch((err) => {
