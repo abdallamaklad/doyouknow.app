@@ -1,0 +1,38 @@
+name: PR checks
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Site audit (same suite the deploy runs)
+        run: npm test
+  cap-check:
+    name: cap-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Agent branches may add at most 2 new article pairs
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          case "$HEAD_REF" in
+            hermes/*) ;;
+            *) echo "not an agent branch ($HEAD_REF): no cap"; exit 0 ;;
+          esac
+          n=$(git diff --name-only --diff-filter=A origin/main...HEAD -- en/article | grep -c '\.html$' || true)
+          echo "new EN articles in this PR: $n"
+          if [ "$n" -gt 2 ]; then
+            echo "::error::Agent PRs may add at most 2 new article pairs per release (found $n). Split the release."
+            exit 1
+          fi
