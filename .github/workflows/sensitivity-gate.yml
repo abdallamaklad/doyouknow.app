@@ -1,0 +1,16 @@
+name: Sensitivity gate
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Screen new article slugs against sensitive-topic policy
+        run: node scripts/sensitivity-screen.mjs --pr
