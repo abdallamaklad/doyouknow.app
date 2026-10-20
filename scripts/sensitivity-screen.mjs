@@ -105,6 +105,21 @@ function loadApprovals() {
   }
 }
 
+// Slugs whose EN page is in editorial-review.json, i.e. live but noindex,follow and out of the sitemap.
+function loadNoindexed() {
+  try {
+    const data = JSON.parse(readFileSync(join(ROOT, "editorial-review.json"), "utf8"));
+    const slugs = new Set();
+    for (const path of Object.values(data.pages || {}).flat()) {
+      const m = path.match(/^\/?en\/article\/(.+)\.html$/);
+      if (m) slugs.add(m[1]);
+    }
+    return slugs;
+  } catch {
+    return new Set();
+  }
+}
+
 function slugsFromArg(argv) {
   return argv.map((s) => s.replace(/\.html$/, "").replace(/^.*\//, ""));
 }
@@ -193,8 +208,10 @@ function main() {
   }
 
   const approvals = loadApprovals();
+  const noindexed = loadNoindexed();
   const failures = [];
   const approvedFlags = [];
+  const held = [];
 
   for (const slug of slugs) {
     const hits = screen(slug);
@@ -207,6 +224,9 @@ function main() {
     const record = approvals[slug];
     if (record && record.decision === "approved") {
       approvedFlags.push({ slug, cats, record });
+    } else if (record && record.decision === "removed" && record.action === "noindex" && noindexed.has(slug)) {
+      // Taken down by noindex (still reachable, out of search and the sitemap) pending review.
+      held.push({ slug, cats });
     } else if (record && record.decision === "removed") {
       failures.push({ slug, cats, reason: "owner decision=removed on record — page must not be published" });
     } else {
@@ -221,6 +241,7 @@ function main() {
   console.log(`sensitivity-screen: screened ${slugs.length} slug(s) [${mode}]`);
   for (const f of approvedFlags)
     console.log(`  APPROVED-OK  ${f.slug}  [${f.cats.join(",")}] (approved ${f.record.date || "?"})`);
+  for (const f of held) console.log(`  HELD-NOINDEX ${f.slug}  [${f.cats.join(",")}]`);
   for (const f of failures) console.error(`  BLOCKED      ${f.slug}  ${f.reason}`);
 
   if (failures.length > 0) {
