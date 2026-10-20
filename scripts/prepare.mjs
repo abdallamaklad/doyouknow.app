@@ -987,7 +987,8 @@ function injectSchemas(html, relativeFile) {
 
   const keywords = getKeywords(html, description, lang).join(', ');
 
-  const articleBody = stripHtmlTags(bodyHtml).slice(0, 300);
+  // The "not medical/financial/legal advice" notice is not the article's opening text.
+  const articleBody = stripHtmlTags(bodyHtml.replace(/<div class="advice-notice"[^>]*>.*?<\/div>/gs, '')).slice(0, 300);
 
   const articleSchema = {
     '@context': 'https://schema.org',

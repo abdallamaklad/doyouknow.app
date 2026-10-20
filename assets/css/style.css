@@ -1748,6 +1748,17 @@ html[dir="rtl"] .wc-mini-list {
 
 .article-body p { margin-bottom: var(--space-4); }
 
+/* "Not medical/financial/legal advice" notices on sensitive explainers (owner decision 2026-10-02) */
+.article-body .advice-notice {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-inline-start: 3px solid var(--color-primary-accent);
+  border-radius: 4px;
+  background: var(--color-surface-light);
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
 .article-body ul, .article-body ol { margin-bottom: var(--space-4); padding-left: var(--space-5); }
 [lang="ar"] .article-body ul, [lang="ar"] .article-body ol { padding-left: 0; padding-right: var(--space-5); }
 

@@ -1,0 +1,254 @@
+# Owner decision: 217 flagged live sensitive pages (2026-10-02)
+
+**Decision source:** Quantara Discord, doyouknow operations thread 1529842584544088135, owner message id 1555660235018870835 (2026-10-02): "approve recommendations" — approving the per-group recommendations sent with the flagged list `doyouknow-flagged-pages-2026-10-01.txt`.
+**Scope:** 217 EN slugs, each with an Arabic twin (434 pages). Flagging evidence: /home/hermes/.hermes/cache/documents/doc_6f515c2d7c6b_doyouknow-flagged-pages-2026-10-01.txt
+**Recording:** decisions must be recorded per-slug in repo `sensitivity-approvals.json` (decision "approved" or "removed", date 2026-10-02, evidence = Discord thread ref above). The pre-publish gate scripts/sensitivity-screen.mjs enforces this.
+
+## Decisions per group
+
+### 1. PROHIBITED gambling (2) — REMOVE NOW
+Delete EN+AR pages, scrub manifest.json / manifest-ar.json / sitemap.xml / rss.xml and any internal links; record decision="removed".
+  - how-esports-betting-actually-works-and-why-its-controversial
+  - how-lottery-draws-work
+
+### 2. health (69) — SPLIT
+- General science explainers: KEEP + add a short "not medical advice" notice (EN+AR); record approved.
+- Pages that tell readers what medicine or supplements to use: TAKE DOWN (noindex + remove from sitemap) pending editorial review; record removed until review clears them.
+  - are-dietary-supplements-necessary
+  - cold-vs-flu-differences
+  - does-collagen-powder-actually-do-anything-for-your-skin
+  - food-allergies-vs-intolerances
+  - how-a-cochlear-implant-actually-lets-deaf-people-hear
+  - how-a-defibrillator-actually-restarts-a-stopped-heart
+  - how-a-fever-actually-helps-fight-infection
+  - how-an-x-ray-machine-actually-sees-inside-the-body
+  - how-antibiotic-resistance-actually-spreads
+  - how-antibiotics-work
+  - how-baby-sleep-regressions-actually-happen-and-why-they-end
+  - how-blood-pressure-medication-actually-lowers-your-numbers
+  - how-braces-actually-straighten-teeth-with-slow-constant-force
+  - how-breathwork-actually-affects-the-nervous-system
+  - how-clinical-trials-actually-work
+  - how-cpap-machines-actually-treat-sleep-apnea
+  - how-creatine-actually-works-in-muscle
+  - how-cryotherapy-chambers-actually-affect-the-body
+  - how-dental-cavities-actually-form
+  - how-diplomatic-immunity-actually-works
+  - how-does-anesthesia-work
+  - how-family-therapists-actually-approach-sibling-conflict
+  - how-fasting-windows-actually-affect-hunger-hormones
+  - how-fluoride-toothpaste-actually-prevents-cavities
+  - how-immune-system-works
+  - how-intermittent-fasting-affects-the-body
+  - how-journaling-actually-affects-mental-health
+  - how-laser-eye-surgery-actually-reshapes-the-cornea
+  - how-laser-vision-correction-actually-works
+  - how-lasik-eye-surgery-actually-reshapes-your-cornea
+  - how-melatonin-supplements-actually-affect-your-sleep-cycle
+  - how-mri-machines-actually-work
+  - how-mrna-vaccines-were-developed-so-fast
+  - how-nasal-breathing-vs-mouth-breathing-affects-your-health
+  - how-organ-transplant-matching-actually-works
+  - how-organ-transplant-rejection-actually-gets-suppressed
+  - how-retinol-actually-repairs-and-renews-skin
+  - how-salt-actually-affects-blood-pressure
+  - how-sleep-apnea-actually-disrupts-your-body
+  - how-the-hearts-natural-pacemaker-actually-keeps-your-beat-steady
+  - how-the-placebo-effect-actually-works
+  - how-vaccination-herd-immunity-actually-works
+  - how-vaccines-train-the-immune-system
+  - how-vaccines-work
+  - how-weight-loss-drugs-actually-work-in-the-body
+  - how-your-body-actually-uses-vitamin-d-from-sunlight
+  - migraine-vs-headache-difference
+  - stress-vs-anxiety-difference
+  - type-1-vs-type-2-diabetes
+  - understanding-blood-pressure-numbers
+  - understanding-herd-immunity
+  - understanding-insulin-resistance
+  - vitamins-vs-minerals-difference
+  - what-actually-happens-to-the-brain-during-sleep-paralysis
+  - what-are-fat-soluble-vitamins
+  - what-are-omega-3-fatty-acids
+  - what-are-probiotics
+  - what-causes-seasonal-allergies
+  - what-is-cholesterol
+  - what-is-intermittent-fasting
+  - what-is-lactose-intolerance
+  - what-is-the-placebo-effect
+  - what-sleep-trackers-can-and-cannot-actually-measure
+  - why-blood-pressure-readings-differ-between-arms
+  - why-cold-plunge-culture-keeps-growing
+  - why-doctors-recommend-different-cholesterol-targets
+  - why-doctors-still-say-finish-your-antibiotics
+  - why-red-light-therapy-claims-outpace-the-evidence
+  - why-wisdom-teeth-actually-need-to-come-out
+
+### 3. finance (53) — KEEP WITH NOTICE
+KEEP all + add "not financial advice" notice (EN+AR); record approved.
+  - egypt-bank-account-guide
+  - egypt-money-currency-guide
+  - egypt-universal-health-insurance-guide
+  - how-a-business-bank-account-actually-differs-from-a-personal-one
+  - how-art-insurance-actually-values-a-painting
+  - how-bitcoin-mining-actually-secures-the-network
+  - how-central-banks-control-inflation
+  - how-credit-card-cashback-is-actually-calculated
+  - how-credit-card-companies-actually-make-money
+  - how-credit-scores-work
+  - how-crypto-hardware-wallets-actually-protect-your-coins
+  - how-currency-pegs-work
+  - how-egypts-income-tax-system-actually-works
+  - how-egypts-vat-registration-process-works
+  - how-employee-stock-options-actually-work
+  - how-emv-chip-cards-actually-stop-counterfeit-fraud
+  - how-exchange-rates-change-what-you-pay-online
+  - how-import-tariffs-work
+  - how-index-funds-actually-track-the-market
+  - how-insurance-companies-actually-set-prices
+  - how-insurance-premiums-are-actually-calculated
+  - how-insurance-underwriters-actually-decide-what-you-pay
+  - how-multi-currency-invoicing-actually-works
+  - how-nft-art-marketplaces-actually-work-now
+  - how-real-estate-tokenization-actually-works
+  - how-remittances-work
+  - how-saudi-arabias-new-mortgage-rules-work
+  - how-saudi-arabias-public-investment-fund-works
+  - how-stock-buybacks-actually-work
+  - how-stock-exchanges-actually-match-buy-and-sell-orders
+  - how-stock-markets-work
+  - how-travel-insurance-claims-actually-get-approved-or-denied
+  - how-vat-and-us-sales-tax-actually-differ-for-online-sellers
+  - open-bank-account-saudi
+  - saudi-bank-account-types
+  - saudi-health-insurance
+  - saudi-mortgage-and-home-loan-guide
+  - saudi-retirement-pension-explained
+  - saudi-vat-registration-guide
+  - uae-bank-account-types
+  - uae-corporate-tax
+  - uae-debt-travel-ban-explained
+  - uae-gratuity-calculator-guide
+  - uae-health-insurance-guide
+  - what-actually-happens-to-your-student-loan-interest-over-time
+  - what-is-a-trade-deficit
+  - what-is-blockchain-technology
+  - what-is-cryptocurrency-mining
+  - what-is-inflation-targeting
+  - why-central-bank-interest-rate-decisions-move-so-slowly
+  - why-egypts-currency-fluctuations-affect-daily-life
+  - why-freelance-income-is-harder-to-budget-than-a-salary
+  - why-grade-inflation-happens-at-universities
+
+### 4. religion (47) — SPLIT
+- Factual/historical explainers: KEEP; record approved.
+- Anything reading like a religious ruling (fatwa-style dos/donts): TAKE DOWN (delete EN+AR or noindex if borderline; list every takedown in the PR description); record removed for takedowns.
+  - five-pillars-of-islam
+  - friday-prayer-jummah-guide
+  - hajj-guide
+  - history-of-the-kaaba-kiswah
+  - history-of-the-prophets-mosque
+  - history-of-the-quran-compilation
+  - how-eid-prayer-actually-differs-from-the-five-daily-prayers
+  - how-hadith-authentication-actually-works
+  - how-hajj-logistics-are-actually-managed-each-year
+  - how-iftar-meals-actually-vary-across-muslim-countries
+  - how-islamic-funeral-rites-janazah-actually-work
+  - how-islamic-microfinance-actually-helps-small-entrepreneurs
+  - how-islamic-sundials-were-actually-used-to-tell-prayer-times-historically
+  - how-mosque-architecture-differs-across-regions
+  - how-muslim-scholars-preserved-greek-philosophy-during-the-islamic-golden-age
+  - how-prayer-times-calculated
+  - how-quran-memorization-hifz-actually-works
+  - how-qurbani-animal-sacrifice-actually-works-during-eid-al-adha
+  - how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works
+  - how-tawaf-crowd-flow-around-the-kaaba-actually-works
+  - how-the-ramadan-cannon-firing-tradition-actually-works
+  - how-umrah-crowd-management-actually-tracks-millions-of-pilgrims
+  - how-wudu-ablution-rules-actually-work
+  - how-zakat-calculation-actually-works
+  - how-zamzam-water-is-actually-bottled-and-distributed-worldwide
+  - islamic-cairo-guide
+  - islamic-finance-guide
+  - islamic-new-year-celebrations
+  - laylat-al-qadr-explained
+  - ramadan-health-guide
+  - role-of-calligraphy-in-islamic-art
+  - sadaqah-vs-zakat
+  - salah-ad-din-and-the-crusades
+  - sheikh-zayed-grand-mosque-guide
+  - two-holy-mosques-history
+  - umrah-guide
+  - what-is-eid-al-adha
+  - what-is-eid-al-fitr
+  - what-is-islamic-geometric-art
+  - what-is-tafsir-and-how-it-differs-from-quran-translation
+  - what-is-zakat
+  - why-dates-are-a-ramadan-nutritional-staple
+  - why-eid-dates-differ-by-country
+  - why-friday-holds-special-significance-in-islamic-tradition
+  - why-moon-sighting-still-matters-for-islamic-dates
+  - why-ramadan-fasting-hours-differ-by-country
+  - why-ramadan-sales-happen
+
+### 5. government (31) — CONDITIONAL KEEP
+KEEP only pages showing a visible "last checked" date AND a link to the official source; add/fix where quick. Pages that cannot meet the bar: NOINDEX (hide from Google) until updated; record approved only for pages meeting the bar.
+  - absher-portal-guide
+  - ai-in-uae-government-services
+  - dubai-tourist-visa-guide
+  - dubai-traffic-fines-guide
+  - egypt-customs-import-guide
+  - egypt-e-visa-guide
+  - egypt-national-id-guide
+  - egypt-tourist-visa-guide
+  - egypt-traffic-fines-guide
+  - emirates-id-guide
+  - how-airport-immigration-e-gates-actually-verify-your-identity
+  - how-dubais-salik-toll-system-actually-charges-drivers-without-stopping
+  - how-family-reunification-visas-actually-work
+  - how-passport-power-rankings-work
+  - how-passports-came-to-exist
+  - how-the-elm-platform-handles-saudi-government-services
+  - how-the-saudi-iqama-renewal-process-actually-works
+  - how-to-cancel-a-uae-residence-visa-and-exit-properly
+  - saudi-customs-import-guide
+  - saudi-driving-license
+  - saudi-driving-license-transfer
+  - saudi-e-visa-guide
+  - saudi-family-visit-visa
+  - saudi-iqama-guide
+  - saudi-tourist-e-visa-guide
+  - saudi-traffic-fines-guide
+  - tawakkalna-guide
+  - uae-driving-license-guide
+  - uae-golden-visa-guide
+  - uae-residence-visa-types
+  - why-census-data-actually-shapes-government-funding
+
+### 6. legal (11) — KEEP WITH NOTICE + NOINDEX SUBSET
+KEEP all + add "not legal advice" notice (EN+AR). NOINDEX inheritance and power-of-attorney pages until reviewed: egypt-inheritance-law-guide, egypt-power-of-attorney-guide, saudi-inheritance-law-guide, saudi-power-of-attorney-guide. Record approved for the rest.
+  - egypt-inheritance-law-guide
+  - egypt-power-of-attorney-guide
+  - how-child-custody-arrangements-actually-get-decided
+  - how-child-custody-evaluations-actually-work
+  - how-family-mediation-actually-resolves-divorce-disputes
+  - how-small-claims-court-actually-works
+  - how-trademark-registration-actually-protects-a-brand
+  - saudi-inheritance-law-guide
+  - saudi-labor-law-basics
+  - saudi-power-of-attorney-guide
+  - uae-labor-law-basics
+
+### 7. Multi-category (4)
+- golden-visa-investor-track (finance, government): KEEP if it meets the government bar (last-checked + official source), plus finance notice; else NOINDEX.
+- why-you-cannot-fully-repay-sleep-debt (health, finance): treat as health explainer — KEEP + medical notice (it is about sleep biology, not financial advice).
+- how-sukuk-islamic-bonds-actually-work (religion, finance): factual finance explainer — KEEP + financial notice.
+- how-islamic-inheritance-law-faraid-calculations-actually-work (religion, legal): NOINDEX with the inheritance/POA subset until reviewed.
+  - golden-visa-investor-track
+  - why-you-cannot-fully-repay-sleep-debt
+  - how-sukuk-islamic-bonds-actually-work
+  - how-islamic-inheritance-law-faraid-calculations-actually-work
+
+## Standing constraints
+- New-article freeze remains in force until GA4/GSC measurement is fixed (t_79ff9386); this decision clears only the policy leg of the freeze.
+- After the freeze lifts: max 2 new EN/AR pairs per release, every pair passes scripts/sensitivity-screen.mjs, owner merges every PR.

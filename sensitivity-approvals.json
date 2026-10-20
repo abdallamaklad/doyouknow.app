@@ -12,6 +12,1974 @@
       "category": "prohibited",
       "date": "2026-10-02",
       "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): approve recommendations (group 1: prohibited gambling, remove now)"
+    },
+    "absher-portal-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "ai-in-uae-government-services": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "are-dietary-supplements-necessary": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "cold-vs-flu-differences": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "does-collagen-powder-actually-do-anything-for-your-skin": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "dubai-tourist-visa-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "dubai-traffic-fines-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "egypt-bank-account-guide": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "egypt-customs-import-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "egypt-e-visa-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "egypt-inheritance-law-guide": {
+      "decision": "removed",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "legal"
+      ]
+    },
+    "egypt-money-currency-guide": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "egypt-national-id-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "egypt-power-of-attorney-guide": {
+      "decision": "removed",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "legal"
+      ]
+    },
+    "egypt-tourist-visa-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "egypt-traffic-fines-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "egypt-universal-health-insurance-guide": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "emirates-id-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "five-pillars-of-islam": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "food-allergies-vs-intolerances": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "friday-prayer-jummah-guide": {
+      "decision": "removed",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "golden-visa-investor-track": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "financial"
+      ]
+    },
+    "hajj-guide": {
+      "decision": "removed",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "history-of-the-kaaba-kiswah": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "history-of-the-prophets-mosque": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "history-of-the-quran-compilation": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-a-business-bank-account-actually-differs-from-a-personal-one": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-a-cochlear-implant-actually-lets-deaf-people-hear": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-a-defibrillator-actually-restarts-a-stopped-heart": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-a-fever-actually-helps-fight-infection": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-airport-immigration-e-gates-actually-verify-your-identity": {
+      "decision": "approved",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-an-x-ray-machine-actually-sees-inside-the-body": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-antibiotic-resistance-actually-spreads": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-antibiotics-work": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-art-insurance-actually-values-a-painting": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-baby-sleep-regressions-actually-happen-and-why-they-end": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-bitcoin-mining-actually-secures-the-network": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-blood-pressure-medication-actually-lowers-your-numbers": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-braces-actually-straighten-teeth-with-slow-constant-force": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-breathwork-actually-affects-the-nervous-system": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-central-banks-control-inflation": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-child-custody-arrangements-actually-get-decided": {
+      "decision": "approved",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "legal"
+      ]
+    },
+    "how-child-custody-evaluations-actually-work": {
+      "decision": "approved",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "legal"
+      ]
+    },
+    "how-clinical-trials-actually-work": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-cpap-machines-actually-treat-sleep-apnea": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-creatine-actually-works-in-muscle": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-credit-card-cashback-is-actually-calculated": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-credit-card-companies-actually-make-money": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-credit-scores-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-cryotherapy-chambers-actually-affect-the-body": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-crypto-hardware-wallets-actually-protect-your-coins": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-currency-pegs-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-dental-cavities-actually-form": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-diplomatic-immunity-actually-works": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-does-anesthesia-work": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-dubais-salik-toll-system-actually-charges-drivers-without-stopping": {
+      "decision": "approved",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-egypts-income-tax-system-actually-works": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-egypts-vat-registration-process-works": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-eid-prayer-actually-differs-from-the-five-daily-prayers": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-employee-stock-options-actually-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-emv-chip-cards-actually-stop-counterfeit-fraud": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-exchange-rates-change-what-you-pay-online": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-family-mediation-actually-resolves-divorce-disputes": {
+      "decision": "approved",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "legal"
+      ]
+    },
+    "how-family-reunification-visas-actually-work": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "how-family-therapists-actually-approach-sibling-conflict": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-fasting-windows-actually-affect-hunger-hormones": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-fluoride-toothpaste-actually-prevents-cavities": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-hadith-authentication-actually-works": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-hajj-logistics-are-actually-managed-each-year": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-iftar-meals-actually-vary-across-muslim-countries": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-immune-system-works": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-import-tariffs-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-index-funds-actually-track-the-market": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-insurance-companies-actually-set-prices": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-insurance-premiums-are-actually-calculated": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-insurance-underwriters-actually-decide-what-you-pay": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-intermittent-fasting-affects-the-body": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-islamic-funeral-rites-janazah-actually-work": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-islamic-inheritance-law-faraid-calculations-actually-work": {
+      "decision": "removed",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "legal"
+      ]
+    },
+    "how-islamic-microfinance-actually-helps-small-entrepreneurs": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-islamic-sundials-were-actually-used-to-tell-prayer-times-historically": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-journaling-actually-affects-mental-health": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-laser-eye-surgery-actually-reshapes-the-cornea": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-laser-vision-correction-actually-works": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-lasik-eye-surgery-actually-reshapes-your-cornea": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-melatonin-supplements-actually-affect-your-sleep-cycle": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-mosque-architecture-differs-across-regions": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-mri-machines-actually-work": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-mrna-vaccines-were-developed-so-fast": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-multi-currency-invoicing-actually-works": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-muslim-scholars-preserved-greek-philosophy-during-the-islamic-golden-age": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-nasal-breathing-vs-mouth-breathing-affects-your-health": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-nft-art-marketplaces-actually-work-now": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-organ-transplant-matching-actually-works": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-organ-transplant-rejection-actually-gets-suppressed": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-passport-power-rankings-work": {
+      "decision": "approved",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-passports-came-to-exist": {
+      "decision": "approved",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-prayer-times-calculated": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-quran-memorization-hifz-actually-works": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-qurbani-animal-sacrifice-actually-works-during-eid-al-adha": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-real-estate-tokenization-actually-works": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-remittances-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-retinol-actually-repairs-and-renews-skin": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-salt-actually-affects-blood-pressure": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-saudi-arabias-new-mortgage-rules-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-saudi-arabias-public-investment-fund-works": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-sleep-apnea-actually-disrupts-your-body": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-small-claims-court-actually-works": {
+      "decision": "approved",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "legal"
+      ]
+    },
+    "how-stock-buybacks-actually-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-stock-exchanges-actually-match-buy-and-sell-orders": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-stock-markets-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-sukuk-islamic-bonds-actually-work": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-tawaf-crowd-flow-around-the-kaaba-actually-works": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-the-elm-platform-handles-saudi-government-services": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "how-the-hearts-natural-pacemaker-actually-keeps-your-beat-steady": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-the-placebo-effect-actually-works": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-the-ramadan-cannon-firing-tradition-actually-works": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-the-saudi-iqama-renewal-process-actually-works": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "how-to-cancel-a-uae-residence-visa-and-exit-properly": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "how-trademark-registration-actually-protects-a-brand": {
+      "decision": "approved",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "legal"
+      ]
+    },
+    "how-travel-insurance-claims-actually-get-approved-or-denied": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-umrah-crowd-management-actually-tracks-millions-of-pilgrims": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "how-vaccination-herd-immunity-actually-works": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-vaccines-train-the-immune-system": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-vaccines-work": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-vat-and-us-sales-tax-actually-differ-for-online-sellers": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "how-weight-loss-drugs-actually-work-in-the-body": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-wudu-ablution-rules-actually-work": {
+      "decision": "removed",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "how-your-body-actually-uses-vitamin-d-from-sunlight": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "how-zakat-calculation-actually-works": {
+      "decision": "removed",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "how-zamzam-water-is-actually-bottled-and-distributed-worldwide": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "islamic-cairo-guide": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "islamic-finance-guide": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "islamic-new-year-celebrations": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "laylat-al-qadr-explained": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "migraine-vs-headache-difference": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "open-bank-account-saudi": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "ramadan-health-guide": {
+      "decision": "removed",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "role-of-calligraphy-in-islamic-art": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "sadaqah-vs-zakat": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "salah-ad-din-and-the-crusades": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "saudi-bank-account-types": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "saudi-customs-import-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-driving-license": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-driving-license-transfer": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-e-visa-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-family-visit-visa": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-health-insurance": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "saudi-inheritance-law-guide": {
+      "decision": "removed",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "legal"
+      ]
+    },
+    "saudi-iqama-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-labor-law-basics": {
+      "decision": "approved",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "legal"
+      ]
+    },
+    "saudi-mortgage-and-home-loan-guide": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "saudi-power-of-attorney-guide": {
+      "decision": "removed",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "legal"
+      ]
+    },
+    "saudi-retirement-pension-explained": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "saudi-tourist-e-visa-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-traffic-fines-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "saudi-vat-registration-guide": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "sheikh-zayed-grand-mosque-guide": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "stress-vs-anxiety-difference": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "tawakkalna-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "two-holy-mosques-history": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "type-1-vs-type-2-diabetes": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "uae-bank-account-types": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "uae-corporate-tax": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "uae-debt-travel-ban-explained": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "uae-driving-license-guide": {
+      "decision": "approved",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "uae-golden-visa-guide": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "uae-gratuity-calculator-guide": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "uae-health-insurance-guide": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "uae-labor-law-basics": {
+      "decision": "approved",
+      "category": "legal",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "legal"
+      ]
+    },
+    "uae-residence-visa-types": {
+      "decision": "removed",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "umrah-guide": {
+      "decision": "removed",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex"
+    },
+    "understanding-blood-pressure-numbers": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "understanding-herd-immunity": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "understanding-insulin-resistance": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "vitamins-vs-minerals-difference": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-actually-happens-to-the-brain-during-sleep-paralysis": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-actually-happens-to-your-student-loan-interest-over-time": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "what-are-fat-soluble-vitamins": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-are-omega-3-fatty-acids": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-are-probiotics": {
+      "decision": "removed",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "action": "noindex",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-causes-seasonal-allergies": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-is-a-trade-deficit": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "what-is-blockchain-technology": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "what-is-cholesterol": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-is-cryptocurrency-mining": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "what-is-eid-al-adha": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "what-is-eid-al-fitr": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "what-is-inflation-targeting": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "what-is-intermittent-fasting": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-is-islamic-geometric-art": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "what-is-lactose-intolerance": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-is-tafsir-and-how-it-differs-from-quran-translation": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "what-is-the-placebo-effect": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "what-is-zakat": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "what-sleep-trackers-can-and-cannot-actually-measure": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "why-blood-pressure-readings-differ-between-arms": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "why-census-data-actually-shapes-government-funding": {
+      "decision": "approved",
+      "category": "government",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-central-bank-interest-rate-decisions-move-so-slowly": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "why-cold-plunge-culture-keeps-growing": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "why-dates-are-a-ramadan-nutritional-staple": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-doctors-recommend-different-cholesterol-targets": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "why-doctors-still-say-finish-your-antibiotics": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "why-egypts-currency-fluctuations-affect-daily-life": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "why-eid-dates-differ-by-country": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-freelance-income-is-harder-to-budget-than-a-salary": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "financial"
+      ]
+    },
+    "why-friday-holds-special-significance-in-islamic-tradition": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-grade-inflation-happens-at-universities": {
+      "decision": "approved",
+      "category": "finance",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-moon-sighting-still-matters-for-islamic-dates": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-ramadan-fasting-hours-differ-by-country": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-ramadan-sales-happen": {
+      "decision": "approved",
+      "category": "religion",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20"
+    },
+    "why-red-light-therapy-claims-outpace-the-evidence": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "why-wisdom-teeth-actually-need-to-come-out": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
+    },
+    "why-you-cannot-fully-repay-sleep-debt": {
+      "decision": "approved",
+      "category": "health",
+      "date": "2026-10-02",
+      "evidence": "Quantara Discord, doyouknow operations thread 1529842584544088135, owner message 1555660235018870835 (2026-10-02): \"approve recommendations\" for doyouknow-flagged-pages-2026-10-01.txt (growth/policy/2026-10-02-owner-decision-sensitive-pages.md)",
+      "recorded": "2026-10-20",
+      "notice": [
+        "medical"
+      ]
     }
   }
 }
