@@ -6,6 +6,26 @@
   "language": "ar",
   "items": [
     {
+      "id": "https://doyouknow.app/ar/article/how-trademark-registration-actually-protects-a-brand.html",
+      "url": "https://doyouknow.app/ar/article/how-trademark-registration-actually-protects-a-brand.html",
+      "title": "كيف يحمي تسجيل العلامة التجارية العلامة فعلياً",
+      "content_text": "تسجيل العلامة التجارية يحمي أسماء العلامات وشعاراتها كمحددات مصدر، بخلاف حق النشر وبراءة الاختراع، عبر قواعد الاستخدام والتجديد.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "الأعمال والاقتصاد"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/saudi-mortgage-and-home-loan-guide.html",
+      "url": "https://doyouknow.app/ar/article/saudi-mortgage-and-home-loan-guide.html",
+      "title": "دليل التمويل العقاري والقروض السكنية في السعودية",
+      "content_text": "كيف يعمل التمويل العقاري السعودي: قواعد ساما والدفعة الأولى وحدود الدين ودعم سكني وصندوق التنمية العقارية.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "دليل الخدمات الحكومية السعودية"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html",
       "url": "https://doyouknow.app/ar/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html",
       "title": "كيف يؤثر نقص فيتامين ب12 فعلياً على النباتيين",
@@ -106,16 +126,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-trademark-registration-actually-protects-a-brand.html",
-      "url": "https://doyouknow.app/ar/article/how-trademark-registration-actually-protects-a-brand.html",
-      "title": "كيف يحمي تسجيل العلامة التجارية العلامة فعلياً",
-      "content_text": "تسجيل العلامة التجارية يحمي أسماء العلامات وشعاراتها كمحددات مصدر، بخلاف حق النشر وبراءة الاختراع، عبر قواعد الاستخدام والتجديد.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "الأعمال والاقتصاد"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/ar/article/how-video-game-day-one-patches-actually-work.html",
       "url": "https://doyouknow.app/ar/article/how-video-game-day-one-patches-actually-work.html",
       "title": "كيف تعمل تحديثات اليوم الأول لألعاب الفيديو فعلياً",
@@ -193,16 +203,6 @@
       "date_published": "2026-09-27",
       "tags": [
         "التغذية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/why-movie-post-credit-scenes-became-a-marketing-tool.html",
-      "url": "https://doyouknow.app/ar/article/why-movie-post-credit-scenes-became-a-marketing-tool.html",
-      "title": "لماذا أصبحت مشاهد ما بعد النهاية أداة تسويقية للأفلام",
-      "content_text": "وُجدت مشاهد ما بعد الاعتمادات قبل مارفل، لكن آيرون مان 2008 حوّلها لأداة تسويق مقصودة للأجزاء التالية.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "الترفيه والألعاب"
       ]
     }
   ]

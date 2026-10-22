@@ -6,6 +6,26 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html",
+      "url": "https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html",
+      "title": "How Trademark Registration Actually Protects a Brand",
+      "content_text": "Trademark registration protects brand names and logos as source identifiers, distinct from copyright and patent law, through use and renewal rules.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Business and Economy"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/saudi-mortgage-and-home-loan-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-mortgage-and-home-loan-guide.html",
+      "title": "Saudi Mortgage and Home Loan Guide",
+      "content_text": "How Saudi mortgages work: SAMA rules, down payments, debt limits, and Sakani/REDF subsidies for first-time home buyers.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Saudi Practical Guides"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html",
       "url": "https://doyouknow.app/en/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html",
       "title": "How B12 Deficiency Actually Affects Vegans and Vegetarians",
@@ -106,16 +126,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html",
-      "url": "https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html",
-      "title": "How Trademark Registration Actually Protects a Brand",
-      "content_text": "Trademark registration protects brand names and logos as source identifiers, distinct from copyright and patent law, through use and renewal rules.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/en/article/how-video-game-day-one-patches-actually-work.html",
       "url": "https://doyouknow.app/en/article/how-video-game-day-one-patches-actually-work.html",
       "title": "How Video Game Day One Patches Actually Work",
@@ -193,16 +203,6 @@
       "date_published": "2026-09-27",
       "tags": [
         "Nutrition"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-movie-post-credit-scenes-became-a-marketing-tool.html",
-      "url": "https://doyouknow.app/en/article/why-movie-post-credit-scenes-became-a-marketing-tool.html",
-      "title": "Why Movie Post-Credit Scenes Became a Marketing Tool",
-      "content_text": "Post-credit scenes existed long before Marvel, but Iron Man in 2008 turned them into a deliberate sequel-marketing device.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Entertainment and Games"
       ]
     }
   ]
