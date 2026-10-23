@@ -1765,6 +1765,89 @@ await writeFile(join(root, 'rss.xml'), generateRss(
 
 console.log('Generated RSS and JSON feeds.');
 
+// --- llms.txt / llms-full.txt (AI assistant discovery) ---
+// Generated from the same indexable records as the sitemap and feeds, so held
+// (editorial-review.json) and noindex pages can never leak into them. Ordering
+// is date then slug only — no commit-recency tie-break — so the files are
+// byte-stable across machines and CI does not see phantom drift.
+function llmsTitle(item) {
+  return item.title.replace(/\s*\|\s*doyouknow\.app\s*$/i, '').replace(/\s+/g, ' ').trim();
+}
+
+function llmsLine(item) {
+  const description = (item.description || '').replace(/\s+/g, ' ').trim();
+  return `- [${llmsTitle(item).replace(/[[\]]/g, '')}](${item.url})${description ? `: ${description}` : ''}`;
+}
+
+function byDateThenSlug(a, b) {
+  return b.datePublished.localeCompare(a.datePublished) || a.slug.localeCompare(b.slug);
+}
+
+const llmsItems = articleItems.filter((item) => !editorialReview.has(item.path));
+const llmsCategories = (lang) => categoryGroups
+  .filter((group) => group.lang === lang)
+  .map((group) => ({
+    group,
+    items: llmsItems.filter((item) => item.language === lang && item.categorySlug === group.slug).sort(byDateThenSlug)
+  }))
+  .filter(({ items }) => items.length > 0);
+
+const llmsHeader = [
+  '# doyouknow.app',
+  '',
+  '> Bilingual (English and Arabic) explainers, surprising facts and practical guides about the UAE, Saudi Arabia, Egypt and the wider world. Every English article has an Arabic counterpart at the same slug under /ar/.',
+  '',
+  'Articles are written with AI-assisted editorial workflows and checked against the authoritative sources linked in each article\'s "Sources" section; health, finance, legal, religious and government-procedure pages need documented owner review before publication. We do not publish politics/conflict advocacy, allegations about people or organizations, or gambling content. When citing a fact, please link the article page and prefer the primary source it cites.',
+  ''
+];
+
+const llmsKeyPages = [
+  '## About',
+  '',
+  '- [About and editorial policy](https://doyouknow.app/en/about.html): Who runs doyouknow.app, how articles are researched, sourced, written and corrected.',
+  '- [عن الموقع وسياسة التحرير](https://doyouknow.app/ar/about.html): Arabic version of the about and editorial policy page.',
+  '- [Contact](https://doyouknow.app/en/contact.html): Corrections and questions (hello@doyouknow.app).',
+  ''
+];
+
+const llmsShort = [...llmsHeader, ...llmsKeyPages];
+for (const lang of ['en', 'ar']) {
+  llmsShort.push(lang === 'en' ? '## Topics (English)' : '## Topics (Arabic / العربية)', '');
+  for (const { group, items } of llmsCategories(lang)) {
+    const description = (group.description || '').replace(/\s+/g, ' ').trim();
+    llmsShort.push(`- [${group.title}](https://doyouknow.app/${lang}/category/${group.slug}.html): ${items.length} ${lang === 'en' ? 'articles' : 'مقالاً'}${description ? `. ${description}` : ''}`);
+  }
+  llmsShort.push('');
+}
+for (const lang of ['en', 'ar']) {
+  llmsShort.push(lang === 'en' ? '## Latest articles (English)' : '## Latest articles (Arabic / العربية)', '');
+  llmsShort.push(...llmsItems.filter((item) => item.language === lang).sort(byDateThenSlug).slice(0, 25).map(llmsLine), '');
+}
+llmsShort.push(
+  '## Optional',
+  '',
+  `- [Full article index](https://doyouknow.app/llms-full.txt): All ${llmsItems.length} indexable articles with one-line summaries, grouped by language and topic.`,
+  '- [Sitemap](https://doyouknow.app/sitemap.xml): Every indexable URL with last-modified dates.',
+  '- [English RSS](https://doyouknow.app/en/rss.xml): Newest English articles.',
+  '- [Arabic RSS](https://doyouknow.app/ar/rss.xml): Newest Arabic articles.',
+  ''
+);
+await writeFile(join(root, 'llms.txt'), llmsShort.join('\n'));
+
+const llmsFull = [...llmsHeader, ...llmsKeyPages];
+for (const lang of ['en', 'ar']) {
+  llmsFull.push(lang === 'en' ? '# English articles' : '# Arabic articles (العربية)', '');
+  const listed = new Set();
+  for (const { group, items } of llmsCategories(lang)) {
+    llmsFull.push(`## ${group.title}`, '', ...items.map(llmsLine), '');
+    for (const item of items) listed.add(item.path);
+  }
+  const other = llmsItems.filter((item) => item.language === lang && !listed.has(item.path)).sort(byDateThenSlug);
+  if (other.length > 0) llmsFull.push(lang === 'en' ? '## More articles' : '## مقالات أخرى', '', ...other.map(llmsLine), '');
+}
+await writeFile(join(root, 'llms-full.txt'), llmsFull.join('\n'));
+console.log(`Generated llms.txt and llms-full.txt (${llmsItems.length} indexable articles).`);
+
 async function updateServiceWorkerCacheName() {
   const mutableAssetFiles = [
     join(root, 'assets/css/style.css'),

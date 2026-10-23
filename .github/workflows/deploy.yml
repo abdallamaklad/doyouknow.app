@@ -34,3 +34,19 @@ jobs:
           # without this, .env.example would be served at doyouknow.app/.env.example,
           # which is exactly what credential scanners crawl for.
           EXCLUDE: "/.git/, /.github/, /scripts/, package.json, package-lock.json, README.md, .env, .env.example, /deploy/, /docs/, /marketing/, /research/, /design/, editorial-review.json, sensitivity-approvals.json, CLAUDE.md, seo-audit-report-2026-06-30.md, traffic-monetization-plan.md, MASTER_DOYOUKNOW_STRATEGY.md, MARKETING_STRATEGY.md"
+      # Ping IndexNow (Bing/Copilot, Yandex, Seznam, Naver) with the pages this push
+      # changed, so they recrawl in hours. Runs only after a real upload, never
+      # fails the deploy, and only submits URLs that are in sitemap.xml.
+      - name: Submit changed pages to IndexNow
+        if: ${{ env.VPS_HOST != '' && github.event_name == 'push' }}
+        continue-on-error: true
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "No previous commit to diff against; skipping."; exit 0
+          fi
+          git fetch --no-tags --depth=1 origin "$BEFORE"
+          git diff --name-only --diff-filter=AM "$BEFORE" "$GITHUB_SHA" -- '*.html' > "$RUNNER_TEMP/changed.txt"
+          echo "$(wc -l < "$RUNNER_TEMP/changed.txt") changed HTML files"
+          xargs -a "$RUNNER_TEMP/changed.txt" -r node scripts/indexnow-submit.mjs
