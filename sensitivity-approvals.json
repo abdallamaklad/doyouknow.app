@@ -1980,6 +1980,12 @@
       "notice": [
         "medical"
       ]
+    },
+    "how-to-check-a-university-is-accredited-in-the-uae": {
+      "decision": "approved",
+      "category": "government",
+      "date": "2026-10-23",
+      "evidence": "Owner in the Claude Code session 2026-10-23 08:45 +04: \"I approve accreditation\" (trend-led release review held this government-procedure how-to for owner approval)"
     }
   }
 }
