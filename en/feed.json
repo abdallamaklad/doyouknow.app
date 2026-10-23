@@ -6,23 +6,33 @@
   "language": "en",
   "items": [
     {
-      "id": "https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html",
-      "url": "https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html",
-      "title": "How Trademark Registration Actually Protects a Brand",
-      "content_text": "Trademark registration protects brand names and logos as source identifiers, distinct from copyright and patent law, through use and renewal rules.",
-      "date_published": "2026-09-27",
+      "id": "https://doyouknow.app/en/article/how-to-check-a-university-is-accredited-in-the-uae.html",
+      "url": "https://doyouknow.app/en/article/how-to-check-a-university-is-accredited-in-the-uae.html",
+      "title": "How to Check a University Is Accredited in the UAE",
+      "content_text": "Before you pay a dirham, run two official checks: the federal CAA register for the institution and its programmes, and the KHDA directory for Dubai campuses.",
+      "date_published": "2026-10-23",
       "tags": [
-        "Business and Economy"
+        "UAE Practical Guides"
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/saudi-mortgage-and-home-loan-guide.html",
-      "url": "https://doyouknow.app/en/article/saudi-mortgage-and-home-loan-guide.html",
-      "title": "Saudi Mortgage and Home Loan Guide",
-      "content_text": "How Saudi mortgages work: SAMA rules, down payments, debt limits, and Sakani/REDF subsidies for first-time home buyers.",
+      "id": "https://doyouknow.app/en/article/cairo-uber-careem-taxi-guide.html",
+      "url": "https://doyouknow.app/en/article/cairo-uber-careem-taxi-guide.html",
+      "title": "Cairo Uber and Careem Taxi Guide",
+      "content_text": "How Uber and Careem work in Cairo: pricing, car types, airport pickup, and how they compare to street taxis.",
       "date_published": "2026-09-27",
       "tags": [
-        "Saudi Practical Guides"
+        "Egypt Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/dubai-freelance-permit-guide.html",
+      "url": "https://doyouknow.app/en/article/dubai-freelance-permit-guide.html",
+      "title": "Dubai Freelance Permit Guide",
+      "content_text": "Dubai's freelance permit lets independent professionals work legally without a company. Here is how the process, authorities, and costs actually break down.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "UAE Practical Guides"
       ]
     },
     {
@@ -46,6 +56,16 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-child-life-specialists-actually-help-kids-in-hospitals.html",
+      "url": "https://doyouknow.app/en/article/how-child-life-specialists-actually-help-kids-in-hospitals.html",
+      "title": "How Child Life Specialists Actually Help Kids in Hospitals",
+      "content_text": "Child life specialists use play and honest explanation to help hospitalized kids and families cope with medical stress.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Family"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-digital-signatures-actually-verify-a-documents-authenticity.html",
       "url": "https://doyouknow.app/en/article/how-digital-signatures-actually-verify-a-documents-authenticity.html",
       "title": "How Digital Signatures Actually Verify a Document's Authenticity",
@@ -53,6 +73,16 @@
       "date_published": "2026-09-27",
       "tags": [
         "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-diplomatic-immunity-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-diplomatic-immunity-actually-works.html",
+      "title": "How Diplomatic Immunity Actually Works",
+      "content_text": "Diplomatic immunity is real but limited: it belongs to the state, can be waived, and does not block expulsion for crimes.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "People and Society"
       ]
     },
     {
@@ -86,6 +116,36 @@
       ]
     },
     {
+      "id": "https://doyouknow.app/en/article/how-national-flag-colors-actually-carry-different-symbolism-across-countries.html",
+      "url": "https://doyouknow.app/en/article/how-national-flag-colors-actually-carry-different-symbolism-across-countries.html",
+      "title": "How National Flag Colors Carry Different Symbolism Worldwide",
+      "content_text": "The same flag colors mean very different things worldwide, shaped by shared political movements, not any single fixed rulebook.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "People and Society"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-power-naps-actually-affect-brain-performance.html",
+      "url": "https://doyouknow.app/en/article/how-power-naps-actually-affect-brain-performance.html",
+      "title": "How Power Naps Actually Affect Brain Performance",
+      "content_text": "Power naps can boost alertness and memory, but nap length matters. Here is what sleep science says about the ideal duration.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Self Care"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-progressive-muscle-relaxation-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-progressive-muscle-relaxation-actually-works.html",
+      "title": "How Progressive Muscle Relaxation Actually Works",
+      "content_text": "Progressive muscle relaxation eases anxiety by deliberately tensing then releasing muscle groups. Here is the science behind why it works.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Self Care"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-satellite-constellations-avoid-colliding-with-each-other.html",
       "url": "https://doyouknow.app/en/article/how-satellite-constellations-avoid-colliding-with-each-other.html",
       "title": "How Satellite Constellations Avoid Colliding With Each Other",
@@ -93,6 +153,26 @@
       "date_published": "2026-09-27",
       "tags": [
         "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-saudi-arabias-female-labor-force-participation-target-actually-changed-the-job-market.html",
+      "url": "https://doyouknow.app/en/article/how-saudi-arabias-female-labor-force-participation-target-actually-changed-the-job-market.html",
+      "title": "How Saudi Arabia's Female Labor Target Changed the Job Market",
+      "content_text": "Saudi Arabia hit its 30% female workforce target nine years early. Now it's aiming for 40%. Here's what actually drove the change.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Saudi Vision 2030 & Megaprojects"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works.html",
+      "url": "https://doyouknow.app/en/article/how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works.html",
+      "title": "How Saudi Arabia's Hajj and Umrah Capacity Expansion Works",
+      "content_text": "Saudi Arabia is racing toward 30 million Hajj and Umrah pilgrims a year by 2030. Here's the rail, hotels and tech making it possible.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Saudi Vision 2030 & Megaprojects"
       ]
     },
     {
@@ -116,93 +196,13 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-trade-shows-and-expos-actually-generate-revenue-for-organizers.html",
-      "url": "https://doyouknow.app/en/article/how-trade-shows-and-expos-actually-generate-revenue-for-organizers.html",
-      "title": "How Trade Shows and Expos Actually Generate Revenue",
-      "content_text": "Trade shows run on booth rentals, sponsorship tiers, and ticket sales. Here is the real revenue model behind expo organizers.",
+      "id": "https://doyouknow.app/en/article/how-the-world-happiness-report-actually-ranks-countries.html",
+      "url": "https://doyouknow.app/en/article/how-the-world-happiness-report-actually-ranks-countries.html",
+      "title": "How the World Happiness Report Actually Ranks Countries",
+      "content_text": "The World Happiness Report doesn't add up six factors into a score. Here is what it actually measures and how the ranking really works.",
       "date_published": "2026-09-27",
       "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-video-game-day-one-patches-actually-work.html",
-      "url": "https://doyouknow.app/en/article/how-video-game-day-one-patches-actually-work.html",
-      "title": "How Video Game Day One Patches Actually Work",
-      "content_text": "Why new games need a huge update before you can even play them, and how discs, cert, and CDNs make it happen.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-video-game-localization-actually-adapts-humor-across-languages.html",
-      "url": "https://doyouknow.app/en/article/how-video-game-localization-actually-adapts-humor-across-languages.html",
-      "title": "How Video Game Localization Adapts Humor Across Languages",
-      "content_text": "Why translating a game's jokes word for word usually fails, and how localizers rebuild humor for a new audience instead.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Entertainment and Games"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-your-body-actually-metabolizes-alcohol.html",
-      "url": "https://doyouknow.app/en/article/how-your-body-actually-metabolizes-alcohol.html",
-      "title": "How Your Body Actually Metabolizes Alcohol",
-      "content_text": "Your liver breaks down alcohol in two steps, through a toxic middleman. Here is the real science of alcohol metabolism and why it affects people differently.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Nutrition"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-are-adaptogens.html",
-      "url": "https://doyouknow.app/en/article/what-are-adaptogens.html",
-      "title": "What Are Adaptogens?",
-      "content_text": "Adaptogens are herbs said to help the body resist stress. Here is what the actual clinical evidence shows, and what remains unproven.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Nutrition"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-a-holding-company-and-why-businesses-use-one.html",
-      "url": "https://doyouknow.app/en/article/what-is-a-holding-company-and-why-businesses-use-one.html",
-      "title": "What Is a Holding Company and Why Businesses Use One",
-      "content_text": "A holding company owns shares in other businesses without running operations itself. Here is why owners actually structure things this way.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-private-equity-and-how-it-differs-from-venture-capital.html",
-      "url": "https://doyouknow.app/en/article/what-is-private-equity-and-how-it-differs-from-venture-capital.html",
-      "title": "What Is Private Equity and How It Differs From Venture Capital",
-      "content_text": "Private equity buys and controls mature companies using debt; venture capital funds early-stage startups for minority stakes and high-growth bets.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Business and Economy"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/what-is-the-ketogenic-diet.html",
-      "url": "https://doyouknow.app/en/article/what-is-the-ketogenic-diet.html",
-      "title": "What Is the Ketogenic Diet?",
-      "content_text": "The ketogenic diet forces the body to burn fat for fuel instead of carbs. Here is the real science behind ketosis, benefits, and risks.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Nutrition"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/why-dates-are-a-ramadan-nutritional-staple.html",
-      "url": "https://doyouknow.app/en/article/why-dates-are-a-ramadan-nutritional-staple.html",
-      "title": "Why Dates Are a Ramadan Nutritional Staple",
-      "content_text": "Dates break the Ramadan fast for both nutritional and spiritual reasons. Here is the real science and tradition behind this small fruit.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Nutrition"
+        "Around the World"
       ]
     }
   ]

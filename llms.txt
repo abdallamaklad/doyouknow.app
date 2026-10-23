@@ -14,7 +14,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 - [Practical Guide](https://doyouknow.app/en/category/practical-guide.html): 11 articles. General practical explainers that do not fit a single country or topic vertical.
 - [Dubai & UAE Places](https://doyouknow.app/en/category/dubai.html): 62 articles. Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.
-- [UAE Practical Guides](https://doyouknow.app/en/category/guides.html): 34 articles. Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.
+- [UAE Practical Guides](https://doyouknow.app/en/category/guides.html): 35 articles. Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.
 - [Technology Explained](https://doyouknow.app/en/category/technology.html): 132 articles. Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.
 - [Islamic Knowledge & Culture](https://doyouknow.app/en/category/islamic.html): 47 articles. Clear English explainers on Islamic practice, finance, and religious seasons, written with care and sourced from authoritative institutions.
 - [Business and Economy](https://doyouknow.app/en/category/business.html): 112 articles. Practical business, economy, and market-entry guides for professionals working across Arabic-speaking markets.
@@ -44,7 +44,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 - [التقنية](https://doyouknow.app/ar/category/technology.html): 132 مقالاً. شروحات عربية واضحة لأهم أدوات الذكاء الاصطناعي والتقنيات التي تغيّر حياتنا اليومية.
 - [السعودية: التاريخ والثقافة](https://doyouknow.app/ar/category/saudi.html): 50 مقالاً. اكتشف تاريخ المملكة العربية السعودية وتراثها ومدنها وثقافتها من خلال مقالات عربية واضحة وموثوقة.
 - [رؤية السعودية 2030 والمشاريع الكبرى](https://doyouknow.app/ar/category/vision-2030.html): 45 مقالاً. تعرف على مشاريع رؤية السعودية 2030 والمدن والوجهات الجديدة من خلال شروحات تفصل الحقائق عن التوقعات.
-- [أدلة عملية في السعودية](https://doyouknow.app/ar/category/guides.html): 38 مقالاً. أدلة عربية مبسطة للخدمات والمنصات والإجراءات المهمة في السعودية مع إحالات إلى المصادر الرسمية.
+- [أدلة عملية في السعودية](https://doyouknow.app/ar/category/guides.html): 39 مقالاً. أدلة عربية مبسطة للخدمات والمنصات والإجراءات المهمة في السعودية مع إحالات إلى المصادر الرسمية.
 - [الثقافة والمعرفة الإسلامية](https://doyouknow.app/ar/category/islamic.html): 47 مقالاً. شروحات عربية واضحة حول العبادات والتمويل الإسلامي والمواسم الدينية مع احترام السياق والمصادر الموثوقة.
 - [مصر: التاريخ والثقافة](https://doyouknow.app/ar/category/egypt.html): 49 مقالاً. اكتشف تاريخ مصر القديمة وفراعنتها ومعالمها وثقافتها الحية من خلال مقالات عربية واضحة وموثوقة.
 - [أدلة عملية في مصر](https://doyouknow.app/ar/category/egypt-guides.html): 35 مقالاً. أدلة عربية واضحة للمسافرين إلى مصر، تغطي التأشيرات والعملة والتنقل وتخطيط الرحلة.
@@ -62,6 +62,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## Latest articles (English)
 
+- [How to Check a University Is Accredited in the UAE](https://doyouknow.app/en/article/how-to-check-a-university-is-accredited-in-the-uae.html): Before you pay a dirham, run two official checks: the federal CAA register for the institution and its programmes, and the KHDA directory for Dubai campuses.
 - [Cairo Uber and Careem Taxi Guide](https://doyouknow.app/en/article/cairo-uber-careem-taxi-guide.html): How Uber and Careem work in Cairo: pricing, car types, airport pickup, and how they compare to street taxis.
 - [Dubai Freelance Permit Guide](https://doyouknow.app/en/article/dubai-freelance-permit-guide.html): Dubai's freelance permit lets independent professionals work legally without a company. Here is how the process, authorities, and costs actually break down.
 - [How B12 Deficiency Actually Affects Vegans and Vegetarians](https://doyouknow.app/en/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html): B12 comes almost only from animal foods. Here's why vegans are genuinely at risk, the real symptoms, and how much to supplement.
@@ -86,10 +87,10 @@ Articles are written with AI-assisted editorial workflows and checked against th
 - [How Undersea Internet Cables Actually Connect the World](https://doyouknow.app/en/article/how-undersea-internet-cables-actually-connect-the-world.html): Satellites barely register. Roughly 99% of intercontinental internet traffic runs through cables lying on the ocean floor. Here's how.
 - [How Video Game Day One Patches Actually Work](https://doyouknow.app/en/article/how-video-game-day-one-patches-actually-work.html): Why new games need a huge update before you can even play them, and how discs, cert, and CDNs make it happen.
 - [How Video Game Localization Adapts Humor Across Languages](https://doyouknow.app/en/article/how-video-game-localization-actually-adapts-humor-across-languages.html): Why translating a game's jokes word for word usually fails, and how localizers rebuild humor for a new audience instead.
-- [How Your Body Actually Metabolizes Alcohol](https://doyouknow.app/en/article/how-your-body-actually-metabolizes-alcohol.html): Your liver breaks down alcohol in two steps, through a toxic middleman. Here is the real science of alcohol metabolism and why it affects people differently.
 
 ## Latest articles (Arabic / العربية)
 
+- [كيف تتأكد من اعتماد الجامعة في الإمارات قبل التسجيل](https://doyouknow.app/ar/article/how-to-check-a-university-is-accredited-in-the-uae.html): قبل أن تدفع أي درهم، نفّذ فحصين رسميين: سجل مفوضية الاعتماد الأكاديمي للمؤسسة وبرامجها، ودليل هيئة المعرفة والتنمية البشرية لجامعات دبي.
 - [دليل أوبر وكريم للتنقل في القاهرة](https://doyouknow.app/ar/article/cairo-uber-careem-taxi-guide.html): كيف يعمل أوبر وكريم في القاهرة: الأسعار وأنواع السيارات والاستقبال من المطار والمقارنة بالتاكسي.
 - [دليل تصريح العمل الحر في دبي](https://doyouknow.app/ar/article/dubai-freelance-permit-guide.html): تصريح العمل الحر في دبي يتيح للمهنيين المستقلين العمل بشكل قانوني دون شركة. إليك كيف تتوزع الإجراءات والجهات والتكاليف فعليًا.
 - [كيف يؤثر نقص فيتامين ب12 فعلياً على النباتيين](https://doyouknow.app/ar/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html): فيتامين ب12 يأتي غالبًا من الأطعمة الحيوانية فقط. لماذا النباتيون الصرف معرضون لنقص حقيقي، وما الأعراض، وكم يجب أن يتناولوا من المكملات؟
@@ -114,11 +115,10 @@ Articles are written with AI-assisted editorial workflows and checked against th
 - [كيف تربط الكابلات البحرية العالم بالإنترنت فعلياً](https://doyouknow.app/ar/article/how-undersea-internet-cables-actually-connect-the-world.html): الأقمار الصناعية دورها ضئيل جدًا. نحو 99% من حركة الإنترنت بين القارات تمر عبر كابلات على قاع المحيط. إليك كيف.
 - [كيف تعمل تحديثات اليوم الأول لألعاب الفيديو فعلياً](https://doyouknow.app/ar/article/how-video-game-day-one-patches-actually-work.html): لماذا تحتاج الألعاب الجديدة لتحديث ضخم قبل اللعب، وكيف تتعاون الأقراص والفحص والخوادم لتحقيق ذلك.
 - [كيف يُكيّف توطين ألعاب الفيديو الفكاهة بين اللغات](https://doyouknow.app/ar/article/how-video-game-localization-actually-adapts-humor-across-languages.html): لماذا تفشل ترجمة نكات اللعبة حرفيا عادة، وكيف يعيد المترجمون بناء الفكاهة لجمهور جديد بدلا من ذلك.
-- [كيف يستقلب الجسم الكحول فعلياً](https://doyouknow.app/ar/article/how-your-body-actually-metabolizes-alcohol.html): يفكك الكبد الكحول عبر خطوتين، بمرور عبر مادة وسيطة سامة. إليك العلم الحقيقي لاستقلاب الكحول ولماذا يختلف تأثيره بين الناس.
 
 ## Optional
 
-- [Full article index](https://doyouknow.app/llms-full.txt): All 2654 indexable articles with one-line summaries, grouped by language and topic.
+- [Full article index](https://doyouknow.app/llms-full.txt): All 2656 indexable articles with one-line summaries, grouped by language and topic.
 - [Sitemap](https://doyouknow.app/sitemap.xml): Every indexable URL with last-modified dates.
 - [English RSS](https://doyouknow.app/en/rss.xml): Newest English articles.
 - [Arabic RSS](https://doyouknow.app/ar/rss.xml): Newest Arabic articles.
