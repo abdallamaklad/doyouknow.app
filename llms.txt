@@ -1,0 +1,124 @@
+# doyouknow.app
+
+> Bilingual (English and Arabic) explainers, surprising facts and practical guides about the UAE, Saudi Arabia, Egypt and the wider world. Every English article has an Arabic counterpart at the same slug under /ar/.
+
+Articles are written with AI-assisted editorial workflows and checked against the authoritative sources linked in each article's "Sources" section; health, finance, legal, religious and government-procedure pages need documented owner review before publication. We do not publish politics/conflict advocacy, allegations about people or organizations, or gambling content. When citing a fact, please link the article page and prefer the primary source it cites.
+
+## About
+
+- [About and editorial policy](https://doyouknow.app/en/about.html): Who runs doyouknow.app, how articles are researched, sourced, written and corrected.
+- [عن الموقع وسياسة التحرير](https://doyouknow.app/ar/about.html): Arabic version of the about and editorial policy page.
+- [Contact](https://doyouknow.app/en/contact.html): Corrections and questions (hello@doyouknow.app).
+
+## Topics (English)
+
+- [Practical Guide](https://doyouknow.app/en/category/practical-guide.html): 11 articles. General practical explainers that do not fit a single country or topic vertical.
+- [Dubai & UAE Places](https://doyouknow.app/en/category/dubai.html): 62 articles. Discover Dubai and Abu Dhabi landmarks, engineering stories, cultural destinations, and practical travel inspiration.
+- [UAE Practical Guides](https://doyouknow.app/en/category/guides.html): 34 articles. Clear UAE guides for residents, visitors, professionals, and anyone planning a major decision in the Emirates.
+- [Technology Explained](https://doyouknow.app/en/category/technology.html): 132 articles. Plain-language introductions to important artificial intelligence tools and the technology changing everyday life.
+- [Islamic Knowledge & Culture](https://doyouknow.app/en/category/islamic.html): 47 articles. Clear English explainers on Islamic practice, finance, and religious seasons, written with care and sourced from authoritative institutions.
+- [Business and Economy](https://doyouknow.app/en/category/business.html): 112 articles. Practical business, economy, and market-entry guides for professionals working across Arabic-speaking markets.
+- [Saudi Practical Guides](https://doyouknow.app/en/category/saudi-guides.html): 34 articles. Clear English guides to essential Saudi government services and procedures, from Absher and Qiyas to driving licenses, bank accounts, iqama, visas, payments, and housing.
+- [Saudi Arabia](https://doyouknow.app/en/category/saudi.html): 51 articles. Discover Saudi Arabia's history, culture, landscapes, and travel experiences through clear, reliable guides.
+- [Saudi Vision 2030 & Megaprojects](https://doyouknow.app/en/category/vision-2030.html): 45 articles. Clear explainers on Saudi Vision 2030, NEOM, and the megaprojects reshaping the Kingdom.
+- [Egypt](https://doyouknow.app/en/category/egypt.html): 49 articles. Discover Egypt's ancient history, pharaohs, monuments, and living culture through clear, reliable guides.
+- [Egypt Practical Guides](https://doyouknow.app/en/category/egypt-guides.html): 35 articles. Clear English guides for travelers to Egypt, covering visas, money, transport, and practical trip planning.
+- [Around the World](https://doyouknow.app/en/category/around-the-world.html): 60 articles. Global stories and cultural explainers from around the world, from everyday traditions to the customs that shape daily life.
+- [Self Care](https://doyouknow.app/en/category/self-care.html): 59 articles. Practical self-care guidance for everyday wellbeing, mindfulness, and healthy routines.
+- [Science](https://doyouknow.app/en/category/science.html): 129 articles. Clear explainers on science, discovery, and how the natural world works.
+- [Art](https://doyouknow.app/en/category/art.html): 52 articles. Stories about art, design, and creative culture from the region and beyond.
+- [Stories](https://doyouknow.app/en/category/stories.html): 43 articles. Human-interest stories and narrative features worth reading, from classic tales to timeless legends.
+- [Health](https://doyouknow.app/en/category/health.html): 89 articles. Clear, carefully sourced explainers on health topics relevant to everyday life.
+- [Nutrition](https://doyouknow.app/en/category/nutrition.html): 57 articles. Practical guidance on nutrition, diet, and healthy eating habits.
+- [Education](https://doyouknow.app/en/category/education.html): 52 articles. Guides on education systems, learning paths, and how to learn more effectively.
+- [Family](https://doyouknow.app/en/category/family.html): 54 articles. Practical guidance for family life, parenting, and household decisions.
+- [People and Society](https://doyouknow.app/en/category/people-society.html): 58 articles. Explainers on culture, community, and how people live and connect across generations.
+- [Entertainment and Games](https://doyouknow.app/en/category/entertainment-games.html): 62 articles. Coverage of entertainment, gaming, and leisure culture, from classic games to modern digital habits.
+
+## Topics (Arabic / العربية)
+
+- [دليل عملي](https://doyouknow.app/ar/category/practical-guide.html): 11 مقالاً. شروحات عملية عامة لا تندرج تحت دولة أو موضوع محدد.
+- [دليل الخدمات الحكومية السعودية](https://doyouknow.app/ar/category/saudi-guides.html): 15 مقالاً. أدلة عربية واضحة لخدمات وإجراءات حكومية سعودية أساسية، من أبشر وقياس إلى رخص القيادة والحسابات البنكية والإقامة والتأشيرات والمدفوعات والسكن.
+- [دبي والإمارات](https://doyouknow.app/ar/category/dubai.html): 76 مقالاً. اكتشف دبي وأبوظبي والإمارات من خلال أدلة عربية واضحة عن المعالم، الهندسة، والوجهات السياحية والعملية.
+- [الأعمال والاقتصاد](https://doyouknow.app/ar/category/business.html): 114 مقالاً. أدلة عملية في الأعمال والاقتصاد ودخول الأسواق للمحترفين في الأسواق العربية والسعودية.
+- [التقنية](https://doyouknow.app/ar/category/technology.html): 132 مقالاً. شروحات عربية واضحة لأهم أدوات الذكاء الاصطناعي والتقنيات التي تغيّر حياتنا اليومية.
+- [السعودية: التاريخ والثقافة](https://doyouknow.app/ar/category/saudi.html): 50 مقالاً. اكتشف تاريخ المملكة العربية السعودية وتراثها ومدنها وثقافتها من خلال مقالات عربية واضحة وموثوقة.
+- [رؤية السعودية 2030 والمشاريع الكبرى](https://doyouknow.app/ar/category/vision-2030.html): 45 مقالاً. تعرف على مشاريع رؤية السعودية 2030 والمدن والوجهات الجديدة من خلال شروحات تفصل الحقائق عن التوقعات.
+- [أدلة عملية في السعودية](https://doyouknow.app/ar/category/guides.html): 38 مقالاً. أدلة عربية مبسطة للخدمات والمنصات والإجراءات المهمة في السعودية مع إحالات إلى المصادر الرسمية.
+- [الثقافة والمعرفة الإسلامية](https://doyouknow.app/ar/category/islamic.html): 47 مقالاً. شروحات عربية واضحة حول العبادات والتمويل الإسلامي والمواسم الدينية مع احترام السياق والمصادر الموثوقة.
+- [مصر: التاريخ والثقافة](https://doyouknow.app/ar/category/egypt.html): 49 مقالاً. اكتشف تاريخ مصر القديمة وفراعنتها ومعالمها وثقافتها الحية من خلال مقالات عربية واضحة وموثوقة.
+- [أدلة عملية في مصر](https://doyouknow.app/ar/category/egypt-guides.html): 35 مقالاً. أدلة عربية واضحة للمسافرين إلى مصر، تغطي التأشيرات والعملة والتنقل وتخطيط الرحلة.
+- [حول العالم](https://doyouknow.app/ar/category/around-the-world.html): 60 مقالاً. قصص وشروحات ثقافية من حول العالم، من التقاليد اليومية إلى العادات التي تشكل الحياة في مختلف الثقافات.
+- [العناية الذاتية](https://doyouknow.app/ar/category/self-care.html): 59 مقالاً. إرشادات عملية للعناية الذاتية والراحة النفسية والعادات الصحية اليومية.
+- [العلوم](https://doyouknow.app/ar/category/science.html): 129 مقالاً. شروحات واضحة عن العلوم والاكتشافات وكيفية عمل العالم الطبيعي.
+- [الفن](https://doyouknow.app/ar/category/art.html): 52 مقالاً. قصص عن الفن والتصميم والثقافة الإبداعية من المنطقة والعالم.
+- [قصص](https://doyouknow.app/ar/category/stories.html): 43 مقالاً. قصص إنسانية وتقارير سردية تستحق القراءة، من الحكايات الكلاسيكية إلى الأساطير الخالدة.
+- [الصحة](https://doyouknow.app/ar/category/health.html): 89 مقالاً. شروحات موثوقة وواضحة عن مواضيع صحية تهم الحياة اليومية.
+- [التغذية](https://doyouknow.app/ar/category/nutrition.html): 57 مقالاً. إرشادات عملية عن التغذية والنظام الغذائي وعادات الأكل الصحية.
+- [التعليم](https://doyouknow.app/ar/category/education.html): 52 مقالاً. أدلة عن الأنظمة التعليمية ومسارات التعلم وكيفية التعلم بفعالية أكبر.
+- [الأسرة](https://doyouknow.app/ar/category/family.html): 54 مقالاً. إرشادات عملية لحياة الأسرة وتربية الأبناء وقرارات المنزل اليومية.
+- [الناس والمجتمع](https://doyouknow.app/ar/category/people-society.html): 58 مقالاً. شروحات عن الثقافة والمجتمع وكيفية عيش الناس وتواصلهم عبر الأجيال المختلفة.
+- [الترفيه والألعاب](https://doyouknow.app/ar/category/entertainment-games.html): 62 مقالاً. تغطية للترفيه والألعاب وثقافة أوقات الفراغ، من الألعاب الكلاسيكية إلى العادات الرقمية الحديثة.
+
+## Latest articles (English)
+
+- [Cairo Uber and Careem Taxi Guide](https://doyouknow.app/en/article/cairo-uber-careem-taxi-guide.html): How Uber and Careem work in Cairo: pricing, car types, airport pickup, and how they compare to street taxis.
+- [Dubai Freelance Permit Guide](https://doyouknow.app/en/article/dubai-freelance-permit-guide.html): Dubai's freelance permit lets independent professionals work legally without a company. Here is how the process, authorities, and costs actually break down.
+- [How B12 Deficiency Actually Affects Vegans and Vegetarians](https://doyouknow.app/en/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html): B12 comes almost only from animal foods. Here's why vegans are genuinely at risk, the real symptoms, and how much to supplement.
+- [How Business Incubators and Accelerators Actually Work](https://doyouknow.app/en/article/how-business-incubators-and-accelerators-actually-work.html): Accelerators run fixed-term cohorts for equity, like Y Combinator. Incubators offer open-ended support. Here is the real difference.
+- [How Child Life Specialists Actually Help Kids in Hospitals](https://doyouknow.app/en/article/how-child-life-specialists-actually-help-kids-in-hospitals.html): Child life specialists use play and honest explanation to help hospitalized kids and families cope with medical stress.
+- [How Digital Signatures Actually Verify a Document's Authenticity](https://doyouknow.app/en/article/how-digital-signatures-actually-verify-a-documents-authenticity.html): A digital signature hashes a document, encrypts the hash with a private key, and lets anyone verify it with the matching public key.
+- [How Diplomatic Immunity Actually Works](https://doyouknow.app/en/article/how-diplomatic-immunity-actually-works.html): Diplomatic immunity is real but limited: it belongs to the state, can be waived, and does not block expulsion for crimes.
+- [How Esports Team Sponsorship Deals Actually Work](https://doyouknow.app/en/article/how-esports-team-sponsorship-deals-actually-work.html): How esports orgs turn jersey logos, content deals, and streaming exposure into their single biggest source of revenue.
+- [How Film Color Grading Actually Shapes Mood](https://doyouknow.app/en/article/how-film-color-grading-actually-shapes-mood.html): How colorists use color grading, not just correction, to make a scene feel cold, dangerous, nostalgic, or warm on screen.
+- [How Mesh WiFi Systems Actually Cover a Whole House](https://doyouknow.app/en/article/how-mesh-wifi-systems-actually-cover-a-whole-house.html): Mesh WiFi covers a house with multiple nodes sharing one network, roaming seamlessly and rerouting automatically when a node drops.
+- [How National Flag Colors Carry Different Symbolism Worldwide](https://doyouknow.app/en/article/how-national-flag-colors-actually-carry-different-symbolism-across-countries.html): The same flag colors mean very different things worldwide, shaped by shared political movements, not any single fixed rulebook.
+- [How Power Naps Actually Affect Brain Performance](https://doyouknow.app/en/article/how-power-naps-actually-affect-brain-performance.html): Power naps can boost alertness and memory, but nap length matters. Here is what sleep science says about the ideal duration.
+- [How Progressive Muscle Relaxation Actually Works](https://doyouknow.app/en/article/how-progressive-muscle-relaxation-actually-works.html): Progressive muscle relaxation eases anxiety by deliberately tensing then releasing muscle groups. Here is the science behind why it works.
+- [How Satellite Constellations Avoid Colliding With Each Other](https://doyouknow.app/en/article/how-satellite-constellations-avoid-colliding-with-each-other.html): How satellites like Starlink dodge each other in orbit: conjunction data, risk thresholds, and autonomous avoidance burns.
+- [How Saudi Arabia's Female Labor Target Changed the Job Market](https://doyouknow.app/en/article/how-saudi-arabias-female-labor-force-participation-target-actually-changed-the-job-market.html): Saudi Arabia hit its 30% female workforce target nine years early. Now it's aiming for 40%. Here's what actually drove the change.
+- [How Saudi Arabia's Hajj and Umrah Capacity Expansion Works](https://doyouknow.app/en/article/how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works.html): Saudi Arabia is racing toward 30 million Hajj and Umrah pilgrims a year by 2030. Here's the rail, hotels and tech making it possible.
+- [How Screen Mirroring Sends Your Display to Another Screen](https://doyouknow.app/en/article/how-screen-mirroring-actually-sends-your-display-to-another-screen.html): How AirPlay, Chromecast, and Miracast each send your screen to a TV: different protocols, networks, and codecs.
+- [How Smart Home Hubs Coordinate Different Device Brands](https://doyouknow.app/en/article/how-smart-home-hubs-actually-coordinate-different-brands-of-devices.html): Smart home hubs translate between brands using shared radios and the Matter standard, letting a Google, Apple, and Amazon device share one app.
+- [How the World Happiness Report Actually Ranks Countries](https://doyouknow.app/en/article/how-the-world-happiness-report-actually-ranks-countries.html): The World Happiness Report doesn't add up six factors into a score. Here is what it actually measures and how the ranking really works.
+- [How Trade Shows and Expos Actually Generate Revenue](https://doyouknow.app/en/article/how-trade-shows-and-expos-actually-generate-revenue-for-organizers.html): Trade shows run on booth rentals, sponsorship tiers, and ticket sales. Here is the real revenue model behind expo organizers.
+- [How Trademark Registration Actually Protects a Brand](https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html): Trademark registration protects brand names and logos as source identifiers, distinct from copyright and patent law, through use and renewal rules.
+- [How Undersea Internet Cables Actually Connect the World](https://doyouknow.app/en/article/how-undersea-internet-cables-actually-connect-the-world.html): Satellites barely register. Roughly 99% of intercontinental internet traffic runs through cables lying on the ocean floor. Here's how.
+- [How Video Game Day One Patches Actually Work](https://doyouknow.app/en/article/how-video-game-day-one-patches-actually-work.html): Why new games need a huge update before you can even play them, and how discs, cert, and CDNs make it happen.
+- [How Video Game Localization Adapts Humor Across Languages](https://doyouknow.app/en/article/how-video-game-localization-actually-adapts-humor-across-languages.html): Why translating a game's jokes word for word usually fails, and how localizers rebuild humor for a new audience instead.
+- [How Your Body Actually Metabolizes Alcohol](https://doyouknow.app/en/article/how-your-body-actually-metabolizes-alcohol.html): Your liver breaks down alcohol in two steps, through a toxic middleman. Here is the real science of alcohol metabolism and why it affects people differently.
+
+## Latest articles (Arabic / العربية)
+
+- [دليل أوبر وكريم للتنقل في القاهرة](https://doyouknow.app/ar/article/cairo-uber-careem-taxi-guide.html): كيف يعمل أوبر وكريم في القاهرة: الأسعار وأنواع السيارات والاستقبال من المطار والمقارنة بالتاكسي.
+- [دليل تصريح العمل الحر في دبي](https://doyouknow.app/ar/article/dubai-freelance-permit-guide.html): تصريح العمل الحر في دبي يتيح للمهنيين المستقلين العمل بشكل قانوني دون شركة. إليك كيف تتوزع الإجراءات والجهات والتكاليف فعليًا.
+- [كيف يؤثر نقص فيتامين ب12 فعلياً على النباتيين](https://doyouknow.app/ar/article/how-b12-deficiency-actually-affects-vegans-and-vegetarians.html): فيتامين ب12 يأتي غالبًا من الأطعمة الحيوانية فقط. لماذا النباتيون الصرف معرضون لنقص حقيقي، وما الأعراض، وكم يجب أن يتناولوا من المكملات؟
+- [كيف تعمل حاضنات ومسرعات الأعمال فعلياً](https://doyouknow.app/ar/article/how-business-incubators-and-accelerators-actually-work.html): المسرّعات تدير برامج دفعات محددة المدة مقابل حصص ملكية، مثل Y Combinator. الحاضنات تقدم دعماً مفتوحاً. إليك الفرق الحقيقي.
+- [كيف يساعد أخصائيو حياة الطفل الأطفال في المستشفيات فعلياً](https://doyouknow.app/ar/article/how-child-life-specialists-actually-help-kids-in-hospitals.html): أخصائيو حياة الطفل يستخدمون اللعب والشرح الصادق لمساعدة الأطفال المرضى وأسرهم على مواجهة ضغط العلاج.
+- [كيف تتحقق التوقيعات الرقمية من صحة المستند فعلياً](https://doyouknow.app/ar/article/how-digital-signatures-actually-verify-a-documents-authenticity.html): يُنشئ التوقيع الرقمي بصمة تجزئة للمستند، ويُشفّرها بمفتاح خاص، ويسمح لأي شخص بالتحقق منها بالمفتاح العام المطابق.
+- [كيف تعمل الحصانة الدبلوماسية فعلياً](https://doyouknow.app/ar/article/how-diplomatic-immunity-actually-works.html): الحصانة الدبلوماسية حقيقية لكنها محدودة: تخص الدولة، ويمكن التنازل عنها، ولا تمنع الطرد بسبب جرائم.
+- [كيف تعمل صفقات رعاية فرق الرياضات الإلكترونية فعلياً](https://doyouknow.app/ar/article/how-esports-team-sponsorship-deals-actually-work.html): كيف تحوّل فرق الرياضات الإلكترونية شعارات القمصان وصفقات المحتوى إلى أكبر مصدر دخل لها.
+- [كيف يشكل تصحيح الألوان في الأفلام المزاج العام فعلياً](https://doyouknow.app/ar/article/how-film-color-grading-actually-shapes-mood.html): كيف يستخدم مصححو الألوان تدريج اللون، لا التصحيح فقط، لجعل مشهد يبدو باردا أو خطرا أو حنينيا أو دافئا.
+- [كيف تغطي أنظمة الواي فاي الشبكي المنزل بأكمله فعلياً](https://doyouknow.app/ar/article/how-mesh-wifi-systems-actually-cover-a-whole-house.html): تغطي شبكات الواي فاي الشبكية المنزل بعقد متعددة تشارك شبكة واحدة، مع تنقل سلس وإعادة توجيه تلقائي عند تعطل عقدة.
+- [كيف تحمل ألوان الأعلام الوطنية رموزاً مختلفة حول العالم](https://doyouknow.app/ar/article/how-national-flag-colors-actually-carry-different-symbolism-across-countries.html): ألوان الأعلام نفسها تحمل معاني مختلفة جداً حول العالم، بحسب حركات سياسية مشتركة، لا كتاب قواعد ثابت واحد.
+- [كيف تؤثر قيلولة الطاقة على أداء الدماغ فعلياً](https://doyouknow.app/ar/article/how-power-naps-actually-affect-brain-performance.html): قيلولة القوة قد تعزز التنبه والذاكرة، لكن مدتها مهمة. إليك ما يقوله علم النوم عن المدة المثالية.
+- [كيف يعمل الاسترخاء العضلي التدريجي فعلياً](https://doyouknow.app/ar/article/how-progressive-muscle-relaxation-actually-works.html): تقنية استرخاء العضلات التدريجي تخفف القلق بشد العضلات ثم إرخائها عمدًا. إليك العلم وراء نجاحها.
+- [كيف تتجنب أقمار المجموعات الصناعية الاصطدام ببعضها فعلياً](https://doyouknow.app/ar/article/how-satellite-constellations-avoid-colliding-with-each-other.html): كيف تتجنب الأقمار الصناعية مثل ستارلينك الاصطدام في الفضاء: بيانات التقارب وحدود الخطر ومناورات التجنب الذاتية.
+- [كيف غيّر هدف مشاركة المرأة في العمل سوق الوظائف بالسعودية](https://doyouknow.app/ar/article/how-saudi-arabias-female-labor-force-participation-target-actually-changed-the-job-market.html): السعودية حققت هدف 30% لمشاركة المرأة في العمل قبل موعده بتسع سنوات، والهدف الجديد 40%. هذا ما غيّر سوق العمل فعليًا.
+- [كيف يعمل توسيع القدرة الاستيعابية للحج والعمرة في السعودية](https://doyouknow.app/ar/article/how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works.html): السعودية تسعى لاستقبال 30 مليون معتمر وحاج سنويًا بحلول 2030. هذه القطارات والفنادق والتقنيات التي تجعل ذلك ممكنًا.
+- [كيف يرسل مطابقة الشاشة عرضك إلى شاشة أخرى فعلياً](https://doyouknow.app/ar/article/how-screen-mirroring-actually-sends-your-display-to-another-screen.html): كيف يرسل AirPlay وChromecast وMiracast شاشتك إلى تلفاز: بروتوكولات وشبكات وترميزات مختلفة تماماً.
+- [كيف تنسق محاور المنزل الذكي بين أجهزة العلامات المختلفة](https://doyouknow.app/ar/article/how-smart-home-hubs-actually-coordinate-different-brands-of-devices.html): تترجم مراكز المنزل الذكي بين الماركات عبر راديوهات مشتركة ومعيار Matter، فيعمل جهاز جوجل وآبل وأمازون من تطبيق واحد.
+- [كيف يصنف تقرير السعادة العالمي الدول فعلياً](https://doyouknow.app/ar/article/how-the-world-happiness-report-actually-ranks-countries.html): تقرير السعادة العالمي لا يجمع ستة عوامل لينتج الترتيب. إليك ما يقيسه فعليًا وكيف يُحسب الترتيب حقًا.
+- [كيف تحقق المعارض التجارية إيرادات لمنظميها فعلياً](https://doyouknow.app/ar/article/how-trade-shows-and-expos-actually-generate-revenue-for-organizers.html): تعتمد المعارض التجارية على إيجار الأجنحة والرعاية وتذاكر الحضور. إليك نموذج الإيرادات الحقيقي لمنظمي المعارض.
+- [كيف يحمي تسجيل العلامة التجارية العلامة فعلياً](https://doyouknow.app/ar/article/how-trademark-registration-actually-protects-a-brand.html): تسجيل العلامة التجارية يحمي أسماء العلامات وشعاراتها كمحددات مصدر، بخلاف حق النشر وبراءة الاختراع، عبر قواعد الاستخدام والتجديد.
+- [كيف تربط الكابلات البحرية العالم بالإنترنت فعلياً](https://doyouknow.app/ar/article/how-undersea-internet-cables-actually-connect-the-world.html): الأقمار الصناعية دورها ضئيل جدًا. نحو 99% من حركة الإنترنت بين القارات تمر عبر كابلات على قاع المحيط. إليك كيف.
+- [كيف تعمل تحديثات اليوم الأول لألعاب الفيديو فعلياً](https://doyouknow.app/ar/article/how-video-game-day-one-patches-actually-work.html): لماذا تحتاج الألعاب الجديدة لتحديث ضخم قبل اللعب، وكيف تتعاون الأقراص والفحص والخوادم لتحقيق ذلك.
+- [كيف يُكيّف توطين ألعاب الفيديو الفكاهة بين اللغات](https://doyouknow.app/ar/article/how-video-game-localization-actually-adapts-humor-across-languages.html): لماذا تفشل ترجمة نكات اللعبة حرفيا عادة، وكيف يعيد المترجمون بناء الفكاهة لجمهور جديد بدلا من ذلك.
+- [كيف يستقلب الجسم الكحول فعلياً](https://doyouknow.app/ar/article/how-your-body-actually-metabolizes-alcohol.html): يفكك الكبد الكحول عبر خطوتين، بمرور عبر مادة وسيطة سامة. إليك العلم الحقيقي لاستقلاب الكحول ولماذا يختلف تأثيره بين الناس.
+
+## Optional
+
+- [Full article index](https://doyouknow.app/llms-full.txt): All 2654 indexable articles with one-line summaries, grouped by language and topic.
+- [Sitemap](https://doyouknow.app/sitemap.xml): Every indexable URL with last-modified dates.
+- [English RSS](https://doyouknow.app/en/rss.xml): Newest English articles.
+- [Arabic RSS](https://doyouknow.app/ar/rss.xml): Newest Arabic articles.
