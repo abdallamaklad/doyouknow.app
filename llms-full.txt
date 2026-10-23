@@ -93,6 +93,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## UAE Practical Guides
 
+- [How to Check a University Is Accredited in the UAE](https://doyouknow.app/en/article/how-to-check-a-university-is-accredited-in-the-uae.html): Before you pay a dirham, run two official checks: the federal CAA register for the institution and its programmes, and the KHDA directory for Dubai campuses.
 - [Dubai Freelance Permit Guide](https://doyouknow.app/en/article/dubai-freelance-permit-guide.html): Dubai's freelance permit lets independent professionals work legally without a company. Here is how the process, authorities, and costs actually break down.
 - [UAE Electric Vehicle Charging Guide](https://doyouknow.app/en/article/uae-electric-vehicle-charging-guide.html): The UAE's EV charging network spans DEWA, ADNOC, and Abu Dhabi's Charge AD. Here is how the stations, apps, and pricing actually work.
 - [UAE Etihad Airways Stopover Guide](https://doyouknow.app/en/article/uae-etihad-airways-stopover-guide.html): Etihad's Abu Dhabi stopover gives eligible transit passengers free hotel nights. Here is how the program actually works and who qualifies.
@@ -784,6 +785,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## Science
 
+- [How Earthquake Magnitude Is Actually Measured](https://doyouknow.app/en/article/how-earthquake-magnitude-is-actually-measured.html): Magnitude is not a damage score but a logarithmic measure of the energy a fault releases, and the scale behind the number has moved from Richter to moment magnitude.
 - [How Static Electricity Actually Builds Up](https://doyouknow.app/en/article/how-static-electricity-actually-builds-up.html): Static shocks come from electrons transferred by friction between materials, and they spike in winter because dry air lets charge build up.
 - [Why Déjà Vu Actually Happens](https://doyouknow.app/en/article/why-deja-vu-actually-happens.html): Déjà vu is best understood as a brief memory-processing glitch, not a paranormal event, happening more in younger people and during fatigue or stress.
 - [How a Candle Flame Actually Sustains Itself](https://doyouknow.app/en/article/how-a-candle-flame-actually-sustains-itself.html): A candle burns vapour, not solid wax. Its own flame melts, wicks and vaporises fuel in a self-regulating loop that stays stable for hours without any control.
@@ -1873,6 +1875,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## أدلة عملية في السعودية
 
+- [كيف تتأكد من اعتماد الجامعة في الإمارات قبل التسجيل](https://doyouknow.app/ar/article/how-to-check-a-university-is-accredited-in-the-uae.html): قبل أن تدفع أي درهم، نفّذ فحصين رسميين: سجل مفوضية الاعتماد الأكاديمي للمؤسسة وبرامجها، ودليل هيئة المعرفة والتنمية البشرية لجامعات دبي.
 - [دليل تصريح العمل الحر في دبي](https://doyouknow.app/ar/article/dubai-freelance-permit-guide.html): تصريح العمل الحر في دبي يتيح للمهنيين المستقلين العمل بشكل قانوني دون شركة. إليك كيف تتوزع الإجراءات والجهات والتكاليف فعليًا.
 - [دليل شحن السيارات الكهربائية في الإمارات](https://doyouknow.app/ar/article/uae-electric-vehicle-charging-guide.html): تمتد شبكة شحن المركبات الكهربائية في الإمارات عبر ديوا وأدنوك وتشارج أبوظبي. إليك كيف تعمل المحطات والتطبيقات والأسعار فعليًا.
 - [دليل التوقف مع طيران الاتحاد في الإمارات](https://doyouknow.app/ar/article/uae-etihad-airways-stopover-guide.html): يمنح برنامج التوقف في أبوظبي من الاتحاد للطيران المسافرين العابرين ليالي فندقية مجانية. إليك كيف يعمل البرنامج فعليًا ومن يستحقه.
@@ -2179,6 +2182,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## العلوم
 
+- [كيف تُقاس قوة الزلزال فعلياً: من ريختر إلى مقياس العزم](https://doyouknow.app/ar/article/how-earthquake-magnitude-is-actually-measured.html): الرقم الذي يتصدر الأخبار بعد كل زلزال ليس درجة للدمار، بل مقياس لوغاريتمي للطاقة التي يطلقها الصدع، وتطورت طريقة حسابه من ريختر إلى مقياس العزم.
 - [كيف تتراكم الكهرباء الساكنة فعلياً](https://doyouknow.app/ar/article/how-static-electricity-actually-builds-up.html): صدمات الكهرباء الساكنة تنتج عن انتقال إلكترونات بفعل احتكاك بسيط بين مادتين، وتزداد في الشتاء لأن الهواء الجاف يترك الشحنة تتراكم بدلاً من أن تتبدد.
 - [لماذا يحدث شعور ديجا فو فعلياً](https://doyouknow.app/ar/article/why-deja-vu-actually-happens.html): ديجا فو يُفهم على أنه خلل عابر في معالجة الذاكرة، لا حدثاً خارقاً للطبيعة، ويحدث أكثر لدى الشباب وفي حالات التعب أو التوتر، رغم أن العلماء لا يزالون يتناقشون حول آليته الدقيقة.
 - [كيف تُبقي شعلة الشمعة نفسها مشتعلة فعلياً](https://doyouknow.app/ar/article/how-a-candle-flame-actually-sustains-itself.html): تحرق الشمعة بخار الشمع لا الشمع الصلب. فشعلتها تذيب الوقود وترفعه بالخاصية الشعرية وتبخّره في حلقة ذاتية التنظيم تثبت ساعات دون أي تحكّم.
