@@ -16,16 +16,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/ar/article/how-to-check-a-university-is-accredited-in-the-uae.html",
-      "url": "https://doyouknow.app/ar/article/how-to-check-a-university-is-accredited-in-the-uae.html",
-      "title": "كيف تتأكد من اعتماد الجامعة في الإمارات قبل التسجيل",
-      "content_text": "قبل أن تدفع أي درهم، نفّذ فحصين رسميين: سجل مفوضية الاعتماد الأكاديمي للمؤسسة وبرامجها، ودليل هيئة المعرفة والتنمية البشرية لجامعات دبي.",
-      "date_published": "2026-10-23",
-      "tags": [
-        "أدلة عملية في السعودية"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/ar/article/cairo-uber-careem-taxi-guide.html",
       "url": "https://doyouknow.app/ar/article/cairo-uber-careem-taxi-guide.html",
       "title": "دليل أوبر وكريم للتنقل في القاهرة",
@@ -203,6 +193,16 @@
       "date_published": "2026-09-27",
       "tags": [
         "التقنية"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-the-world-happiness-report-actually-ranks-countries.html",
+      "url": "https://doyouknow.app/ar/article/how-the-world-happiness-report-actually-ranks-countries.html",
+      "title": "كيف يصنف تقرير السعادة العالمي الدول فعلياً",
+      "content_text": "تقرير السعادة العالمي لا يجمع ستة عوامل لينتج الترتيب. إليك ما يقيسه فعليًا وكيف يُحسب الترتيب حقًا.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "حول العالم"
       ]
     }
   ]

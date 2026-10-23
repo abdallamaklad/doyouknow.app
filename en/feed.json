@@ -16,16 +16,6 @@
       ]
     },
     {
-      "id": "https://doyouknow.app/en/article/how-to-check-a-university-is-accredited-in-the-uae.html",
-      "url": "https://doyouknow.app/en/article/how-to-check-a-university-is-accredited-in-the-uae.html",
-      "title": "How to Check a University Is Accredited in the UAE",
-      "content_text": "Before you pay a dirham, run two official checks: the federal CAA register for the institution and its programmes, and the KHDA directory for Dubai campuses.",
-      "date_published": "2026-10-23",
-      "tags": [
-        "UAE Practical Guides"
-      ]
-    },
-    {
       "id": "https://doyouknow.app/en/article/cairo-uber-careem-taxi-guide.html",
       "url": "https://doyouknow.app/en/article/cairo-uber-careem-taxi-guide.html",
       "title": "Cairo Uber and Careem Taxi Guide",
@@ -203,6 +193,16 @@
       "date_published": "2026-09-27",
       "tags": [
         "Technology Explained"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-the-world-happiness-report-actually-ranks-countries.html",
+      "url": "https://doyouknow.app/en/article/how-the-world-happiness-report-actually-ranks-countries.html",
+      "title": "How the World Happiness Report Actually Ranks Countries",
+      "content_text": "The World Happiness Report doesn't add up six factors into a score. Here is what it actually measures and how the ranking really works.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Around the World"
       ]
     }
   ]
