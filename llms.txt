@@ -23,9 +23,9 @@ Articles are written with AI-assisted editorial workflows and checked against th
 - [Saudi Vision 2030 & Megaprojects](https://doyouknow.app/en/category/vision-2030.html): 45 articles. Clear explainers on Saudi Vision 2030, NEOM, and the megaprojects reshaping the Kingdom.
 - [Egypt](https://doyouknow.app/en/category/egypt.html): 49 articles. Discover Egypt's ancient history, pharaohs, monuments, and living culture through clear, reliable guides.
 - [Egypt Practical Guides](https://doyouknow.app/en/category/egypt-guides.html): 35 articles. Clear English guides for travelers to Egypt, covering visas, money, transport, and practical trip planning.
-- [Around the World](https://doyouknow.app/en/category/around-the-world.html): 60 articles. Global stories and cultural explainers from around the world, from everyday traditions to the customs that shape daily life.
+- [Around the World](https://doyouknow.app/en/category/around-the-world.html): 61 articles. Global stories and cultural explainers from around the world, from everyday traditions to the customs that shape daily life.
 - [Self Care](https://doyouknow.app/en/category/self-care.html): 59 articles. Practical self-care guidance for everyday wellbeing, mindfulness, and healthy routines.
-- [Science](https://doyouknow.app/en/category/science.html): 130 articles. Clear explainers on science, discovery, and how the natural world works.
+- [Science](https://doyouknow.app/en/category/science.html): 131 articles. Clear explainers on science, discovery, and how the natural world works.
 - [Art](https://doyouknow.app/en/category/art.html): 52 articles. Stories about art, design, and creative culture from the region and beyond.
 - [Stories](https://doyouknow.app/en/category/stories.html): 43 articles. Human-interest stories and narrative features worth reading, from classic tales to timeless legends.
 - [Health](https://doyouknow.app/en/category/health.html): 89 articles. Clear, carefully sourced explainers on health topics relevant to everyday life.
@@ -48,9 +48,9 @@ Articles are written with AI-assisted editorial workflows and checked against th
 - [الثقافة والمعرفة الإسلامية](https://doyouknow.app/ar/category/islamic.html): 47 مقالاً. شروحات عربية واضحة حول العبادات والتمويل الإسلامي والمواسم الدينية مع احترام السياق والمصادر الموثوقة.
 - [مصر: التاريخ والثقافة](https://doyouknow.app/ar/category/egypt.html): 49 مقالاً. اكتشف تاريخ مصر القديمة وفراعنتها ومعالمها وثقافتها الحية من خلال مقالات عربية واضحة وموثوقة.
 - [أدلة عملية في مصر](https://doyouknow.app/ar/category/egypt-guides.html): 35 مقالاً. أدلة عربية واضحة للمسافرين إلى مصر، تغطي التأشيرات والعملة والتنقل وتخطيط الرحلة.
-- [حول العالم](https://doyouknow.app/ar/category/around-the-world.html): 60 مقالاً. قصص وشروحات ثقافية من حول العالم، من التقاليد اليومية إلى العادات التي تشكل الحياة في مختلف الثقافات.
+- [حول العالم](https://doyouknow.app/ar/category/around-the-world.html): 61 مقالاً. قصص وشروحات ثقافية من حول العالم، من التقاليد اليومية إلى العادات التي تشكل الحياة في مختلف الثقافات.
 - [العناية الذاتية](https://doyouknow.app/ar/category/self-care.html): 59 مقالاً. إرشادات عملية للعناية الذاتية والراحة النفسية والعادات الصحية اليومية.
-- [العلوم](https://doyouknow.app/ar/category/science.html): 130 مقالاً. شروحات واضحة عن العلوم والاكتشافات وكيفية عمل العالم الطبيعي.
+- [العلوم](https://doyouknow.app/ar/category/science.html): 131 مقالاً. شروحات واضحة عن العلوم والاكتشافات وكيفية عمل العالم الطبيعي.
 - [الفن](https://doyouknow.app/ar/category/art.html): 52 مقالاً. قصص عن الفن والتصميم والثقافة الإبداعية من المنطقة والعالم.
 - [قصص](https://doyouknow.app/ar/category/stories.html): 43 مقالاً. قصص إنسانية وتقارير سردية تستحق القراءة، من الحكايات الكلاسيكية إلى الأساطير الخالدة.
 - [الصحة](https://doyouknow.app/ar/category/health.html): 89 مقالاً. شروحات موثوقة وواضحة عن مواضيع صحية تهم الحياة اليومية.
@@ -62,6 +62,8 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## Latest articles (English)
 
+- [How the Ballon d'Or Winner Is Actually Chosen](https://doyouknow.app/en/article/how-ballon-dor-winner-is-chosen.html): Who votes for the Ballon d'Or, how the points system works, the three official judging criteria, and what happens in a tie.
+- [How El Nino Actually Changes Weather Around the World](https://doyouknow.app/en/article/how-el-nino-changes-global-weather.html): What El Nino is, how warmer Pacific water and weaker trade winds shift rain and drought worldwide, and how scientists declare an event.
 - [How Earthquake Magnitude Is Actually Measured](https://doyouknow.app/en/article/how-earthquake-magnitude-is-actually-measured.html): Magnitude is not a damage score but a logarithmic measure of the energy a fault releases, and the scale behind the number has moved from Richter to moment magnitude.
 - [How to Check a University Is Accredited in the UAE](https://doyouknow.app/en/article/how-to-check-a-university-is-accredited-in-the-uae.html): Before you pay a dirham, run two official checks: the federal CAA register for the institution and its programmes, and the KHDA directory for Dubai campuses.
 - [Cairo Uber and Careem Taxi Guide](https://doyouknow.app/en/article/cairo-uber-careem-taxi-guide.html): How Uber and Careem work in Cairo: pricing, car types, airport pickup, and how they compare to street taxis.
@@ -85,11 +87,11 @@ Articles are written with AI-assisted editorial workflows and checked against th
 - [How the World Happiness Report Actually Ranks Countries](https://doyouknow.app/en/article/how-the-world-happiness-report-actually-ranks-countries.html): The World Happiness Report doesn't add up six factors into a score. Here is what it actually measures and how the ranking really works.
 - [How Trade Shows and Expos Actually Generate Revenue](https://doyouknow.app/en/article/how-trade-shows-and-expos-actually-generate-revenue-for-organizers.html): Trade shows run on booth rentals, sponsorship tiers, and ticket sales. Here is the real revenue model behind expo organizers.
 - [How Trademark Registration Actually Protects a Brand](https://doyouknow.app/en/article/how-trademark-registration-actually-protects-a-brand.html): Trademark registration protects brand names and logos as source identifiers, distinct from copyright and patent law, through use and renewal rules.
-- [How Undersea Internet Cables Actually Connect the World](https://doyouknow.app/en/article/how-undersea-internet-cables-actually-connect-the-world.html): Satellites barely register. Roughly 99% of intercontinental internet traffic runs through cables lying on the ocean floor. Here's how.
-- [How Video Game Day One Patches Actually Work](https://doyouknow.app/en/article/how-video-game-day-one-patches-actually-work.html): Why new games need a huge update before you can even play them, and how discs, cert, and CDNs make it happen.
 
 ## Latest articles (Arabic / العربية)
 
+- [كيف يُختار الفائز بجائزة الكرة الذهبية فعلياً؟](https://doyouknow.app/ar/article/how-ballon-dor-winner-is-chosen.html): من يصوّت على الكرة الذهبية، وكيف يعمل نظام النقاط، وما المعايير الثلاثة الرسمية، وماذا يحدث عند تعادل لاعبين.
+- [ما ظاهرة النينيو وكيف تغيّر الطقس حول العالم؟](https://doyouknow.app/ar/article/how-el-nino-changes-global-weather.html): ما هي ظاهرة النينيو، وكيف يؤدي دفء مياه المحيط الهادئ وضعف الرياح التجارية إلى تغيير الأمطار والجفاف عالمياً، وكيف يعلن العلماء حدوثها.
 - [كيف تُقاس قوة الزلزال فعلياً: من ريختر إلى مقياس العزم](https://doyouknow.app/ar/article/how-earthquake-magnitude-is-actually-measured.html): الرقم الذي يتصدر الأخبار بعد كل زلزال ليس درجة للدمار، بل مقياس لوغاريتمي للطاقة التي يطلقها الصدع، وتطورت طريقة حسابه من ريختر إلى مقياس العزم.
 - [كيف تتأكد من اعتماد الجامعة في الإمارات قبل التسجيل](https://doyouknow.app/ar/article/how-to-check-a-university-is-accredited-in-the-uae.html): قبل أن تدفع أي درهم، نفّذ فحصين رسميين: سجل مفوضية الاعتماد الأكاديمي للمؤسسة وبرامجها، ودليل هيئة المعرفة والتنمية البشرية لجامعات دبي.
 - [دليل أوبر وكريم للتنقل في القاهرة](https://doyouknow.app/ar/article/cairo-uber-careem-taxi-guide.html): كيف يعمل أوبر وكريم في القاهرة: الأسعار وأنواع السيارات والاستقبال من المطار والمقارنة بالتاكسي.
@@ -113,12 +115,10 @@ Articles are written with AI-assisted editorial workflows and checked against th
 - [كيف يصنف تقرير السعادة العالمي الدول فعلياً](https://doyouknow.app/ar/article/how-the-world-happiness-report-actually-ranks-countries.html): تقرير السعادة العالمي لا يجمع ستة عوامل لينتج الترتيب. إليك ما يقيسه فعليًا وكيف يُحسب الترتيب حقًا.
 - [كيف تحقق المعارض التجارية إيرادات لمنظميها فعلياً](https://doyouknow.app/ar/article/how-trade-shows-and-expos-actually-generate-revenue-for-organizers.html): تعتمد المعارض التجارية على إيجار الأجنحة والرعاية وتذاكر الحضور. إليك نموذج الإيرادات الحقيقي لمنظمي المعارض.
 - [كيف يحمي تسجيل العلامة التجارية العلامة فعلياً](https://doyouknow.app/ar/article/how-trademark-registration-actually-protects-a-brand.html): تسجيل العلامة التجارية يحمي أسماء العلامات وشعاراتها كمحددات مصدر، بخلاف حق النشر وبراءة الاختراع، عبر قواعد الاستخدام والتجديد.
-- [كيف تربط الكابلات البحرية العالم بالإنترنت فعلياً](https://doyouknow.app/ar/article/how-undersea-internet-cables-actually-connect-the-world.html): الأقمار الصناعية دورها ضئيل جدًا. نحو 99% من حركة الإنترنت بين القارات تمر عبر كابلات على قاع المحيط. إليك كيف.
-- [كيف تعمل تحديثات اليوم الأول لألعاب الفيديو فعلياً](https://doyouknow.app/ar/article/how-video-game-day-one-patches-actually-work.html): لماذا تحتاج الألعاب الجديدة لتحديث ضخم قبل اللعب، وكيف تتعاون الأقراص والفحص والخوادم لتحقيق ذلك.
 
 ## Optional
 
-- [Full article index](https://doyouknow.app/llms-full.txt): All 2658 indexable articles with one-line summaries, grouped by language and topic.
+- [Full article index](https://doyouknow.app/llms-full.txt): All 2662 indexable articles with one-line summaries, grouped by language and topic.
 - [Sitemap](https://doyouknow.app/sitemap.xml): Every indexable URL with last-modified dates.
 - [English RSS](https://doyouknow.app/en/rss.xml): Newest English articles.
 - [Arabic RSS](https://doyouknow.app/ar/rss.xml): Newest Arabic articles.

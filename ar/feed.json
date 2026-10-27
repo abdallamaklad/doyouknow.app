@@ -6,6 +6,26 @@
   "language": "ar",
   "items": [
     {
+      "id": "https://doyouknow.app/ar/article/how-ballon-dor-winner-is-chosen.html",
+      "url": "https://doyouknow.app/ar/article/how-ballon-dor-winner-is-chosen.html",
+      "title": "كيف يُختار الفائز بجائزة الكرة الذهبية فعلياً؟",
+      "content_text": "من يصوّت على الكرة الذهبية، وكيف يعمل نظام النقاط، وما المعايير الثلاثة الرسمية، وماذا يحدث عند تعادل لاعبين.",
+      "date_published": "2026-10-27",
+      "tags": [
+        "حول العالم"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/ar/article/how-el-nino-changes-global-weather.html",
+      "url": "https://doyouknow.app/ar/article/how-el-nino-changes-global-weather.html",
+      "title": "ما ظاهرة النينيو وكيف تغيّر الطقس حول العالم؟",
+      "content_text": "ما هي ظاهرة النينيو، وكيف يؤدي دفء مياه المحيط الهادئ وضعف الرياح التجارية إلى تغيير الأمطار والجفاف عالمياً، وكيف يعلن العلماء حدوثها.",
+      "date_published": "2026-10-27",
+      "tags": [
+        "العلوم"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/ar/article/how-earthquake-magnitude-is-actually-measured.html",
       "url": "https://doyouknow.app/ar/article/how-earthquake-magnitude-is-actually-measured.html",
       "title": "كيف تُقاس قوة الزلزال فعلياً: من ريختر إلى مقياس العزم",
@@ -183,26 +203,6 @@
       "date_published": "2026-09-27",
       "tags": [
         "رؤية السعودية 2030 والمشاريع الكبرى"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-screen-mirroring-actually-sends-your-display-to-another-screen.html",
-      "url": "https://doyouknow.app/ar/article/how-screen-mirroring-actually-sends-your-display-to-another-screen.html",
-      "title": "كيف يرسل مطابقة الشاشة عرضك إلى شاشة أخرى فعلياً",
-      "content_text": "كيف يرسل AirPlay وChromecast وMiracast شاشتك إلى تلفاز: بروتوكولات وشبكات وترميزات مختلفة تماماً.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "التقنية"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/ar/article/how-smart-home-hubs-actually-coordinate-different-brands-of-devices.html",
-      "url": "https://doyouknow.app/ar/article/how-smart-home-hubs-actually-coordinate-different-brands-of-devices.html",
-      "title": "كيف تنسق محاور المنزل الذكي بين أجهزة العلامات المختلفة",
-      "content_text": "تترجم مراكز المنزل الذكي بين الماركات عبر راديوهات مشتركة ومعيار Matter، فيعمل جهاز جوجل وآبل وأمازون من تطبيق واحد.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "التقنية"
       ]
     }
   ]
