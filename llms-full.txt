@@ -660,6 +660,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## Around the World
 
+- [How the Ballon d'Or Winner Is Actually Chosen](https://doyouknow.app/en/article/how-ballon-dor-winner-is-chosen.html): Who votes for the Ballon d'Or, how the points system works, the three official judging criteria, and what happens in a tie.
 - [How the World Happiness Report Actually Ranks Countries](https://doyouknow.app/en/article/how-the-world-happiness-report-actually-ranks-countries.html): The World Happiness Report doesn't add up six factors into a score. Here is what it actually measures and how the ranking really works.
 - [How Undersea Internet Cables Actually Connect the World](https://doyouknow.app/en/article/how-undersea-internet-cables-actually-connect-the-world.html): Satellites barely register. Roughly 99% of intercontinental internet traffic runs through cables lying on the ocean floor. Here's how.
 - [Why International Calling Codes Are Assigned the Way They Are](https://doyouknow.app/en/article/why-international-calling-codes-are-assigned-the-way-they-are.html): Why does Russia get +7 and the US +1? Country calling codes follow a real ITU zone system, not alphabetical or population order.
@@ -785,6 +786,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## Science
 
+- [How El Nino Actually Changes Weather Around the World](https://doyouknow.app/en/article/how-el-nino-changes-global-weather.html): What El Nino is, how warmer Pacific water and weaker trade winds shift rain and drought worldwide, and how scientists declare an event.
 - [How Earthquake Magnitude Is Actually Measured](https://doyouknow.app/en/article/how-earthquake-magnitude-is-actually-measured.html): Magnitude is not a damage score but a logarithmic measure of the energy a fault releases, and the scale behind the number has moved from Richter to moment magnitude.
 - [How Static Electricity Actually Builds Up](https://doyouknow.app/en/article/how-static-electricity-actually-builds-up.html): Static shocks come from electrons transferred by friction between materials, and they spike in winter because dry air lets charge build up.
 - [Why Déjà Vu Actually Happens](https://doyouknow.app/en/article/why-deja-vu-actually-happens.html): Déjà vu is best understood as a brief memory-processing glitch, not a paranormal event, happening more in younger people and during fatigue or stress.
@@ -2057,6 +2059,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## حول العالم
 
+- [كيف يُختار الفائز بجائزة الكرة الذهبية فعلياً؟](https://doyouknow.app/ar/article/how-ballon-dor-winner-is-chosen.html): من يصوّت على الكرة الذهبية، وكيف يعمل نظام النقاط، وما المعايير الثلاثة الرسمية، وماذا يحدث عند تعادل لاعبين.
 - [كيف يصنف تقرير السعادة العالمي الدول فعلياً](https://doyouknow.app/ar/article/how-the-world-happiness-report-actually-ranks-countries.html): تقرير السعادة العالمي لا يجمع ستة عوامل لينتج الترتيب. إليك ما يقيسه فعليًا وكيف يُحسب الترتيب حقًا.
 - [كيف تربط الكابلات البحرية العالم بالإنترنت فعلياً](https://doyouknow.app/ar/article/how-undersea-internet-cables-actually-connect-the-world.html): الأقمار الصناعية دورها ضئيل جدًا. نحو 99% من حركة الإنترنت بين القارات تمر عبر كابلات على قاع المحيط. إليك كيف.
 - [لماذا تُخصص رموز الاتصال الدولية بهذه الطريقة](https://doyouknow.app/ar/article/why-international-calling-codes-are-assigned-the-way-they-are.html): لماذا تحصل روسيا على +7 وأمريكا على +1؟ رموز الاتصال الدولية تتبع نظام مناطق حقيقي لاتحاد الاتصالات لا ترتيبًا أبجديًا.
@@ -2182,6 +2185,7 @@ Articles are written with AI-assisted editorial workflows and checked against th
 
 ## العلوم
 
+- [ما ظاهرة النينيو وكيف تغيّر الطقس حول العالم؟](https://doyouknow.app/ar/article/how-el-nino-changes-global-weather.html): ما هي ظاهرة النينيو، وكيف يؤدي دفء مياه المحيط الهادئ وضعف الرياح التجارية إلى تغيير الأمطار والجفاف عالمياً، وكيف يعلن العلماء حدوثها.
 - [كيف تُقاس قوة الزلزال فعلياً: من ريختر إلى مقياس العزم](https://doyouknow.app/ar/article/how-earthquake-magnitude-is-actually-measured.html): الرقم الذي يتصدر الأخبار بعد كل زلزال ليس درجة للدمار، بل مقياس لوغاريتمي للطاقة التي يطلقها الصدع، وتطورت طريقة حسابه من ريختر إلى مقياس العزم.
 - [كيف تتراكم الكهرباء الساكنة فعلياً](https://doyouknow.app/ar/article/how-static-electricity-actually-builds-up.html): صدمات الكهرباء الساكنة تنتج عن انتقال إلكترونات بفعل احتكاك بسيط بين مادتين، وتزداد في الشتاء لأن الهواء الجاف يترك الشحنة تتراكم بدلاً من أن تتبدد.
 - [لماذا يحدث شعور ديجا فو فعلياً](https://doyouknow.app/ar/article/why-deja-vu-actually-happens.html): ديجا فو يُفهم على أنه خلل عابر في معالجة الذاكرة، لا حدثاً خارقاً للطبيعة، ويحدث أكثر لدى الشباب وفي حالات التعب أو التوتر، رغم أن العلماء لا يزالون يتناقشون حول آليته الدقيقة.

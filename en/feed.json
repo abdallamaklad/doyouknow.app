@@ -6,6 +6,26 @@
   "language": "en",
   "items": [
     {
+      "id": "https://doyouknow.app/en/article/how-ballon-dor-winner-is-chosen.html",
+      "url": "https://doyouknow.app/en/article/how-ballon-dor-winner-is-chosen.html",
+      "title": "How the Ballon d'Or Winner Is Actually Chosen",
+      "content_text": "Who votes for the Ballon d'Or, how the points system works, the three official judging criteria, and what happens in a tie.",
+      "date_published": "2026-10-27",
+      "tags": [
+        "Around the World"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/how-el-nino-changes-global-weather.html",
+      "url": "https://doyouknow.app/en/article/how-el-nino-changes-global-weather.html",
+      "title": "How El Nino Actually Changes Weather Around the World",
+      "content_text": "What El Nino is, how warmer Pacific water and weaker trade winds shift rain and drought worldwide, and how scientists declare an event.",
+      "date_published": "2026-10-27",
+      "tags": [
+        "Science"
+      ]
+    },
+    {
       "id": "https://doyouknow.app/en/article/how-earthquake-magnitude-is-actually-measured.html",
       "url": "https://doyouknow.app/en/article/how-earthquake-magnitude-is-actually-measured.html",
       "title": "How Earthquake Magnitude Is Actually Measured",
@@ -23,6 +43,36 @@
       "date_published": "2026-10-23",
       "tags": [
         "UAE Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/saudi-consumer-protection-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-consumer-protection-guide.html",
+      "title": "Saudi Consumer Protection Guide",
+      "content_text": "Saudi consumer rights explained: the 7-day return rule, refund rights, the 1900 hotline, and how the NCPA and Ministry of Commerce help.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Saudi Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/saudi-emergency-services-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-emergency-services-guide.html",
+      "title": "Saudi Emergency Services Guide",
+      "content_text": "Saudi Arabia's real emergency numbers explained: 997, 998, 999, 911 and when each one applies, plus what to say when you call.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Saudi Practical Guides"
+      ]
+    },
+    {
+      "id": "https://doyouknow.app/en/article/saudi-social-media-and-internet-rules-guide.html",
+      "url": "https://doyouknow.app/en/article/saudi-social-media-and-internet-rules-guide.html",
+      "title": "Saudi Social Media and Internet Rules Guide",
+      "content_text": "Saudi Arabia's real internet and social media rules: CST oversight, the Anti-Cyber Crime Law, and the honest VPN situation.",
+      "date_published": "2026-09-27",
+      "tags": [
+        "Saudi Practical Guides"
       ]
     },
     {
@@ -153,56 +203,6 @@
       "date_published": "2026-09-27",
       "tags": [
         "Self Care"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-satellite-constellations-avoid-colliding-with-each-other.html",
-      "url": "https://doyouknow.app/en/article/how-satellite-constellations-avoid-colliding-with-each-other.html",
-      "title": "How Satellite Constellations Avoid Colliding With Each Other",
-      "content_text": "How satellites like Starlink dodge each other in orbit: conjunction data, risk thresholds, and autonomous avoidance burns.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-saudi-arabias-female-labor-force-participation-target-actually-changed-the-job-market.html",
-      "url": "https://doyouknow.app/en/article/how-saudi-arabias-female-labor-force-participation-target-actually-changed-the-job-market.html",
-      "title": "How Saudi Arabia's Female Labor Target Changed the Job Market",
-      "content_text": "Saudi Arabia hit its 30% female workforce target nine years early. Now it's aiming for 40%. Here's what actually drove the change.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Saudi Vision 2030 & Megaprojects"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works.html",
-      "url": "https://doyouknow.app/en/article/how-saudi-arabias-hajj-and-umrah-capacity-expansion-actually-works.html",
-      "title": "How Saudi Arabia's Hajj and Umrah Capacity Expansion Works",
-      "content_text": "Saudi Arabia is racing toward 30 million Hajj and Umrah pilgrims a year by 2030. Here's the rail, hotels and tech making it possible.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Saudi Vision 2030 & Megaprojects"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-screen-mirroring-actually-sends-your-display-to-another-screen.html",
-      "url": "https://doyouknow.app/en/article/how-screen-mirroring-actually-sends-your-display-to-another-screen.html",
-      "title": "How Screen Mirroring Sends Your Display to Another Screen",
-      "content_text": "How AirPlay, Chromecast, and Miracast each send your screen to a TV: different protocols, networks, and codecs.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Technology Explained"
-      ]
-    },
-    {
-      "id": "https://doyouknow.app/en/article/how-smart-home-hubs-actually-coordinate-different-brands-of-devices.html",
-      "url": "https://doyouknow.app/en/article/how-smart-home-hubs-actually-coordinate-different-brands-of-devices.html",
-      "title": "How Smart Home Hubs Coordinate Different Device Brands",
-      "content_text": "Smart home hubs translate between brands using shared radios and the Matter standard, letting a Google, Apple, and Amazon device share one app.",
-      "date_published": "2026-09-27",
-      "tags": [
-        "Technology Explained"
       ]
     }
   ]
